@@ -1,5 +1,7 @@
 # builder — Website demos for SME pitches
 
+**Start here: open `catalog.html`** — a catalog of every demo with live preview.
+
 Single-file HTML homepage demos (Noto Sans Thai headings, Sarabun body) made to pitch websites to small Thai businesses. Open `<folder>/index.html` in a browser.
 
 | Folder | Business | Area | Note |
