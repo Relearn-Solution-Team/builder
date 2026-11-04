@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เรียนทำสบู่แฮนด์เมด ตลิ่งชัน | Bougainvillea Soap Studio (โบเกนเวียร์)</title>
+<meta name="description" content="สตูดิโอสอนทำสบู่แฮนด์เมดและหัวน้ำหอม ตลิ่งชัน กรุงเทพฯ คลาสเล็ก 1–4 ท่าน ลงมือทำจริง ได้ผลงานกลับบ้านทุกคอร์ส เทียบคอร์ส ราคา แล้วเช็ครอบว่างทาง LINE @bgvsoap โทร 083-623-5491">
+<link rel="icon" href="assets/bgv-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mag:#c8175d; --mag2:#e0397f; --mag3:#f7b6cf; --blush:#fdf0f4; --blush2:#fae1ea;
+  --plum:#4a1236; --plum2:#6d1f4f; --gold:#b78b1e; --gold2:#d9b45a; --cream:#fffaf3;
+  --leaf:#4f7d3f; --leaf2:#e6efdc; --ink:#3a1a2c; --muted:#7b5b6b; --line:#f0d5e0;
+  --r:26px; --shadow:0 24px 50px -26px rgba(74,18,54,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Sarabun',sans-serif;color:var(--ink);background:var(--cream);font-size:17px;line-height:1.75;overflow-x:hidden}
+h1,h2,h3,h4,.nst{font-family:'Noto Sans Thai',sans-serif;line-height:1.35}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:100px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:'Noto Sans Thai';font-weight:600;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--mag)}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--gold)}
+.h2{font-size:clamp(30px,4vw,44px);font-weight:800;color:var(--plum);margin:10px 0 14px}
+.h2 em{font-style:normal;color:var(--mag)}
+.lead{color:var(--muted);font-size:18px;max-width:720px}
+.center{text-align:center}.center .lead{margin:0 auto}
+.sample{display:inline-block;font-size:12.5px;font-weight:600;color:#8a5a00;background:#fff4d6;border:1px dashed #e2b860;border-radius:8px;padding:2px 10px;margin-top:10px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Noto Sans Thai';font-weight:700;border-radius:999px;padding:14px 26px;font-size:16.5px;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-line{background:#06c755;color:#fff;box-shadow:0 12px 26px -12px #06c755}
+.btn-mag{background:var(--mag);color:#fff;box-shadow:0 12px 26px -12px var(--mag)}
+.btn-ghost{background:#fff;color:var(--plum);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--mag);color:var(--mag)}
+
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(255,250,243,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:22px;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:48px;width:auto}
+.brand .bt{font-family:'Noto Sans Thai';font-weight:700;color:var(--gold);letter-spacing:.16em;font-size:17px;line-height:1.1}
+.brand small{display:block;font-family:'Sarabun';letter-spacing:0;color:var(--muted);font-weight:500;font-size:12.5px}
+.nav ul{display:flex;gap:26px;list-style:none;margin-left:auto;font-weight:600;font-size:15.5px;color:var(--plum)}
+.nav ul a:hover{color:var(--mag)}
+.nav .btn{padding:10px 20px;font-size:15px}
+
+/* hero */
+.hero{padding:70px 0 110px;overflow:hidden;background:
+  radial-gradient(900px 500px at 92% 10%,#fde3ee 0,transparent 60%),
+  radial-gradient(700px 500px at -5% 100%,#fbe9d8 0,transparent 60%),var(--cream)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(34px,4.8vw,58px);font-weight:800;color:var(--plum);line-height:1.22;margin:16px 0 18px}
+.hero h1 .nw{display:inline-block;white-space:nowrap}
+.hero h1 .m{color:var(--mag);position:relative;white-space:nowrap}
+.hero h1 .m svg{position:absolute;left:0;bottom:-10px;width:100%;height:16px}
+.hero p.sub{font-size:19px;color:var(--muted);max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 32px}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-weight:600;font-size:15px;color:var(--plum)}
+.chip i{width:9px;height:9px;border-radius:50%;background:var(--mag);display:block}
+.chip.g i{background:var(--gold)}.chip.l i{background:var(--leaf)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{position:relative;height:560px}
+.arch{position:absolute;right:30px;top:0;width:330px;height:470px;border-radius:200px 200px 28px 28px;overflow:hidden;box-shadow:var(--shadow);border:8px solid #fff}
+.arch img{width:100%;height:100%;object-fit:cover}
+.circ{position:absolute;left:0;bottom:10px;width:230px;height:230px;border-radius:50%;overflow:hidden;border:8px solid #fff;box-shadow:var(--shadow)}
+.circ img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.tag-float{position:absolute;right:0;bottom:40px;background:var(--plum);color:#fff;border-radius:20px;padding:16px 20px;box-shadow:var(--shadow);max-width:230px}
+.tag-float b{font-family:'Noto Sans Thai';font-size:30px;color:var(--gold2);display:block;line-height:1.1}
+.tag-float span{font-size:14px;opacity:.9}
+.bloom{position:absolute;pointer-events:none}
+.hero .bl1{width:190px;left:-40px;top:-30px;transform:rotate(-18deg)}
+.hero .bl2{width:120px;right:300px;top:-20px;transform:rotate(25deg);opacity:.9}
+.hero .bl3{width:150px;right:-30px;top:420px;transform:rotate(60deg)}
+
+/* bubbles */
+.bubbles{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.bubble{position:absolute;bottom:-80px;border-radius:50%;
+  background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.95) 0 8%,rgba(255,255,255,0) 14%),
+  conic-gradient(from 210deg,rgba(255,170,210,.35),rgba(170,220,255,.35),rgba(255,240,170,.35),rgba(210,170,255,.35),rgba(255,170,210,.35));
+  box-shadow:inset 0 0 12px rgba(255,255,255,.8),inset -6px -8px 18px rgba(200,23,93,.12);border:1px solid rgba(255,255,255,.7);
+  animation:rise linear infinite;opacity:.85}
+@keyframes rise{0%{transform:translate(0,0) scale(.9)}50%{transform:translate(24px,-55vh) scale(1)}100%{transform:translate(-10px,-115vh) scale(1.05);opacity:0}}
+
+/* ribbon */
+.ribbon{background:var(--plum);color:#fff;padding:18px 0}
+.ribbon .wrap{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;text-align:center;font-weight:500}
+.ribbon b{color:var(--gold2);font-family:'Noto Sans Thai'}
+.ribbon a{background:#06c755;border-radius:999px;padding:6px 16px;font-weight:700;font-family:'Noto Sans Thai';font-size:15px}
+
+/* courses */
+#courses{background:#fff}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 26px}
+.fbtn{font-family:'Noto Sans Thai';font-weight:600;font-size:15px;border:1.5px solid var(--line);background:var(--cream);color:var(--plum);border-radius:999px;padding:8px 18px;cursor:pointer;transition:.2s}
+.fbtn.on,.fbtn:hover{background:var(--mag);border-color:var(--mag);color:#fff}
+.ctable{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;box-shadow:0 20px 50px -40px rgba(74,18,54,.6)}
+.ctable th{background:var(--blush);color:var(--plum);font-family:'Noto Sans Thai';font-weight:700;font-size:15px;text-align:left;padding:16px 18px;border-bottom:1px solid var(--line)}
+.ctable td{padding:20px 18px;vertical-align:top;border-bottom:1px solid var(--line);font-size:15.5px}
+.ctable tr:last-child td{border-bottom:0}
+.ctable tr.hide{display:none}
+.ctable tbody tr{transition:background .2s}
+.ctable tbody tr:hover{background:#fffafc}
+.cname{display:flex;gap:14px;align-items:flex-start;min-width:220px}
+.cname .ic{width:46px;height:46px;border-radius:14px;flex:none;display:grid;place-items:center;background:var(--blush2)}
+.cname .ic svg{width:28px;height:28px}
+.cname h3{font-size:17.5px;color:var(--plum);font-weight:700}
+.cname .th{font-size:13.5px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.tg{font-size:12px;font-weight:600;border-radius:6px;padding:1px 8px;background:var(--leaf2);color:var(--leaf)}
+.tg.p{background:var(--blush2);color:var(--mag)}
+.tg.y{background:#fbf1d6;color:#8a6510}
+.ctable ul{list-style:none}
+.ctable li{position:relative;padding-left:16px;line-height:1.55;margin-bottom:4px}
+.ctable li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--mag3)}
+.dur{font-weight:700;color:var(--plum);font-family:'Noto Sans Thai';white-space:nowrap}
+.dur small{display:block;font-family:'Sarabun';font-weight:500;color:var(--muted);font-size:13.5px;white-space:normal}
+.price{font-family:'Noto Sans Thai';font-weight:800;color:var(--mag);font-size:22px;white-space:nowrap;line-height:1.2}
+.price small{display:block;font-family:'Sarabun';font-size:13px;color:var(--muted);font-weight:500;white-space:normal}
+.price .promo{display:inline-block;margin-top:6px;font-size:12px;background:var(--gold);color:#fff;border-radius:6px;padding:1px 8px;font-family:'Sarabun';font-weight:700}
+.pick{margin-top:10px;font-family:'Noto Sans Thai';font-size:13.5px;font-weight:700;color:var(--mag);background:none;border:1.5px solid var(--mag3);border-radius:999px;padding:5px 12px;cursor:pointer;white-space:nowrap}
+.pick:hover{background:var(--mag);color:#fff;border-color:var(--mag)}
+.tnote{font-size:14px;color:var(--muted);margin-top:16px}
+.more{margin-top:46px;background:linear-gradient(135deg,var(--blush),#fff7ec);border-radius:var(--r);padding:34px;display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center;border:1px solid var(--line)}
+.more h3{font-size:24px;color:var(--plum)}
+.more p{color:var(--muted)}
+.mlist{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.mi{background:#fff;border-radius:16px;padding:14px 16px;border:1px solid var(--line)}
+.mi b{font-family:'Noto Sans Thai';color:var(--plum);display:block;font-size:15.5px;line-height:1.35}
+.mi span{font-size:13px;color:var(--mag);font-weight:600}
+
+/* finder */
+#finder{background:linear-gradient(180deg,var(--blush) 0,var(--cream) 100%);overflow:hidden}
+.finder{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:40px;align-items:start}
+.q{background:#fff;border-radius:var(--r);padding:28px;box-shadow:var(--shadow);margin-bottom:18px;border:1px solid var(--line)}
+.q h4{font-size:18px;color:var(--plum);margin-bottom:14px;display:flex;gap:10px;align-items:center}
+.q h4 span{width:30px;height:30px;border-radius:50%;background:var(--mag);color:#fff;display:grid;place-items:center;font-size:15px;flex:none}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{border:1.5px solid var(--line);background:var(--cream);border-radius:14px;padding:10px 16px;cursor:pointer;font-weight:600;color:var(--plum);font-size:15.5px;transition:.2s;font-family:'Sarabun'}
+.opt.on{border-color:var(--mag);background:var(--mag);color:#fff}
+.result{position:sticky;top:100px;background:var(--plum);color:#fff;border-radius:32px;padding:36px;overflow:hidden;min-height:380px}
+.result .soapbar{width:110px;height:76px;border-radius:24px;background:linear-gradient(145deg,var(--mag3),var(--mag2));box-shadow:inset -6px -8px 0 rgba(0,0,0,.12),inset 6px 6px 0 rgba(255,255,255,.35);display:grid;place-items:center;margin-bottom:20px;transform:rotate(-6deg)}
+.result .soapbar img{width:46px;filter:brightness(0) invert(1);opacity:.85}
+.result small{color:var(--gold2);font-weight:700;letter-spacing:.1em;font-family:'Noto Sans Thai'}
+.result h3{font-size:30px;margin:4px 0 8px}
+.result p{opacity:.9}
+.result .meta{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 24px}
+.result .meta span{background:rgba(255,255,255,.12);border-radius:999px;padding:5px 14px;font-size:14.5px}
+.result .alt{font-size:14.5px;opacity:.8;margin-top:16px}
+.result .bubble{animation-duration:9s}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.wcard{background:#fff;border-radius:var(--r);padding:30px 28px;border:1px solid var(--line);position:relative;overflow:hidden}
+.wcard::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0 10%,transparent 16%),radial-gradient(circle,var(--blush2),transparent 70%)}
+.wcard .n{font-family:'Noto Sans Thai';font-weight:800;font-size:32px;color:var(--gold);line-height:1}
+.wcard h3{font-size:19px;color:var(--plum);margin:12px 0 6px}
+.wcard p{color:var(--muted);font-size:15.5px}
+
+/* gallery */
+#gallery{background:var(--plum);color:#fff;overflow:hidden}
+#gallery .h2{color:#fff}#gallery .h2 em{color:var(--mag3)}
+#gallery .lead{color:#e8cdda}
+#gallery .eyebrow{color:var(--gold2)}
+.gal{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:44px}
+.gal figure{border-radius:22px;overflow:hidden;position:relative;aspect-ratio:9/14;background:#2c0a20}
+.gal figure:nth-child(even){transform:translateY(34px)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(74,18,54,.82);backdrop-filter:blur(6px);border-radius:12px;padding:8px 12px;font-size:13.5px;line-height:1.4}
+.gal figcaption b{font-family:'Noto Sans Thai';display:block;font-size:14.5px}
+.fbnote{margin-top:70px;text-align:center;color:#e8cdda;font-size:15px}
+.fbnote a{color:var(--gold2);font-weight:700;border-bottom:1px solid}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:46px;counter-reset:s}
+.step{position:relative;padding:28px 24px;background:#fff;border-radius:var(--r);border:1px solid var(--line)}
+.step .bub{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-family:'Noto Sans Thai';font-weight:800;font-size:22px;color:var(--mag);
+  background:radial-gradient(circle at 32% 28%,#fff 0 12%,transparent 18%),conic-gradient(from 200deg,#ffd3e5,#d9ecff,#fff1c9,#ead7ff,#ffd3e5);box-shadow:inset 0 0 10px #fff;margin-bottom:14px}
+.step h3{font-size:18.5px;color:var(--plum)}
+.step p{font-size:15.5px;color:var(--muted)}
+.step:not(:last-child)::after{content:"";position:absolute;right:-18px;top:54px;width:14px;height:14px;border-top:2px solid var(--mag3);border-right:2px solid var(--mag3);transform:rotate(45deg)}
+
+/* builder */
+#book{background:#fff}
+.bk{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;margin-top:40px;align-items:start}
+.form{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.field{margin-bottom:20px}
+.field label{display:block;font-family:'Noto Sans Thai';font-weight:700;color:var(--plum);margin-bottom:8px;font-size:15.5px}
+.field select,.field input,.field textarea{width:100%;font-family:'Sarabun';font-size:16px;border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;background:#fff;color:var(--ink);outline:none}
+.field select:focus,.field input:focus,.field textarea:focus{border-color:var(--mag)}
+.stepper{display:flex;align-items:center;gap:0;border:1.5px solid var(--line);border-radius:14px;background:#fff;width:max-content;overflow:hidden}
+.stepper button{width:48px;height:46px;border:0;background:#fff;font-size:22px;color:var(--mag);cursor:pointer;font-weight:700}
+.stepper button:hover{background:var(--blush)}
+.stepper output{width:56px;text-align:center;font-family:'Noto Sans Thai';font-weight:700;font-size:18px;color:var(--plum)}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg .opt{padding:8px 14px;font-size:15px}
+.msg{background:#e9f8ef;border-radius:var(--r);padding:26px;position:sticky;top:100px;border:1px solid #c6ead3}
+.msg .head{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.msg .head img{width:44px;height:44px;border-radius:50%;background:#fff;padding:5px;border:1px solid #d6eedf}
+.msg .head b{font-family:'Noto Sans Thai';color:#0b6b33}
+.msg .head span{display:block;font-size:13px;color:#4a7d5c}
+.bubble-msg{background:#fff;border-radius:20px 20px 6px 20px;padding:16px 18px;white-space:pre-wrap;font-size:15.5px;line-height:1.65;box-shadow:0 8px 20px -14px rgba(0,0,0,.3);margin-left:24px}
+.est{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:16px;padding:14px 18px;margin:16px 0}
+.est span{color:var(--muted);font-size:14.5px}
+.est b{font-family:'Noto Sans Thai';font-size:24px;color:var(--mag)}
+.msg .btns{display:flex;gap:10px;flex-wrap:wrap}
+.msg .btns .btn{flex:1}
+.copyok{font-size:13.5px;color:#0b6b33;margin-top:8px;min-height:20px}
+
+/* oils */
+#oils{background:linear-gradient(180deg,var(--cream),#fbf3e6)}
+.oil-wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:center;margin-top:10px}
+.oil-photo{border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5;border:8px solid #fff}
+.oil-photo img{width:100%;height:100%;object-fit:cover}
+.tabs{display:flex;gap:8px;margin:24px 0 18px}
+.oils{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.oilc{background:#fff;border:1px solid #efe1c8;border-radius:16px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.oilc .bt{width:22px;height:34px;flex:none;border-radius:6px 6px 8px 8px;background:linear-gradient(#6b3a12,#a0621f);position:relative;margin-top:4px}
+.oilc .bt::before{content:"";position:absolute;left:6px;top:-7px;width:10px;height:8px;border-radius:2px;background:var(--gold)}
+.oilc b{font-family:'Noto Sans Thai';color:var(--plum);font-size:15.5px;display:block;line-height:1.35}
+.oilc p{font-size:13.5px;color:var(--muted);line-height:1.5}
+.oilc .pr{font-size:13.5px;font-weight:700;color:var(--mag);margin-top:4px}
+.oils .hide{display:none}
+
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.rev{background:#fff;border-radius:var(--r);padding:28px;border:1px solid var(--line);position:relative}
+.rev .st{color:var(--gold);letter-spacing:3px;font-size:18px}
+.rev p{margin:10px 0 16px;font-size:16px}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev .av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-family:'Noto Sans Thai';font-weight:700;color:#fff;background:var(--mag2)}
+.rev .who b{font-family:'Noto Sans Thai';color:var(--plum);display:block;line-height:1.2}
+.rev .who span{font-size:13.5px;color:var(--muted)}
+.score{display:inline-flex;align-items:center;gap:16px;background:var(--plum);color:#fff;border-radius:999px;padding:10px 24px 10px 10px;margin-top:20px}
+.score b{background:var(--gold);border-radius:999px;padding:6px 16px;font-family:'Noto Sans Thai';font-size:20px}
+
+/* faq */
+#faq{background:#fff}
+.faq{max-width:860px;margin:40px auto 0}
+details{border:1px solid var(--line);border-radius:18px;margin-bottom:12px;background:var(--cream);overflow:hidden}
+summary{cursor:pointer;list-style:none;padding:18px 22px;font-family:'Noto Sans Thai';font-weight:700;color:var(--plum);font-size:17px;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;color:var(--mag);line-height:1;flex:none;transition:transform .25s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 22px 20px;color:var(--muted)}
+
+/* contact */
+#contact{background:var(--blush);overflow:hidden}
+.ct{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;margin-top:40px;align-items:stretch}
+.cinfo{background:#fff;border-radius:var(--r);padding:32px;border:1px solid var(--line)}
+.crow{display:flex;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line)}
+.crow:last-of-type{border-bottom:0}
+.crow .ci{width:44px;height:44px;border-radius:14px;background:var(--blush2);display:grid;place-items:center;flex:none}
+.crow .ci svg{width:22px;height:22px;stroke:var(--mag)}
+.crow b{font-family:'Noto Sans Thai';color:var(--plum);display:block;font-size:15px}
+.crow span,.crow a{font-size:15.5px;color:var(--ink)}
+.crow a:hover{color:var(--mag)}
+.cinfo .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.map{border-radius:var(--r);overflow:hidden;border:8px solid #fff;box-shadow:var(--shadow);min-height:440px;background:#eee}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+
+footer{background:var(--plum);color:#e8cdda;padding:44px 0 110px;font-size:14.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer img{height:96px;filter:brightness(1.25)}
+footer .demo{color:#f3d58f}
+
+/* floating */
+.fab{position:fixed;right:18px;bottom:18px;z-index:80;display:flex;flex-direction:column;gap:12px}
+.fab a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 14px 28px -10px rgba(0,0,0,.4);transition:transform .2s}
+.fab a:hover{transform:scale(1.08)}
+.fab svg{width:28px;height:28px}
+.fab .l{background:#06c755}.fab .c{background:var(--mag)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1020px){
+  .nav ul{display:none}
+  .hero .wrap,.finder,.bk,.oil-wrap,.ct,.more{grid-template-columns:1fr}
+  .hero-art{height:520px;max-width:520px;margin:0 auto;width:100%}
+  .why,.revs{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .step::after{display:none}
+  .gal{grid-template-columns:repeat(3,1fr)}
+  .gal figure:nth-child(even){transform:none}
+  .result,.msg{position:relative;top:0}
+  /* table -> cards */
+  .ctable,.ctable tbody,.ctable tr,.ctable td{display:block;width:100%}
+  .ctable{border:0;background:none;box-shadow:none;border-radius:0;overflow:visible}
+  .ctable thead{display:none}
+  .ctable tbody tr{background:#fff;border:1px solid var(--line);border-radius:22px;margin-bottom:16px;padding:6px 4px;box-shadow:0 16px 36px -30px rgba(74,18,54,.6)}
+  .ctable td{border:0;padding:10px 16px}
+  .ctable td[data-l]::before{content:attr(data-l);display:block;font-family:'Noto Sans Thai';font-weight:700;font-size:12.5px;letter-spacing:.06em;color:var(--gold);text-transform:uppercase;margin-bottom:2px}
+  .ctable td.pd{display:grid;grid-template-columns:1fr 1fr;gap:4px 20px}
+  .ctable td.pd::before{grid-column:1/-1}
+  .mlist{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  section{padding:72px 0}
+  .wrap{padding:0 18px}
+  .nav{height:66px}
+  .brand img{height:40px}
+  .brand .bt{font-size:14px}
+  .nav .btn{padding:9px 14px;font-size:14px}
+  .nav .btn svg{display:none}
+  .hero{padding:40px 0 70px}
+  .hero h1 .m{white-space:normal}
+  .hero-art{height:440px}
+  .arch{width:240px;height:340px;right:6px}
+  .circ{width:170px;height:170px;bottom:20px}
+  .tag-float{bottom:0;right:4px;padding:12px 16px;max-width:200px}
+  .tag-float b{font-size:24px}
+  .hero .bl2{right:200px}
+  .why,.revs,.steps,.oils{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .mlist{grid-template-columns:1fr}
+  .more{padding:24px}
+  .result{padding:28px}
+  .result h3{font-size:25px}
+  .form,.msg,.cinfo,.q{padding:22px}
+  .bubble-msg{margin-left:0}
+  .cta .btn{flex:1}
+  .ribbon .wrap{font-size:15px}
+  .map,.map iframe{min-height:320px}
+  .brand small{display:none}
+  .hero .bl1{width:110px;left:-46px;top:-40px}
+  .hero .bl2{width:80px;right:auto;left:62%;top:auto;bottom:440px}
+  .hero .bl3{width:96px;right:-34px;top:auto;bottom:40px}
+  .gal figure:last-child{grid-column:1/-1;aspect-ratio:16/10}
+  .gal figure:last-child img{object-position:center 30%}
+  .oil-photo{aspect-ratio:16/11}
+  .wcard{padding:24px 22px}
+  .wcard .n{font-size:26px}
+  .cinfo .btns .btn{flex:1 1 40%}
+  #contact>.bloom{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG sprites -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="bractG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f05a98"/><stop offset="1" stop-color="#b8104f"/>
+    </linearGradient>
+    <symbol id="bloom" viewBox="-60 -60 120 120">
+      <g>
+        <path d="M0 0 C-30 -12 -34 -48 0 -54 C34 -48 30 -12 0 0Z" fill="url(#bractG)"/>
+        <path d="M0 -6 L0 -44" stroke="#9c0d45" stroke-width="1.4" opacity=".45"/>
+      </g>
+      <g transform="rotate(120)">
+        <path d="M0 0 C-30 -12 -34 -48 0 -54 C34 -48 30 -12 0 0Z" fill="url(#bractG)"/>
+        <path d="M0 -6 L0 -44" stroke="#9c0d45" stroke-width="1.4" opacity=".45"/>
+      </g>
+      <g transform="rotate(240)">
+        <path d="M0 0 C-30 -12 -34 -48 0 -54 C34 -48 30 -12 0 0Z" fill="url(#bractG)"/>
+        <path d="M0 -6 L0 -44" stroke="#9c0d45" stroke-width="1.4" opacity=".45"/>
+      </g>
+      <circle r="7" fill="#fff8e6"/><circle r="3" fill="#e9c15a"/>
+    </symbol>
+    <symbol id="leaf" viewBox="0 0 40 20"><path d="M0 10 C10 -2 30 -2 40 10 C30 22 10 22 0 10Z" fill="#5f8f4a"/><path d="M2 10 H36" stroke="#3e6a2f" stroke-width="1"/></symbol>
+    <symbol id="i-line" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5C6.2 2.5 1.5 6.3 1.5 11c0 4.2 3.7 7.7 8.7 8.4.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 6-3.5 8.2-6.1 1.5-1.6 2.3-3.3 2.3-5.2 0-4.7-4.7-8.5-10.4-8.5zm-4.3 11.3H5.6c-.3 0-.6-.3-.6-.6V9c0-.3.3-.6.6-.6s.6.3.6.6v3.6h1.5c.3 0 .6.3.6.6s-.3.6-.6.6zm2.2-.6c0 .3-.3.6-.6.6s-.6-.3-.6-.6V9c0-.3.3-.6.6-.6s.6.3.6.6v4.2zm5 0c0 .3-.2.5-.4.6h-.2c-.2 0-.4-.1-.5-.2l-2.1-2.9v2.6c0 .3-.3.6-.6.6s-.6-.3-.6-.6V9c0-.3.2-.5.4-.6h.2c.2 0 .4.1.5.3l2.1 2.9V9c0-.3.3-.6.6-.6s.6.3.6.6v4.2zm3.4-2.7c.3 0 .6.3.6.6s-.3.6-.6.6h-1.5v.9h1.5c.3 0 .6.3.6.6s-.3.6-.6.6h-2.1c-.3 0-.6-.3-.6-.6V9c0-.3.3-.6.6-.6h2.1c.3 0 .6.3.6.6s-.3.6-.6.6h-1.5v.9h1.5z"/></symbol>
+    <symbol id="i-call" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+    <symbol id="c-soap" viewBox="0 0 32 32"><rect x="4" y="11" width="24" height="15" rx="6" fill="#f7b6cf"/><rect x="7" y="13" width="18" height="4" rx="2" fill="#fff" opacity=".55"/><circle cx="23" cy="7" r="4" fill="none" stroke="#c8175d" stroke-width="1.6"/><circle cx="15" cy="5" r="2.4" fill="none" stroke="#c8175d" stroke-width="1.4"/></symbol>
+    <symbol id="c-mini" viewBox="0 0 32 32"><rect x="5" y="8" width="22" height="18" rx="3" fill="#fbe1ea" stroke="#c8175d" stroke-width="1.6"/><path d="M5 15h22M12 8v18M20 8v18" stroke="#f05a98" stroke-width="1.3"/><circle cx="26" cy="6" r="3" fill="none" stroke="#b78b1e" stroke-width="1.5"/></symbol>
+    <symbol id="c-fancy" viewBox="0 0 32 32"><path d="M16 27c-7-4-11-8-11-13a5.5 5.5 0 0 1 11-1.5A5.5 5.5 0 0 1 27 14c0 5-4 9-11 13z" fill="#f7b6cf" stroke="#c8175d" stroke-width="1.5"/><path d="M10 13c1-2 3-2.5 4-2" stroke="#fff" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="c-grape" viewBox="0 0 32 32"><g fill="#d88fb8" stroke="#a63b78" stroke-width="1.1"><circle cx="11" cy="12" r="4"/><circle cx="19" cy="12" r="4"/><circle cx="15" cy="17" r="4"/><circle cx="23" cy="17" r="4"/><circle cx="11" cy="21" r="4"/><circle cx="19" cy="22" r="4"/><circle cx="15" cy="27" r="3.6"/></g><path d="M15 8 C15 5 17 3 20 3" stroke="#6b4a1e" stroke-width="1.6" fill="none"/><use href="#leaf" x="17" y="2" width="12" height="6"/></symbol>
+    <symbol id="c-candle" viewBox="0 0 32 32"><rect x="8" y="13" width="16" height="15" rx="3" fill="#fff4d6" stroke="#b78b1e" stroke-width="1.5"/><path d="M16 13V9" stroke="#6b4a1e" stroke-width="1.4"/><path d="M16 3c2.5 2.6 2.8 4.6 0 6.4-2.8-1.8-2.5-3.8 0-6.4z" fill="#f05a98"/><path d="M11 18h10" stroke="#e8cf8f" stroke-width="2"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Bougainvillea Soap">
+      <img src="assets/bgv-mark.png" alt="โลโก้ Bougainvillea">
+      <div><div class="bt">BOUGAINVILLEA</div><small>โบเกนเวียร์ สตูดิโอสอนทำสบู่ · ตลิ่งชัน</small></div>
+    </a>
+    <ul>
+      <li><a href="#courses">เทียบคอร์ส</a></li>
+      <li><a href="#finder">ช่วยเลือกคลาส</a></li>
+      <li><a href="#gallery">ผลงาน</a></li>
+      <li><a href="#oils">หัวน้ำหอม</a></li>
+      <li><a href="#faq">คำถามที่พบบ่อย</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+    <a class="btn btn-line" href="https://line.me/R/ti/p/@bgvsoap" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>เช็ครอบว่าง</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="bubbles" id="heroBubbles"></div>
+  <svg class="bloom bl1"><use href="#bloom"/></svg>
+  <svg class="bloom bl2"><use href="#bloom"/></svg>
+  <svg class="bloom bl3"><use href="#bloom"/></svg>
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Handmade Soap &amp; Aroma Studio</span>
+      <h1><span class="nw">มาเรียนทำ</span><span class="nw">สบู่แฮนด์เมด</span><br>กับ <span class="m">โบเกนเวียร์<svg viewBox="0 0 200 16" preserveAspectRatio="none"><path d="M2 11 C40 2 80 15 120 7 S180 4 198 9" stroke="#b78b1e" stroke-width="4" fill="none" stroke-linecap="round"/></svg></span></h1>
+      <p class="sub">สตูดิโอสอนทำสบู่แฮนด์เมดและหัวน้ำหอมสำหรับทำสบู่/skin care ย่านตลิ่งชัน คลาสเล็ก ๆ บรรยากาศอบอุ่น ได้ลงมือทำจริง และพาผลงานของตัวเองกลับบ้าน 💕</p>
+      <div class="chips">
+        <span class="chip"><i></i>คลาสเล็ก 1–4 ท่าน</span>
+        <span class="chip g"><i></i>มือใหม่เรียนได้ ไม่ต้องมีพื้นฐาน</span>
+        <span class="chip l"><i></i>อุปกรณ์ครบ ได้ผลงานกลับบ้านทุกคอร์ส</span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-mag" href="#courses">เทียบคอร์สและราคา</a>
+        <a class="btn btn-line" href="https://line.me/R/ti/p/@bgvsoap" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>ถามรอบว่างทาง LINE</a>
+      </div>
+    </div>
+    <div class="hero-art rv">
+      <div class="arch"><img src="assets/grape-soap.jpg" alt="สบู่พวงองุ่น 3D จากคลาส Grape Soap ของโบเกนเวียร์"></div>
+      <div class="circ"><img src="assets/soap-pour.jpg" alt="การเทสบู่หลายสีในพิมพ์"></div>
+      <div class="tag-float"><b>100%</b><span>แนะนำบนเพจ Facebook<br>(จาก 20 รีวิว)</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="ribbon">
+  <div class="wrap">
+    <span>🌸 <b>ตารางเรียนออกใหม่ทุกเดือน</b> — รอบว่างยืนยันกับแอดมินทาง LINE เท่านั้น เพราะแต่ละรอบรับจำนวนจำกัด</span>
+    <a href="https://line.me/R/ti/p/@bgvsoap" target="_blank" rel="noopener">LINE @bgvsoap</a>
+  </div>
+</div>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Course comparison</span>
+      <h2 class="h2">เทียบคอร์ส <em>เลือกคลาสที่ใช่</em> ก่อนทักจองรอบ</h2>
+      <p class="lead">สรุปจากโพสต์คลาสของสตูดิโอ: ได้เรียนอะไร ใช้เวลาเท่าไร ราคาต่อท่าน และได้อะไรกลับบ้าน กดปุ่ม "เลือกคอร์สนี้" แล้วระบบจะเตรียมข้อความถามรอบว่างไว้ให้</p>
+    </div>
+    <div class="filters rv" id="filters">
+      <button class="fbtn on" data-f="all">ทั้งหมด</button>
+      <button class="fbtn" data-f="soap">คลาสสบู่</button>
+      <button class="fbtn" data-f="aroma">เครื่องหอม</button>
+      <button class="fbtn" data-f="kids">พาเด็กมาได้</button>
+      <button class="fbtn" data-f="short">ไม่เกิน 2 ชม.</button>
+      <button class="fbtn" data-f="group">มาเป็นกลุ่มคุ้ม</button>
+    </div>
+    <table class="ctable rv" id="ctable">
+      <thead><tr><th>คอร์ส</th><th>สิ่งที่ได้เรียน</th><th>เวลา / ขนาดคลาส</th><th>ราคา</th><th>ได้กลับบ้าน</th></tr></thead>
+      <tbody>
+        <tr data-tags="soap" data-id="basic">
+          <td><div class="cname"><div class="ic"><svg><use href="#c-soap"/></svg></div><div><h3>Basic Soap Making</h3><div class="th">หลักสูตรพื้นฐาน สบู่น้ำมันธรรมชาติ (กวนเย็น)</div><div class="tags"><span class="tg p">ยอดฮิต</span><span class="tg">มือใหม่</span></div></div></div></td>
+          <td data-l="สิ่งที่ได้เรียน"><ul><li>ความรู้อัดแน่น ทั้งทฤษฎีและปฏิบัติ</li><li>ทำสบู่น้ำมันธรรมชาติแบบกวนเย็นด้วยตัวเอง</li><li>สอบถามครูได้หลังเรียน</li></ul></td>
+          <td data-l="เวลา / ขนาดคลาส" class="pd"><div class="dur">3–3.5 ชม.<small>รอบเช้า 9.00–12.00 / บ่าย 13.30–16.30</small></div><div class="dur">1–4 ท่าน<small>กลุ่มย่อย</small></div></td>
+          <td data-l="ราคา"><div class="price">2,900.-<small>บาท / ท่าน</small></div><button class="pick" data-pick="basic">เลือกคอร์สนี้</button></td>
+          <td data-l="ได้กลับบ้าน"><ul><li>สบู่ฝีมือตัวเอง</li><li>สูตรและความรู้ไปทำต่อเองได้</li></ul></td>
+        </tr>
+        <tr data-tags="soap short" data-id="mini">
+          <td><div class="cname"><div class="ic"><svg><use href="#c-mini"/></svg></div><div><h3>Mini Soap Workshop</h3><div class="th">Design Your Own Cold Process Soap</div><div class="tags"><span class="tg">ลองก่อนเรียนเต็ม</span></div></div></div></td>
+          <td data-l="สิ่งที่ได้เรียน"><ul><li>ทำสบู่กวนเย็น 1 โมล</li><li>เลือกสี กลิ่น และลวดลายได้เอง</li><li>เน้นลงมือทำทุกขั้นตอน (ไม่มีภาคทฤษฎี)</li></ul></td>
+          <td data-l="เวลา / ขนาดคลาส" class="pd"><div class="dur">1 ชม.<small>วันอาทิตย์ 13.00–14.00 / 14.00–15.00</small></div><div class="dur">ไม่เกิน 4 ท่าน<small>ต่อรอบ</small></div></td>
+          <td data-l="ราคา"><div class="price">2,500.-<small>บาท / ท่าน (ราคาปกติ)</small><span class="promo">มีโปรเป็นช่วง ๆ</span></div><button class="pick" data-pick="mini">เลือกคอร์สนี้</button></td>
+          <td data-l="ได้กลับบ้าน"><ul><li>สบู่ที่ทำเอง</li><li>พร้อมโมลสบู่</li></ul></td>
+        </tr>
+        <tr data-tags="soap kids short" data-id="fancy">
+          <td><div class="cname"><div class="ic"><svg><use href="#c-fancy"/></svg></div><div><h3>Fancy Soap Workshop</h3><div class="th">สบู่แฟนซีจากเบสสบู่หลอมเท (Melt &amp; Pour)</div><div class="tags"><span class="tg">มือใหม่</span><span class="tg y">เด็กเรียนได้</span></div></div></div></td>
+          <td data-l="สิ่งที่ได้เรียน"><ul><li>เลือกและใช้งานเบสสบู่ หลอมและคุมอุณหภูมิ</li><li>ผสมสี-กลิ่น เทหลายสี / หลายเลเยอร์</li><li>ทำชิ้นส่วนตกแต่ง แกะพิมพ์ และแพ็กสบู่</li></ul></td>
+          <td data-l="เวลา / ขนาดคลาส" class="pd"><div class="dur">~2 ชม.<small>รอบบ่าย 13.00–15.00</small></div><div class="dur">1–3 คน<small>ต่อคลาส</small></div></td>
+          <td data-l="ราคา"><div class="price">3,600.-<small>บาท / คน</small></div><button class="pick" data-pick="fancy">เลือกคอร์สนี้</button></td>
+          <td data-l="ได้กลับบ้าน"><ul><li>สบู่แฟนซีฝีมือตัวเอง</li><li>ความรู้ที่นำไปทำต่อได้จริง</li></ul></td>
+        </tr>
+        <tr data-tags="soap short group" data-id="grape">
+          <td><div class="cname"><div class="ic"><svg><use href="#c-grape"/></svg></div><div><h3>Grape Soap &amp; Fancy Design Soap</h3><div class="th">สบู่พวงองุ่น 3D + สบู่แฟนซีธีมทะเล</div><div class="tags"><span class="tg p">คลาสใหม่</span><span class="tg y">2–3 ท่าน ลด 500</span></div></div></div></td>
+          <td data-l="สิ่งที่ได้เรียน"><ul><li>เทคนิคสบู่ MP พร้อมการขึ้นรูปและตกแต่ง</li><li>สบู่พวงองุ่น 3D ที่ดูเหมือนองุ่นจริง</li><li>สบู่แฟนซี Ocean Theme ต่อยอดเป็นของขวัญ/สินค้าได้</li></ul></td>
+          <td data-l="เวลา / ขนาดคลาส" class="pd"><div class="dur">2 ชม.<small>รอบบ่าย 13.00–15.00</small></div><div class="dur">คลาสเล็ก<small>ดูแลใกล้ชิดทุกขั้นตอน</small></div></td>
+          <td data-l="ราคา"><div class="price">3,500.-<small>บาท / ท่าน · มา 2–3 ท่าน เหลือ 3,000.- / ท่าน</small></div><button class="pick" data-pick="grape">เลือกคอร์สนี้</button></td>
+          <td data-l="ได้กลับบ้าน"><ul><li>สบู่พวงองุ่น 2 ชิ้น</li><li>สบู่พวงแฟนซี 1 ชิ้น</li><li>สบู่ธีมทะเล 4 ชิ้น (100 กรัม/ชิ้น)</li></ul></td>
+        </tr>
+        <tr data-tags="aroma" data-id="aroma">
+          <td><div class="cname"><div class="ic"><svg><use href="#c-candle"/></svg></div><div><h3>Home Aroma &amp; Basic Candle</h3><div class="th">หอมครบ…จบในคลาสเดียว</div><div class="tags"><span class="tg">มือใหม่</span><span class="tg y">ต่อยอดอาชีพเสริม</span></div></div></div></td>
+          <td data-l="สิ่งที่ได้เรียน"><ul><li>ถุงหอมหินภูเขาไฟ + เลือกสารช่วยกระจายกลิ่น</li><li>Room Spray สูตรไม่มีแอลกอฮอล์</li><li>พื้นฐานเทียนหอม และ Wax หอมแต่งบ้าน</li></ul></td>
+          <td data-l="เวลา / ขนาดคลาส" class="pd"><div class="dur">3 ชม.<small>รอบบ่าย 13.00–16.00</small></div><div class="dur">จับมือทำ<small>อุปกรณ์ครบ</small></div></td>
+          <td data-l="ราคา"><div class="price">3,900.-<small>บาท / คน</small></div><button class="pick" data-pick="aroma">เลือกคอร์สนี้</button></td>
+          <td data-l="ได้กลับบ้าน"><ul><li>Room Spray ยูคาลิปตัส 3 ขวด</li><li>เทียนหอมไขถั่วเหลือง</li><li>แว็กซ์หอมแต่งบ้าน + ถุงหอมหินภูเขาไฟ</li></ul></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="tnote rv">* ราคาและรายละเอียดอ้างอิงจากโพสต์คลาสบนเพจ Facebook ของสตูดิโอ อาจมีการปรับตามรอบ/โปรโมชัน กรุณายืนยันกับแอดมินทาง LINE ก่อนชำระเงิน</p>
+
+    <div class="more rv">
+      <div>
+        <h3>คลาสอื่น ๆ ที่เปิดสอนด้วย</h3>
+        <p>คลาสเหล่านี้มีในตารางเรียนประจำเดือน ราคาและรายละเอียดสอบถามแอดมินได้เลยค่ะ</p>
+      </div>
+      <div class="mlist">
+        <div class="mi"><b>Cupcake Soap</b><span>สบู่คัพเค้ก</span></div>
+        <div class="mi"><b>Bath Bomb &amp; Bubble Bath</b><span>ของฟินสำหรับทริปทะเล</span></div>
+        <div class="mi"><b>Design Your Own Perfume</b><span>ออกแบบน้ำหอมของตัวเอง</span></div>
+        <div class="mi"><b>Room Diffuser Base</b><span>ก้านไม้หอมแต่งบ้าน</span></div>
+        <div class="mi"><b>Master of HP Soap</b><span>สบู่กวนร้อน (Hot Process)</span></div>
+        <div class="mi"><b>Advanced Soap Making</b><span>ต่อยอดหลังคอร์สพื้นฐาน</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINDER -->
+<section id="finder">
+  <div class="bubbles" id="finderBubbles"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <div class="center rv">
+      <span class="eyebrow">Class finder</span>
+      <h2 class="h2">ยังเลือกไม่ถูก? <em>ตอบ 3 ข้อ</em> เดี๋ยวช่วยเลือกให้</h2>
+      <p class="lead">ระบบจะแนะนำคลาสที่เหมาะกับเวลา งบ และสิ่งที่อยากได้กลับบ้าน</p>
+    </div>
+    <div class="finder">
+      <div class="rv">
+        <div class="q" data-q="want"><h4><span>1</span>อยากทำอะไรกลับบ้าน?</h4>
+          <div class="opts"><button class="opt on" data-v="natural">สบู่น้ำมันธรรมชาติ ใช้เองได้จริง</button><button class="opt" data-v="cute">สบู่น่ารัก ๆ ไว้เป็นของขวัญ</button><button class="opt" data-v="aroma">เทียนหอม / ของหอมแต่งบ้าน</button></div></div>
+        <div class="q" data-q="time"><h4><span>2</span>มีเวลาประมาณเท่าไร?</h4>
+          <div class="opts"><button class="opt" data-v="1">ราว 1 ชั่วโมง</button><button class="opt on" data-v="2">2 ชั่วโมงกำลังดี</button><button class="opt" data-v="3">ครึ่งวันได้เลย</button></div></div>
+        <div class="q" data-q="who"><h4><span>3</span>มากับใคร?</h4>
+          <div class="opts"><button class="opt on" data-v="solo">มาคนเดียว</button><button class="opt" data-v="friends">มากับเพื่อน 2–3 คน</button><button class="opt" data-v="kids">พาลูกมาด้วย</button></div></div>
+      </div>
+      <div class="result rv" id="result">
+        <div class="bubbles" id="resultBubbles"></div>
+        <div style="position:relative;z-index:2">
+          <div class="soapbar"><img src="assets/bgv-mark.png" alt=""></div>
+          <small>คลาสที่แนะนำ</small>
+          <h3 id="rName">Basic Soap Making</h3>
+          <p id="rWhy">-</p>
+          <div class="meta" id="rMeta"></div>
+          <div class="cta"><button class="btn btn-mag" id="rPick">ใช้คลาสนี้เตรียมข้อความ</button></div>
+          <p class="alt" id="rAlt"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Why Bougainvillea</span>
+      <h2 class="h2">คลาสเล็ก <em>ดูแลใกล้ชิด</em> ทุกขั้นตอน</h2>
+    </div>
+    <div class="why">
+      <div class="wcard rv"><div class="n">1–4 ท่าน</div><h3>คลาสเล็ก Private / Small Group</h3><p>เรียนแบบ Private / Small Group ครูดูแลได้ทั่วถึง ถามได้ตลอดคลาส</p></div>
+      <div class="wcard rv"><div class="n">ทำจริง</div><h3>จับมือทำทุกขั้นตอน</h3><p>เรียนแบบจับมือทำ อุปกรณ์ครบ ไม่ต้องเตรียมอะไรมา มีผลงานกลับบ้านทุกคอร์ส</p></div>
+      <div class="wcard rv"><div class="n">มือใหม่</div><h3>ไม่ต้องมีพื้นฐาน</h3><p>มือใหม่เรียนได้ บางคลาสพาเด็ก ๆ มาเรียนสนุก ๆ ได้ด้วย</p></div>
+      <div class="wcard rv"><div class="n">ต่อยอด</div><h3>ทำใช้เอง ทำของขวัญ ทำขาย</h3><p>สูตรและเทคนิคใช้ได้จริง ทั้งทำใช้เอง ทำเป็นของขวัญ หรือเริ่มขายเป็นอาชีพเสริม</p></div>
+      <div class="wcard rv"><div class="n">14+ กลิ่น</div><h3>หัวน้ำหอมของสตูดิโอ</h3><p>หัวน้ำหอมสำหรับสบู่น้ำมัน แบบไม่เร่งเทรส/เทรสช้า เลือกกลิ่นมาทำต่อที่บ้านได้</p></div>
+      <div class="wcard rv"><div class="n">จอดรถได้</div><h3>สตูดิโอบ้าน ตลิ่งชัน</h3><p>สตูดิโอเป็นบ้านในซอยแก้วเงินทอง 40/1 ตลิ่งชัน เดินทางสะดวกทั้งรถส่วนตัวและรถเมล์</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <svg class="bloom" style="width:220px;right:-60px;top:-50px;opacity:.5;transform:rotate(30deg)"><use href="#bloom"/></svg>
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">From the studio</span>
+      <h2 class="h2">บรรยากาศและ <em>ผลงานจากคลาส</em></h2>
+      <p class="lead">ภาพจากคลิป Reels บนเพจของโบเกนเวียร์</p>
+    </div>
+    <div class="gal">
+      <figure class="rv"><img src="assets/grape-soap.jpg" alt="สบู่พวงองุ่น" loading="lazy"><figcaption><b>Grape Soap</b>สบู่พวงองุ่น 3D</figcaption></figure>
+      <figure class="rv"><img src="assets/soap-pour.jpg" alt="เทสบู่ลวดลาย" loading="lazy"><figcaption><b>สบู่ลวดลาย</b>เทหลายสีในพิมพ์</figcaption></figure>
+      <figure class="rv"><img src="assets/christmas-soap.jpg" alt="สบู่ลายต้นคริสต์มาส" loading="lazy"><figcaption><b>Christmas Soap</b>สบู่น้ำมันลายต้นคริสต์มาส</figcaption></figure>
+      <figure class="rv"><img src="assets/home-aroma.jpg" alt="ผลิตภัณฑ์เครื่องหอมโบเกนเวียร์" loading="lazy"><figcaption><b>Home Aroma</b>เทียนหอม ก้านไม้หอม รูมสเปรย์</figcaption></figure>
+      <figure class="rv"><img src="assets/booth.jpg" alt="บูทโบเกนเวียร์" loading="lazy"><figcaption><b>ออกบูท</b>ไลน์เครื่องหอมของโบเกนเวียร์</figcaption></figure>
+    </div>
+    <p class="fbnote rv">ดูผลงานนักเรียนและตารางเรียนล่าสุดได้ที่ <a href="https://www.facebook.com/bgvsoap/" target="_blank" rel="noopener">facebook.com/bgvsoap</a></p>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section id="steps">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow">How to book</span>
+      <h2 class="h2">จองคลาสง่าย ๆ <em>4 ขั้นตอน</em></h2>
+      <p class="lead">หน้านี้ไม่มีตารางสด เพราะรอบเรียนเปลี่ยนทุกเดือน และที่นั่งแต่ละรอบมีจำกัด แอดมินจะยืนยันรอบว่างให้ทาง LINE ค่ะ</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><div class="bub">1</div><h3>เลือกคอร์ส</h3><p>เทียบจากตารางด้านบน หรือให้ตัวช่วยเลือกแนะนำ</p></div>
+      <div class="step rv"><div class="bub">2</div><h3>ทัก LINE ถามรอบ</h3><p>ส่งชื่อคอร์ส จำนวนคน และวันที่สะดวก ไปที่ @bgvsoap</p></div>
+      <div class="step rv"><div class="bub">3</div><h3>ยืนยันที่นั่ง</h3><p>แอดมินแจ้งรอบที่ว่างและวิธียืนยันการจอง</p></div>
+      <div class="step rv"><div class="bub">4</div><h3>มาสนุกที่สตูดิโอ</h3><p>ลงมือทำจริง แล้วพาผลงานของตัวเองกลับบ้าน</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUILDER -->
+<section id="book">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Ask on LINE</span>
+      <h2 class="h2">เตรียมข้อความ <em>ถามรอบว่าง</em> ในคลิกเดียว</h2>
+      <p class="lead">เลือกคอร์ส จำนวนคน และช่วงที่สะดวก ระบบจะคำนวณค่าเรียนเบื้องต้นและเขียนข้อความให้ กดส่งเข้า LINE ได้เลย</p>
+    </div>
+    <div class="bk">
+      <div class="form rv">
+        <div class="field"><label for="fCourse">คอร์สที่สนใจ</label>
+          <select id="fCourse">
+            <option value="basic">Basic Soap Making — 2,900 บาท/ท่าน</option>
+            <option value="mini">Mini Soap Workshop — 2,500 บาท/ท่าน</option>
+            <option value="fancy">Fancy Soap Workshop — 3,600 บาท/คน</option>
+            <option value="grape">Grape Soap &amp; Fancy Design Soap — 3,500 บาท/ท่าน</option>
+            <option value="aroma">Home Aroma &amp; Basic Candle — 3,900 บาท/คน</option>
+            <option value="other">คลาสอื่น ๆ (Perfume / Diffuser / HP / Bath Bomb ฯลฯ)</option>
+          </select></div>
+        <div class="field"><label>จำนวนผู้เรียน</label>
+          <div class="stepper"><button type="button" id="minus" aria-label="ลด">−</button><output id="pax">1</output><button type="button" id="plus" aria-label="เพิ่ม">+</button></div></div>
+        <div class="field"><label>ช่วงที่สะดวก</label>
+          <div class="seg" id="fDay"><button class="opt on" data-v="เสาร์-อาทิตย์">เสาร์-อาทิตย์</button><button class="opt" data-v="วันธรรมดา">วันธรรมดา</button><button class="opt" data-v="ได้ทุกวัน">ได้ทุกวัน</button></div></div>
+        <div class="field"><label>ช่วงเวลา</label>
+          <div class="seg" id="fTime"><button class="opt" data-v="รอบเช้า">รอบเช้า</button><button class="opt on" data-v="รอบบ่าย">รอบบ่าย</button><button class="opt" data-v="รอบไหนก็ได้">รอบไหนก็ได้</button></div></div>
+        <div class="field"><label for="fDate">วันที่อยากเรียน (ถ้ามี)</label><input id="fDate" placeholder="เช่น ปลายเดือนพฤศจิกายน / ส. 22 พ.ย."></div>
+        <div class="field"><label for="fName">ชื่อเล่น</label><input id="fName" placeholder="เช่น มิ้นท์"></div>
+        <div class="field" style="margin-bottom:0"><label for="fNote">เพิ่มเติม</label><textarea id="fNote" rows="2" placeholder="เช่น เรียนเป็นของขวัญวันเกิด / พาลูก 8 ขวบมาด้วย"></textarea></div>
+      </div>
+      <div class="msg rv">
+        <div class="head"><img src="assets/bgv-mark.png" alt=""><div><b>LINE @bgvsoap</b><span>ตัวอย่างข้อความที่จะส่ง</span></div></div>
+        <div class="bubble-msg" id="preview"></div>
+        <div class="est"><span id="estLabel">ค่าเรียนเบื้องต้น</span><b id="estVal">2,900 บาท</b></div>
+        <div class="btns">
+          <a class="btn btn-line" id="sendLine" href="https://line.me/R/ti/p/@bgvsoap" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>ส่งทาง LINE</a>
+          <button class="btn btn-ghost" id="copyBtn">คัดลอกข้อความ</button>
+        </div>
+        <div class="copyok" id="copyOk"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OILS -->
+<section id="oils">
+  <div class="wrap">
+    <div class="oil-wrap">
+      <div class="oil-photo rv"><img src="assets/home-aroma.jpg" alt="หัวน้ำหอมและเครื่องหอมของโบเกนเวียร์" loading="lazy"></div>
+      <div class="rv">
+        <span class="eyebrow">Fragrance oils</span>
+        <h2 class="h2">หัวน้ำหอม <em>สำหรับทำสบู่</em></h2>
+        <p class="lead">หัวน้ำหอมแท้ 100% ส่งตรงจากโรงงาน มีทั้งแบบไม่เร่งเทรส/เทรสช้าสำหรับสบู่น้ำมัน และแบบเร่งเทรสสำหรับเครื่องหอมหรือเบสสบู่สำเร็จรูป</p>
+        <div class="tabs"><button class="fbtn on" data-o="slow">ไม่เร่งเทรส (สบู่น้ำมัน)</button><button class="fbtn" data-o="fast">เร่งเทรส (เครื่องหอม)</button></div>
+        <div class="oils" id="oilList">
+          <div class="oilc" data-o="slow"><i class="bt"></i><div><b>Citrus Herb</b><p>สมุนไพรเบลนด์ผลไม้เขตร้อน ฟีลพักผ่อนที่สวนหน้าบ้าน</p><div class="pr">30 g = 130 บาท · 100 g = 295 บาท</div></div></div>
+          <div class="oilc" data-o="slow"><i class="bt"></i><div><b>Rosy time</b><p>แนวชากุหลาบ หอมหวานผ่อนคลาย</p><div class="pr">30 g = 130 บาท · 100 g = 295 บาท</div></div></div>
+          <div class="oilc" data-o="slow"><i class="bt"></i><div><b>White tea</b><p>สดชื่น ดอกไม้หอมอ่อน ๆ เจือ herb นิด ๆ</p><div class="pr">30 g = 170 บาท · 100 g = 375 บาท</div></div></div>
+          <div class="oilc" data-o="slow"><i class="bt"></i><div><b>Rice milk soft</b><p>นมข้าวเบลนด์ หอมละมุน ๆ</p><div class="pr">30 g = 115 บาท · 100 g = 330 บาท</div></div></div>
+          <div class="oilc" data-o="slow"><i class="bt"></i><div><b>Bamboo forest</b><p>กลิ่นป่าไผ่ ได้ฟีลธรรมชาติ</p><div class="pr">30 g = 190 บาท · 100 g = 510 บาท</div></div></div>
+          <div class="oilc" data-o="slow"><i class="bt"></i><div><b>Old garden rose</b><p>ดอกกุหลาบ หอมนุ่มแบบลึกลับ</p><div class="pr">30 g = 120 บาท · 100 g = 325 บาท</div></div></div>
+          <div class="oilc hide" data-o="fast"><i class="bt"></i><div><b>Black Burburry</b><p>แนวน้ำหอม หอมเย้ายวนหวาน</p><div class="pr">30 g = 170 บาท · 100 g = 400 บาท</div></div></div>
+          <div class="oilc hide" data-o="fast"><i class="bt"></i><div><b>Blooming daisy</b><p>หวานซ่อนเปรี้ยว floral + citrus เหมาะทำน้ำหอม</p><div class="pr">30 g = 250 บาท · 100 g = 700 บาท</div></div></div>
+          <div class="oilc hide" data-o="fast"><i class="bt"></i><div><b>Pomegranate Blush</b><p>Fruity Floral จบแบบแป้งสะอาด นุ่ม feminine</p><div class="pr">30 g = 210 บาท · 100 g = 650 บาท</div></div></div>
+          <div class="oilc hide" data-o="fast"><i class="bt"></i><div><b>Amber spice</b><p>Warm Spicy Gourmand อบอุ่น นุ่มลึก</p><div class="pr">30 g = 200 บาท · 100 g = 600 บาท</div></div></div>
+        </div>
+        <p class="tnote">ราคาจากโพสต์อัปเดตหัวน้ำหอมของสตูดิโอ มีกลิ่นอื่นอีก สั่งหรือสอบถามทาง LINE ได้ค่ะ</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow">Reviews</span>
+      <h2 class="h2">เสียงจาก <em>นักเรียนตัวน้อยตัวใหญ่</em></h2>
+      <div class="score"><b>100%</b><span>แนะนำ จาก 20 รีวิวบนเพจ Facebook</span></div><br>
+      <span class="sample">รีวิวด้านล่างเป็นตัวอย่างสำหรับเดโม — จะแทนด้วยรีวิวจริงของลูกค้า</span>
+    </div>
+    <div class="revs">
+      <div class="rev rv"><div class="st">★★★★★</div><p>"ไม่เคยทำสบู่มาก่อนเลย ครูอธิบายละเอียดมาก ทั้งทฤษฎีและลงมือทำ กลับบ้านไปลองทำเองต่อได้จริงค่ะ"</p><div class="who"><div class="av">ป</div><div><b>คุณปลา</b><span>Basic Soap Making</span></div></div></div>
+      <div class="rev rv"><div class="st">★★★★★</div><p>"พาลูกสาวมาทำสบู่แฟนซี น้องสนุกมาก ได้เลือกสีกลิ่นเอง ที่สตูดิโอน่ารัก บรรยากาศเหมือนมาบ้านเพื่อน"</p><div class="who"><div class="av" style="background:#b78b1e">ก</div><div><b>คุณกิ๊ฟ</b><span>Fancy Soap Workshop</span></div></div></div>
+      <div class="rev rv"><div class="st">★★★★★</div><p>"มากับเพื่อนสามคน ได้ราคากลุ่ม สบู่พวงองุ่นเหมือนจริงจนคนที่บ้านนึกว่ากินได้ 555 เอาไปเป็นของขวัญปีใหม่พอดี"</p><div class="who"><div class="av" style="background:#4f7d3f">น</div><div><b>คุณนุ่น</b><span>Grape Soap &amp; Fancy Design</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center rv">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="h2">คำถามที่ <em>ถามกันบ่อย</em></h2>
+    </div>
+    <div class="faq rv">
+      <details open><summary>ไม่เคยทำสบู่มาก่อน เรียนได้ไหม?</summary><p>ได้ค่ะ ทุกคลาสออกแบบให้มือใหม่เรียนได้ ไม่จำเป็นต้องมีพื้นฐาน ถ้าอยากรู้ทฤษฎีแน่น ๆ แนะนำ Basic Soap Making ถ้าอยากลองสนุก ๆ ก่อน เริ่มที่ Mini Soap Workshop หรือ Fancy Soap ได้ค่ะ</p></details>
+      <details><summary>พาเด็กมาเรียนได้ไหม?</summary><p>คลาส Fancy Soap (สบู่หลอมเท) เด็ก ๆ มาเรียนสนุก ๆ ได้ค่ะ คลาสสบู่น้ำมันกวนเย็นใช้สารที่ต้องระวัง จึงควรสอบถามอายุที่เหมาะสมกับแอดมินก่อน</p></details>
+      <details><summary>ทำไมในเว็บไม่มีตารางรอบเรียน?</summary><p>สตูดิโอประกาศตารางใหม่ทุกเดือนบนเพจ และแต่ละรอบรับจำนวนจำกัด รอบว่างจึงยืนยันผ่าน LINE @bgvsoap เท่านั้น เพื่อไม่ให้ข้อมูลคลาดเคลื่อนค่ะ</p></details>
+      <details><summary>มาเป็นกลุ่มมีส่วนลดไหม?</summary><p>คลาส Grape Soap &amp; Fancy Design Soap สมัครพร้อมกัน 2–3 ท่าน ลด 500 บาท/ท่าน (เหลือ 3,000 บาท) คลาสอื่น ๆ และกลุ่มใหญ่/งานบริษัท สอบถามแอดมินได้ค่ะ</p></details>
+      <details><summary>ต้องเตรียมอะไรไปบ้าง?</summary><p>ไม่ต้องเตรียมค่ะ อุปกรณ์ครบในคลาส แนะนำใส่เสื้อผ้าสบาย ๆ แล้วมาลงมือทำได้เลย ผลงานแพ็กกลับบ้านได้</p></details>
+      <details><summary>เดินทางไปสตูดิโออย่างไร?</summary><p>สตูดิโออยู่ 414 ซอยแก้วเงินทอง 40/1 ตลิ่งชัน ค้นหา "Bougainvillea soap" ใน Google Maps ได้เลย มีที่จอดรถ ถ้ามารถเมล์ สาย 79 ลงป้ายซอยแก้วเงินทอง แล้วเดินเข้าซอยประมาณ 3 นาที</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <svg class="bloom" style="width:180px;left:-50px;bottom:-40px;transform:rotate(-30deg);opacity:.8"><use href="#bloom"/></svg>
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Visit the studio</span>
+      <h2 class="h2">แวะมาสร้างสรรค์ผลงาน <em>ที่โบเกนเวียร์</em></h2>
+    </div>
+    <div class="ct">
+      <div class="cinfo rv">
+        <div class="crow"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><div><b>ที่อยู่สตูดิโอ</b><span>414 ซอยแก้วเงินทอง 40/1 แขวงฉิมพลี เขตตลิ่งชัน กรุงเทพฯ 10170</span></div></div>
+        <div class="crow"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div><div><b>โทร (คุณแอน)</b><a href="tel:0836235491">083-623-5491</a></div></div>
+        <div class="crow"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4-.9L3 20l1.1-4A8.4 8.4 0 1 1 21 11.5z"/></svg></div><div><b>LINE</b><a href="https://line.me/R/ti/p/@bgvsoap" target="_blank" rel="noopener">@bgvsoap</a></div></div>
+        <div class="crow"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M15 3h-3a4 4 0 0 0-4 4v3H6v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div><div><b>Facebook</b><a href="https://www.facebook.com/bgvsoap/" target="_blank" rel="noopener">Bougainvillea soap</a></div></div>
+        <div class="crow"><div class="ci"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><div><b>อีเมล</b><a href="mailto:bgvsoap@gmail.com">bgvsoap@gmail.com</a></div></div>
+        <div class="btns">
+          <a class="btn btn-line" href="https://line.me/R/ti/p/@bgvsoap" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>เช็ครอบว่าง</a>
+          <a class="btn btn-mag" href="tel:0836235491"><svg><use href="#i-call"/></svg>โทรเลย</a>
+          <a class="btn btn-ghost" href="https://maps.app.goo.gl/GpdySUwSKYTESabD8" target="_blank" rel="noopener">นำทาง</a>
+        </div>
+      </div>
+      <div class="map rv"><iframe title="แผนที่ Bougainvillea soap" loading="lazy" src="https://maps.google.com/maps?q=Bougainvillea%20soap%20414%20%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%AD%E0%B8%87%2040%2F1%20%E0%B8%95%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B8%99&z=15&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/bgv-logo.png" alt="Bougainvillea">
+    <div>© Bougainvillea Soap Studio · ตลิ่งชัน กรุงเทพฯ<br><span class="demo">เว็บไซต์ตัวอย่าง (เดโม) จัดทำจากข้อมูลสาธารณะบนเพจ — รีวิวเป็นตัวอย่าง ราคาโปรดยืนยันกับสตูดิโอ</span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="l" href="https://line.me/R/ti/p/@bgvsoap" target="_blank" rel="noopener" aria-label="LINE"><svg style="color:#fff"><use href="#i-line"/></svg></a>
+  <a class="c" href="tel:0836235491" aria-label="โทร"><svg style="color:#fff"><use href="#i-call"/></svg></a>
+</div>
+
+<script>
+const C={
+  basic:{name:'Basic Soap Making',price:2900,unit:'ท่าน',dur:'3–3.5 ชม.',size:'1–4 ท่าน',why:'คอร์สพื้นฐานที่ได้ทั้งทฤษฎีและปฏิบัติ ทำสบู่น้ำมันธรรมชาติแบบกวนเย็นที่ใช้เองได้จริง และกลับไปทำต่อเองที่บ้านได้'},
+  mini:{name:'Mini Soap Workshop',price:2500,unit:'ท่าน',dur:'1 ชม.',size:'ไม่เกิน 4 ท่าน',why:'อยากลองทำสบู่กวนเย็นแต่ยังไม่พร้อมเรียนเต็ม ชั่วโมงเดียวได้เลือกสี กลิ่น ลาย เอง พร้อมรับสบู่และโมลกลับบ้าน'},
+  fancy:{name:'Fancy Soap Workshop',price:3600,unit:'คน',dur:'~2 ชม.',size:'1–3 คน',why:'สบู่หลอมเทออกแบบสี กลิ่น รูปทรงได้ตามใจ มือใหม่และเด็ก ๆ สนุกได้ เหมาะกับครอบครัว'},
+  grape:{name:'Grape Soap & Fancy Design Soap',price:3500,unit:'ท่าน',dur:'2 ชม.',size:'คลาสเล็ก',why:'สบู่พวงองุ่น 3D และธีมทะเล สวยจนอยากให้เป็นของขวัญ ได้สบู่กลับบ้านถึง 7 ชิ้น มา 2–3 ท่านลดท่านละ 500'},
+  aroma:{name:'Home Aroma & Basic Candle',price:3900,unit:'คน',dur:'3 ชม.',size:'จับมือทำ',why:'ครบทั้ง Room Spray เทียนหอมไขถั่วเหลือง แว็กซ์หอม และถุงหอมหินภูเขาไฟ สำหรับคนรักกลิ่นหอมแต่งบ้าน'},
+  other:{name:'คลาสอื่น ๆ',price:0,unit:'ท่าน',dur:'-',size:'-',why:''}
+};
+const fmt=n=>n.toLocaleString('th-TH');
+
+/* bubbles */
+function bubbles(el,n,max){if(!el)return;for(let i=0;i<n;i++){const b=document.createElement('span');b.className='bubble';const s=14+Math.random()*max;b.style.width=b.style.height=s+'px';b.style.left=Math.random()*100+'%';b.style.animationDuration=(10+Math.random()*12)+'s';b.style.animationDelay=(-Math.random()*20)+'s';el.appendChild(b);}}
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce){bubbles(document.getElementById('heroBubbles'),16,60);bubbles(document.getElementById('finderBubbles'),10,46);bubbles(document.getElementById('resultBubbles'),7,40);}
+
+/* filters */
+document.querySelectorAll('#filters .fbtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#filters .fbtn').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  const f=b.dataset.f;document.querySelectorAll('#ctable tbody tr').forEach(tr=>{tr.classList.toggle('hide',!(f==='all'||tr.dataset.tags.split(' ').includes(f)))});
+}));
+
+/* oils tabs */
+document.querySelectorAll('[data-o].fbtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('[data-o].fbtn').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  document.querySelectorAll('#oilList .oilc').forEach(c=>c.classList.toggle('hide',c.dataset.o!==b.dataset.o));
+}));
+
+/* finder */
+const ans={want:'natural',time:'2',who:'solo'};
+document.querySelectorAll('.q').forEach(q=>q.querySelectorAll('.opt').forEach(o=>o.addEventListener('click',()=>{
+  q.querySelectorAll('.opt').forEach(x=>x.classList.remove('on'));o.classList.add('on');ans[q.dataset.q]=o.dataset.v;recommend();
+})));
+let rec='basic';
+function recommend(){
+  let id,alt;
+  if(ans.want==='aroma'){id='aroma';alt='ถ้าอยากได้ของหอมแบบอื่น ลองถามคลาส Room Diffuser Base หรือ Design Your Own Perfume ได้ค่ะ';}
+  else if(ans.want==='cute'){
+    if(ans.who==='kids'){id='fancy';alt='ถ้าเด็กโตแล้วและชอบงานละเอียด Grape Soap ก็น่าสนใจค่ะ';}
+    else if(ans.who==='friends'){id='grape';alt='มา 2–3 ท่าน เหลือท่านละ 3,000 บาท คุ้มสุดสำหรับแก๊งเพื่อน';}
+    else {id=ans.time==='1'?'mini':'grape';alt=id==='mini'?'อยากได้สบู่หน้าตาแฟนซีกว่านี้ ลอง Fancy Soap Workshop (2 ชม.)':'อยากออกแบบเองอิสระกว่า ลอง Fancy Soap Workshop';}
+  } else {
+    if(ans.who==='kids'){id='fancy';alt='คลาสสบู่กวนเย็นใช้สารที่ต้องระวัง ถ้าพาเด็กมา สบู่หลอมเทปลอดภัยและสนุกกว่าค่ะ';}
+    else if(ans.time==='3'){id='basic';alt='เรียนพื้นฐานแล้วไปต่อ Master of HP Soap หรือ Advanced Soap Making ได้';}
+    else {id='mini';alt='ถ้าอยากได้ทฤษฎีแน่น ๆ เพื่อทำต่อเองที่บ้าน แนะนำ Basic Soap Making (3–3.5 ชม.)';}
+  }
+  rec=id;const c=C[id];
+  document.getElementById('rName').textContent=c.name;
+  document.getElementById('rWhy').textContent=c.why;
+  document.getElementById('rMeta').innerHTML=`<span>⏱ ${c.dur}</span><span>👩‍🎨 ${c.size}</span><span>💰 ${fmt(c.price)} บาท/${c.unit}</span>`;
+  document.getElementById('rAlt').textContent='ทางเลือกอื่น: '+alt;
+}
+recommend();
+document.getElementById('rPick').addEventListener('click',()=>pick(rec));
+
+/* builder */
+let pax=1,day='เสาร์-อาทิตย์',tm='รอบบ่าย';
+const $=id=>document.getElementById(id);
+function seg(id,set){$(id).querySelectorAll('.opt').forEach(o=>o.addEventListener('click',()=>{$(id).querySelectorAll('.opt').forEach(x=>x.classList.remove('on'));o.classList.add('on');set(o.dataset.v);build();}))}
+seg('fDay',v=>day=v);seg('fTime',v=>tm=v);
+$('minus').onclick=()=>{pax=Math.max(1,pax-1);build()};
+$('plus').onclick=()=>{pax=Math.min(12,pax+1);build()};
+['fCourse','fDate','fName','fNote'].forEach(i=>$(i).addEventListener('input',build));
+function pick(id){$('fCourse').value=id;build();document.getElementById('book').scrollIntoView({behavior:'smooth'});}
+document.querySelectorAll('.pick').forEach(b=>b.addEventListener('click',()=>pick(b.dataset.pick)));
+function build(){
+  const id=$('fCourse').value,c=C[id];
+  let per=c.price,note='';
+  if(id==='grape'&&pax>=2&&pax<=3){per=3000;note=' (ราคากลุ่ม 2–3 ท่าน)';}
+  const total=per*pax;
+  $('pax').textContent=pax;
+  if(id==='other'){$('estLabel').textContent='ค่าเรียน';$('estVal').textContent='สอบถามแอดมิน';}
+  else{$('estLabel').textContent=`${fmt(per)} × ${pax} ท่าน${note}`;$('estVal').textContent=fmt(total)+' บาท';}
+  const name=$('fName').value.trim(),date=$('fDate').value.trim(),extra=$('fNote').value.trim();
+  let m=`สวัสดีค่ะ${name?' '+name+' นะคะ':''} 🌸\nสนใจคลาส: ${id==='other'?'คลาสอื่น ๆ (ขอรายละเอียดและราคาค่ะ)':c.name}\nจำนวน: ${pax} ท่าน\nสะดวก: ${day} · ${tm}`;
+  if(date)m+=`\nวันที่อยากเรียน: ${date}`;
+  if(extra)m+=`\nเพิ่มเติม: ${extra}`;
+  m+=`\n\nรบกวนเช็ครอบที่ยังว่างให้หน่อยค่ะ ขอบคุณค่ะ`;
+  $('preview').textContent=m;
+  $('sendLine').href='https://line.me/R/oaMessage/@bgvsoap/?'+encodeURIComponent(m);
+}
+build();
+$('copyBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('preview').textContent);$('copyOk').textContent='คัดลอกแล้ว นำไปวางในแชท LINE @bgvsoap ได้เลยค่ะ';}catch(e){$('copyOk').textContent='คัดลอกไม่สำเร็จ กรุณาเลือกข้อความแล้วคัดลอกเองค่ะ';}});
+
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

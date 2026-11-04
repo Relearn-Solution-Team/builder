@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>builder — Catalog เว็บไซต์ตัวอย่างสำหรับ SME ไทย | Relearn Solution</title>
-<meta name="description" content="รวมเว็บไซต์ตัวอย่าง 11 ธุรกิจ ที่ builder สร้างจากเพจ Facebook จริง — ร้านยาง แอร์ ทำความสะอาด คาร์แคร์ ร้านเล็บ ช่างประปา">
+<meta name="description" content="รวมเว็บไซต์ตัวอย่าง 21 ธุรกิจ ที่ builder สร้างจากเพจ Facebook จริง — ร้านยาง แอร์ ทำความสะอาด คาร์แคร์ ร้านเล็บ ช่างประปา กรูมมิ่ง ร้านดอกไม้ เค้ก เวิร์กช็อป">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -304,7 +304,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 <header class="hero">
   <div class="wrap">
     <div class="rv">
-      <span class="pill"><b>NEW</b> 11 เว็บไซต์ · 5 กลุ่มธุรกิจ · พร้อมเสนอลูกค้า</span>
+      <span class="pill"><b>NEW</b> <span class="js-n">0</span> เว็บไซต์ · <span class="js-g">0</span> กลุ่มธุรกิจ · พร้อมเสนอลูกค้า</span>
       <h1>จากเพจ <span class="strike">Facebook</span><br>สู่ <span class="grad-tx">เว็บไซต์ที่ขายได้</span></h1>
       <p class="lead"><b>builder</b> อ่านเพจ โพสต์ และโลโก้ของร้านจริง ดึงสีแบรนด์ โทนภาษา และจุดขายออกมา แล้วสร้างเป็นหน้าเว็บที่ <b>เหมือนเป็นของร้านตั้งแต่วันแรก</b> สวยทั้งบนคอมและมือถือ</p>
       <div class="cta">
@@ -312,8 +312,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
         <button class="btn btn-g" data-preview="rubberpu4u"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg> ลองเปิดดูสด</button>
       </div>
       <div class="stats">
-        <div class="stat"><div class="n grad-tx" data-count="11">0</div><div class="l">เว็บไซต์ตัวอย่าง</div></div>
-        <div class="stat"><div class="n" data-count="5">0</div><div class="l">กลุ่มธุรกิจ</div></div>
+        <div class="stat"><div class="n grad-tx" data-count="sites">0</div><div class="l">เว็บไซต์ตัวอย่าง</div></div>
+        <div class="stat"><div class="n" data-count="groups">0</div><div class="l">กลุ่มธุรกิจ</div></div>
         <div class="stat"><div class="n">1<small style="font-size:.5em">ไฟล์</small></div><div class="l">HTML ต่อเว็บ เปิดได้ทันที</div></div>
         <div class="stat"><div class="n">100%</div><div class="l">รองรับมือถือ</div></div>
       </div>
@@ -348,7 +348,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 <section id="catalog" style="padding-top:40px">
   <div class="wrap">
     <div class="sh rv">
-      <div><div class="eyebrow">The Catalog</div><h2>11 ร้าน <span class="grad-tx">11 ตัวตน</span></h2></div>
+      <div><div class="eyebrow">The Catalog</div><h2><span class="js-n">0</span> ร้าน <span class="grad-tx"><span class="js-n">0</span> ตัวตน</span></h2></div>
       <p>เลื่อนเมาส์บนการ์ดเพื่อดูทั้งหน้า สลับดูแบบมือถือ หรือกด “ดูสด” เพื่อเปิดเว็บจริงในหน้าต่างพรีวิว</p>
     </div>
 
@@ -462,9 +462,42 @@ const SITES = [
   {slug:'tt-service-nonthaburi', name:'TT Service · ช่างประปานนทบุรี', cat:'plumb', area:'บางบัวทอง · นนทบุรี', src:'real',
    desc:'Landing page ช่างประปาประจำบ้าน มาสคอตจริงในวงรุ้ง เลือกปัญหาแล้วส่งข้อความเข้า LINE OA ได้ทันที',
    feat:['เลือกปัญหา → LINE','รูปผลงานจริง','sticky bar มือถือ'], pal:['#00A2FF','#2A2B33','#FF9741','#FFB618']},
+  {slug:'arichi-pet-salon', name:'Arichi pet salon', cat:'pet', area:'โยธินพัฒนา 3 · เลียบด่วนรามอินทรา', src:'real',
+   desc:'ร้านอาบน้ำตัดขนสไตล์การ์ตูนตามโลโก้ปั๊กกับแมวส้ม มีการ์ดกฎบ้าน เช็กลิสต์ก่อนมา และฟอร์มจองคิวส่ง LINE',
+   feat:['การ์ดกฎบ้าน + ตราประทับ', 'เช็กลิสต์เตรียมตัวก่อนมา', 'ประเมินราคา + จองทาง LINE'], pal:['#f6952a', '#141414', '#f4a3b4', '#fefcd6']},
+  {slug:'meerak-grooming', name:'มีรัก Grooming', cat:'pet', area:'เมืองทองธานี · ปากเกร็ด', src:'real',
+   desc:'หน้ากรูมมิ่งโทนคลินิกมิ้นต์-คอรัลจากโลโก้ รพส. มีรัก มีตัวเลือกทรง เช็คลิสต์เตรียมน้อง และปฏิทินจองคิวส่ง LINE',
+   feat:['เลือกทรงตัดขน', 'เช็คลิสต์ก่อนอาบน้ำ', 'ปฏิทินจองคิวส่ง LINE'], pal:['#7ccca7', '#1d3a2f', '#f3a893', '#fbfaf3']},
+  {slug:'flower-stylist', name:'Flower Stylist', cat:'flower', area:'พระราม 3 · นราธิวาสราชนครินทร์', src:'real',
+   desc:'หน้าพวงหรีดและพวงมาลาโทนม่วงพลัม-ทอง สง่างาม พร้อมตัวเลือกแบบ+จำลองพวงหรีดและป้าย ส่งข้อความสั่งเข้า LINE',
+   feat:['ตัวจัดข้อความสั่งพวงหรีด', 'ภาพจำลองโทนสีและป้าย', 'เงื่อนไขการสั่งและค่าส่ง'], pal:['#670167', '#b89a5e', '#22091f', '#faf7f2']},
+  {slug:'you-deserve-flowers', name:'You Deserve Flowers', cat:'flower', area:'รามอินทรา 40 · นวลจันทร์', src:'real',
+   desc:'ร้านช่อดอกไม้โทนพาสเทลครีม-ชมพู กรองแบบตามโอกาส×งบ Size S–XL พร้อมตัวออกแบบช่อที่ส่งข้อความเข้า LINE',
+   feat:['กรองโอกาส×งบ', 'ออกแบบช่อส่งไลน์', 'ราคาตามไซซ์จริง'], pal:['#ec6f95', '#53360e', '#eed0ce', '#fff5dd']},
+  {slug:'cartoon-cake', name:'Cartoon Cake พระราม 2', cat:'cake', area:'พระราม 2 · บางมด จอมทอง', src:'real',
+   desc:'เว็บเค้กการ์ตูนสไตล์สติกเกอร์ชมพู-เหลือง รวมแบบเค้กแยกธีม พร้อมตัวช่วยจัดออร์เดอร์ส่งเข้าไลน์ร้าน',
+   feat:['แกลเลอรีแยกธีม', 'ตัวช่วยสั่งเค้กส่งไลน์', 'ช่องทางสั่งที่เดียว'], pal:['#e8457a', '#6b3d2a', '#fff6a6', '#ffd6e3']},
+  {slug:'maysa-bakehome', name:'Maysa.Bakehome', cat:'cake', area:'ลาดกระบัง · ฉลองกรุง', src:'real',
+   desc:'เบเกอรี่โฮมเมดโทนเขียวเสจอบอุ่น วิวเลคทุ่งนา พร้อมตัวจดออเดอร์ส่งไลน์ เช็กเวลาเปิดร้าน และจองคิวเค้กวันเกิด',
+   feat:['จดออเดอร์ส่งไลน์', 'เช็กร้านเปิดตอนนี้', 'จองคิวเค้กวันเกิด'], pal:['#708986', '#3f5550', '#d9677a', '#fbf6ec']},
+  {slug:'mafueang-carcare', name:'มะเฟืองคาร์แคร์', cat:'auto', area:'ร่มเกล้า · มีนบุรี', src:'real',
+   desc:'โทนเขียวป่า–ทอง ลายมะเฟือง ผังรถกดดูงานซักเบาะ–พรมทีละจุด ไทม์ไลน์ฝากรถวันเดียวเสร็จ และสร้างข้อความ LINE',
+   feat:['ผังรถกดดูขอบเขตงาน', 'ไทม์ไลน์ฝากรถ', 'สร้างข้อความ LINE'], pal:['#0d4a26', '#cba53a', '#f4d548', '#fbf8ec']},
+  {slug:'zebra-interior', name:'ZEBRA · ดูแลภายในรถ', cat:'auto', area:'ปากเกร็ด · นนทบุรี', src:'real',
+   desc:'หน้าแคมเปญสปาภายในรถ ลายเย็บเบาะหนัง ผังรถแตะดูขอบเขตงาน ตารางเทียบแพ็กเกจ และตัวช่วยเขียนข้อความขอราคาทางแชต',
+   feat:['ผังรถแตะดูงานแต่ละจุด', 'ตารางเทียบแพ็กเกจตามขนาดรถ', 'สไลด์ก่อน–หลังจากคลิปจริง'], pal:['#1ea79b', '#141313', '#f7dcc4', '#fffaf5']},
+  {slug:'be-my-craft', name:'Be My Craft By Kru Kate', cat:'craft', area:'ลาดกระบัง · กรุงเทพฯ', src:'real',
+   desc:'แคตตาล็อกเวิร์กช็อปสำหรับองค์กร โทนน้ำเงินสเลตงานแฮนด์เมด พร้อมตัวช่วยขอใบเสนอราคาส่ง LINE/Inbox',
+   feat:['แคตตาล็อกกิจกรรมบริษัท', 'ตัวช่วยขอใบเสนอราคา', 'พิมพ์ PDF ส่ง HR'], pal:['#3d5a78', '#e8735a', '#f0b445', '#f3e6e3']},
+  {slug:'bougainvillea-soap', name:'Bougainvillea Soap', cat:'craft', area:'ตลิ่งชัน · กรุงเทพฯ', src:'real',
+   desc:'สตูดิโอสบู่โทนบานเย็น-ทอง ลายดอกเฟื่องฟ้าและฟองสบู่ ตารางเทียบคอร์สจริง ตัวช่วยเลือกคลาส และส่งข้อความถามรอบทาง LINE',
+   feat:['ตารางเทียบคอร์ส', 'ตัวช่วยเลือกคลาส', 'สร้างข้อความ LINE'], pal:['#c8175d', '#4a1236', '#b78b1e', '#fffaf3']},
 ];
-const CATS = {all:'ทั้งหมด', auto:'รถยนต์', air:'แอร์', clean:'ทำความสะอาด', beauty:'ความงาม', plumb:'ประปา'};
-const CAT_LABEL = {auto:'AUTO · รถยนต์', air:'AIRCON · แอร์', clean:'CLEANING · ทำความสะอาด', beauty:'BEAUTY · เล็บ & ขนตา', plumb:'PLUMBING · ประปา'};
+const CATS = {all:'ทั้งหมด', auto:'รถยนต์', air:'แอร์', clean:'ทำความสะอาด', beauty:'ความงาม', plumb:'ประปา', pet:'สัตว์เลี้ยง', flower:'ดอกไม้', cake:'เค้ก & เบเกอรี', craft:'เวิร์กช็อป'};
+const CAT_LABEL = {auto:'AUTO · รถยนต์', air:'AIRCON · แอร์', clean:'CLEANING · ทำความสะอาด', beauty:'BEAUTY · เล็บ & ขนตา', plumb:'PLUMBING · ประปา', pet:'PET · อาบน้ำตัดขน', flower:'FLORIST · ดอกไม้', cake:'BAKERY · เค้กสั่งทำ', craft:'WORKSHOP · งานคราฟต์'};
+const NGROUPS = new Set(SITES.map(s => s.cat)).size;
+document.querySelectorAll('.js-n').forEach(el => el.textContent = SITES.length);
+document.querySelectorAll('.js-g').forEach(el => el.textContent = NGROUPS);
 const url = s => `${s}/index.html`;
 const ic = {
   pin:'<svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>',
@@ -594,8 +627,8 @@ document.querySelectorAll('.rv').forEach((el, i) => { el.style.transitionDelay =
 
 // count up
 document.querySelectorAll('[data-count]').forEach(el => {
-  const end = +el.dataset.count; let n = 0;
-  const t = setInterval(() => { el.textContent = ++n; if (n >= end) clearInterval(t); }, 70);
+  const end = el.dataset.count === 'sites' ? SITES.length : NGROUPS; let n = 0;
+  const t = setInterval(() => { el.textContent = ++n; if (n >= end) clearInterval(t); }, 1200 / end);
 });
 
 // cursor glow

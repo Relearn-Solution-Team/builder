@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maysa.Bakehome | ขนมโฮมเมด คาเฟ่ลับลาดกระบัง ฉลองกรุง</title>
+<meta name="description" content="Maysa.Bakehome เบเกอรี่โฮมเมด คาเฟ่ลับวิวเลคย่านฉลองกรุง ลาดกระบัง เค้ก ขนม ปังปิ้ง ชาเงาะ ก๋วยเตี๋ยวหมูโบราณ (เสาร์-อาทิตย์) รับที่ร้านหรือเดลิเวอรี่ สั่งล่วงหน้าทางไลน์ โทร 095-623-6954">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800&family=Sarabun:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#708986; --sage-d:#3f5550; --sage-dd:#2b3c38; --sage-l:#a9bbb6; --sage-xl:#e3ebe8;
+  --cream:#fbf6ec; --cream2:#f4ebda; --paper:#fffdf8; --crust:#c98b4e; --crust-d:#9a6331;
+  --rose:#d9677a; --rose-l:#f7dfe2; --butter:#f3d99b;
+  --ink:#2f2a24; --muted:#6f665b; --line:#e7dcc8;
+  --r:22px; --shadow:0 22px 44px -24px rgba(63,85,80,.45);
+  --line-green:#06c755;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Sarabun',sans-serif;color:var(--ink);background:var(--cream);font-size:17px;line-height:1.75;overflow-x:hidden}
+h1,h2,h3,h4,.nst{font-family:'Noto Sans Thai',sans-serif;line-height:1.35}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:96px 0;position:relative}
+.paper{background-color:var(--paper);background-image:radial-gradient(rgba(201,139,78,.07) 1px,transparent 1.2px);background-size:18px 18px}
+
+/* scallop edge like a cake-box doily */
+.scallop-top::before,.scallop-bot::after{content:"";position:absolute;left:0;right:0;height:22px;background:radial-gradient(circle at 16px 0,transparent 15px,var(--sc,#fff) 15.5px) 0 0/32px 22px repeat-x}
+.scallop-top::before{top:-21px;transform:scaleY(-1)}
+.scallop-bot::after{bottom:-21px}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(251,246,236,.92);backdrop-filter:blur(10px);border-bottom:1px dashed var(--line)}
+.nav{display:flex;align-items:center;gap:22px;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:50px;width:auto}
+.brand b{font-family:'Noto Sans Thai';font-weight:800;font-size:19px;color:var(--sage-d);letter-spacing:.5px;line-height:1.1;display:block}
+.brand small{font-size:12.5px;color:var(--muted);display:block;line-height:1.2}
+.nav ul{display:flex;gap:26px;list-style:none;margin-left:auto;font-weight:600;font-size:15.5px;color:var(--sage-dd)}
+.nav ul a{position:relative}
+.nav ul a::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:2px;background:var(--rose);border-radius:2px;transition:right .25s}
+.nav ul a:hover::after{right:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Noto Sans Thai';font-weight:700;border-radius:999px;padding:14px 26px;font-size:16.5px;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:21px;height:21px;flex:none}
+.btn-line{background:var(--line-green);color:#fff;box-shadow:0 12px 24px -12px var(--line-green)}
+.btn-sage{background:var(--sage-d);color:#fff}
+.btn-ghost{background:transparent;color:var(--sage-d);border:2px solid var(--sage-d)}
+.btn-cream{background:var(--cream);color:var(--sage-dd)}
+.nav .btn{padding:10px 18px;font-size:15px}
+.burger{display:none}
+
+/* ---------- hero ---------- */
+.hero{padding:54px 0 120px;background:
+  radial-gradient(800px 420px at 100% 0,rgba(112,137,134,.22),transparent 60%),
+  radial-gradient(600px 380px at 0 100%,rgba(243,217,155,.45),transparent 60%),var(--cream);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 16px 7px 10px;font-weight:600;font-size:14.5px;box-shadow:0 6px 16px -10px rgba(0,0,0,.25)}
+.status .dot{width:11px;height:11px;border-radius:50%;background:#bbb;box-shadow:0 0 0 4px rgba(0,0,0,.06)}
+.status.open .dot{background:#2fb35a;box-shadow:0 0 0 4px rgba(47,179,90,.18);animation:pulse 1.8s infinite}
+.status.closed .dot{background:var(--rose);box-shadow:0 0 0 4px rgba(217,103,122,.18)}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(47,179,90,.05)}}
+.nw{white-space:nowrap}
+.hero h1{font-size:clamp(34px,4.6vw,58px);font-weight:800;color:var(--sage-dd);margin:22px 0 16px;letter-spacing:-.3px}
+.hero h1 em{font-style:normal;color:var(--rose);position:relative;white-space:nowrap}
+.hero h1 em svg{position:absolute;left:0;right:0;bottom:-.18em;width:100%;height:.35em}
+.hero .lead{font-size:19px;color:var(--muted);max-width:540px}
+.hero .lead b{color:var(--sage-d)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 30px}
+.tag{background:#fff;border:1px dashed var(--sage-l);border-radius:12px;padding:6px 14px;font-weight:600;font-size:15px;color:var(--sage-d)}
+.cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cta small{flex-basis:100%;color:var(--muted);font-size:14.5px}
+.cta small b{color:var(--line-green)}
+
+.hero-art{position:relative;height:560px}
+.polar{position:absolute;background:#fff;padding:12px 12px 46px;border-radius:6px;box-shadow:var(--shadow)}
+.polar img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+.polar span{position:absolute;left:0;right:0;bottom:12px;text-align:center;font-family:'Noto Sans Thai';font-weight:600;color:var(--sage-d);font-size:15px}
+.polar.p1{width:300px;height:400px;right:10px;top:0;transform:rotate(4deg)}
+.polar.p1 img{object-position:50% 60%}
+.polar.p2{width:250px;height:330px;left:0;bottom:0;transform:rotate(-6deg)}
+.polar.p2 img{object-position:50% 70%}
+.tape{position:absolute;width:96px;height:28px;background:rgba(243,217,155,.8);top:-12px;left:50%;transform:translateX(-50%) rotate(-3deg);border-radius:2px}
+.badge{position:absolute;left:150px;top:30px;width:150px;height:150px;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;text-align:center;font-family:'Noto Sans Thai';font-weight:700;line-height:1.25;font-size:15px;box-shadow:0 0 0 8px var(--cream),0 0 0 10px var(--sage-l);transform:rotate(-8deg)}
+.badge b{display:block;font-size:30px;font-weight:800}
+.hero-wave{position:absolute;bottom:-1px;left:0;width:100%;height:70px}
+
+/* ---------- notice ---------- */
+.notice{background:var(--sage-d);color:#fff;padding:14px 0;font-size:15.5px}
+.notice .wrap{display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center}
+.notice b{color:var(--butter)}
+
+/* ---------- section titles ---------- */
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:'Noto Sans Thai';font-weight:700;color:var(--rose);font-size:15px;letter-spacing:.5px}
+.kicker::before{content:"";width:28px;height:2px;background:currentColor;border-radius:2px}
+.title{font-size:clamp(30px,3.6vw,44px);font-weight:800;color:var(--sage-dd);margin:8px 0 12px}
+.sub{color:var(--muted);max-width:640px;font-size:17.5px}
+.center{text-align:center}.center .sub{margin:0 auto}
+.center .kicker::after{content:"";width:28px;height:2px;background:currentColor;border-radius:2px}
+
+/* ---------- menu ---------- */
+.menu{background:var(--paper)}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:34px 0 34px}
+.tab{background:#fff;border:2px solid var(--line);padding:9px 20px;border-radius:999px;font-family:'Noto Sans Thai';font-weight:700;font-size:15.5px;color:var(--sage-d);cursor:pointer;transition:.2s}
+.tab.on{background:var(--sage-d);border-color:var(--sage-d);color:#fff}
+.grid-menu{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.item{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 14px 30px -22px rgba(63,85,80,.6);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .25s}
+.item:hover{transform:translateY(-4px)}
+.item .ph{aspect-ratio:4/3;position:relative;overflow:hidden;background:var(--sage-xl)}
+.item .ph img{width:100%;height:100%;object-fit:cover}
+.item .ribbon{position:absolute;top:14px;left:14px;background:var(--rose);color:#fff;font-family:'Noto Sans Thai';font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px}
+.item .ribbon.sage{background:var(--sage-d)}
+.item .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.item h3{font-size:20px;color:var(--sage-dd)}
+.item p{color:var(--muted);font-size:15.5px;line-height:1.6;flex:1}
+.item .row{display:flex;align-items:center;justify-content:space-between;margin-top:10px;gap:10px}
+.price{font-family:'Noto Sans Thai';font-weight:800;color:var(--crust-d);font-size:20px}
+.price.ask{font-size:14.5px;font-weight:600;color:var(--muted)}
+.add{background:var(--cream2);color:var(--sage-dd);border:0;border-radius:999px;padding:8px 16px;font-family:'Noto Sans Thai';font-weight:700;font-size:14.5px;cursor:pointer;transition:.2s;display:inline-flex;gap:6px;align-items:center}
+.add:hover{background:var(--sage);color:#fff}
+.add.added{background:var(--sage-d);color:#fff}
+.item.hide{display:none}
+.illus{width:100%;height:100%;display:grid;place-items:center;background:linear-gradient(160deg,#f7efe0,#efe1c8)}
+.swipe{display:none;text-align:center;color:var(--muted);font-size:14px;margin-top:4px}
+.menu-note{margin-top:26px;text-align:center;color:var(--muted);font-size:14.5px}
+.menu-note b{color:var(--sage-d)}
+.also{margin-top:34px;background:var(--cream);border:1px dashed var(--sage-l);border-radius:var(--r);padding:22px 26px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.also h4{font-size:17px;color:var(--sage-d);margin-right:6px}
+.also span{background:#fff;border-radius:999px;padding:5px 14px;font-weight:600;font-size:15px;border:1px solid var(--line)}
+
+/* ---------- receive ---------- */
+.receive{background:var(--sage-xl)}
+.receive .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+.rcard{background:#fff;border-radius:var(--r);padding:30px 28px;position:relative;box-shadow:var(--shadow)}
+.rcard .ic{width:64px;height:64px;border-radius:20px;background:var(--cream2);display:grid;place-items:center;margin-bottom:16px}
+.rcard .ic svg{width:34px;height:34px}
+.rcard h3{font-size:21px;color:var(--sage-dd);margin-bottom:6px}
+.rcard p{color:var(--muted);font-size:16px}
+.rcard ul{margin-top:12px;list-style:none;display:grid;gap:6px;font-size:15.5px}
+.rcard li{display:flex;gap:8px}
+.rcard li::before{content:"✓";color:var(--sage);font-weight:800}
+.rcard .quote{margin-top:14px;background:var(--rose-l);color:#8b3443;border-radius:14px;padding:10px 14px;font-size:14.5px;font-style:italic}
+.apps{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.apps i{font-style:normal;font-weight:700;font-size:13.5px;padding:4px 12px;border-radius:8px;color:#fff}
+
+/* ---------- order builder ---------- */
+.order{background:var(--cream)}
+.ob{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;margin-top:40px;align-items:start}
+.panel{background:#fff;border-radius:26px;padding:28px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.panel h3{font-size:19px;color:var(--sage-dd);margin-bottom:14px;display:flex;gap:10px;align-items:center}
+.panel h3 .n{width:30px;height:30px;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;font-size:15px;flex:none}
+.cart{display:grid;gap:10px;margin-bottom:24px}
+.cart .empty{color:var(--muted);background:var(--cream);border-radius:14px;padding:16px;text-align:center;font-size:15.5px}
+.ci{display:flex;align-items:center;gap:12px;background:var(--cream);border-radius:14px;padding:10px 14px}
+.ci b{flex:1;font-weight:600}
+.qty{display:flex;align-items:center;gap:6px}
+.qty button{width:30px;height:30px;border-radius:50%;border:0;background:#fff;color:var(--sage-d);font-weight:800;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.qty span{min-width:22px;text-align:center;font-weight:700}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.quick button{background:#fff;border:1px dashed var(--sage-l);border-radius:999px;padding:5px 13px;font-size:14.5px;cursor:pointer;color:var(--sage-d);font-weight:600}
+.quick button:hover{background:var(--sage-xl)}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.seg label{cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:block;text-align:center;border:2px solid var(--line);border-radius:16px;padding:12px 8px;font-weight:700;font-family:'Noto Sans Thai';font-size:15px;line-height:1.35;color:var(--sage-d);transition:.2s;height:100%}
+.seg span small{display:block;font-family:'Sarabun';font-weight:500;font-size:13px;color:var(--muted)}
+.seg input:checked+span{border-color:var(--sage-d);background:var(--sage-xl)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fields .full{grid-column:1/-1}
+.f label{display:block;font-weight:600;font-size:14.5px;color:var(--sage-d);margin-bottom:5px}
+.f input,.f select,.f textarea{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:10px 13px;background:var(--paper);font-size:16px}
+.f input:focus,.f select:focus,.f textarea:focus{outline:2px solid var(--sage-l);border-color:var(--sage)}
+.warn{margin-top:12px;font-size:14.5px;border-radius:12px;padding:10px 14px;display:none}
+.warn.show{display:block}
+.warn.bad{background:var(--rose-l);color:#8b3443}
+.warn.ok{background:#e6f5ea;color:#22603a}
+.ticket{background:var(--sage-d);color:#fff;border-radius:26px;padding:26px;position:sticky;top:96px;box-shadow:var(--shadow)}
+.ticket h3{color:#fff;font-size:19px;margin-bottom:4px}
+.ticket .hint{color:var(--sage-l);font-size:14.5px;margin-bottom:14px}
+.ticket pre{white-space:pre-wrap;font-family:'Sarabun';font-size:15.5px;background:rgba(255,255,255,.08);border:1px dashed rgba(255,255,255,.3);border-radius:16px;padding:16px;min-height:220px;line-height:1.65}
+.ticket .acts{display:grid;gap:10px;margin-top:16px}
+.ticket .btn{width:100%}
+.ticket .copy{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+.ticket .tiny{font-size:13px;color:var(--sage-l);margin-top:10px;text-align:center}
+
+/* ---------- birthday ---------- */
+.bday{background:var(--rose-l);overflow:hidden}
+.bday-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.cake-art{position:relative;display:grid;place-items:center}
+.cake-art .photo{width:100%;max-width:440px;aspect-ratio:1;border-radius:50%;overflow:hidden;border:12px solid #fff;box-shadow:var(--shadow)}
+.cake-art .photo img{width:100%;height:100%;object-fit:cover}
+.cake-art .lbl{position:absolute;bottom:10px;right:10%;background:#fff;border-radius:16px;padding:10px 16px;font-family:'Noto Sans Thai';font-weight:700;color:var(--rose);box-shadow:var(--shadow);transform:rotate(-4deg);font-size:15px}
+.cake-art .lbl b{display:block;color:var(--sage-dd);font-size:22px}
+.bday .post{background:#fff;border-radius:20px;padding:18px 22px;margin:20px 0;border-left:6px solid var(--rose);font-size:16.5px}
+.bday .post small{display:block;color:var(--muted);font-size:13.5px;margin-top:6px}
+.planner{background:#fff;border-radius:22px;padding:22px;display:grid;gap:14px;box-shadow:0 14px 30px -24px rgba(139,52,67,.6)}
+.planner .fields{grid-template-columns:1fr 1fr}
+.cal-out{font-size:15.5px;border-radius:14px;padding:12px 14px;background:var(--cream)}
+.cal-out b{color:var(--sage-d)}
+
+/* ---------- vibe ---------- */
+.vibe{background:var(--sage-dd);color:#fff;--sc:var(--sage-dd)}
+.vibe .title{color:#fff}.vibe .sub{color:var(--sage-l)}
+.gallery{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:260px 260px;gap:16px;margin-top:44px}
+.gallery figure{position:relative;border-radius:20px;overflow:hidden}
+.gallery figure img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;left:12px;bottom:12px;background:rgba(43,60,56,.82);backdrop-filter:blur(4px);padding:5px 13px;border-radius:999px;font-size:14px;font-weight:600}
+.gallery .g1{grid-row:1/3}
+.gallery .g1 img{object-position:50% 65%}
+.gallery .g2 img{object-position:50% 55%}
+.gallery .g4 img{object-position:50% 60%}
+.gallery .g5 img{object-position:50% 80%}
+.gallery .quote-tile{background:var(--sage);display:flex;flex-direction:column;justify-content:center;padding:28px;border-radius:20px}
+.quote-tile p{font-family:'Noto Sans Thai';font-size:22px;font-weight:600;line-height:1.5}
+.quote-tile small{color:var(--cream2);margin-top:10px;display:block}
+
+/* ---------- why ---------- */
+.why .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
+.wcard{background:#fff;border-radius:var(--r);padding:26px 22px;border:1px solid var(--line);text-align:center}
+.wcard .em{width:76px;height:76px;margin:0 auto 14px;border-radius:50%;background:var(--cream2);display:grid;place-items:center}
+.wcard .em svg{width:40px;height:40px}
+.wcard h3{font-size:18.5px;color:var(--sage-dd);margin-bottom:6px}
+.wcard p{color:var(--muted);font-size:15.5px;line-height:1.6}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--paper)}
+.rv{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.rvc{background:#fff;border-radius:var(--r);padding:26px;border:1px solid var(--line);position:relative}
+.rvc::before{content:"“";position:absolute;top:-10px;right:20px;font-size:90px;line-height:1;color:var(--rose-l);font-family:Georgia,serif}
+.rvc p{font-size:17px;position:relative}
+.rvc .who{display:flex;gap:12px;align-items:center;margin-top:16px}
+.rvc .av{font-family:'Sarabun'!important;width:42px;height:42px;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;font-weight:700}
+.rvc .who b{display:block;font-size:15.5px;color:var(--sage-dd)}
+.rvc .who small{color:var(--muted);font-size:13.5px}
+.src-note{text-align:center;color:var(--muted);font-size:13.5px;margin-top:22px}
+
+/* ---------- hours + faq ---------- */
+.hf{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;margin-top:40px;align-items:start}
+.hours{background:var(--sage-d);color:#fff;border-radius:26px;padding:28px}
+.hours h3{font-size:21px;margin-bottom:14px}
+.hours table{width:100%;border-collapse:collapse;font-size:16.5px}
+.hours td{padding:11px 6px;border-bottom:1px dashed rgba(255,255,255,.22)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--butter);font-weight:700}
+.hours tr.off td:last-child{color:#f4b2bd}
+.hours .note{margin-top:14px;font-size:14.5px;color:var(--sage-l)}
+.hours .note b{color:#fff}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:18px;margin-bottom:12px;overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:17px 22px;font-family:'Noto Sans Thai';font-weight:700;color:var(--sage-dd);display:flex;justify-content:space-between;gap:14px;font-size:16.5px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:24px;line-height:1;color:var(--rose);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 22px 18px;color:var(--muted);font-size:16px}
+
+/* ---------- contact ---------- */
+.contact{background:var(--sage-xl)}
+.cgrid{display:grid;grid-template-columns:.95fr 1.05fr;gap:30px;margin-top:40px}
+.cbox{background:#fff;border-radius:26px;padding:30px;box-shadow:var(--shadow)}
+.crow{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed var(--line)}
+.crow:last-of-type{border-bottom:0}
+.crow .ic{width:46px;height:46px;border-radius:14px;background:var(--cream2);display:grid;place-items:center;flex:none}
+.crow .ic svg{width:24px;height:24px}
+.crow small{display:block;color:var(--muted);font-size:13.5px}
+.crow b{font-size:17px;color:var(--sage-dd)}
+.crow a b{text-decoration:underline;text-decoration-color:var(--sage-l);text-underline-offset:4px}
+.map{border-radius:26px;overflow:hidden;min-height:440px;box-shadow:var(--shadow);border:6px solid #fff}
+.map iframe{width:100%;height:100%;min-height:428px;border:0;display:block}
+
+/* ---------- footer ---------- */
+footer{background:var(--sage-dd);color:var(--sage-l);padding:46px 0 110px;font-size:15px}
+footer .fg{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}
+footer img{height:64px}
+footer .demo{margin-top:20px;font-size:13px;opacity:.8}
+footer a{color:#fff}
+
+/* ---------- floating ---------- */
+.fab{position:fixed;right:20px;bottom:22px;z-index:70;display:flex;flex-direction:column;gap:12px}
+.fab a{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.35);transition:transform .2s}
+.fab a:hover{transform:scale(1.08)}
+.fab svg{width:30px;height:30px}
+.fab .l{background:var(--line-green)}
+.fab .c{background:var(--sage-d)}
+.fab .l::after{content:"ทักไลน์";position:absolute;right:70px;background:#fff;color:var(--sage-dd);font-family:'Noto Sans Thai';font-weight:700;font-size:13.5px;padding:5px 12px;border-radius:999px;white-space:nowrap;box-shadow:0 6px 14px -6px rgba(0,0,0,.3)}
+.mbar{display:none}
+
+/* toast */
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,120px);background:var(--sage-dd);color:#fff;padding:12px 22px;border-radius:999px;z-index:90;transition:transform .3s;font-weight:600;font-size:15px}
+.toast.show{transform:translate(-50%,0)}
+
+/* reveal */
+.rv-in{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv-in.vis{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1020px){
+  .nav ul{display:none}
+  .nav .btn{margin-left:auto}
+  .hero-grid,.ob,.bday-grid,.hf,.cgrid{grid-template-columns:1fr}
+  .hero-art{height:500px;max-width:520px;margin:0 auto;width:100%}
+  .grid-menu{grid-template-columns:repeat(2,1fr)}
+  .receive .grid3{grid-template-columns:1fr}
+  .why .grid4{grid-template-columns:repeat(2,1fr)}
+  .rv{grid-template-columns:1fr}
+  .ticket{position:static}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:300px 220px 220px}
+  .gallery .g1{grid-row:auto;grid-column:1/-1}
+}
+@media (max-width:640px){
+  body{font-size:16.5px}
+  section{padding:72px 0}
+  .wrap{padding:0 18px}
+  .nav{height:64px}
+  .brand img{height:42px}
+  .brand small{display:none}
+  .nav .btn span{display:none}
+  .nav .btn{padding:10px 12px}
+  .hero{padding:34px 0 96px}
+  .hero-art{height:420px}
+  .polar.p1{width:220px;height:300px;right:0}
+  .polar.p2{width:190px;height:250px}
+  .badge{left:4px;top:14px;width:112px;height:112px;font-size:13px}
+  .badge b{font-size:23px}
+  .cta .btn{width:100%}
+  .grid-menu{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -18px;padding:4px 18px 18px;scrollbar-width:none}
+  .grid-menu::-webkit-scrollbar{display:none}
+  .grid-menu .item{flex:0 0 80%;scroll-snap-align:center}
+  .grid-menu .item.rv-in{opacity:1;transform:none}
+  .swipe{display:block!important}
+  .why .grid4{grid-template-columns:1fr 1fr;gap:12px}
+  .wcard{padding:20px 14px}
+  .seg{grid-template-columns:1fr}
+  .fields,.planner .fields{grid-template-columns:1fr}
+  .panel,.ticket,.cbox,.hours{padding:22px}
+  .gallery{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:240px}
+  .gallery .quote-tile{grid-row:auto}
+  .fab{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1.6fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:70;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(251,246,236,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+  .mbar .btn{padding:12px 10px;font-size:15.5px}
+  footer{padding-bottom:110px}
+  .map,.map iframe{min-height:340px}
+  .also{padding:18px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Maysa.Bakehome">
+      <img src="assets/logo-sage.png" alt="โลโก้ Maysa.Bakehome">
+      <div><b>Maysa.Bakehome</b><small>Bakery &amp; Coffee · ฉลองกรุง ลาดกระบัง</small></div>
+    </a>
+    <ul>
+      <li><a href="#menu">เมนูเด่น</a></li>
+      <li><a href="#receive">รับขนมยังไง</a></li>
+      <li><a href="#bday">เค้กวันเกิด</a></li>
+      <li><a href="#vibe">บรรยากาศร้าน</a></li>
+      <li><a href="#contact">เวลาเปิด-แผนที่</a></li>
+    </ul>
+    <a class="btn btn-line" href="https://lin.ee/xAN7EbZ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8zM8.3 13.4H6.4c-.3 0-.5-.2-.5-.5V9.1c0-.3.2-.5.5-.5s.5.2.5.5v3.3h1.4c.3 0 .5.2.5.5s-.2.5-.5.5zm1.9-.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.1c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm4.6 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-2-2.6v2.3c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.1c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l2 2.6V9.1c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm3.1-2.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9h1.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5V9.1c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9h1.4z"/></svg><span>สั่งทางไลน์</span></a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="rv-in">
+      <div class="status" id="status"><i class="dot"></i><span id="statusText">กำลังเช็กเวลาเปิดร้าน…</span></div>
+      <h1><span class="nw">ขนมสักชิ้น</span> <span class="nw">กาแฟสักแก้ว</span><br><span class="nw">กับบรรยากาศที่</span><em>ไม่ต้องเร่งรีบ<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M2 14 C 40 4, 80 18, 120 9 S 180 6, 198 12" stroke="#d9677a" stroke-width="4" fill="none" stroke-linecap="round" opacity=".55"/></svg></em></h1>
+      <p class="lead">เบเกอรี่โฮมเมดในซอยเล็กย่าน<b>ฉลองกรุง ลาดกระบัง</b> เค้ก ขนม ปังปิ้ง ชา กาแฟ ทำเองทุกชิ้น นั่งชิลวิวเลคกับทุ่งนา หรือจะสั่งกลับบ้าน สั่งเดลิเวอรี่ก็ได้นะคะ</p>
+      <div class="tags">
+        <span class="tag">🧁 ขนมโฮมเมด</span><span class="tag">🌾 วิวเลค · ทุ่งนา</span><span class="tag">🛵 รับที่ร้าน / เดลิเวอรี่</span><span class="tag">🎂 เค้กวันเกิดสั่งล่วงหน้า</span>
+      </div>
+      <div class="cta">
+        <a class="btn btn-line" href="#order"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>จดออเดอร์ส่งไลน์</a>
+        <a class="btn btn-ghost" href="#menu">ดูเมนูเด่น</a>
+        <small>💚 ทักไลน์ <b>ตอบไวกว่าแชทเฟส</b> นะคะ · สั่งไว้ก่อนแล้วมารับได้เลย</small>
+      </div>
+    </div>
+    <div class="hero-art rv-in">
+      <figure class="polar p1"><i class="tape"></i><img src="assets/lake-sunset.jpg" alt="ที่นั่งริมเลคยามเย็นที่ร้าน Maysa.Bakehome"><span>ยามเย็นริมเลค 🌅</span></figure>
+      <figure class="polar p2"><i class="tape"></i><img src="assets/rambutan-coffee.jpg" alt="อเมริกาโน่เงาะ และชาเงาะ ของร้าน Maysa.Bakehome"><span>อเมริกาโน่เงาะ ☕</span></figure>
+      <div class="badge"><div>เปิดเช้า<b>06.30</b>จ. · อ. · ศ.</div></div>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 40 C 240 0, 480 70, 720 36 S 1200 10, 1440 42 V70 H0z" fill="#fffdf8"/></svg>
+</section>
+
+<!-- MENU -->
+<section class="menu paper" id="menu">
+  <div class="wrap">
+    <div class="center rv-in">
+      <span class="kicker">เมนูเด่นของร้าน</span>
+      <h2 class="title">เค้ก ขนม ปังปิ้ง เครื่องดื่ม พร้อมเสิร์ฟ</h2>
+      <p class="sub">หยิบเมนูที่อยากได้ใส่ตะกร้า แล้วส่งออเดอร์ทางไลน์ได้เลย ร้านจะแจ้งราคาและยืนยันคิวให้นะคะ</p>
+    </div>
+    <div class="tabs rv-in" role="tablist">
+      <button class="tab on" data-f="all">ทั้งหมด</button>
+      <button class="tab" data-f="cake">🍰 เค้ก &amp; ขนม</button>
+      <button class="tab" data-f="toast">🍞 ปังปิ้ง &amp; ของทานเล่น</button>
+      <button class="tab" data-f="drink">🥤 ชา กาแฟ</button>
+      <button class="tab" data-f="noodle">🍜 เสาร์-อาทิตย์</button>
+    </div>
+    <div class="grid-menu" id="menuGrid">
+      <article class="item rv-in" data-c="drink">
+        <div class="ph"><img src="assets/rambutan-coffee.jpg" alt="อเมริกาโน่เงาะ" style="object-position:50% 72%"><span class="ribbon">ซิกเนเจอร์</span></div>
+        <div class="body"><h3>อเมริกาโน่เงาะ</h3><p>กาแฟดำเย็นกับเงาะลูกโต สดชื่นแบบไม่เหมือนใคร เมนูที่ติดแฮชแท็กประจำร้าน</p>
+          <div class="row"><span class="price ask">ราคาสอบถามทางไลน์</span><button class="add" data-name="อเมริกาโน่เงาะ">+ ใส่ตะกร้า</button></div></div>
+      </article>
+      <article class="item rv-in" data-c="drink">
+        <div class="ph"><img src="assets/rambutan-coffee.jpg" alt="ชาเงาะ" style="object-position:12% 55%;transform:scale(1.35);transform-origin:10% 55%"><span class="ribbon">ซิกเนเจอร์</span></div>
+        <div class="body"><h3>ชาเงาะ</h3><p>ชาเขียวหอม ๆ ใส่เงาะ เย็นชื่นใจ เหมาะกับนั่งชมวิวเลคหน้าร้าน</p>
+          <div class="row"><span class="price ask">ราคาสอบถามทางไลน์</span><button class="add" data-name="ชาเงาะ">+ ใส่ตะกร้า</button></div></div>
+      </article>
+      <article class="item rv-in" data-c="cake">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=800&q=75&auto=format&fit=crop" alt="ชิฟฟ่อนผลไม้" loading="lazy"><span class="ribbon">ชิ้นละ 35.-</span></div>
+        <div class="body"><h3>ชิฟฟ่อนผลไม้</h3><p>เนื้อชิฟฟ่อนนุ่มฟู สอดไส้ครีมกับผลไม้ ชิ้นละ 35 บาทเท่านั้น!!!</p>
+          <div class="row"><span class="price">35 ฿</span><button class="add" data-name="ชิฟฟ่อนผลไม้">+ ใส่ตะกร้า</button></div></div>
+      </article>
+      <article class="item rv-in" data-c="cake">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=75&auto=format&fit=crop" alt="ช็อคโกแลตชีสเค้ก" loading="lazy"></div>
+        <div class="body"><h3>ช็อคโกแลตชีสเค้ก</h3><p>ชีสเค้กช็อกโกแลตเนื้อแน่น เจ้มจ้นนนนน สายช็อกห้ามพลาด</p>
+          <div class="row"><span class="price ask">ราคาสอบถามทางไลน์</span><button class="add" data-name="ช็อคโกแลตชีสเค้ก">+ ใส่ตะกร้า</button></div></div>
+      </article>
+      <article class="item rv-in" data-c="toast">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&q=75&auto=format&fit=crop" alt="ปังปิ้งหน้าล้น" loading="lazy"><span class="ribbon sage">เมนูใหม่</span></div>
+        <div class="body"><h3>ปังปิ้งหน้าล้น</h3><p>ขนมปังปิ้งกรอบนอกนุ่มใน หน้าล้น ๆ จัดเต็ม กินคู่กับชาเงาะเข้ากันสุด ๆ</p>
+          <div class="row"><span class="price ask">ราคาสอบถามทางไลน์</span><button class="add" data-name="ปังปิ้งหน้าล้น">+ ใส่ตะกร้า</button></div></div>
+      </article>
+      <article class="item rv-in" data-c="noodle">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=800&q=75&auto=format&fit=crop" alt="ก๋วยเตี๋ยวหมูโบราณ" loading="lazy"><span class="ribbon">เฉพาะ ส.-อา.</span></div>
+        <div class="body"><h3>ก๋วยเตี๋ยวหมูโบราณ</h3><p>น้ำใสหอมกลมกล่อมแบบโบราณ มีเฉพาะวันเสาร์-อาทิตย์ (บางสัปดาห์งดขาย เช็กโพสต์หน้าเพจก่อนนะคะ)</p>
+          <div class="row"><span class="price ask">ราคาสอบถามทางไลน์</span><button class="add" data-name="ก๋วยเตี๋ยวหมูโบราณ">+ ใส่ตะกร้า</button></div></div>
+      </article>
+      <article class="item rv-in" data-c="toast">
+        <div class="ph"><div class="illus"><svg viewBox="0 0 200 150" width="70%"><ellipse cx="100" cy="122" rx="80" ry="12" fill="#e0cba6"/><path d="M40 70c0-25 25-38 60-38s60 13 60 38v40H40z" fill="#e2a868"/><path d="M48 78h104v30H48z" fill="#f3d99b"/><circle cx="72" cy="66" r="7" fill="#c0563f"/><circle cx="100" cy="58" r="8" fill="#d9677a"/><circle cx="128" cy="66" r="7" fill="#c0563f"/><path d="M60 88h80" stroke="#9a6331" stroke-width="4" stroke-dasharray="6 7" stroke-linecap="round"/></svg></div><span class="ribbon">เสาร์-อาทิตย์</span></div>
+        <div class="body"><h3>ขนมปังหน้าหมู · เกี๊ยวทอด</h3><p>ของทานเล่นคู่ก๋วยเตี๋ยววันหยุด กรอบ ๆ ร้อน ๆ ทอดใหม่ทุกจาน</p>
+          <div class="row"><span class="price ask">ราคาสอบถามทางไลน์</span><button class="add" data-name="ขนมปังหน้าหมู">+ ใส่ตะกร้า</button></div></div>
+      </article>
+      <article class="item rv-in" data-c="toast">
+        <div class="ph"><div class="illus" style="background:linear-gradient(160deg,#fbefd5,#f3d99b)"><svg viewBox="0 0 200 150" width="70%"><path d="M58 50h84l-10 80H68z" fill="#d9677a"/><path d="M58 50h84l-2 14H60z" fill="#b84f62"/><g fill="#f0c25a" stroke="#c98b4e" stroke-width="2"><rect x="70" y="18" width="11" height="44" rx="3" transform="rotate(-10 75 40)"/><rect x="86" y="12" width="11" height="48" rx="3"/><rect x="102" y="16" width="11" height="46" rx="3" transform="rotate(8 107 40)"/><rect x="117" y="22" width="11" height="40" rx="3" transform="rotate(16 122 40)"/></g><circle cx="100" cy="96" r="14" fill="#fff" opacity=".9"/><path d="M93 96h14M100 89v14" stroke="#d9677a" stroke-width="4" stroke-linecap="round"/></svg></div></div>
+        <div class="body"><h3>เฟรนช์ฟราย · นักเก็ต · ไก่ป๊อบ</h3><p>ของทอดทานเล่นพร้อมเสิร์ฟทุกวันที่ร้านเปิด เด็ก ๆ ชอบ ผู้ใหญ่ก็ชอบ</p>
+          <div class="row"><span class="price ask">ราคาสอบถามทางไลน์</span><button class="add" data-name="เฟรนช์ฟราย/นักเก็ต/ไก่ป๊อบ">+ ใส่ตะกร้า</button></div></div>
+      </article>
+      <article class="item rv-in" data-c="drink">
+        <div class="ph"><div class="illus" style="background:linear-gradient(160deg,#f2e3cf,#e6cfae)"><svg viewBox="0 0 200 150" width="62%"><path d="M66 30h68l-8 104H74z" fill="#fff" opacity=".7" stroke="#c98b4e" stroke-width="3"/><path d="M70 60h60l-6 72H76z" fill="#b8835a"/><path d="M70 60h60l-1 12H71z" fill="#f4e6d2"/><ellipse cx="100" cy="30" rx="36" ry="7" fill="#fff" stroke="#c98b4e" stroke-width="3"/><rect x="108" y="8" width="7" height="50" rx="3" fill="#708986" transform="rotate(12 111 30)"/></svg></div></div>
+        <div class="body"><h3>ชามาเลย์ · กาแฟ · ชา</h3><p>เครื่องดื่มชงสดแก้วต่อแก้ว ชามาเลย์ที่ลูกค้าประจำบอกว่า “ต้องแก้วนี้เท่านั้น”</p>
+          <div class="row"><span class="price ask">ราคาสอบถามทางไลน์</span><button class="add" data-name="ชามาเลย์">+ ใส่ตะกร้า</button></div></div>
+      </article>
+    </div>
+    <p class="swipe">← ปัดดูเมนูอื่น ๆ →</p>
+    <div class="also rv-in"><h4>ขนมอื่น ๆ ที่มีหมุนเวียนในตู้:</h4><span>บราวนี่</span><span>ทาร์ตผลไม้</span><span>กือโปะ</span><span>เค้กชิ้น</span><span>ขนมใส่กล่อง</span></div>
+    <p class="menu-note">* ขนมโฮมเมดมีจำนวนจำกัดในแต่ละวัน <b>ทักไลน์สั่งไว้ก่อนได้</b> · ราคาส่วนใหญ่ยังไม่ระบุในเว็บตัวอย่าง (ยกเว้นชิฟฟ่อนผลไม้ 35 บาทจากโพสต์ของร้าน) · รูปบางเมนูเป็นภาพประกอบ</p>
+  </div>
+</section>
+
+<!-- RECEIVE -->
+<section class="receive" id="receive">
+  <div class="wrap">
+    <div class="center rv-in">
+      <span class="kicker">รับขนมยังไงดี</span>
+      <h2 class="title">มานั่งที่ร้าน สั่งไว้แล้วมารับ หรือส่งถึงมือ</h2>
+      <p class="sub">เลือกได้ตามสะดวกเลยค่ะ ทุกแบบเริ่มที่ทักไลน์ <b>@maysa.bakehome</b> (มี @ ด้านหน้า)</p>
+    </div>
+    <div class="grid3">
+      <div class="rcard rv-in">
+        <div class="ic"><svg viewBox="0 0 40 40" fill="none" stroke="#3f5550" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M6 16 9 7h22l3 9"/><path d="M6 16c0 3 2.5 4.5 4.7 4.5S15.3 19 15.3 16c0 3 2.3 4.5 4.7 4.5s4.7-1.5 4.7-4.5c0 3 2.3 4.5 4.6 4.5S34 19 34 16"/><path d="M9 21v12h22V21"/><path d="M17 33v-7h6v7"/></svg></div>
+        <h3>รับที่ร้าน / นั่งทานที่ร้าน</h3>
+        <p>ทักไลน์สั่งไว้ก่อน แล้วแวะมารับตามเวลาที่นัด ไม่ต้องรอ หรือจะนั่งเล่นริมเลคก็ได้</p>
+        <ul><li>ซอยเล็กย่านฉลองกรุง 54 ลาดกระบัง</li><li>จอดรถได้บริเวณปากซอย ใต้ต้นมะขาม</li><li>มีที่นั่งในร้านและโซนนอกวิวเลค</li></ul>
+      </div>
+      <div class="rcard rv-in">
+        <div class="ic"><svg viewBox="0 0 40 40" fill="none" stroke="#3f5550" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><circle cx="10" cy="29" r="5"/><circle cx="30" cy="29" r="5"/><path d="M10 29h8l6-11h6"/><path d="M24 18 21 10h-5"/><path d="M30 29l-4-11"/><rect x="4" y="12" width="9" height="8" rx="1.5"/></svg></div>
+        <h3>เดลิเวอรี่ผ่านแอป</h3>
+        <p>สั่งผ่านแอปเดลิเวอรี่ที่ใช้ประจำได้เลย ค้นชื่อร้าน “Maysa.Bakehome”</p>
+        <div class="apps"><i style="background:#00b14f">Grab</i><i style="background:#06c755">LINE MAN</i><i style="background:#ee4d2d">Shopee</i></div>
+        <ul><li>ค่าส่งและพื้นที่ตามแต่ละแอป</li></ul>
+      </div>
+      <div class="rcard rv-in">
+        <div class="ic"><svg viewBox="0 0 40 40" fill="none" stroke="#3f5550" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M20 35s11-9.5 11-18a11 11 0 0 0-22 0c0 8.5 11 18 11 18z"/><circle cx="20" cy="17" r="4"/></svg></div>
+        <h3>ส่งใกล้ ๆ ร้าน (แอดมินแว้นไปส่ง)</h3>
+        <p>ลูกค้าแถวร้าน สั่งทางไลน์แล้วรอที่ปากซอยได้เลย ร้านไปส่งให้</p>
+        <div class="quote">“พี่ลูกค้าสั่งแล้วรอปากซอยได้เลยค่ะ เดี๋ยวหนูแว้นไปส่งจ้าาาา 🛵” — โพสต์จากเพจร้าน</div>
+        <ul><li>แจ้งจุดรับและเวลาในไลน์ ร้านยืนยันให้อีกที</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORDER BUILDER -->
+<section class="order paper" id="order">
+  <div class="wrap">
+    <div class="center rv-in">
+      <span class="kicker">จดออเดอร์ส่งไลน์</span>
+      <h2 class="title">เลือกขนม เลือกวิธีรับ กดส่ง จบ!</h2>
+      <p class="sub">ระบบจะเรียบเรียงข้อความให้อัตโนมัติ กดส่งเข้าไลน์ร้านได้ทันที ร้านจะตอบกลับเรื่องราคาและยืนยันคิวค่ะ</p>
+    </div>
+    <div class="ob">
+      <div class="panel rv-in">
+        <h3><span class="n">1</span>ขนมที่อยากได้</h3>
+        <div class="cart" id="cart"><div class="empty">ยังไม่มีขนมในตะกร้า · กด “+ ใส่ตะกร้า” จากเมนูด้านบน หรือเลือกด่วนด้านล่างได้เลย</div></div>
+        <div class="quick" id="quick"></div>
+        <h3><span class="n">2</span>รับขนมแบบไหน</h3>
+        <div class="seg">
+          <label><input type="radio" name="how" value="pickup" checked><span>รับที่ร้าน<small>สั่งไว้แล้วแวะมารับ</small></span></label>
+          <label><input type="radio" name="how" value="near"><span>รอรับปากซอย<small>ลูกค้าใกล้ร้าน</small></span></label>
+          <label><input type="radio" name="how" value="app"><span>ขอลิงก์เดลิเวอรี่<small>Grab / LINE MAN / Shopee</small></span></label>
+        </div>
+        <h3><span class="n">3</span>วันเวลา &amp; รายละเอียด</h3>
+        <div class="fields">
+          <div class="f"><label for="d">วันที่</label><input type="date" id="d"></div>
+          <div class="f"><label for="t">เวลาโดยประมาณ</label><input type="time" id="t" value="10:00"></div>
+          <div class="f"><label for="nm">ชื่อผู้สั่ง</label><input id="nm" placeholder="เช่น คุณเมย์"></div>
+          <div class="f" id="placeWrap" style="display:none"><label for="pl">จุดรับของ</label><input id="pl" placeholder="เช่น ปากซอย / ร้านเซเว่นหน้าซอย"></div>
+          <div class="f full"><label for="nt">หมายเหตุ</label><textarea id="nt" rows="2" placeholder="เช่น ไม่หวาน / ขอใส่กล่องเป็นของฝาก"></textarea></div>
+        </div>
+        <div class="warn" id="warn"></div>
+      </div>
+      <aside class="ticket rv-in">
+        <h3>ข้อความที่จะส่งเข้าไลน์ร้าน</h3>
+        <p class="hint">ตรวจดูก่อนส่งได้เลยค่ะ</p>
+        <pre id="msg"></pre>
+        <div class="acts">
+          <a class="btn btn-line" id="sendLine" href="https://lin.ee/xAN7EbZ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>ส่งออเดอร์ทางไลน์</a>
+          <button class="btn copy" id="copyBtn" type="button">คัดลอกข้อความ</button>
+        </div>
+        <p class="tiny">ไม่สะดวกไลน์? โทร <a href="tel:0956236954" style="color:#fff;text-decoration:underline">095-623-6954</a></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- BIRTHDAY -->
+<section class="bday" id="bday">
+  <div class="wrap bday-grid">
+    <div class="cake-art rv-in">
+      <div class="photo"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=900&q=75&auto=format&fit=crop" alt="เค้กวันเกิด (ภาพประกอบ)" loading="lazy"></div>
+      <div class="lbl">สั่งล่วงหน้า<b>3-5 วัน</b></div>
+    </div>
+    <div class="rv-in">
+      <span class="kicker">เค้กวันเกิด · สั่งล่วงหน้า</span>
+      <h2 class="title">เค้กวันเกิดสั่งได้นะคะ 🎂</h2>
+      <div class="post">“เค้กวันเกิดสั่งได้นะคะ สั่งล่วงหน้าอย่างน้อย 3-5 วัน ทักมาสอบถามคิววันว่างก่อนได้ค่ะ”<small>— โพสต์จากเพจ Maysa.Bakehome</small></div>
+      <p class="sub">เลือกวันที่อยากได้เค้ก แล้วกดถามคิวทางไลน์ ร้านจะแจ้งรสชาติ ขนาด และราคาที่ทำได้ให้อีกทีค่ะ</p>
+      <div class="planner" style="margin-top:20px">
+        <div class="fields">
+          <div class="f"><label for="bd">อยากได้เค้กวันที่</label><input type="date" id="bd"></div>
+          <div class="f"><label for="bo">โอกาส</label><select id="bo"><option>วันเกิด</option><option>ครบรอบ</option><option>ของขวัญ / เซอร์ไพรส์</option><option>อื่น ๆ</option></select></div>
+          <div class="f"><label for="bs">ขนาดโดยประมาณ</label><select id="bs"><option>ยังไม่แน่ใจ ขอคำแนะนำ</option><option>ทานกัน 2-4 คน</option><option>ทานกัน 5-10 คน</option><option>มากกว่า 10 คน</option></select></div>
+          <div class="f"><label for="bw">ข้อความบนเค้ก (ถ้ามี)</label><input id="bw" placeholder="เช่น HBD แม่ 💛"></div>
+        </div>
+        <div class="cal-out" id="calOut">เลือกวันที่ แล้วระบบจะเช็กให้ว่าสั่งทันคิวล่วงหน้าหรือยัง</div>
+        <a class="btn btn-line" id="bdLine" href="https://lin.ee/xAN7EbZ" target="_blank" rel="noopener">ถามคิวเค้กทางไลน์</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIBE -->
+<section class="vibe" id="vibe">
+  <div class="wrap">
+    <div class="rv-in">
+      <span class="kicker" style="color:var(--butter)">คาเฟ่ลับลาดกระบัง</span>
+      <h2 class="title">ซอยเล็ก ๆ ที่มีวิวเลค ทุ่งนา และขนมอบใหม่</h2>
+      <p class="sub">มานั่งเล่น กินขนม จิบกาแฟ ชมวิวเลคได้นะคะ เช้า ๆ ลมเย็น ยามเย็นแสงสวยมาก</p>
+    </div>
+    <div class="gallery">
+      <figure class="g1 rv-in"><img src="assets/lake-sunset.jpg" alt="ที่นั่งริมเลคยามพระอาทิตย์ตก" loading="lazy"><figcaption>ยามเย็นริมเลค</figcaption></figure>
+      <figure class="g2 rv-in"><img src="assets/curtain-seats.jpg" alt="โซนที่นั่งม่านขาวริมน้ำ" loading="lazy"><figcaption>โซนม่านขาวริมน้ำ</figcaption></figure>
+      <div class="quote-tile rv-in"><p>“คาเฟ่ลับแถวฉลองกรุง มายามเย็นแสงสวยมาก มีเค้กอร่อย ๆ น้ำสักแก้วจิบเพลิน ๆ”</p><small>— โพสต์จากลูกค้าที่แวะมาเช็กอิน</small></div>
+      <figure class="g4 rv-in"><img src="assets/vespa-lake.jpg" alt="ลูกค้าชาว Vespa แวะร้าน" loading="lazy"><figcaption>ขอบคุณพี่ ๆ ชาว Vespa 🧡</figcaption></figure>
+      <figure class="g5 rv-in"><img src="assets/tamarind-tree.jpg" alt="ต้นมะขามหน้าร้าน" loading="lazy"><figcaption>ต้นมะขามหน้าร้าน 🌳</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why paper">
+  <div class="wrap">
+    <div class="center rv-in">
+      <span class="kicker">ทำไมต้อง Maysa</span>
+      <h2 class="title">อร่อยแบบโฮมเมด อบอุ่นแบบบ้าน</h2>
+    </div>
+    <div class="grid4">
+      <div class="wcard rv-in"><div class="em"><svg viewBox="0 0 40 40" fill="none" stroke="#3f5550" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 18c-4 0-6-3-6-6s3-6 7-5c1-3 4-4 9-4s8 1 9 4c4-1 7 2 7 5s-2 6-6 6"/><path d="M11 18h18l-2 16H13z"/><path d="M16 23v6M20 23v6M24 23v6"/></svg></div><h3>ทำเองทุกเมนู</h3><p>เจ้าของร้านคัดวัตถุดิบและลงมือทำเองทุกจาน สดใหม่ทุกวัน</p></div>
+      <div class="wcard rv-in"><div class="em"><svg viewBox="0 0 40 40" fill="none" stroke="#3f5550" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30c6-3 10-3 16 0s10 3 16 0"/><path d="M4 35c6-3 10-3 16 0s10 3 16 0"/><path d="M12 24V12M12 16l-4-4M12 18l4-4M28 24V10M28 14l-4-4M28 16l4-4"/></svg></div><h3>วิวเลค · ทุ่งนา</h3><p>นั่งชิลในซอยเงียบ ๆ ไม่ต้องเร่งรีบ เหมาะทั้งมาคนเดียวและมากับครอบครัว</p></div>
+      <div class="wcard rv-in"><div class="em"><svg viewBox="0 0 40 40" fill="none" stroke="#3f5550" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="21" r="13"/><path d="M20 13v8l5 4"/><path d="M8 6l-4 4M32 6l4 4"/></svg></div><h3>เปิดเช้า 06.30 น.</h3><p>วันจันทร์ อังคาร ศุกร์ เปิดเช้า แวะซื้อขนมกับกาแฟก่อนไปทำงานได้</p></div>
+      <div class="wcard rv-in"><div class="em"><svg viewBox="0 0 40 40" fill="none" stroke="#06c755" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6C11 6 4 11.6 4 18.5c0 6.2 5.6 11.4 13.3 12.4.5.1 1.2.3 1.4.8.2.4.1 1 0 1.5l-.2 1.4c-.1.4-.3 1.7 1.5.9 1.8-.8 9.5-5.6 13-9.6C35 23.2 36 21 36 18.5 36 11.6 28.9 6 20 6z"/></svg></div><h3>ตอบไลน์ไว</h3><p>ทักไลน์ตอบไวกว่าแชทเฟส สั่งไว้ก่อนแล้วค่อยมารับได้เลย</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="center rv-in">
+      <span class="kicker">เสียงจากลูกค้า</span>
+      <h2 class="title">ลูกค้าเก่า ลูกค้าใหม่ แวะมาให้กำลังใจเสมอ</h2>
+    </div>
+    <div class="rv">
+      <div class="rvc rv-in"><p>ร้านขนม คาเฟ่ อาหารแบบคุณป้าทำให้ทานที่บ้าน เจ้าของร้านทำเองทุกเมนู พนักงานน่ารัก ราคาคุ้มกับความสดและรสชาติ</p><div class="who"><span class="av">G</span><div><b>ggitsme</b><small>รีวิวบน Fourgle · มี.ค. 2569</small></div></div></div>
+      <div class="rvc rv-in"><p>คาเฟ่ลับแถวฉลองกรุง มายามเย็นแสงสวยมาก มีเค้กอร่อย ๆ น้ำสักแก้วจิบเพลิน ๆ</p><div class="who"><span class="av">ท</span><div><b>คุณทองประภา</b><small>โพสต์เช็กอินบน Facebook</small></div></div></div>
+      <div class="rvc rv-in"><p>บรรยากาศดี ร้านอยู่ในซอยเล็ก ๆ วิวทุ่งนา มาตอนเช้าได้ที่นั่งวิวสวย กาแฟส้มเย็นแก้วนี้ต้องลอง</p><div class="who"><span class="av">L</span><div><b>รีวิวบน Lemon8</b><small>สรุปจากโพสต์รีวิวคาเฟ่</small></div></div></div>
+    </div>
+    <p class="src-note">ข้อความรีวิวเรียบเรียงจากโพสต์สาธารณะของลูกค้า (Facebook / Fourgle / Lemon8) · ในเว็บจริงร้านเลือกรีวิวที่ต้องการแสดงได้</p>
+  </div>
+</section>
+
+<!-- HOURS + FAQ -->
+<section class="paper" id="hours">
+  <div class="wrap">
+    <div class="center rv-in">
+      <span class="kicker">เวลาเปิด &amp; คำถามที่พบบ่อย</span>
+      <h2 class="title">แวะมาวันไหนดี?</h2>
+    </div>
+    <div class="hf">
+      <div class="hours rv-in">
+        <h3>⏰ เวลาเปิดร้าน</h3>
+        <table id="hoursTbl">
+          <tr data-d="1"><td>วันจันทร์</td><td>06.30 – 17.00</td></tr>
+          <tr data-d="2"><td>วันอังคาร</td><td>06.30 – 17.00</td></tr>
+          <tr data-d="3" class="off"><td>วันพุธ</td><td>หยุด</td></tr>
+          <tr data-d="4" class="off"><td>วันพฤหัสบดี</td><td>หยุด</td></tr>
+          <tr data-d="5"><td>วันศุกร์</td><td>06.30 – 17.00</td></tr>
+          <tr data-d="6"><td>วันเสาร์ 🍜</td><td>09.00 – 18.00</td></tr>
+          <tr data-d="0"><td>วันอาทิตย์ 🍜</td><td>09.00 – 18.00</td></tr>
+        </table>
+        <p class="note">🍜 ก๋วยเตี๋ยวหมูโบราณ <b>มีเฉพาะเสาร์-อาทิตย์</b> · ช่วงน้ำท่วม/วันพิเศษ ร้านอาจปรับเวลา เช็กโพสต์ล่าสุดในเพจหรือทักไลน์ก่อนแวะนะคะ</p>
+      </div>
+      <div class="faq rv-in">
+        <details open><summary>สั่งขนมไว้ก่อนแล้วมารับได้ไหม?</summary><p>ได้เลยค่ะ ทักไลน์ @maysa.bakehome บอกเมนู จำนวน และเวลาที่จะมารับ ร้านจะเตรียมไว้ให้ ขนมโฮมเมดมีจำนวนจำกัด สั่งไว้ก่อนชัวร์กว่าค่ะ</p></details>
+        <details><summary>มีเดลิเวอรี่ไหม?</summary><p>มีค่ะ สั่งผ่าน Grab, LINE MAN และ Shopee ได้ ถ้าอยู่ใกล้ร้านทักไลน์มาคุยเรื่องจุดรับได้ค่ะ</p></details>
+        <details><summary>เค้กวันเกิดต้องสั่งล่วงหน้ากี่วัน?</summary><p>อย่างน้อย 3-5 วัน แนะนำให้ทักมาสอบถามคิววันว่างก่อนค่ะ</p></details>
+        <details><summary>จอดรถตรงไหน?</summary><p>ร้านอยู่ในซอยเล็ก จอดรถได้บริเวณปากซอยใต้ต้นมะขาม แล้วเดินเข้ามานิดเดียวค่ะ</p></details>
+        <details><summary>ทำไมควรทักไลน์แทนแชทเฟส?</summary><p>ร้านตอบไลน์ไวกว่าแชทเฟสค่ะ ค้นไอดี @maysa.bakehome (มี @ ด้านหน้า) หรือกดปุ่มไลน์ในหน้านี้ได้เลย</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv-in">
+      <span class="kicker">ติดต่อ &amp; แผนที่</span>
+      <h2 class="title">มาหากันได้ที่ฉลองกรุง ลาดกระบัง</h2>
+    </div>
+    <div class="cgrid">
+      <div class="cbox rv-in">
+        <a class="crow" href="https://lin.ee/xAN7EbZ" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="#06c755"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg></span><div><small>LINE Official (ช่องทางหลัก ตอบไวสุด)</small><b>@maysa.bakehome</b></div></a>
+        <a class="crow" href="tel:0956236954"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#3f5550" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>โทรศัพท์</small><b>095-623-6954</b></div></a>
+        <a class="crow" href="https://www.facebook.com/maysabakehome/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="#1877f2"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></span><div><small>Facebook</small><b>Maysa.Bakehome</b></div></a>
+        <a class="crow" href="https://www.instagram.com/maysa.bakehome/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#d9677a" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#d9677a"/></svg></span><div><small>Instagram · TikTok</small><b>@maysa.bakehome</b></div></a>
+        <div class="crow"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#3f5550" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-7 8-13a8 8 0 0 0-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></span><div><small>ที่อยู่</small><b>1000 ถนนฉลองกรุง (ฉลองกรุง 54) แขวงลำปลาทิว เขตลาดกระบัง กรุงเทพฯ 10520</b></div></div>
+        <div class="cta" style="margin-top:18px"><a class="btn btn-line" href="https://lin.ee/xAN7EbZ" target="_blank" rel="noopener">แอดไลน์ร้าน</a><a class="btn btn-sage" href="https://www.google.com/maps/search/?api=1&query=Maysa.Bakehome%20%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87" target="_blank" rel="noopener">นำทางด้วย Google Maps</a></div>
+      </div>
+      <div class="map rv-in"><iframe title="แผนที่ร้าน Maysa.Bakehome" loading="lazy" src="https://maps.google.com/maps?q=Maysa.Bakehome%20%E0%B8%89%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%20%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B1%E0%B8%87&z=15&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div style="display:flex;gap:16px;align-items:center"><img src="assets/logo-white.png" alt="Maysa.Bakehome"><div><b style="color:#fff;font-family:'Noto Sans Thai';font-size:18px">Maysa.Bakehome</b><br>Bakery &amp; Coffee · ขนมโฮมเมด คาเฟ่ลับลาดกระบัง</div></div>
+      <div>LINE <a href="https://lin.ee/xAN7EbZ" target="_blank" rel="noopener">@maysa.bakehome</a> · โทร <a href="tel:0956236954">095-623-6954</a><br>#maysabakehome #ร้านลับลาดกระบัง #คาเฟ่ฉลองกรุง</div>
+    </div>
+    <p class="demo">เว็บไซต์ตัวอย่าง (Demo) จัดทำเพื่อนำเสนอ · ข้อมูลร้าน เวลาเปิด และข้อความอ้างอิงจากเพจสาธารณะของร้าน · รูปเมนูบางส่วนเป็นภาพประกอบ ราคาส่วนใหญ่รอร้านยืนยัน</p>
+  </div>
+</footer>
+
+<div class="fab">
+  <a class="l" href="https://lin.ee/xAN7EbZ" target="_blank" rel="noopener" aria-label="ทักไลน์"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg></a>
+  <a class="c" href="tel:0956236954" aria-label="โทร"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
+</div>
+<div class="mbar">
+  <a class="btn btn-sage" href="tel:0956236954">โทร</a>
+  <a class="btn btn-line" href="#order">สั่งขนมทางไลน์</a>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  const OA='@068lrffx';
+  const lineUrl=t=>'https://line.me/R/oaMessage/'+encodeURIComponent(OA)+'/?'+encodeURIComponent(t);
+  const TH_DAYS=['อาทิตย์','จันทร์','อังคาร','พุธ','พฤหัสบดี','ศุกร์','เสาร์'];
+  const HOURS={0:[540,1080],1:[390,1020],2:[390,1020],3:null,4:null,5:[390,1020],6:[540,1080]};
+  const fmt=m=>String(Math.floor(m/60)).padStart(2,'0')+'.'+String(m%60).padStart(2,'0');
+  // Bangkok time
+  const bkk=()=>{const n=new Date();return new Date(n.getTime()+(n.getTimezoneOffset()+420)*60000)};
+  const now=bkk(), dow=now.getDay(), mins=now.getHours()*60+now.getMinutes();
+  // status pill
+  const st=document.getElementById('status'), stt=document.getElementById('statusText');
+  const h=HOURS[dow];
+  function nextOpen(){for(let i=1;i<8;i++){const d=(dow+i)%7;if(HOURS[d])return (i===1?'พรุ่งนี้':'วัน'+TH_DAYS[d])+' '+fmt(HOURS[d][0])+' น.'}}
+  if(h&&mins>=h[0]&&mins<h[1]){st.classList.add('open');stt.textContent='เปิดอยู่ตอนนี้ · ถึง '+fmt(h[1])+' น.'+((dow===0||dow===6)?' · วันนี้มีก๋วยเตี๋ยว 🍜':'');}
+  else if(h&&mins<h[0]){st.classList.add('closed');stt.textContent='ยังไม่เปิด · วันนี้เปิด '+fmt(h[0])+' น. ทักไลน์สั่งไว้ก่อนได้';}
+  else{st.classList.add('closed');stt.textContent=(h?'ปิดแล้ววันนี้':'วันนี้ร้านหยุด')+' · เปิดอีกที '+nextOpen();}
+  const tr=document.querySelector('#hoursTbl tr[data-d="'+dow+'"]'); if(tr)tr.classList.add('today');
+
+  // tabs
+  document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+    const f=b.dataset.f;document.querySelectorAll('#menuGrid .item').forEach(it=>{it.classList.toggle('hide',f!=='all'&&it.dataset.c!==f&&!(f==='noodle'&&it.querySelector('.ribbon')&&/เสาร์|ส\.-อา\./.test(it.querySelector('.ribbon').textContent)))});
+  }));
+
+  // cart
+  const cart={};
+  const cartEl=document.getElementById('cart');
+  const toast=t=>{const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('show'),1800)};
+  function renderCart(){
+    const keys=Object.keys(cart).filter(k=>cart[k]>0);
+    if(!keys.length){cartEl.innerHTML='<div class="empty">ยังไม่มีขนมในตะกร้า · กด “+ ใส่ตะกร้า” จากเมนูด้านบน หรือเลือกด่วนด้านล่างได้เลย</div>'}
+    else cartEl.innerHTML=keys.map(k=>'<div class="ci"><b>'+k+'</b><div class="qty"><button data-k="'+k+'" data-v="-1" aria-label="ลด">−</button><span>'+cart[k]+'</span><button data-k="'+k+'" data-v="1" aria-label="เพิ่ม">+</button></div></div>').join('');
+    document.querySelectorAll('.add').forEach(b=>{const on=cart[b.dataset.name]>0;b.classList.toggle('added',on);b.textContent=on?'✓ ในตะกร้า ('+cart[b.dataset.name]+')':'+ ใส่ตะกร้า'});
+    build();
+  }
+  cartEl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;cart[b.dataset.k]=Math.max(0,(cart[b.dataset.k]||0)+ +b.dataset.v);renderCart()});
+  document.querySelectorAll('.add').forEach(b=>b.addEventListener('click',()=>{cart[b.dataset.name]=(cart[b.dataset.name]||0)+1;renderCart();toast('ใส่ “'+b.dataset.name+'” ในตะกร้าแล้ว 🧁')}));
+  const quick=document.getElementById('quick');
+  [...new Set([...document.querySelectorAll('.add')].map(b=>b.dataset.name))].forEach(n=>{const q=document.createElement('button');q.type='button';q.textContent='+ '+n;q.onclick=()=>{cart[n]=(cart[n]||0)+1;renderCart()};quick.appendChild(q)});
+
+  // order form
+  const $=id=>document.getElementById(id);
+  const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  const thDate=s=>{if(!s)return '';const d=new Date(s+'T00:00:00');return 'วัน'+TH_DAYS[d.getDay()]+'ที่ '+d.getDate()+'/'+(d.getMonth()+1)+'/'+(d.getFullYear()+543)};
+  // default date = next open day (today if still open)
+  (function(){let d=new Date(now);for(let i=0;i<8;i++){const hh=HOURS[d.getDay()];if(hh&&(i>0||mins<hh[1]-30))break;d.setDate(d.getDate()+1)}$('d').value=iso(d);$('d').min=iso(now);const hh=HOURS[d.getDay()];let m=hh[0]+30;if(iso(d)===iso(now))m=Math.min(hh[1]-30,Math.max(hh[0]+30,Math.ceil((mins+60)/30)*30));$('t').value=String(Math.floor(m/60)).padStart(2,'0')+':'+String(m%60).padStart(2,'0')})();
+  const how=()=>document.querySelector('input[name=how]:checked').value;
+  function check(){
+    const w=$('warn');w.className='warn';
+    const v=$('d').value;if(!v)return;
+    const d=new Date(v+'T00:00:00'),hh=HOURS[d.getDay()];
+    const [H,M]=($('t').value||'00:00').split(':').map(Number),tm=H*60+M;
+    if(!hh){w.className='warn show bad';w.textContent='วัน'+TH_DAYS[d.getDay()]+'ร้านหยุดค่ะ (หยุดทุกพุธ-พฤหัส) ลองเลือกวันอื่นนะคะ';return}
+    if(tm<hh[0]||tm>hh[1]){w.className='warn show bad';w.textContent='วัน'+TH_DAYS[d.getDay()]+'ร้านเปิด '+fmt(hh[0])+'–'+fmt(hh[1])+' น. ลองปรับเวลาอีกนิดนะคะ';return}
+    const hasNoodle=Object.keys(cart).some(k=>cart[k]>0&&/ก๋วยเตี๋ยว|หน้าหมู/.test(k));
+    if(hasNoodle&&d.getDay()!==0&&d.getDay()!==6){w.className='warn show bad';w.textContent='ก๋วยเตี๋ยวหมูโบราณและขนมปังหน้าหมูมีเฉพาะเสาร์-อาทิตย์นะคะ';return}
+    w.className='warn show ok';w.textContent='✓ วัน'+TH_DAYS[d.getDay()]+'ร้านเปิด '+fmt(hh[0])+'–'+fmt(hh[1])+' น. ส่งออเดอร์ได้เลยค่ะ';
+  }
+  function build(){
+    $('placeWrap').style.display=how()==='near'?'':'none';
+    const items=Object.keys(cart).filter(k=>cart[k]>0).map(k=>'• '+k+' x '+cart[k]);
+    const label={pickup:'รับที่ร้าน',near:'รอรับใกล้ร้าน (ปากซอย)',app:'ขอลิงก์สั่งผ่านแอปเดลิเวอรี่'}[how()];
+    let t='สวัสดีค่ะ Maysa.Bakehome 🧁 ขอสั่งขนมค่ะ\n\n'+(items.length?items.join('\n'):'• (ยังไม่ได้เลือกเมนู ขอดูเมนูวันนี้ค่ะ)')+'\n\nวิธีรับ: '+label;
+    if($('d').value)t+='\nวัน: '+thDate($('d').value)+(how()!=='app'?' เวลาประมาณ '+($('t').value||'').replace(':','.')+' น.':'');
+    if(how()==='near'&&$('pl').value.trim())t+='\nจุดรับ: '+$('pl').value.trim();
+    if($('nm').value.trim())t+='\nชื่อ: '+$('nm').value.trim();
+    if($('nt').value.trim())t+='\nหมายเหตุ: '+$('nt').value.trim();
+    t+='\n\nรบกวนแจ้งราคาและยืนยันออเดอร์ด้วยนะคะ 🙏';
+    $('msg').textContent=t;$('sendLine').href=lineUrl(t);check();
+  }
+  ['d','t','nm','pl','nt'].forEach(i=>$(i).addEventListener('input',build));
+  document.querySelectorAll('input[name=how]').forEach(r=>r.addEventListener('change',build));
+  $('copyBtn').addEventListener('click',()=>{navigator.clipboard&&navigator.clipboard.writeText($('msg').textContent).then(()=>toast('คัดลอกข้อความแล้ว วางในไลน์ร้านได้เลย'),()=>toast('คัดลอกไม่ได้ ลองกดค้างที่ข้อความนะคะ'))});
+  renderCart();
+
+  // birthday planner
+  const min3=new Date(now);min3.setDate(min3.getDate()+3);
+  const sug=new Date(now);sug.setDate(sug.getDate()+7);
+  $('bd').min=iso(now);$('bd').value=iso(sug);
+  function bday(){
+    const v=$('bd').value,o=$('calOut');let t='สวัสดีค่ะ ขอสอบถามคิวเค้ก'+$('bo').value+'ค่ะ 🎂';
+    if(v){
+      const d=new Date(v+'T00:00:00'),days=Math.round((d-new Date(iso(now)+'T00:00:00'))/864e5);
+      t+='\nอยากได้: '+thDate(v);
+      let msg;
+      if(days<3)msg='⚠️ อีก <b>'+days+' วัน</b> อาจไม่ทันคิว (ร้านรับล่วงหน้าอย่างน้อย 3-5 วัน) ทักไปถามคิวด่วนได้ แต่ไม่รับประกันนะคะ';
+      else if(days<5)msg='🙂 อีก <b>'+days+' วัน</b> อยู่ในช่วงล่วงหน้า 3-5 วัน ทักถามคิวเลยดีกว่าค่ะ';
+      else msg='✅ อีก <b>'+days+' วัน</b> สั่งล่วงหน้าทันสบาย ๆ จองคิวไว้ก่อนได้เลยค่ะ';
+      if(!HOURS[d.getDay()])msg+='<br>📌 วัน'+TH_DAYS[d.getDay()]+'ร้านหยุด อาจต้องนัดรับวันก่อนหน้านะคะ';
+      o.innerHTML=msg;
+    }
+    t+='\nขนาด: '+$('bs').value;
+    if($('bw').value.trim())t+='\nข้อความบนเค้ก: '+$('bw').value.trim();
+    t+='\nรบกวนแนะนำรสชาติและราคาด้วยนะคะ 🙏';
+    $('bdLine').href=lineUrl(t);
+  }
+  ['bd','bo','bs','bw'].forEach(i=>$(i).addEventListener('input',bday));bday();
+
+  // reveal
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.rv-in').forEach(el=>io.observe(el));
+})();
+</script>
+</body>
+</html>

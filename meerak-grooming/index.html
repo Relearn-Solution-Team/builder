@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>อาบน้ำตัดขน เมืองทองธานี | มีรัก Grooming by โรงพยาบาลสัตว์มีรัก</title>
+<meta name="description" content="อาบน้ำตัดขนสุนัข แมว กระต่าย ในโรงพยาบาลสัตว์มีรัก เมืองทองธานี มีสัตวแพทย์อยู่ในที่เดียว เปิดทุกวัน 10:00–19:00 น. จองคิวทาง LINE หรือโทร 099-760-7717">
+<link rel="icon" href="assets/meerak-logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mint:#7ccca7; --mint-d:#4fae86; --mint-l:#dff3ea; --mint-xl:#f1faf5;
+  --coral:#f3a893; --coral-d:#e07f68; --coral-l:#fde9e2;
+  --berry:#eb6363; --leaf:#2f6b4f; --ink:#1d3a2f; --muted:#5c7268;
+  --cream:#fbfaf3; --line:#dbe9e1; --white:#fff;
+  --r:20px; --shadow:0 20px 44px -24px rgba(29,58,47,.38);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Sarabun',sans-serif;color:var(--ink);background:var(--white);font-size:17px;line-height:1.7;overflow-x:hidden}
+h1,h2,h3,h4,.nst{font-family:'Noto Sans Thai',sans-serif;line-height:1.3}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:92px 0;position:relative}
+.grid-bg{background-color:var(--cream);background-image:linear-gradient(rgba(124,204,167,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(124,204,167,.16) 1px,transparent 1px);background-size:26px 26px}
+.demo-note{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--coral-d);background:var(--coral-l);border:1px dashed var(--coral);border-radius:999px;padding:3px 12px;font-weight:600}
+
+/* ribbon heading (from the logo's salmon ribbon) */
+.ribbon{display:inline-block;position:relative;background:var(--coral);color:#fff;font-family:'Noto Sans Thai';font-weight:700;font-size:15px;padding:5px 22px;margin:0 14px;letter-spacing:.3px}
+.ribbon::before,.ribbon::after{content:"";position:absolute;top:6px;width:18px;height:100%;background:var(--coral-d);z-index:-1}
+.ribbon::before{left:-12px;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,40% 50%)}
+.ribbon::after{right:-12px;clip-path:polygon(0 0,100% 0,60% 50%,100% 100%,0 100%)}
+.ribbon{z-index:1}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 48px}
+.sec-head h2{font-size:clamp(28px,3.6vw,42px);font-weight:800;margin:18px 0 10px;color:var(--ink)}
+.sec-head h2 em{white-space:nowrap;font-style:normal;color:var(--mint-d)}
+.sec-head p{color:var(--muted);font-size:18px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Noto Sans Thai';font-weight:700;border-radius:14px;padding:14px 24px;font-size:17px;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-line{background:#06c755;color:#fff;box-shadow:0 12px 24px -12px #06c755}
+.btn-call{background:var(--ink);color:#fff}
+.btn-soft{background:#fff;color:var(--ink);border:2px solid var(--line)}
+.btn-soft:hover{border-color:var(--mint)}
+
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:18px;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:50px;height:50px;border-radius:50%;border:2px solid var(--mint-l);object-fit:cover}
+.brand b{display:block;font-family:'Noto Sans Thai';font-weight:800;font-size:19px;line-height:1.15}
+.brand b span{color:var(--mint-d)}
+.brand small{display:block;font-size:12.5px;color:var(--muted);line-height:1.2}
+.nav ul{display:flex;gap:24px;list-style:none;margin-left:auto;font-weight:600;font-size:15.5px}
+.nav ul a:hover{color:var(--mint-d)}
+.nav .btn{padding:10px 18px;font-size:15px}
+.burger{display:none;margin-left:auto;background:none;border:0;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px auto;border-radius:2px}
+
+/* hero */
+.hero{padding:60px 0 96px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.tag-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;font-size:14.5px}
+.pill .dot{width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px var(--mint-l)}
+.pill.cross{color:var(--leaf)}
+.hero h1{font-size:clamp(38px,5.2vw,64px);font-weight:900;margin:22px 0 16px;letter-spacing:-.3px;color:var(--ink)}
+.hero h1 .m{color:var(--mint-d)}
+.hero h1 .c{position:relative;white-space:nowrap}
+.hero h1 .c::after{content:"";position:absolute;left:-2px;right:-2px;bottom:.06em;height:.3em;background:var(--coral-l);z-index:-1;border-radius:6px}
+.hero .lead{font-size:19px;color:var(--muted);max-width:560px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 30px}
+.facts{display:grid;grid-template-columns:repeat(3,auto);gap:12px 30px;justify-content:start}
+.facts div{font-size:14px;color:var(--muted);line-height:1.35}
+.facts b{display:block;font-family:'Noto Sans Thai';font-size:26px;font-weight:800;color:var(--ink)}
+.facts b i{font-style:normal;color:var(--mint-d)}
+
+.hero-visual{position:relative;height:560px}
+.card-photo{position:absolute;background:#fff;border-radius:24px;padding:10px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.card-photo img{border-radius:16px;width:100%;height:100%;object-fit:cover}
+.cp1{left:8%;top:0;width:58%;height:78%;transform:rotate(-2deg)}
+.cp2{right:0;top:10%;width:40%;height:44%;transform:rotate(3deg)}
+.cp3{right:4%;bottom:0;width:44%;height:42%;transform:rotate(-1.5deg)}
+.card-photo .lbl{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.95);border-radius:10px;padding:4px 12px;font-family:'Noto Sans Thai';font-weight:700;font-size:13.5px;color:var(--ink)}
+.chart-card{position:absolute;left:0;bottom:30px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:var(--shadow);border:1px solid var(--line);width:240px;z-index:3}
+.chart-card h4{font-size:14px;display:flex;align-items:center;gap:8px;color:var(--leaf)}
+.chart-card h4 svg{width:20px;height:20px}
+.chart-card ul{list-style:none;margin-top:6px;font-size:14px}
+.chart-card li{display:flex;align-items:center;gap:8px;padding:2px 0}
+.chart-card li::before{content:"";width:16px;height:16px;border-radius:5px;background:var(--mint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/11px no-repeat;flex:none}
+.leaf{position:absolute;pointer-events:none;opacity:.9}
+
+/* trust band */
+.trust{background:var(--ink);color:#fff;padding:0}
+.trust-in{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-in div{padding:30px 24px;border-right:1px solid rgba(255,255,255,.12);display:flex;gap:14px;align-items:flex-start}
+.trust-in div:last-child{border-right:0}
+.trust-in svg{width:38px;height:38px;flex:none;color:var(--mint)}
+.trust-in b{display:block;font-family:'Noto Sans Thai';font-size:17px}
+.trust-in span{font-size:14.5px;color:#bcd6ca;line-height:1.5;display:block}
+
+/* why hospital */
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.why-photo{position:relative}
+.why-photo img{border-radius:26px;width:100%;aspect-ratio:4/4.6;object-fit:cover;box-shadow:var(--shadow)}
+.why-photo .badge{position:absolute;right:-18px;top:28px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:var(--shadow);text-align:center;border:2px solid var(--mint-l)}
+.why-photo .badge b{display:block;font-family:'Noto Sans Thai';font-size:30px;font-weight:900;color:var(--mint-d);line-height:1.1}
+.why-photo .badge span{font-size:13px;color:var(--muted)}
+.why h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;margin:16px 0 14px}
+.why h2 em{font-style:normal;color:var(--mint-d)}
+.why-list{display:grid;gap:14px;margin-top:22px}
+.why-item{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;transition:border-color .2s,transform .2s}
+.why-item:hover{border-color:var(--mint);transform:translateX(4px)}
+.why-item .ic{width:46px;height:46px;border-radius:14px;background:var(--mint-l);display:grid;place-items:center;flex:none;color:var(--leaf)}
+.why-item .ic svg{width:24px;height:24px}
+.why-item b{font-family:'Noto Sans Thai';font-size:17.5px;display:block}
+.why-item p{color:var(--muted);font-size:15.5px;line-height:1.55}
+.hosp-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.hosp-tags span{background:var(--mint-xl);border:1px solid var(--line);border-radius:10px;padding:4px 12px;font-size:14.5px;font-weight:600;color:var(--leaf)}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 24px 22px;position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.svc::before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:linear-gradient(90deg,var(--mint),var(--coral))}
+.svc .ic{width:56px;height:56px;border-radius:16px;background:var(--mint-l);display:grid;place-items:center;color:var(--leaf);margin-bottom:14px}
+.svc .ic svg{width:30px;height:30px}
+.svc h3{font-size:20px;font-weight:700}
+.svc p{color:var(--muted);font-size:15.5px;margin:6px 0 12px}
+.svc ul{list-style:none;font-size:15px;display:grid;gap:4px}
+.svc li{display:flex;gap:8px}
+.svc li::before{content:"✓";color:var(--mint-d);font-weight:800}
+.svc .for{display:flex;gap:6px;margin-top:14px;flex-wrap:wrap}
+.svc .for span{font-size:12.5px;font-weight:700;background:var(--coral-l);color:var(--coral-d);border-radius:8px;padding:2px 10px}
+
+/* style chooser */
+.chooser{display:grid;grid-template-columns:300px 1fr;gap:28px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:22px;box-shadow:var(--shadow)}
+.tabs{display:grid;gap:10px;align-content:start}
+.tab{display:flex;gap:14px;align-items:center;text-align:left;background:var(--mint-xl);border:2px solid transparent;border-radius:16px;padding:12px 14px;cursor:pointer;transition:.2s}
+.tab img{width:54px;height:54px;border-radius:12px;object-fit:cover;flex:none}
+.tab b{font-family:'Noto Sans Thai';font-size:16.5px;display:block;color:var(--ink)}
+.tab span{font-size:13.5px;color:var(--muted)}
+.tab.on{background:#fff;border-color:var(--mint);box-shadow:0 10px 22px -16px rgba(29,58,47,.6)}
+.style-view{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:center}
+.style-view img{width:100%;aspect-ratio:3/3.8;object-fit:cover;border-radius:20px}
+.style-view h3{font-size:28px;font-weight:800}
+.style-view .quote{background:var(--coral-l);border-left:4px solid var(--coral);border-radius:0 14px 14px 0;padding:10px 16px;margin:14px 0;font-size:15.5px}
+.style-view .quote small{display:block;color:var(--coral-d);font-weight:700;font-size:12.5px}
+.meter{margin:10px 0}
+.meter label{display:flex;justify-content:space-between;font-size:14.5px;font-weight:600}
+.meter .bar{height:9px;background:var(--mint-l);border-radius:99px;overflow:hidden;margin-top:4px}
+.meter .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--mint),var(--mint-d));border-radius:99px;transition:width .5s}
+.style-view .fit{font-size:15px;color:var(--muted);margin-top:10px}
+.style-view .btn{margin-top:16px}
+
+/* portfolio */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:16px}
+.g{position:relative;border-radius:18px;overflow:hidden;cursor:zoom-in;background:var(--mint-l)}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.g:hover img{transform:scale(1.05)}
+.g.tall{grid-row:span 2}
+.g figcaption{position:absolute;left:10px;right:10px;bottom:10px;background:rgba(255,255,255,.94);border-radius:12px;padding:6px 12px;font-size:14px;line-height:1.4}
+.g figcaption b{font-family:'Noto Sans Thai';display:block;font-size:14.5px}
+.quotes{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:30px}
+.quotes span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:15px}
+.lightbox{position:fixed;inset:0;background:rgba(18,36,29,.88);display:none;align-items:center;justify-content:center;z-index:100;padding:24px}
+.lightbox.on{display:flex}
+.lightbox img{max-height:88vh;max-width:92vw;border-radius:16px}
+.lightbox button{position:absolute;top:18px;right:22px;background:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:22px;cursor:pointer}
+
+/* prep checklist */
+.prep-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:start}
+.checklist{display:grid;gap:12px}
+.chk{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:14px 16px;cursor:pointer;transition:.2s;user-select:none}
+.chk .box{width:28px;height:28px;border-radius:9px;border:2px solid var(--mint);flex:none;display:grid;place-items:center;transition:.2s;margin-top:2px}
+.chk .box svg{width:16px;height:16px;opacity:0;color:#fff}
+.chk b{font-family:'Noto Sans Thai';font-size:16.5px;display:block}
+.chk p{font-size:15px;color:var(--muted);line-height:1.5}
+.chk.on{background:var(--mint-xl);border-color:var(--mint)}
+.chk.on .box{background:var(--mint-d);border-color:var(--mint-d)}
+.chk.on .box svg{opacity:1}
+.prep-side{position:sticky;top:100px;background:#fff;border-radius:24px;padding:26px;border:1px solid var(--line);box-shadow:var(--shadow);text-align:center}
+.ring{width:170px;height:170px;margin:4px auto 12px;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .num{position:absolute;inset:0;display:grid;place-items:center;font-family:'Noto Sans Thai';font-weight:900;font-size:40px;color:var(--ink)}
+.ring .num small{display:block;font-size:14px;font-weight:600;color:var(--muted);margin-top:-14px}
+.prep-side h3{font-size:20px}
+.prep-side p{color:var(--muted);font-size:15px;margin:6px 0 16px}
+.pet-switch{display:flex;gap:6px;justify-content:center;margin-bottom:18px;flex-wrap:wrap}
+.pet-switch button,.seg button{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:6px 16px;font-weight:700;font-size:15px;cursor:pointer;color:var(--ink)}
+.pet-switch button.on,.seg button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+
+/* booking */
+.book{background:linear-gradient(180deg,var(--mint-xl),#fff)}
+.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:var(--shadow)}
+.book-grid>.panel:first-child{position:sticky;top:96px}
+.panel h3{font-size:21px;display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.panel h3 .n{width:30px;height:30px;border-radius:50%;background:var(--mint);color:#fff;display:grid;place-items:center;font-size:15px}
+.cal-head{display:flex;justify-content:space-between;align-items:center;margin:10px 0 10px}
+.cal-head b{font-family:'Noto Sans Thai';font-size:18px}
+.legend{display:flex;gap:12px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:4px;margin-right:5px;vertical-align:-1px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.cal .dow{text-align:center;font-size:13px;font-weight:700;color:var(--muted);padding:4px 0}
+.cal button{aspect-ratio:1/0.86;border-radius:12px;border:1.5px solid var(--line);background:#fff;font-family:'Noto Sans Thai';font-weight:700;font-size:15.5px;cursor:pointer;position:relative;color:var(--ink);transition:.15s}
+.cal button::after{content:"";position:absolute;left:50%;bottom:6px;width:6px;height:6px;border-radius:50%;transform:translateX(-50%)}
+.cal button.free::after{background:var(--mint-d)}
+.cal button.few::after{background:var(--coral-d)}
+.cal button.full{color:#b9c7c0;background:#f6f8f7;cursor:not-allowed}
+.cal button.past{color:#c9d3ce;border-color:transparent;cursor:default}
+.cal button.sel{background:var(--ink);color:#fff;border-color:var(--ink)}
+.cal button:not(.full):not(.past):hover{border-color:var(--mint)}
+.slots{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.slots button{border:1.5px solid var(--line);background:#fff;border-radius:10px;padding:6px 14px;font-weight:700;cursor:pointer;font-size:15px;color:var(--ink)}
+.slots button.on{background:var(--mint-d);border-color:var(--mint-d);color:#fff}
+.slots button:disabled{color:#c2cec8;text-decoration:line-through;cursor:not-allowed}
+.form{display:grid;gap:14px;margin-top:12px}
+.form label{font-weight:700;font-size:14.5px;display:block;margin-bottom:6px}
+.form input,.form select,.form textarea{width:100%;font-family:inherit;font-size:16px;border:1.5px solid var(--line);border-radius:12px;padding:11px 14px;background:#fff;color:var(--ink)}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--mint)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.summary{margin-top:18px;background:var(--cream);border:1.5px dashed var(--mint);border-radius:16px;padding:14px 16px;font-size:15px;white-space:pre-line;line-height:1.6;min-height:120px}
+.book-actions .btn{flex:1 1 auto}
+.book-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.price-est{display:flex;justify-content:space-between;align-items:center;margin-top:14px;background:var(--mint-xl);border-radius:14px;padding:12px 16px}
+.price-est b{font-family:'Noto Sans Thai';font-size:24px;color:var(--leaf)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 22px;position:relative}
+.step::before{counter-increment:s;content:counter(s);position:absolute;top:-16px;left:22px;width:36px;height:36px;border-radius:50%;background:var(--coral);color:#fff;display:grid;place-items:center;font-family:'Noto Sans Thai';font-weight:800}
+.step h4{font-size:18px;margin:8px 0 6px}
+.step p{font-size:15px;color:var(--muted)}
+
+/* reviews */
+.rev-top{display:flex;align-items:center;justify-content:center;gap:22px;margin-bottom:34px;flex-wrap:wrap}
+.score{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px 22px}
+.score b{font-family:'Noto Sans Thai';font-size:38px;font-weight:900;color:var(--mint-d)}
+.score span{font-size:14.5px;color:var(--muted);line-height:1.35}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rev{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}
+.rev .stars{color:#f5b301;letter-spacing:2px}
+.rev p{margin:8px 0 14px;font-size:16px}
+.rev .who{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.rev .who i{width:36px;height:36px;border-radius:50%;background:var(--mint-l);display:grid;place-items:center;font-style:normal;font-weight:800;color:var(--leaf)}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:4px 20px}
+.faq summary{cursor:pointer;list-style:none;font-family:'Noto Sans Thai';font-weight:700;font-size:17px;padding:14px 0;display:flex;justify-content:space-between;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:24px;color:var(--mint-d);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 0 16px;color:var(--muted)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;align-items:stretch}
+.info{background:var(--ink);color:#fff;border-radius:26px;padding:30px;position:relative;overflow:hidden}
+.info img{width:92px;height:92px;border-radius:50%;border:4px solid #fff}
+.info h3{font-size:24px;margin:14px 0 4px}
+.info .sub{color:#bcd6ca;font-size:15px}
+.info dl{margin:20px 0;display:grid;gap:12px}
+.info dt{font-size:13px;color:var(--mint);font-weight:700;letter-spacing:.3px}
+.info dd{font-size:16px}
+.info dd a{text-decoration:underline;text-decoration-color:rgba(255,255,255,.3)}
+.info .btns{display:flex;gap:10px;flex-wrap:wrap}
+.map{border-radius:26px;overflow:hidden;border:1px solid var(--line);min-height:420px}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+
+footer{background:#13281f;color:#9fb9ad;padding:30px 0 96px;font-size:14px;text-align:center}
+footer b{color:#fff}
+
+/* floating */
+.float{position:fixed;right:18px;bottom:18px;display:flex;flex-direction:column;gap:10px;z-index:70}
+.float a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 24px -10px rgba(0,0,0,.45);transition:transform .2s}
+.float a:hover{transform:scale(1.08)}
+.float svg{width:28px;height:28px}
+.f-line{background:#06c755;color:#fff}
+.f-call{background:var(--coral-d);color:#fff}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1020px){
+  .nav ul{display:none}
+  .nav ul.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:#fff;padding:18px 24px;border-bottom:1px solid var(--line);gap:14px}
+  .burger{display:block}
+  .nav .btn{display:none}
+  .hero-grid,.why-grid,.prep-grid,.book-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-visual{height:480px;max-width:560px;margin:0 auto;width:100%}
+  .trust-in{grid-template-columns:1fr 1fr}
+  .trust-in div:nth-child(2){border-right:0}
+  .trust-in div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.12)}
+  .svc-grid,.revs{grid-template-columns:1fr 1fr}
+  .chooser{grid-template-columns:1fr}
+  .tabs{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr 1fr;row-gap:30px}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+  .prep-side{position:static}
+  .book-grid>.panel:first-child{position:static}
+  .why-photo{max-width:480px;margin:0 auto}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  section{padding:68px 0}
+  .wrap{padding:0 18px}
+  .brand small{display:none}
+  .hero{padding:36px 0 64px}
+  .hero-visual{height:400px}
+  .chart-card{width:200px;bottom:6px;padding:10px 14px}
+  .chart-card ul{font-size:13px}
+  .facts{grid-template-columns:repeat(3,1fr);gap:10px}
+  .facts b{font-size:21px}
+  .facts div{font-size:12.5px}
+  .cta-row .btn{flex:1 1 100%}
+  .trust-in{grid-template-columns:1fr}
+  .trust-in div{border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}
+  .svc-grid,.revs,.steps{grid-template-columns:1fr}
+  .tabs{grid-template-columns:1fr}
+  .tab img{width:44px;height:44px}
+  .style-view{grid-template-columns:1fr}
+  .style-view img{aspect-ratio:4/3.4}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px;gap:10px}
+  .g figcaption{font-size:12.5px;padding:4px 8px;left:6px;right:6px;bottom:6px}
+  .g figcaption b{font-size:13px}
+  .panel{padding:20px 16px}
+  .row2{grid-template-columns:1fr}
+  .cal{gap:4px}
+  .cal button{font-size:14px;border-radius:9px}
+  .why-photo .badge{right:8px}
+  .ribbon{font-size:14px}
+  .legend{display:none}
+  .hero > .leaf{display:none}
+  .trust-in div{padding:18px 4px}
+  .gallery .g:last-child{grid-row:span 1;grid-column:span 2}
+  .svc{padding:22px 20px 18px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-line" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5C6.2 2.5 1.5 6.3 1.5 11c0 4.2 3.7 7.7 8.8 8.4.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 6-3.5 8.2-6 1.5-1.7 2.3-3.4 2.3-5.3C22.5 6.3 17.8 2.5 12 2.5zM8 13.6H5.9c-.3 0-.6-.3-.6-.6V8.8c0-.3.3-.6.6-.6s.6.3.6.6v3.6H8c.3 0 .6.3.6.6s-.3.6-.6.6zm2.2-.6c0 .3-.3.6-.6.6s-.6-.3-.6-.6V8.8c0-.3.3-.6.6-.6s.6.3.6.6V13zm5 0c0 .3-.2.5-.4.6h-.2c-.2 0-.4-.1-.5-.2l-2.1-2.9V13c0 .3-.3.6-.6.6s-.6-.3-.6-.6V8.8c0-.3.2-.5.4-.6h.2c.2 0 .4.1.5.2l2.1 2.9V8.8c0-.3.3-.6.6-.6s.6.3.6.6V13zm3.4-2.7c.3 0 .6.3.6.6s-.3.6-.6.6H17v.9h1.6c.3 0 .6.3.6.6s-.3.6-.6.6h-2.2c-.3 0-.6-.3-.6-.6V8.8c0-.3.3-.6.6-.6h2.2c.3 0 .6.3.6.6s-.3.6-.6.6H17v.9h1.6z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+    <symbol id="i-steth" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v5a5 5 0 0 0 10 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></g></symbol>
+    <symbol id="i-scissors" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.1 15.9M14.5 14.5L20 20M8.1 8.1L12 12"/></g></symbol>
+    <symbol id="i-bath" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18v2a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-2z"/><path d="M6 12V5a2 2 0 0 1 4 0"/><path d="M7 20l-1 2M17 20l1 2"/><circle cx="14" cy="6" r="1"/><circle cx="17" cy="8.5" r="1.2"/></g></symbol>
+    <symbol id="i-paw" viewBox="0 0 24 24"><g fill="currentColor"><ellipse cx="6" cy="9" rx="2" ry="2.6"/><ellipse cx="10" cy="5.5" rx="2" ry="2.6"/><ellipse cx="14.5" cy="5.5" rx="2" ry="2.6"/><ellipse cx="18.5" cy="9" rx="2" ry="2.6"/><path d="M12.2 11c2.8 0 6 3.6 6 6.2 0 2-1.6 2.6-3 2.6-1.3 0-2-.7-3-.7s-1.7.7-3 .7c-1.4 0-3-.6-3-2.6 0-2.6 3.2-6.2 6-6.2z"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5l8-3z"/><path d="M12 8v6M9 11h6"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+    <symbol id="i-nail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8v6a4 4 0 0 1-8 0V3z"/><path d="M12 13v8M9 18h6"/></g></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9z"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 120 60"><g fill="none" stroke="#2f6b4f" stroke-width="2.2" stroke-linecap="round"><path d="M4 50C40 44 78 30 116 6"/></g><g fill="#4fae86"><path d="M30 44c-2-10 4-18 12-20-1 9-5 16-12 20z"/><path d="M52 37c-4-9 0-18 8-22 1 9-2 17-8 22z"/><path d="M76 26c-3-9 1-17 9-20 0 9-3 16-9 20z"/><path d="M36 46c8-6 17-6 22-1-8 5-16 5-22 1z" fill="#7ccca7"/><path d="M60 37c8-5 17-4 21 1-8 4-16 4-21-1z" fill="#7ccca7"/><path d="M84 25c7-5 16-5 20 0-7 4-15 4-20 0z" fill="#7ccca7"/></g><g fill="#eb6363"><circle cx="20" cy="47" r="3"/><circle cx="96" cy="15" r="3"/><circle cx="102" cy="20" r="2.4"/></g></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <img src="assets/meerak-logo.jpg" alt="โลโก้ โรงพยาบาลสัตว์มีรัก">
+      <div><b>มีรัก <span>Grooming</span></b><small>อาบน้ำตัดขน · โดยโรงพยาบาลสัตว์มีรัก</small></div>
+    </a>
+    <ul id="menu">
+      <li><a href="#services">บริการ</a></li>
+      <li><a href="#styles">เลือกทรง</a></li>
+      <li><a href="#portfolio">ผลงาน</a></li>
+      <li><a href="#prep">เตรียมตัวน้อง</a></li>
+      <li><a href="#book">จองคิว</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+    <a class="btn btn-line" href="https://line.me/R/ti/p/@587qouep" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>จองคิวทาง LINE</a>
+    <button class="burger" aria-label="เมนู" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero grid-bg" id="top">
+  <svg class="leaf" style="left:-30px;top:30px;width:220px;transform:rotate(-12deg)"><use href="#i-leaf"/></svg>
+  <svg class="leaf" style="right:-40px;bottom:20px;width:260px;transform:rotate(168deg)"><use href="#i-leaf"/></svg>
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <div class="tag-row">
+        <span class="pill"><span class="dot"></span>เปิดทุกวัน 10:00–19:00 น.</span>
+        <span class="pill cross"><svg width="18" height="18"><use href="#i-steth"/></svg>มีสัตวแพทย์อยู่ในโรงพยาบาล</span>
+      </div>
+      <h1>อาบน้ำตัดขน<br>ให้น้อง<span class="m">ตัวหอม</span><br>ในที่ที่<span class="c">มีคุณหมอ</span></h1>
+      <p class="lead">พร้อมเสิร์ฟความสะอาดและความสวยหล่อให้น้องบ๊อกๆ เหมียวๆ ทุกตัว 😻🛁✂️ ที่ รพส. มีรัก เมืองทองธานี — อาบ ตัด แต่ง โดยช่างของโรงพยาบาล ดูแลด้วยความรักและความใส่ใจทุกขั้นตอน</p>
+      <div class="cta-row">
+        <a class="btn btn-line" href="#book"><svg><use href="#i-line"/></svg>เช็คคิวว่าง &amp; จองคิว</a>
+        <a class="btn btn-call" href="tel:0997607717"><svg><use href="#i-phone"/></svg>โทร 099-760-7717</a>
+      </div>
+      <div class="facts">
+        <div><b>94<i>%</i></b>แนะนำบน Facebook<br>(14 รีวิว)</div>
+        <div><b>1.1<i>K</i></b>ผู้ติดตามเพจ<br>โรงพยาบาลสัตว์มีรัก</div>
+        <div><b>3</b>สุนัข · แมว<br>· กระต่าย</div>
+      </div>
+    </div>
+    <div class="hero-visual rv">
+      <figure class="card-photo cp1"><img src="assets/pom-teddy-cut.jpg" alt="ปอมเมอเรเนียนตัดทรงหมี ที่โรงพยาบาลสัตว์มีรัก"><span class="lbl">ทรงหมีกลมๆ 🧸</span></figure>
+      <figure class="card-photo cp2"><img src="assets/poodle-teddy.jpg" alt="พุดเดิ้ลตัดทรงหน้ากลม"><span class="lbl">หน้ากลมมากกก</span></figure>
+      <figure class="card-photo cp3"><img src="assets/pom-shiba-cut.jpg" alt="น้องหมาตัดทรงบลู"><span class="lbl">ทรงบลู ดูแลง่าย</span></figure>
+      <div class="chart-card">
+        <h4><svg><use href="#i-steth"/></svg>ใบตรวจก่อนอาบ</h4>
+        <ul><li>ผิวหนัง · เห็บหมัด</li><li>หู · ตา · เล็บ</li><li>สังเกตอาการเครียด</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<section class="trust">
+  <div class="wrap trust-in">
+    <div><svg><use href="#i-steth"/></svg><p><b>ใกล้คุณหมอ</b><span>อาบน้ำตัดขนในโรงพยาบาลสัตว์ ถ้ามีอะไรผิดปกติ ปรึกษาสัตวแพทย์ได้ทันที</span></p></div>
+    <div><svg><use href="#i-paw"/></svg><p><b>สุนัข แมว กระต่าย</b><span>“วันนี้มีน้องกระตุ่ยมาอาบน้ำค่าา 🥰🐇” — รับทั้งน้องหมา น้องแมว และกระต่าย</span></p></div>
+    <div><svg><use href="#i-clock"/></svg><p><b>เปิดทุกวัน 10:00–19:00</b><span>แนะนำจองคิวล่วงหน้า เช็คคิวว่างได้ทาง LINE Official</span></p></div>
+    <div><svg><use href="#i-pin"/></svg><p><b>เมืองทองธานี</b><span>หน้า Beehive เยื้อง ม.สุโขทัยธรรมาธิราช ถ.ป็อปปูล่า</span></p></div>
+  </div>
+</section>
+
+<!-- WHY HOSPITAL -->
+<section class="why" id="why">
+  <div class="wrap why-grid">
+    <div class="why-photo rv">
+      <img src="assets/chihuahua-long.jpg" alt="ชิวาวาขนยาวหลังอาบน้ำ หน้าโลโก้โรงพยาบาลสัตว์มีรัก">
+      <div class="badge"><b>รพส.</b><span>อาบน้ำในโรงพยาบาล<br>ไม่ใช่แค่ร้านอาบน้ำ</span></div>
+    </div>
+    <div class="rv">
+      <span class="ribbon">ทำไมต้องอาบที่ รพส. มีรัก</span>
+      <h2>สวยหล่อได้ <em>อุ่นใจด้วย</em><br>เพราะคุณหมออยู่ข้างๆ</h2>
+      <p style="color:var(--muted)">การอาบน้ำตัดขนเป็นเวลาที่ได้เห็นตัวน้องทุกซอกทุกมุม ถ้าเจอจุดที่น่าสงสัย ที่นี่ไม่ต้องพาน้องไปอีกที่ เพราะเป็นโรงพยาบาลสัตว์อยู่แล้ว</p>
+      <div class="why-list">
+        <div class="why-item"><div class="ic"><svg><use href="#i-shield"/></svg></div><div><b>เจออะไรผิดปกติ แจ้งคุณหมอได้เลย</b><p>ผื่น ตุ่ม เห็บหมัด หูมีกลิ่น ช่างแจ้งเจ้าของ และให้สัตวแพทย์ดูต่อได้ในที่เดียว</p></div></div>
+        <div class="why-item"><div class="ic"><svg><use href="#i-steth"/></svg></div><div><b>มาอาบพร้อมทำวัคซีน ตรวจสุขภาพได้</b><p>นัดวัคซีนหรือตรวจเลือดในวันเดียวกับวันอาบน้ำ ประหยัดเวลา ไม่ต้องเดินทางหลายรอบ</p></div></div>
+        <div class="why-item"><div class="ic"><svg><use href="#i-home"/></svg></div><div><b>รับฝากเลี้ยงต่อได้</b><p>“ขอบคุณลูกค้าประจำที่วางใจส่งน้องมาดูแลที่ร้านนะคะ” — ฝากเลี้ยงฝากรักได้ที่ รพส. มีรัก</p></div></div>
+      </div>
+      <div class="hosp-tags">
+        <span>ตรวจรักษา</span><span>#ตรวจเลือดได้ผลด่วน</span><span>เอกซเรย์</span><span>อัลตร้าซาวด์</span><span>วัคซีน</span><span>ฝากเลี้ยง</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="grid-bg">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="ribbon">บริการกรูมมิ่ง</span>
+      <h2>อาบสวย <em>ตัดหล่อ</em> ครบในที่เดียว</h2>
+      <p>เลือกบริการที่เหมาะกับน้อง ไม่แน่ใจทักไลน์ถามช่างได้เลยค่ะ</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv"><div class="ic"><svg><use href="#i-bath"/></svg></div><h3>อาบน้ำ เป่าแห้ง</h3><p>อาบเสร็จกลับบ้านตัวหอมเลย 😍💕</p><ul><li>แชมพูตามสภาพผิวและขน</li><li>เป่าแห้ง แปรงขน สางสังกะตัง</li><li>ตัดเล็บ เช็ดหู บีบต่อมก้น</li></ul><div class="for"><span>สุนัข</span><span>แมว</span></div></article>
+      <article class="svc rv"><div class="ic"><svg><use href="#i-scissors"/></svg></div><h3>อาบน้ำ + ตัดขนทั้งตัว</h3><p>จัดทรงตามใจเจ้าของ ทรงบลู ทรงหมี หน้ากลม</p><ul><li>รวมบริการอาบน้ำทั้งหมด</li><li>ไถหรือซอยขนทั้งตัวตามทรง</li><li>เก็บหน้า เท้า ก้น ให้เรียบร้อย</li></ul><div class="for"><span>สุนัข</span><span>แมวขนยาว</span></div></article>
+      <article class="svc rv"><div class="ic"><svg><use href="#i-paw"/></svg></div><h3>ตัดแต่งเฉพาะจุด</h3><p>สำหรับน้องที่ไม่อยากตัดทั้งตัว</p><ul><li>เก็บขนหน้า ขนตาไม่ทิ่มตา</li><li>ไถอุ้งเท้า กันลื่น</li><li>ตัดขนรอบก้น สะอาดขึ้น</li></ul><div class="for"><span>สุนัข</span><span>แมว</span></div></article>
+      <article class="svc rv"><div class="ic"><svg><use href="#i-paw"/></svg></div><h3>อาบน้ำน้องแมว</h3><p>แยกจัดการแบบนุ่มนวล เพราะเหมียวเครียดง่าย</p><ul><li>ใช้เวลาให้น้องปรับตัว</li><li>เป่าแห้งเบาๆ เสียงไม่ดัง</li><li>ถ้าเครียดมาก ปรึกษาคุณหมอได้</li></ul><div class="for"><span>แมว</span></div></article>
+      <article class="svc rv"><div class="ic"><svg><use href="#i-paw"/></svg></div><h3>อาบน้ำกระต่าย</h3><p>“น้องกระตุ่ยมาอาบน้ำค่าา 🐇”</p><ul><li>ทำความสะอาดอย่างระมัดระวัง</li><li>เป่าแห้งสนิท ไม่ให้อับชื้น</li><li>ตัดเล็บ เช็คฟันเบื้องต้น</li></ul><div class="for"><span>กระต่าย</span></div></article>
+      <article class="svc rv"><div class="ic"><svg><use href="#i-nail"/></svg></div><h3>ตัดเล็บ · เช็ดหู</h3><p>บริการเสริมแบบไม่ต้องอาบน้ำ</p><ul><li>ตัดเล็บ ตะไบให้มน</li><li>ทำความสะอาดหู</li><li>หูมีกลิ่น/แดง ส่งต่อคุณหมอ</li></ul><div class="for"><span>สุนัข</span><span>แมว</span><span>กระต่าย</span></div></article>
+    </div>
+    <p style="text-align:center;margin-top:24px"><span class="demo-note">รายละเอียดในแต่ละบริการเป็นตัวอย่างสำหรับเดโม · ยืนยันรายการจริงกับทางร้าน</span></p>
+  </div>
+</section>
+
+<!-- STYLE CHOOSER -->
+<section id="styles">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="ribbon">เลือกทรงให้น้อง</span>
+      <h2>ตัดยังไงให้ <em>น่ารักกว่าเดิม</em> 🥰</h2>
+      <p>แตะดูแต่ละทรง เทียบความยาวขน ความง่ายในการดูแล แล้วกดส่งทรงที่ชอบให้ช่างทาง LINE</p>
+    </div>
+    <div class="chooser rv">
+      <div class="tabs" id="tabs"></div>
+      <div class="style-view" id="styleView"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="grid-bg">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="ribbon">ผลงานจากหน้าร้าน</span>
+      <h2>แปลงร่างเด็กๆ <em>ที่ รพส. มีรัก</em> 🚿🫧💗</h2>
+      <p>รูปจริงจากเพจโรงพยาบาลสัตว์มีรัก ถ่ายบนโต๊ะกรูมมิ่งหน้าโลโก้ร้าน แตะรูปเพื่อดูใหญ่</p>
+    </div>
+    <div class="gallery" id="gallery">
+      <figure class="g tall rv"><img src="assets/pom-teddy-cut.jpg" alt="ปอมทรงหมี" loading="lazy"><figcaption><b>ทรงหมีตัวกลม</b>ปอมเมอเรเนียน</figcaption></figure>
+      <figure class="g rv"><img src="assets/poodle-teddy.jpg" alt="พุดเดิ้ลหน้ากลม" loading="lazy"><figcaption><b>หน้ากลมมากกก 🤏🏻</b>ทอยพุดเดิ้ล</figcaption></figure>
+      <figure class="g rv"><img src="assets/chihuahua-smile.jpg" alt="ชิวาวาหลังอาบน้ำ" loading="lazy"><figcaption><b>อาบเสร็จ Alert มาก 😂</b>ชิวาวา</figcaption></figure>
+      <figure class="g tall rv"><img src="assets/pom-shiba-cut.jpg" alt="ทรงบลู" loading="lazy"><figcaption><b>ทรงบลูที่จริงใจ</b>หล่อพอมัดใจสาวมั้ยงับ 😍</figcaption></figure>
+      <figure class="g tall rv"><img src="assets/chihuahua-long.jpg" alt="ชิวาวาขนยาว" loading="lazy"><figcaption><b>ขนฟูนุ่ม ตัวหอม</b>ชิวาวาขนยาว</figcaption></figure>
+      <figure class="g rv"><img src="assets/cats.jpg" alt="น้องแมวสองตัว" loading="lazy"><figcaption><b>เหมียวๆ ก็มาได้</b>สก็อตติชโฟลด์ &amp; อเมริกันชอร์ตแฮร์</figcaption></figure>
+      <figure class="g rv"><img src="assets/labrador.jpg" alt="ลาบราดอร์" loading="lazy"><figcaption><b>ตัวใหญ่ก็อาบได้</b>ลาบราดอร์</figcaption></figure>
+      <figure class="g tall rv"><img src="assets/pom-fluffy.jpg" alt="ปอมขนฟูก่อนตัด" loading="lazy" style="object-position:center 75%"><figcaption><b>ก่อนแปลงร่าง</b>ขนฟูเต็มที่</figcaption></figure>
+    </div>
+    <div class="quotes rv">
+      <span>“จัดทรงบลูไปเลย 4 ตัว ดูแลง่ายย ☺️🫧”</span>
+      <span>“เป่าเปามาตัดขนที่โรงพยาบาลสัตว์มีรักครั้งแรกค้าบบ 😍🚿”</span>
+      <span>“ขอสั้นๆ เลยงับพี่ช่าง 😁”</span>
+      <span>“จากวันนั้นที่มอมแมม สู่ความนุ่มหอมในวันนี้ ✨”</span>
+    </div>
+  </div>
+</section>
+
+<!-- PREP CHECKLIST -->
+<section id="prep">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="ribbon">เตรียมน้องก่อนมา</span>
+      <h2>เช็คลิสต์ก่อนพาน้อง <em>มาอาบน้ำ</em></h2>
+      <p>ติ๊กให้ครบ น้องจะอาบสบาย ไม่เครียด และช่างทำงานได้ปลอดภัยขึ้น</p>
+    </div>
+    <div class="prep-grid">
+      <div class="checklist rv" id="checklist"></div>
+      <aside class="prep-side rv">
+        <div class="pet-switch" id="petSwitch">
+          <button data-pet="dog" class="on">🐶 น้องหมา</button><button data-pet="cat">🐱 น้องแมว</button><button data-pet="rabbit">🐰 กระต่าย</button>
+        </div>
+        <div class="ring">
+          <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="52" fill="none" stroke="#dff3ea" stroke-width="12"/><circle id="ringBar" cx="60" cy="60" r="52" fill="none" stroke="#4fae86" stroke-width="12" stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="326.7" style="transition:stroke-dashoffset .5s"/></svg>
+          <div class="num"><span id="ringNum">0/0</span></div>
+        </div>
+        <h3 id="ringTitle">เริ่มเตรียมตัวกันเลย</h3>
+        <p id="ringText">ติ๊กรายการทางซ้ายที่ทำแล้ว</p>
+        <a class="btn btn-line" href="#book" style="width:100%"><svg><use href="#i-line"/></svg>พร้อมแล้ว ไปจองคิว</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book" class="book">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="ribbon">จองคิวล่วงหน้า</span>
+      <h2>เช็คคิวว่าง แล้ว <em>ส่งใบจองทาง LINE</em></h2>
+      <p>ร้านลงตารางอาบน้ำตัดขนประจำเดือนไว้ที่เพจ เลือกวัน เวลา และกรอกข้อมูลน้อง ระบบจะเขียนข้อความจองให้ แล้วส่งเข้า LINE Official ของร้านได้ทันที</p>
+    </div>
+    <div class="book-grid">
+      <div class="panel rv">
+        <h3><span class="n">1</span>เลือกวันและเวลา</h3>
+        <span class="demo-note">ตารางคิวตัวอย่าง · คิวจริงยืนยันโดยร้านทาง LINE</span>
+        <div class="cal-head"><b id="calTitle"></b><div class="legend"><span><i style="background:#4fae86"></i>ว่าง</span><span><i style="background:#e07f68"></i>เหลือน้อย</span><span><i style="background:#dbe3df"></i>เต็ม</span></div></div>
+        <div class="cal" id="cal"></div>
+        <div class="slots" id="slots"></div>
+      </div>
+      <div class="panel rv">
+        <h3><span class="n">2</span>ข้อมูลน้อง &amp; บริการ</h3>
+        <div class="form">
+          <div><label>น้องเป็น</label><div class="seg" id="petType"><button class="on" data-v="สุนัข">🐶 สุนัข</button><button data-v="แมว">🐱 แมว</button><button data-v="กระต่าย">🐰 กระต่าย</button></div></div>
+          <div class="row2">
+            <div><label for="fName">ชื่อน้อง</label><input id="fName" placeholder="เช่น บัตเตอร์"></div>
+            <div><label for="fBreed">สายพันธุ์</label><input id="fBreed" placeholder="เช่น ปอมเมอเรเนียน"></div>
+          </div>
+          <div class="row2">
+            <div><label for="fSize">ขนาด/น้ำหนัก</label><select id="fSize"><option value="S">เล็ก (ไม่เกิน 5 กก.)</option><option value="M">กลาง (5–10 กก.)</option><option value="L">ใหญ่ (10–20 กก.)</option><option value="XL">ใหญ่มาก (20 กก. ขึ้นไป)</option></select></div>
+            <div><label for="fSvc">บริการ</label><select id="fSvc"><option value="bath">อาบน้ำ เป่าแห้ง</option><option value="cut">อาบน้ำ + ตัดขนทั้งตัว</option><option value="trim">อาบน้ำ + ตัดแต่งเฉพาะจุด</option><option value="nail">ตัดเล็บ · เช็ดหู</option></select></div>
+          </div>
+          <div><label for="fStyle">ทรงที่อยากได้</label><select id="fStyle"><option>ให้ช่างแนะนำ</option><option>ทรงบลู (สั้นทั้งตัว)</option><option>ทรงหมี / เท็ดดี้</option><option>ทรงหน้ากลม</option><option>ขอสั้นๆ เลย</option><option>ไม่ตัด อาบอย่างเดียว</option></select></div>
+          <div><label for="fNote">แจ้งช่าง/คุณหมอ</label><textarea id="fNote" rows="2" placeholder="เช่น แพ้แชมพู มีผื่นที่หลัง กลัวไดร์เป่า อยากตรวจสุขภาพเพิ่ม"></textarea></div>
+          <div><label><input type="checkbox" id="fVet" style="width:auto;margin-right:8px;vertical-align:-2px">อยากให้คุณหมอดูผิวหนัง/หู หรือทำวัคซีนวันเดียวกัน</label></div>
+          <div class="row2">
+            <div><label for="fOwner">ชื่อเจ้าของ</label><input id="fOwner" placeholder="ชื่อเล่นก็ได้"></div>
+            <div><label for="fTel">เบอร์ติดต่อ</label><input id="fTel" inputmode="tel" placeholder="08x-xxx-xxxx"></div>
+          </div>
+        </div>
+        <div class="price-est"><div><b id="price">–</b><br><span class="demo-note">ราคาประเมินตัวอย่าง · ร้านแจ้งราคาจริง</span></div><svg width="40" height="40" style="color:var(--mint-d)"><use href="#i-scissors"/></svg></div>
+        <div class="summary" id="summary"></div>
+        <div class="book-actions">
+          <a class="btn btn-line" id="sendLine" href="#" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>ส่งใบจองทาง LINE</a>
+          <button class="btn btn-soft" id="copyBtn">คัดลอกข้อความ</button>
+          <a class="btn btn-call" href="tel:0997607717"><svg><use href="#i-phone"/></svg>โทรจอง</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="ribbon">ขั้นตอนวันอาบน้ำ</span>
+      <h2>จากมอมแมม <em>สู่ความนุ่มหอม</em> ✨</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h4>จองคิว</h4><p>เช็คคิวว่างทาง LINE Official หรือโทร 099-760-7717 แนะนำจองล่วงหน้า</p></div>
+      <div class="step rv"><h4>ตรวจตัวก่อนอาบ</h4><p>ช่างดูผิวหนัง หู เล็บ และคุยเรื่องทรงที่เจ้าของอยากได้</p></div>
+      <div class="step rv"><h4>อาบ ตัด แต่ง</h4><p>อาบ เป่า ตัดทรง ถ้าพบสิ่งผิดปกติ แจ้งเจ้าของ และให้คุณหมอดูได้ทันที</p></div>
+      <div class="step rv"><h4>รับน้องกลับบ้าน</h4><p>ส่งรูปน้องหลังแปลงร่าง พร้อมคำแนะนำการดูแลขนที่บ้าน</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="grid-bg">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="ribbon">เสียงจากเจ้าของน้อง</span>
+      <h2>ลูกค้าประจำ <em>วางใจส่งน้องมา</em></h2>
+    </div>
+    <div class="rev-top rv">
+      <div class="score"><b>94%</b><span>แนะนำ โรงพยาบาลสัตว์มีรัก<br>จาก 14 รีวิวบน Facebook</span></div>
+      <span class="demo-note">ข้อความรีวิวด้านล่างเป็นตัวอย่างสำหรับเดโม</span>
+    </div>
+    <div class="revs">
+      <div class="rev rv"><div class="stars">★★★★★</div><p>พาปอมมาตัดทรงหมีครั้งแรก ได้ทรงกลมน่ารักตามที่ขอเลย ช่างส่งรูปให้ดูตอนเสร็จด้วย ประทับใจค่ะ</p><div class="who"><i>ป</i>คุณแม่น้องปอม · เมืองทองธานี</div></div>
+      <div class="rev rv"><div class="stars">★★★★★</div><p>ตอนอาบน้ำช่างเจอผื่นที่หลังน้อง ส่งให้คุณหมอดูต่อได้เลยในวันเดียว ไม่ต้องพาไปอีกที่ สะดวกมาก</p><div class="who"><i>บ</i>เจ้าของน้องบิสกิต · แจ้งวัฒนะ</div></div>
+      <div class="rev rv"><div class="stars">★★★★★</div><p>น้องแมวขี้กลัวมาก แต่ช่างค่อยๆ ทำ ไม่รีบ กลับบ้านตัวหอม ขนนุ่ม ไม่เครียดเลย จะมาประจำค่ะ</p><div class="who"><i>ม</i>คุณแม่น้องมะลิ · ปากเกร็ด</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="ribbon">คำถามที่พบบ่อย</span>
+      <h2>สงสัยตรงไหน <em>ถามได้เลย</em></h2>
+    </div>
+    <div class="faq rv">
+      <details open><summary>ต้องจองคิวล่วงหน้าไหม?</summary><p>แนะนำให้จองคิวล่วงหน้าค่ะ ร้านลงตารางอาบน้ำตัดขนประจำเดือนไว้ที่เพจ และเช็คคิวว่างได้ทาง LINE Official หรือโทร 099-760-7717 บางวันมี walk-in ได้ ร้านจะโพสต์แจ้งว่า “วันนี้คิวอาบน้ำยังว่าง”</p></details>
+      <details><summary>เปิดกี่โมง เปิดทุกวันไหม?</summary><p>บริการกรูมมิ่งเปิดทุกวัน เวลา 10:00–19:00 น.</p></details>
+      <details><summary>รับแมวและกระต่ายด้วยไหม?</summary><p>รับค่ะ โรงพยาบาลสัตว์มีรักดูแลทั้งสุนัข แมว และกระต่าย ทั้งงานรักษาและอาบน้ำตัดขน</p></details>
+      <details><summary>ถ้าน้องมีโรคผิวหนัง หรือเพิ่งหายป่วย อาบได้ไหม?</summary><p>แจ้งช่างตอนจองได้เลยค่ะ เพราะเป็นโรงพยาบาลสัตว์ สามารถให้สัตวแพทย์ประเมินก่อน และเลือกวิธีอาบหรือแชมพูที่เหมาะกับอาการ</p></details>
+      <details><summary>ราคาเท่าไหร่?</summary><p>ราคาขึ้นกับขนาดตัว ความยาวขน และทรงที่เลือก ส่งชื่อสายพันธุ์และน้ำหนักทาง LINE ร้านจะแจ้งราคาให้ก่อนนัดค่ะ</p></details>
+      <details><summary>อาบน้ำแล้วฝากเลี้ยงต่อได้ไหม?</summary><p>ได้ค่ะ รพส. มีรักมีบริการฝากเลี้ยง สอบถามวันว่างพร้อมกันตอนจองคิวได้เลย</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="grid-bg">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="ribbon">มาหาเราที่เมืองทองธานี</span>
+      <h2>พาน้องมา <em>อาบสวย ตัดหล่อ</em> กันนะคะ 🐾</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="info rv">
+        <svg class="leaf" style="right:-30px;top:10px;width:200px;opacity:.35"><use href="#i-leaf"/></svg>
+        <img src="assets/meerak-logo.jpg" alt="โลโก้ โรงพยาบาลสัตว์มีรัก">
+        <h3>โรงพยาบาลสัตว์มีรัก · Grooming</h3>
+        <p class="sub">รักษาสัตว์ · อาบน้ำตัดขน · ตรวจรักษา สุนัข แมว กระต่าย</p>
+        <dl>
+          <div><dt>ที่ตั้ง</dt><dd>172/13 ถ.ป็อปปูล่า ต.บ้านใหม่ อ.ปากเกร็ด นนทบุรี 11120<br>หน้า Beehive เยื้อง ม.สุโขทัยธรรมาธิราช เมืองทองธานี</dd></div>
+          <div><dt>เวลาบริการกรูมมิ่ง</dt><dd>เปิดทุกวัน 10:00–19:00 น.</dd></div>
+          <div><dt>โทร / LINE</dt><dd><a href="tel:0997607717">099-760-7717</a> · LINE Official <a href="https://line.me/R/ti/p/@587qouep" target="_blank" rel="noopener">@587qouep</a></dd></div>
+          <div><dt>อีเมล · Facebook</dt><dd><a href="mailto:meerakvet@gmail.com">meerakvet@gmail.com</a> · <a href="https://www.facebook.com/meerakvet/" target="_blank" rel="noopener">facebook.com/meerakvet</a></dd></div>
+        </dl>
+        <div class="btns">
+          <a class="btn btn-line" href="https://line.me/R/ti/p/@587qouep" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>แอดไลน์</a>
+          <a class="btn btn-soft" href="https://maps.app.goo.gl/pDkhERCqMF8hC3Mv8" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>นำทาง</a>
+        </div>
+      </div>
+      <div class="map rv">
+        <iframe loading="lazy" title="แผนที่ โรงพยาบาลสัตว์มีรัก" src="https://maps.google.com/maps?q=Meerak%20Vet%2C%20172%2F13%20%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%81%E0%B8%A3%E0%B9%87%E0%B8%94%20Nonthaburi%2011120&z=15&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>มีรัก Grooming</b> · บริการอาบน้ำตัดขนของ โรงพยาบาลสัตว์มีรัก เมืองทองธานี 🌈♥️</p>
+    <p style="margin-top:6px">หน้าเว็บตัวอย่าง (เดโม) · รูปผลงานจากเพจ Facebook ของร้าน · ราคา คิว และรีวิวที่มีป้ายกำกับเป็นข้อมูลตัวอย่าง</p>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="f-line" href="https://line.me/R/ti/p/@587qouep" target="_blank" rel="noopener" aria-label="LINE"><svg><use href="#i-line"/></svg></a>
+  <a class="f-call" href="tel:0997607717" aria-label="โทร"><svg><use href="#i-phone"/></svg></a>
+</div>
+
+<div class="lightbox" id="lb"><button aria-label="ปิด">×</button><img alt=""></div>
+
+<script>
+const LINE_OA = '@587qouep';
+
+/* ---------- style chooser ---------- */
+const STYLES = [
+  {k:'blue', name:'ทรงบลู', sub:'สั้นทั้งตัว ดูแลง่าย', img:'assets/pom-shiba-cut.jpg', len:25, care:95, cute:75,
+   quote:'จัดทรงบลูไปเลย 4 ตัว ดูแลง่ายย ☺️🫧🧼', fit:'เหมาะกับหน้าร้อน น้องขนยาวที่พันกันง่าย หรือเจ้าของที่ไม่มีเวลาแปรงขนทุกวัน', opt:'ทรงบลู (สั้นทั้งตัว)'},
+  {k:'bear', name:'ทรงหมี / เท็ดดี้', sub:'ตัวกลม ขนฟูนุ่ม', img:'assets/pom-teddy-cut.jpg', len:60, care:60, cute:98,
+   quote:'ตัดยังไงให้น่ารักกว่าเดิมเนี่ย 🥰💗', fit:'เหมาะกับปอม พุดเดิ้ล ชิสุ ที่อยากได้ลุคตุ๊กตา ควรแปรงขนสัปดาห์ละ 2–3 ครั้ง', opt:'ทรงหมี / เท็ดดี้'},
+  {k:'round', name:'ทรงหน้ากลม', sub:'เน้นหัวกลม หูฟู', img:'assets/poodle-teddy.jpg', len:50, care:65, cute:95,
+   quote:'น้องบัตเตอร์ตัดขนแล้วหน้ากลมมากกกก 🤏🏻😍', fit:'เหมาะกับทอยพุดเดิ้ล มอลติพู ที่อยากให้หน้าดูละมุน ตาโต ขนไม่ทิ่มตา', opt:'ทรงหน้ากลม'},
+  {k:'bath', name:'อาบน้ำอย่างเดียว', sub:'ไม่ตัด เน้นหอม นุ่ม', img:'assets/chihuahua-long.jpg', len:100, care:70, cute:85,
+   quote:'แมรี่ ฮาโบ อาบน้ำตัดขนเสร็จกลับบ้านตัวหอมเลยย 😍💕', fit:'เหมาะกับน้องขนสั้น ชิวาวาขนยาว หรือน้องที่อยากเก็บทรงเดิมไว้ อาบทุก 2–4 สัปดาห์', opt:'ไม่ตัด อาบอย่างเดียว'}
+];
+const tabs = document.getElementById('tabs'), sv = document.getElementById('styleView');
+function showStyle(i){
+  const s = STYLES[i];
+  [...tabs.children].forEach((t,j)=>t.classList.toggle('on', j===i));
+  sv.innerHTML = `<img src="${s.img}" alt="${s.name}">
+  <div><h3>${s.name}</h3><div class="quote"><small>จากโพสต์ของร้าน</small>“${s.quote}”</div>
+  ${meter('ความยาวขนที่เหลือ', s.len)}${meter('ดูแลง่ายที่บ้าน', s.care)}${meter('ระดับความน่ารัก', s.cute)}
+  <p class="fit">${s.fit}</p>
+  <a class="btn btn-line" href="#book" data-opt="${s.opt}"><svg><use href="#i-line"/></svg>เลือกทรงนี้ แล้วไปจองคิว</a></div>`;
+  sv.querySelector('a').addEventListener('click', ()=>{ document.getElementById('fStyle').value = s.opt; if(s.k==='bath'){document.getElementById('fSvc').value='bath'} else {document.getElementById('fSvc').value='cut'} update(); });
+}
+function meter(l,v){return `<div class="meter"><label>${l}<span>${v}%</span></label><div class="bar"><i style="width:${v}%"></i></div></div>`}
+STYLES.forEach((s,i)=>{
+  const b = document.createElement('button'); b.className='tab';
+  b.innerHTML = `<img src="${s.img}" alt=""><div><b>${s.name}</b><span>${s.sub}</span></div>`;
+  b.onclick = ()=>showStyle(i); tabs.appendChild(b);
+});
+showStyle(0);
+
+/* ---------- lightbox ---------- */
+const lb = document.getElementById('lb');
+document.querySelectorAll('.g img').forEach(img=>img.addEventListener('click',()=>{lb.querySelector('img').src=img.src;lb.classList.add('on')}));
+lb.addEventListener('click',e=>{ if(e.target!==lb.querySelector('img')) lb.classList.remove('on') });
+
+/* ---------- prep checklist ---------- */
+const PREP = {
+  dog:[
+    ['จองคิวล่วงหน้า','เช็คคิวว่างทาง LINE หรือโทร 099-760-7717 ก่อนมา'],
+    ['พาเดินขับถ่ายก่อนมา','น้องจะสบายตัว ไม่อั้นระหว่างอาบ'],
+    ['งดอาหารมื้อใหญ่ 2–3 ชม.','ป้องกันอาการคลื่นไส้ตอนเป่าไดร์หรือนั่งรถ'],
+    ['ใส่สายจูง / ปลอกคอให้เรียบร้อย','ปลอดภัยตอนเดินเข้าโรงพยาบาล ที่มีน้องตัวอื่นอยู่ด้วย'],
+    ['เตรียมสมุดวัคซีน','เพื่อความปลอดภัยของน้องทุกตัวในโรงพยาบาล'],
+    ['แจ้งโรคประจำตัว ผื่น อาการแพ้','ช่างและคุณหมอจะเลือกวิธีอาบให้เหมาะ'],
+    ['บอกนิสัยน้อง','กลัวไดร์ ชอบงับ ไม่ชอบให้จับเท้า บอกได้เลย ไม่ต้องอาย'],
+    ['เตรียมรูปทรงที่อยากได้','ส่งรูปให้ช่างดูทาง LINE ได้ผลตรงใจกว่า']
+  ],
+  cat:[
+    ['จองคิวล่วงหน้า','แมวควรได้คิวที่ไม่ต้องรอนาน ลดความเครียด'],
+    ['ใส่กระเป๋า / ตะกร้าที่ปิดสนิท','ห้ามอุ้มมาเปล่าๆ น้องอาจตกใจกระโดดหนี'],
+    ['คลุมผ้าบนตะกร้า','ช่วยให้น้องรู้สึกปลอดภัยระหว่างเดินทาง'],
+    ['งดอาหาร 2–3 ชม. ก่อนมา','ลดอาการเมารถ'],
+    ['เตรียมสมุดวัคซีน','เพื่อความปลอดภัยของน้องทุกตัวในโรงพยาบาล'],
+    ['แจ้งอาการแพ้ / โรคผิวหนัง','ให้คุณหมอช่วยประเมินก่อนอาบได้'],
+    ['บอกนิสัยน้อง','ขี้กลัว ข่วน หรือเคยอาบน้ำแล้วเครียดไหม']
+  ],
+  rabbit:[
+    ['จองคิวล่วงหน้า','กระต่ายตกใจง่าย ควรมาตามเวลาที่นัด'],
+    ['ใส่กรง / ตะกร้าที่ระบายอากาศดี','ปูผ้าหรือหญ้าไว้ให้น้องรู้สึกคุ้นเคย'],
+    ['หลีกเลี่ยงช่วงแดดร้อนจัด','กระต่ายไม่ทนร้อน อย่าทิ้งไว้ในรถ'],
+    ['แจ้งอาการผิดปกติ','ถ่ายเหลว ไม่กินอาหาร หรือขนร่วงเป็นหย่อม'],
+    ['เตรียมหญ้า / ขนมโปรด','ไว้ปลอบน้องหลังอาบเสร็จ']
+  ]
+};
+let pet='dog'; const done={dog:new Set(),cat:new Set(),rabbit:new Set()};
+const cl=document.getElementById('checklist');
+function renderPrep(){
+  cl.innerHTML='';
+  PREP[pet].forEach(([t,d],i)=>{
+    const el=document.createElement('div'); el.className='chk'+(done[pet].has(i)?' on':'');
+    el.innerHTML=`<span class="box"><svg><use href="#i-check"/></svg></span><div><b>${t}</b><p>${d}</p></div>`;
+    el.onclick=()=>{done[pet].has(i)?done[pet].delete(i):done[pet].add(i);renderPrep()};
+    cl.appendChild(el);
+  });
+  const n=done[pet].size, t=PREP[pet].length, c=326.7;
+  document.getElementById('ringBar').style.strokeDashoffset = c - c*n/t;
+  document.getElementById('ringNum').textContent = n+'/'+t;
+  document.getElementById('ringTitle').textContent = n===t ? 'พร้อมมาอาบน้ำแล้ว! 🛁' : n===0 ? 'เริ่มเตรียมตัวกันเลย' : 'อีก '+(t-n)+' ข้อก็พร้อม';
+  document.getElementById('ringText').textContent = n===t ? 'จองคิวแล้วพาน้องมาได้เลยค่ะ' : 'ติ๊กรายการที่ทำแล้ว';
+}
+document.querySelectorAll('#petSwitch button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('#petSwitch button').forEach(x=>x.classList.remove('on'));b.classList.add('on');pet=b.dataset.pet;renderPrep();
+});
+renderPrep();
+
+/* ---------- calendar (sample availability) ---------- */
+const TH_M=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+const TH_D=['อา','จ','อ','พ','พฤ','ศ','ส'];
+const today=new Date(); today.setHours(0,0,0,0);
+const Y=today.getFullYear(), M=today.getMonth();
+const SLOTS=['10:00','11:00','12:30','13:30','15:00','16:00','17:30'];
+let selDate=null, selSlot=null;
+function seed(d){return ((d*9301+49297)%233280)/233280}
+function status(d){ const r=seed(d+M*31); const wk=new Date(Y,M,d).getDay(); if(wk===0||wk===6) return r<.45?'full':'few'; return r<.18?'full':r<.45?'few':'free' }
+function renderCal(){
+  document.getElementById('calTitle').textContent='ตารางอาบน้ำตัดขน เดือน'+TH_M[M]+' '+(Y+543);
+  const cal=document.getElementById('cal'); cal.innerHTML='';
+  TH_D.forEach(d=>{const e=document.createElement('div');e.className='dow';e.textContent=d;cal.appendChild(e)});
+  const first=new Date(Y,M,1).getDay(), days=new Date(Y,M+1,0).getDate();
+  for(let i=0;i<first;i++) cal.appendChild(document.createElement('span'));
+  for(let d=1;d<=days;d++){
+    const b=document.createElement('button'); b.textContent=d;
+    const dt=new Date(Y,M,d);
+    if(dt<today){b.className='past';b.disabled=true}
+    else{ const s=status(d); b.className=s; if(s==='full'){b.disabled=true;b.title='คิวเต็ม'}
+      b.onclick=()=>{selDate=d;selSlot=null;renderCal();renderSlots();update()} }
+    if(selDate===d) b.classList.add('sel');
+    cal.appendChild(b);
+  }
+}
+function renderSlots(){
+  const el=document.getElementById('slots'); el.innerHTML='';
+  if(!selDate){el.innerHTML='<span style="color:var(--muted);font-size:15px">แตะวันที่มีจุดสีเขียว/ส้ม เพื่อดูเวลาว่าง</span>';return}
+  SLOTS.forEach((s,i)=>{
+    const b=document.createElement('button'); b.textContent=s;
+    const taken = seed(selDate*7+i) < (status(selDate)==='few'?.6:.25);
+    if(taken) b.disabled=true;
+    if(selSlot===s) b.classList.add('on');
+    b.onclick=()=>{selSlot=s;renderSlots();update()};
+    el.appendChild(b);
+  });
+}
+renderCal(); renderSlots();
+
+/* ---------- booking message ---------- */
+let petType='สุนัข';
+document.querySelectorAll('#petType button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('#petType button').forEach(x=>x.classList.remove('on'));b.classList.add('on');petType=b.dataset.v;update();
+});
+const PRICE={bath:{S:[250,350],M:[350,450],L:[450,650],XL:[650,900]},cut:{S:[450,600],M:[600,800],L:[800,1100],XL:[1100,1500]},trim:{S:[350,450],M:[450,550],L:[550,750],XL:[750,1000]},nail:{S:[100,150],M:[100,150],L:[150,200],XL:[150,200]}};
+const SVC_TXT={bath:'อาบน้ำ เป่าแห้ง',cut:'อาบน้ำ + ตัดขนทั้งตัว',trim:'อาบน้ำ + ตัดแต่งเฉพาะจุด',nail:'ตัดเล็บ · เช็ดหู'};
+const $=id=>document.getElementById(id);
+function msg(){
+  const dateTxt = selDate ? `${selDate} ${TH_M[M]} ${Y+543}${selSlot?' เวลา '+selSlot+' น.':''}` : '(ยังไม่เลือก)';
+  let t=`สวัสดีค่ะ ขอจองคิวอาบน้ำตัดขน รพส. มีรัก 🐾\n`+
+  `📅 วันที่: ${dateTxt}\n`+
+  `🐾 น้อง: ${$('fName').value||'-'} (${petType}${$('fBreed').value?' · '+$('fBreed').value:''})\n`+
+  `⚖️ ขนาด: ${$('fSize').selectedOptions[0].text}\n`+
+  `✂️ บริการ: ${SVC_TXT[$('fSvc').value]}\n`+
+  `💇 ทรง: ${$('fStyle').value}\n`;
+  if($('fVet').checked) t+=`🩺 อยากให้คุณหมอตรวจเพิ่ม/ทำวัคซีนวันเดียวกัน\n`;
+  if($('fNote').value) t+=`📝 แจ้งช่าง: ${$('fNote').value}\n`;
+  t+=`👤 เจ้าของ: ${$('fOwner').value||'-'} ${$('fTel').value?'โทร '+$('fTel').value:''}\nรบกวนยืนยันคิวว่างด้วยนะคะ 🙏`;
+  return t;
+}
+function update(){
+  const p=PRICE[$('fSvc').value][$('fSize').value];
+  const f = petType==='กระต่าย' ? .8 : 1;
+  $('price').textContent = '฿'+Math.round(p[0]*f/10)*10+' – '+Math.round(p[1]*f/10)*10;
+  const m=msg(); $('summary').textContent=m;
+  $('sendLine').href='https://line.me/R/oaMessage/'+encodeURIComponent(LINE_OA)+'/?'+encodeURIComponent(m);
+}
+['fName','fBreed','fSize','fSvc','fStyle','fNote','fVet','fOwner','fTel'].forEach(id=>{$(id).addEventListener('input',update);$(id).addEventListener('change',update)});
+$('copyBtn').onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText(msg()).then(()=>{$('copyBtn').textContent='คัดลอกแล้ว ✓';setTimeout(()=>$('copyBtn').textContent='คัดลอกข้อความ',1800)})};
+update();
+
+/* ---------- reveal ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>document.getElementById('menu').classList.remove('open'));
+</script>
+</body>
+</html>

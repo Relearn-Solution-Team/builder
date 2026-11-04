@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>มะเฟืองคาร์แคร์ ศูนย์ซักเบาะ ซักพรม ร่มเกล้า มีนบุรี | รื้อซักทั้งคัน วันเดียวเสร็จ</title>
+<meta name="description" content="มะเฟืองคาร์แคร์ ผู้เชี่ยวชาญซักเบาะ ซักพรมรถยนต์โดยเฉพาะ รื้อภายในออกมาซักทั้งหมด วันเดียวเสร็จ อยู่ในไทวัสดุ สาขาสุขาภิบาล 3 ถ.ร่มเกล้า มีนบุรี โทร 081-886-2234 LINE @mf.carcare">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#0d4a26; --forest2:#0a3a1e; --green:#1f9a43; --leaf:#5cc15a;
+  --gold:#cba53a; --gold2:#e7c868; --goldDk:#9c7b1f; --star:#f4d548;
+  --cream:#fbf8ec; --cream2:#f3eed9; --ink:#1b2219; --muted:#5d6858; --line:#e4dcc0;
+  --r:20px; --shadow:0 22px 48px -24px rgba(13,74,38,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Sarabun',sans-serif;color:var(--ink);background:var(--cream);font-size:17px;line-height:1.75;overflow-x:hidden}
+h1,h2,h3,h4,.nst{font-family:'Noto Sans Thai',sans-serif;line-height:1.3}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:96px 0;position:relative}
+.sample{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:#8a6d12;background:#fff6d6;border:1px dashed #d9b84a;border-radius:999px;padding:3px 12px;line-height:1.5}
+.sample::before{content:"ตัวอย่าง";background:#d9b84a;color:#fff;border-radius:999px;padding:0 7px;font-size:11px}
+
+/* star motif */
+.star{width:1em;height:1em;display:inline-block;vertical-align:-.12em}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'Noto Sans Thai';font-weight:700;font-size:14px;letter-spacing:.06em;color:var(--goldDk);text-transform:uppercase;margin-bottom:14px}
+.eyebrow svg{width:18px;height:18px;color:var(--gold)}
+.sec-head{max-width:760px;margin-bottom:48px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head h2{font-size:clamp(30px,4vw,44px);font-weight:800;color:var(--forest);margin-bottom:14px}
+.sec-head h2 em{font-style:normal;color:var(--green);position:relative;white-space:nowrap}
+.sec-head h2 em::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:10px;background:var(--star);opacity:.45;z-index:-1;border-radius:4px}
+.sec-head p{color:var(--muted);font-size:18px}
+
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(251,248,236,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:18px;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:center 40%;border:2px solid var(--gold);background:#fff}
+.brand b{display:block;font-family:'Noto Sans Thai';font-weight:800;font-size:20px;color:var(--forest);line-height:1.1}
+.brand small{display:block;font-size:11.5px;letter-spacing:.22em;color:var(--goldDk);font-weight:600}
+.nav ul{display:flex;gap:24px;list-style:none;margin-left:auto;font-weight:600;font-size:15.5px}
+.nav ul a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Noto Sans Thai';font-weight:700;border-radius:14px;padding:14px 24px;font-size:17px;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-line{background:#06c755;color:#fff;box-shadow:0 12px 26px -12px #06c755}
+.btn-call{background:var(--forest);color:#fff;box-shadow:0 12px 26px -12px var(--forest)}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--forest2);box-shadow:0 12px 26px -12px var(--goldDk)}
+.btn-ghost{background:#fff;color:var(--forest);border:2px solid var(--line)}
+.nav .btn{padding:10px 18px;font-size:15px}
+
+/* hero */
+.hero{padding:64px 0 90px;overflow:hidden;background:
+  radial-gradient(900px 500px at 90% -10%,rgba(244,213,72,.35),transparent 60%),
+  radial-gradient(700px 500px at -10% 110%,rgba(92,193,90,.18),transparent 60%),var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 16px 6px 8px;font-weight:600;font-size:14.5px;color:var(--forest);margin-bottom:22px}
+.pill i{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--forest);color:var(--star);font-style:normal}
+.pill i svg{width:15px;height:15px}
+.hero h1{font-size:clamp(38px,5.4vw,66px);font-weight:900;color:var(--forest);letter-spacing:-.01em;margin-bottom:20px}
+.hero h1 .gold{background:linear-gradient(120deg,var(--goldDk),var(--gold) 45%,#e9cf73);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 small{display:block;font-size:.48em;font-weight:700;color:var(--green);margin-top:8px}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:560px;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.hero-stats{display:flex;gap:0;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:18px;max-width:560px;overflow:hidden}
+.hero-stats div{flex:1;min-width:150px;padding:14px 18px;border-right:1px solid var(--line)}
+.hero-stats div:last-child{border-right:0}
+.hero-stats b{display:block;font-family:'Noto Sans Thai';font-size:26px;font-weight:800;color:var(--forest);line-height:1.2}
+.hero-stats span{font-size:13.5px;color:var(--muted)}
+.hero-art{position:relative;min-height:540px}
+.hero-photo{position:absolute;inset:0 0 40px 50px;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,58,30,.55))}
+.hero-photo figcaption{position:absolute;right:16px;top:16px;color:var(--forest);background:rgba(255,255,255,.94);border-radius:999px;padding:5px 14px;z-index:2;font-weight:600;font-size:13.5px;max-width:70%}
+.wing-card{position:absolute;left:0;top:34px;width:190px;background:#fff;border-radius:22px;padding:14px;box-shadow:var(--shadow);border:1px solid var(--line);transform:rotate(-4deg)}
+.wing-card img{border-radius:14px}
+.queue-card{position:absolute;right:-6px;bottom:0;width:270px;background:var(--forest);color:#fff;border-radius:20px;padding:18px 20px;box-shadow:var(--shadow)}
+.queue-card .tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.05em;color:var(--star)}
+.queue-card .dot{width:9px;height:9px;border-radius:50%;background:#4ee06a;box-shadow:0 0 0 0 rgba(78,224,106,.7);animation:ping 1.6s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(78,224,106,.6)}100%{box-shadow:0 0 0 12px rgba(78,224,106,0)}}
+.queue-card h4{font-size:22px;margin:4px 0 2px}
+.queue-card p{font-size:14px;opacity:.85;line-height:1.6}
+.floaty-star{position:absolute;color:var(--star);opacity:.9}
+.floaty-star.s1{right:10px;top:-10px;width:56px;animation:spin 18s linear infinite}
+.floaty-star.s2{left:70px;bottom:20px;width:30px;color:var(--gold);animation:spin 24s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ticker */
+.ticker{background:var(--forest);color:#fff;overflow:hidden;padding:14px 0;border-top:4px solid var(--gold)}
+.ticker-track{display:flex;gap:40px;width:max-content;animation:tick 32s linear infinite;font-family:'Noto Sans Thai';font-weight:700;font-size:18px}
+.ticker-track span{display:inline-flex;align-items:center;gap:14px;white-space:nowrap}
+.ticker-track svg{width:18px;height:18px;color:var(--star)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* why rip-out */
+.why{background:#fff}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.photo-pair figure{border-radius:20px;overflow:hidden;position:relative;box-shadow:var(--shadow)}
+.photo-pair figure img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.photo-pair figure:nth-child(2){margin-top:48px}
+.photo-pair figcaption{position:absolute;left:10px;bottom:10px;right:10px;background:rgba(255,255,255,.94);border-radius:12px;padding:6px 12px;font-size:13.5px;font-weight:600;color:var(--forest)}
+.why-points{display:grid;gap:16px;margin-top:26px}
+.why-points div{display:flex;gap:16px;align-items:flex-start;background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.why-points .ic{flex:none;width:44px;height:44px;border-radius:12px;background:var(--forest);color:var(--star);display:grid;place-items:center}
+.why-points .ic svg{width:24px;height:24px}
+.why-points h4{font-size:18px;color:var(--forest)}
+.why-points p{font-size:15.5px;color:var(--muted)}
+.quote-post{margin-top:22px;border-left:4px solid var(--gold);background:#fffbea;border-radius:0 16px 16px 0;padding:14px 18px;font-size:15.5px}
+.quote-post b{color:var(--goldDk);font-size:13px;display:block}
+
+/* included: interior map */
+.incl{background:linear-gradient(180deg,var(--cream),var(--cream2))}
+.incl-grid{display:grid;grid-template-columns:360px 1fr;gap:48px;align-items:start}
+.carmap{background:#fff;border-radius:28px;padding:26px 20px;box-shadow:var(--shadow);border:1px solid var(--line);position:sticky;top:100px}
+.carmap svg{width:100%;height:auto;max-height:560px}
+.carmap .z{cursor:pointer;transition:fill .2s,stroke .2s}
+.carmap .z{fill:#eef3e6;stroke:#b9c9a8;stroke-width:2}
+.carmap .z:hover{fill:#fff3bf}
+.carmap .z.on{fill:var(--star);stroke:var(--goldDk)}
+.carmap .lbl{font-family:'Noto Sans Thai';font-size:12px;font-weight:700;fill:var(--forest);pointer-events:none;text-anchor:middle}
+.carmap .hint{text-align:center;font-size:14px;color:var(--muted);margin-top:10px}
+.zone-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.zone-tabs button{font-family:'Noto Sans Thai';font-weight:600;font-size:15px;border:1.5px solid var(--line);background:#fff;color:var(--forest);border-radius:999px;padding:8px 16px;cursor:pointer;transition:.2s}
+.zone-tabs button.on{background:var(--forest);color:#fff;border-color:var(--forest)}
+.zone-panel{background:#fff;border-radius:24px;border:1px solid var(--line);padding:30px 32px;box-shadow:0 10px 30px -22px rgba(0,0,0,.3)}
+.zone-panel h3{font-size:26px;color:var(--forest);display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.zone-panel h3 svg{width:28px;height:28px;color:var(--gold)}
+.zone-panel .zdesc{color:var(--muted);margin-bottom:18px}
+.checks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+.checks li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:7px;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/15px no-repeat}
+.zone-panel .note{margin-top:18px;font-size:14px;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.incl-sum{margin-top:22px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.incl-sum div{background:var(--forest);color:#fff;border-radius:18px;padding:16px 18px}
+.incl-sum b{font-family:'Noto Sans Thai';display:block;font-size:20px;color:var(--star)}
+.incl-sum span{font-size:14.5px;opacity:.9}
+
+/* timeline */
+.tl{background:var(--forest);color:#fff;overflow:hidden}
+.tl .sec-head h2{color:#fff}
+.tl .sec-head h2 em{color:var(--star)}
+.tl .sec-head h2 em::after{background:var(--gold);opacity:.35}
+.tl .sec-head p{color:#cfe0d2}
+.tl .eyebrow{color:var(--gold2)}
+.tl-switch{display:inline-flex;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:6px;gap:6px;margin-bottom:40px;flex-wrap:wrap}
+.tl-switch button{font-family:'Noto Sans Thai';font-weight:700;font-size:15.5px;background:transparent;color:#dfeadf;border:0;border-radius:12px;padding:11px 18px;cursor:pointer;transition:.2s}
+.tl-switch button.on{background:var(--star);color:var(--forest2)}
+.track{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.track::before{content:"";position:absolute;left:4%;right:4%;top:34px;height:4px;background:repeating-linear-gradient(90deg,var(--gold) 0 14px,transparent 14px 24px);opacity:.6}
+.step{position:relative;text-align:center;padding:0 4px}
+.step .node{width:72px;height:72px;margin:0 auto 16px;border-radius:50%;background:var(--forest2);border:3px solid var(--gold);display:grid;place-items:center;position:relative;z-index:1;transition:.3s}
+.step .node svg{width:32px;height:32px;color:var(--star)}
+.step.active .node{background:var(--star);border-color:#fff;transform:scale(1.08)}
+.step.active .node svg{color:var(--forest2)}
+.step time{display:inline-block;font-family:'Noto Sans Thai';font-weight:800;font-size:15px;color:var(--forest2);background:var(--gold2);border-radius:8px;padding:1px 10px;margin-bottom:8px}
+.step h4{font-size:17px;margin-bottom:4px}
+.step p{font-size:14px;color:#c7d8ca;line-height:1.6}
+.tl-foot{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:44px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:20px 24px}
+.tl-foot .big{font-family:'Noto Sans Thai';font-size:24px;font-weight:800;color:var(--star)}
+.tl-foot p{color:#cfe0d2;font-size:15px}
+.tl .sample{background:rgba(244,213,72,.12);color:var(--star);border-color:rgba(244,213,72,.5)}
+
+/* prep checklist */
+.prep{background:#fff}
+.prep-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.prep-list{display:grid;gap:12px}
+.prep-item{display:flex;gap:14px;align-items:center;border:1.5px solid var(--line);border-radius:16px;padding:14px 18px;cursor:pointer;background:var(--cream);transition:.2s;user-select:none}
+.prep-item .bx{flex:none;width:28px;height:28px;border-radius:9px;border:2px solid var(--gold);background:#fff;display:grid;place-items:center;transition:.2s}
+.prep-item .bx svg{width:18px;height:18px;color:#fff;opacity:0}
+.prep-item.done{background:#eef8ea;border-color:var(--leaf)}
+.prep-item.done .bx{background:var(--green);border-color:var(--green)}
+.prep-item.done .bx svg{opacity:1}
+.prep-item b{font-family:'Noto Sans Thai';color:var(--forest);font-size:17px}
+.prep-item small{display:block;color:var(--muted);font-size:14px;line-height:1.5}
+.prep-meter{margin-top:18px;background:var(--cream2);border-radius:999px;height:14px;overflow:hidden}
+.prep-meter i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--star));transition:width .4s}
+.prep-msg{margin-top:10px;font-weight:600;color:var(--forest)}
+.prep-photo{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);position:relative}
+.prep-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.prep-photo .q{position:absolute;left:18px;right:18px;bottom:18px;background:#fff;border-radius:16px;padding:14px 18px;font-size:15.5px;box-shadow:0 10px 30px -14px rgba(0,0,0,.4)}
+.prep-photo .q b{color:var(--goldDk);font-size:13px;display:block}
+
+/* price + builder */
+.price{background:linear-gradient(180deg,var(--cream2),var(--cream))}
+.price-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:start}
+.panel{background:#fff;border-radius:26px;padding:30px;border:1px solid var(--line);box-shadow:0 14px 40px -26px rgba(0,0,0,.35)}
+.panel h3{font-size:22px;color:var(--forest);margin-bottom:6px}
+.panel .sub{color:var(--muted);font-size:15px;margin-bottom:20px}
+.cars{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}
+.car{border:2px solid var(--line);border-radius:16px;padding:14px 10px;text-align:center;cursor:pointer;background:var(--cream);transition:.2s}
+.car svg{width:74px;height:36px;margin:0 auto 6px;color:var(--forest)}
+.car b{display:block;font-family:'Noto Sans Thai';font-size:15.5px;color:var(--forest)}
+.car small{font-size:12.5px;color:var(--muted)}
+.car.on{border-color:var(--gold);background:#fff8dc;box-shadow:0 0 0 4px rgba(203,165,58,.18)}
+.estimate{background:var(--forest);color:#fff;border-radius:20px;padding:22px 24px;display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}
+.estimate .amt{font-family:'Noto Sans Thai';font-size:38px;font-weight:900;color:var(--star);line-height:1.1}
+.estimate .amt small{font-size:16px;color:#fff;font-weight:600}
+.estimate p{font-size:14px;color:#cfe0d2}
+.estimate .src{font-size:13px;color:var(--gold2)}
+.field{margin-bottom:16px}
+.field label{display:block;font-weight:700;font-family:'Noto Sans Thai';font-size:15px;color:var(--forest);margin-bottom:8px}
+.field input,.field select{width:100%;font-family:'Sarabun';font-size:16px;border:1.5px solid var(--line);border-radius:12px;padding:11px 14px;background:var(--cream);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:'Sarabun';font-size:15px;font-weight:600;border:1.5px solid var(--line);background:var(--cream);border-radius:999px;padding:7px 14px;cursor:pointer;color:var(--forest);transition:.2s}
+.chip.on{background:var(--green);border-color:var(--green);color:#fff}
+.preview{background:#e9f7ec;border:1px dashed #8fd19b;border-radius:16px;padding:14px 16px;font-size:15px;white-space:pre-line;margin:6px 0 16px;color:#17391f;min-height:110px}
+.panel .btn{width:100%}
+
+/* queue feed */
+.feed{background:#fff}
+.feed-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.post{background:var(--cream);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
+.post .ph{aspect-ratio:16/10;overflow:hidden}
+.post .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.post:hover .ph img{transform:scale(1.05)}
+.post .bd{padding:14px 16px 18px}
+.post .dt{display:inline-flex;align-items:center;gap:6px;font-family:'Noto Sans Thai';font-weight:700;font-size:13px;color:#fff;background:var(--green);border-radius:8px;padding:1px 10px;margin-bottom:8px}
+.post .dt.full{background:#b4442f}
+.post p{font-size:15px;line-height:1.6}
+.post .tags{margin-top:8px;font-size:13px;color:var(--green);font-weight:600}
+.feed-cta{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;justify-content:center;color:var(--muted);font-size:15px}
+
+/* services */
+.svc{background:var(--cream)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px 22px;position:relative;overflow:hidden;transition:.25s}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.svc-card .ic{width:52px;height:52px;border-radius:14px;background:#fff8dc;color:var(--goldDk);display:grid;place-items:center;margin-bottom:14px}
+.svc-card .ic svg{width:28px;height:28px}
+.svc-card h4{font-size:18.5px;color:var(--forest);margin-bottom:4px}
+.svc-card p{font-size:15px;color:var(--muted)}
+.svc-card.main{background:var(--forest);color:#fff;grid-column:span 2;border:0}
+.svc-card.main h4{color:#fff;font-size:24px}
+.svc-card.main p{color:#cfe0d2;max-width:78%;position:relative}
+.svc-card.main .ic{background:var(--star);color:var(--forest2)}
+.svc-card.main .big-star{position:absolute;right:-40px;top:-40px;width:170px;height:170px;color:rgba(244,213,72,.10)}
+.svc-card .pr{display:inline-block;margin-top:10px;font-family:'Noto Sans Thai';font-weight:800;color:var(--forest);background:var(--star);border-radius:8px;padding:1px 10px;font-size:14.5px}
+
+/* reviews */
+.rev{background:#fff}
+.rev-top{display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.score{display:flex;align-items:center;gap:16px;background:var(--forest);color:#fff;border-radius:22px;padding:16px 26px}
+.score b{font-family:'Noto Sans Thai';font-size:44px;font-weight:900;color:var(--star);line-height:1}
+.score span{font-size:15px;line-height:1.5}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rcard{background:var(--cream);border:1px solid var(--line);border-radius:22px;padding:24px;position:relative}
+.rcard .stars{color:var(--gold);letter-spacing:3px;font-size:18px}
+.rcard p{margin:8px 0 14px;font-size:16px}
+.rcard .who{display:flex;gap:12px;align-items:center}
+.rcard .av{width:42px;height:42px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-family:'Noto Sans Thai';font-weight:800}
+.rcard .who b{display:block;font-size:15px;color:var(--forest)}
+.rcard .who small{color:var(--muted);font-size:13px}
+
+/* faq */
+.faq{background:var(--cream)}
+.faq-list{max-width:860px;margin:0 auto;display:grid;gap:12px}
+.qa{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.qa button{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:20px 24px;font-family:'Noto Sans Thai';font-weight:700;font-size:17.5px;color:var(--forest);display:flex;gap:14px;align-items:center}
+.qa button .q{flex:none;width:30px;height:30px;border-radius:9px;background:var(--star);color:var(--forest2);display:grid;place-items:center;font-size:15px}
+.qa button .pm{margin-left:auto;flex:none;width:28px;height:28px;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;transition:transform .3s;font-size:18px;line-height:1}
+.qa.open button .pm{transform:rotate(45deg);background:var(--forest);color:#fff;border-color:var(--forest)}
+.qa .a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.qa .a div{padding:0 24px 20px 68px;color:var(--muted);font-size:16px}
+
+/* contact */
+.contact{background:var(--forest2);color:#fff}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:stretch}
+.cbox h2{font-size:clamp(30px,4vw,42px);margin-bottom:14px}
+.cbox h2 span{color:var(--star)}
+.cbox>p{color:#cfe0d2;margin-bottom:26px}
+.crow{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.crow .ic{flex:none;width:46px;height:46px;border-radius:12px;background:rgba(244,213,72,.14);color:var(--star);display:grid;place-items:center}
+.crow .ic svg{width:24px;height:24px}
+.crow b{display:block;font-family:'Noto Sans Thai';font-size:17px}
+.crow span,.crow a{color:#d3e2d5;font-size:15.5px}
+.crow a:hover{color:var(--star)}
+.cbtns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.map{border-radius:26px;overflow:hidden;border:4px solid var(--gold);min-height:440px;background:#123}
+.map iframe{width:100%;height:100%;min-height:440px;border:0;display:block}
+footer{background:#06240f;color:#9fb5a3;font-size:14px;padding:26px 0 96px;text-align:center}
+footer a{color:var(--gold2)}
+
+/* floating */
+.fab{position:fixed;right:18px;bottom:18px;z-index:80;display:flex;flex-direction:column;gap:12px}
+.fab a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 12px 26px -10px rgba(0,0,0,.5);transition:transform .2s}
+.fab a:hover{transform:scale(1.08)}
+.fab a svg{width:28px;height:28px}
+.fab .l{background:#06c755}
+.fab .c{background:var(--forest);border:2px solid var(--gold)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .nav ul{display:none}
+  .nav .btn-call{margin-left:auto}
+  .hero-grid,.why-grid,.prep-grid,.price-grid,.contact-grid{grid-template-columns:1fr}
+  .incl-grid{grid-template-columns:1fr}
+  .carmap{position:relative;top:0;max-width:420px;margin:0 auto;width:100%}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .feed-row{grid-template-columns:1fr 1fr}
+  .rev-grid{grid-template-columns:1fr}
+  .track{grid-template-columns:repeat(3,1fr);row-gap:34px}
+  .track::before{display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  section{padding:70px 0}
+  .wrap{padding:0 18px}
+  .nav{height:66px}
+  .nav .btn-call{display:none}
+  .brand b{font-size:16px;white-space:nowrap}
+  .brand small{font-size:9.5px;letter-spacing:.14em;white-space:nowrap}
+  .nav .btn-line{padding:9px 13px;font-size:14px}
+  .nav .btn-line .lid{display:none}
+  .nav .btn-line{margin-left:auto}
+  .brand img{width:44px;height:44px}
+  .hero{padding:40px 0 70px}
+  .hero-art{min-height:420px}
+  .hero-photo{inset:0 0 70px 30px}
+  .wing-card{width:120px;padding:8px;top:20px;border-radius:16px}
+  .queue-card{width:240px;right:0;padding:14px 16px}
+  .queue-card h4{font-size:19px}
+  .hero-stats div{min-width:0;padding:12px 12px}
+  .hero-stats b{font-size:21px}
+  .hero-cta .btn{flex:1}
+  .photo-pair figure:nth-child(2){margin-top:28px}
+  .checks{grid-template-columns:1fr}
+  .zone-panel{padding:22px 20px}
+  .incl-sum{grid-template-columns:1fr}
+  .track{grid-template-columns:1fr 1fr}
+  .cars{grid-template-columns:repeat(2,1fr)}
+  .feed-row{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .svc-card{padding:18px 16px}
+  .svc-card h4{font-size:16.5px}
+  .svc-card p{font-size:14px}
+  .svc-card .ic{width:44px;height:44px}
+  .svc-card.main p{max-width:100%}
+  .panel{padding:22px 18px}
+  .estimate .amt{font-size:32px}
+  .qa .a div{padding:0 20px 18px 20px}
+  .qa button{padding:18px 18px;font-size:16.5px}
+  .map,.map iframe{min-height:340px}
+  .tl-switch button{flex:1 1 100%}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.8l2.6 6.9 7.4.3-5.8 4.6 2 7.1L12 16.6l-6.2 4.1 2-7.1L2 9l7.4-.3z"/></symbol>
+    <!-- starfruit slice: five lobes -->
+    <symbol id="i-fruit" viewBox="0 0 100 100"><path fill="currentColor" d="M50 4c6 0 9 16 12 26 10-4 26-10 30-5s-8 18-15 25c7 7 19 20 15 25s-20-1-30-5c-3 10-6 26-12 26s-9-16-12-26c-10 4-26 10-30 5s8-18 15-25C16 43 4 30 8 25s20 1 30 5C41 20 44 4 50 4z"/><circle cx="50" cy="50" r="7" fill="#fff" opacity=".55"/></symbol>
+    <symbol id="i-line" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5C6.2 2.5 1.5 6.3 1.5 11c0 4.2 3.7 7.7 8.8 8.4.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.5 8.2-6.1 1.5-1.6 2.3-3.4 2.3-5.3C22.5 6.3 17.8 2.5 12 2.5zM8.2 13.6H6.1c-.3 0-.6-.3-.6-.6V8.8c0-.3.3-.6.6-.6s.6.3.6.6V12.4h1.5c.3 0 .6.3.6.6s-.3.6-.6.6zm2.2-.6c0 .3-.3.6-.6.6s-.6-.3-.6-.6V8.8c0-.3.3-.6.6-.6s.6.3.6.6V13zm5 0c0 .3-.2.5-.4.6h-.2c-.2 0-.4-.1-.5-.2l-2.1-2.9V13c0 .3-.3.6-.6.6s-.6-.3-.6-.6V8.8c0-.3.2-.5.4-.6h.2c.2 0 .4.1.5.2l2.1 2.9V8.8c0-.3.3-.6.6-.6s.6.3.6.6V13zm3.4-2.7c.3 0 .6.3.6.6s-.3.6-.6.6h-1.5v.9h1.5c.3 0 .6.3.6.6s-.3.6-.6.6h-2.1c-.3 0-.6-.3-.6-.6V8.8c0-.3.3-.6.6-.6h2.1c.3 0 .6.3.6.6s-.3.6-.6.6h-1.5v.9h1.5z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M5 12l5 5 9-10"/></symbol>
+    <symbol id="i-seat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M7 3h5a2 2 0 0 1 2 2l1 9H8L6 5a2 2 0 0 1 1-2zM8 14l-1 3h11a2 2 0 0 0 0-4h-3M8 17v4M17 17v4"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 2.7s6.5 7 6.5 11.3a6.5 6.5 0 0 1-13 0C5.5 9.7 12 2.7 12 2.7z"/><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M9 14.5a3 3 0 0 0 3 3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></g></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0 5 5L22 13.6l-2 2-2.3-2.3a4 4 0 0 1-5-5L5 16v3h3l7.6-7.6"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M3 16v-3l2-5a2 2 0 0 1 1.9-1.4h10.2A2 2 0 0 1 19 8l2 5v3a1 1 0 0 1-1 1h-1M3 16a1 1 0 0 0 1 1h1M5 13h14M7.5 19.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM16.5 19.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM9.5 17.5h5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="4.5"/><path d="M10.7 12.3L20 3M16 7l3 3M18 5l2 2"/></g></symbol>
+    <symbol id="i-wind" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></g></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H8v3h2.4V21h3.1z"/></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3c.4 2.2 1.8 3.6 4 3.8v3.1c-1.5 0-2.9-.4-4-1.2v6.2c0 3.3-2.5 5.6-5.6 5.6S5.4 18.2 5.4 15.1s2.6-5.6 5.8-5.4v3.2c-1.4-.3-2.7.7-2.7 2.2 0 1.3 1 2.4 2.4 2.4s2.5-1 2.5-2.6V3h3.2z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 12a8 5 0 0 1 16 0M6 12l-2 6h16l-2-6M9 18v2M15 18v2"/></symbol>
+    <symbol id="i-engine" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 10h2V8h3V6h5v2h3l2 3h2v5h-2l-2 3H8l-2-2H4zM1 12v4"/></symbol>
+    <symbol id="i-o3" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="8" cy="14" r="4"/><circle cx="16" cy="9" r="3"/><circle cx="17.5" cy="17" r="2.5"/></g></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="โลโก้มะเฟืองคาร์แคร์ ปีกสีทอง">
+      <span><b>มะเฟือง คาร์แคร์</b><small>MAFUENG CARCARE</small></span>
+    </a>
+    <ul>
+      <li><a href="#included">ซักอะไรบ้าง</a></li>
+      <li><a href="#timeline">ฝากรถกี่โมง</a></li>
+      <li><a href="#price">ราคา</a></li>
+      <li><a href="#queue">อัปเดตคิว</a></li>
+      <li><a href="#faq">คำถาม</a></li>
+      <li><a href="#contact">แผนที่ร้าน</a></li>
+    </ul>
+    <a class="btn btn-call" href="tel:0818862234"><svg><use href="#i-phone"/></svg>081-886-2234</a>
+    <a class="btn btn-line" href="https://line.me/R/ti/p/@mf.carcare" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>LINE<span class="lid">&nbsp;@mf.carcare</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <span class="pill"><i><svg><use href="#i-pin"/></svg></i>ในไทวัสดุ สาขาสุขาภิบาล 3 · ถ.ร่มเกล้า มีนบุรี · เปิดทุกวัน 08.00–19.00</span>
+      <h1>ซักเบาะ <span class="gold">ซักพรม</span><br>รื้อออกซักทั้งคัน<small>ผู้เชี่ยวชาญซักเบาะ–พรมรถยนต์ โดยเฉพาะ</small></h1>
+      <p class="lead">น้ำเข้ารถ ราขึ้น รถเหม็นอับ ให้มะเฟืองดูแลครับ ร้านรื้อเบาะและพรมออกมาซักทีละชิ้น แล้วประกอบกลับให้เรียบร้อย ส่วนใหญ่<b>วันเดียวเสร็จ</b> ถ้าน้ำท่วมไม่ถึงเบาะ</p>
+      <div class="hero-cta">
+        <a class="btn btn-line" href="https://line.me/R/ti/p/@mf.carcare" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>ถามคิวทาง LINE</a>
+        <a class="btn btn-call" href="tel:0818862234"><svg><use href="#i-phone"/></svg>โทร 081-886-2234</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>100%</b><span>แนะนำ จาก 212 รีวิว</span></div>
+        <div><b>1.8 หมื่น</b><span>ผู้ติดตามเพจ</span></div>
+        <div><b>1 วัน</b><span>เสร็จ (น้ำไม่ถึงเบาะ)</span></div>
+      </div>
+    </div>
+    <div class="hero-art rv">
+      <svg class="floaty-star s1"><use href="#i-fruit"/></svg>
+      <figure class="hero-photo">
+        <img src="assets/seats-out.jpg" alt="เบาะรถ Vigo ที่ถูกรื้อออกมาซักที่ร้านมะเฟืองคาร์แคร์">
+        <figcaption>งานจริงจากเพจ: รื้อเบาะ Vigo ออกมาซักทีละชิ้น</figcaption>
+      </figure>
+      <div class="wing-card"><img src="assets/logo.jpg" alt="โลโก้ มะเฟือง คาร์แคร์"></div>
+      <div class="queue-card">
+        <span class="tag"><i class="dot"></i>อัปเดตคิวล่าสุดจากเพจ</span>
+        <h4>23/10/69 · คิวว่างครับ</h4>
+        <p>ซักเบาะ + ซักพรม วันเดียวเสร็จ ล้างรถดูดฝุ่นก็ว่าง เข้ามาได้เลยครับ</p>
+      </div>
+      <svg class="floaty-star s2"><use href="#i-star"/></svg>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>ซักเบาะรถยนต์ <svg><use href="#i-fruit"/></svg></span><span>ซักพรมรถยนต์ <svg><use href="#i-fruit"/></svg></span><span>น้ำเข้ารถ <svg><use href="#i-fruit"/></svg></span><span>ราขึ้น <svg><use href="#i-fruit"/></svg></span><span>รถเหม็นอับ <svg><use href="#i-fruit"/></svg></span><span>ล้างรถ อัดฉีด <svg><use href="#i-fruit"/></svg></span><span>ล้างห้องเครื่อง <svg><use href="#i-fruit"/></svg></span><span>อบโอโซน <svg><use href="#i-fruit"/></svg></span><span>ขัดไฟหน้า ขัดสี <svg><use href="#i-fruit"/></svg></span>
+    <span>ซักเบาะรถยนต์ <svg><use href="#i-fruit"/></svg></span><span>ซักพรมรถยนต์ <svg><use href="#i-fruit"/></svg></span><span>น้ำเข้ารถ <svg><use href="#i-fruit"/></svg></span><span>ราขึ้น <svg><use href="#i-fruit"/></svg></span><span>รถเหม็นอับ <svg><use href="#i-fruit"/></svg></span><span>ล้างรถ อัดฉีด <svg><use href="#i-fruit"/></svg></span><span>ล้างห้องเครื่อง <svg><use href="#i-fruit"/></svg></span><span>อบโอโซน <svg><use href="#i-fruit"/></svg></span><span>ขัดไฟหน้า ขัดสี <svg><use href="#i-fruit"/></svg></span>
+  </div>
+</div>
+
+<!-- WHY RIP OUT -->
+<section class="why">
+  <div class="wrap why-grid">
+    <div class="photo-pair rv">
+      <figure><img src="assets/altis-stripped.jpg" alt="Toyota Altis ที่รื้อเบาะออกแล้ว รอซักพรม"><figcaption>Altis รื้อเบาะออก เหลือพื้นโล่ง</figcaption></figure>
+      <figure><img src="assets/seats-row.jpg" alt="เบาะรถหลายคันวางเรียงรอซักหน้าร้าน"><figcaption>เบาะเรียงรอคิวซักหน้าร้าน</figcaption></figure>
+    </div>
+    <div class="rv">
+      <span class="eyebrow"><svg><use href="#i-fruit"/></svg>ทำไมต้องรื้อออก</span>
+      <div class="sec-head" style="margin-bottom:0">
+        <h2>ไม่ใช่แค่ฉีด–ดูดบนรถ<br>แต่<em>รื้อภายในออกมาทั้งหมด</em></h2>
+        <p>น้ำที่ซึมลงไปใต้พรม ฟองน้ำเบาะ และซอกรางเบาะ เช็ดจากด้านบนไม่ถึง ร้านจึงถอดชิ้นส่วนออกมาซักทีละชิ้น ทั้งคราบ กลิ่น และราจะได้ออกถึงข้างใน</p>
+      </div>
+      <div class="why-points">
+        <div><span class="ic"><svg><use href="#i-seat"/></svg></span><span><h4>ถอดเบาะออกจากตัวรถ</h4><p>ซักผ้าหุ้มและฟองน้ำด้านใน ไม่ใช่แค่เช็ดผิวหน้า</p></span></div>
+        <div><span class="ic"><svg><use href="#i-drop"/></svg></span><span><h4>ยกพรมขึ้นซักและตากให้แห้ง</h4><p>จัดการน้ำขังใต้พรมที่เป็นต้นเหตุของกลิ่นอับและรา</p></span></div>
+        <div><span class="ic"><svg><use href="#i-wrench"/></svg></span><span><h4>ประกอบกลับให้เรียบร้อย</h4><p>ทีมงานประจำร้านทำทุกขั้นตอน เสร็จแล้วส่งคืนรถพร้อมใช้</p></span></div>
+      </div>
+      <div class="quote-post"><b>จากโพสต์ของร้าน</b>“ทางร้านต้องรื้อภายในออกมาทั้งหมด อยากให้ลูกค้ามารถเปล่าๆ เลยค่ะ”</div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDED -->
+<section class="incl" id="included">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow"><svg><use href="#i-fruit"/></svg>ซักอะไรบ้าง</span>
+      <h2>แตะดูทีละจุด <em>ว่าทำอะไรให้บ้าง</em></h2>
+      <p>รู้ขอบเขตงานก่อนถามราคา กดที่ผังรถหรือแท็บด้านล่างเพื่อดูรายการของแต่ละจุด</p>
+    </div>
+    <div class="incl-grid">
+      <div class="carmap rv">
+        <svg viewBox="0 0 240 470" role="img" aria-label="ผังภายในรถ แตะเพื่อเลือกจุด">
+          <!-- body -->
+          <path d="M120 8c52 0 86 22 92 70l8 300c0 50-40 82-100 84-60-2-100-34-100-84l8-300C34 30 68 8 120 8z" fill="#fff" stroke="#0d4a26" stroke-width="4"/>
+          <path d="M52 92c20-14 116-14 136 0l-10 40H62z" fill="#d8ecf5" stroke="#0d4a26" stroke-width="2.5"/>
+          <path d="M58 392h124l-8 26c-30 12-78 12-108 0z" fill="#d8ecf5" stroke="#0d4a26" stroke-width="2.5"/>
+          <!-- zones -->
+          <rect class="z" data-z="dash" x="62" y="134" width="116" height="26" rx="8"/>
+          <text class="lbl" x="120" y="152">คอนโซล</text>
+          <rect class="z" data-z="carpet" x="44" y="164" width="152" height="196" rx="14"/>
+          <rect class="z" data-z="front" x="54" y="172" width="58" height="72" rx="14"/>
+          <rect class="z" data-z="front" x="128" y="172" width="58" height="72" rx="14"/>
+          <text class="lbl" x="83" y="212">เบาะหน้า</text><text class="lbl" x="157" y="212">เบาะหน้า</text>
+          <text class="lbl" x="120" y="263">พรมพื้น</text>
+          <rect class="z" data-z="rear" x="54" y="276" width="132" height="66" rx="16"/>
+          <text class="lbl" x="120" y="314">เบาะหลัง</text>
+          <rect class="z" data-z="door" x="26" y="170" width="14" height="170" rx="6"/>
+          <rect class="z" data-z="door" x="200" y="170" width="14" height="170" rx="6"/>
+          <rect class="z" data-z="trunk" x="62" y="350" width="116" height="36" rx="10"/>
+          <text class="lbl" x="120" y="373">ท้ายรถ</text>
+        </svg>
+        <p class="hint">แตะที่ผังรถเพื่อดูรายละเอียด</p>
+      </div>
+      <div class="rv">
+        <div class="zone-tabs" id="zoneTabs">
+          <button data-z="front" class="on">เบาะหน้า</button>
+          <button data-z="rear">เบาะหลัง</button>
+          <button data-z="carpet">พรมพื้น</button>
+          <button data-z="door">แผงประตู</button>
+          <button data-z="dash">คอนโซล</button>
+          <button data-z="trunk">ท้ายรถ</button>
+        </div>
+        <div class="zone-panel" id="zonePanel"></div>
+        <div class="incl-sum">
+          <div><b>รื้อ–ซัก–ประกอบ</b><span>ทุกชิ้นทำโดยทีมงานที่ร้าน</span></div>
+          <div><b>น้ำเข้า · รา · กลิ่น</b><span>งานหลักที่ร้านรับเป็นประจำ</span></div>
+          <div><b>วันเดียวเสร็จ</b><span>ถ้าน้ำท่วมไม่ถึงเบาะ</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="tl" id="timeline">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><svg><use href="#i-fruit"/></svg>ฝากรถไว้ที่ร้าน</span>
+      <h2>เอารถเข้าเช้า <em>รับคืนเย็น</em></h2>
+      <p>ขั้นตอนตั้งแต่ขับรถเข้าร้านจนรับคืน เลือกสภาพรถของคุณเพื่อดูว่าใช้เวลาประมาณเท่าไร</p>
+    </div>
+    <div class="tl-switch rv" id="tlSwitch">
+      <button class="on" data-m="normal">น้ำไม่ถึงเบาะ / คราบ / กลิ่นอับ</button>
+      <button data-m="flood">น้ำท่วมถึงเบาะ / ราขึ้นหนัก</button>
+    </div>
+    <div class="track rv" id="track"></div>
+    <div class="tl-foot rv">
+      <div><div class="big" id="tlTotal">วันเดียวเสร็จ</div><p id="tlNote">walk in เข้ามาก่อน 9 โมง รับรถได้ภายในวัน</p></div>
+      <span class="sample">เวลาแต่ละขั้นเป็นค่าประมาณ ร้านยืนยันอีกครั้งตอนรับรถ</span>
+    </div>
+  </div>
+</section>
+
+<!-- PREP -->
+<section class="prep">
+  <div class="wrap prep-grid">
+    <div class="rv">
+      <span class="eyebrow"><svg><use href="#i-fruit"/></svg>ก่อนนำรถมา</span>
+      <div class="sec-head" style="margin-bottom:26px">
+        <h2>เช็กลิสต์ <em>ก่อนฝากรถ</em></h2>
+        <p>ติ๊กให้ครบก่อนออกจากบ้าน งานจะเริ่มได้ทันทีที่รถถึงร้าน</p>
+      </div>
+      <div class="prep-list" id="prepList">
+        <div class="prep-item"><span class="bx"><svg><use href="#i-check"/></svg></span><span><b>นำของออกจากรถให้หมด</b><small>ร้านต้องรื้อภายในออกทั้งหมด เอาของออกเพื่อกันของหาย</small></span></div>
+        <div class="prep-item"><span class="bx"><svg><use href="#i-check"/></svg></span><span><b>เคลียร์ท้ายรถและช่องเก็บของ</b><small>รวมถึงช่องประตู ใต้เบาะ และคอนโซลกลาง</small></span></div>
+        <div class="prep-item"><span class="bx"><svg><use href="#i-check"/></svg></span><span><b>ทักไลน์ถามคิวก่อน</b><small>ช่วงน้ำท่วมคิวเต็มเร็ว ดูอัปเดตคิวในเพจหรือทัก @mf.carcare</small></span></div>
+        <div class="prep-item"><span class="bx"><svg><use href="#i-check"/></svg></span><span><b>มาถึงร้านก่อน 9 โมง</b><small>walk in ช่วงเช้า เพื่อให้เสร็จภายในวัน</small></span></div>
+        <div class="prep-item"><span class="bx"><svg><use href="#i-check"/></svg></span><span><b>แจ้งอาการของรถ</b><small>น้ำเข้าสูงแค่ไหน มีรา มีกลิ่น หรือคราบเฉพาะจุด</small></span></div>
+      </div>
+      <div class="prep-meter"><i id="prepBar"></i></div>
+      <p class="prep-msg" id="prepMsg">ติ๊กแล้ว 0 / 5 ข้อ</p>
+    </div>
+    <div class="prep-photo rv">
+      <img src="assets/shop-front2.jpg" alt="หน้าร้านมะเฟืองคาร์แคร์ ป้ายสีเขียว ในไทวัสดุ สุขาภิบาล 3">
+      <div class="q"><b>จากโพสต์ของร้าน</b>“ลูกค้าที่นำรถมารับบริการซักเบาะ ซักพรม กรุณานำของออกจากรถให้หมด เพื่อป้องกันของสูญหาย”</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE + LINE BUILDER -->
+<section class="price" id="price">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow"><svg><use href="#i-fruit"/></svg>ราคาโดยประมาณ</span>
+      <h2>เลือกรถของคุณ <em>แล้วทักไลน์ได้เลย</em></h2>
+      <p>ราคาขึ้นกับขนาดรถและสภาพงาน ดูราคาเริ่มต้นแบบคร่าวๆ แล้วส่งข้อมูลรถให้ร้านประเมินทาง LINE</p>
+    </div>
+    <div class="price-grid">
+      <div class="panel rv">
+        <h3>1. ประเภทรถ</h3>
+        <p class="sub">ซักเบาะ + พรม ทั้งคัน</p>
+        <div class="cars" id="cars"></div>
+        <div class="estimate">
+          <div><div class="amt" id="amt">3,xxx.- <small>บาท</small></div><p id="amtNote"></p></div>
+          <div class="src" id="amtSrc"></div>
+        </div>
+        <p style="margin-top:14px"><span class="sample">ราคาที่ไม่ได้มาจากโพสต์ของร้านเป็นตัวอย่างสำหรับเดโม ราคาจริงให้ร้านประเมิน</span></p>
+      </div>
+      <div class="panel rv">
+        <h3>2. สร้างข้อความถามคิว</h3>
+        <p class="sub">กรอกนิดเดียว ระบบจะเรียงข้อความให้ กดปุ่มแล้วส่งเข้า LINE ร้านได้เลย</p>
+        <div class="field"><label for="model">รุ่นรถ</label><input id="model" placeholder="เช่น Vigo, Altis, Jazz"></div>
+        <div class="field"><label>อาการ (เลือกได้หลายข้อ)</label>
+          <div class="chips" id="symChips">
+            <button class="chip on">น้ำเข้ารถ</button><button class="chip">ราขึ้น</button><button class="chip">เหม็นอับ</button><button class="chip">คราบเลอะ</button><button class="chip">ขนสัตว์ / ฝุ่น</button>
+          </div>
+        </div>
+        <div class="field"><label for="water">น้ำท่วมถึงไหน</label>
+          <select id="water"><option>ไม่ได้โดนน้ำ</option><option selected>แค่พรม ไม่ถึงเบาะ</option><option>ท่วมถึงเบาะ</option><option>ไม่แน่ใจ ส่งรูปให้ดู</option></select>
+        </div>
+        <div class="field"><label for="day">อยากนำรถเข้าวันไหน</label><input id="day" placeholder="เช่น พรุ่งนี้เช้า / เสาร์นี้"></div>
+        <div class="preview" id="preview"></div>
+        <a class="btn btn-line" id="sendLine" href="https://line.me/R/ti/p/@mf.carcare" target="_blank" rel="noopener"><svg><use href="#i-line"/></svg>ส่งข้อความเข้า LINE @mf.carcare</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUEUE FEED -->
+<section class="feed" id="queue">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow"><svg><use href="#i-fruit"/></svg>อัปเดตคิวจากเพจ</span>
+      <h2>ร้านแจ้งคิวว่าง <em>ทุกวัน</em></h2>
+      <p>โพสต์จริงจากเพจมะเฟืองคาร์แคร์ช่วงเดือนตุลาคม 2569 กดติดตามเพจไว้เพื่อดูคิวล่าสุด</p>
+    </div>
+    <div class="feed-row">
+      <article class="post rv"><div class="ph"><img src="assets/shop-front.jpg" alt="ลานจอดหน้าร้านมะเฟืองคาร์แคร์ วันคิวว่าง"></div><div class="bd"><span class="dt">23/10/69</span><p>ซักเบาะ ซักพรม วันเดียวเสร็จ *ถ้าน้ำท่วมไม่ถึงเบาะ* ล้างรถดูดฝุ่นว่างครับ</p><div class="tags">#ซักเบาะรถยนต์ #น้ำเข้ารถ</div></div></article>
+      <article class="post rv"><div class="ph"><img src="assets/altis-stripped.jpg" alt="งานซักเบาะพรม Altis"></div><div class="bd"><span class="dt">งานจริง</span><p>ซักเบาะ + พรม Altis 3,xxx.- วันเดียวเสร็จ ✌️</p><div class="tags">#ซักพรมรถยนต์ #รถเหม็นอับ</div></div></article>
+      <article class="post rv"><div class="ph"><img src="assets/seats-row.jpg" alt="เบาะรถรอซัก"></div><div class="bd"><span class="dt">15/10/69</span><p>คิวว่างแล้วครับ walk in ได้เลย 1–2 วันเสร็จครับ</p><div class="tags">#ราขึ้น #น้ำท่วม</div></div></article>
+      <article class="post rv"><div class="ph"><img src="assets/seats-out.jpg" alt="เบาะ Vigo ที่ถอดออกมาซัก"></div><div class="bd"><span class="dt full">30/9/69</span><p>คิวเต็ม งดรับ walk in ชั่วคราว ช่วงนี้ติดต่อทางโทรศัพท์ 081-886-2234 ทางเดียว</p><div class="tags">#ซักเบาะซักพรม</div></div></article>
+    </div>
+    <div class="feed-cta rv">
+      <a class="btn btn-ghost" href="https://www.facebook.com/mafuengcarcare/" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg>ดูคิวล่าสุดในเพจ</a>
+      <a class="btn btn-ghost" href="https://www.tiktok.com/@mf.carcare" target="_blank" rel="noopener"><svg><use href="#i-tt"/></svg>TikTok @mf.carcare</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="svc">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow"><svg><use href="#i-fruit"/></svg>บริการอื่นในร้าน</span>
+      <h2>ระหว่างรอซักเบาะ <em>ดูแลภายนอกต่อได้</em></h2><p>ราคาโปรโมชันอ่านจากป้ายหน้าร้านในรูปเดือนตุลาคม 2569 รายละเอียดแพ็กเกจสอบถามร้าน</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card main rv"><svg class="big-star"><use href="#i-fruit"/></svg><span class="ic"><svg><use href="#i-seat"/></svg></span><h4>ซักเบาะ – ซักพรมรถยนต์</h4><p>งานหลักของร้าน รื้อภายในออกมาซักทั้งหมด เหมาะกับรถน้ำเข้า ราขึ้น และรถเหม็นอับ</p></div>
+      <div class="svc-card rv"><span class="ic"><svg><use href="#i-car"/></svg></span><h4>ล้างรถ อัดฉีด</h4><p>ล้างรถ ดูดฝุ่น มีแพ็กเกจ “มะเฟือง SET A”</p><span class="pr">SET A 1,150.-</span></div>
+      <div class="svc-card rv"><span class="ic"><svg><use href="#i-engine"/></svg></span><h4>ล้างห้องเครื่อง</h4><p>ทำความสะอาดคราบฝุ่นและคราบน้ำมันในห้องเครื่อง</p></div>
+      <div class="svc-card rv"><span class="ic"><svg><use href="#i-o3"/></svg></span><h4>อบโอโซน</h4><p>ช่วยลดกลิ่นอับในห้องโดยสาร</p></div>
+      <div class="svc-card rv"><span class="ic"><svg><use href="#i-bulb"/></svg></span><h4>ขัดไฟหน้า</h4><p>ไฟหน้าเหลืองขุ่น ขัดให้กลับมาใส</p></div>
+      <div class="svc-card rv"><span class="ic"><svg><use href="#i-spark"/></svg></span><h4>ขัดสี ฟื้นฟูสีรถ</h4><p>โปรแกรมขัดสี Whitening ฟรีล้างรถ ดูดฝุ่น</p><span class="pr">เริ่มต้น 1,200.-</span></div>
+      <div class="svc-card rv"><span class="ic"><svg><use href="#i-wind"/></svg></span><h4>ฉีดช่วงล่าง</h4><p>ล้างโคลนและคราบน้ำท่วมใต้ท้องรถ</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="rev">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow"><svg><use href="#i-fruit"/></svg>เสียงลูกค้า</span>
+      <h2>ลูกค้า <em>แนะนำต่อ</em></h2>
+    </div>
+    <div class="rev-top rv">
+      <div class="score"><b>100%</b><span>แนะนำ<br>จาก 212 รีวิวบน Facebook</span></div>
+      <span class="sample">ข้อความรีวิวด้านล่างเป็นตัวอย่างสำหรับเดโม</span>
+    </div>
+    <div class="rev-grid">
+      <div class="rcard rv"><div class="stars">★★★★★</div><p>“รถโดนน้ำเข้าถึงพรม เอาเข้าตอนเช้า เย็นได้รถคืน กลิ่นอับหายเลย พื้นแห้งสนิท”</p><div class="who"><span class="av">ต</span><span><b>คุณต้น</b><small>Honda Jazz · มีนบุรี</small></span></div></div>
+      <div class="rcard rv"><div class="stars">★★★★★</div><p>“ช่างรื้อเบาะออกมาซักจริงจัง ประกอบกลับเรียบร้อย ไม่มีเสียงแปลกๆ คุ้มราคาครับ”</p><div class="who"><span class="av">อ</span><span><b>คุณเอก</b><small>Toyota Vigo · ร่มเกล้า</small></span></div></div>
+      <div class="rcard rv"><div class="stars">★★★★★</div><p>“ช่วงคิวเต็มทักไลน์ไว้ ร้านโทรกลับมานัดให้ ระหว่างรอเดินเล่นไทวัสดุได้ สะดวกมาก”</p><div class="who"><span class="av">น</span><span><b>คุณนิด</b><small>Toyota Altis · ลาดกระบัง</small></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <span class="eyebrow"><svg><use href="#i-fruit"/></svg>คำถามที่พบบ่อย</span>
+      <h2>อ่านก่อน <em>ถามราคา</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="qa rv"><button><span class="q">ถ</span>ซักเบาะ–พรมใช้เวลากี่วัน<span class="pm">+</span></button><div class="a"><div>ถ้าน้ำท่วมไม่ถึงเบาะ ส่วนใหญ่วันเดียวเสร็จครับ แนะนำนำรถเข้าก่อน 9 โมง ถ้าน้ำท่วมถึงเบาะหรือราขึ้นหนัก อาจใช้ 1–2 วัน เพราะต้องรอให้ฟองน้ำเบาะแห้งสนิท</div></div></div>
+      <div class="qa rv"><button><span class="q">ถ</span>ราคาเท่าไร<span class="pm">+</span></button><div class="a"><div>ขึ้นกับขนาดรถและสภาพงาน ตัวอย่างจากเพจ เช่น ซักเบาะ + พรม Vigo, Altis, Jazz อยู่ที่ 3,xxx บาท ส่งรุ่นรถและรูปภายในทาง LINE @mf.carcare ร้านจะประเมินให้ครับ</div></div></div>
+      <div class="qa rv"><button><span class="q">ถ</span>ต้องเอาของออกจากรถไหม<span class="pm">+</span></button><div class="a"><div>ต้องครับ ร้านรื้อภายในออกมาทั้งหมด กรุณานำของออกจากรถให้หมดเพื่อป้องกันของสูญหาย นำรถเปล่ามาได้เลย</div></div></div>
+      <div class="qa rv"><button><span class="q">ถ</span>walk in ได้ไหม หรือต้องจองคิว<span class="pm">+</span></button><div class="a"><div>วันที่คิวว่าง walk in ได้เลยครับ ร้านแจ้งคิวว่างในเพจเกือบทุกวัน ช่วงน้ำท่วมคิวอาจเต็ม ร้านจะงดรับ walk in ชั่วคราว แนะนำทักไลน์หรือโทรถามก่อนเข้ามา</div></div></div>
+      <div class="qa rv"><button><span class="q">ถ</span>ร้านอยู่ตรงไหน จอดรถรอได้ไหม<span class="pm">+</span></button><div class="a"><div>ร้านอยู่ในพื้นที่ไทวัสดุ สาขาสุขาภิบาล 3 เลขที่ 38/1 ถนนร่มเกล้า แขวงมีนบุรี เขตมีนบุรี ลานหน้าร้านจอดรถได้ ระหว่างรอเดินไทวัสดุได้ครับ เปิดทุกวัน 08.00–19.00 น.</div></div></div>
+      <div class="qa rv"><button><span class="q">ถ</span>โทรไม่ติด ทำอย่างไรดี<span class="pm">+</span></button><div class="a"><div>ช่วงงานเยอะช่างอาจรับสายไม่ทัน ทัก LINE @mf.carcare ทิ้งเบอร์ไว้ได้ หน้าร้านว่างแล้วจะทยอยโทรกลับครับ</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="cbox rv">
+      <span class="eyebrow" style="color:var(--gold2)"><svg><use href="#i-fruit"/></svg>แผนที่ร้าน</span>
+      <h2>มะเฟือง คาร์แคร์<br><span>@ ไทวัสดุ สุขาภิบาล 3</span></h2>
+      <p>ศูนย์ซักเบาะ ซักพรม ล้างรถอัดฉีด ขัดสี ร่มเกล้า มีนบุรี</p>
+      <div class="crow"><span class="ic"><svg><use href="#i-pin"/></svg></span><span><b>ที่อยู่</b><span>ไทวัสดุ สาขาสุขาภิบาล 3 เลขที่ 38/1 ถ.ร่มเกล้า แขวงมีนบุรี เขตมีนบุรี กรุงเทพฯ 10510</span></span></div>
+      <div class="crow"><span class="ic"><svg><use href="#i-phone"/></svg></span><span><b>โทร</b><a href="tel:0818862234">081-886-2234</a></span></div>
+      <div class="crow"><span class="ic"><svg><use href="#i-line"/></svg></span><span><b>LINE</b><a href="https://line.me/R/ti/p/@mf.carcare" target="_blank" rel="noopener">@mf.carcare</a></span></div>
+      <div class="crow"><span class="ic"><svg><use href="#i-clock"/></svg></span><span><b>เปิดทุกวัน 08.00 – 19.00 น.</b><span>ตามป้ายหน้าร้าน · ซักเบาะ–พรม walk in ก่อน 9 โมงเช้า เพื่อให้เสร็จในวัน</span></span></div>
+      <div class="cbtns">
+        <a class="btn btn-gold" href="https://maps.app.goo.gl/QYjxg7bqW8wnZ5wb7" target="_blank" rel="noopener"><svg><use href="#i-pin"/></svg>นำทาง Google Maps</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/mafuengcarcare/" target="_blank" rel="noopener"><svg><use href="#i-fb"/></svg>เพจ Facebook</a>
+      </div>
+    </div>
+    <div class="map rv">
+      <iframe loading="lazy" title="แผนที่มะเฟืองคาร์แคร์" src="https://maps.google.com/maps?q=%E0%B8%A1%E0%B8%B0%E0%B9%80%E0%B8%9F%E0%B8%B7%E0%B8%AD%E0%B8%87%20%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B9%81%E0%B8%84%E0%B8%A3%E0%B9%8C%20%E0%B9%84%E0%B8%97%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B8%20%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%B2%E0%B8%A0%E0%B8%B4%E0%B8%9A%E0%B8%B2%E0%B8%A5%203%20%E0%B8%A3%E0%B9%88%E0%B8%A1%E0%B9%80%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%B2%20%E0%B8%A1%E0%B8%B5%E0%B8%99%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5&z=15&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  © มะเฟืองคาร์แคร์ ศูนย์ซักเบาะ ซักพรม ร่มเกล้า มีนบุรี · โทร <a href="tel:0818862234">081-886-2234</a> · LINE <a href="https://line.me/R/ti/p/@mf.carcare">@mf.carcare</a><br>
+  <small>เว็บไซต์ตัวอย่าง (เดโม) ข้อมูลที่มีป้าย “ตัวอย่าง” ยังไม่ได้ยืนยันกับร้าน</small>
+</footer>
+
+<div class="fab">
+  <a class="l" href="https://line.me/R/ti/p/@mf.carcare" target="_blank" rel="noopener" aria-label="LINE @mf.carcare"><svg><use href="#i-line"/></svg></a>
+  <a class="c" href="tel:0818862234" aria-label="โทร 081-886-2234"><svg><use href="#i-phone"/></svg></a>
+</div>
+
+<script>
+// ---- interior zones ----
+const ZONES={
+  front:{t:'เบาะหน้า',i:'#i-seat',d:'เบาะคนขับและผู้โดยสาร ถอดออกจากรางมาซักนอกตัวรถ',c:['ถอดเบาะออกจากราง','ซักผ้าหุ้มเบาะ / หนัง','ซักฟองน้ำด้านใน','ล้างหัวเบาะ (หมอนรองคอ)','ทำความสะอาดรางเบาะ','ตากและเป่าให้แห้งก่อนประกอบ']},
+  rear:{t:'เบาะหลัง',i:'#i-seat',d:'ถอดเบาะนั่งและพนักพิงแถวหลังออกมาซักทีละชิ้น',c:['ถอดเบาะนั่งและพนักพิง','ซักผ้าหุ้มและฟองน้ำ','ล้างเข็มขัดนิรภัยด้านหลัง','ทำความสะอาดพื้นใต้เบาะ','ตากให้แห้งสนิท','ประกอบกลับตำแหน่งเดิม']},
+  carpet:{t:'พรมพื้น',i:'#i-drop',d:'ต้นเหตุหลักของกลิ่นอับเวลาน้ำเข้ารถ ต้องยกขึ้นมาซักและตาก',c:['รื้อพรมพื้นขึ้นจากตัวรถ','ซักพรมและแผ่นรองใต้พรม','ดูดน้ำที่ขังใต้พรม','เช็ดพื้นเหล็กให้แห้ง','ตากและเป่าพรมจนแห้ง','ปูพรมกลับให้เข้ารูป']},
+  door:{t:'แผงประตู',i:'#i-wrench',d:'แผงประตูและที่วางแขน จุดที่มือจับบ่อยและสะสมคราบ',c:['เช็ดคราบแผงประตู','ทำความสะอาดที่วางแขน','ช่องใส่ของในประตู','ยางขอบประตู','มือจับด้านใน','ช่องลมและซอกปุ่ม']},
+  dash:{t:'คอนโซล',i:'#i-spark',d:'คอนโซลหน้าและคอนโซลกลาง เช็ดฝุ่นและคราบตามซอก',c:['เช็ดคอนโซลหน้า','คอนโซลกลาง / ที่วางแก้ว','พวงมาลัยและก้านเกียร์','ช่องแอร์','ดูดฝุ่นตามซอก','เช็ดกระจกด้านใน']},
+  trunk:{t:'ท้ายรถ',i:'#i-car',d:'พรมท้ายรถมักโดนน้ำซึมด้วย ร้านดูให้ไปพร้อมกัน',c:['ยกพรมท้ายขึ้นซัก','ดูดน้ำและฝุ่นในหลุมยางอะไหล่','เช็ดแผงข้างท้ายรถ','ตากให้แห้งก่อนปูกลับ']}
+};
+const panel=document.getElementById('zonePanel');
+function showZone(z){
+  const o=ZONES[z];
+  panel.innerHTML=`<h3><svg><use href="${o.i}"/></svg>${o.t}</h3><p class="zdesc">${o.d}</p><ul class="checks">${o.c.map(x=>`<li>${x}</li>`).join('')}</ul><div class="note"><span class="sample">รายการย่อยเป็นตัวอย่าง ร้านยืนยันขอบเขตจริงอีกครั้ง</span></div>`;
+  document.querySelectorAll('#zoneTabs button').forEach(b=>b.classList.toggle('on',b.dataset.z===z));
+  document.querySelectorAll('.carmap .z').forEach(r=>r.classList.toggle('on',r.dataset.z===z));
+}
+document.querySelectorAll('#zoneTabs button').forEach(b=>b.onclick=()=>showZone(b.dataset.z));
+document.querySelectorAll('.carmap .z').forEach(r=>r.addEventListener('click',()=>{showZone(r.dataset.z);if(innerWidth<1020)panel.scrollIntoView({behavior:'smooth',block:'center'})}));
+showZone('front');
+
+// ---- timeline ----
+const TL={
+  normal:{total:'วันเดียวเสร็จ',note:'walk in เข้ามาก่อน 9 โมง รับรถได้ภายในวัน (ถ้าน้ำท่วมไม่ถึงเบาะ)',s:[
+    ['i-key','ก่อน 09:00','รับรถ','แจ้งอาการ ตรวจสภาพภายในร่วมกัน'],
+    ['i-wrench','09:30','รื้อภายใน','ถอดเบาะ ยกพรมออกจากตัวรถ'],
+    ['i-drop','10:30','ซักทีละชิ้น','ซักผ้าหุ้ม ฟองน้ำ และพรม'],
+    ['i-sun','12:00','ตาก / เป่าแห้ง','ตากแดดและเป่าลมจนแห้งสนิท'],
+    ['i-seat','16:00','ประกอบกลับ','ใส่เบาะ ปูพรม เช็ดภายใน'],
+    ['i-car','เย็น','รับรถคืน','ตรวจงานด้วยกันก่อนรับรถ']]},
+  flood:{total:'1 – 2 วัน',note:'น้ำท่วมถึงเบาะหรือราขึ้นหนัก ฟองน้ำเบาะต้องใช้เวลาแห้งนานขึ้น ร้านแจ้งวันรับรถตอนรับงาน',s:[
+    ['i-key','วันที่ 1 เช้า','รับรถ','ดูระดับน้ำ ราและกลิ่น แจ้งวันรับ'],
+    ['i-wrench','วันที่ 1','รื้อทั้งคัน','ถอดเบาะ พรม และพรมท้าย'],
+    ['i-drop','วันที่ 1','ซักล้างรา','ซักฟองน้ำและพรมหลายรอบ'],
+    ['i-sun','วันที่ 1–2','อบแห้ง','ตากและเป่าจนฟองน้ำแห้งในเนื้อ'],
+    ['i-seat','วันที่ 2','ประกอบกลับ','ใส่เบาะ ปูพรม เก็บงานภายใน'],
+    ['i-car','วันที่ 2','รับรถคืน','ร้านโทรแจ้งเมื่อรถพร้อม']]}
+};
+const track=document.getElementById('track');let tlTimer;
+function renderTL(m){
+  const o=TL[m];
+  track.innerHTML=o.s.map(s=>`<div class="step"><div class="node"><svg><use href="#${s[0]}"/></svg></div><time>${s[1]}</time><h4>${s[2]}</h4><p>${s[3]}</p></div>`).join('');
+  document.getElementById('tlTotal').textContent=o.total;document.getElementById('tlNote').textContent=o.note;
+  document.querySelectorAll('#tlSwitch button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));
+  const steps=[...track.children];let k=0;clearInterval(tlTimer);
+  const tickStep=()=>{steps.forEach((s,i)=>s.classList.toggle('active',i===k));k=(k+1)%steps.length};
+  tickStep();tlTimer=setInterval(tickStep,1400);
+}
+document.querySelectorAll('#tlSwitch button').forEach(b=>b.onclick=()=>renderTL(b.dataset.m));
+renderTL('normal');
+
+// ---- prep checklist ----
+const items=[...document.querySelectorAll('.prep-item')];
+function upd(){const n=items.filter(i=>i.classList.contains('done')).length;document.getElementById('prepBar').style.width=(n/items.length*100)+'%';
+  document.getElementById('prepMsg').textContent=n===items.length?'พร้อมฝากรถแล้วครับ! ทักไลน์ถามคิวได้เลย':`ติ๊กแล้ว ${n} / ${items.length} ข้อ`;}
+items.forEach(i=>i.onclick=()=>{i.classList.toggle('done');upd()});
+
+// ---- cars / price ----
+const carIcon='<svg viewBox="0 0 74 36"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="PATH"/><circle cx="18" cy="28" r="5" fill="#fff" stroke="currentColor" stroke-width="2.5"/><circle cx="56" cy="28" r="5" fill="#fff" stroke="currentColor" stroke-width="2.5"/></svg>';
+const P={eco:'M4 28V20l8-10h28l12 10h14a4 4 0 0 1 4 4v4',sedan:'M3 28v-6l10-2 10-9h22l12 9h11a4 4 0 0 1 3 4v4',pick:'M3 28V16h10l6-8h16v12h32a3 3 0 0 1 3 3v5',suv:'M3 28V12l6-6h40l10 10h9a3 3 0 0 1 3 3v9',van:'M3 28V8a3 3 0 0 1 3-3h44l16 12a4 4 0 0 1 4 4v7'};
+const CARS=[
+  {k:'eco',n:'รถเล็ก / อีโค',e:'Jazz, Yaris, Mirage',p:'3,xxx.-',real:true,src:'จากโพสต์ร้าน: Jazz 3,xxx.-'},
+  {k:'sedan',n:'ซีดาน',e:'Altis, City, Civic',p:'3,xxx.-',real:true,src:'จากโพสต์ร้าน: Altis 3,xxx.-'},
+  {k:'pick',n:'กระบะ 4 ประตู',e:'Vigo, Revo, D-Max',p:'3,xxx.-',real:true,src:'จากโพสต์ร้าน: Vigo 3,xxx.-'},
+  {k:'suv',n:'SUV / PPV',e:'Fortuner, CR-V',p:'4,xxx.-',real:false,src:'ราคาตัวอย่าง'},
+  {k:'van',n:'รถตู้ / 7 ที่นั่ง',e:'Commuter, Innova',p:'สอบถาม',real:false,src:'ราคาตัวอย่าง'},
+  {k:'sedan',n:'ไม่แน่ใจ',e:'ส่งรูปให้ร้านดู',p:'ประเมินฟรี',real:false,src:'ทักไลน์ส่งรูปภายใน'}
+];
+const carsEl=document.getElementById('cars');let car=CARS[2];
+carsEl.innerHTML=CARS.map((c,i)=>`<div class="car${i===2?' on':''}" data-i="${i}">${carIcon.replace('PATH',P[c.k])}<b>${c.n}</b><small>${c.e}</small></div>`).join('');
+function setCar(i){car=CARS[i];[...carsEl.children].forEach((e,j)=>e.classList.toggle('on',j==i));
+  const a=document.getElementById('amt');a.innerHTML=car.p+(/\d/.test(car.p)?' <small>บาท</small>':'');
+  document.getElementById('amtNote').textContent=car.real?'ซักเบาะ + พรม · วันเดียวเสร็จ (น้ำไม่ถึงเบาะ)':'ราคาขึ้นกับขนาดและสภาพรถ';
+  document.getElementById('amtSrc').textContent=car.src;build();}
+[...carsEl.children].forEach(e=>e.onclick=()=>setCar(+e.dataset.i));
+
+// ---- LINE builder ----
+document.querySelectorAll('#symChips .chip').forEach(c=>c.onclick=()=>{c.classList.toggle('on');build()});
+['model','water','day'].forEach(id=>document.getElementById(id).addEventListener('input',build));
+function build(){
+  const m=document.getElementById('model').value.trim();
+  const sym=[...document.querySelectorAll('#symChips .chip.on')].map(c=>c.textContent);
+  const w=document.getElementById('water').value;const d=document.getElementById('day').value.trim();
+  const txt=`สวัสดีครับ สนใจซักเบาะ + ซักพรม\nรถ: ${car.n}${m?' ('+m+')':''}\nอาการ: ${sym.length?sym.join(', '):'-'}\nน้ำท่วม: ${w}\nอยากเข้า: ${d||'ขอถามคิวว่างก่อน'}\nรบกวนประเมินราคาและคิวให้หน่อยครับ`;
+  document.getElementById('preview').textContent=txt;
+  document.getElementById('sendLine').href='https://line.me/R/oaMessage/@mf.carcare/?'+encodeURIComponent(txt);
+}
+setCar(2);
+
+// ---- FAQ ----
+document.querySelectorAll('.qa').forEach(q=>q.querySelector('button').onclick=()=>{
+  const open=q.classList.toggle('open');const a=q.querySelector('.a');a.style.maxHeight=open?a.scrollHeight+'px':0;});
+
+// ---- reveal ----
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

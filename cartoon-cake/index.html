@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>การ์ตูนเค้ก Cartoon Cake พระราม 2 ซ.43 | เค้ก 3 มิติ เค้กวันเกิด สั่งทำทุกธีม</title>
+<meta name="description" content="ร้านการ์ตูนเค้ก Cartoon Cake พระราม 2 ซอย 43 ข้าง รพ.บางมด รับสั่งทำเค้ก 3 มิติ เค้กปั้นน้ำตาล เค้กวันเกิดทุกธีม รวมแบบเค้กและวิธีสั่งไว้ในลิงก์เดียว ทักไลน์ @cartooncake โทร 095-491-9979">
+<link rel="icon" href="assets/logo-crop.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#e8457a; --pink2:#ff7aa2; --pinkL:#ffd6e3; --pinkXL:#fff0f5;
+  --butter:#fff6a6; --butterL:#fffbd9; --cream:#fffdf4;
+  --cocoa:#6b3d2a; --cocoa2:#8a5a3c; --sky:#7cc8f0; --skyL:#dff3ff; --mint:#9be3c4; --lilac:#b9a3f5;
+  --ink:#3d2418; --muted:#7a5a4b;
+  --out:3px solid var(--cocoa); --pop:5px 5px 0 var(--cocoa); --r:26px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Sarabun',sans-serif;color:var(--ink);background:var(--cream);font-size:17px;line-height:1.7;overflow-x:hidden}
+h1,h2,h3,h4,.nst{font-family:'Noto Sans Thai',sans-serif;line-height:1.3}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:92px 0;position:relative}
+.sample{display:inline-block;font-size:12.5px;font-weight:600;color:var(--cocoa2);background:#fff;border:1.5px dashed var(--cocoa2);border-radius:999px;padding:2px 10px;line-height:1.5}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:'Noto Sans Thai';font-weight:800;border-radius:999px;padding:14px 26px;font-size:17px;border:var(--out);cursor:pointer;transition:transform .18s,box-shadow .18s;white-space:nowrap;box-shadow:var(--pop)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--cocoa)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--cocoa)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-line{background:#06c755;color:#fff}
+.btn-pink{background:var(--pink);color:#fff}
+.btn-butter{background:var(--butter);color:var(--cocoa)}
+.btn-white{background:#fff;color:var(--cocoa)}
+
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(255,253,244,.93);backdrop-filter:blur(10px);border-bottom:3px solid var(--cocoa)}
+.nav{display:flex;align-items:center;gap:18px;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .av{width:54px;height:54px;border-radius:50%;border:var(--out);background:var(--butter) url(assets/logo-crop.png) 50% 8%/150% auto no-repeat;box-shadow:3px 3px 0 var(--cocoa);flex:none}
+.brand b{display:block;font-family:'Noto Sans Thai';font-weight:900;font-size:21px;color:var(--pink);line-height:1.1;letter-spacing:.3px}
+.brand small{display:block;font-size:13px;color:var(--muted);font-weight:600}
+.nav ul{display:flex;gap:24px;list-style:none;margin-left:auto;font-weight:700;font-size:15.5px;font-family:'Noto Sans Thai'}
+.nav ul a{position:relative}
+.nav ul a:hover{color:var(--pink)}
+.nav .btn{padding:9px 18px;font-size:15px;box-shadow:3px 3px 0 var(--cocoa)}
+
+/* hero */
+.hero{padding:60px 0 120px;background:
+  radial-gradient(circle at 12% 20%,rgba(255,246,166,.9) 0 160px,transparent 161px),
+  radial-gradient(circle at 92% 75%,rgba(255,214,227,.9) 0 220px,transparent 221px),
+  var(--cream);overflow:hidden}
+.sprk{position:absolute;inset:0;pointer-events:none;background-image:
+  radial-gradient(circle,var(--pink2) 3px,transparent 4px),radial-gradient(circle,var(--sky) 3px,transparent 4px),radial-gradient(circle,var(--mint) 3px,transparent 4px),radial-gradient(circle,var(--lilac) 3px,transparent 4px);
+  background-size:170px 150px,210px 190px,150px 230px,260px 170px;background-position:10px 20px,80px 90px,40px 140px,120px 40px;opacity:.6}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.tagpill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:var(--out);border-radius:999px;padding:6px 16px 6px 6px;font-weight:700;font-size:14.5px;color:var(--cocoa);box-shadow:3px 3px 0 var(--cocoa);font-family:'Noto Sans Thai'}
+.tagpill i{font-style:normal;background:var(--pink);color:#fff;border-radius:999px;padding:2px 11px;font-size:13px}
+.hero h1{font-size:clamp(38px,5.4vw,66px);font-weight:900;color:var(--cocoa);margin:22px 0 16px;letter-spacing:-.3px}
+.hero h1 .p{color:var(--pink);position:relative;display:inline-block}
+.hero h1 .p::after{content:"";position:absolute;left:-6px;right:-6px;bottom:.06em;height:.34em;background:var(--butter);z-index:-1;border-radius:20px;transform:rotate(-1.5deg)}
+.hero h1 .wv{display:inline-block;animation:wob 2.6s ease-in-out infinite}
+@keyframes wob{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(4deg) translateY(-4px)}}
+.hero .lead{font-size:19px;color:var(--muted);max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 28px}
+.chip{background:#fff;border:2px solid var(--cocoa);border-radius:999px;padding:5px 14px;font-weight:700;font-size:14.5px;color:var(--cocoa)}
+.chip:nth-child(4n+1){background:var(--pinkXL)}.chip:nth-child(4n+2){background:var(--skyL)}.chip:nth-child(4n+3){background:var(--butterL)}.chip:nth-child(4n){background:#eafbf2}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.stats{display:flex;gap:16px;margin-top:34px;flex-wrap:wrap}
+.stats div{background:#fff;border:2px solid var(--cocoa);border-radius:18px;padding:10px 16px;font-size:13.5px;color:var(--muted);line-height:1.35;font-weight:600}
+.stats b{display:block;font-family:'Noto Sans Thai';font-size:24px;font-weight:900;color:var(--pink)}
+
+.stack{position:relative;height:560px}
+.pol{position:absolute;background:#fff;border:var(--out);border-radius:22px;padding:10px 10px 40px;box-shadow:var(--pop);width:250px}
+.pol img{border-radius:14px;width:100%;aspect-ratio:3/4;object-fit:cover}
+.pol span{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-family:'Noto Sans Thai';font-weight:800;font-size:15px;color:var(--cocoa)}
+.pol.a{left:0;top:60px;transform:rotate(-7deg);z-index:2}
+.pol.b{left:32%;top:0;transform:rotate(3deg);z-index:3;width:270px}
+.pol.c{right:0;top:110px;transform:rotate(9deg);z-index:1}
+.pol:hover{z-index:5}
+.badge{position:absolute;z-index:6;width:138px;height:138px;border-radius:50%;background:var(--butter);border:var(--out);box-shadow:var(--pop);display:grid;place-items:center;text-align:center;font-family:'Noto Sans Thai';font-weight:900;color:var(--cocoa);font-size:15px;line-height:1.2;left:40%;bottom:0;transform:rotate(-10deg);animation:spin 9s linear infinite alternate}
+.badge b{display:block;font-size:30px;color:var(--pink)}
+@keyframes spin{to{transform:rotate(8deg)}}
+.logo-tile{position:absolute;left:-10px;bottom:-34px;z-index:6;width:146px;background:#fff;border:var(--out);border-radius:50%;aspect-ratio:1;overflow:hidden;box-shadow:var(--pop)}
+.logo-tile img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+
+/* drip divider */
+.drip{display:block;width:100%;height:60px;margin-top:-1px}
+.sec-pink{background:var(--pinkL)}
+.sec-butter{background:var(--butterL)}
+.sec-sky{background:var(--skyL)}
+.head{text-align:center;max-width:760px;margin:0 auto 46px}
+.kick{display:inline-block;font-family:'Noto Sans Thai';font-weight:800;font-size:14px;letter-spacing:1px;color:#fff;background:var(--cocoa);border-radius:999px;padding:4px 16px;transform:rotate(-2deg)}
+.head h2{font-size:clamp(30px,3.8vw,46px);font-weight:900;color:var(--cocoa);margin:14px 0 10px}
+.head h2 em{font-style:normal;color:var(--pink)}
+.head p{color:var(--muted);font-size:18px}
+
+/* gallery */
+.filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}
+.filters button{border:2.5px solid var(--cocoa);background:#fff;border-radius:999px;padding:8px 18px;font-family:'Noto Sans Thai';font-weight:800;font-size:15px;cursor:pointer;box-shadow:3px 3px 0 var(--cocoa);transition:.15s}
+.filters button:hover{transform:translateY(-2px)}
+.filters button.on{background:var(--pink);color:#fff}
+.grid{columns:4 240px;column-gap:20px}
+.card{break-inside:avoid;margin-bottom:22px;background:#fff;border:var(--out);border-radius:22px;overflow:hidden;box-shadow:var(--pop);transition:transform .2s;display:block}
+.card:hover{transform:rotate(-1deg) translateY(-4px)}
+.card .ph{position:relative;cursor:zoom-in}
+.card img{width:100%}
+.card img.tight{aspect-ratio:3/4;object-fit:cover;object-position:50% 50%}
+.card .tg{position:absolute;left:10px;top:10px;background:var(--butter);border:2px solid var(--cocoa);border-radius:999px;font-size:12.5px;font-weight:800;padding:1px 10px;font-family:'Noto Sans Thai'}
+.card .bd{padding:14px 16px 16px}
+.card h3{font-size:18px;font-weight:800;color:var(--cocoa)}
+.card p{font-size:14.5px;color:var(--muted);line-height:1.55;margin:4px 0 10px}
+.card .ord{font-family:'Noto Sans Thai';font-weight:800;font-size:14px;color:var(--pink);background:var(--pinkXL);border:2px solid var(--pink);border-radius:999px;padding:4px 14px;cursor:pointer}
+.card .ord:hover{background:var(--pink);color:#fff}
+.card.hide{display:none}
+.more-themes{margin-top:24px;background:#fff;border:var(--out);border-radius:var(--r);padding:24px 26px;box-shadow:var(--pop);display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.more-themes h3{font-size:19px;color:var(--cocoa);font-weight:800}
+.more-themes .chips{margin:0}
+.note-row{text-align:center;margin-top:18px;font-size:14px;color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{position:relative;background:#fff;border:var(--out);border-radius:var(--r);padding:30px 22px 24px;box-shadow:var(--pop);text-align:center}
+.step:nth-child(2){transform:rotate(1.5deg)}.step:nth-child(3){transform:rotate(-1.5deg)}
+.step .n{position:absolute;top:-22px;left:50%;transform:translateX(-50%);width:46px;height:46px;border-radius:50%;background:var(--pink);color:#fff;border:var(--out);display:grid;place-items:center;font-family:'Noto Sans Thai';font-weight:900;font-size:20px}
+.step .ic{font-size:44px;line-height:1;margin:8px 0 10px}
+.step h3{font-size:19px;color:var(--cocoa);font-weight:800}
+.step p{font-size:15px;color:var(--muted);margin-top:6px;line-height:1.55}
+.lead-time{margin-top:38px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.lt{background:var(--butter);border:var(--out);border-radius:20px;padding:18px 20px;display:flex;gap:14px;align-items:center}
+.lt:nth-child(2){background:var(--pinkXL)}.lt:nth-child(3){background:#eafbf2}
+.lt b{font-family:'Noto Sans Thai';font-size:26px;font-weight:900;color:var(--pink);white-space:nowrap}
+.lt span{font-size:15px;font-weight:600;color:var(--cocoa);line-height:1.45}
+
+/* builder */
+.builder{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:start}
+.panel{background:#fff;border:var(--out);border-radius:30px;padding:30px;box-shadow:8px 8px 0 var(--cocoa)}
+.fld{margin-bottom:22px}
+.fld label,.fld .lb{display:block;font-family:'Noto Sans Thai';font-weight:800;color:var(--cocoa);font-size:16.5px;margin-bottom:9px}
+.fld>.lb small{font-family:'Sarabun';font-weight:500;color:var(--muted);font-size:13.5px;margin-left:6px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button{border:2px solid var(--cocoa);background:var(--cream);border-radius:14px;padding:7px 14px;font-weight:700;font-size:15px;cursor:pointer;transition:.15s}
+.opts button:hover{background:var(--butterL)}
+.opts button.on{background:var(--pink);color:#fff;box-shadow:2px 2px 0 var(--cocoa)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.inp{width:100%;border:2px solid var(--cocoa);border-radius:14px;padding:10px 14px;background:var(--cream);font-size:16px}
+.inp:focus{outline:3px solid var(--pinkL);background:#fff}
+.warn{font-size:13.5px;color:var(--pink);font-weight:700;margin-top:6px;min-height:20px}
+.preview{position:sticky;top:96px}
+.phone{background:#8cabd9;border:var(--out);border-radius:34px;padding:18px;box-shadow:8px 8px 0 var(--cocoa)}
+.phone .top{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-family:'Noto Sans Thai';margin-bottom:14px}
+.phone .top .av{width:38px;height:38px;border-radius:50%;border:2px solid #fff;background:var(--butter) url(assets/logo-crop.png) 50% 8%/150% auto no-repeat}
+.bubble{background:#c7f0a8;border-radius:20px 20px 4px 20px;padding:16px 18px;white-space:pre-wrap;font-size:15.5px;line-height:1.6;color:#1e2a12;margin-left:24px;min-height:220px}
+.reply{background:#fff;border-radius:20px 20px 20px 4px;padding:10px 14px;font-size:14.5px;margin:12px 40px 0 0;color:#333}
+.p-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.p-actions .btn{flex:1 1 200px}
+.copied{font-size:14px;color:var(--cocoa);font-weight:700;margin-top:10px;min-height:20px;text-align:center}
+
+/* one channel */
+.one{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.one .bad{background:#fff;border:3px dashed var(--cocoa2);border-radius:var(--r);padding:24px 26px}
+.one .bad h3{color:var(--cocoa2);font-size:19px;margin-bottom:10px}
+.one .bad li{list-style:none;padding:7px 0 7px 34px;position:relative;color:var(--muted);font-size:15.5px;border-bottom:1px dashed #e6d6c8}
+.one .bad li::before{content:"?";position:absolute;left:0;top:7px;width:24px;height:24px;border-radius:50%;background:var(--pinkL);color:var(--pink);font-weight:900;display:grid;place-items:center;font-size:14px}
+.one .good{background:var(--pink);color:#fff;border:var(--out);border-radius:30px;padding:30px;box-shadow:8px 8px 0 var(--cocoa);position:relative}
+.one .good h3{font-size:26px;font-weight:900}
+.one .good .ch{display:flex;align-items:center;gap:14px;background:#fff;color:var(--cocoa);border:var(--out);border-radius:20px;padding:14px 18px;margin-top:14px;font-weight:700}
+.one .good .ch b{font-family:'Noto Sans Thai';font-size:22px;font-weight:900;display:block;line-height:1.2}
+.one .good .ch small{font-weight:600;color:var(--muted);font-size:14px}
+.one .good .ch .ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;flex:none}
+.one .good .ch .ico svg{width:28px;height:28px}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.wy{background:#fff;border:var(--out);border-radius:var(--r);padding:26px;box-shadow:var(--pop)}
+.wy .em{width:66px;height:66px;border-radius:20px;border:var(--out);display:grid;place-items:center;font-size:34px;margin-bottom:14px;background:var(--butter)}
+.wy:nth-child(3n+2) .em{background:var(--pinkL)}.wy:nth-child(3n) .em{background:var(--skyL)}
+.wy h3{font-size:19.5px;color:var(--cocoa);font-weight:800}
+.wy p{font-size:15.5px;color:var(--muted);margin-top:6px;line-height:1.6}
+.wy q{display:block;margin-top:10px;font-size:14px;color:var(--pink);font-weight:700;quotes:"“" "”"}
+
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border:var(--out);border-radius:var(--r);padding:24px;box-shadow:var(--pop);position:relative}
+.rv::before{content:"";position:absolute;left:34px;bottom:-16px;width:28px;height:28px;background:#fff;border-right:3px solid var(--cocoa);border-bottom:3px solid var(--cocoa);transform:rotate(45deg)}
+.rv .st{color:#f5a623;font-size:19px;letter-spacing:2px}
+.rv p{font-size:16px;margin:8px 0 12px}
+.rv .who{font-weight:800;color:var(--cocoa);font-family:'Noto Sans Thai';font-size:15px}
+.rv .who small{display:block;font-family:'Sarabun';font-weight:500;color:var(--muted)}
+.rv.real{background:var(--butterL)}
+.rv.real::before{background:var(--butterL)}
+
+/* faq */
+.faq{max-width:860px;margin:0 auto}
+.faq details{background:#fff;border:var(--out);border-radius:20px;margin-bottom:14px;box-shadow:4px 4px 0 var(--cocoa);overflow:hidden}
+.faq summary{list-style:none;cursor:pointer;padding:18px 58px 18px 22px;font-family:'Noto Sans Thai';font-weight:800;color:var(--cocoa);font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;background:var(--pink);color:#fff;display:grid;place-items:center;font-size:22px;transition:.2s}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 22px 20px;color:var(--muted);font-size:16px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:.95fr 1.05fr;gap:30px;align-items:stretch}
+.cbox{background:#fff;border:var(--out);border-radius:30px;padding:30px;box-shadow:8px 8px 0 var(--cocoa)}
+.cbox h3{font-size:24px;color:var(--cocoa);font-weight:900;margin-bottom:6px}
+.ci{display:flex;gap:14px;padding:14px 0;border-bottom:2px dotted #ead9c9;align-items:flex-start}
+.ci:last-of-type{border-bottom:0}
+.ci .i{width:42px;height:42px;border-radius:14px;background:var(--pinkXL);border:2px solid var(--cocoa);display:grid;place-items:center;font-size:20px;flex:none}
+.ci b{display:block;font-family:'Noto Sans Thai';color:var(--cocoa);font-size:16px}
+.ci span,.ci a{font-size:15.5px;color:var(--muted)}
+.ci a:hover{color:var(--pink)}
+.map{border:var(--out);border-radius:30px;overflow:hidden;box-shadow:8px 8px 0 var(--cocoa);min-height:420px;background:#eee}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+.cbox .cta-row{margin-top:18px}
+.cbox .cta-row .btn{flex:1 1 180px}
+
+footer{background:var(--cocoa);color:#f7e7d9;padding:44px 0 110px;text-align:center;font-size:14.5px}
+footer b{font-family:'Noto Sans Thai';color:var(--butter);font-size:20px;display:block;margin-bottom:6px}
+footer a{color:var(--butter);text-decoration:underline}
+footer .demo{margin-top:14px;opacity:.75;font-size:13px}
+
+/* floating */
+.fab{position:fixed;right:18px;bottom:18px;z-index:80;display:flex;flex-direction:column;gap:12px}
+.fab a{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;border:var(--out);box-shadow:4px 4px 0 var(--cocoa);transition:transform .2s}
+.fab a:hover{transform:scale(1.08) rotate(-6deg)}
+.fab svg{width:30px;height:30px}
+.fab .l{background:#06c755}.fab .c{background:var(--butter)}
+.fab .l{animation:bounce 2.4s ease-in-out infinite}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* lightbox */
+.lbx{position:fixed;inset:0;background:rgba(61,36,24,.86);z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+.lbx.on{display:flex}
+.lbx img{max-height:86vh;max-width:92vw;border-radius:20px;border:4px solid #fff}
+.lbx button{position:absolute;top:18px;right:22px;width:48px;height:48px;border-radius:50%;border:var(--out);background:var(--butter);font-size:26px;font-weight:900;cursor:pointer;color:var(--cocoa)}
+
+/* reveal */
+.rv-in{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv-in.vis{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .nav ul{display:none}
+  .nav .btn{margin-left:auto}
+  .hero-grid,.builder,.one,.contact{grid-template-columns:1fr}
+  .stack{height:520px;max-width:560px;margin:0 auto;width:100%}
+  .steps{grid-template-columns:1fr 1fr;row-gap:40px}
+  .why,.revs{grid-template-columns:1fr 1fr}
+  .lead-time{grid-template-columns:1fr}
+  .preview{position:static}
+}
+@media (max-width:640px){
+  section{padding:70px 0}
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .nav{height:66px}
+  .brand .av{width:44px;height:44px}
+  .brand b{font-size:17px}.brand small{font-size:11.5px}
+  .nav .btn{padding:8px 12px;font-size:13.5px}
+  .nav .btn span{display:none}
+  .brand small{white-space:nowrap}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .stats div{padding:8px 10px;font-size:12px}
+  .stats b{font-size:19px}
+  .pol.a{left:2%}.pol.c{right:2%}
+
+  .hero{padding:36px 0 90px}
+  .hero .lead{font-size:17px}
+  .stack{height:430px}
+  .pol{width:46%;padding:7px 7px 32px}
+  .pol.b{width:50%;left:26%}
+  .pol.a{top:50px}.pol.c{top:120px}
+  .pol span{font-size:12.5px;bottom:6px}
+  .badge{width:104px;height:104px;font-size:12px;left:auto;right:4%;bottom:-6px}
+  .badge b{font-size:22px}
+  .logo-tile{width:108px;bottom:-20px}
+  .cta-row .btn{flex:1 1 100%}
+  .grid{columns:2 150px;column-gap:12px}
+  .card{margin-bottom:14px;border-radius:18px;box-shadow:3px 3px 0 var(--cocoa)}
+  .card .bd{padding:10px 11px 12px}
+  .card h3{font-size:15.5px}.card p{font-size:13px}
+  .card .ord{font-size:12.5px;padding:3px 10px}
+  .filters{gap:7px}.filters button{padding:6px 12px;font-size:13.5px}
+  .steps,.why,.revs{grid-template-columns:1fr}
+  .step:nth-child(n){transform:none}
+  .panel,.phone,.cbox,.one .good{padding:20px;border-radius:24px}
+  .row2{grid-template-columns:1fr}
+  .bubble{margin-left:0;font-size:14.5px}
+  .map,.map iframe{min-height:320px}
+  .fab a{width:54px;height:54px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand"><span class="av" aria-hidden="true"></span><span><b>การ์ตูนเค้ก</b><small>Cartoon Cake · พระราม 2 ซ.43</small></span></a>
+    <ul>
+      <li><a href="#gallery">แบบเค้ก</a></li>
+      <li><a href="#how">วิธีสั่ง</a></li>
+      <li><a href="#builder">จัดออร์เดอร์</a></li>
+      <li><a href="#why">ทำไมต้องเรา</a></li>
+      <li><a href="#contact">หน้าร้าน</a></li>
+    </ul>
+    <a class="btn btn-line" href="https://line.me/R/ti/p/@cartooncake" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 4 3.5 7.3 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 5.9-3.5 8-5.9 1.5-1.6 2-3.2 2-4.9C22 6.6 17.5 3 12 3z"/></svg>แอดไลน์<span>&nbsp;@cartooncake</span></a>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="sprk"></div>
+  <div class="wrap hero-grid">
+    <div class="rv-in">
+      <span class="tagpill"><i>เค้ก 3 มิติ</i> รับสั่งทำเค้กวันเกิดทุกโอกาส</span>
+      <h1>รวมแบบเค้ก<br>และวิธีสั่ง <span class="p">ครบในลิงก์เดียว</span> <span class="wv">🎂</span></h1>
+      <p class="lead">น้อนนน!! น่ารักทุกแบบเลย ทำได้ทุกแบบน้า 💖 เค้กการ์ตูน เค้กปั้นน้ำตาล เค้กใส่รูป เค้กดึงเงิน จากหน้าร้าน <b>พระราม 2 ซอย 43 ข้าง รพ.บางมด</b> เลือกแบบที่ชอบ แล้วกดส่งรายละเอียดเข้าไลน์ร้านได้ทันที</p>
+      <div class="chips">
+        <span class="chip">🦄 ม้าโพนี่</span><span class="chip">🐳 ใต้ท้องทะเล</span><span class="chip">🧙 แฮรี่ พอตเตอร์</span><span class="chip">🐱 ทาสแมว</span><span class="chip">💎 เค้กเพชร</span><span class="chip">💸 เค้กดึงเงิน</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-pink" href="#gallery">ดูแบบเค้กทั้งหมด</a>
+        <a class="btn btn-butter" href="#builder">✏️ จัดออร์เดอร์ส่งไลน์</a>
+      </div>
+      <div class="stats">
+        <div><b>5.6 หมื่น</b>ผู้ติดตามเพจ</div>
+        <div><b>100%</b>แนะนำ (20 รีวิว)</div>
+        <div><b>ปั้นมือ</b>ทุกตัวการ์ตูน</div>
+      </div>
+    </div>
+    <div class="stack rv-in">
+      <figure class="pol a"><img src="assets/melody.jpg" alt="เค้กมายเมโลดี้ สีชมพู"><span>My Melody 🎀</span></figure>
+      <figure class="pol b"><img src="assets/pony.jpg" alt="เค้กม้าโพนี่ 2 ชั้นสีม่วง"><span>Little Pony 🦄</span></figure>
+      <figure class="pol c"><img src="assets/harry.jpg" alt="เค้กแฮรี่ พอตเตอร์"><span>Harry Potter ⚡</span></figure>
+      <div class="badge"><div><b>3D</b>เค้กปั้น<br>ทำได้ทุกแบบ</div></div>
+      <div class="logo-tile"><img src="assets/logo-crop.png" alt="โลโก้ Love Cartoon Cake"></div>
+    </div>
+  </div>
+</section>
+<svg class="drip" viewBox="0 0 1440 64" preserveAspectRatio="none" style="background:var(--pinkL)"><path transform="translate(0 4)" fill="#6b3d2a" d="M0 0h1440v18c-40 0-40 34-80 34s-40-34-80-34-30 22-70 22-50-22-90-22-40 40-80 40-40-40-80-40-35 26-75 26-45-26-85-26-40 36-80 36-40-36-80-36-30 20-70 20-50-20-90-20-40 38-80 38-40-38-80-38-35 24-75 24-45-24-85-24-40 34-80 34S0 18 0 18z"/><path fill="#fffdf4" d="M0 0h1440v18c-40 0-40 34-80 34s-40-34-80-34-30 22-70 22-50-22-90-22-40 40-80 40-40-40-80-40-35 26-75 26-45-26-85-26-40 36-80 36-40-36-80-36-30 20-70 20-50-20-90-20-40 38-80 38-40-38-80-38-35 24-75 24-45-24-85-24-40 34-80 34S0 18 0 18z"/></svg>
+
+<!-- GALLERY -->
+<section id="gallery" class="sec-pink" style="padding-top:60px">
+  <div class="wrap">
+    <div class="head rv-in">
+      <span class="kick">ผลงานจากหน้าร้าน</span>
+      <h2>แบบเค้ก <em>แยกตามธีม</em></h2>
+      <p>รูปจริงจากเพจร้าน อัปเดตผลงานล่าสุด ก.ย.–ต.ค. 2569 · ชอบแบบไหน กด “สั่งแบบนี้” ระบบจะกรอกธีมให้เลย</p>
+    </div>
+    <div class="filters rv-in" role="tablist">
+      <button class="on" data-f="all">✨ ทั้งหมด</button>
+      <button data-f="girl">🎀 สาวน้อย</button>
+      <button data-f="boy">🚀 หนุ่มน้อย</button>
+      <button data-f="fan">⚡ ตัวละครยอดฮิต</button>
+      <button data-f="wow">💎 สายคอนเทนต์ / เซอร์ไพรส์</button>
+      <button data-f="pet">🐱 ทาสแมว</button>
+      <button data-f="cust">📸 รูปจากลูกค้า</button>
+    </div>
+    <div class="grid" id="grid">
+      <article class="card rv-in" data-c="girl fan"><div class="ph"><img src="assets/pony.jpg" alt="เค้กม้าโพนี่" loading="lazy"><span class="tg">ปั้น 2 ชั้น</span></div><div class="bd"><h3>Little Pony เจ้าหญิงตัวน้อย</h3><p>ให้น้องใส่ชุดเจ้าหญิงแล้วเป่าเค้กชิ้นนี้ คงน่ารักน่าดูว์ ❤️</p><button class="ord" data-t="ม้าโพนี่ / เจ้าหญิง">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="boy"><div class="ph"><img src="assets/whale.jpg" alt="เค้กปลาวาฬ ใต้ท้องทะเล" loading="lazy"><span class="tg">customize ได้</span></div><div class="bd"><h3>เค้กปลาวาฬ โลกใต้ท้องทะเล</h3><p>เค้กที่น้องๆ ชอบปลาวาฬ สัตว์โลกใต้ท้องทะเล 🐳🪼</p><button class="ord" data-t="ใต้ท้องทะเล / ปลาวาฬ">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="fan"><div class="ph"><img src="assets/harry.jpg" alt="เค้กแฮรี่ พอตเตอร์" loading="lazy"><span class="tg">ธีมพ่อมด</span></div><div class="bd"><h3>เค้กกระทรวงเวทมนตร์</h3><p>Harry Potter cake จะสายคอนเทนต์ หรือสั่งเป็นของขวัญวันเกิด ก็เริ่ดเกินกว่าใคร</p><button class="ord" data-t="แฮรี่ พอตเตอร์ / พ่อมด">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="girl fan"><div class="ph"><img class="tight" src="assets/melody.jpg" alt="เค้กมายเมโลดี้" loading="lazy"><span class="tg">Sanrio</span></div><div class="bd"><h3>My Melody ชมพูหวาน</h3><p>เค้กปั้นตัวการ์ตูน ใส่ชื่อน้องบนเค้กได้ ❤️</p><button class="ord" data-t="มายเมโลดี้ / Sanrio">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="wow"><div class="ph"><img src="assets/jewel.jpg" alt="เค้กหัวใจประดับเพชร" loading="lazy"><span class="tg">Jewel cake</span></div><div class="bd"><h3>เค้กทรงหัวใจประดับเพชร</h3><p>ประดับเพชร คริสตัล สวยหรู สายคอนเทนต์ เป่าสวยๆ บอกได้คำเดียวว่า เริ่ดมากแม่ ✨</p><button class="ord" data-t="เค้กเพชร (Jewel cake)">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="girl fan"><div class="ph"><img src="assets/kpop.jpg" alt="เค้ก Demon Hunter" loading="lazy"><span class="tg">ใส่โมเดล</span></div><div class="bd"><h3>Demon Hunter สายแดนซ์</h3><p>มาเอาใจลูกสาวสายแดนซ์ 🎤 เค้กใส่โมเดล สีหวาน น่ารักมาก</p><button class="ord" data-t="Demon Hunter / ใส่โมเดล">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="wow"><div class="ph"><img src="assets/money.jpg" alt="เค้กใส่รูป เค้กดึงเงิน" loading="lazy"><span class="tg">เซอร์ไพรส์</span></div><div class="bd"><h3>เค้กใส่รูป · เค้กดึงเงิน</h3><p>ได้ทั้งทานเค้กอร่อยๆ และสนุกกับการดึงเงินที่ไหลออกมาจากเค้ก 👍</p><button class="ord" data-t="เค้กใส่รูป + ดึงเงิน">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="boy fan"><div class="ph"><img class="tight" src="assets/spider.jpg" alt="เค้กสไปเดอร์แมน" loading="lazy"><span class="tg">ซูเปอร์ฮีโร่</span></div><div class="bd"><h3>Spider-Man ฮีโร่ของน้อง</h3><p>เค้กลูกชาย ธีมซูเปอร์ฮีโร่ ใส่ชื่อ ใส่อายุได้</p><button class="ord" data-t="สไปเดอร์แมน / ซูเปอร์ฮีโร่">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="pet"><div class="ph"><img src="assets/catcake.jpg" alt="เค้กแมวเหมียว" loading="lazy"><span class="tg">สั่งทำล่วงหน้า</span></div><div class="bd"><h3>Cat cake เค้กแมวเหมียว</h3><p>หน้ามึน หน้าแบ๋วแบบนี้ นุดจะรักมั้ยน้า 🐱 ทำตามรูปแมวที่บ้านได้</p><button class="ord" data-t="เค้กแมว / ทาสแมว">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="cust girl"><div class="ph"><img src="assets/irene.jpg" alt="น้องไอรีนกับเค้กวันเกิด" loading="lazy"><span class="tg">รีวิวจริง</span></div><div class="bd"><h3>น้องไอรีน · มายเมโลดี้</h3><p>คุณแม่ส่งรูปน้องมาให้ทุกปีเลย น้องน่ารักมากๆ ค่า 🥰</p><button class="ord" data-t="มายเมโลดี้ / Sanrio">สั่งแบบนี้ →</button></div></article>
+      <article class="card rv-in" data-c="cust girl"><div class="ph"><img src="assets/party.jpg" alt="ปาร์ตี้วันเกิดน้อง 3 ขวบ" loading="lazy"><span class="tg">รีวิวจริง</span></div><div class="bd"><h3>ปาร์ตี้สายรุ้ง 3 ขวบ</h3><p>ขอบคุณลูกค้าที่ส่งรูปสวยๆ มาให้นะคะ ❤️</p><button class="ord" data-t="สายรุ้ง / ปาร์ตี้">สั่งแบบนี้ →</button></div></article>
+    </div>
+    <div class="more-themes rv-in">
+      <h3>ธีมอื่นที่ร้านเคยทำ 👉</h3>
+      <div class="chips">
+        <span class="chip">😈 คุโรมิ 2 ชั้น</span><span class="chip">🐵 ม่อนชิชิ</span><span class="chip">🐻 แคร์แบร์</span><span class="chip">🧸 ลาบูบู้ / Cry Baby</span><span class="chip">⚽ ฟุตบอล</span><span class="chip">🚜 รถตักดิน</span><span class="chip">🐱 คิตตี้</span><span class="chip">🧁 คัพเค้ก</span>
+      </div>
+    </div>
+    <p class="note-row">รูปผลงานจากเพจ Facebook ของร้าน · ดูอัลบั้มเต็มได้ที่ <a href="https://www.facebook.com/cartooncake" target="_blank" rel="noopener" style="color:var(--pink);font-weight:700">facebook.com/cartooncake</a></p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how" class="sec-butter">
+  <div class="wrap">
+    <div class="head rv-in">
+      <span class="kick">สั่งง่ายใน 4 ขั้น</span>
+      <h2>สั่งเค้กยังไง? <em>ง่ายนิดเดียว</em></h2>
+      <p>ไม่ต้องไล่ถามหลายรอบ เตรียม 4 อย่างนี้ แล้วส่งให้ร้านทีเดียว ร้านตอบราคาให้ค่ะ</p>
+    </div>
+    <div class="steps">
+      <div class="step rv-in"><span class="n">1</span><div class="ic">🖼️</div><h3>เลือกแบบ / ธีม</h3><p>เลือกจากแกลเลอรี หรือแนบรูปตัวการ์ตูนที่อยากได้</p></div>
+      <div class="step rv-in"><span class="n">2</span><div class="ic">🍓</div><h3>รสชาติ & ขนาด</h3><p>เลือกเนื้อเค้ก ขนาดปอนด์ หรือ 2 ชั้น ตามจำนวนแขก</p></div>
+      <div class="step rv-in"><span class="n">3</span><div class="ic">📅</div><h3>วันที่ & เวลารับ</h3><p>บอกวันรับเค้ก ข้อความบนเค้ก ชื่อ อายุน้อง</p></div>
+      <div class="step rv-in"><span class="n">4</span><div class="ic">💬</div><h3>ส่งขอใบเสนอราคา</h3><p>ส่งเข้าไลน์ @cartooncake ร้านแจ้งราคา ยืนยันคิว</p></div>
+    </div>
+    <div class="lead-time">
+      <div class="lt rv-in"><b>3–5 วัน</b><span>เค้กการ์ตูน 1 ชั้น / เค้กใส่รูป<br><span class="sample">ตัวอย่าง รอร้านยืนยัน</span></span></div>
+      <div class="lt rv-in"><b>7 วัน+</b><span>งานปั้นน้ำตาล 2 ชั้น · ช่วงเทศกาล<br><span class="sample">ตัวอย่าง รอร้านยืนยัน</span></span></div>
+      <div class="lt rv-in"><b>ด่วน?</b><span>มีรับ #เค้กด่วน ทักถามคิวว่างก่อนได้เลย</span></div>
+    </div>
+    <p class="note-row">ร้านแจ้งในเพจว่า “สั่งทำล่วงหน้านิดนึงนะคะ” · ระยะเวลาด้านบนเป็นตัวอย่างสำหรับเดโม</p>
+  </div>
+</section>
+
+<!-- BUILDER -->
+<section id="builder">
+  <div class="wrap">
+    <div class="head rv-in">
+      <span class="kick">ตัวช่วยจัดออร์เดอร์</span>
+      <h2>กรอกครั้งเดียว <em>ส่งเข้าไลน์ร้าน</em></h2>
+      <p>เลือกธีม ขนาด รสชาติ วันรับ แล้วกดปุ่ม ข้อความจะพร้อมส่งในไลน์ @cartooncake ทันที</p>
+    </div>
+    <div class="builder">
+      <form class="panel rv-in" id="f" onsubmit="return false">
+        <div class="fld"><div class="lb">1. ธีม / ตัวการ์ตูน</div>
+          <div class="opts" data-k="theme">
+            <button type="button" class="on">ม้าโพนี่ / เจ้าหญิง</button><button type="button">ใต้ท้องทะเล / ปลาวาฬ</button><button type="button">แฮรี่ พอตเตอร์ / พ่อมด</button><button type="button">มายเมโลดี้ / Sanrio</button><button type="button">สไปเดอร์แมน / ซูเปอร์ฮีโร่</button><button type="button">เค้กแมว / ทาสแมว</button><button type="button">เค้กเพชร (Jewel cake)</button><button type="button">เค้กใส่รูป + ดึงเงิน</button><button type="button">อื่นๆ (แนบรูปในแชต)</button>
+          </div>
+        </div>
+        <div class="fld"><div class="lb">2. ขนาด <small>(ตัวอย่างตัวเลือก)</small></div>
+          <div class="opts" data-k="size">
+            <button type="button">1 ปอนด์ (6–8 ท่าน)</button><button type="button" class="on">2 ปอนด์ (12–15 ท่าน)</button><button type="button">3 ปอนด์ (20+ ท่าน)</button><button type="button">2 ชั้น งานปั้น</button>
+          </div>
+        </div>
+        <div class="fld"><div class="lb">3. รสชาติเนื้อเค้ก <small>(ตัวอย่าง รอร้านยืนยันเมนูจริง)</small></div>
+          <div class="opts" data-k="flavor">
+            <button type="button" class="on">วานิลลา</button><button type="button">ช็อกโกแลต</button><button type="button">ใบเตย</button><button type="button">สตรอว์เบอร์รี่</button><button type="button">ให้ร้านแนะนำ</button>
+          </div>
+        </div>
+        <div class="fld row2">
+          <div><label for="date">4. วันที่รับเค้ก</label><input class="inp" type="date" id="date"><div class="warn" id="dw"></div></div>
+          <div><label for="time">เวลารับ</label><select class="inp" id="time"><option>10:00–12:00</option><option selected>13:00–16:00</option><option>16:00–19:00</option><option>หลัง 19:00</option></select></div>
+        </div>
+        <div class="fld"><div class="lb">5. รับเค้กแบบไหน</div>
+          <div class="opts" data-k="pick">
+            <button type="button" class="on">รับเองที่หน้าร้าน พระราม 2 ซ.43</button><button type="button">สอบถามบริการส่ง</button>
+          </div>
+        </div>
+        <div class="fld row2">
+          <div><label for="msg">ข้อความบนเค้ก</label><input class="inp" id="msg" placeholder="เช่น HBD น้องฟิวส์ 5 ขวบ"></div>
+          <div><label for="name">ชื่อผู้สั่ง</label><input class="inp" id="name" placeholder="ชื่อเล่น / เบอร์ติดต่อ"></div>
+        </div>
+        <div class="fld" style="margin-bottom:0"><label for="note">รายละเอียดเพิ่มเติม</label><textarea class="inp" id="note" rows="2" placeholder="เช่น โทนสีชมพูม่วง มีรูปตัวอย่างจะแนบในแชต"></textarea></div>
+      </form>
+      <div class="preview rv-in">
+        <div class="phone">
+          <div class="top"><span class="av"></span>การ์ตูนเค้ก Cartoon Cake</div>
+          <div class="bubble" id="out"></div>
+          <div class="reply">ได้เลยค่า 💖 ขอรูปตัวอย่างเพิ่มนิดนึง เดี๋ยวแจ้งราคาให้นะคะ</div>
+        </div>
+        <div class="p-actions">
+          <a class="btn btn-line" id="goLine" href="https://line.me/R/ti/p/@cartooncake" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 4 3.5 7.3 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 5.9-3.5 8-5.9 1.5-1.6 2-3.2 2-4.9C22 6.6 17.5 3 12 3z"/></svg>ส่งเข้าไลน์ร้าน</a>
+          <button class="btn btn-white" type="button" id="copy">📋 คัดลอกข้อความ</button>
+        </div>
+        <a class="btn btn-butter" href="tel:0954919979" style="width:100%;margin-top:12px">📞 หรือโทร 095-491-9979</a>
+        <div class="copied" id="cp"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ONE CHANNEL -->
+<section class="sec-sky">
+  <div class="wrap one">
+    <div class="rv-in">
+      <span class="kick">ช่องทางสั่งที่ถูกต้อง</span>
+      <h2 class="nst" style="font-size:clamp(28px,3.4vw,42px);color:var(--cocoa);font-weight:900;margin:14px 0 12px">สั่งเค้ก ทักที่เดียว<br><span style="color:var(--pink)">ไม่ต้องเดาว่าเบอร์ไหน</span></h2>
+      <div class="bad">
+        <h3>เคยสับสนแบบนี้ไหม?</h3>
+        <ul>
+          <li>ทัก inbox เพจ หรือทักไลน์ดี?</li>
+          <li>ทัก DM ใน IG แล้วไม่มีคนตอบ</li>
+          <li>เจอเบอร์ร้านหลายเบอร์ในเว็บต่างๆ</li>
+          <li>ไม่แน่ใจว่าร้านเปิดวันไหน กี่โมง</li>
+        </ul>
+      </div>
+    </div>
+    <div class="good rv-in">
+      <h3>ช่องทางหลักของร้าน 💖</h3>
+      <p style="opacity:.95">ทุกออร์เดอร์ ส่งรูปตัวอย่าง สอบถามราคา จองคิว ผ่าน 2 ช่องทางนี้</p>
+      <a class="ch" href="https://line.me/R/ti/p/@cartooncake" target="_blank" rel="noopener"><span class="ico" style="background:#06c755;color:#fff"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 4 3.5 7.3 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 5.9-3.5 8-5.9 1.5-1.6 2-3.2 2-4.9C22 6.6 17.5 3 12 3z"/></svg></span><span><b>LINE @cartooncake</b><small>ส่งรูปแบบเค้ก · สั่งทำ · จองคิว</small></span></a>
+      <a class="ch" href="tel:0954919979"><span class="ico" style="background:var(--butter);border:2px solid var(--cocoa);font-size:24px">📞</span><span><b>095-491-9979</b><small>โทรสอบถาม / เค้กด่วน</small></span></a>
+      <p style="margin-top:14px;font-size:14px;opacity:.9">IG @lovecartooncake ร้านแจ้งว่า “งด DM” · สนใจทักไลน์ @cartooncake</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap">
+    <div class="head rv-in">
+      <span class="kick">ทำไมต้องการ์ตูนเค้ก</span>
+      <h2>เห็นแล้ว <em>ไม่อยากตัดเค้กเลย</em> 😈❤️</h2>
+      <p>คำที่ร้านใช้เล่าถึงเค้กคุโรมิ 2 ชั้น และเป็นสิ่งที่ลูกค้าพูดถึงบ่อยที่สุด</p>
+    </div>
+    <div class="why">
+      <div class="wy rv-in"><div class="em">🧸</div><h3>งานปั้นน้ำตาลด้วยมือ</h3><p>ตัวการ์ตูนปั้นเองทั้งตัว ทั้งชั้นบนชั้นล่าง ไม่ใช่แค่ป้ายพิมพ์รูป</p><q>ออกแบบพิเศษ งานเนี้ยบสวย เค้กนุ่มอร่อย</q></div>
+      <div class="wy rv-in"><div class="em">🎨</div><h3>ทำได้ทุกแบบ</h3><p>ตั้งแต่ Sanrio ม่อนชิชิ ลาบูบู้ ไปจนถึงฟุตบอล รถตักดิน แฮรี่ พอตเตอร์ ส่งรูปมา ร้านออกแบบให้</p><q>อยากได้เค้กที่เหมือนตุ๊กตา ทักมาจ้า</q></div>
+      <div class="wy rv-in"><div class="em">🎁</div><h3>เซอร์ไพรส์ได้อีก</h3><p>เค้กใส่รูป เค้กดึงเงิน เค้กเพชร สายคอนเทนต์ ถ่ายรูปลงโซเชียลแล้วปังแน่นอน</p><q>เค้กของคนสวยและรวยมาก ✨</q></div>
+      <div class="wy rv-in"><div class="em">📍</div><h3>หน้าร้านพระราม 2 ซ.43</h3><p>ซอยข้าง รพ.บางมด แวะรับเค้กสะดวก ย่านพระราม 2 บางมด จอมทอง</p></div>
+      <div class="wy rv-in"><div class="em">🔁</div><h3>ลูกค้าเก่ากลับมาทุกปี</h3><p>หลายบ้านสั่งเค้กวันเกิดให้น้องเป็นรอบที่ 2 ที่ 3 แล้วส่งรูปน้องกลับมาให้ร้าน</p></div>
+      <div class="wy rv-in"><div class="em">⭐</div><h3>100% แนะนำ</h3><p>คะแนนแนะนำบนเพจ Facebook จาก 20 รีวิว · ผู้ติดตามกว่า 5.6 หมื่นคน</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec-pink">
+  <div class="wrap">
+    <div class="head rv-in">
+      <span class="kick">เสียงจากคุณแม่ๆ</span>
+      <h2>รีวิว <em>น่ารักๆ</em></h2>
+      <p><span class="sample">รีวิวตัวอย่างสำหรับเดโม · ใบแรกสรุปจากโพสต์จริงของร้าน</span></p>
+    </div>
+    <div class="revs">
+      <div class="rv real rv-in"><div class="st">★★★★★</div><p>“เค้กวันเกิดน้องไอรีน มายเมโลดี้ น่ารักมาก สั่งทุกปี แล้วก็ส่งรูปน้องกลับมาให้ร้านทุกปีเลย”</p><div class="who">คุณแม่น้องไอรีน<small>จากโพสต์รีวิวบนเพจร้าน</small></div></div>
+      <div class="rv rv-in"><div class="st">★★★★★</div><p>“สั่งเค้กม้าโพนี่ 2 ชั้นให้ลูกสาว งานปั้นละเอียดมาก น้องกรี๊ดตั้งแต่เปิดกล่อง เนื้อเค้กนุ่มไม่หวานเลี่ยน”</p><div class="who">คุณแม่น้องฟิวส์<small>รีวิวตัวอย่าง</small></div></div>
+      <div class="rv rv-in"><div class="st">★★★★★</div><p>“ส่งรูปแมวที่บ้านไปให้ ร้านปั้นออกมาหน้าเหมือนมาก ทักไลน์แล้วตอบไว แจ้งราคาชัดเจน”</p><div class="who">คุณปุ๋ย ทาสแมว บางมด<small>รีวิวตัวอย่าง</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec-butter">
+  <div class="wrap">
+    <div class="head rv-in"><span class="kick">คำถามที่พบบ่อย</span><h2>ถามก่อน <em>สั่งสบายใจ</em></h2></div>
+    <div class="faq">
+      <details class="rv-in" open><summary>ต้องสั่งล่วงหน้ากี่วัน?</summary><p>ร้านแนะนำให้ “สั่งทำล่วงหน้านิดนึง” โดยเฉพาะงานปั้น 2 ชั้นและช่วงเทศกาล ถ้าต้องการเค้กด่วน ทักไลน์ @cartooncake ถามคิวว่างได้ก่อนเลยค่ะ <span class="sample">จำนวนวันที่แน่นอนรอร้านยืนยัน</span></p></details>
+      <details class="rv-in"><summary>ราคาเค้กเริ่มต้นเท่าไหร่?</summary><p>ราคาขึ้นกับขนาดและความละเอียดของงานปั้น ส่งรูปแบบที่ชอบให้ร้านประเมินได้ฟรี เช่น เค้กโฟโต้มีลูกค้าเคยแจ้งในเพจว่าเริ่มประมาณ 690 บาท <span class="sample">ราคาตัวอย่าง รอร้านยืนยัน</span></p></details>
+      <details class="rv-in"><summary>ทำตามรูปที่หามาได้ไหม?</summary><p>ได้ค่ะ ร้านทำได้ทุกแบบ ส่งรูปตัวการ์ตูน โทนสี ชื่อ อายุน้องในไลน์ ร้านจะออกแบบให้ใกล้เคียงที่สุด</p></details>
+      <details class="rv-in"><summary>สั่งทาง IG ได้ไหม?</summary><p>IG @lovecartooncake ใช้ลงผลงานเป็นหลัก ร้านแจ้งว่างด DM รบกวนทักไลน์ @cartooncake หรือโทร 095-491-9979 แทนนะคะ</p></details>
+      <details class="rv-in"><summary>ร้านเปิดกี่โมง?</summary><p>ข้อมูลออนไลน์ระบุเวลา 09:30–21:00 น. หยุดวันอาทิตย์ <span class="sample">โปรดยืนยันกับร้านก่อนเข้ารับ</span></p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="head rv-in"><span class="kick">หน้าร้าน</span><h2>แวะรับเค้กที่ <em>พระราม 2 ซ.43</em></h2></div>
+    <div class="contact">
+      <div class="cbox rv-in">
+        <h3>การ์ตูนเค้ก Cartoon Cake 🎂</h3>
+        <div class="ci"><span class="i">📍</span><div><b>ที่อยู่</b><span>58/423 พระราม 2 ซอย 43 (ซอยข้าง รพ.บางมด) แขวงบางมด เขตจอมทอง กรุงเทพฯ 10150</span></div></div>
+        <div class="ci"><span class="i">📞</span><div><b>โทร</b><a href="tel:0954919979">095-491-9979</a></div></div>
+        <div class="ci"><span class="i">💬</span><div><b>LINE</b><a href="https://line.me/R/ti/p/@cartooncake" target="_blank" rel="noopener">@cartooncake</a></div></div>
+        <div class="ci"><span class="i">👍</span><div><b>Facebook / Instagram</b><a href="https://www.facebook.com/cartooncake" target="_blank" rel="noopener">facebook.com/cartooncake</a> · <a href="https://www.instagram.com/lovecartooncake/" target="_blank" rel="noopener">@lovecartooncake</a></div></div>
+        <div class="ci"><span class="i">🕘</span><div><b>เวลาทำการ</b><span>09:30–21:00 น. · หยุดวันอาทิตย์</span> <span class="sample">ตามข้อมูลออนไลน์ โปรดยืนยัน</span></div></div>
+        <div class="cta-row">
+          <a class="btn btn-line" href="https://line.me/R/ti/p/@cartooncake" target="_blank" rel="noopener">ทักไลน์</a>
+          <a class="btn btn-pink" href="tel:0954919979">โทรเลย</a>
+        </div>
+      </div>
+      <div class="map rv-in"><iframe loading="lazy" title="แผนที่ร้านการ์ตูนเค้ก พระราม 2 ซอย 43" src="https://maps.google.com/maps?q=%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A12%20%E0%B8%8B%E0%B8%AD%E0%B8%A2%2043%20%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%94%20%E0%B8%88%E0%B8%AD%E0%B8%A1%E0%B8%97%E0%B8%AD%E0%B8%87%20%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E&z=15&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <b>การ์ตูนเค้ก Cartoon Cake พระราม 2</b>
+  เค้กการ์ตูน เค้ก 3 มิติ รับสั่งทำเค้กวันเกิดทุกโอกาส · พระราม 2 ซอย 43 ข้าง รพ.บางมด<br>
+  โทร <a href="tel:0954919979">095-491-9979</a> · LINE <a href="https://line.me/R/ti/p/@cartooncake" target="_blank" rel="noopener">@cartooncake</a>
+  <div class="demo">เว็บไซต์ตัวอย่าง (เดโม) · ข้อมูลที่มีป้าย “ตัวอย่าง” ใช้เพื่อการนำเสนอเท่านั้น</div>
+</footer>
+
+<div class="fab">
+  <a class="l" href="https://line.me/R/ti/p/@cartooncake" target="_blank" rel="noopener" aria-label="ทักไลน์"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 4 3.5 7.3 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.5 5.9-3.5 8-5.9 1.5-1.6 2-3.2 2-4.9C22 6.6 17.5 3 12 3z"/></svg></a>
+  <a class="c" href="tel:0954919979" aria-label="โทร"><svg viewBox="0 0 24 24" fill="#6b3d2a"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+</div>
+
+<div class="lbx" id="lb"><button type="button" aria-label="ปิด">×</button><img alt=""></div>
+
+<script>
+// filters
+const fbtn=document.querySelectorAll('.filters button'),cards=document.querySelectorAll('.card');
+fbtn.forEach(b=>b.onclick=()=>{fbtn.forEach(x=>x.classList.remove('on'));b.classList.add('on');const f=b.dataset.f;
+  cards.forEach(c=>c.classList.toggle('hide',f!=='all'&&!c.dataset.c.split(' ').includes(f)));});
+// lightbox
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+document.querySelectorAll('.card .ph').forEach(p=>p.onclick=()=>{const i=p.querySelector('img');lbi.src=i.src;lbi.alt=i.alt;lb.classList.add('on')});
+lb.onclick=e=>{if(e.target!==lbi)lb.classList.remove('on')};
+// builder
+const st={theme:'ม้าโพนี่ / เจ้าหญิง',size:'2 ปอนด์ (12–15 ท่าน)',flavor:'วานิลลา',pick:'รับเองที่หน้าร้าน พระราม 2 ซ.43'};
+document.querySelectorAll('.opts').forEach(g=>g.querySelectorAll('button').forEach(b=>b.onclick=()=>{g.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');st[g.dataset.k]=b.textContent;render();}));
+const $=id=>document.getElementById(id);
+const d=new Date();d.setDate(d.getDate()+5);$('date').value=d.toISOString().slice(0,10);
+const today=new Date();today.setHours(0,0,0,0);$('date').min=today.toISOString().slice(0,10);
+function thDate(v){if(!v)return'-';const x=new Date(v+'T00:00');return x.toLocaleDateString('th-TH',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}
+function render(){
+  const v=$('date').value;let w='';
+  if(v){const x=new Date(v+'T00:00'),days=Math.round((x-today)/864e5);
+    if(x.getDay()===0)w='วันอาทิตย์ร้านอาจหยุด ลองเลือกวันอื่นหรือถามร้านก่อนนะคะ';
+    else if(days<3)w='กระชั้นชิดนิดนึง ร้านต้องเช็กคิว #เค้กด่วน ให้ก่อนค่ะ';}
+  $('dw').textContent=w;
+  const t=`สวัสดีค่ะ ขอใบเสนอราคาเค้กค่ะ 🎂
+• ธีม: ${st.theme}
+• ขนาด: ${st.size}
+• รสชาติ: ${st.flavor}
+• วันรับ: ${thDate(v)} (${$('time').value})
+• รับเค้ก: ${st.pick}
+• ข้อความบนเค้ก: ${$('msg').value||'-'}
+• รายละเอียด: ${$('note').value||'-'}
+• ผู้สั่ง: ${$('name').value||'-'}
+(เดี๋ยวแนบรูปตัวอย่างในแชตค่ะ)`;
+  $('out').textContent=t;
+  $('goLine').href='https://line.me/R/oaMessage/@cartooncake/?'+encodeURIComponent(t);
+}
+['date','time','msg','name','note'].forEach(i=>$(i).addEventListener('input',render));
+render();
+$('copy').onclick=()=>{navigator.clipboard&&navigator.clipboard.writeText($('out').textContent).then(()=>{$('cp').textContent='คัดลอกแล้ว ✓ วางในแชตไลน์ได้เลย'})};
+document.querySelectorAll('.card .ord').forEach(b=>b.onclick=()=>{
+  const t=b.dataset.t,g=document.querySelector('.opts[data-k=theme]');let hit=null;
+  g.querySelectorAll('button').forEach(x=>{x.classList.remove('on');if(x.textContent===t)hit=x});
+  if(!hit){hit=document.createElement('button');hit.type='button';hit.textContent=t;g.insertBefore(hit,g.lastElementChild);hit.onclick=()=>{g.querySelectorAll('button').forEach(x=>x.classList.remove('on'));hit.classList.add('on');st.theme=t;render()}}
+  hit.classList.add('on');st.theme=t;render();document.getElementById('builder').scrollIntoView({behavior:'smooth'});});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.rv-in').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

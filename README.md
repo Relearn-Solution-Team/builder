@@ -17,6 +17,16 @@ Single-file HTML homepage demos (Noto Sans Thai headings, Sarabun body) made to 
 | `exclusive-nails` | Exclusive nails studio | บรมราชชนนี / ปิ่นเกล้า | Nails & lashes |
 | `changprapa` | ช่างประปา (changprapa) | กทม. | Plumbing by symptom |
 | `tt-service-nonthaburi` | TT Service Nonthaburi | นนทบุรี | "ช่างประปานนทบุรี" landing page |
+| `arichi-pet-salon` | Arichi pet salon | โยธินพัฒนา 3 | Pet grooming: house rules, checklist, LINE booking |
+| `meerak-grooming` | โรงพยาบาลสัตว์มีรัก (grooming) | เมืองทองธานี | Grooming-only page of a vet hospital |
+| `flower-stylist` | Flower Stylist | พระราม 3–นราธิวาสฯ | Wreaths & garlands with order builder |
+| `you-deserve-flowers` | You Deserve Flowers | รามอินทรา 40 | Bouquets by occasion × budget |
+| `cartoon-cake` | Cartoon Cake พระราม 2 | พระราม 2 ซ.43 | Cake gallery by theme + LINE order builder |
+| `maysa-bakehome` | Maysa.Bakehome | ลาดกระบัง | Home bakery & café, LINE ordering |
+| `mafueang-carcare` | มะเฟืองคาร์แคร์ | ร่มเกล้า มีนบุรี | Seat & carpet cleaning |
+| `zebra-interior` | ZEBRA · ดูแลภายในรถ | ปากเกร็ด | 2nd ZEBRA page: interior-care packages |
+| `be-my-craft` | Be My Craft By Kru Kate | ลาดกระบัง | Corporate workshop catalog + quote builder |
+| `bougainvillea-soap` | Bougainvillea Soap | ตลิ่งชัน | Soap-making course comparison |
 
 Content that could not be verified (some prices, reviews, portfolio photos) is marked on each page as demo sample content.
 

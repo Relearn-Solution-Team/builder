@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ซักเบาะ ซักพรม ฟื้นฟูภายในรถ | ZEBRA Car &amp; Detailing ม้าลายคาร์แคร์ ปากเกร็ด นนทบุรี</title>
+<meta name="description" content="สปาภายในรถ ซักเบาะ ซักพรม ลดกลิ่นอับ รับรถลุยน้ำ รถหลังน้ำท่วม ราคาเริ่มต้น 2,500 บาท ที่ ZEBRA Car & Detailing ซอยสมเอก ถ.ติวานนท์ ปากเกร็ด นนทบุรี ทักแชตจองคิวได้เลย">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141313;--ink2:#1f1d1c;--ink3:#2d2a28;
+  --teal:#1ea79b;--teal2:#43d1c3;--teal3:#0f7c73;--tealbg:#e3f5f2;
+  --cream:#f7dcc4;--cream2:#fbeadb;--paper:#fffaf5;
+  --mute:#6f6763;--line:#eadccf;
+  --head:'Noto Sans Thai',sans-serif;--body:'Sarabun',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.7;overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit}
+.wrap{width:min(1180px,92%);margin:0 auto}
+svg{flex-shrink:0}
+
+/* quilted leather + stitch motifs */
+.quilt{background-color:var(--ink);background-image:
+  repeating-linear-gradient(45deg,transparent 0 33px,rgba(247,220,196,.11) 33px 34px),
+  repeating-linear-gradient(-45deg,transparent 0 33px,rgba(247,220,196,.11) 33px 34px)}
+.stitch{border:2px dashed rgba(247,220,196,.35)}
+.stripes{background:repeating-linear-gradient(115deg,var(--ink) 0 14px,var(--paper) 14px 30px)}
+
+/* ---------- nav ---------- */
+.notice{background:var(--teal3);color:#e9fffb;font-size:14px;text-align:center;padding:7px 4%}
+.notice b{color:#fff}
+nav.main{position:sticky;top:0;z-index:60;background:rgba(255,250,245,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:50px;height:50px;border-radius:14px}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:19px;letter-spacing:1px;line-height:1.1}
+.brand .t1 span{color:var(--teal)}
+.brand .t2{font-size:12.5px;color:var(--mute)}
+.menu{display:flex;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px}
+.menu a{font-family:var(--head);font-weight:600;font-size:14.5px;padding:7px 15px;border-radius:999px;color:#4a4340;transition:.2s}
+.menu a:hover{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:700;font-size:16px;border-radius:16px;padding:14px 24px;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn svg{width:20px;height:20px}
+.btn-teal{background:var(--teal);color:#fff;box-shadow:0 12px 26px -10px rgba(30,167,155,.85)}
+.btn-teal:hover{background:var(--teal3);transform:translateY(-2px)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{transform:translateY(-2px);background:var(--ink3)}
+.btn-line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.burger{display:none;background:none;border:0;cursor:pointer}
+.burger svg{width:30px;height:30px}
+.mnav{display:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:64px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;right:-120px;top:-140px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,var(--cream2) 0,rgba(251,234,219,0) 70%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:700;font-size:14px;color:var(--teal3);background:var(--tealbg);padding:7px 16px 7px 8px;border-radius:999px}
+.kicker i{width:26px;height:26px;border-radius:50%;background:var(--teal);display:grid;place-items:center}
+.kicker i svg{width:15px;height:15px;stroke:#fff;fill:none;stroke-width:2.4}
+.hero h1{font-size:clamp(40px,5.6vw,74px);font-weight:900;letter-spacing:-.5px;margin:20px 0 16px;line-height:1.16}
+.hero h1 .mark{position:relative;display:inline-block;z-index:0}
+.hero h1 .mark::after{content:"";position:absolute;left:-4px;right:-4px;bottom:.08em;height:.32em;background:var(--teal2);opacity:.45;z-index:-1;border-radius:4px;transform:skewX(-12deg)}
+.hero h1 small{display:block;font-size:.4em;font-weight:700;color:var(--mute);margin-top:10px;letter-spacing:0}
+.hero .lead{font-size:19px;color:#4f4845;max-width:540px}
+.pricebox{display:flex;align-items:center;gap:18px;margin:30px 0 0;flex-wrap:wrap}
+.tagprice{display:flex;align-items:center;gap:14px;background:var(--ink);color:#fff;border-radius:20px;padding:12px 20px 12px 14px;position:relative}
+.tagprice::before{content:"";position:absolute;inset:5px;border-radius:15px;border:1.5px dashed rgba(247,220,196,.45);pointer-events:none}
+.tagprice .ic{width:46px;height:46px;border-radius:14px;background:var(--teal);display:grid;place-items:center}
+.tagprice .ic svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tagprice small{display:block;font-size:13px;color:#cfc6bf}
+.tagprice b{font-family:var(--head);font-size:30px;font-weight:900;line-height:1.1;color:var(--cream)}
+.realtag{font-size:12px;font-weight:600;background:var(--tealbg);color:var(--teal3);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.demotag{font-size:12px;font-weight:600;background:#f1e8e0;color:#857a73;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.cta-row{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+
+.reels{position:relative;height:560px}
+.reel{position:absolute;width:56%;aspect-ratio:9/16;border-radius:30px;overflow:hidden;background:#111;box-shadow:0 34px 60px -26px rgba(20,19,19,.6);border:7px solid #fff}
+.reel img{width:100%;height:100%;object-fit:cover}
+.reel .rtag{position:absolute;top:14px;left:14px;font-family:var(--head);font-weight:700;font-size:12.5px;padding:4px 12px;border-radius:999px;background:rgba(20,19,19,.7);color:#fff;display:flex;align-items:center;gap:6px}
+.reel .rtag::before{content:"";width:7px;height:7px;border-radius:50%;background:#ff5a5a}
+.reel .rcap{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 16px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.85));color:#fff;font-family:var(--head);font-weight:700;font-size:15px;line-height:1.35}
+.reel .rcap span{display:block;font-family:var(--body);font-weight:400;font-size:12px;color:#d4ccc6;margin-top:3px}
+.reel.r1{left:0;top:40px;transform:rotate(-6deg)}
+.reel.r2{right:0;top:0;transform:rotate(5deg);z-index:2}
+.arrow-badge{position:absolute;z-index:3;left:44%;top:46%;width:86px;height:86px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;box-shadow:0 0 0 8px var(--paper),0 18px 30px -10px rgba(15,124,115,.7);animation:bob 4s ease-in-out infinite}
+.arrow-badge svg{width:38px;height:38px;stroke:#fff;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.hero-logo{position:absolute;z-index:4;right:6%;bottom:-6px;width:96px;height:96px;border-radius:24px;overflow:hidden;box-shadow:0 18px 34px -10px rgba(0,0,0,.6);transform:rotate(8deg)}
+@keyframes bob{50%{translate:0 -10px}}
+
+/* fact ribbon */
+.ribbon{position:relative;background:var(--ink);color:#fff}
+.ribbon::before,.ribbon::after{content:"";position:absolute;left:0;right:0;height:12px;background:repeating-linear-gradient(115deg,var(--ink) 0 12px,var(--cream) 12px 22px)}
+.ribbon::before{top:-12px}.ribbon::after{bottom:-12px}
+.ribbon .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:30px 0}
+.fact{display:flex;align-items:center;gap:14px}
+.fact b{font-family:var(--head);font-size:30px;font-weight:900;color:var(--teal2);line-height:1}
+.fact span{font-size:14px;color:#cbc3bd;line-height:1.4}
+
+/* sections */
+section{padding:100px 0;position:relative}
+.sh{max-width:760px;margin-bottom:50px}
+.sh.c{text-align:center;margin-left:auto;margin-right:auto}
+.over{font-family:var(--head);font-weight:800;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--teal3);display:inline-flex;align-items:center;gap:10px;margin-bottom:12px}
+.over::before{content:"";width:34px;height:3px;background:repeating-linear-gradient(90deg,currentColor 0 6px,transparent 6px 10px)}
+.sh h2{font-size:clamp(30px,4vw,48px);font-weight:900;letter-spacing:-.3px}
+.sh h2 em{font-style:normal;color:var(--teal);white-space:nowrap}
+.sh p{margin-top:12px;color:var(--mute);font-size:18px}
+.dk{background:var(--ink);color:#fff}
+.dk .sh p{color:#b8afa9}
+.dk .over{color:var(--teal2)}
+.dk .sh h2 em{color:var(--teal2)}
+.note{display:inline-flex;align-items:flex-start;gap:8px;font-size:13.5px;color:#7d7570;background:rgba(0,0,0,.035);border:1px dashed rgba(0,0,0,.2);padding:6px 14px;border-radius:12px;margin-top:22px;line-height:1.5}
+.note svg{width:15px;height:15px;margin-top:3px}
+.dk .note{color:#b9b0aa;background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.22)}
+
+/* ---------- cabin map ---------- */
+.cabin{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.carmap{position:relative;max-width:380px;width:100%;margin:0 auto;aspect-ratio:300/600}
+.carmap svg.car{width:100%;height:100%}
+.zone{fill:#efe3d8;stroke:#d9c6b6;stroke-width:1.5;transition:fill .25s}
+.zone.on{fill:var(--teal2)}
+.hs{position:absolute;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;border:0;cursor:pointer;background:var(--ink);color:#fff;font-family:var(--head);font-weight:800;font-size:15px;box-shadow:0 0 0 5px rgba(20,19,19,.12);transition:.2s;z-index:2}
+.hs::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--teal);opacity:0;animation:ping 2.4s infinite}
+.hs.on{background:var(--teal);box-shadow:0 0 0 6px rgba(30,167,155,.25);transform:translate(-50%,-50%) scale(1.12)}
+.hs.on::after{opacity:1}
+@keyframes ping{0%{transform:scale(.8);opacity:.9}100%{transform:scale(1.6);opacity:0}}
+.zlist{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.zbtn{border:1.5px solid var(--line);background:#fff;border-radius:999px;padding:7px 15px;font-family:var(--head);font-weight:600;font-size:14.5px;cursor:pointer;display:flex;align-items:center;gap:8px;transition:.2s}
+.zbtn b{width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:12px}
+.zbtn.on{border-color:var(--teal);background:var(--tealbg)}
+.zbtn.on b{background:var(--teal)}
+.zcard{background:#fff;border-radius:26px;padding:32px;border:1px solid var(--line);box-shadow:0 26px 50px -34px rgba(20,19,19,.45);position:relative;overflow:hidden;min-height:330px}
+.zcard::after{content:"";position:absolute;inset:10px;border-radius:18px;border:1.5px dashed var(--line);pointer-events:none}
+.zcard .zn{font-family:var(--head);font-weight:900;font-size:64px;line-height:1;color:var(--tealbg);position:absolute;right:28px;top:18px}
+.zcard h3{font-size:26px;font-weight:800;position:relative}
+.zcard .zp{color:var(--mute);margin:6px 0 18px;position:relative}
+.zcard ul{list-style:none;display:grid;gap:10px;position:relative}
+.zcard li{display:flex;gap:10px;align-items:flex-start}
+.zcard li svg{width:20px;height:20px;margin-top:4px;stroke:var(--teal);fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.zcard .inc{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px;color:var(--mute);position:relative}
+.zcard .inc span{font-family:var(--head);font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px;background:var(--ink);color:#fff}
+.zcard .inc span.no{background:#efe7df;color:#b0a59d;text-decoration:line-through}
+.fadein{animation:fi .4s ease}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ---------- compare table ---------- */
+.sizes{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px}
+.size{display:flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.18);background:rgba(255,255,255,.04);color:#e7dfd9;border-radius:14px;padding:9px 16px;font-family:var(--head);font-weight:600;font-size:15px;cursor:pointer;transition:.2s}
+.size svg{width:30px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6}
+.size.on{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.ttabs{display:none}
+.tablebox{border-radius:28px;overflow:hidden;background:#1b1918;border:1px solid rgba(255,255,255,.1)}
+table.cmp{width:100%;border-collapse:collapse}
+.cmp th,.cmp td{padding:15px 20px;text-align:center;border-bottom:1px solid rgba(255,255,255,.07);font-size:15.5px}
+.cmp td:first-child,.cmp th:first-child{text-align:left;color:#d8d0ca;width:34%}
+.cmp thead th{vertical-align:top;padding:30px 18px 24px;border-bottom:1px solid rgba(255,255,255,.12)}
+.cmp thead th:first-child{vertical-align:bottom;font-family:var(--head);font-size:15px;color:#a49b95;font-weight:600}
+.tier .lv{font-family:var(--head);font-size:12.5px;letter-spacing:2px;color:var(--teal2);font-weight:800;text-transform:uppercase}
+.tier h3{font-size:20px;font-weight:800;margin:4px 0 6px;color:#fff}
+.tier .pr{font-family:var(--head);font-weight:900;font-size:34px;color:var(--cream);line-height:1.1}
+.tier .pr small{font-size:14px;color:#a49b95;font-weight:500;margin-left:4px}
+.tier .tg{margin-top:8px;min-height:24px}
+.tier .tg .realtag{background:rgba(67,209,195,.16);color:var(--teal2)}
+.tier .tg .demotag{background:rgba(255,255,255,.08);color:#b3aaa4}
+.cmp .hl{background:linear-gradient(180deg,rgba(30,167,155,.2),rgba(30,167,155,.07))}
+.cmp thead .hl{position:relative}
+.cmp thead .hl::before{content:"ลูกค้าเลือกมากสุด";position:absolute;top:0;left:50%;transform:translateX(-50%);background:var(--teal);color:#fff;font-family:var(--head);font-size:12px;font-weight:700;padding:3px 14px;border-radius:0 0 12px 12px;white-space:nowrap}
+.ck{width:24px;height:24px;stroke:var(--teal2);fill:none;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round;display:inline-block;vertical-align:middle}
+.no{color:#5c5552}
+.cmp .grp td{background:rgba(247,220,196,.06);font-family:var(--head);font-weight:700;color:var(--cream);font-size:14px;letter-spacing:1px;padding:10px 20px}
+.cmp tfoot td{padding:22px 16px;border-bottom:0}
+.cmp tfoot .btn{width:100%;font-size:15px;padding:12px 14px}
+.cmp .txt{font-size:14px;color:#cfc7c1}
+.tfoot-note{color:#a89f99;font-size:14px;text-align:center;margin-top:20px}
+
+/* ---------- before/after ---------- */
+.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.ba{position:relative;width:100%;max-width:440px;margin:0 auto;aspect-ratio:9/13;border-radius:30px;overflow:hidden;user-select:none;touch-action:none;cursor:ew-resize;box-shadow:0 34px 60px -30px rgba(20,19,19,.6);border:7px solid #fff;background:#111}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .after{clip-path:inset(0 0 0 50%)}
+.ba .hd{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);z-index:3}
+.ba .hd::after{content:"";position:absolute;top:50%;left:50%;width:52px;height:52px;border-radius:50%;transform:translate(-50%,-50%);background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 6l-6 6 6 6M15 6l6 6-6 6'/%3E%3C/svg%3E") center/24px no-repeat;box-shadow:0 0 0 5px rgba(255,255,255,.5)}
+.ba .lb{position:absolute;bottom:16px;z-index:2;font-family:var(--head);font-weight:700;font-size:13.5px;padding:6px 13px;border-radius:999px}
+.ba .lb.l{left:14px;background:rgba(20,19,19,.75);color:#fff}
+.ba .lb.r{right:14px;background:var(--teal);color:#fff}
+.post{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px 24px;margin-top:22px;box-shadow:0 18px 36px -28px rgba(0,0,0,.4)}
+.post .ph{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.post .ph img{width:40px;height:40px;border-radius:50%}
+.post .ph b{font-family:var(--head);font-size:14.5px;display:block;line-height:1.3}
+.post .ph span{font-size:12.5px;color:#8b827c}
+.post p{font-size:16px}
+.post .hash{color:var(--teal3);font-size:14px;margin-top:6px}
+
+/* ---------- steps (vertical rail) ---------- */
+.rail{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.stp{background:#fff;border-radius:24px;padding:28px 26px;border:1px solid var(--line);position:relative;overflow:hidden}
+.stp::before{counter-increment:s;content:"0" counter(s);font-family:var(--head);font-weight:900;font-size:15px;color:#fff;background:var(--ink);border-radius:10px;padding:3px 10px;display:inline-block;margin-bottom:16px}
+.stp:nth-child(3n+2)::before{background:var(--teal)}
+.stp::after{content:"";position:absolute;right:-30px;bottom:-30px;width:120px;height:120px;border-radius:50%;background:repeating-linear-gradient(115deg,var(--ink) 0 7px,transparent 7px 16px);opacity:.05}
+.stp h3{font-size:20px;font-weight:800;margin-bottom:6px}
+.stp p{font-size:15.5px;color:var(--mute)}
+.stp .t{font-size:13px;font-weight:600;color:var(--teal3);margin-top:12px;display:flex;align-items:center;gap:6px}
+.stp .t svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2}
+
+/* ---------- quote builder ---------- */
+.qb{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.qform{background:#fff;border-radius:28px;padding:34px;border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(20,19,19,.5)}
+.qg{margin-bottom:24px}
+.qg>label,.qg>.lbl{display:block;font-family:var(--head);font-weight:700;font-size:16px;margin-bottom:10px}
+.qg>.lbl small{font-family:var(--body);font-weight:400;color:#8b827c;font-size:13.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line);border-radius:12px;padding:8px 14px;font-size:15px;cursor:pointer;transition:.18s;background:var(--paper)}
+.chip input:checked+span{border-color:var(--teal);background:var(--tealbg);color:var(--teal3);font-weight:600}
+.chip input:focus-visible+span{outline:2px solid var(--teal);outline-offset:2px}
+.qrow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.qg input[type=text],.qg input[type=date],.qg select{width:100%;border:1.5px solid var(--line);border-radius:12px;padding:11px 14px;font:inherit;font-size:16px;background:var(--paper);color:var(--ink)}
+.qg input:focus,.qg select:focus{outline:none;border-color:var(--teal)}
+.chat{position:sticky;top:96px;background:var(--ink);border-radius:30px;padding:22px;color:#fff;overflow:hidden}
+.chat .top{display:flex;align-items:center;gap:12px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.1)}
+.chat .top img{width:44px;height:44px;border-radius:50%}
+.chat .top b{font-family:var(--head);font-size:15px;display:block;line-height:1.3}
+.chat .top span{font-size:12.5px;color:var(--teal2)}
+.bubbles{padding:18px 0;display:grid;gap:10px;min-height:260px}
+.bub{max-width:88%;padding:12px 16px;border-radius:18px;font-size:15px;line-height:1.6;white-space:pre-line}
+.bub.them{background:#2c2928;border-bottom-left-radius:6px;color:#e6dfd9}
+.bub.me{background:var(--teal);justify-self:end;border-bottom-right-radius:6px}
+.est{display:flex;justify-content:space-between;align-items:center;background:rgba(247,220,196,.08);border:1.5px dashed rgba(247,220,196,.35);border-radius:16px;padding:12px 16px;margin-bottom:14px;gap:10px}
+.est span{font-size:13.5px;color:#cbc2bb}
+.est b{font-family:var(--head);font-size:24px;color:var(--cream);font-weight:900;white-space:nowrap}
+.chat .btn{width:100%}
+.chat .sub{font-size:12.5px;color:#9e958f;text-align:center;margin-top:10px}
+.toast{position:fixed;left:50%;bottom:100px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 20px;border-radius:14px;font-size:15px;opacity:0;pointer-events:none;transition:.3s;z-index:90;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
+.toast.on{opacity:1;transform:translateX(-50%)}
+
+/* ---------- reviews + faq ---------- */
+.rf{display:grid;grid-template-columns:.95fr 1.05fr;gap:50px}
+.score{display:flex;align-items:center;gap:18px;margin-bottom:22px}
+.score .big{font-family:var(--head);font-weight:900;font-size:58px;line-height:1;color:var(--teal)}
+.score b{font-family:var(--head);display:block}
+.score span{font-size:14px;color:var(--mute)}
+.rev{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin-bottom:14px}
+.rev .st{color:var(--teal);letter-spacing:2px}
+.rev p{font-size:15.5px;margin:6px 0 10px;color:#3e3835}
+.rev .who{font-size:13.5px;color:#8b827c}
+.rev .who b{font-family:var(--head);color:var(--ink);font-size:14.5px}
+details{background:#fff;border:1px solid var(--line);border-radius:18px;margin-bottom:12px;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:18px 22px;font-family:var(--head);font-weight:700;font-size:17px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;font-weight:500;color:var(--teal);transition:.2s;line-height:1}
+details[open] summary::after{transform:rotate(45deg)}
+details[open]{border-color:var(--teal)}
+details .a{padding:0 22px 20px;color:#544c48;font-size:16px}
+
+/* ---------- contact ---------- */
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:32px;overflow:hidden;background:var(--ink);color:#fff;box-shadow:0 40px 70px -40px rgba(20,19,19,.7)}
+.ct-l{padding:44px 40px;position:relative}
+.ct-l h2{font-size:clamp(28px,3.4vw,40px);font-weight:900}
+.ct-l h2 em{font-style:normal;color:var(--teal2)}
+.ct-l .in{color:#bdb4ad;margin:8px 0 22px}
+.crow{display:flex;gap:14px;padding:14px 0;border-top:1px solid rgba(255,255,255,.09)}
+.crow .ic{width:42px;height:42px;border-radius:13px;background:rgba(67,209,195,.14);display:grid;place-items:center;flex-shrink:0}
+.crow .ic svg{width:21px;height:21px;stroke:var(--teal2);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.crow .k{font-size:13px;color:#958d88}
+.crow .v{font-family:var(--head);font-weight:600;font-size:16px;line-height:1.5}
+.crow .v a{border-bottom:1px solid rgba(67,209,195,.5)}
+.crow .v small{display:block;font-family:var(--body);font-weight:400;font-size:13.5px;color:#a49c96}
+.ct-btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.ct-btns .btn-line{color:#fff;border-color:rgba(255,255,255,.4)}
+.ct-btns .btn-line:hover{background:#fff;color:var(--ink)}
+.ct-r{display:grid;grid-template-rows:1fr 230px;min-height:560px}
+.ct-r iframe{width:100%;height:100%;border:0;display:block;min-height:300px}
+.shopimg{position:relative;overflow:hidden}
+.shopimg img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.shopimg span{position:absolute;left:14px;bottom:14px;background:rgba(20,19,19,.75);font-size:12.5px;padding:5px 12px;border-radius:999px;color:#e8e0da}
+
+footer{padding:40px 0 110px;font-size:14px;color:#857c77}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer .demo{max-width:560px;font-size:12.5px;line-height:1.6}
+
+.fab{position:fixed;right:20px;bottom:20px;z-index:80;display:flex;align-items:center;gap:10px;background:var(--teal);color:#fff;font-family:var(--head);font-weight:700;padding:13px 22px 13px 14px;border-radius:999px;box-shadow:0 18px 34px -10px rgba(15,124,115,.85);border:3px solid #fff}
+.fab svg{width:26px;height:26px}
+.fab-top{position:fixed;left:20px;bottom:20px;z-index:80;display:flex;align-items:center;gap:8px;background:var(--ink);color:#fff;font-family:var(--head);font-weight:700;font-size:14.5px;padding:12px 18px;border-radius:999px;box-shadow:0 14px 28px -10px rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:.3s}
+.fab-top.on{opacity:1;pointer-events:auto}
+.fab-top b{color:var(--cream)}
+
+.rv{opacity:0;transform:translateY(28px);transition:opacity .75s ease,transform .75s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1040px){
+  .menu{display:none}
+  .ribbon .wrap{grid-template-columns:repeat(2,1fr)}
+  .rail{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .nav-cta{display:none}
+  .burger{display:block}
+  .mnav{position:fixed;inset:72px 0 auto 0;background:var(--paper);z-index:59;padding:10px 4% 22px;flex-direction:column;border-bottom:1px solid var(--line);box-shadow:0 20px 30px -20px rgba(0,0,0,.3)}
+  .mnav.on{display:flex}
+  .mnav a{font-family:var(--head);font-weight:600;padding:13px 4px;border-bottom:1px solid var(--line)}
+  .mnav .btn{margin-top:14px;border-bottom:0}
+  .hero{padding:40px 0 70px}
+  .hero .wrap,.cabin,.ba-grid,.qb,.rf,.ct{grid-template-columns:1fr}
+  .reels{height:520px;max-width:460px;width:100%;margin:0 auto}
+  .chat{position:relative;top:0}
+  .ct-r{grid-template-rows:320px 220px;min-height:0}
+  /* table → one tier at a time */
+  .ttabs{display:flex;gap:6px;background:rgba(255,255,255,.06);border-radius:16px;padding:5px;margin-bottom:14px}
+  .ttab{flex:1;border:0;background:none;color:#d7cfc9;font-family:var(--head);font-weight:700;font-size:14px;padding:10px 6px;border-radius:12px;cursor:pointer;line-height:1.3}
+  .ttab.on{background:var(--teal);color:#fff}
+  .cmp [data-c]{display:none}
+  .cmp[data-show="1"] [data-c="1"],.cmp[data-show="2"] [data-c="2"],.cmp[data-show="3"] [data-c="3"]{display:table-cell}
+  .cmp td:first-child,.cmp th:first-child{width:56%}
+  .cmp thead .hl::before{display:none}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding:70px 0}
+  .notice{font-size:12.5px}
+  .brand img{width:44px;height:44px}
+  .brand .t1{font-size:17px}
+  .brand .t2{font-size:11px}
+  .hero h1{font-size:38px}
+  .hero .lead{font-size:16.5px}
+  .cta-row .btn{flex:1 1 100%}
+  .reels{height:440px}
+  .reel{width:60%;border-width:5px;border-radius:24px}
+  .arrow-badge{width:66px;height:66px;left:41%}
+  .arrow-badge svg{width:30px;height:30px}
+  .hero-logo{width:74px;height:74px;border-radius:18px;right:2%}
+  .ribbon .wrap{grid-template-columns:1fr 1fr;gap:18px 14px;padding:26px 0}
+  .fact{flex-direction:column;align-items:flex-start;gap:4px}
+  .fact b{font-size:26px}
+  .fact span{font-size:13px}
+  .zcard{padding:26px 22px;min-height:0}
+  .zcard h3{font-size:22px}
+  .zcard .zn{font-size:50px}
+  .carmap{max-width:270px}
+  .hs{width:30px;height:30px;font-size:13px}
+  .zcard .zn{display:none}
+  .size{font-size:14px;padding:8px 12px}
+  .size svg{display:none}
+  .cmp th,.cmp td{padding:12px 12px;font-size:14.5px}
+  .cmp thead th{padding:20px 12px}
+  .tier .pr{font-size:28px}
+  .rail{grid-template-columns:1fr}
+  .qform{padding:24px 18px}
+  .qrow{grid-template-columns:1fr}
+  .ct-l{padding:34px 22px}
+  .ct-btns .btn{flex:1 1 100%}
+  .fab span{display:none}
+  .fab{padding:14px}
+  .fab-top{font-size:13px;padding:11px 15px}
+}
+</style>
+</head>
+<body>
+
+<div class="notice" id="notice">📢 <b>เปิดทุกวัน 09:00–19:00 น.</b> · วันหยุดพิเศษร้านแจ้งทางเพจล่วงหน้า (ล่าสุด: ปิด 1 พ.ย.) · สอบถามคิวซักเบาะซักพรม ทักแชตได้เลยครับ</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="โลโก้ ZEBRA Car & Detailing">
+      <div><div class="t1">ZEBRA <span>INTERIOR</span></div><div class="t2">สปาภายในรถ · ม้าลายคาร์แคร์ ปากเกร็ด</div></div>
+    </a>
+    <div class="menu">
+      <a href="#scope">ทำอะไรบ้าง</a>
+      <a href="#compare">เทียบแพ็กเกจ</a>
+      <a href="#result">ก่อน–หลัง</a>
+      <a href="#steps">ขั้นตอน</a>
+      <a href="#quote">ขอราคา</a>
+      <a href="#visit">ที่ร้าน</a>
+    </div>
+    <a class="btn btn-ink nav-cta" href="#quote">ขอราคา / จองคิว</a>
+    <button class="burger" id="burger" aria-label="เมนู"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+<div class="mnav" id="mnav">
+  <a href="#scope">ทำอะไรบ้าง</a><a href="#compare">เทียบแพ็กเกจ</a><a href="#result">ก่อน–หลัง</a><a href="#steps">ขั้นตอน</a><a href="#quote">ขอราคา</a><a href="#visit">ที่ร้าน</a>
+  <a class="btn btn-teal" href="https://m.me/zebracarcare" target="_blank" rel="noopener">ทักแชตจองคิว</a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="rv">
+      <span class="kicker"><i><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></i>#สปาภายในรถ · #รถลุยน้ำ · #รถหลังน้ำท่วม</span>
+      <h1>รถลุยน้ำมา<br><span class="mark">อย่ารอ</span>ให้มีกลิ่นอับ!
+        <small>ซักเบาะ ซักพรม ฟื้นฟูภายในรถ — สะอาดล้ำลึก ให้รถกลับมาน่าใช้</small></h1>
+      <p class="lead">น้ำลดเมื่อไหร่ รีบดูแลรถก่อนความชื้นสะสม ทีมม้าลายรับงานตั้งแต่เบาะเปื้อนคราบกาแฟ ไปจนถึงห้องโดยสารที่กลายเป็น “บ่อเลี้ยงปลา” — <b>เอาอยู่!</b></p>
+      <div class="pricebox">
+        <div class="tagprice">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 20V9a3 3 0 0 1 3-3h1v14"/><path d="M10 13h6a2 2 0 0 1 2 2v5"/><path d="M4 20h16"/></svg></div>
+          <div><small>ซักเบาะ ซักพรม ฟื้นฟูภายใน</small><b>เริ่มต้น 2,500.-</b></div>
+        </div>
+        <span class="realtag">ราคาจากโพสต์ของร้าน</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-teal" href="#quote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 10h8"/></svg>ประเมินราคา &amp; ขอคิว</a>
+        <a class="btn btn-line" href="#compare">เทียบแพ็กเกจภายใน</a>
+      </div>
+    </div>
+    <div class="reels rv">
+      <div class="reel r1"><img src="assets/flood.jpg" alt="พื้นรถมีน้ำขังจากการลุยน้ำ"><span class="rtag">ก่อน</span><div class="rcap">เป็นบ่อเลี้ยงปลาเลยคร้าบบบ<span>คลิปของร้าน · รถลุยน้ำเข้ามา</span></div></div>
+      <div class="reel r2"><img src="assets/cabin.jpg" alt="ห้องโดยสารหลังทำความสะอาด เบาะหนังสีดำสะอาด"><span class="rtag">หลัง</span><div class="rcap">คืนความสะอาดให้ห้องโดยสาร ✨<span>คลิปของร้าน · ส่งรถคืนลูกค้า</span></div></div>
+      <div class="arrow-badge"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+      <div class="hero-logo"><img src="assets/logo.jpg" alt=""></div>
+    </div>
+  </div>
+</header>
+
+<div class="ribbon">
+  <div class="wrap">
+    <div class="fact"><b>2,500.-</b><span>ราคาเริ่มต้น<br>ซักเบาะซักพรม</span></div>
+    <div class="fact"><b>100%</b><span>แนะนำ<br>จาก 18 รีวิวบนเพจ</span></div>
+    <div class="fact"><b>7 วัน</b><span>เปิดทุกวัน<br>09:00–19:00 น.</span></div>
+    <div class="fact"><b>2.4K</b><span>ผู้ติดตาม<br>เพจ ZEBRA Car</span></div>
+  </div>
+</div>
+
+<!-- SCOPE: cabin map -->
+<section id="scope">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="over">Scope of work</div>
+      <h2>แตะดูทีละจุด <em>ภายในรถ</em><br>ว่าเราดูแลอะไรบ้าง</h2>
+      <p>ห้องโดยสารมีซอกเยอะกว่าที่คิด แตะหมายเลขบนผังรถเพื่อดูขอบเขตงาน และดูว่าแพ็กเกจไหนครอบคลุมจุดนั้น</p>
+    </div>
+    <div class="cabin">
+      <div class="carmap rv" id="carmap">
+        <svg class="car" viewBox="0 0 300 600" aria-hidden="true">
+          <defs><pattern id="zst" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(25)"><rect width="16" height="16" fill="#141313"/><rect width="7" height="16" fill="#2d2a28"/></pattern></defs>
+          <path d="M150 8 C230 8 268 40 272 110 L276 470 C276 548 240 590 150 592 C60 590 24 548 24 470 L28 110 C32 40 70 8 150 8Z" fill="url(#zst)"/>
+          <path d="M150 22 C220 22 254 52 258 112 L262 468 C262 538 230 576 150 578 C70 576 38 538 38 468 L42 112 C46 52 80 22 150 22Z" fill="#fffaf5"/>
+          <path d="M62 118 C100 96 200 96 238 118 L232 140 C196 124 104 124 68 140Z" fill="#cfe9e5"/>
+          <rect class="zone" data-z="1" x="58" y="146" width="184" height="40" rx="14"/>
+          <rect class="zone" data-z="2" x="62" y="206" width="72" height="96" rx="20"/>
+          <rect class="zone" data-z="2" x="166" y="206" width="72" height="96" rx="20"/>
+          <rect class="zone" data-z="3" x="140" y="196" width="20" height="118" rx="8"/>
+          <rect class="zone" data-z="4" x="62" y="312" width="72" height="22" rx="8"/>
+          <rect class="zone" data-z="4" x="166" y="312" width="72" height="22" rx="8"/>
+          <rect class="zone" data-z="5" x="62" y="350" width="176" height="86" rx="22"/>
+          <rect class="zone" data-z="6" x="44" y="196" width="12" height="230" rx="6"/>
+          <rect class="zone" data-z="6" x="244" y="196" width="12" height="230" rx="6"/>
+          <rect class="zone" data-z="7" x="66" y="456" width="168" height="92" rx="18"/>
+          <path d="M70 446 C110 440 190 440 230 446" stroke="#cfe9e5" stroke-width="6" fill="none" stroke-linecap="round"/>
+        </svg>
+        <button class="hs" data-z="1" style="left:50%;top:27.5%">1</button>
+        <button class="hs" data-z="2" style="left:32.5%;top:42%">2</button>
+        <button class="hs" data-z="3" style="left:50%;top:38%">3</button>
+        <button class="hs" data-z="4" style="left:67.5%;top:54%">4</button>
+        <button class="hs" data-z="5" style="left:50%;top:65.5%">5</button>
+        <button class="hs" data-z="6" style="left:83.5%;top:44%">6</button>
+        <button class="hs" data-z="7" style="left:50%;top:83.5%">7</button>
+        <button class="hs" data-z="8" style="left:50%;top:9%">8</button>
+      </div>
+      <div class="rv">
+        <div class="zlist" id="zlist"></div>
+        <div class="zcard" id="zcard"></div>
+        <span class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>รายละเอียดขอบเขตงานแต่ละจุดเป็นเนื้อหาตัวอย่างสำหรับเดโม — ร้านยืนยันงานจริงตามสภาพรถ</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="dk quilt" id="compare">
+  <div class="wrap">
+    <div class="sh c rv">
+      <div class="over">Compare</div>
+      <h2>เทียบแพ็กเกจ <em>ดูแลภายใน</em> ชัดๆ</h2>
+      <p>เลือกขนาดรถ แล้วดูราคาและขอบเขตงานของแต่ละระดับ ไม่แน่ใจตัวไหน ส่งรูปสภาพรถให้แอดมินช่วยประเมินได้เลย</p>
+    </div>
+    <div class="sizes rv" id="sizes">
+      <button class="size on" data-k="1" data-n="รถเก๋ง / อีโคคาร์"><svg viewBox="0 0 40 20"><path d="M3 15l3-6 7-4h12l7 5 5 1v4z"/><circle cx="11" cy="16" r="2.5"/><circle cx="30" cy="16" r="2.5"/></svg>เก๋ง / อีโคคาร์</button>
+      <button class="size" data-k="1.2" data-n="SUV / PPV 7 ที่นั่ง"><svg viewBox="0 0 40 20"><path d="M3 15V8l5-5h18l6 6 5 1v5z"/><circle cx="11" cy="16" r="2.5"/><circle cx="30" cy="16" r="2.5"/></svg>SUV / PPV</button>
+      <button class="size" data-k="1.1" data-n="กระบะ 4 ประตู"><svg viewBox="0 0 40 20"><path d="M3 15V9h4l4-5h10v5h16v6z"/><circle cx="11" cy="16" r="2.5"/><circle cx="30" cy="16" r="2.5"/></svg>กระบะ 4 ประตู</button>
+      <button class="size" data-k="1.6" data-n="รถตู้"><svg viewBox="0 0 40 20"><path d="M3 15V5l3-2h26l5 7v5z"/><circle cx="11" cy="16" r="2.5"/><circle cx="30" cy="16" r="2.5"/></svg>รถตู้</button>
+    </div>
+    <div class="ttabs" id="ttabs">
+      <button class="ttab" data-c="1">Fresh<br>ดูดฝุ่นเช็ดภายใน</button>
+      <button class="ttab on" data-c="2">Spa<br>ซักเบาะซักพรม</button>
+      <button class="ttab" data-c="3">Rescue<br>รถลุยน้ำ</button>
+    </div>
+    <div class="tablebox rv">
+      <table class="cmp" id="cmp" data-show="2">
+        <thead>
+          <tr>
+            <th>ขอบเขตงาน<br><span style="font-size:13px;font-weight:400" id="sizeName">ราคาสำหรับ: รถเก๋ง / อีโคคาร์</span></th>
+            <th class="tier" data-c="1"><div class="lv">Level 1 · Fresh</div><h3>ดูดฝุ่น เช็ดภายใน</h3><div class="pr"><span data-p="590">590</span><small>.-</small></div><div class="tg"><span class="demotag">ราคาตัวอย่าง</span></div></th>
+            <th class="tier hl" data-c="2"><div class="lv">Level 2 · Spa</div><h3>ซักเบาะ ซักพรม</h3><div class="pr"><span data-p="2500">2,500</span><small>.- เริ่มต้น</small></div><div class="tg" id="realTg"><span class="realtag">ราคาจากโพสต์ ก.ย. 69</span></div></th>
+            <th class="tier" data-c="3"><div class="lv">Level 3 · Rescue</div><h3>ฟื้นฟูรถลุยน้ำ</h3><div class="pr">ประเมิน<small>ตามสภาพ</small></div><div class="tg"><span class="demotag">ส่งรูปให้แอดมินประเมิน</span></div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="grp"><td colspan="4">ทำความสะอาดทั่วไป</td></tr>
+          <tr><td>ดูดฝุ่นทั้งคัน ทุกซอกเบาะ</td><td data-c="1"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td><td data-c="2" class="hl"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td><td data-c="3"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td></tr>
+          <tr><td>เช็ดคอนโซล แผงประตู ช่องแอร์</td><td data-c="1"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td><td data-c="2" class="hl"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td><td data-c="3"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td></tr>
+          <tr><td>เช็ดกระจกด้านใน</td><td data-c="1"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td><td data-c="2" class="hl"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td><td data-c="3"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td></tr>
+          <tr class="grp"><td colspan="4">ซักล้างล้ำลึก</td></tr>
+          <tr><td>ซักเบาะผ้า / ทำความสะอาดเบาะหนัง</td><td data-c="1" class="no">—</td><td data-c="2" class="hl"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td><td data-c="3"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td></tr>
+          <tr><td>ซักพรมพื้น + พรมท้ายรถ</td><td data-c="1" class="no">—</td><td data-c="2" class="hl"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td><td data-c="3"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td></tr>
+          <tr><td>ซักผ้าเพดาน</td><td data-c="1" class="no">—</td><td data-c="2" class="hl"><span class="txt">ตามสภาพ</span></td><td data-c="3"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td></tr>
+          <tr><td>ลดกลิ่นอับ ความชื้นสะสม</td><td data-c="1" class="no">—</td><td data-c="2" class="hl"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td><td data-c="3"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td></tr>
+          <tr class="grp"><td colspan="4">งานรถลุยน้ำ / หลังน้ำท่วม</td></tr>
+          <tr><td>ถอดเบาะ ยกพรมออกล้างคราบโคลน</td><td data-c="1" class="no">—</td><td data-c="2" class="hl no">—</td><td data-c="3"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td></tr>
+          <tr><td>อบแห้งพื้นรถ ไล่ความชื้นใต้พรม</td><td data-c="1" class="no">—</td><td data-c="2" class="hl no">—</td><td data-c="3"><svg class="ck" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></td></tr>
+          <tr><td>ใช้เวลาโดยประมาณ</td><td data-c="1"><span class="txt">2–3 ชม.</span></td><td data-c="2" class="hl"><span class="txt">1 วัน</span></td><td data-c="3"><span class="txt">2–4 วัน</span></td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td></td>
+            <td data-c="1"><a class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.35)" href="#quote" data-pick="Fresh ดูดฝุ่น เช็ดภายใน">เลือกแพ็กนี้</a></td>
+            <td data-c="2" class="hl"><a class="btn btn-teal" href="#quote" data-pick="Spa ซักเบาะ ซักพรม ฟื้นฟูภายใน">เลือกแพ็กนี้</a></td>
+            <td data-c="3"><a class="btn btn-line" style="color:#fff;border-color:rgba(255,255,255,.35)" href="#quote" data-pick="Rescue ฟื้นฟูรถลุยน้ำ / หลังน้ำท่วม">เลือกแพ็กนี้</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="tfoot-note rv">ราคา <b style="color:var(--teal2)">2,500.- เริ่มต้น</b> สำหรับซักเบาะซักพรมมาจากโพสต์ของร้าน (ก.ย. 2569) · ราคาตามขนาดรถอื่น, ราคา Level 1, เวลาทำงาน และรายการในตารางเป็นตัวอย่างสำหรับเดโม — ราคาจริงขึ้นกับสภาพรถ</p>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section id="result">
+  <div class="wrap ba-grid">
+    <div class="rv">
+      <div class="ba" id="ba">
+        <img src="assets/flood.jpg" alt="ก่อน: น้ำขังพื้นรถ">
+        <img class="after" id="baAfter" src="assets/cabin.jpg" alt="หลัง: ห้องโดยสารสะอาด">
+        <div class="hd" id="baHd"></div>
+        <span class="lb l">ก่อน · บ่อเลี้ยงปลา</span><span class="lb r">หลัง · สะอาดพร้อมใช้</span>
+      </div>
+    </div>
+    <div class="rv">
+      <div class="sh" style="margin-bottom:0">
+        <div class="over">Before / After</div>
+        <h2>ผลประกอบการของคำว่า <em>“เอาอยู่!!!”</em></h2>
+        <p>ลากเส้นกลางภาพเพื่อเทียบ จากพื้นรถที่น้ำขังจนเป็นบ่อ สู่ห้องโดยสารที่แห้ง สะอาด หอม พร้อมขับอีกครั้ง</p>
+      </div>
+      <div class="post">
+        <div class="ph"><img src="assets/logo.jpg" alt=""><div><b>ZEBRA Car &amp; Detailing</b><span>โพสต์บนเพจ · ก.ย. 2569</span></div></div>
+        <p>ซักเบาะซักพรม รับเข้าอีก 1 คันคร้าบบ<br>📩 สอบถามคิวซักเบาะซักพรม ทักแชตได้เลยครับ</p>
+        <div class="hash">#สปาภายในรถ #รถหลังน้ำท่วม #ทำความสะอาดรถ #รถลุยน้ำ</div>
+      </div>
+      <span class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>ภาพจริงจากคลิปบนเพจของร้าน (ภาพก่อน–หลังมาจากคนละคลิป จึงอาจไม่ใช่คันเดียวกัน) · เว็บจริงจะใช้คู่ภาพของคันเดียวกัน</span>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section id="steps" style="background:var(--cream2)">
+  <div class="wrap">
+    <div class="sh c rv">
+      <div class="over">Interior workflow</div>
+      <h2>สปาภายใน <em>6 ขั้นตอน</em> ที่ร้านม้าลาย</h2>
+      <p>ทำมือทุกขั้น ไม่รีบ ไม่ข้าม — ดูแลรถคุณเหมือนรถเรา</p>
+    </div>
+    <div class="rail">
+      <div class="stp rv"><h3>ประเมินสภาพร่วมกัน</h3><p>เปิดดูเบาะ พรม เพดาน และกลิ่นภายในพร้อมลูกค้า แจ้งราคาก่อนเริ่มงาน</p><div class="t"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~15 นาที</div></div>
+      <div class="stp rv"><h3>เก็บของ ดูดฝุ่นละเอียด</h3><p>ยกพรม ดูดฝุ่นทุกซอกใต้เบาะ ราวเบาะ และช่องเก็บของ</p><div class="t"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~45 นาที</div></div>
+      <div class="stp rv"><h3>ซักเบาะ ซักพรม</h3><p>ขจัดคราบสกปรกฝังลึก คราบเครื่องดื่ม และคราบโคลนจากรถลุยน้ำ</p><div class="t"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~3 ชม.</div></div>
+      <div class="stp rv"><h3>เช็ดคอนโซล แผงประตู</h3><p>ทำความสะอาดพลาสติก ช่องแอร์ พวงมาลัย เบรกมือ จุดที่มือจับบ่อย</p><div class="t"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~1 ชม.</div></div>
+      <div class="stp rv"><h3>อบแห้ง ลดกลิ่นอับ</h3><p>ไล่ความชื้นสะสมใต้พรมและในฟองน้ำเบาะ ต้นเหตุของกลิ่นอับ</p><div class="t"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>ตามความชื้น</div></div>
+      <div class="stp rv"><h3>ตรวจงาน ส่งมอบ</h3><p>ตรวจทุกจุดก่อนส่งรถคืน พร้อมแนะนำการดูแลห้องโดยสารต่อ</p><div class="t"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>~15 นาที</div></div>
+    </div>
+    <div style="text-align:center"><span class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>ขั้นตอนและเวลาเป็นตัวอย่างสำหรับเดโม — ใช้ขั้นตอนจริงของร้านในเว็บจริง</span></div>
+  </div>
+</section>
+
+<!-- QUOTE BUILDER -->
+<section id="quote">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="over">Request a quote</div>
+      <h2>เล่าอาการรถ แล้ว<em>ส่งให้แอดมิน</em>ในแชต</h2>
+      <p>ติ๊กเลือก ระบบจะเรียบเรียงข้อความให้ กดปุ่มเดียวคัดลอกแล้วเปิด Messenger ของร้าน วางข้อความ + แนบรูปภายในรถ แอดมินแจ้งราคาและคิวว่างให้</p>
+    </div>
+    <div class="qb">
+      <form class="qform rv" id="qf" onsubmit="return false">
+        <div class="qg"><div class="lbl">ขนาดรถ</div>
+          <div class="chips" id="qSize">
+            <label class="chip"><input type="radio" name="sz" value="รถเก๋ง / อีโคคาร์" data-k="1" checked><span>เก๋ง / อีโคคาร์</span></label>
+            <label class="chip"><input type="radio" name="sz" value="SUV / PPV" data-k="1.2"><span>SUV / PPV</span></label>
+            <label class="chip"><input type="radio" name="sz" value="กระบะ 4 ประตู" data-k="1.1"><span>กระบะ 4 ประตู</span></label>
+            <label class="chip"><input type="radio" name="sz" value="รถตู้" data-k="1.6"><span>รถตู้</span></label>
+          </div></div>
+        <div class="qg"><div class="lbl">แพ็กเกจที่สนใจ</div>
+          <div class="chips" id="qPk">
+            <label class="chip"><input type="radio" name="pk" value="Fresh ดูดฝุ่น เช็ดภายใน" data-b="590"><span>Fresh · ดูดฝุ่นเช็ดภายใน</span></label>
+            <label class="chip"><input type="radio" name="pk" value="Spa ซักเบาะ ซักพรม ฟื้นฟูภายใน" data-b="2500" checked><span>Spa · ซักเบาะซักพรม</span></label>
+            <label class="chip"><input type="radio" name="pk" value="Rescue ฟื้นฟูรถลุยน้ำ / หลังน้ำท่วม" data-b="0"><span>Rescue · รถลุยน้ำ</span></label>
+            <label class="chip"><input type="radio" name="pk" value="ยังไม่แน่ใจ ให้แอดมินแนะนำ" data-b="-1"><span>ให้แอดมินแนะนำ</span></label>
+          </div></div>
+        <div class="qg"><div class="lbl">อาการที่เจอ <small>(เลือกได้หลายข้อ)</small></div>
+          <div class="chips" id="qSym">
+            <label class="chip"><input type="checkbox" value="มีกลิ่นอับ"><span>มีกลิ่นอับ</span></label>
+            <label class="chip"><input type="checkbox" value="รถลุยน้ำ / น้ำเข้าพื้นรถ"><span>รถลุยน้ำ / น้ำเข้า</span></label>
+            <label class="chip"><input type="checkbox" value="คราบเครื่องดื่ม/อาหารบนเบาะ"><span>คราบกาแฟ / อาหาร</span></label>
+            <label class="chip"><input type="checkbox" value="ขนสัตว์เลี้ยง"><span>ขนสัตว์เลี้ยง</span></label>
+            <label class="chip"><input type="checkbox" value="เด็กเล็กทำเลอะ"><span>เด็กเล็กทำเลอะ</span></label>
+            <label class="chip"><input type="checkbox" value="เพดานเป็นคราบ"><span>เพดานเป็นคราบ</span></label>
+            <label class="chip"><input type="checkbox" value="ขึ้นรา / จุดดำ"><span>ขึ้นรา / จุดดำ</span></label>
+          </div></div>
+        <div class="qg"><div class="lbl">เบาะรถ</div>
+          <div class="chips" id="qSeat">
+            <label class="chip"><input type="radio" name="st" value="เบาะผ้า" checked><span>เบาะผ้า</span></label>
+            <label class="chip"><input type="radio" name="st" value="เบาะหนัง"><span>เบาะหนัง</span></label>
+            <label class="chip"><input type="radio" name="st" value="ไม่แน่ใจ"><span>ไม่แน่ใจ</span></label>
+          </div></div>
+        <div class="qrow">
+          <div class="qg"><label for="qCar">รุ่นรถ</label><input type="text" id="qCar" placeholder="เช่น Honda HR-V สีขาว"></div>
+          <div class="qg"><label for="qDate">วันที่สะดวกนำรถเข้า</label><input type="date" id="qDate"></div>
+        </div>
+        <div class="qg" style="margin-bottom:0"><label for="qName">ชื่อเล่น (ไม่บังคับ)</label><input type="text" id="qName" placeholder="เช่น ต้น"></div>
+      </form>
+      <div class="chat rv">
+        <div class="top"><img src="assets/logo.jpg" alt=""><div><b>ZEBRA Car &amp; Detailing</b><span>● ตอบแชตในเวลาทำการ 09:00–19:00</span></div></div>
+        <div class="bubbles">
+          <div class="bub them">สวัสดีครับ ม้าลายคาร์แคร์ยินดีให้บริการ 🦓 ส่งรายละเอียดรถมาได้เลยครับ</div>
+          <div class="bub me" id="msg"></div>
+        </div>
+        <div class="est"><span id="estLbl">ราคาประเมินเบื้องต้น<br>(ตัวอย่าง · ยืนยันโดยร้าน)</span><b id="est">2,500.-</b></div>
+        <button class="btn btn-teal" id="send"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.6c0 2.9 1.2 5.4 3.2 7.1V22l2.9-1.6c1.2.3 2.5.5 3.9.5 5.6 0 10-4.1 10-9.4S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.5 5.8z"/></svg>คัดลอก &amp; เปิด Messenger</button>
+        <div class="sub">ข้อความจะถูกคัดลอกไว้ — วางในแชตของเพจ แล้วแนบรูปภายในรถ 2–3 รูป</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS + FAQ -->
+<section style="background:var(--cream2)" id="faq">
+  <div class="wrap rf">
+    <div class="rv">
+      <div class="sh" style="margin-bottom:26px"><div class="over">Reviews</div><h2>เสียงจาก<em>ลูกค้า</em></h2></div>
+      <div class="score"><div class="big">100%</div><div><b>แนะนำ ZEBRA Car &amp; Detailing</b><span>จาก 18 รีวิวบน Facebook</span></div></div>
+      <div class="rev"><div class="st">★★★★★</div><p>“รถลุยน้ำตอนฝนตกหนัก พรมชื้นกลิ่นแรงมาก ส่งซักเบาะซักพรม รับรถคืนแห้งสนิท กลิ่นหายเลยค่ะ”</p><div class="who"><b>คุณนภา</b> · Spa ซักเบาะซักพรม</div></div>
+      <div class="rev"><div class="st">★★★★★</div><p>“มีลูกเล็กกับน้องหมา เบาะเลอะทุกเดือน ทีมงานใส่ใจทุกซอก ส่งรูปก่อนทำให้ดูด้วย ประทับใจครับ”</p><div class="who"><b>คุณเอก</b> · SUV 7 ที่นั่ง</div></div>
+      <div class="rev"><div class="st">★★★★★</div><p>“ร้านอยู่ติวานนท์ เดินทางง่าย ทักแชตไปตอนเช้า ได้คิววันถัดไปเลย”</p><div class="who"><b>คุณพลอย</b> · Fresh ดูดฝุ่นเช็ดภายใน</div></div>
+      <span class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>คะแนน 100% (18 รีวิว) มาจากเพจจริง · ข้อความรีวิวเป็นตัวอย่างสำหรับเดโม</span>
+    </div>
+    <div class="rv">
+      <div class="sh" style="margin-bottom:26px"><div class="over">FAQ</div><h2>คำถาม <em>ที่ลูกค้าถามบ่อย</em></h2></div>
+      <details open><summary>ซักเบาะซักพรมราคาเท่าไหร่?</summary><div class="a">ราคาเริ่มต้น 2,500 บาท (จากโพสต์ของร้าน) ราคาสุดท้ายขึ้นกับขนาดรถและสภาพภายใน ส่งรูปให้แอดมินประเมินก่อนได้ฟรีครับ</div></details>
+      <details><summary>รถลุยน้ำ / รถหลังน้ำท่วม รับไหม?</summary><div class="a">รับครับ ร้านทำงานรถลุยน้ำมาแล้วหลายคัน — ยิ่งนำเข้าเร็วยิ่งดี อย่ารอให้มีกลิ่นอับหรือความชื้นสะสมใต้พรม</div></details>
+      <details><summary>ต้องทิ้งรถไว้กี่วัน?</summary><div class="a">งานซักเบาะซักพรมทั่วไปประมาณ 1 วัน งานรถลุยน้ำต้องอบแห้งนานกว่า แอดมินจะแจ้งเวลาให้ตอนนัดคิว <span class="demotag">ตัวอย่าง</span></div></details>
+      <details><summary>เบาะหนังซักได้ไหม?</summary><div class="a">เบาะหนังใช้วิธีทำความสะอาดและบำรุงเฉพาะสำหรับหนัง ไม่ได้ซักแบบเบาะผ้า แจ้งชนิดเบาะในแชตได้เลยครับ <span class="demotag">ตัวอย่าง</span></div></details>
+      <details><summary>จองคิวยังไง?</summary><div class="a">ทักแชตเพจ ZEBRA Car &amp; Detailing ส่งรุ่นรถ + รูปภายใน แอดมินแจ้งราคาและคิวว่าง ใช้ตัวช่วยเรียบเรียงข้อความด้านบนได้เลย</div></details>
+      <details><summary>ทำภายนอกไปพร้อมกันได้ไหม?</summary><div class="a">ได้ครับ ร้านมีล้างพรีเมี่ยม Ultra Smooth (โปรเริ่มต้น 200.-), ขัดสีลบรอย, เคลือบแก้วเซรามิค/กราฟีน และฟิล์มกรองแสง สอบถามจัดชุดในแชตได้</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section id="visit">
+  <div class="wrap">
+    <div class="ct rv">
+      <div class="ct-l">
+        <div class="over">Visit us</div>
+        <h2>นำรถเข้ามา <em>ให้เราดูแลภายใน</em></h2>
+        <p class="in">ร้านอยู่ในซอยสมเอก ถ.ติวานนท์ ปากเกร็ด — ทักแชตนัดคิวก่อนเข้าได้เลยครับ 📩</p>
+        <div class="crow"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><div><div class="k">ที่อยู่</div><div class="v">52/30 หมู่ 8 ซอยสมเอก ถ.ติวานนท์<br>ต.บางพูด อ.ปากเกร็ด จ.นนทบุรี 11120</div></div></div>
+        <div class="crow"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><div class="k">เวลาทำการ</div><div class="v"><span id="openNow">เปิดทุกวัน 09:00–19:00 น.</span><small>วันหยุดพิเศษ ร้านประกาศทางเพจล่วงหน้า</small></div></div></div>
+        <div class="crow"><div class="ic"><svg viewBox="0 0 24 24"><path d="M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div><div><div class="k">Facebook</div><div class="v"><a href="https://www.facebook.com/zebracarcare" target="_blank" rel="noopener">ZEBRA Car &amp; Detailing</a></div></div></div>
+        <div class="crow"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><div class="k">อีเมล</div><div class="v"><a href="mailto:info.zebracarcare@gmail.com">info.zebracarcare@gmail.com</a></div></div></div>
+        <div class="ct-btns">
+          <a class="btn btn-teal" href="https://m.me/zebracarcare" target="_blank" rel="noopener">ทักแชตจองคิว</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/dir/?api=1&destination=13.923021,100.519931" target="_blank" rel="noopener">นำทาง Google Maps</a>
+        </div>
+      </div>
+      <div class="ct-r">
+        <iframe title="แผนที่ ZEBRA Car & Detailing" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=13.923021,100.519931&z=16&output=embed"></iframe>
+        <div class="shopimg"><img src="assets/shop-rain.jpg" alt="หน้าร้าน ZEBRA ช่วงฝนตก"><span>หน้าร้านวันฝนตก · ภาพจากคลิปของร้าน</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="brand"><img src="assets/logo.jpg" alt=""><div><div class="t1">ZEBRA <span>CAR</span></div><div class="t2">ดูแลรถคุณเหมือนรถเรา</div></div></a>
+    <div class="demo">© 2569 ZEBRA Car &amp; Detailing ศูนย์เคลือบแก้วเซรามิคและฟิล์มกรองแสง นนทบุรี<br>หน้าแคมเปญตัวอย่าง (เดโม) จัดทำเพื่อนำเสนอ — ราคา/รีวิว/ขั้นตอนที่ระบุว่าเป็นตัวอย่าง ไม่ใช่ข้อมูลจริงของร้าน</div>
+  </div>
+</footer>
+
+<a class="fab-top" id="fabTop" href="#compare">Spa ซักเบาะซักพรม <b>เริ่ม 2,500.-</b></a>
+<a class="fab" href="https://m.me/zebracarcare" target="_blank" rel="noopener" aria-label="ทักแชตจองคิว">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.6c0 2.9 1.2 5.4 3.2 7.1V22l2.9-1.6c1.2.3 2.5.5 3.9.5 5.6 0 10-4.1 10-9.4S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.5 5.8z"/></svg><span>ทักแชตจองคิว</span>
+</a>
+<div class="toast" id="toast">คัดลอกข้อความแล้ว — วางในแชตของเพจได้เลย</div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const fmt=n=>n.toLocaleString('en-US');
+const round=n=>Math.round(n/100)*100-10*(n>=1000?0:1);
+
+// menu
+$('#burger').onclick=()=>$('#mnav').classList.toggle('on');
+$$('#mnav a').forEach(a=>a.onclick=()=>$('#mnav').classList.remove('on'));
+
+// open now
+(function(){
+  const now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Bangkok'}));
+  const h=now.getHours()+now.getMinutes()/60;
+  $('#openNow').textContent=(h>=9&&h<19)?'เปิดอยู่ตอนนี้ · ถึง 19:00 น.':'ปิดแล้วตอนนี้ · เปิดทุกวัน 09:00 น.';
+})();
+
+// cabin zones
+const Z={
+ 1:{s:'คอนโซลหน้า',t:'คอนโซลหน้า & แผงหน้าปัด',p:'จุดที่ฝุ่นเกาะและมือจับบ่อยที่สุด',w:['เช็ดแผงหน้าปัด คอนโซลกลาง พวงมาลัย','แปรงฝุ่นในช่องแอร์และร่องปุ่มต่างๆ','เช็ดกระจกหน้าด้านใน ลดฝ้ามัว'],inc:[1,1,1]},
+ 2:{s:'เบาะหน้า',t:'เบาะหน้า คนขับ & ผู้โดยสาร',p:'คราบเหงื่อ เครื่องดื่ม ฝังลึกในเนื้อผ้า',w:['ดูดฝุ่นตามตะเข็บและร่องเบาะ','ซักเบาะผ้า / ทำความสะอาดเบาะหนัง','ขจัดคราบกาแฟ น้ำหวาน คราบเหงื่อ'],inc:[0,1,1]},
+ 3:{s:'คอนโซลกลาง',t:'คอนโซลกลาง & ช่องเก็บของ',p:'ซอกเล็กที่เศษอาหารชอบหล่น',w:['ดูดเศษใต้เบรกมือ ข้างเบาะ ช่องวางแก้ว','เช็ดที่วางแขนและช่องเก็บของ','ทำความสะอาดคันเกียร์ ปุ่มกด'],inc:[1,1,1]},
+ 4:{s:'พรมพื้น',t:'พรมพื้น & ใต้เบาะ',p:'จุดสะสมน้ำและความชื้น ต้นเหตุกลิ่นอับ',w:['ยกพรม ดูดฝุ่น ทราย เศษดินใต้เบาะ','ซักพรมพื้นและผ้ายาง','ไล่ความชื้นใต้พรม (รถลุยน้ำต้องอบแห้งเพิ่ม)'],inc:[0,1,1]},
+ 5:{s:'เบาะหลัง',t:'เบาะหลัง',p:'โซนเด็กเล็กและสัตว์เลี้ยง',w:['ดูดขนสัตว์ เศษขนม ตามร่องเบาะ','ซักเบาะ ขจัดคราบเลอะ','ทำความสะอาดหลังเบาะหน้า ที่เด็กชอบเตะ'],inc:[0,1,1]},
+ 6:{s:'แผงประตู',t:'แผงประตูทั้ง 4 บาน',p:'ฝุ่นและคราบมือรอบมือจับ',w:['เช็ดแผงประตู มือจับ ช่องใส่ขวดน้ำ','ทำความสะอาดยางขอบประตู','เช็ดกระจกข้างด้านใน'],inc:[1,1,1]},
+ 7:{s:'ท้ายรถ',t:'ท้ายรถ & พรมท้าย',p:'ที่เก็บของ รองเท้า อุปกรณ์เปียกๆ',w:['ดูดฝุ่นและซักพรมท้ายรถ','เช็ดขอบท้าย ซุ้มเก็บยางอะไหล่','ตรวจน้ำขังใต้พื้นท้าย (รถลุยน้ำ)'],inc:[0,1,1]},
+ 8:{s:'ผ้าเพดาน',t:'ผ้าเพดาน',p:'คราบควัน คราบมือ และกลิ่นสะสม',w:['ซักผ้าเพดานอย่างระวัง ไม่ให้กาวหลุด','ลดคราบเหลืองและกลิ่นสะสม','ประเมินตามสภาพก่อนทำ'],inc:[0,2,1]}
+};
+const tierN=['Fresh','Spa','Rescue'];
+const ck='<svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>';
+$('#zlist').innerHTML=Object.keys(Z).map(k=>`<button class="zbtn" data-z="${k}"><b>${k}</b>${Z[k].s}</button>`).join('');
+function showZ(k){
+  const z=Z[k];
+  $$('.hs,.zbtn').forEach(b=>b.classList.toggle('on',b.dataset.z==k));
+  $$('.zone').forEach(r=>r.classList.toggle('on',r.dataset.z==k));
+  const c=$('#zcard');
+  c.innerHTML=`<div class="zn">0${k}</div><h3>${z.t}</h3><p class="zp">${z.p}</p><ul>${z.w.map(x=>`<li>${ck}${x}</li>`).join('')}</ul>
+  <div class="inc">อยู่ในแพ็กเกจ: ${z.inc.map((v,i)=>`<span class="${v?'':'no'}">${tierN[i]}${v==2?' (ตามสภาพ)':''}</span>`).join('')}</div>`;
+  c.classList.remove('fadein');void c.offsetWidth;c.classList.add('fadein');
+}
+$$('.hs,.zbtn').forEach(b=>b.addEventListener('click',()=>showZ(b.dataset.z)));
+showZ(2);
+
+// size toggle (sample multipliers)
+let K=1;
+$$('.size').forEach(b=>b.onclick=()=>{
+  $$('.size').forEach(x=>x.classList.toggle('on',x===b));
+  K=+b.dataset.k;$('#sizeName').textContent='ราคาสำหรับ: '+b.dataset.n;
+  $$('[data-p]').forEach(s=>s.textContent=fmt(K===1?+s.dataset.p:round(+s.dataset.p*K)));
+  $('#realTg').innerHTML=K===1?'<span class="realtag">ราคาจากโพสต์ ก.ย. 69</span>':'<span class="demotag">ราคาตัวอย่างตามขนาดรถ</span>';
+});
+// mobile tier tabs
+$$('.ttab').forEach(b=>b.onclick=()=>{$$('.ttab').forEach(x=>x.classList.toggle('on',x===b));$('#cmp').dataset.show=b.dataset.c;});
+// pick from table → quote
+$$('[data-pick]').forEach(a=>a.addEventListener('click',()=>{
+  const r=$$('#qPk input').find(i=>i.value===a.dataset.pick);if(r){r.checked=true;}
+  const s=$$('#qSize input').find(i=>+i.dataset.k===K);if(s)s.checked=true;build();
+}));
+
+// before/after
+(function(){
+  const ba=$('#ba'),af=$('#baAfter'),hd=$('#baHd');let d=false;
+  const set=x=>{const r=ba.getBoundingClientRect();const p=Math.min(Math.max((x-r.left)/r.width,.03),.97)*100;af.style.clipPath=`inset(0 0 0 ${p}%)`;hd.style.left=p+'%';};
+  ba.addEventListener('pointerdown',e=>{d=true;ba.setPointerCapture(e.pointerId);set(e.clientX)});
+  ba.addEventListener('pointermove',e=>{if(d)set(e.clientX)});
+  ba.addEventListener('pointerup',()=>d=false);
+})();
+
+// quote builder
+function build(){
+  const sz=$('#qSize input:checked'),pk=$('#qPk input:checked'),st=$('#qSeat input:checked');
+  const sym=$$('#qSym input:checked').map(i=>i.value);
+  const car=$('#qCar').value.trim(),dt=$('#qDate').value,nm=$('#qName').value.trim();
+  let d='';if(dt){const x=new Date(dt+'T00:00');d=x.toLocaleDateString('th-TH',{weekday:'short',day:'numeric',month:'short',year:'2-digit'});}
+  const lines=[`สวัสดีครับ/ค่ะ${nm?' '+nm+' นะคะ/ครับ':''} สนใจบริการดูแลภายในรถ`,
+   `🚗 รถ: ${car||'(ระบุรุ่นรถ)'} · ${sz.value}`,
+   `🧽 แพ็กเกจ: ${pk.value}`,
+   `💺 เบาะ: ${st.value}`];
+  if(sym.length)lines.push('⚠️ อาการ: '+sym.join(', '));
+  lines.push(`📅 สะดวกนำรถเข้า: ${d||'ขอดูคิวว่างก่อน'}`,'จะแนบรูปภายในรถให้ดูครับ/ค่ะ 🙏');
+  $('#msg').textContent=lines.join('\n');
+  const b=+pk.dataset.b,k=+sz.dataset.k;
+  if(b>0){$('#est').textContent=(b===2500&&k===1?'2,500':fmt(round(b*k)))+'.-';$('#estLbl').innerHTML=(b===2500&&k===1?'ราคาเริ่มต้นจากโพสต์ของร้าน':'ราคาประเมินเบื้องต้น<br>(ตัวอย่าง · ยืนยันโดยร้าน)');}
+  else{$('#est').textContent=b===0?'ประเมินจากรูป':'แอดมินแนะนำ';$('#estLbl').innerHTML='ส่งรูปให้แอดมินประเมิน<br>ฟรี ไม่มีค่าใช้จ่าย';}
+  return lines.join('\n');
+}
+$('#qf').addEventListener('input',build);$('#qf').addEventListener('change',build);build();
+$('#send').onclick=()=>{
+  const t=build();
+  const done=()=>{const s=$('#toast');s.classList.add('on');setTimeout(()=>s.classList.remove('on'),2600);window.open('https://m.me/zebracarcare','_blank','noopener');};
+  if(navigator.clipboard)navigator.clipboard.writeText(t).then(done,done);else{const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();done();}
+};
+
+// sticky price pill
+const ft=$('#fabTop');addEventListener('scroll',()=>ft.classList.toggle('on',scrollY>700&&scrollY<document.body.scrollHeight-1800),{passive:true});
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+$$('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+</script>
+</body>
+</html>
