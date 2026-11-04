@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neat &amp; Tidy Cleaning Service | Big Cleaning ซักที่นอน ซักโซฟา กรุงเทพฯ–ปริมณฑล</title>
+<meta name="description" content="Neat & Tidy Cleaning Service รับทำความสะอาดบ้าน คอนโด Big Cleaning ซักที่นอน ซักโซฟา ถึงบ้านคุณ กรุงเทพฯ และปริมณฑล ส่งรูปมาประเมินราคาได้เลย โทร 086-870-1725">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B2545; --ink2:#13315C; --ink3:#1F4372;
+  --aqua:#16C2C2; --aqua2:#7DE3DE; --aquad:#0E9A9F;
+  --mint:#E8FAF7; --mint2:#D2F4EE; --foam:#F6FDFC;
+  --coral:#FF6F59; --coral2:#FF8E7C;
+  --sun:#FFD166; --line:#06C755; --w:#fff;
+  --muted:#5A6B82;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:22px;
+  --shadow:0 18px 40px -18px rgba(11,37,69,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--foam);line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.head{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1200px,92%);margin:0 auto}
+
+/* sparkle shape */
+.spk{display:inline-block;width:1em;height:1em;background:currentColor;clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+
+/* top bar */
+.topbar{background:var(--ink);color:#cfe3f3;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:8px 0;flex-wrap:wrap}
+.topbar b{color:var(--aqua2)}
+.topbar .spk{color:var(--sun);width:12px;height:12px;margin-right:6px;vertical-align:-1px}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(11,37,69,.08)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:52px;height:52px;flex:0 0 52px}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:23px;line-height:1;letter-spacing:-.3px}
+.brand .t1 span{color:var(--aqua)}
+.brand .t2{font-size:11.5px;font-weight:700;letter-spacing:2.6px;color:var(--muted);margin-top:4px}
+.menu{display:flex;gap:28px;font-family:var(--head);font-weight:600;font-size:15.5px}
+.menu a{position:relative;padding:4px 0;color:var(--ink2)}
+.menu a::after{content:"";position:absolute;left:50%;bottom:-3px;height:3px;width:0;border-radius:3px;background:var(--aqua);transition:.25s;transform:translateX(-50%)}
+.menu a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:800;border:0;border-radius:999px;padding:14px 26px;cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s;white-space:nowrap;font-size:16px}
+.btn svg{width:20px;height:20px;flex:0 0 20px}
+.btn:hover{transform:translateY(-3px)}
+.btn-coral{background:var(--coral);color:#fff;box-shadow:0 12px 24px -10px rgba(255,111,89,.8)}
+.btn-coral:hover{box-shadow:0 18px 30px -12px rgba(255,111,89,.9)}
+.btn-ink{background:var(--ink);color:#fff;box-shadow:0 12px 24px -12px rgba(11,37,69,.7)}
+.btn-ghost{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px rgba(11,37,69,.14)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 2px var(--aqua)}
+.burger{display:none;background:none;border:0;cursor:pointer}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:72px 0 110px;background:
+  radial-gradient(900px 500px at 85% 10%,rgba(22,194,194,.22),transparent 60%),
+  radial-gradient(700px 500px at 0% 100%,rgba(125,227,222,.35),transparent 60%),
+  linear-gradient(180deg,#fff, var(--mint))}
+.bubbles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.bubbles i{position:absolute;bottom:-80px;border-radius:50%;
+  background:radial-gradient(circle at 30% 28%,rgba(255,255,255,.95) 0 12%,rgba(255,255,255,.25) 13% 45%,rgba(22,194,194,.16) 70%,rgba(22,194,194,.35) 100%);
+  box-shadow:inset 0 0 0 1px rgba(22,194,194,.3);animation:rise linear infinite}
+@keyframes rise{0%{transform:translate(0,0) scale(.7);opacity:0}10%{opacity:1}100%{transform:translate(40px,-110vh) scale(1.1);opacity:0}}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--ink2);font-family:var(--head);font-weight:700;padding:8px 18px 8px 10px;border-radius:999px;font-size:14.5px;box-shadow:var(--shadow)}
+.tag .pin{width:28px;height:28px;border-radius:50%;background:var(--aqua);display:grid;place-items:center;color:#fff}
+.tag .pin svg{width:16px;height:16px}
+.hero h1{font-size:clamp(40px,5.6vw,74px);font-weight:900;margin:24px 0 18px;letter-spacing:-.5px;line-height:1.18}
+.hero h1 .wipe{position:relative;display:inline-block;color:var(--aquad);padding:0 .08em}
+.hero h1 .wipe::before{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.36em;border-radius:.2em;background:linear-gradient(90deg,rgba(22,194,194,.28),rgba(125,227,222,.5));z-index:-1;transform-origin:left;animation:wipe 1.1s .5s cubic-bezier(.7,0,.2,1) both}
+@keyframes wipe{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero h1 .spk{color:var(--sun);width:.42em;height:.42em;position:absolute;top:-.1em;right:-.28em;animation:twinkle 2.4s ease-in-out infinite}
+@keyframes twinkle{50%{transform:scale(.55) rotate(45deg);opacity:.6}}
+.hero p.lead{font-size:20px;color:var(--muted);max-width:560px}
+.hero p.lead b{color:var(--ink)}
+.cta-row{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.chips span{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.75);border:1px solid rgba(11,37,69,.08);border-radius:14px;padding:8px 14px;font-weight:600;font-size:15px}
+.chips span::before{content:"";width:18px;height:18px;border-radius:50%;background:var(--aqua) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat}
+
+.hero-art{position:relative;max-width:540px;width:100%;justify-self:center}
+.blob{position:relative;border-radius:46% 54% 44% 56% / 52% 44% 56% 48%;overflow:hidden;aspect-ratio:1/1.02;box-shadow:0 40px 80px -30px rgba(11,37,69,.45);border:10px solid #fff;animation:morph 14s ease-in-out infinite}
+@keyframes morph{50%{border-radius:56% 44% 54% 46% / 44% 56% 46% 54%}}
+.blob img{width:100%;height:100%;object-fit:cover}
+.blob .half{position:absolute;inset:0;clip-path:inset(0 52% 0 0);}
+.blob .half img{filter:sepia(.55) saturate(.6) brightness(.78) contrast(.95)}
+.blob .half::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(60px 36px at 22% 64%,rgba(92,64,30,.45),transparent 70%),
+  radial-gradient(90px 50px at 34% 72%,rgba(92,64,30,.35),transparent 70%),
+  radial-gradient(50px 40px at 12% 40%,rgba(92,64,30,.3),transparent 70%);mix-blend-mode:multiply}
+.blob .seam{position:absolute;top:0;bottom:0;left:48%;width:4px;background:#fff;box-shadow:0 0 18px rgba(255,255,255,.9)}
+.blob .seam::after{content:"";position:absolute;top:50%;left:50%;width:46px;height:46px;border-radius:50%;transform:translate(-50%,-50%);background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230B2545' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 6l-5 6 5 6M15 6l5 6-5 6'/%3E%3C/svg%3E") center/22px no-repeat;box-shadow:var(--shadow)}
+.lbl{position:absolute;top:22px;font-family:var(--head);font-weight:800;font-size:13px;letter-spacing:1px;padding:5px 12px;border-radius:999px}
+.lbl.b{left:44px;background:rgba(11,37,69,.75);color:#fff}
+.lbl.a{right:44px;background:#fff;color:var(--aquad)}
+.float{position:absolute;background:#fff;border-radius:18px;padding:12px 16px;box-shadow:var(--shadow);font-family:var(--head);font-weight:800;font-size:15px;line-height:1.3;display:flex;gap:10px;align-items:center}
+.float small{display:block;font-family:var(--body);font-weight:500;font-size:12.5px;color:var(--muted)}
+.float .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;flex:0 0 40px}
+.float .ic svg{width:22px;height:22px}
+.f1{top:6%;left:-8%;animation:bob 5s ease-in-out infinite}
+.f1 .ic{background:var(--mint2);color:var(--aquad)}
+.f2{bottom:8%;right:-6%;animation:bob 5.6s ease-in-out infinite .8s}
+.f2 .ic{background:#FFE8E4;color:var(--coral)}
+@keyframes bob{50%{translate:0 -10px}}
+.hero-wave{position:absolute;left:0;right:0;bottom:-1px;height:80px;color:#fff}
+.hero-wave svg{width:100%;height:100%;display:block}
+
+/* marquee */
+.marquee{background:#fff;overflow:hidden;padding:8px 0 26px}
+.track{display:flex;gap:40px;width:max-content;animation:slide 40s linear infinite;font-family:var(--head);font-weight:800;font-size:22px;color:var(--ink3)}
+.track span{display:flex;align-items:center}
+.track span::after{content:"";margin-left:40px;width:18px;height:18px;background:var(--aqua);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+.track em{font-style:normal;color:var(--aquad)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:100px 0;position:relative}
+.sec-head{text-align:center;max-width:780px;margin:0 auto 56px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:800;font-size:14px;letter-spacing:.3px;color:var(--aquad);background:var(--mint2);padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.eyebrow .spk{width:12px;height:12px}
+.sec-head h2{font-size:clamp(30px,4.2vw,50px);font-weight:900;letter-spacing:-.3px}
+.sec-head h2 em{font-style:normal;color:var(--aquad)}
+.sec-head p{margin-top:14px;color:var(--muted);font-size:18px}
+.note{text-align:center;color:#8494a8;font-size:13px;margin-top:24px}
+.note b{color:var(--coral)}
+
+/* services split */
+.services{background:#fff}
+.svc-tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:40px}
+.svc-tabs a{font-family:var(--head);font-weight:700;font-size:15px;padding:10px 20px;border-radius:999px;background:var(--mint);color:var(--ink2);transition:.2s}
+.svc-tabs a:hover{background:var(--aqua);color:#fff}
+.svc-row{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:40px 0;scroll-margin-top:100px}
+.svc-row + .svc-row{border-top:1px dashed rgba(11,37,69,.14)}
+.svc-row.flip .svc-pic{order:2}
+.svc-pic{position:relative}
+.svc-pic .ph{border-radius:28px;overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow)}
+.svc-pic .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.svc-row:hover .ph img{transform:scale(1.04)}
+.svc-pic .num{position:absolute;z-index:2;top:-26px;left:-14px;font-family:var(--head);font-weight:900;font-size:96px;line-height:1;color:transparent;-webkit-text-stroke:2px var(--aqua);opacity:.9}
+.svc-row.flip .svc-pic .num{left:auto;right:-14px}
+.svc-pic .price{position:absolute;bottom:-22px;right:24px;background:var(--ink);color:#fff;border-radius:18px;padding:12px 20px;font-family:var(--head);box-shadow:var(--shadow)}
+.svc-row.flip .svc-pic .price{right:auto;left:24px}
+.svc-pic .price small{display:block;font-family:var(--body);font-size:12px;color:#9fb6d0}
+.svc-pic .price b{font-size:26px;color:var(--aqua2)}
+.svc-pic .price i{font-style:normal;font-size:11px;color:var(--sun);display:block}
+.svc-txt .kicker{font-family:var(--head);font-weight:700;color:var(--coral);font-size:15px;letter-spacing:.5px}
+.svc-txt h3{font-size:clamp(28px,3.2vw,40px);font-weight:900;margin:6px 0 12px}
+.svc-txt p{color:var(--muted);font-size:17.5px}
+.ticks{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:22px 0 26px}
+.ticks li{display:flex;gap:10px;align-items:flex-start;font-size:16px;font-weight:500}
+.ticks li::before{content:"";flex:0 0 22px;height:22px;margin-top:2px;border-radius:50%;background:var(--mint2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230E9A9F' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/13px no-repeat}
+.svc-txt .mini{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:800;color:var(--ink);border-bottom:3px solid var(--aqua);padding-bottom:2px}
+.svc-txt .mini::after{content:"→";transition:.2s}
+.svc-txt .mini:hover::after{transform:translateX(6px)}
+
+/* before / after */
+.ba{background:var(--ink);color:#fff;overflow:hidden}
+.ba::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 400px at 90% 0%,rgba(22,194,194,.25),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(255,111,89,.12),transparent 60%)}
+.ba .wrap{position:relative}
+.ba .sec-head p{color:#a9bdd6}
+.ba .eyebrow{background:rgba(22,194,194,.16);color:var(--aqua2)}
+.ba .sec-head h2 em{color:var(--aqua2)}
+.ba-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:28px;flex-wrap:wrap}
+.ba-tabs button{font-family:var(--head);font-weight:700;font-size:15.5px;padding:10px 22px;border-radius:999px;border:1.5px solid rgba(255,255,255,.22);background:transparent;color:#d8e6f5;cursor:pointer;transition:.2s}
+.ba-tabs button.on{background:var(--aqua);border-color:var(--aqua);color:var(--ink)}
+.compare{position:relative;max-width:980px;margin:0 auto;aspect-ratio:16/9;border-radius:28px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.6);user-select:none;--p:50%;touch-action:pan-y}
+.compare .lay{position:absolute;inset:0}
+.compare img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.compare .before{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.compare .before img{filter:sepia(.6) saturate(.55) brightness(.72) contrast(.92) hue-rotate(-8deg)}
+.dirt{position:absolute;inset:0;mix-blend-mode:multiply;pointer-events:none}
+.dirt::before{content:"";position:absolute;inset:0;opacity:.8;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .27 0 0 0 0 .15 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.dirt.sofa{background:
+  radial-gradient(9% 7% at 38% 58%,rgba(90,58,24,0.75),transparent 72%),
+  radial-gradient(6% 5% at 44% 63%,rgba(90,58,24,0.65),transparent 72%),
+  radial-gradient(10% 6% at 62% 55%,rgba(70,45,20,0.70),transparent 72%),
+  radial-gradient(14% 6% at 50% 72%,rgba(60,40,20,0.55),transparent 72%),
+  radial-gradient(5% 4% at 30% 70%,rgba(90,58,24,0.70),transparent 72%)}
+.dirt.bed{background:
+  radial-gradient(9% 7% at 40% 66%,rgba(140,105,40,0.75),transparent 72%),
+  radial-gradient(13% 8% at 55% 70%,rgba(120,90,40,0.65),transparent 72%),
+  radial-gradient(7% 5% at 66% 62%,rgba(110,80,35,0.70),transparent 72%),
+  radial-gradient(18% 9% at 50% 82%,rgba(80,60,30,0.55),transparent 72%),
+  radial-gradient(6% 5% at 46% 46%,rgba(110,80,35,0.60),transparent 72%)}
+.dirt.home{background:
+  radial-gradient(12% 8% at 30% 72%,rgba(80,60,30,0.70),transparent 72%),
+  radial-gradient(8% 6% at 55% 64%,rgba(100,70,30,0.70),transparent 72%),
+  radial-gradient(20% 10% at 70% 80%,rgba(70,50,25,0.60),transparent 72%),
+  radial-gradient(10% 18% at 15% 30%,rgba(70,50,25,0.55),transparent 72%),
+  radial-gradient(7% 5% at 80% 40%,rgba(100,70,30,0.65),transparent 72%)}
+.compare .handle{position:absolute;top:0;bottom:0;left:var(--p);width:4px;margin-left:-2px;background:#fff;box-shadow:0 0 20px rgba(255,255,255,.8);pointer-events:none}
+.compare .knob{position:absolute;top:50%;left:50%;width:62px;height:62px;border-radius:50%;transform:translate(-50%,-50%);background:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.compare .knob svg{width:30px;height:30px}
+.compare .knob::before{content:"";position:absolute;inset:-8px;border-radius:50%;border:2px solid rgba(255,255,255,.6);animation:pulse 2s infinite}
+@keyframes pulse{to{inset:-22px;opacity:0}}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.compare .tagb,.compare .taga{position:absolute;top:20px;font-family:var(--head);font-weight:800;font-size:14px;letter-spacing:1px;padding:7px 16px;border-radius:999px;pointer-events:none}
+.compare .tagb{left:20px;background:rgba(11,37,69,.78);color:#fff}
+.compare .taga{right:20px;background:#fff;color:var(--aquad)}
+.compare .cap{position:absolute;left:20px;bottom:20px;right:20px;display:flex;justify-content:space-between;gap:10px;pointer-events:none;flex-wrap:wrap}
+.compare .cap span{background:rgba(255,255,255,.92);color:var(--ink);border-radius:12px;padding:8px 14px;font-family:var(--head);font-weight:700;font-size:14px}
+.ba .note{color:#8ea6c2}
+
+/* LINE quote flow */
+.quote{background:linear-gradient(180deg,#fff,var(--mint))}
+.quote .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.quote h2{font-size:clamp(30px,4vw,48px);font-weight:900}
+.quote h2 em{font-style:normal;color:var(--line)}
+.quote .lead{color:var(--muted);font-size:18px;margin-top:14px}
+.steps{list-style:none;margin:30px 0 32px;display:grid;gap:14px;counter-reset:s}
+.steps li{display:flex;gap:16px;align-items:flex-start;background:#fff;border-radius:18px;padding:16px 18px;box-shadow:0 10px 30px -20px rgba(11,37,69,.4)}
+.steps li::before{counter-increment:s;content:counter(s);flex:0 0 44px;height:44px;border-radius:14px;background:var(--aqua);color:#fff;font-family:var(--head);font-weight:900;font-size:20px;display:grid;place-items:center}
+.steps li:nth-child(2)::before{background:var(--ink3)}
+.steps li:nth-child(3)::before{background:var(--coral)}
+.steps li:nth-child(4)::before{background:var(--line)}
+.steps b{font-family:var(--head);display:block;font-size:17.5px}
+.steps span{color:var(--muted);font-size:15.5px}
+.pending{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:13.5px;color:#8a5a00;background:#FFF6DD;border:1px dashed #E8B84A;border-radius:12px;padding:10px 14px;max-width:560px}
+.pending b{font-family:var(--head)}
+
+.phone{position:relative;width:min(340px,100%);margin:0 auto;background:var(--ink);border-radius:46px;padding:14px;box-shadow:0 50px 80px -30px rgba(11,37,69,.6)}
+.phone::before{content:"";position:absolute;top:22px;left:50%;width:90px;height:22px;border-radius:999px;background:#000;transform:translateX(-50%);z-index:2}
+.screen{background:#8CABD9;border-radius:34px;overflow:hidden;min-height:600px;display:flex;flex-direction:column}
+.chat-top{background:#2B3A55;color:#fff;padding:52px 18px 14px;display:flex;align-items:center;gap:12px}
+.chat-top .av{width:38px;height:38px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:0 0 38px}
+.chat-top .av svg{width:30px;height:30px}
+.chat-top b{font-family:var(--head);font-size:15px;display:block;line-height:1.2}
+.chat-top small{font-size:12px;color:#b8c7de}
+.msgs{padding:16px 14px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.m{max-width:80%;padding:9px 13px;border-radius:18px;font-size:14.5px;line-height:1.5;opacity:0;transform:translateY(10px);transition:.45s}
+.phone.in .m{opacity:1;transform:none}
+.m.me{align-self:flex-end;background:#9EE26B;border-bottom-right-radius:6px}
+.m.them{align-self:flex-start;background:#fff;border-bottom-left-radius:6px}
+.m.pics{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;background:transparent}
+.m.pics img{border-radius:12px;aspect-ratio:1;object-fit:cover}
+.m.quote-card{background:#fff;padding:0;overflow:hidden;width:80%}
+.m.quote-card .qh{background:var(--aqua);color:#fff;font-family:var(--head);font-weight:800;padding:8px 13px;font-size:14px}
+.m.quote-card .qr{display:flex;justify-content:space-between;padding:5px 13px;border-bottom:1px dotted #d5dde8;font-size:13.5px}
+.m.quote-card .qt{display:flex;justify-content:space-between;padding:8px 13px;font-family:var(--head);font-weight:800}
+.m.quote-card .qt b{color:var(--coral)}
+.phone.in .m:nth-child(2){transition-delay:.35s}.phone.in .m:nth-child(3){transition-delay:.8s}.phone.in .m:nth-child(4){transition-delay:1.3s}.phone.in .m:nth-child(5){transition-delay:1.8s}.phone.in .m:nth-child(6){transition-delay:2.3s}
+.phone-note{text-align:center;font-size:12.5px;color:#8494a8;margin-top:14px}
+
+/* why */
+.why{background:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.why-item{background:var(--foam);border:1px solid rgba(11,37,69,.07);border-radius:var(--r);padding:30px 24px;position:relative;overflow:hidden;transition:.25s}
+.why-item::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff 0 10%,rgba(22,194,194,.12) 60%);transition:.4s}
+.why-item:hover{transform:translateY(-6px);box-shadow:var(--shadow);background:#fff}
+.why-item:hover::after{transform:scale(1.5)}
+.why-item .ic{width:58px;height:58px;border-radius:18px;background:var(--ink);display:grid;place-items:center;margin-bottom:18px}
+.why-item .ic svg{width:30px;height:30px;stroke:var(--aqua2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.why-item h3{font-size:21px;font-weight:800;margin-bottom:8px}
+.why-item p{color:var(--muted);font-size:15.5px}
+
+/* reviews */
+.reviews{background:var(--mint)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:#fff;border-radius:var(--r);padding:28px;position:relative;box-shadow:0 14px 40px -26px rgba(11,37,69,.45)}
+.rv::before{content:"";position:absolute;right:22px;top:22px;width:34px;height:34px;color:var(--aqua2);background:currentColor;clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%)}
+.rv .stars{color:#FFB400;letter-spacing:2px;font-size:18px}
+.rv .svc-l{display:inline-block;letter-spacing:0;font-size:12.5px;font-weight:700;color:var(--aquad);background:var(--mint2);padding:2px 10px;border-radius:999px;margin-left:8px;vertical-align:2px}
+.rv p{margin:12px 0 20px;font-size:16.5px}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--aqua),var(--ink3));color:#fff;display:grid;place-items:center;font-family:var(--head);font-weight:900}
+.rv .who b{display:block;font-family:var(--head)}
+.rv .who small{color:#8494a8}
+
+/* faq */
+.faq{background:#fff}
+.faq-list{max-width:860px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:var(--foam);border:1px solid rgba(11,37,69,.08);border-radius:18px;padding:4px 22px;transition:.2s}
+.faq details[open]{background:#fff;box-shadow:var(--shadow);border-color:transparent}
+.faq summary{list-style:none;cursor:pointer;font-family:var(--head);font-weight:700;font-size:18px;padding:16px 0;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:0 0 34px;height:34px;border-radius:50%;background:var(--mint2);color:var(--aquad);display:grid;place-items:center;font-size:22px;transition:.25s}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--aqua);color:#fff}
+.faq details p{color:var(--muted);padding:0 0 18px}
+
+/* contact */
+.contact{background:var(--ink);color:#fff;overflow:hidden}
+.contact .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:stretch;position:relative}
+.contact h2{font-size:clamp(32px,4.2vw,50px);font-weight:900}
+.contact h2 span{color:var(--aqua2)}
+.contact .lead{color:#a9bdd6;margin-top:12px}
+.info{display:grid;gap:14px;margin:30px 0}
+.info .it{display:flex;gap:16px;align-items:center;background:var(--ink2);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px 18px;transition:.2s}
+a.it:hover{background:var(--ink3)}
+.info .it .i{flex:0 0 48px;height:48px;border-radius:14px;background:var(--aqua);display:grid;place-items:center}
+.info .it .i svg{width:24px;height:24px;stroke:var(--ink);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.info .it b{font-family:var(--head);color:var(--aqua2);display:block;font-size:14.5px}
+.info .it span{color:#d6e2f0}
+.info .it .ph{font-family:var(--head);font-weight:900;font-size:30px;color:#fff;letter-spacing:1px;line-height:1.2}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.areas span{border:1.5px solid rgba(125,227,222,.5);color:var(--aqua2);border-radius:999px;padding:2px 12px;font-size:14px}
+.map{border-radius:28px;overflow:hidden;min-height:460px;position:relative;box-shadow:0 0 0 8px rgba(22,194,194,.18)}
+.map iframe{width:100%;height:100%;border:0;position:absolute;inset:0;filter:saturate(.8) hue-rotate(-10deg)}
+.map .mtag{position:absolute;left:16px;top:16px;z-index:2;background:#fff;color:var(--ink);font-family:var(--head);font-weight:800;font-size:14px;padding:8px 14px;border-radius:12px;box-shadow:var(--shadow)}
+
+/* final cta */
+.final{padding:0;background:var(--ink)}
+.final-box{position:relative;transform:translateY(70px);z-index:2;background:linear-gradient(120deg,var(--aqua),#38D6C8 55%,var(--aqua2));border-radius:32px;padding:44px 48px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;overflow:hidden;color:var(--ink)}
+.final-box::before,.final-box::after{content:"";position:absolute;border-radius:50%;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.9) 0 8%,rgba(255,255,255,.2) 9% 60%,rgba(255,255,255,.35));}
+.final-box::before{width:180px;height:180px;right:28%;top:-90px}
+.final-box::after{width:90px;height:90px;right:4%;bottom:-30px}
+.final-box h3{font-size:clamp(26px,3vw,38px);font-weight:900;position:relative}
+.final-box p{position:relative;font-size:17px;color:#0d3b4f;margin-top:6px}
+.final-box .cta-row{margin-top:0;position:relative}
+
+/* footer */
+footer{background:#06172C;color:#8ea2bb;padding:130px 0 30px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.08)}
+footer h4{color:#fff;font-size:17px;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:var(--aqua2)}
+.ft .brand .t1{color:#fff}
+.ft .brand .t2{color:#8ea2bb}
+.ft p{margin-top:16px;max-width:340px}
+.copy{display:flex;justify-content:space-between;padding-top:22px;font-size:13px;flex-wrap:wrap;gap:10px}
+
+/* floating */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.fab a{height:60px;min-width:60px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;box-shadow:0 14px 28px -10px rgba(11,37,69,.6);transition:.2s;font-family:var(--head);font-weight:800;font-size:15px}
+.fab a:hover{transform:scale(1.06)}
+.fab .call{background:var(--coral);animation:ring 2.4s infinite}
+.fab .photo{background:var(--ink);padding:0 20px 0 16px}
+.fab svg{width:26px;height:26px}
+@keyframes ring{0%,100%{box-shadow:0 14px 28px -10px rgba(11,37,69,.6),0 0 0 0 rgba(255,111,89,.6)}50%{box-shadow:0 14px 28px -10px rgba(11,37,69,.6),0 0 0 14px rgba(255,111,89,0)}}
+
+/* reveal */
+.rv-on{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.rv-on.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1080px){
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .f1{left:-2%}.f2{right:-2%}
+}
+@media (max-width:900px){
+  .menu,.nav-cta{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px 4%;border-bottom:1px solid rgba(11,37,69,.1);gap:16px;box-shadow:var(--shadow)}
+  .hero{padding:44px 0 100px}
+  .hero .wrap,.quote .wrap,.contact .wrap{grid-template-columns:1fr}
+  .hero-art{max-width:420px}
+  .svc-row{grid-template-columns:1fr;gap:44px;padding:36px 0}
+  .svc-row.flip .svc-pic{order:0}
+  .rv-grid{grid-template-columns:1fr}
+  .final-box{grid-template-columns:1fr;text-align:center}
+  .final-box .cta-row{justify-content:center}
+  .ft{grid-template-columns:1fr 1fr}
+  .ft > div:first-child{grid-column:1/-1}
+  .compare{aspect-ratio:4/3}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:70px 0}
+  .why-grid{grid-template-columns:1fr}
+  .ticks{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr}
+  .topbar .hide-sm{display:none}
+  .hero p.lead{font-size:18px}
+  .cta-row .btn{width:100%}
+  .float{font-size:13.5px;padding:9px 12px}
+  .float .ic{width:32px;height:32px;flex-basis:32px}
+  .f1{left:-2%;top:2%}.f2{right:-2%;bottom:2%}
+  .lbl{top:auto;bottom:24%}.lbl.b{left:22%}.lbl.a{right:16%}
+  .f2{bottom:-4%}
+  .svc-pic .num{font-size:72px;top:-20px;left:-4px}
+  .svc-row.flip .svc-pic .num{right:-4px}
+  .compare{aspect-ratio:1/1;border-radius:20px}
+  .compare .cap span{font-size:12.5px;padding:6px 10px}
+  .final-box{padding:34px 22px}
+  .fab .photo span{display:none}
+  .fab .photo{padding:0}
+  .map{min-height:340px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30" fill="#0B2545"/>
+      <path d="M15 33 32 18l17 15" fill="none" stroke="#7DE3DE" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M20 30v14a3 3 0 0 0 3 3h18a3 3 0 0 0 3-3V30" fill="none" stroke="#fff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M32 31l2.2 6 6 2.2-6 2.2L32 47.6l-2.2-6.2-6-2.2 6-2.2z" fill="#FFD166"/>
+      <circle cx="46" cy="18" r="3" fill="#16C2C2"/><circle cx="51" cy="25" r="1.8" fill="#7DE3DE"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.6" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><span class="spk"></span>รับงานทำความสะอาด <b>กรุงเทพฯ และปริมณฑล</b> · ส่งรูปมาประเมินราคาก่อนได้</div>
+    <div class="hide-sm">☎ โทร / นัดคิว <b>086-870-1725</b></div>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Neat & Tidy Cleaning Service">
+      <svg class="logo"><use href="#logo"/></svg>
+      <div><div class="t1">Neat <span>&amp;</span> Tidy</div><div class="t2">CLEANING SERVICE</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#services">บริการ</a>
+      <a href="#before-after">ก่อน / หลัง</a>
+      <a href="#quote">ประเมินราคา</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#contact">พื้นที่บริการ</a>
+    </div>
+    <a href="#quote" class="btn btn-coral nav-cta"><svg><use href="#i-cam"/></svg>ส่งรูปประเมินราคา</a>
+    <button class="burger" aria-label="เมนู" onclick="document.getElementById('menu').classList.toggle('open')">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="bubbles" id="bubbles"></div>
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="tag"><span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></span>บริการถึงบ้าน · กรุงเทพฯ–ปริมณฑล</span>
+      <h1>บ้านสะอาด<br>แบบที่<span class="wipe">เห็นความต่าง<span class="spk"></span></span></h1>
+      <p class="lead"><b>Big Cleaning บ้าน–คอนโด ซักที่นอน ซักโซฟา</b> ถึงหน้าบ้านคุณ ส่งรูปมาให้ดูก่อน เราประเมินราคาให้ แล้วค่อยนัดวันเข้าทำ ดูผลงาน<b>ก่อน–หลัง</b>ได้เลย</p>
+      <div class="cta-row">
+        <a href="#quote" class="btn btn-coral"><svg><use href="#i-cam"/></svg>ส่งรูปเพื่อประเมินราคา</a>
+        <a href="tel:0868701725" class="btn btn-ghost"><svg><use href="#i-phone"/></svg>086-870-1725</a>
+      </div>
+      <div class="chips">
+        <span>Big Cleaning</span><span>ซักที่นอน</span><span>ซักโซฟา</span>
+      </div>
+    </div>
+    <div class="hero-art rv-on">
+      <div class="blob">
+        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1100&q=75&auto=format&fit=crop" alt="ห้องนั่งเล่นสะอาดพร้อมโซฟา">
+        <div class="half"><img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1100&q=75&auto=format&fit=crop" alt=""></div>
+        <div class="seam"></div>
+        <span class="lbl b">ก่อน</span><span class="lbl a">หลัง</span>
+      </div>
+      <div class="float f1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3M6 19v2M18 19v2"/></svg></span><div>ซักโซฟาถึงบ้าน<small>ไม่ต้องยกไปไหน</small></div></div>
+      <div class="float f2"><span class="ic"><svg><use href="#i-cam"/></svg></span><div>ส่งรูป → รู้ราคา<small>ก่อนนัดเข้าทำ</small></div></div>
+    </div>
+  </div>
+  <div class="hero-wave"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="currentColor" d="M0 50 C 240 10 480 10 720 40 S 1200 80 1440 30 V80 H0z"/></svg></div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span><em>#</em>BigCleaning</span><span>ซักที่นอน</span><span>ซักโซฟา</span><span><em>#</em>ก่อนหลัง</span><span>ทำความสะอาดบ้าน–คอนโด</span><span><em>#</em>NeatAndTidy</span><span>กรุงเทพฯ–ปริมณฑล</span>
+    <span><em>#</em>BigCleaning</span><span>ซักที่นอน</span><span>ซักโซฟา</span><span><em>#</em>ก่อนหลัง</span><span>ทำความสะอาดบ้าน–คอนโด</span><span><em>#</em>NeatAndTidy</span><span>กรุงเทพฯ–ปริมณฑล</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow"><span class="spk"></span>บริการของเรา</span>
+      <h2>เลือกงานที่ต้องการ <em>เราจัดการให้ครบ</em></h2>
+      <p>ทั้งทำความสะอาดครั้งใหญ่ทั้งหลัง หรือซักเฉพาะชิ้นที่ใช้ทุกวัน ทีมงานเตรียมอุปกรณ์ไปเองทั้งหมด</p>
+    </div>
+    <div class="svc-tabs rv-on">
+      <a href="#svc-big">🏠 Big Cleaning</a><a href="#svc-bed">🛏️ ซักที่นอน</a><a href="#svc-sofa">🛋️ ซักโซฟา</a>
+    </div>
+
+    <div class="svc-row rv-on" id="svc-big">
+      <div class="svc-pic">
+        <span class="num">01</span>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1000&q=75&auto=format&fit=crop" alt="พนักงานทำความสะอาดหน้าต่าง" loading="lazy"></div>
+        <div class="price"><small>เริ่มต้น</small><b>฿ 2,500</b><i>* ราคาตัวอย่าง</i></div>
+      </div>
+      <div class="svc-txt">
+        <div class="kicker">BIG CLEANING · บ้าน / คอนโด</div>
+        <h3>ทำความสะอาดครั้งใหญ่ ทั้งหลัง</h3>
+        <p>เหมาะกับบ้านก่อนย้ายเข้า หลังรีโนเวท หรือบ้านที่ไม่ได้ทำความสะอาดลึกมานาน เราเก็บทุกซอกมุมที่ปกติเข้าไม่ถึง</p>
+        <ul class="ticks">
+          <li>ปัดฝุ่น เช็ดทุกพื้นผิว</li><li>ขัดห้องน้ำ คราบน้ำ คราบหินปูน</li>
+          <li>ห้องครัว คราบมัน</li><li>กระจก หน้าต่าง รางเลื่อน</li>
+          <li>ดูดฝุ่น ถูพื้นทั้งหลัง</li><li>ประเมินตามขนาดพื้นที่จริง</li>
+        </ul>
+        <a href="#quote" class="mini">ส่งรูปบ้านเพื่อประเมินราคา</a>
+      </div>
+    </div>
+
+    <div class="svc-row flip rv-on" id="svc-bed">
+      <div class="svc-pic">
+        <span class="num">02</span>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1000&q=75&auto=format&fit=crop" alt="ห้องนอนพร้อมที่นอนสะอาด" loading="lazy"></div>
+        <div class="price"><small>เริ่มต้น / หลัง</small><b>฿ 900</b><i>* ราคาตัวอย่าง</i></div>
+      </div>
+      <div class="svc-txt">
+        <div class="kicker">MATTRESS CLEANING</div>
+        <h3>ซักที่นอน ถึงบ้าน</h3>
+        <p>ที่นอนที่เราใช้ทุกคืนสะสมทั้งฝุ่น เหงื่อ และคราบที่มองไม่เห็น ซักให้สะอาดถึงเนื้อใน กลับมานอนสบายได้อีกครั้ง</p>
+        <ul class="ticks">
+          <li>ดูดฝุ่น ไรฝุ่น</li><li>ขจัดคราบเหลือง คราบน้ำ</li>
+          <li>ซักแล้วดูดน้ำออก</li><li>ทำที่บ้าน ไม่ต้องขนย้าย</li>
+        </ul>
+        <a href="#before-after" class="mini">ดูผลงานก่อน–หลัง</a>
+      </div>
+    </div>
+
+    <div class="svc-row rv-on" id="svc-sofa">
+      <div class="svc-pic">
+        <span class="num">03</span>
+        <div class="ph"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1000&q=75&auto=format&fit=crop" alt="โซฟาผ้าสีเขียว" loading="lazy"></div>
+        <div class="price"><small>เริ่มต้น / ที่นั่ง</small><b>฿ 350</b><i>* ราคาตัวอย่าง</i></div>
+      </div>
+      <div class="svc-txt">
+        <div class="kicker">SOFA CLEANING</div>
+        <h3>ซักโซฟา ให้กลับมาสีเดิม</h3>
+        <p>โซฟาผ้าที่นั่งทุกวัน คราบอาหาร คราบเครื่องดื่ม รอยมือ เราซักทำความสะอาดให้ทั้งตัว ห้องนั่งเล่นสดชื่นขึ้นทันที</p>
+        <ul class="ticks">
+          <li>ซักโซฟาผ้า ทุกขนาด</li><li>ขจัดคราบเฉพาะจุด</li>
+          <li>ดูดฝุ่นซอกเบาะ</li><li>ส่งรูปให้ดูก่อนเริ่มงาน</li>
+        </ul>
+        <a href="#quote" class="mini">ส่งรูปโซฟาให้ประเมิน</a>
+      </div>
+    </div>
+    <p class="note"><b>หมายเหตุเดโม:</b> ราคา "เริ่มต้น" และรายละเอียดขั้นตอนในแต่ละบริการเป็นตัวอย่างประกอบ รอยืนยันกับทางร้าน</p>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="ba" id="before-after">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow"><span class="spk"></span>BEFORE · AFTER</span>
+      <h2>ลากดู <em>ก่อน–หลัง</em> ด้วยตัวเอง</h2>
+      <p>เลื่อนแถบตรงกลางไปซ้าย–ขวา ดูความต่างก่อนและหลังทำความสะอาด</p>
+    </div>
+    <div class="ba-tabs rv-on" role="tablist">
+      <button class="on" data-k="sofa" role="tab">🛋️ ซักโซฟา</button>
+      <button data-k="bed" role="tab">🛏️ ซักที่นอน</button>
+      <button data-k="home" role="tab">🏠 Big Cleaning</button>
+    </div>
+    <div class="compare rv-on" id="compare">
+      <div class="lay after"><img id="imgA" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1600&q=75&auto=format&fit=crop" alt="หลังทำความสะอาด"></div>
+      <div class="lay before"><img id="imgB" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1600&q=75&auto=format&fit=crop" alt="ก่อนทำความสะอาด"><div class="dirt sofa" id="dirt"></div></div>
+      <span class="tagb">ก่อน</span><span class="taga">หลัง ✨</span>
+      <div class="handle"><div class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="#0B2545" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></div></div>
+      <div class="cap"><span id="capL">คราบเครื่องดื่ม · รอยมือ · ฝุ่นสะสม</span><span id="capR">สีผ้ากลับมาสดใส</span></div>
+      <input type="range" min="0" max="100" value="50" aria-label="เลื่อนเพื่อเปรียบเทียบก่อนและหลัง" id="range">
+    </div>
+    <p class="note">ภาพตัวอย่างจำลองเพื่อการนำเสนอ ในเว็บจริงจะใช้รูปก่อน–หลังจากหน้างานของ Neat &amp; Tidy (จากโพสต์ Big Cleaning / ซักที่นอน / ซักโซฟา ช่วง ก.พ.–มี.ค. 2569)</p>
+  </div>
+</section>
+
+<!-- QUOTE VIA LINE -->
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow"><span class="spk"></span>ประเมินราคาง่าย ๆ</span>
+      <h2>ส่งรูปทาง <em>LINE</em><br>เพื่อประเมินราคา</h2>
+      <p class="lead">ไม่ต้องรอช่างมาดูหน้างาน ถ่ายรูปจุดที่อยากให้ทำความสะอาดส่งมาได้เลย เราดูแล้วแจ้งราคาให้ก่อน ตกลงแล้วค่อยนัดวัน</p>
+      <ol class="steps">
+        <li><div><b>ถ่ายรูปจุดที่ต้องการ</b><span>โซฟา ที่นอน หรือห้องที่อยากทำ Big Cleaning ถ่ายให้เห็นคราบชัด ๆ</span></div></li>
+        <li><div><b>ส่งรูป + บอกขนาด / ทำเล</b><span>เช่น โซฟา 3 ที่นั่ง, ที่นอน 6 ฟุต, คอนโด 35 ตร.ม. ย่านไหน</span></div></li>
+        <li><div><b>รับราคาประเมิน</b><span>รู้ราคาก่อน ไม่มีบวกเพิ่มหน้างานแบบไม่บอก</span></div></li>
+        <li><div><b>นัดวัน ทีมงานเข้าทำ</b><span>เตรียมอุปกรณ์ไปเอง ทำเสร็จตรวจงานด้วยกัน</span></div></li>
+      </ol>
+      <div class="cta-row">
+        <a href="tel:0868701725" class="btn btn-coral"><svg><use href="#i-phone"/></svg>โทรขอประเมินราคา 086-870-1725</a>
+      </div>
+      <div class="pending">⚠️ <span><b>รอข้อมูลจากร้าน:</b> ยังไม่พบ LINE ID ของร้าน ตอนนี้ปุ่ม "ส่งรูป" ทุกปุ่มจะโทรออกไปที่ 086-870-1725 ก่อน เมื่อได้ LINE ID แล้วจะเปลี่ยนเป็น line.me/R/ti/p/~&lt;ID&gt;</span></div>
+    </div>
+    <div class="rv-on">
+      <div class="phone" id="phone">
+        <div class="screen">
+          <div class="chat-top"><span class="av"><svg><use href="#logo"/></svg></span><div><b>Neat &amp; Tidy Cleaning</b><small>ปกติตอบกลับภายในวันเดียวกัน</small></div></div>
+          <div class="msgs">
+            <div class="m me">สวัสดีค่ะ อยากซักโซฟา 3 ที่นั่ง กับที่นอน 6 ฟุตค่ะ 🙏</div>
+            <div class="m me pics">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&q=60&auto=format&fit=crop" alt="" style="filter:sepia(.5) brightness(.8)">
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=300&q=60&auto=format&fit=crop" alt="" style="filter:sepia(.5) brightness(.8)">
+            </div>
+            <div class="m them">ได้เลยค่ะ ✨ ขอทราบย่าน และวันที่สะดวกด้วยนะคะ</div>
+            <div class="m me">อยู่นนทบุรีค่ะ เสาร์นี้ได้ไหมคะ</div>
+            <div class="m them quote-card">
+              <div class="qh">ใบประเมินราคา</div>
+              <div class="qr"><span>ซักโซฟา 3 ที่นั่ง</span><span>฿ x,xxx</span></div>
+              <div class="qr"><span>ซักที่นอน 6 ฟุต</span><span>฿ x,xxx</span></div>
+              <div class="qt"><span>นัด เสาร์ 10:00</span><b>ยืนยัน ✓</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="phone-note">ตัวอย่างบทสนทนาเพื่อการนำเสนอ</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow"><span class="spk"></span>ทำไมต้อง Neat &amp; Tidy</span>
+      <h2>เรียบร้อย สะอาด <em>ตรงตามชื่อ</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item rv-on"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.6"/></svg></div><h3>รู้ราคาก่อนเริ่มงาน</h3><p>ส่งรูปมาประเมินก่อน ตกลงราคาให้ชัดเจนแล้วค่อยนัดเข้าทำ</p></div>
+      <div class="why-item rv-on"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div><h3>เห็นผลชัดแบบก่อน–หลัง</h3><p>ผลงานจริงทุกงาน ถ่ายให้ดูทั้งก่อนเริ่มและหลังเสร็จงาน</p></div>
+      <div class="why-item rv-on"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/><path d="M10 20v-5h4v5"/></svg></div><h3>บริการถึงบ้าน</h3><p>ไม่ต้องขนโซฟาหรือที่นอนไปไหน ทีมงานไปพร้อมอุปกรณ์ครบ</p></div>
+      <div class="why-item rv-on"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></svg></div><h3>ครอบคลุม กทม.–ปริมณฑล</h3><p>รับงานในกรุงเทพฯ และจังหวัดรอบ ๆ ทั้งบ้านเดี่ยว ทาวน์โฮม คอนโด</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow"><span class="spk"></span>เสียงจากลูกค้า</span>
+      <h2>สะอาดจน <em>อยากรีวิว</em></h2>
+    </div>
+    <div class="rv-grid">
+      <div class="rv rv-on"><div class="stars">★★★★★<span class="svc-l">ซักโซฟา</span></div><p>โซฟาผ้าสีอ่อนเลอะคราบกาแฟมาหลายเดือน ซักแล้วสีกลับมาเกือบเหมือนใหม่ ส่งรูปไปถามราคาก่อนสะดวกมากค่ะ</p><div class="who"><div class="av">ป</div><div><b>คุณปลา</b><small>คอนโด · บางนา</small></div></div></div>
+      <div class="rv rv-on"><div class="stars">★★★★★<span class="svc-l">Big Cleaning</span></div><p>จ้างทำ Big Cleaning ก่อนย้ายเข้าบ้านใหม่ ห้องน้ำ ห้องครัว กระจก เก็บละเอียดทุกมุม ทีมงานสุภาพ ตรงเวลาครับ</p><div class="who"><div class="av">ต</div><div><b>คุณต้น</b><small>ทาวน์โฮม · นนทบุรี</small></div></div></div>
+      <div class="rv rv-on"><div class="stars">★★★★★<span class="svc-l">ซักที่นอน</span></div><p>ที่นอนมีคราบเหลืองตามอายุใช้งาน ซักแล้วกลิ่นหายและนอนสบายขึ้นเยอะ ลูกที่แพ้ฝุ่นก็จามน้อยลงค่ะ</p><div class="who"><div class="av">น</div><div><b>คุณนิด</b><small>บ้านเดี่ยว · ปทุมธานี</small></div></div></div>
+    </div>
+    <p class="note"><b>หมายเหตุเดโม:</b> รีวิวด้านบนเป็นตัวอย่างประกอบการนำเสนอ จะแทนที่ด้วยรีวิวจริงจากลูกค้าของร้าน</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow"><span class="spk"></span>คำถามที่พบบ่อย</span>
+      <h2>สงสัยตรงไหน <em>ถามได้เลย</em></h2>
+    </div>
+    <div class="faq-list rv-on">
+      <details open><summary>ต้องเตรียมอะไรก่อนทีมงานเข้าบ้านบ้าง?</summary><p>แค่เคลียร์ของมีค่าหรือของชิ้นเล็กออกจากพื้นที่ที่จะทำ ส่วนอุปกรณ์และน้ำยาทีมงานเตรียมไปเองทั้งหมด</p></details>
+      <details><summary>ประเมินราคาจากรูปได้แม่นแค่ไหน?</summary><p>รูปที่เห็นคราบและขนาดชัด ๆ ช่วยให้ประเมินได้ใกล้เคียงที่สุด ถ้ามีจุดไหนต้องดูเพิ่ม ทีมงานจะแจ้งก่อนเริ่มงานเสมอ</p></details>
+      <details><summary>ซักโซฟา / ที่นอนแล้ว ต้องรอแห้งนานไหม?</summary><p>ขึ้นอยู่กับชนิดผ้าและความชื้นในห้อง ทีมงานจะแนะนำวิธีเปิดลมให้แห้งเร็วหลังทำเสร็จ</p></details>
+      <details><summary>รับงานพื้นที่ไหนบ้าง?</summary><p>กรุงเทพฯ และปริมณฑล (นนทบุรี ปทุมธานี สมุทรปราการ สมุทรสาคร นครปฐม) พื้นที่อื่นโทรสอบถามได้ที่ 086-870-1725</p></details>
+    </div>
+    <p class="note"><b>หมายเหตุเดโม:</b> คำตอบเป็นข้อความตัวอย่าง รอยืนยันรายละเอียดกับทางร้าน</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow" style="background:rgba(22,194,194,.16);color:var(--aqua2)"><span class="spk"></span>ติดต่อ / พื้นที่บริการ</span>
+      <h2>พร้อมไปทำความสะอาด<br><span>ถึงบ้านคุณ</span></h2>
+      <p class="lead">โทรสอบถาม นัดคิว หรือขอประเมินราคาได้เลย</p>
+      <div class="info">
+        <a class="it" href="tel:0868701725"><span class="i"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span><div><b>โทร / นัดคิว</b><div class="ph">086-870-1725</div></div></a>
+        <div class="it"><span class="i"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/></svg></span><div><b>พื้นที่ให้บริการ</b><span>กรุงเทพฯ และปริมณฑล</span>
+          <div class="areas"><span>กรุงเทพฯ</span><span>นนทบุรี</span><span>ปทุมธานี</span><span>สมุทรปราการ</span><span>สมุทรสาคร</span><span>นครปฐม</span></div></div></div>
+        <div class="it"><span class="i"><svg viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.3A8.5 8.5 0 1 1 21 12z"/></svg></span><div><b>LINE / Facebook</b><span>Facebook: "Neat &amp; Tidy Cleaning Service" · LINE ID รอข้อมูลจากร้าน</span></div></div>
+      </div>
+    </div>
+    <div class="map rv-on">
+      <span class="mtag">📍 พื้นที่บริการ กรุงเทพฯ–ปริมณฑล</span>
+      <iframe title="แผนที่พื้นที่บริการ กรุงเทพฯ และปริมณฑล" src="https://maps.google.com/maps?q=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3&z=10&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="final-box rv-on">
+      <div><h3>ถ่ายรูปมุมที่อยากให้สะอาด แล้วส่งมาเลย ✨</h3><p>Big Cleaning · ซักที่นอน · ซักโซฟา กรุงเทพฯ–ปริมณฑล</p></div>
+      <div class="cta-row"><a href="tel:0868701725" class="btn btn-ink"><svg><use href="#i-phone"/></svg>โทร 086-870-1725</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <a href="#" class="brand"><svg class="logo"><use href="#logo"/></svg><div><div class="t1">Neat &amp; Tidy</div><div class="t2">CLEANING SERVICE</div></div></a>
+        <p>บริการทำความสะอาดบ้าน คอนโด Big Cleaning ซักที่นอน ซักโซฟา ถึงบ้านคุณ ในกรุงเทพฯ และปริมณฑล</p>
+      </div>
+      <div><h4>บริการ</h4><ul><li><a href="#svc-big">Big Cleaning</a></li><li><a href="#svc-bed">ซักที่นอน</a></li><li><a href="#svc-sofa">ซักโซฟา</a></li><li><a href="#before-after">ผลงานก่อน–หลัง</a></li></ul></div>
+      <div><h4>ติดต่อ</h4><ul><li><a href="tel:0868701725">☎ 086-870-1725</a></li><li>📍 กรุงเทพฯ และปริมณฑล</li><li><a href="#quote">ส่งรูปประเมินราคา</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© 2569 Neat &amp; Tidy Cleaning Service</span><span>เว็บไซต์ตัวอย่าง (Demo) เพื่อการนำเสนอ</span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="#quote" class="photo" aria-label="ส่งรูปประเมินราคา"><svg><use href="#i-cam"/></svg><span>ส่งรูปประเมินราคา</span></a>
+  <a href="tel:0868701725" class="call" aria-label="โทร 086-870-1725"><svg><use href="#i-phone"/></svg></a>
+</div>
+
+<script>
+// reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: .12 });
+document.querySelectorAll('.rv-on').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 80 + 'ms'; io.observe(el); });
+const ph = document.getElementById('phone');
+new IntersectionObserver((es, o) => es.forEach(e => { if (e.isIntersecting) { ph.classList.add('in'); o.disconnect(); } }), { threshold: .3 }).observe(ph);
+
+// bubbles
+const bb = document.getElementById('bubbles');
+for (let i = 0; i < 16; i++) {
+  const b = document.createElement('i'); const s = 14 + Math.random() * 52;
+  b.style.cssText = `width:${s}px;height:${s}px;left:${Math.random() * 100}%;animation-duration:${10 + Math.random() * 12}s;animation-delay:${-Math.random() * 20}s`;
+  bb.appendChild(b);
+}
+
+// before/after slider
+const cmp = document.getElementById('compare'), rg = document.getElementById('range');
+rg.addEventListener('input', () => cmp.style.setProperty('--p', rg.value + '%'));
+const U = id => `https://images.unsplash.com/photo-${id}?w=1600&q=75&auto=format&fit=crop`;
+const sets = {
+  sofa: { img: U('1555041469-a586c61ea9bc'), l: 'คราบเครื่องดื่ม · รอยมือ · ฝุ่นสะสม', r: 'สีผ้ากลับมาสดใส' },
+  bed:  { img: U('1631049307264-da0ec9d70304'), l: 'คราบเหลือง · คราบน้ำ · ไรฝุ่น', r: 'สะอาด หอม นอนสบาย' },
+  home: { img: U('1556911220-bff31c812dba'), l: 'คราบมัน · ฝุ่นจับ · คราบน้ำ', r: 'ครัวเงาวับ พร้อมใช้' }
+};
+document.querySelectorAll('.ba-tabs button').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.ba-tabs button').forEach(x => x.classList.toggle('on', x === btn));
+  const s = sets[btn.dataset.k];
+  document.getElementById('imgA').src = s.img; document.getElementById('imgB').src = s.img;
+  document.getElementById('dirt').className = 'dirt ' + btn.dataset.k;
+  document.getElementById('capL').textContent = s.l; document.getElementById('capR').textContent = s.r;
+  rg.value = 50; cmp.style.setProperty('--p', '50%');
+}));
+// gentle intro sweep
+new IntersectionObserver((es, o) => es.forEach(e => {
+  if (!e.isIntersecting) return; o.disconnect();
+  let t = 0; const a = setInterval(() => { t += 1; const v = 50 + Math.sin(t / 12) * 22 * Math.max(0, 1 - t / 80);
+    cmp.style.setProperty('--p', v + '%'); rg.value = v; if (t >= 80) clearInterval(a); }, 16);
+}), { threshold: .5 }).observe(cmp);
+
+document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>

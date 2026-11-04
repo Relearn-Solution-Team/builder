@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ช่างประปา รับเดินท่อประปา บริการซ่อมท่อแตก–รั่ว | โทร 083-992-8083</title>
+<meta name="description" content="ช่างประปา กรุงเทพฯ รับเดินท่อน้ำดี–น้ำทิ้ง ซ่อมท่อแตก ท่อรั่ว ท่อซึม ส้วมตัน ติดตั้งปั๊มน้ำ แท้งค์น้ำ สุขภัณฑ์ เครื่องทำน้ำร้อน เปิดตลอดเวลา โทร 083-992-8083">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#082865; --navy2:#0c3478; --navy3:#11408d;
+  --blue:#1f63c8; --water:#2f9bf0; --sky:#72c7fd; --mist:#e8f4ff; --paper:#f5f9ff;
+  --chrome1:#f4f6f9; --chrome2:#bcc6d2; --chrome3:#7d8a9c;
+  --alert:#ff5a3c; --alert2:#ffb199;
+  --ok:#17b897;
+  --ink:#0b1b38; --muted:#52627d;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:#fff;line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.head{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1200px,92%);margin:0 auto}
+svg{display:block}
+
+/* ---------- top strip ---------- */
+.strip{background:var(--navy);color:#cfe3ff;font-size:14px}
+.strip .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:8px 0;flex-wrap:wrap}
+.strip b{color:#fff}
+.live{display:inline-flex;align-items:center;gap:8px}
+.live i{width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(23,184,151,.6);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 9px rgba(23,184,151,0)}100%{box-shadow:0 0 0 0 rgba(23,184,151,0)}}
+
+/* ---------- nav ---------- */
+nav.main{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid #dbe7f7}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand img{width:54px;height:54px;border-radius:50%;box-shadow:0 0 0 3px #fff,0 0 0 5px var(--navy)}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:22px;color:var(--navy);line-height:1.1}
+.brand .t2{font-size:13px;color:var(--muted);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.menu{display:flex;gap:26px;font-family:var(--head);font-weight:700;font-size:15.5px;color:var(--navy)}
+.menu a{position:relative;padding:4px 0}
+.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:3px;border-radius:3px;background:var(--water);transition:.25s}
+.menu a:hover::after{right:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:800;border-radius:999px;padding:13px 26px;cursor:pointer;border:0;transition:transform .15s,box-shadow .2s,background .2s;font-size:16px;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:0 0 auto}
+.btn-call{background:linear-gradient(180deg,#2f9bf0,#1f63c8);color:#fff;box-shadow:0 10px 24px -8px rgba(31,99,200,.7),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-call:hover{transform:translateY(-2px);box-shadow:0 16px 30px -10px rgba(31,99,200,.8)}
+.btn-alert{background:var(--alert);color:#fff;box-shadow:0 10px 24px -8px rgba(255,90,60,.7)}
+.btn-alert:hover{transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.btn-line{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 2px var(--navy)}
+.btn-line:hover{background:var(--navy);color:#fff}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:radial-gradient(1200px 600px at 85% 10%,#1c56b8 0%,transparent 60%),linear-gradient(160deg,var(--navy) 0%,#0a2f72 55%,#0d3a86 100%);color:#fff;overflow:hidden;padding:76px 0 150px}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(114,199,253,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(114,199,253,.07) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(180deg,#000 40%,transparent)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:10px;background:rgba(114,199,253,.14);border:1px solid rgba(114,199,253,.4);color:#d9eeff;font-family:var(--head);font-weight:700;font-size:14.5px;padding:7px 16px;border-radius:999px}
+.chip svg{width:16px;height:16px}
+.hero h1{font-size:clamp(40px,5.6vw,74px);font-weight:900;margin:22px 0 16px;letter-spacing:-.3px}
+.hero h1 .w{display:inline-block;background:linear-gradient(180deg,#ffffff 0%,#bfe6ff 55%,#72c7fd 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 small{display:block;font-size:.4em;font-weight:700;color:#bcd5f5;margin-top:12px;letter-spacing:0}
+.lead{font-size:19.5px;color:#d3e4fb;max-width:560px}
+.lead b{color:#fff}
+.cta-row{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.hero .phone-big{font-family:var(--head);font-weight:900;font-size:22px;letter-spacing:.5px}
+.facts{display:flex;gap:12px;margin-top:38px;flex-wrap:wrap}
+.fact{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:12px 18px;min-width:130px}
+.fact .n{font-family:var(--head);font-weight:900;font-size:24px;color:#fff;line-height:1.2}
+.fact .l{font-size:13.5px;color:#a9c3e6}
+
+.hero-art{position:relative;max-width:540px;width:100%;justify-self:center;aspect-ratio:1/1}
+.hero-art .pipes{position:absolute;inset:0}
+.medal{position:absolute;left:50%;top:50%;width:52%;aspect-ratio:1/1;translate:-50% -50%;border-radius:50%;background:#fff;padding:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.6),0 0 0 10px rgba(114,199,253,.18),0 0 0 22px rgba(114,199,253,.07)}
+.medal img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.bubble{position:absolute;background:#fff;color:var(--navy);border-radius:16px;padding:10px 16px;font-family:var(--head);font-weight:800;font-size:15px;box-shadow:0 18px 30px -12px rgba(0,0,0,.45);display:flex;align-items:center;gap:10px;animation:float 5s ease-in-out infinite}
+.bubble small{display:block;font-family:var(--body);font-weight:500;font-size:12.5px;color:var(--muted)}
+.bubble .ico{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:0 0 auto}
+.bubble .ico svg{width:20px;height:20px}
+.b1{top:4%;left:-2%}.b1 .ico{background:#ffe7e1;color:var(--alert)}
+.b2{top:42%;right:-6%;animation-delay:.8s}.b2 .ico{background:var(--mist);color:var(--blue)}
+.b3{bottom:4%;left:6%;animation-delay:1.6s}.b3 .ico{background:#dff7f1;color:var(--ok)}
+@keyframes float{50%{translate:0 -10px}}
+.drip{transform-box:fill-box;transform-origin:center top;animation:drip 2.2s ease-in infinite}
+@keyframes drip{0%{transform:translateY(0) scale(.4);opacity:0}15%{opacity:1;transform:translateY(0) scale(1)}80%{opacity:1}100%{transform:translateY(90px) scale(1);opacity:0}}
+.spray{animation:spray 1.2s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:left center}
+@keyframes spray{to{transform:scaleX(1.12) scaleY(.92);opacity:.75}}
+.flow{stroke-dasharray:10 16;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-52}}
+
+.wave{position:absolute;left:0;right:0;bottom:-2px;height:120px}
+.wave path{animation:waveMove 9s ease-in-out infinite alternate}
+.wave path:nth-child(2){animation-duration:12s}
+@keyframes waveMove{to{transform:translateX(-60px)}}
+
+/* ---------- chooser ---------- */
+.chooser{background:var(--paper);padding:30px 0 100px;position:relative}
+.chooser .card-wrap{background:#fff;border-radius:30px;box-shadow:0 30px 70px -30px rgba(8,40,101,.35);padding:44px;margin-top:-120px;position:relative;z-index:3}
+.q-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.q-head .eyebrow{margin-bottom:8px}
+.q-head h2{font-size:clamp(28px,3.6vw,42px);font-weight:900;color:var(--navy)}
+.q-head p{color:var(--muted);max-width:420px}
+.opts{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.opt{border:2px solid #dbe7f7;background:#fff;border-radius:20px;padding:20px 14px 18px;text-align:center;cursor:pointer;transition:.2s;font-family:var(--head);position:relative}
+.opt .oi{width:70px;height:70px;margin:0 auto 12px;border-radius:50%;background:var(--mist);display:grid;place-items:center;transition:.2s}
+.opt .oi svg{width:38px;height:38px}
+.opt b{display:block;font-size:18px;font-weight:800;color:var(--navy)}
+.opt span{display:block;font-family:var(--body);font-size:13.5px;color:var(--muted);margin-top:2px}
+.opt:hover{border-color:var(--sky);transform:translateY(-3px)}
+.opt.on{border-color:var(--blue);background:linear-gradient(180deg,#f2f8ff,#fff);box-shadow:0 14px 30px -14px rgba(31,99,200,.55)}
+.opt.on .oi{background:var(--blue)}
+.opt.on .oi svg *{stroke:#fff}
+.opt.urgent::after{content:"ด่วน";position:absolute;top:10px;right:10px;background:var(--alert);color:#fff;font-size:11.5px;font-weight:800;padding:1px 9px;border-radius:999px}
+.answer{margin-top:26px;display:grid;grid-template-columns:1.25fr 1fr;gap:26px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy3) 100%);color:#fff;border-radius:24px;padding:34px;position:relative;overflow:hidden}
+.answer::after{content:"";position:absolute;right:-80px;bottom:-80px;width:260px;height:260px;border-radius:50%;border:30px solid rgba(114,199,253,.1)}
+.answer h3{font-size:28px;font-weight:900}
+.answer h3 em{font-style:normal;color:var(--sky)}
+.answer .say{color:#c9dcf6;margin:8px 0 16px}
+.signs{list-style:none;display:grid;gap:9px}
+.signs li{display:flex;gap:12px;align-items:flex-start}
+.signs li::before{content:"";flex:0 0 22px;height:22px;margin-top:3px;border-radius:50%;background:var(--sky) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23082865' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/13px no-repeat}
+.todo{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:22px;position:relative;z-index:1}
+.todo h4{font-size:17px;font-weight:800;color:var(--sky);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.todo ol{padding-left:20px;color:#dbe8fa;display:grid;gap:6px;font-size:16px}
+.todo .btn{margin-top:18px;width:100%}
+.answer.fade{animation:fadeUp .35s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}}
+
+/* ---------- section basics ---------- */
+section{padding:100px 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 54px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:800;font-size:14px;color:var(--blue);background:var(--mist);padding:6px 14px;border-radius:999px;margin-bottom:14px}
+.eyebrow::before{content:"";width:8px;height:11px;background:var(--water);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;clip-path:polygon(50% 0,100% 62%,92% 85%,50% 100%,8% 85%,0 62%)}
+.sec-head h2{font-size:clamp(30px,4.2vw,50px);font-weight:900;color:var(--navy)}
+.sec-head h2 em{font-style:normal;color:var(--blue);position:relative;display:inline-block}
+.sec-head h2 em::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:8px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 8'%3E%3Cpath d='M0 4 Q10 0 20 4 T40 4' fill='none' stroke='%2372c7fd' stroke-width='3'/%3E%3C/svg%3E") repeat-x;background-size:40px 8px}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:18px}
+
+/* ---------- emergency ---------- */
+.sos{background:#fff7f4;border-top:1px solid #ffe0d6;border-bottom:1px solid #ffe0d6;padding:70px 0}
+.sos .wrap{display:grid;grid-template-columns:.9fr 1.6fr;gap:44px;align-items:center}
+.sos h2{font-size:clamp(28px,3.4vw,40px);font-weight:900;color:#7a1d0c}
+.sos h2 span{color:var(--alert)}
+.sos p{color:#7a4b40;margin-top:10px}
+.sos .btn{margin-top:22px}
+.sos-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;counter-reset:sos}
+.sos-step{background:#fff;border-radius:20px;padding:22px;box-shadow:0 12px 30px -20px rgba(122,29,12,.45);position:relative;border:1px solid #ffe0d6}
+.sos-step::before{counter-increment:sos;content:counter(sos);position:absolute;top:-14px;left:20px;width:32px;height:32px;border-radius:50%;background:var(--alert);color:#fff;font-family:var(--head);font-weight:900;display:grid;place-items:center;box-shadow:0 0 0 5px #fff7f4}
+.sos-step svg{width:44px;height:44px;margin:8px 0 10px}
+.sos-step h4{font-size:18px;font-weight:800;color:#7a1d0c}
+.sos-step p{font-size:15px;margin-top:4px}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.svc{background:#fff;border:1px solid #dbe7f7;border-radius:var(--r);padding:28px 24px 26px;position:relative;transition:.25s;overflow:hidden}
+.svc::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--chrome2),var(--chrome1),var(--chrome2))}
+.svc:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(8,40,101,.45);border-color:var(--sky)}
+.svc:hover::before{background:linear-gradient(90deg,var(--blue),var(--sky),var(--blue))}
+.svc .ic{width:60px;height:60px;border-radius:18px;background:linear-gradient(160deg,var(--navy3),var(--navy));display:grid;place-items:center;margin-bottom:16px;box-shadow:0 10px 20px -10px rgba(8,40,101,.6)}
+.svc .ic svg{width:32px;height:32px;stroke:#fff;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.svc .ic svg .w{stroke:var(--sky)}
+.svc h3{font-size:20px;font-weight:800;color:var(--navy);margin-bottom:6px}
+.svc p{font-size:15.5px;color:var(--muted)}
+.svc.big{grid-column:span 2;background:linear-gradient(135deg,var(--navy),var(--navy3));color:#fff;border:0;display:grid;grid-template-columns:1fr 150px;gap:16px;align-items:center}
+.svc.big::before{display:none}
+.svc.big h3{color:#fff;font-size:24px}
+.svc.big p{color:#c9dcf6}
+.svc.big .ic{background:var(--water)}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.tags span{font-size:13px;font-weight:600;color:var(--navy);background:var(--mist);border-radius:999px;padding:3px 11px}
+.svc.big .tags span{background:rgba(114,199,253,.16);color:#d9eeff}
+.src{text-align:center;color:var(--muted);font-size:14px;margin-top:26px}
+.src a{color:var(--blue);font-weight:600}
+
+/* ---------- pipes (lay type & material) ---------- */
+.pipes-sec{background:linear-gradient(180deg,var(--paper),#fff);position:relative;overflow:hidden}
+.pipes-sec::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(31,99,200,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(31,99,200,.05) 1px,transparent 1px);background-size:32px 32px}
+.lay{display:grid;grid-template-columns:1fr 1fr;gap:24px;position:relative}
+.lay-card{background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 20px 50px -30px rgba(8,40,101,.4);border:1px solid #dbe7f7}
+.lay-card .pic{height:220px;background:var(--mist);position:relative}
+.lay-card .pic svg{width:100%;height:100%}
+.lay-card .bd{padding:24px 28px 28px}
+.lay-card h3{font-size:24px;font-weight:900;color:var(--navy)}
+.lay-card h3 small{font-size:14px;color:var(--blue);font-weight:700;margin-left:8px}
+.lay-card p{color:var(--muted);margin-top:6px}
+.pros{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.pros span{font-family:var(--head);font-weight:700;font-size:13.5px;border-radius:10px;padding:4px 12px;background:#e9f8f4;color:#0d7c66}
+.material{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;position:relative}
+.mat{background:#fff;border-radius:20px;padding:22px;border:1px solid #dbe7f7;display:flex;gap:16px;align-items:center}
+.mat .tube{flex:0 0 64px;height:64px;border-radius:50%;display:grid;place-items:center;font-family:var(--head);font-weight:900;font-size:15px;color:#fff}
+.mat h4{font-size:17.5px;font-weight:800;color:var(--navy)}
+.mat p{font-size:14.5px;color:var(--muted)}
+.upgrade{margin-top:26px;position:relative;background:var(--navy);color:#fff;border-radius:22px;padding:22px 28px;display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.upgrade .arrow{display:flex;align-items:center;gap:12px;font-family:var(--head);font-weight:900;font-size:22px}
+.upgrade .arrow i{font-style:normal;padding:4px 14px;border-radius:10px}
+.upgrade p{color:#c9dcf6;flex:1;min-width:240px}
+
+/* ---------- why ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why{border-radius:var(--r);padding:30px 24px;background:#fff;border:1px solid #dbe7f7;position:relative;overflow:hidden}
+.why .n{font-family:var(--head);font-weight:900;font-size:54px;line-height:1;background:linear-gradient(180deg,var(--water),var(--navy));-webkit-background-clip:text;background-clip:text;color:transparent}
+.why h3{font-size:20px;font-weight:800;color:var(--navy);margin:12px 0 6px}
+.why p{font-size:15.5px;color:var(--muted)}
+.why .drop{position:absolute;right:-18px;bottom:-30px;width:100px;opacity:.06}
+
+/* ---------- steps ---------- */
+.steps-sec{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.steps-sec .sec-head h2{color:#fff}
+.steps-sec .sec-head p{color:#b7cdea}
+.steps-sec .eyebrow{background:rgba(114,199,253,.14);color:var(--sky)}
+.pipe-line{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.pipe-line::before{content:"";position:absolute;top:43px;left:8%;right:8%;height:14px;border-radius:7px;background:linear-gradient(180deg,#e9eef4 0%,#bcc6d2 45%,#7d8a9c 100%);box-shadow:inset 0 2px 0 rgba(255,255,255,.6)}
+.pipe-line::after{content:"";position:absolute;top:48px;left:8%;right:8%;height:4px;border-radius:2px;background:repeating-linear-gradient(90deg,var(--sky) 0 14px,transparent 14px 30px);animation:pflow 1.5s linear infinite;opacity:.9}
+@keyframes pflow{to{background-position:30px 0}}
+.st{text-align:center;position:relative;z-index:1}
+.st .j{width:100px;height:100px;margin:0 auto 18px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0%,#d9e0e8 40%,#8f9bab 100%);display:grid;place-items:center;box-shadow:0 14px 30px -12px rgba(0,0,0,.6)}
+.st .j span{width:68px;height:68px;border-radius:50%;background:linear-gradient(160deg,var(--water),var(--blue));display:grid;place-items:center;font-family:var(--head);font-weight:900;font-size:28px}
+.st h4{font-size:19px;font-weight:800}
+.st p{font-size:15px;color:#b7cdea;margin-top:4px;padding:0 6px}
+
+/* ---------- knowledge ---------- */
+.kn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.kn{border-radius:var(--r);overflow:hidden;background:#fff;border:1px solid #dbe7f7;display:flex;flex-direction:column;transition:.25s}
+.kn:hover{transform:translateY(-6px);box-shadow:0 26px 44px -28px rgba(8,40,101,.5)}
+.kn .cv{height:170px;position:relative;overflow:hidden;display:grid;place-items:center}
+.kn .cv svg{width:100%;height:100%}
+.kn .cv .hash{position:absolute;left:14px;top:14px;background:#fff;color:var(--navy);font-family:var(--head);font-weight:800;font-size:13px;border-radius:999px;padding:3px 12px;box-shadow:0 6px 14px -8px rgba(0,0,0,.4)}
+.kn .bd{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1}
+.kn h3{font-size:20.5px;font-weight:800;color:var(--navy);margin-bottom:8px}
+.kn p{color:var(--muted);font-size:15.5px;flex:1}
+.kn .more{margin-top:14px;font-family:var(--head);font-weight:800;color:var(--blue);display:inline-flex;gap:8px;align-items:center}
+.kn .more::after{content:"→";transition:.2s}
+.kn:hover .more::after{transform:translateX(5px)}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--paper)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border-radius:var(--r);padding:28px;position:relative;box-shadow:0 16px 40px -30px rgba(8,40,101,.5)}
+.rv .stars{color:#f5a400;letter-spacing:2px}
+.rv .job{display:inline-block;letter-spacing:0;font-family:var(--head);font-weight:700;font-size:13px;color:var(--blue);background:var(--mist);border-radius:999px;padding:2px 11px;margin-left:8px;vertical-align:2px}
+.rv p{margin:12px 0 18px;font-size:16.5px}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(160deg,var(--water),var(--navy));color:#fff;display:grid;place-items:center;font-family:var(--head);font-weight:900}
+.rv .who b{display:block;font-family:var(--head);color:var(--navy)}
+.rv .who small{color:var(--muted)}
+.note{display:block;text-align:center;color:#8a97ad;font-size:13px;margin-top:22px}
+.note i{font-style:normal;background:#fff3cd;color:#7a5b00;padding:1px 8px;border-radius:6px;font-weight:600}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:860px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:#fff;border:1px solid #dbe7f7;border-radius:18px;padding:0 24px;transition:.2s}
+.faq details[open]{box-shadow:0 18px 40px -30px rgba(8,40,101,.55);border-color:var(--sky)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 0;font-family:var(--head);font-weight:800;font-size:18px;color:var(--navy);display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:0 0 32px;height:32px;border-radius:50%;background:var(--mist);color:var(--blue);display:grid;place-items:center;font-size:22px;transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg);background:var(--blue);color:#fff}
+.faq details p{padding:0 0 20px;color:var(--muted)}
+
+/* ---------- contact ---------- */
+.contact{background:linear-gradient(160deg,var(--navy),#0d3a86);color:#fff;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(114,199,253,.12) 1.4px,transparent 1.4px);background-size:24px 24px;mask-image:linear-gradient(90deg,transparent,#000)}
+.contact .wrap{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:stretch}
+.contact h2{font-size:clamp(32px,4vw,50px);font-weight:900}
+.contact h2 span{color:var(--sky)}
+.contact .sub{color:#c9dcf6;margin:10px 0 26px;font-size:18px}
+.big-tel{display:flex;align-items:center;gap:18px;background:#fff;color:var(--navy);border-radius:24px;padding:20px 24px;box-shadow:0 24px 50px -24px rgba(0,0,0,.6);transition:.2s}
+.big-tel:hover{transform:translateY(-3px)}
+.big-tel .ring{flex:0 0 64px;height:64px;border-radius:50%;background:linear-gradient(160deg,var(--water),var(--blue));display:grid;place-items:center;color:#fff;animation:ring 2.4s infinite}
+.big-tel .ring svg{width:30px;height:30px}
+@keyframes ring{0%,60%,100%{transform:rotate(0)}65%{transform:rotate(-12deg)}70%{transform:rotate(12deg)}75%{transform:rotate(-8deg)}80%{transform:rotate(6deg)}}
+.big-tel small{display:block;font-size:14px;color:var(--muted);font-weight:600}
+.big-tel b{font-family:var(--head);font-weight:900;font-size:clamp(28px,3.4vw,40px);letter-spacing:.5px;line-height:1.15}
+.c-list{list-style:none;display:grid;gap:12px;margin-top:22px}
+.c-list li{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:14px 18px}
+.c-list .ci{flex:0 0 42px;height:42px;border-radius:12px;background:rgba(114,199,253,.16);display:grid;place-items:center;color:var(--sky)}
+.c-list .ci svg{width:22px;height:22px}
+.c-list small{display:block;color:#a9c3e6;font-size:13px}
+.c-list b{font-family:var(--head);font-weight:700;word-break:break-word}
+.map{border-radius:26px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.7);display:flex;flex-direction:column}
+.map iframe{width:100%;flex:1;min-height:380px;border:0}
+.map .cap{padding:16px 20px;color:var(--ink);font-size:15px;display:flex;gap:10px;align-items:flex-start}
+.map .cap b{font-family:var(--head);color:var(--navy)}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.areas span{font-family:var(--head);font-weight:700;font-size:14px;background:rgba(114,199,253,.14);color:#e1f1ff;border-radius:999px;padding:5px 14px}
+
+footer{background:#061d4a;color:#8fa6c9;font-size:14px;padding:30px 0 100px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+footer b{color:#fff;font-family:var(--head)}
+.demo-badge{background:rgba(255,255,255,.08);border-radius:999px;padding:4px 12px}
+
+/* floating call */
+.fab{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:center;gap:10px;background:linear-gradient(180deg,#2f9bf0,#1f63c8);color:#fff;font-family:var(--head);font-weight:900;font-size:17px;border-radius:999px;padding:12px 22px 12px 12px;box-shadow:0 16px 34px -10px rgba(8,40,101,.75)}
+.fab .r{width:44px;height:44px;border-radius:50%;background:#fff;color:var(--blue);display:grid;place-items:center;position:relative}
+.fab .r::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(255,255,255,.7);animation:halo 1.8s infinite}
+@keyframes halo{from{transform:scale(.85);opacity:1}to{transform:scale(1.35);opacity:0}}
+.fab .r svg{width:22px;height:22px}
+.fab small{display:block;font-size:11.5px;font-weight:600;opacity:.85;line-height:1}
+.fab:hover{transform:translateY(-2px)}
+
+/* reveal */
+.rv-up{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv-up.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .menu{display:none}
+  .opts{grid-template-columns:repeat(3,1fr)}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .sos .wrap{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  body{font-size:16px}
+  .hero{padding:50px 0 140px}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-art{max-width:400px;order:-1}
+  .chooser .card-wrap{padding:26px 20px;margin-top:-110px;border-radius:24px}
+  .answer{grid-template-columns:1fr;padding:26px 22px}
+  .lay,.material,.kn-grid,.rv-grid{grid-template-columns:1fr}
+  .sos-steps{grid-template-columns:1fr;gap:22px}
+  .pipe-line{grid-template-columns:1fr;gap:26px}
+  .pipe-line::before{top:0;bottom:0;left:43px;right:auto;width:14px;height:auto}
+  .pipe-line::after{top:0;bottom:0;left:48px;right:auto;width:4px;height:auto;background:repeating-linear-gradient(180deg,var(--sky) 0 14px,transparent 14px 30px)}
+  .st{display:grid;grid-template-columns:100px 1fr;gap:18px;text-align:left;align-items:center}
+  .st .j{margin:0}
+  .st p{padding:0}
+  .contact .wrap{grid-template-columns:1fr}
+  section{padding:72px 0}
+  .svc.big{grid-template-columns:1fr}
+  .svc.big .bigart{display:none}
+}
+@media (max-width:560px){
+  .strip .hide-sm{display:none}
+  nav.main .wrap{height:66px}
+  .brand img{width:44px;height:44px}
+  .brand .t1{font-size:18px}
+  .brand .t2{display:none}
+  .nav-call span{display:none}
+  .nav-call{padding:11px 14px}
+  .opts{grid-template-columns:repeat(2,1fr)}
+  .opt:last-child{grid-column:span 2}
+  .opt .oi{width:58px;height:58px}
+  .svc-grid,.why-grid{grid-template-columns:1fr}
+  .svc.big{grid-column:auto}
+  .b2{right:-2%}
+  .bubble{font-size:13.5px;padding:8px 12px}
+  .bubble .ico{width:28px;height:28px}
+  .hero .cta-row .btn{flex:1 1 100%}
+  .fact{flex:1 1 40%;min-width:0}
+  .fab{padding:10px;right:16px;bottom:16px}
+  .hero-art{max-width:360px}
+  .medal{width:50%}
+  .b1{top:2%;left:0}
+  .b2{top:auto;bottom:22%;right:0}
+  .b3{bottom:2%;left:4%}
+  .facts{gap:8px}
+  .fact{flex:1 1 0;padding:10px 10px}
+  .fact .n{font-size:18px}
+  .fact .l{font-size:12px;line-height:1.4}
+  .opts{gap:10px}
+  .opt{padding:14px 10px 12px}
+  .opt .oi{width:48px;height:48px;margin:0 auto 8px}
+  .opt .oi svg{width:26px;height:26px}
+  .opt b{font-size:16px}
+  .opt span{font-size:12.5px;line-height:1.35}
+  .opt.urgent::after{top:-9px;right:8px}
+  .lay-card .pic{height:150px}
+  .why .n{font-size:42px}
+  .fab .txt{display:none}
+  .big-tel{padding:16px}
+  .big-tel .ring{flex-basis:52px;height:52px}
+}
+</style>
+</head>
+<body>
+
+<!-- top strip -->
+<div class="strip">
+  <div class="wrap">
+    <span class="live"><i></i><b>เปิดรับงานตลอดเวลา</b> · ท่อแตก น้ำรั่ว โทรได้เลย</span>
+    <span class="hide-sm">กรุงเทพฯ · <a href="https://www.facebook.com/changprapa" target="_blank" rel="noopener">facebook.com/changprapa</a></span>
+  </div>
+</div>
+
+<!-- nav -->
+<nav class="main">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="โลโก้ ช่างประปา">
+      <div><div class="t1">ช่างประปา</div><div class="t2">รับเดินท่อประปา · บริการซ่อมท่อแตก–รั่ว</div></div>
+    </a>
+    <div class="menu">
+      <a href="#chooser">เช็กอาการ</a>
+      <a href="#services">บริการ</a>
+      <a href="#pipes">งานเดินท่อ</a>
+      <a href="#steps">ขั้นตอน</a>
+      <a href="#contact">ติดต่อ</a>
+    </div>
+    <a class="btn btn-call nav-call" href="tel:0839928083" aria-label="โทร 083-992-8083">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg>
+      <span>083-992-8083</span>
+    </a>
+  </div>
+</nav>
+
+<!-- hero -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2.5S5 10.2 5 14.5a7 7 0 0014 0C19 10.2 12 2.5 12 2.5z"/></svg>ช่างประปา รับเดินท่อประปา บริการซ่อมท่อแตก–รั่ว</span>
+      <h1>ท่อแตก น้ำรั่ว<br><span class="w">เดินท่อใหม่</span><small>บอกอาการมา เดี๋ยวช่างจัดการให้ทั้งระบบ</small></h1>
+      <p class="lead">รับเดินท่อ <b>น้ำดี–น้ำทิ้ง</b> แบบลอยและฝังใต้พื้น แก้ปัญหาท่อแตก ท่อรั่ว–ท่อซึม ส้วมตัน ติดตั้งปั๊มน้ำ แท้งค์น้ำ สุขภัณฑ์ และเครื่องทำน้ำร้อน <b>ทั้งบ้านและอาคาร เราทำได้หมด</b></p>
+      <div class="cta-row">
+        <a class="btn btn-call" href="tel:0839928083"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg><span class="phone-big">083-992-8083</span></a>
+        <a class="btn btn-ghost" href="#chooser">บ้านเป็นอะไร? เช็กอาการ ↓</a>
+      </div>
+      <div class="facts">
+        <div class="fact"><div class="n">24 ชม.</div><div class="l">เพจแจ้ง “เปิดตลอดเวลา”</div></div>
+        <div class="fact"><div class="n">1,000+</div><div class="l">ผู้ติดตามบนเพจ</div></div>
+        <div class="fact"><div class="n">ลอย / ฝัง</div><div class="l">เดินท่อได้ทั้ง 2 แบบ</div></div>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg class="pipes" viewBox="0 0 540 540">
+        <defs>
+          <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f6f9"/><stop offset=".45" stop-color="#c3ccd8"/><stop offset="1" stop-color="#6f7c8f"/></linearGradient>
+          <linearGradient id="chromeV" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f4f6f9"/><stop offset=".45" stop-color="#c3ccd8"/><stop offset="1" stop-color="#6f7c8f"/></linearGradient>
+          <linearGradient id="wat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9ad8ff"/><stop offset="1" stop-color="#2f9bf0"/></linearGradient>
+        </defs>
+        <!-- background ring -->
+        <circle cx="270" cy="270" r="250" fill="none" stroke="rgba(114,199,253,.18)" stroke-width="2" stroke-dasharray="4 10"/>
+        <!-- horizontal pipe top -->
+        <rect x="0" y="92" width="380" height="34" rx="6" fill="url(#chrome)"/>
+        <rect x="372" y="86" width="26" height="46" rx="5" fill="url(#chrome)"/>
+        <!-- elbow -->
+        <path d="M398 92 h20 a50 50 0 0 1 50 50 v40 h-34 v-40 a16 16 0 0 0 -16 -16 h-20z" fill="url(#chromeV)"/>
+        <rect x="428" y="176" width="46" height="24" rx="5" fill="url(#chromeV)"/>
+        <rect x="434" y="198" width="34" height="200" fill="url(#chromeV)"/>
+        <rect x="428" y="390" width="46" height="24" rx="5" fill="url(#chromeV)"/>
+        <!-- flow line inside -->
+        <line x1="10" y1="109" x2="370" y2="109" stroke="#2f9bf0" stroke-width="5" stroke-linecap="round" class="flow" opacity=".85"/>
+        <line x1="451" y1="210" x2="451" y2="388" stroke="#2f9bf0" stroke-width="5" stroke-linecap="round" class="flow" opacity=".85"/>
+        <!-- leak spray from top pipe -->
+        <g transform="translate(120 126)">
+          <path class="spray" d="M0 0 C 20 30, 10 60, -20 90 M8 0 C 40 30, 50 60, 40 100 M-6 0 C -30 25, -50 50, -70 70" fill="none" stroke="#9ad8ff" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+          <circle cx="-74" cy="80" r="5" fill="#9ad8ff"/><circle cx="44" cy="112" r="6" fill="#9ad8ff"/><circle cx="-24" cy="102" r="4" fill="#9ad8ff"/>
+        </g>
+        <!-- clamp/wrench-fix marker -->
+        <rect x="108" y="86" width="30" height="46" rx="4" fill="#ff5a3c" opacity=".95"/>
+        <!-- drip from bottom pipe -->
+        <path class="drip" d="M451 420 c-8 12 -12 18 -12 24 a12 12 0 0 0 24 0 c0 -6 -4 -12 -12 -24z" fill="url(#wat)"/>
+        <!-- bottom puddle -->
+        <ellipse cx="451" cy="512" rx="56" ry="9" fill="rgba(114,199,253,.25)"/>
+        <!-- left vertical pipe -->
+        <rect x="40" y="300" width="30" height="240" fill="url(#chromeV)"/>
+        <rect x="34" y="294" width="42" height="20" rx="4" fill="url(#chromeV)"/>
+        <line x1="55" y1="320" x2="55" y2="540" stroke="#2f9bf0" stroke-width="4" class="flow" opacity=".7"/>
+      </svg>
+      <div class="medal"><img src="assets/logo.jpg" alt=""></div>
+      <div class="bubble b1"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v10M12 17v.5"/><circle cx="12" cy="12" r="10"/></svg></span><div>ท่อแตก น้ำพุ่ง<small>ปิดวาล์ว แล้วโทรเลย</small></div></div>
+      <div class="bubble b2"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 2.5S5 10.2 5 14.5a7 7 0 0014 0C19 10.2 12 2.5 12 2.5z"/></svg></span><div>ท่อรั่ว–ท่อซึม<small>ผนัง พื้น ใต้ดิน</small></div></div>
+      <div class="bubble b3"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg></span><div>เดินท่อใหม่ทั้งหลัง<small>บ้าน–อาคาร ทำได้หมด</small></div></div>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 60 C 240 10, 480 110, 720 60 S 1200 10, 1500 60 V120 H0z" fill="rgba(114,199,253,.25)"/>
+    <path d="M0 80 C 260 40, 520 120, 780 80 S 1240 40, 1500 80 V120 H0z" fill="#f5f9ff"/>
+  </svg>
+</header>
+
+<!-- chooser -->
+<section class="chooser" id="chooser">
+  <div class="wrap">
+    <div class="card-wrap rv-up">
+      <div class="q-head">
+        <div>
+          <span class="eyebrow">เช็กอาการก่อนโทร</span>
+          <h2>บ้านคุณเป็นอะไรอยู่?</h2>
+        </div>
+        <p>แตะอาการที่ใกล้เคียงที่สุด แล้วดูว่าช่างทำอะไรให้ได้ และควรเตรียมข้อมูลอะไรก่อนโทรหาช่าง</p>
+      </div>
+      <div class="opts" role="tablist">
+        <button class="opt urgent on" data-k="burst" role="tab">
+          <div class="oi"><svg viewBox="0 0 48 48" fill="none" stroke="#1f63c8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18h16l4 4 4-4h16"/><path d="M4 28h40"/><path d="M24 22v-6M18 12l-3-4M30 12l3-4M24 40v4M17 38l-3 4M31 38l3 4"/></svg></div>
+          <b>ท่อแตก</b><span>น้ำพุ่ง น้ำไหลไม่หยุด</span>
+        </button>
+        <button class="opt" data-k="leak" role="tab">
+          <div class="oi"><svg viewBox="0 0 48 48" fill="none" stroke="#1f63c8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6s-12 13-12 21a12 12 0 0024 0C36 19 24 6 24 6z"/><path d="M18 28a6 6 0 006 6"/></svg></div>
+          <b>น้ำรั่ว–ซึม</b><span>ผนังชื้น ค่าน้ำพุ่ง</span>
+        </button>
+        <button class="opt" data-k="new" role="tab">
+          <div class="oi"><svg viewBox="0 0 48 48" fill="none" stroke="#1f63c8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 14h18a6 6 0 016 6v20"/><path d="M6 22h14a2 2 0 012 2v16"/><path d="M38 8v12M32 14h12"/></svg></div>
+          <b>เดินท่อใหม่</b><span>สร้างบ้าน รีโนเวท</span>
+        </button>
+        <button class="opt" data-k="clog" role="tab">
+          <div class="oi"><svg viewBox="0 0 48 48" fill="none" stroke="#1f63c8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16h28v4a14 14 0 01-28 0z"/><path d="M18 34l-2 8h16l-2-8"/><path d="M16 10h16"/></svg></div>
+          <b>ส้วม/ท่อตัน</b><span>น้ำไม่ลง ส่งกลิ่น</span>
+        </button>
+        <button class="opt" data-k="pump" role="tab">
+          <div class="oi"><svg viewBox="0 0 48 48" fill="none" stroke="#1f63c8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="18" width="22" height="20" rx="4"/><circle cx="19" cy="28" r="5"/><path d="M30 24h10V12M36 12h8"/></svg></div>
+          <b>ปั๊ม/แท้งค์น้ำ</b><span>น้ำไม่แรง ปั๊มตัดบ่อย</span>
+        </button>
+      </div>
+
+      <div class="answer" id="answer">
+        <div>
+          <h3 id="a-title"></h3>
+          <p class="say" id="a-say"></p>
+          <ul class="signs" id="a-do"></ul>
+        </div>
+        <div class="todo">
+          <h4 id="a-prep-h"></h4>
+          <ol id="a-prep"></ol>
+          <a class="btn btn-call" href="tel:0839928083"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg><span id="a-cta">โทรเรียกช่าง 083-992-8083</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOS -->
+<section class="sos" id="sos">
+  <div class="wrap">
+    <div class="rv-up">
+      <span class="eyebrow" style="background:#ffe7e1;color:var(--alert)">ท่อแตกตอนนี้?</span>
+      <h2>ระหว่างรอช่าง<br><span>ทำ 3 อย่างนี้ก่อน</span></h2>
+      <p>ลดความเสียหายของบ้านและเฟอร์นิเจอร์ แล้วโทรบอกอาการให้ช่างประเมินได้ทันที</p>
+      <a class="btn btn-alert" href="tel:0839928083"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg>โทรด่วน 083-992-8083</a>
+    </div>
+    <div class="sos-steps">
+      <div class="sos-step rv-up">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#ff5a3c" stroke-width="3" stroke-linecap="round"><circle cx="24" cy="20" r="12"/><path d="M24 8v24M12 20h24"/><path d="M24 32v10M16 42h16"/></svg>
+        <h4>ปิดวาล์วน้ำหลัก</h4>
+        <p>วาล์วมักอยู่ใกล้มิเตอร์น้ำหน้าบ้าน หมุนตามเข็มนาฬิกาจนสุด</p>
+      </div>
+      <div class="sos-step rv-up">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#ff5a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M28 4L14 26h10l-4 18 16-24H26z"/></svg>
+        <h4>ตัดไฟจุดที่น้ำท่วม</h4>
+        <p>ถ้าน้ำไหลใกล้ปลั๊กหรือปั๊มน้ำ ให้ปิดเบรกเกอร์ก่อนเข้าใกล้</p>
+      </div>
+      <div class="sos-step rv-up">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#ff5a3c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="28" rx="4"/><circle cx="24" cy="24" r="7"/><path d="M16 10l3-4h10l3 4"/></svg>
+        <h4>ถ่ายรูปจุดที่แตก</h4>
+        <p>ถ่ายรูปหรือคลิปสั้น ๆ ช่างดูแล้วประเมินงานและเตรียมอะไหล่ได้ตรงขึ้น</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- services -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <span class="eyebrow">บริการของเรา</span>
+      <h2>งานประปา <em>ครบทั้งระบบ</em></h2>
+      <p>ในบ้านและอาคาร ตั้งแต่ท่อเส้นเดียวที่รั่ว ไปจนถึงเดินระบบน้ำดี–น้ำทิ้งให้บ้านสร้างใหม่ทั้งหลัง</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc big rv-up">
+        <div>
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M2 8h9a3 3 0 013 3v11"/><path d="M2 13h6a1 1 0 011 1v8"/><path class="w" d="M18 3v6M15 6h6"/></svg></div>
+          <h3>รับเดินท่อประปาใหม่</h3>
+          <p>เดินท่อน้ำดีและท่อน้ำทิ้ง สำหรับบ้านสร้างใหม่ทั้งหลัง ต่อเติม หรือรีโนเวทห้องน้ำ–ห้องครัว รวมถึงแก้ไขงานประปา + ไฟฟ้าในห้องน้ำและภายในบ้านทั้งระบบ</p>
+          <div class="tags"><span>ท่อน้ำดี</span><span>ท่อน้ำทิ้ง</span><span>แบบลอย</span><span>ฝังใต้พื้น</span><span>ประปา + ไฟฟ้า</span><span>บ้าน–อาคาร</span></div>
+        </div>
+        <svg class="bigart" viewBox="0 0 150 150" aria-hidden="true">
+          <defs><linearGradient id="cg2" x1="0" x2="1"><stop offset="0" stop-color="#f4f6f9"/><stop offset=".5" stop-color="#c3ccd8"/><stop offset="1" stop-color="#7d8a9c"/></linearGradient></defs>
+          <path d="M10 40h70a30 30 0 0130 30v70" fill="none" stroke="url(#cg2)" stroke-width="22"/>
+          <path d="M10 40h70a30 30 0 0130 30v70" fill="none" stroke="#72c7fd" stroke-width="4" stroke-dasharray="8 12" class="flow"/>
+          <rect x="66" y="26" width="14" height="28" rx="3" fill="#2f9bf0"/>
+          <rect x="96" y="92" width="28" height="14" rx="3" fill="#2f9bf0"/>
+        </svg>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M2 9h8l2 2 2-2h8M2 15h20"/><path class="w" d="M12 11V7M8 5L7 3M16 5l1-2"/></svg></div>
+        <h3>ซ่อมท่อแตก</h3>
+        <p>ท่อแตก ท่อหัก ข้อต่อหลุด น้ำพุ่ง ตัดเปลี่ยนท่อช่วงที่เสียหายให้กลับมาใช้น้ำได้</p>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><path class="w" d="M12 3s-6 6.5-6 10.5a6 6 0 0012 0C18 9.5 12 3 12 3z"/></svg></div>
+        <h3>ท่อรั่ว–ท่อซึม</h3>
+        <p>ผนังชื้น พื้นบวม มีน้ำซึม หรือค่าน้ำสูงผิดปกติ ไล่หาจุดรั่วแล้วแก้ให้ตรงจุด</p>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 8h14v2a7 7 0 01-14 0z"/><path d="M9 17l-1 4h8l-1-4"/><path class="w" d="M8 4h8"/></svg></div>
+        <h3>ซ่อมท่อ–ส้วมตัน</h3>
+        <p>ส้วมตัน ท่อน้ำทิ้งตัน อ่างล้างจานน้ำไม่ลง ห้องน้ำมีกลิ่นย้อน</p>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="9" width="11" height="10" rx="2"/><circle cx="8.5" cy="14" r="2.5"/><path class="w" d="M14 12h5V5M17 5h4"/></svg></div>
+        <h3>ปั๊มน้ำ & แท้งค์น้ำ</h3>
+        <p>ซ่อมและติดตั้งปั๊มน้ำ ติดตั้งแท้งค์น้ำ แก้ปัญหาน้ำไม่แรง ปั๊มติด–ดับบ่อย</p>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h16v2a6 6 0 01-6 6h-4a6 6 0 01-6-6z"/><path d="M6 12V5a2 2 0 014 0"/><path class="w" d="M8 21v1M16 21v1"/></svg></div>
+        <h3>สุขภัณฑ์ & ปูกระเบื้อง</h3>
+        <p>เปลี่ยนและติดตั้งสุขภัณฑ์ ชักโครก อ่างล้างหน้า ก๊อกน้ำ พร้อมรับปูกระเบื้อง</p>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3"/><circle cx="12" cy="13" r="4"/><path class="w" d="M9 6h1M13 6h2"/></svg></div>
+        <h3>เครื่องทำน้ำร้อน & เครื่องซักผ้า</h3>
+        <p>ติดตั้งเครื่องทำน้ำร้อนและเครื่องซักผ้า เดินท่อน้ำเข้า–ออกให้เรียบร้อย</p>
+      </div>
+    </div>
+    <p class="src rv-up">รายการบริการรวบรวมจากโพสต์บนเพจ <a href="https://www.facebook.com/changprapa" target="_blank" rel="noopener">ช่างประปา รับเดินท่อประปา บริการซ่อมท่อแตก–รั่ว</a></p>
+  </div>
+</section>
+
+<!-- pipes -->
+<section class="pipes-sec" id="pipes">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <span class="eyebrow">งานเดินท่อ</span>
+      <h2>ท่อแบบไหน <em>เหมาะกับบ้านคุณ</em></h2>
+      <p>รับเดินท่อประปาแบบลอย และฝังใต้พื้นบ้าน เลือกขนาดและชนิดท่อตามแรงดันน้ำ ปริมาณน้ำ และระยะทางที่ต้องเดินจริง</p>
+    </div>
+    <div class="lay">
+      <div class="lay-card rv-up">
+        <div class="pic">
+          <svg viewBox="0 0 560 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="560" height="220" fill="#eaf4ff"/>
+            <rect x="0" y="0" width="560" height="170" fill="#f6f9fd"/>
+            <g fill="none" stroke="#dbe7f7" stroke-width="2"><path d="M0 40h560M0 80h560M0 120h560"/><path d="M70 0v40M210 0v40M350 0v40M490 0v40M140 40v40M280 40v40M420 40v40M70 80v40M210 80v40M350 80v40M490 80v40M140 120v50M280 120v50M420 120v50"/></g>
+            <rect y="170" width="560" height="50" fill="#c9d6e6"/>
+            <path d="M-10 64h330a30 30 0 0130 30v120" fill="none" stroke="url(#chrome)" stroke-width="20"/>
+            <path d="M-10 64h330a30 30 0 0130 30v120" fill="none" stroke="#72c7fd" stroke-width="3" stroke-dasharray="8 12" class="flow"/>
+            <g fill="#1f63c8"><rect x="90" y="50" width="10" height="28" rx="2"/><rect x="200" y="50" width="10" height="28" rx="2"/><rect x="336" y="140" width="28" height="10" rx="2"/></g>
+            <rect x="420" y="70" width="80" height="100" rx="8" fill="#fff" stroke="#bcc6d2" stroke-width="3"/>
+            <text x="460" y="128" text-anchor="middle" font-family="Noto Sans Thai" font-weight="800" font-size="20" fill="#082865">ลอย</text>
+          </svg>
+        </div>
+        <div class="bd">
+          <h3>เดินท่อแบบลอย<small>ติดผนัง/ใต้ฝ้า</small></h3>
+          <p>ตรวจเช็กง่าย ซ่อมง่ายเมื่อมีปัญหา และยังออกแบบให้ท่อเป็นส่วนหนึ่งของงานตกแต่งได้ สไตล์ลอฟท์–อินดัสเทรียล</p>
+          <div class="pros"><span>ซ่อมง่าย</span><span>หาจุดรั่วไว</span><span>แต่งเป็นดีไซน์ได้</span></div>
+        </div>
+      </div>
+      <div class="lay-card rv-up">
+        <div class="pic">
+          <svg viewBox="0 0 560 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="560" height="220" fill="#f6f9fd"/>
+            <rect y="96" width="560" height="124" fill="#c4b49c"/>
+            <g fill="#ad9b80"><circle cx="60" cy="150" r="5"/><circle cx="180" cy="190" r="4"/><circle cx="300" cy="140" r="6"/><circle cx="430" cy="200" r="5"/><circle cx="510" cy="130" r="4"/></g>
+            <rect y="84" width="560" height="14" fill="#e8ecf1"/>
+            <g stroke="#cfd6df" stroke-width="2"><path d="M40 84v14M100 84v14M160 84v14M220 84v14M280 84v14M340 84v14M400 84v14M460 84v14M520 84v14"/></g>
+            <rect x="-10" y="150" width="580" height="20" fill="url(#chrome)"/>
+            <path d="M-10 160h560" stroke="#72c7fd" stroke-width="3" stroke-dasharray="8 12" class="flow"/>
+            <rect x="112" y="78" width="16" height="80" fill="url(#chromeV)"/><rect x="104" y="74" width="32" height="12" rx="3" fill="#1f63c8"/>
+            <rect x="392" y="78" width="16" height="80" fill="url(#chromeV)"/><rect x="384" y="74" width="32" height="12" rx="3" fill="#1f63c8"/>
+            <rect x="200" y="20" width="160" height="54" rx="10" fill="#fff" stroke="#bcc6d2" stroke-width="3"/>
+            <text x="280" y="56" text-anchor="middle" font-family="Noto Sans Thai" font-weight="800" font-size="20" fill="#082865">ฝังใต้พื้น</text>
+          </svg>
+        </div>
+        <div class="bd">
+          <h3>เดินท่อฝังใต้พื้น<small>ฝังผนัง/ใต้ดิน</small></h3>
+          <p>เก็บงานเรียบร้อย ไม่เห็นท่อ บ้านดูสะอาดตา เหมาะกับบ้านสร้างใหม่และงานรีโนเวทที่ต้องรื้อพื้นอยู่แล้ว</p>
+          <div class="pros"><span>เรียบร้อยสวยงาม</span><span>ไม่เกะกะ</span><span>เหมาะบ้านใหม่</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="material">
+      <div class="mat rv-up"><div class="tube" style="background:linear-gradient(160deg,#4f8fe6,#1f4fa0)">PVC</div><div><h4>ท่อพีวีซี</h4><p>ใช้กันแพร่หลาย เลือกชั้นความหนาตามแรงดันน้ำ</p></div></div>
+      <div class="mat rv-up"><div class="tube" style="background:linear-gradient(160deg,#3a3f4a,#111418)">PE</div><div><h4>ท่อพีอี</h4><p>ยืดหยุ่น ทนแรงกระแทก เหมาะกับงานฝังดิน</p></div></div>
+      <div class="mat rv-up"><div class="tube" style="background:linear-gradient(160deg,#7ad08f,#2f8f55)">PPR</div><div><h4>ท่อพีพีอาร์</h4><p>เชื่อมด้วยความร้อน ทนน้ำร้อน เหมาะกับเครื่องทำน้ำร้อน</p></div></div>
+    </div>
+    <div class="upgrade rv-up">
+      <div class="arrow"><i style="background:#1f4fa0">PVC</i>→<i style="background:#22262e">PE</i></div>
+      <p>บ้านเก่าท่อ PVC กรอบ แตกบ่อย? เรารับ <b style="color:#fff">เปลี่ยนท่อประปา PVC เป็นท่อ PE</b> ตามที่เคยโพสต์ผลงานไว้บนเพจ</p>
+      <a class="btn btn-call" href="tel:0839928083">ปรึกษาช่าง</a>
+    </div>
+  </div>
+</section>
+
+<!-- why -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <span class="eyebrow">ทำไมต้องเรา</span>
+      <h2>เรื่องน้ำในบ้าน <em>ให้ช่างประปาดูแล</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why rv-up"><div class="n">01</div><h3>เปิดรับงานตลอดเวลา</h3><p>ท่อแตกไม่เลือกเวลา เพจแจ้งเปิดตลอดเวลา โทรบอกอาการได้ทันที</p><svg class="drop" viewBox="0 0 24 24" fill="#082865"><path d="M12 2.5S5 10.2 5 14.5a7 7 0 0014 0C19 10.2 12 2.5 12 2.5z"/></svg></div>
+      <div class="why rv-up"><div class="n">02</div><h3>จบทั้งระบบในเจ้าเดียว</h3><p>ประปา สุขภัณฑ์ ปั๊มน้ำ กระเบื้อง และไฟฟ้าในห้องน้ำ ไม่ต้องตามช่างหลายเจ้า</p><svg class="drop" viewBox="0 0 24 24" fill="#082865"><path d="M12 2.5S5 10.2 5 14.5a7 7 0 0014 0C19 10.2 12 2.5 12 2.5z"/></svg></div>
+      <div class="why rv-up"><div class="n">03</div><h3>เลือกท่อตามงานจริง</h3><p>ดูแรงดันน้ำ อัตราไหล ปริมาณน้ำ และระยะทาง ก่อนเลือกชนิดและขนาดท่อ</p><svg class="drop" viewBox="0 0 24 24" fill="#082865"><path d="M12 2.5S5 10.2 5 14.5a7 7 0 0014 0C19 10.2 12 2.5 12 2.5z"/></svg></div>
+      <div class="why rv-up"><div class="n">04</div><h3>สำรวจก่อน คุยราคาชัด</h3><p>ค่าใช้จ่ายขึ้นกับหน้างาน วัสดุ ท่อ ข้อต่อ วาล์ว ช่างสำรวจแล้วแจ้งให้ทราบก่อนลงมือ</p><svg class="drop" viewBox="0 0 24 24" fill="#082865"><path d="M12 2.5S5 10.2 5 14.5a7 7 0 0014 0C19 10.2 12 2.5 12 2.5z"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- steps -->
+<section class="steps-sec" id="steps">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <span class="eyebrow">ขั้นตอนบริการ</span>
+      <h2>จากโทรแจ้ง ถึงน้ำไหลปกติ</h2>
+      <p>ง่าย ๆ 5 ขั้นตอน ไหลต่อกันเหมือนท่อเส้นเดียว</p>
+    </div>
+    <div class="pipe-line">
+      <div class="st rv-up"><div class="j"><span>1</span></div><div><h4>โทร / ทักเพจ</h4><p>เล่าอาการ ส่งรูปหรือคลิปจุดที่มีปัญหา</p></div></div>
+      <div class="st rv-up"><div class="j"><span>2</span></div><div><h4>นัดเข้าหน้างาน</h4><p>ช่างเข้าสำรวจ ไล่หาต้นเหตุ</p></div></div>
+      <div class="st rv-up"><div class="j"><span>3</span></div><div><h4>แจ้งวิธีแก้ & ราคา</h4><p>สรุปงาน วัสดุ และค่าใช้จ่าย ก่อนเริ่ม</p></div></div>
+      <div class="st rv-up"><div class="j"><span>4</span></div><div><h4>ลงมือซ่อม / เดินท่อ</h4><p>ทำงานเรียบร้อย เก็บงานสะอาด</p></div></div>
+      <div class="st rv-up"><div class="j"><span>5</span></div><div><h4>เปิดน้ำทดสอบ</h4><p>เช็กแรงดัน ไม่มีรั่วซึม แล้วส่งมอบงาน</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- knowledge -->
+<section id="tips">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <span class="eyebrow">ความรู้จากเพจ</span>
+      <h2>เรื่องท่อ <em>ที่ช่างอยากให้รู้</em></h2>
+      <p>สรุปจากบทความที่เพจเคยแชร์ไว้</p>
+    </div>
+    <div class="kn-grid">
+      <a class="kn rv-up" href="https://www.facebook.com/changprapa" target="_blank" rel="noopener">
+        <div class="cv" style="background:linear-gradient(135deg,#0c3478,#1f63c8)">
+          <svg viewBox="0 0 360 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M-10 50h150a30 30 0 0130 30v100M60 -10v40a20 20 0 0020 20" fill="none" stroke="url(#chrome)" stroke-width="18"/><rect x="200" y="111" width="170" height="18" fill="url(#chrome)"/><circle cx="270" cy="60" r="26" fill="#72c7fd" opacity=".6"/><path d="M262 48h16l-3 10h-10z M270 58v14" stroke="#fff" stroke-width="3" fill="#fff"/></svg>
+          <span class="hash">#ไอเดียแต่งบ้าน</span>
+        </div>
+        <div class="bd"><h3>ใช้ท่อประปาเป็นเครื่องตกแต่ง</h3><p>ไม่จำเป็นต้องฝังท่อในผนังเสมอไป อยากได้ดีไซน์แปลกตา ให้ท่อน้ำเป็นส่วนหนึ่งของงานตกแต่งบ้าน ก็บอกช่างให้จัดการได้</p><span class="more">อ่านบนเพจ</span></div>
+      </a>
+      <a class="kn rv-up" href="https://www.facebook.com/changprapa" target="_blank" rel="noopener">
+        <div class="cv" style="background:linear-gradient(135deg,#e8f4ff,#bfe3ff)">
+          <svg viewBox="0 0 360 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="110" y="22" width="140" height="130" rx="10" fill="#fff" stroke="#bcc6d2" stroke-width="3"/><g stroke="#cfd9e6" stroke-width="5" stroke-linecap="round"><path d="M130 50h70M130 72h96M130 94h60M130 116h84"/></g><circle cx="248" cy="132" r="26" fill="#1f63c8"/><text x="248" y="141" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="26" fill="#fff">฿</text></svg>
+          <span class="hash">#ค่าใช้จ่าย</span>
+        </div>
+        <div class="bd"><h3>ค่าใช้จ่ายในงานช่างประปา</h3><p>ประกอบด้วยการสำรวจพื้นที่ วางท่อ ออกแบบระบบน้ำเสีย และอุปกรณ์ เช่น ท่อน้ำ ข้อต่อ วาล์ว ก๊อก อ่างซักล้าง ถังเก็บน้ำ ปั๊มน้ำ</p><span class="more">อ่านบนเพจ</span></div>
+      </a>
+      <a class="kn rv-up" href="https://www.facebook.com/changprapa" target="_blank" rel="noopener">
+        <div class="cv" style="background:linear-gradient(135deg,#082865,#11408d)">
+          <svg viewBox="0 0 360 170" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g transform="translate(70 30)"><circle cx="40" cy="55" r="40" fill="url(#chrome)"/><circle cx="40" cy="55" r="26" fill="#0c3478"/><circle cx="130" cy="55" r="32" fill="url(#chrome)"/><circle cx="130" cy="55" r="22" fill="#0c3478"/><circle cx="205" cy="55" r="24" fill="url(#chrome)"/><circle cx="205" cy="55" r="16" fill="#0c3478"/></g><g fill="#72c7fd" font-family="Noto Sans Thai" font-weight="800" font-size="13" text-anchor="middle"><text x="110" y="160">แรงดัน</text><text x="200" y="160">อัตราไหล</text><text x="275" y="160">ระยะทาง</text></g></svg>
+          <span class="hash">#เลือกท่อPVC</span>
+        </div>
+        <div class="bd"><h3>การเลือกท่อพีวีซี</h3><p>นอกจากราคา ต้องดูแรงดันน้ำ น้ำไหลเร็วแค่ไหน ปริมาตรน้ำ และระยะทางที่ต้องเดินท่อ ช่างมืออาชีพเลือกให้เหมาะกับบ้าน</p><span class="more">อ่านบนเพจ</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- reviews -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <span class="eyebrow">เสียงลูกค้า</span>
+      <h2>น้ำไหลดี <em>ลูกค้าก็ยิ้ม</em></h2>
+    </div>
+    <div class="rv-grid">
+      <div class="rv rv-up"><div class="stars">★★★★★<span class="job">ท่อแตก</span></div><p>“ท่อใต้ซิงก์แตกตอนดึก น้ำนองครัว โทรไปช่างแนะนำให้ปิดวาล์วก่อน แล้วรีบเข้ามาเปลี่ยนท่อให้ ใช้น้ำได้ตามปกติ”</p><div class="who"><div class="av">ก</div><div><b>คุณก้อย</b><small>ทาวน์โฮม · ตัวอย่างรีวิว</small></div></div></div>
+      <div class="rv rv-up"><div class="stars">★★★★★<span class="job">น้ำรั่วซึม</span></div><p>“ค่าน้ำขึ้นทุกเดือนแต่หาจุดรั่วไม่เจอ ช่างมาไล่เช็กจนเจอท่อรั่วใต้พื้น แก้แล้วมิเตอร์หยุดหมุน”</p><div class="who"><div class="av">ส</div><div><b>คุณสมชาย</b><small>บ้านเดี่ยว · ตัวอย่างรีวิว</small></div></div></div>
+      <div class="rv rv-up"><div class="stars">★★★★★<span class="job">เดินท่อใหม่</span></div><p>“รีโนเวทห้องน้ำทั้งห้อง เดินท่อน้ำดี–น้ำทิ้งใหม่ ติดเครื่องทำน้ำร้อน ปูกระเบื้อง จบในเจ้าเดียว เก็บงานเรียบร้อย”</p><div class="who"><div class="av">น</div><div><b>คุณนิด</b><small>อาคารพาณิชย์ · ตัวอย่างรีวิว</small></div></div></div>
+    </div>
+    <span class="note"><i>หมายเหตุเดโม</i> รีวิวในส่วนนี้เป็นเนื้อหาตัวอย่างสำหรับเว็บไซต์ทดลอง จะแทนที่ด้วยรีวิวจริงของลูกค้า</span>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <span class="eyebrow">คำถามที่พบบ่อย</span>
+      <h2>สงสัยอะไร <em>ถามช่างได้</em></h2>
+    </div>
+    <div class="faq rv-up">
+      <details open><summary>ท่อแตกตอนกลางคืน เรียกได้ไหม?</summary><p>เพจแจ้งว่าเปิดรับงานตลอดเวลา โทร 083-992-8083 ได้เลย ระหว่างรอให้ปิดวาล์วน้ำหลักไว้ก่อน</p></details>
+      <details><summary>ค่าซ่อมหรือค่าเดินท่อประมาณเท่าไร?</summary><p>ขึ้นกับหน้างาน ระยะท่อ ชนิดท่อ และอุปกรณ์ที่ต้องใช้ แนะนำส่งรูปหน้างานหรือให้ช่างสำรวจ แล้วช่างจะแจ้งราคาก่อนเริ่มงาน</p></details>
+      <details><summary>เดินท่อแบบลอยกับแบบฝัง ต่างกันอย่างไร?</summary><p>แบบลอยซ่อมและตรวจเช็กง่าย ส่วนแบบฝังใต้พื้นหรือในผนังจะเรียบร้อยสวยงามกว่า ช่างช่วยแนะนำให้เหมาะกับบ้านและงบประมาณได้</p></details>
+      <details><summary>รับงานแค่บ้านหรือรับอาคารด้วย?</summary><p>รับทั้งบ้านและอาคาร ตั้งแต่ซ่อมจุดเดียวไปจนถึงเดินท่อประปาสำหรับบ้านสร้างใหม่ทั้งหลัง</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv-up">
+      <span class="eyebrow" style="background:rgba(114,199,253,.16);color:var(--sky)">ติดต่อช่าง</span>
+      <h2>น้ำรั่วอยู่ใช่ไหม?<br><span>โทรหาช่างได้เลย</span></h2>
+      <p class="sub">บอกอาการ ส่งรูปหน้างาน แล้วนัดเวลาเข้าดูหน้างาน</p>
+      <a class="big-tel" href="tel:0839928083">
+        <span class="ring"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg></span>
+        <span><small>แตะเพื่อโทรหาช่าง · เปิดตลอดเวลา</small><b>083-992-8083</b></span>
+      </a>
+      <ul class="c-list">
+        <li><span class="ci"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1 0-2 2-2h1.5V2.1C17.2 2.1 16 2 14.6 2 11.7 2 10 3.7 10 6.8v2.7H7v4h3V22h4z"/></svg></span><div><small>Facebook Page</small><b><a href="https://www.facebook.com/changprapa" target="_blank" rel="noopener">facebook.com/changprapa</a></b></div></li>
+        <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><small>อีเมล</small><b><a href="mailto:dqbuildingsystem@gmail.com">dqbuildingsystem@gmail.com</a></b></div></li>
+        <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>เวลาทำการ</small><b>เปิดตลอดเวลา</b></div></li>
+      </ul>
+      <div class="areas"><span>กรุงเทพมหานคร</span><span>รหัสไปรษณีย์ 10170</span><span>พื้นที่อื่น สอบถามช่าง</span></div>
+    </div>
+    <div class="map rv-up">
+      <iframe title="แผนที่พื้นที่ให้บริการ" loading="lazy" src="https://maps.google.com/maps?q=%E0%B8%95%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B1%E0%B8%99%20%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3%2010170&z=13&output=embed"></iframe>
+      <div class="cap"><svg width="22" height="22" viewBox="0 0 24 24" fill="#1f63c8" style="flex:0 0 auto;margin-top:2px"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5z"/></svg><div><b>กรุงเทพมหานคร 10170</b><br>เพจระบุที่ตั้ง Bangkok 10170 (เขตตลิ่งชัน/ทวีวัฒนา) · พื้นที่ให้บริการจริงโปรดสอบถามช่าง</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>ช่างประปา</b> รับเดินท่อประปา บริการซ่อมท่อแตก–รั่ว · โทร <a href="tel:0839928083">083-992-8083</a></div>
+    <div class="demo-badge">เว็บไซต์ตัวอย่าง (เดโม) จัดทำเพื่อนำเสนอ</div>
+  </div>
+</footer>
+
+<a class="fab" href="tel:0839928083" aria-label="โทรหาช่างประปา 083-992-8083">
+  <span class="r"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg></span>
+  <span class="txt"><small>เรียกช่างประปา</small>083-992-8083</span>
+</a>
+
+<script>
+const DATA={
+  burst:{t:'ท่อแตก <em>ต้องรีบจัดการ</em>',s:'น้ำพุ่ง น้ำไหลไม่หยุด ข้อต่อหลุด ท่อหักจากแรงกระแทกหรือท่อเก่ากรอบ',d:['ตัดเปลี่ยนท่อช่วงที่แตก/ข้อต่อที่หลุด','เช็กแรงดันน้ำหลังซ่อม ไม่ให้แตกซ้ำ','ท่อเก่า PVC แตกบ่อย พิจารณาเปลี่ยนเป็นท่อ PE'],ph:'ก่อนโทร ทำแบบนี้',p:['ปิดวาล์วน้ำหลักหน้ามิเตอร์','ถ้าน้ำใกล้ปลั๊ก/ปั๊ม ให้ตัดไฟ','ถ่ายรูปจุดที่แตก แล้วโทรเลย'],c:'โทรด่วน 083-992-8083'},
+  leak:{t:'น้ำรั่ว–ซึม <em>หาให้เจอต้นเหตุ</em>',s:'ผนังชื้น สีพอง พื้นบวม มีน้ำหยด หรือค่าน้ำสูงผิดปกติทั้งที่ใช้เท่าเดิม',d:['ไล่หาจุดรั่วในผนัง ใต้พื้น และท่อใต้ดิน','ซ่อมเฉพาะจุด หรือเดินท่อใหม่ช่วงที่เสื่อม','แก้ท่อน้ำทิ้งห้องน้ำ–ห้องอาบน้ำที่ซึม'],ph:'ข้อมูลที่ช่วยช่างได้',p:['ปิดก๊อกทุกตัว แล้วดูว่ามิเตอร์ยังหมุนไหม','ถ่ายรูปผนัง/พื้นที่ชื้น','บิลค่าน้ำ 2–3 เดือนล่าสุด (ถ้ามี)'],c:'โทรนัดช่างดูหน้างาน'},
+  new:{t:'เดินท่อใหม่ <em>ทั้งบ้านหรือบางจุด</em>',s:'บ้านสร้างใหม่ ต่อเติมครัว รีโนเวทห้องน้ำ ย้ายจุดเครื่องซักผ้า/เครื่องทำน้ำร้อน',d:['เดินท่อน้ำดี–น้ำทิ้ง แบบลอยหรือฝังใต้พื้น','เลือกชนิด/ขนาดท่อตามแรงดัน ปริมาณน้ำ ระยะทาง','ติดตั้งสุขภัณฑ์ ปั๊มน้ำ แท้งค์น้ำ ครบในงานเดียว'],ph:'เตรียมก่อนคุยงาน',p:['แบบบ้านหรือรูปพื้นที่ที่จะเดินท่อ','จุดที่ต้องการน้ำ (ห้องน้ำ ครัว ซักล้าง)','อยากได้แบบลอยหรือแบบฝัง'],c:'ขอคำปรึกษา 083-992-8083'},
+  clog:{t:'ส้วม/ท่อตัน <em>น้ำไม่ลง</em>',s:'ชักโครกกดแล้วน้ำขึ้น อ่างล้างจานระบายช้า ห้องน้ำมีกลิ่นย้อน',d:['แก้ส้วมตัน ท่อน้ำทิ้งตัน','เช็กแนวท่อและความลาดเอียงของท่อน้ำทิ้ง','เปลี่ยนสุขภัณฑ์ที่ชำรุด'],ph:'บอกช่างให้ชัด',p:['ตันจุดเดียว หรือหลายจุดพร้อมกัน','เป็นมานานแค่ไหน มีกลิ่นไหม','อาคารชั้นเดียวหรือหลายชั้น'],c:'โทรเรียกช่าง 083-992-8083'},
+  pump:{t:'ปั๊มน้ำ & แท้งค์ <em>น้ำไม่แรง</em>',s:'น้ำไหลอ่อน ปั๊มติด–ดับบ่อย ปั๊มมีเสียงดัง หรืออยากติดตั้งแท้งค์เก็บน้ำใหม่',d:['ซ่อม–ติดตั้งปั๊มน้ำ','ติดตั้งแท้งค์น้ำ เดินท่อเข้า–ออก','ติดตั้งเครื่องทำน้ำร้อนและเครื่องซักผ้า'],ph:'ข้อมูลที่ช่วยช่างได้',p:['ยี่ห้อ/รุ่นปั๊ม (ถ่ายรูปป้ายข้างเครื่อง)','อาการ: ไม่ติด ติดไม่หยุด หรือเสียงดัง','ขนาดบ้าน/จำนวนห้องน้ำ'],c:'โทรเรียกช่าง 083-992-8083'}
+};
+const $=id=>document.getElementById(id);
+function show(k){
+  const d=DATA[k];
+  $('a-title').innerHTML=d.t; $('a-say').textContent=d.s;
+  $('a-do').innerHTML=d.d.map(x=>'<li>'+x+'</li>').join('');
+  $('a-prep-h').textContent=d.ph; $('a-prep').innerHTML=d.p.map(x=>'<li>'+x+'</li>').join('');
+  $('a-cta').textContent=d.c;
+  const a=$('answer'); a.classList.remove('fade'); void a.offsetWidth; a.classList.add('fade');
+}
+document.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.opt').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on'); show(b.dataset.k);
+}));
+show('burst');
+
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv-up').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

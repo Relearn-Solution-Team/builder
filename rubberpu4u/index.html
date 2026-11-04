@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>แร้วแต่ปุ๊ Tyres วงศ์สว่าง | ร้านยางรถยนต์ ช่วงล่าง เบรค ตั้งศูนย์</title>
+<meta name="description" content="ร้านยางรถยนต์ แร้วแต่ปุ๊ วงศ์สว่าง บางซื่อ ยาง ช่วงล่าง เบรค ตั้งศูนย์ถ่วงล้อ น้ำมันเครื่อง แบตเตอรี่ ปะยางนอกสถานที่ โทร 086-324-2422">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --y:#FFD400; --y2:#FFE45C; --yd:#E6B800;
+  --k:#0E0E0E; --k2:#1A1A1A; --k3:#2A2A2A;
+  --w:#FFFFFF; --cream:#FFF9E0;
+  --blue:#2D5DA8; --red:#E63B2E;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--k);background:var(--w);line-height:1.65;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.head{font-family:var(--head);line-height:1.2}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1200px,92%);margin:0 auto}
+
+/* hazard stripe */
+.hazard{height:12px;background:repeating-linear-gradient(-45deg,var(--y) 0 18px,var(--k) 18px 36px)}
+
+/* top bar */
+.topbar{background:var(--k);color:#ddd;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:8px 0;flex-wrap:wrap}
+.topbar b{color:var(--y)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ddc84;margin-right:6px;box-shadow:0 0 0 3px rgba(61,220,132,.25)}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:50;background:var(--y);border-bottom:4px solid var(--k)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:56px;height:56px;border-radius:12px;border:3px solid var(--k);object-fit:cover;background:var(--w)}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:24px;line-height:1}
+.brand .t2{font-size:13px;font-weight:600;letter-spacing:.5px}
+.menu{display:flex;gap:28px;font-family:var(--head);font-weight:700;font-size:16px}
+.menu a{position:relative;padding:4px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:-2px;height:3px;width:0;background:var(--k);transition:.25s}
+.menu a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:800;border:3px solid var(--k);border-radius:999px;padding:12px 24px;cursor:pointer;transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.btn-k{background:var(--k);color:var(--y);box-shadow:4px 4px 0 var(--w)}
+.btn-y{background:var(--y);color:var(--k);box-shadow:5px 5px 0 var(--k)}
+.btn-w{background:var(--w);color:var(--k);box-shadow:5px 5px 0 var(--k)}
+.btn:hover{transform:translate(-2px,-2px)}
+.btn-y:hover,.btn-w:hover{box-shadow:7px 7px 0 var(--k)}
+.btn svg{width:20px;height:20px}
+.burger{display:none;background:none;border:0;cursor:pointer}
+
+/* hero */
+.hero{position:relative;background:var(--k);color:var(--w);overflow:hidden;padding:80px 0 120px}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(255,212,0,.13) 1.6px,transparent 1.6px);background-size:26px 26px;
+  mask-image:linear-gradient(90deg,transparent 0%,#000 60%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--y);color:var(--k);font-family:var(--head);font-weight:800;padding:6px 16px;border-radius:999px;font-size:15px;transform:rotate(-2deg)}
+.hero h1{font-size:clamp(44px,6.4vw,84px);font-weight:900;margin:22px 0 18px;letter-spacing:-.5px}
+.hero h1 .hl{color:var(--y);display:inline-block;position:relative}
+.hero h1 .hl::after{content:"";position:absolute;left:-4px;right:-4px;bottom:6px;height:14px;background:rgba(255,212,0,.25);z-index:-1;border-radius:4px}
+.hero h1 small{display:block;font-size:.42em;font-weight:700;color:#cfcfcf;margin-top:10px}
+.hero p.lead{font-size:20px;color:#d6d6d6;max-width:560px}
+.hero p.lead b{color:var(--y)}
+.cta-row{display:flex;gap:18px;margin-top:34px;flex-wrap:wrap}
+.hero .btn-y{box-shadow:5px 5px 0 var(--w)}
+.hero .btn-w{background:transparent;color:var(--w);border-color:var(--w);box-shadow:none}
+.hero .btn-w:hover{background:var(--w);color:var(--k)}
+.stats{display:flex;gap:34px;margin-top:46px;flex-wrap:wrap}
+.stat .n{font-family:var(--head);font-weight:900;font-size:40px;color:var(--y);line-height:1}
+.stat .l{font-size:14px;color:#aaa;margin-top:6px}
+
+.hero-art{position:relative;aspect-ratio:1/1;max-width:520px;justify-self:center;width:100%}
+.tire{position:absolute;inset:4%;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.badge{position:absolute;inset:22%;display:grid;place-items:center}
+.hex{width:100%;aspect-ratio:1/1;background:var(--y);clip-path:polygon(25% 3%,75% 3%,100% 50%,75% 97%,25% 97%,0 50%);display:grid;place-items:center;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+.hex-in{width:92%;aspect-ratio:1/1;background:var(--w);clip-path:inherit;display:grid;place-items:center;overflow:hidden}
+.hex-in img{width:100%;height:100%;object-fit:cover}
+.sticker{position:absolute;font-family:var(--head);font-weight:900;background:var(--w);color:var(--k);border:3px solid var(--k);border-radius:14px;padding:10px 16px;box-shadow:5px 5px 0 var(--y);font-size:15px;line-height:1.25}
+.sticker small{display:block;font-weight:600;font-size:12px;color:#555}
+.s1{top:6%;right:-2%;transform:rotate(6deg);animation:bob 4s ease-in-out infinite}
+.s2{bottom:10%;left:-4%;transform:rotate(-5deg);animation:bob 4.6s ease-in-out infinite .6s}
+.s3{bottom:-2%;right:8%;background:var(--y);box-shadow:5px 5px 0 var(--w);transform:rotate(3deg);animation:bob 5s ease-in-out infinite 1s}
+@keyframes bob{50%{translate:0 -10px}}
+.hero-wave{position:absolute;left:0;right:0;bottom:-1px;height:70px;background:var(--y);clip-path:polygon(0 60%,100% 0,100% 100%,0 100%)}
+
+/* marquee */
+.marquee{background:var(--y);border-bottom:4px solid var(--k);overflow:hidden;padding:14px 0}
+.track{display:flex;gap:46px;width:max-content;animation:slide 38s linear infinite;font-family:var(--head);font-weight:800;font-size:20px}
+.track span{display:flex;align-items:center;gap:46px}
+.track span::after{content:"";width:16px;height:16px;background:var(--k);clip-path:polygon(25% 3%,75% 3%,100% 50%,75% 97%,25% 97%,0 50%)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:100px 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 56px}
+.eyebrow{display:inline-block;font-family:var(--head);font-weight:800;font-size:14px;letter-spacing:2px;text-transform:uppercase;background:var(--k);color:var(--y);padding:6px 14px;border-radius:8px;margin-bottom:16px}
+.sec-head h2{font-size:clamp(32px,4.4vw,52px);font-weight:900}
+.sec-head h2 em{font-style:normal;background:linear-gradient(transparent 58%,var(--y) 58%)}
+.sec-head p{margin-top:14px;color:#555;font-size:18px}
+
+/* services */
+.services{background:var(--cream)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.svc{background:var(--w);border:3px solid var(--k);border-radius:var(--r);padding:28px 24px;position:relative;transition:.2s;box-shadow:6px 6px 0 var(--k)}
+.svc:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--k);background:var(--y)}
+.svc .ic{width:62px;height:62px;border-radius:16px;background:var(--k);display:grid;place-items:center;margin-bottom:18px}
+.svc .ic svg{width:34px;height:34px;stroke:var(--y);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-size:22px;font-weight:800;margin-bottom:6px}
+.svc p{font-size:15.5px;color:#444}
+.svc ul{list-style:none;margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.svc li{font-size:13px;font-weight:600;background:var(--cream);border:1.5px solid var(--k);border-radius:999px;padding:2px 10px}
+.svc:hover li{background:var(--w)}
+.svc.hot{background:var(--k);color:var(--w)}
+.svc.hot p{color:#ccc}
+.svc.hot .ic{background:var(--y)}
+.svc.hot .ic svg{stroke:var(--k)}
+.svc.hot li{background:transparent;border-color:var(--y);color:var(--y)}
+.svc.hot:hover{background:var(--k2)}
+.ribbon{position:absolute;top:-14px;right:16px;background:var(--red);color:var(--w);font-family:var(--head);font-weight:800;font-size:13px;padding:4px 12px;border-radius:8px;border:2px solid var(--k);transform:rotate(4deg)}
+
+/* receipt / transparency */
+.honest{background:var(--k);color:var(--w);position:relative;overflow:hidden}
+.honest::before{content:"฿";position:absolute;font-family:var(--head);font-weight:900;font-size:560px;color:rgba(255,212,0,.05);right:-60px;top:-140px;line-height:1}
+.honest .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;position:relative}
+.honest h2{font-size:clamp(34px,4.4vw,54px);font-weight:900}
+.honest h2 span{color:var(--y)}
+.honest .quote{font-family:var(--head);font-weight:800;font-size:24px;color:var(--y);margin:22px 0 10px}
+.honest p{color:#cfcfcf;font-size:18px}
+.checks{list-style:none;margin:28px 0 34px;display:grid;gap:14px}
+.checks li{display:flex;gap:14px;align-items:flex-start;font-size:17px}
+.checks li::before{content:"✓";flex:0 0 30px;height:30px;border-radius:50%;background:var(--y);color:var(--k);display:grid;place-items:center;font-weight:900}
+.receipt{background:var(--w);color:var(--k);border-radius:6px;padding:34px 32px 44px;position:relative;transform:rotate(2deg);box-shadow:14px 14px 0 var(--y);font-size:15.5px;
+  -webkit-mask:radial-gradient(circle 9px at 50% 100%,transparent 98%,#000) 0 0/22px 100% repeat-x;mask:radial-gradient(circle 9px at 11px 100%,transparent 98%,#000) 0 0/22px 100% repeat-x}
+.receipt .rh{text-align:center;border-bottom:2px dashed #999;padding-bottom:14px;margin-bottom:14px}
+.receipt .rh b{font-family:var(--head);font-size:22px;font-weight:900;display:block}
+.receipt .car{display:inline-block;background:var(--k);color:var(--y);font-weight:700;border-radius:6px;padding:2px 10px;margin-top:6px;font-size:14px}
+.receipt h4{font-size:16px;font-weight:800;margin:14px 0 6px;display:flex;justify-content:space-between}
+.receipt h4 span{background:var(--y);border-radius:6px;padding:0 8px;font-size:13px}
+.receipt .row{display:flex;justify-content:space-between;border-bottom:1px dotted #ccc;padding:4px 0}
+.receipt .row i{font-style:normal;color:#2a8a3e;font-weight:700}
+.receipt .stamp{position:absolute;right:20px;bottom:46px;border:4px solid var(--red);color:var(--red);font-family:var(--head);font-weight:900;font-size:20px;padding:4px 14px;border-radius:10px;transform:rotate(-14deg);opacity:.85;background:rgba(255,255,255,.7)}
+
+/* knowledge */
+.know-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:24px}
+.card{border:3px solid var(--k);border-radius:var(--r);overflow:hidden;background:var(--w);display:flex;flex-direction:column;transition:.2s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 0 -6px var(--y),0 18px 0 -3px var(--k)}
+.card .cv{height:190px;background:var(--y);position:relative;display:grid;place-items:center;border-bottom:3px solid var(--k);overflow:hidden}
+.card .cv.dark{background:var(--k)}
+.card .cv .big{font-family:var(--head);font-weight:900;font-size:64px;line-height:1}
+.card .cv .hash{position:absolute;left:14px;top:14px;background:var(--k);color:var(--y);font-family:var(--head);font-weight:800;font-size:13px;border-radius:6px;padding:3px 10px}
+.card .cv.dark .hash{background:var(--y);color:var(--k)}
+.card .bd{padding:22px 24px 26px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:22px;font-weight:800;margin-bottom:8px}
+.card p{color:#555;font-size:16px;flex:1}
+.card .more{margin-top:16px;font-family:var(--head);font-weight:800;display:inline-flex;align-items:center;gap:8px}
+.card .more::after{content:"→";transition:.2s}
+.card:hover .more::after{transform:translateX(6px)}
+.fluids{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:46px 18px 14px;width:100%}
+.fluids div{background:var(--w);border:2px solid var(--k);border-radius:10px;text-align:center;font-family:var(--head);font-weight:700;font-size:13px;padding:8px 4px}
+.fluids div i{display:block;font-style:normal;font-size:22px}
+
+/* why */
+.why{background:var(--y);position:relative}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.why-item{background:var(--k);color:var(--w);border-radius:var(--r);padding:30px 24px;position:relative}
+.why-item .num{font-family:var(--head);font-weight:900;font-size:58px;color:var(--y);line-height:1;opacity:.95}
+.why-item h3{font-size:22px;font-weight:800;margin:12px 0 8px}
+.why-item p{color:#c9c9c9;font-size:15.5px}
+.why-item .hs{display:inline-block;margin-top:14px;font-size:13px;font-weight:700;color:var(--y)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;top:44px;left:10%;right:10%;border-top:4px dashed var(--k)}
+.step{text-align:center;position:relative}
+.step .c{width:88px;height:88px;margin:0 auto 18px;background:var(--y);border:4px solid var(--k);display:grid;place-items:center;clip-path:polygon(25% 3%,75% 3%,100% 50%,75% 97%,25% 97%,0 50%);font-family:var(--head);font-weight:900;font-size:30px}
+.step h4{font-size:19px;font-weight:800}
+.step p{font-size:15px;color:#555;margin-top:4px}
+
+/* reviews */
+.reviews{background:var(--cream)}
+.rv-top{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-bottom:44px}
+.pill{background:var(--w);border:3px solid var(--k);border-radius:999px;padding:10px 22px;font-family:var(--head);font-weight:800;box-shadow:4px 4px 0 var(--k)}
+.pill b{color:#2a8a3e}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:var(--w);border:3px solid var(--k);border-radius:var(--r);padding:26px;position:relative}
+.rv::before{content:"“";position:absolute;right:18px;top:-6px;font-family:Georgia,serif;font-size:110px;color:var(--y);line-height:1}
+.rv .stars{color:#F5A400;letter-spacing:2px;font-size:18px}
+.rv p{margin:10px 0 18px;font-size:16.5px}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv .av{width:46px;height:46px;border-radius:50%;background:var(--k);color:var(--y);display:grid;place-items:center;font-family:var(--head);font-weight:900}
+.rv .who b{display:block;font-family:var(--head)}
+.rv .who small{color:#777}
+.note{text-align:center;color:#888;font-size:13px;margin-top:22px}
+
+/* area + contact */
+.contact{background:var(--k);color:var(--w)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:stretch}
+.contact h2{font-size:clamp(34px,4.4vw,52px);font-weight:900}
+.contact h2 span{color:var(--y)}
+.info{display:grid;gap:18px;margin:30px 0}
+.info .it{display:flex;gap:16px;align-items:flex-start;background:var(--k2);border:2px solid var(--k3);border-radius:14px;padding:16px 18px}
+.info .it .i{flex:0 0 46px;height:46px;border-radius:12px;background:var(--y);display:grid;place-items:center}
+.info .it .i svg{width:24px;height:24px;stroke:var(--k);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.info .it b{font-family:var(--head);color:var(--y);display:block;font-size:15px}
+.info .it span{color:#ddd}
+.info .it .ph{font-family:var(--head);font-weight:900;font-size:30px;color:var(--w);letter-spacing:1px}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.areas span{border:1.5px solid var(--y);color:var(--y);border-radius:999px;padding:2px 12px;font-size:14px}
+.map{border:4px solid var(--y);border-radius:var(--r);overflow:hidden;min-height:440px;position:relative;box-shadow:12px 12px 0 var(--y)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05);position:absolute;inset:0}
+
+/* hiring */
+.hire{padding:0;background:var(--k)}
+.hire-box{background:var(--y);border:4px solid var(--k);border-radius:24px;display:grid;grid-template-columns:auto 1fr auto;gap:30px;align-items:center;padding:30px 40px;transform:translateY(60px);position:relative;z-index:2;box-shadow:0 0 0 6px var(--y)}
+.hire-box .big{font-size:58px}
+.hire-box h3{font-size:28px;font-weight:900}
+.hire-box p{font-size:16px}
+
+/* footer */
+footer{background:#070707;color:#999;padding:120px 0 30px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid #222}
+footer h4{color:var(--w);font-size:18px;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:var(--y)}
+.ft .brand .t1{color:var(--y)}
+.ft .brand .t2{color:#bbb}
+.ft p{margin-top:16px;max-width:320px}
+.social{display:flex;gap:10px;margin-top:18px}
+.social a{width:42px;height:42px;border-radius:12px;background:#1b1b1b;display:grid;place-items:center;transition:.2s}
+.social a:hover{background:var(--y)}
+.social a:hover svg{fill:var(--k)}
+.social svg{width:20px;height:20px;fill:var(--y)}
+.copy{display:flex;justify-content:space-between;padding-top:24px;font-size:13px;flex-wrap:wrap;gap:10px}
+
+/* floating */
+.fab{position:fixed;right:22px;bottom:22px;z-index:60;display:flex;flex-direction:column;gap:12px}
+.fab a{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;border:3px solid var(--k);box-shadow:4px 4px 0 var(--k);transition:.2s}
+.fab a:hover{transform:scale(1.08)}
+.fab .call{background:var(--y);animation:ring 2.4s infinite}
+.fab .msg{background:#0866FF}
+.fab svg{width:28px;height:28px}
+@keyframes ring{0%,100%{box-shadow:4px 4px 0 var(--k),0 0 0 0 rgba(255,212,0,.7)}50%{box-shadow:4px 4px 0 var(--k),0 0 0 14px rgba(255,212,0,0)}}
+
+/* reveal */
+.rv-on{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.rv-on.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1080px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .know-grid{grid-template-columns:1fr 1fr}
+  .know-grid .card:first-child{grid-column:1/-1}
+  .ft{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .menu,.nav-cta{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:78px;left:0;right:0;background:var(--y);padding:20px 4%;border-bottom:4px solid var(--k);gap:16px}
+  .hero{padding:50px 0 100px}
+  .hero .wrap,.honest .wrap,.contact .wrap{grid-template-columns:1fr}
+  .hero-art{max-width:380px;order:-1}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps::before{display:none}
+  .rv-grid{grid-template-columns:1fr}
+  .hire-box{grid-template-columns:1fr;text-align:center}
+  .receipt{transform:none}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:70px 0}
+  .svc-grid,.why-grid,.know-grid{grid-template-columns:1fr}
+  .stats{gap:22px}
+  .stat .n{font-size:32px}
+  .ft{grid-template-columns:1fr}
+  .topbar .hide-sm{display:none}
+  .s1,.s2{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="hazard"></div>
+<div class="topbar">
+  <div class="wrap">
+    <div><span class="dot"></span>วันอาทิตย์ก็เปิด <b>9.00 – 16.00 น.</b> · โทรนัดคิวก่อนได้เลยคับ</div>
+    <div class="hide-sm">📍 433 ตรงข้ามปั๊ม SUSCO ถ.วงศ์สว่าง บางซื่อ · ☎️ <b>086-324-2422</b></div>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#" class="brand">
+      <img src="assets/logo.jpg" alt="โลโก้ แร้วแต่ปุ๊ Tyres">
+      <div><div class="t1">แร้วแต่ปุ๊</div><div class="t2">TYRES · วงศ์สว่าง</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#services">บริการ</a>
+      <a href="#honest">ราคาโปร่งใส</a>
+      <a href="#knowledge">รู้ก่อนลุย</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#contact">ติดต่อ / แผนที่</a>
+    </div>
+    <a href="tel:0863242422" class="btn btn-k nav-cta">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+      โทรนัดคิว
+    </a>
+    <button class="burger" aria-label="เมนู" onclick="document.getElementById('menu').classList.toggle('open')">
+      <svg width="32" height="32" viewBox="0 0 24 24" stroke="#0E0E0E" stroke-width="2.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="tag">🐶 ร้านยางรถยนต์ใกล้คุณ · วงศ์สว่าง</span>
+      <h1>ยาง ช่วงล่าง เบรค<br><span class="hl">จบที่ร้านปุ๊</span>
+        <small>จะเปลี่ยน จะซ่อม จะเช็ก… <span style="color:var(--y)">แร้วแต่ปุ๊</span> ดูแลให้ 😁</small></h1>
+      <p class="lead">งาน<b>ช้าแต่ละเอียด</b> แจกแจงราคาทุกรายการ เพราะ <b>#ชีวิตเราเป็นสิ่งมีค่า</b> ความปลอดภัยบนถนนเป็นเรื่องที่เราป้องกันได้</p>
+      <div class="cta-row">
+        <a href="tel:0863242422" class="btn btn-y">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          086-324-2422
+        </a>
+        <a href="#services" class="btn btn-w">ดูบริการทั้งหมด →</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="n" data-count="50">0</div><div class="l">ผู้ติดตามบน Facebook</div></div>
+        <div class="stat"><div class="n">100%</div><div class="l">แนะนำ (49 รีวิว)</div></div>
+        <div class="stat"><div class="n">7 วัน</div><div class="l">อาทิตย์ก็เปิดคับ</div></div>
+      </div>
+    </div>
+
+    <div class="hero-art rv-on">
+      <!-- spinning tyre -->
+      <svg class="tire" viewBox="0 0 400 400" aria-hidden="true">
+        <defs>
+          <pattern id="tread" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+            <rect width="40" height="40" fill="#1d1d1d"/><rect width="14" height="40" fill="#2b2b2b"/>
+          </pattern>
+        </defs>
+        <circle cx="200" cy="200" r="196" fill="url(#tread)"/>
+        <circle cx="200" cy="200" r="196" fill="none" stroke="#FFD400" stroke-width="4" stroke-dasharray="14 18"/>
+        <circle cx="200" cy="200" r="160" fill="#141414" stroke="#333" stroke-width="3"/>
+        <g fill="#FFD400" font-family="Noto Sans Thai" font-weight="900" font-size="20" letter-spacing="6">
+          <path id="arc" d="M200,200 m-140,0 a140,140 0 1,1 280,0 a140,140 0 1,1 -280,0" fill="none"/>
+          <text><textPath href="#arc">แร้วแต่ปุ๊ TYRES • ยาง • ช่วงล่าง • เบรค • ตั้งศูนย์ • </textPath></text>
+        </g>
+      </svg>
+      <div class="badge"><div class="hex"><div class="hex-in"><img src="assets/logo.jpg" alt="น้องหมาช่างแร้วแต่ปุ๊"></div></div></div>
+      <div class="sticker s1">🛞 ปะยางนอกสถานที่<small>ยางรั่วกลางทาง โทรเลย</small></div>
+      <div class="sticker s2">🔧 #นัดคิว<small>ไม่ต้องรอนาน</small></div>
+      <div class="sticker s3">⭐ 100% แนะนำ</div>
+    </div>
+  </div>
+  <div class="hero-wave"></div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>#ชีวิตเราเป็นสิ่งมีค่า</span><span>#ความปลอดภัยที่เราป้องกันได้</span><span>#งานช้าแต่ละเอียด</span><span>#ผมจบบัญชีค้าบ</span><span>#นัดคิว</span><span>#ชาววงศ์สว่าง</span><span>ถ้าคุนเก่งพอ คุนก้อแก่พอ</span><span>Live &amp; Learn</span>
+    <span>#ชีวิตเราเป็นสิ่งมีค่า</span><span>#ความปลอดภัยที่เราป้องกันได้</span><span>#งานช้าแต่ละเอียด</span><span>#ผมจบบัญชีค้าบ</span><span>#นัดคิว</span><span>#ชาววงศ์สว่าง</span><span>ถ้าคุนเก่งพอ คุนก้อแก่พอ</span><span>Live &amp; Learn</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">บริการของเรา</span>
+      <h2>ครบเรื่อง <em>ยาง ช่วงล่าง เบรค</em><br>ในร้านเดียว</h2>
+      <p>ตั้งแต่เปลี่ยนยางเส้นเดียว ไปจนถึงรื้อช่วงล่างทั้งคัน เก๋ง กระบะ SUV ไปจนถึงรถ EV คุนปุ๊กับทีมช่างจัดให้</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v5.5M12 15.5V21M3 12h5.5M15.5 12H21"/></svg></div>
+        <h3>ยางรถยนต์</h3>
+        <p>ยางใหม่ทุกขนาด แนะนำรุ่นที่เหมาะกับการใช้งานและงบ</p>
+        <ul><li>เปลี่ยนยาง</li><li>ปะยาง</li><li>สลับยาง</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/><path d="M3 12h2M19 12h2M12 3v2M12 19v2"/></svg></div>
+        <h3>ตั้งศูนย์ถ่วงล้อ</h3>
+        <p>รถกินยาง พวงมาลัยไม่ตรง ดึงซ้ายดึงขวา ตั้งศูนย์ให้แม่น</p>
+        <ul><li>ตั้งศูนย์</li><li>ถ่วงล้อ</li><li>คาริเบตศูนย์ล้อ</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 18 10 6l4 8 2-3 4 7"/><circle cx="10" cy="6" r="1.6"/><path d="M3 18h18"/></svg></div>
+        <h3>ช่วงล่าง</h3>
+        <p>เสียงดังกึกกัก รถโยน ช่วงล่างหลวม ตรวจละเอียดทุกจุด</p>
+        <ul><li>บูชปีกนก</li><li>ลูกหมาก</li><li>โช้คอัพ</li><li>ยางแท่นเครื่อง</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M7 5.5A8 8 0 0 0 5 9"/><rect x="15" y="3" width="5" height="9" rx="2"/></svg></div>
+        <h3>ระบบเบรค</h3>
+        <p>เบรคไม่อยู่ มีเสียง เหยียบลึก จัดการให้ปลอดภัยก่อนออกถนน</p>
+        <ul><li>ผ้าเบรค</li><li>เจียรจานเบรค</li><li>Flushing น้ำมันเบรค</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9 14a3 3 0 0 0 3 3"/></svg></div>
+        <h3>น้ำมัน &amp; ของเหลว</h3>
+        <p>บำรุงรักษาตามระยะ ครบทุกของเหลวในรถ</p>
+        <ul><li>น้ำมันเครื่อง</li><li>น้ำมันเกียร์+กรอง</li><li>น้ำมันพาวเวอร์</li><li>น้ำยาหม้อน้ำ</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 7V5h3v2M14 7V5h3v2M7 13h3M15.5 11.5v3M14 13h3"/></svg></div>
+        <h3>แบตเตอรี่</h3>
+        <p>สตาร์ทไม่ติด ไฟอ่อน ตรวจเช็กและเปลี่ยนแบตให้ไว</p>
+        <ul><li>ตรวจเช็กแบต</li><li>เปลี่ยนแบต</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h18"/><circle cx="5" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><path d="M9 9l2 3-2 3M15 9l-2 3 2 3"/></svg></div>
+        <h3>เพลาขับ &amp; คลัตช์</h3>
+        <p>ระบบที่พารถขับเคลื่อนไปข้างหน้า เสียงดังตอนเลี้ยวต้องรีบเช็ก</p>
+        <ul><li>ยางหุ้มเพลา</li><li>ชุดคลัตช์</li><li>สายพาน</li></ul>
+      </div>
+      <div class="svc hot rv-on">
+        <span class="ribbon">ฉุกเฉิน!</span>
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 16V8h11v8"/><path d="M14 11h4l3 3v2h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div>
+        <h3>ปะยางนอกสถานที่</h3>
+        <p>ยางแบนกลางทาง ไม่ต้องลุ้น โทรหาปุ๊ เดี๋ยวไปหา</p>
+        <ul><li>กรุงเทพฯ</li><li>นนทบุรี</li><li>บางซื่อ–บางเขน</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HONEST PRICE -->
+<section class="honest" id="honest">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow" style="background:var(--y);color:var(--k)">ราคาโปร่งใส</span>
+      <h2>ลูกค้าบอก “งงจัง”<br>ทำไม<span>คิดราคาไวมาก</span></h2>
+      <div class="quote">ก็…ผมจบบัญชีค้าบ 😁😂</div>
+      <p>ทุกงานแจกแจงทีละรายการ ก่อนลงมือซ่อม ช่างจะโชว์ของเสีย อธิบายว่าจำเป็นแค่ไหน แล้วให้คุณตัดสินใจเอง ไม่มีบวกเพิ่มทีหลัง</p>
+      <ul class="checks">
+        <li>ตรวจเช็กละเอียด แจ้งสภาพจริงพร้อมรูปถ่าย</li>
+        <li>ใบเสนอราคาแยกรายการชัดเจน ค่าอะไหล่ / ค่าแรง</li>
+        <li>อะไหล่ต้องรอ? แจ้งระยะเวลาตรงไปตรงมา ไม่ทิ้งงาน</li>
+      </ul>
+      <a href="tel:0863242422" class="btn btn-y" style="box-shadow:5px 5px 0 var(--w)">ขอประเมินราคาฟรี</a>
+    </div>
+    <div class="rv-on">
+      <div class="receipt">
+        <div class="rh">
+          <b>แร้วแต่ปุ๊ TYRES</b>
+          <small>ใบรายการซ่อม · ตัวอย่างงานจริงจากเพจ</small><br>
+          <span class="car">🚘 Toyota Camry ACV40</span>
+        </div>
+        <h4>#รวมการซ่อม <span>7 รายการ</span></h4>
+        <div class="row">บูชปีกนก 6 จุด <i>✓</i></div>
+        <div class="row">ลูกหมากคันชัก <i>✓</i></div>
+        <div class="row">ลูกหมากแร็ค <i>✓</i></div>
+        <div class="row">โช้คอัพ &amp; เบ้าโช้ค <i>✓</i></div>
+        <div class="row">ยางแท่นเครื่อง <i>✓</i></div>
+        <div class="row">ผ้าเบรค <i>✓</i></div>
+        <div class="row">เจียรจานเบรค <i>✓</i></div>
+        <h4>#บำรุงรักษา <span>5 รายการ</span></h4>
+        <div class="row">น้ำมันเครื่อง <i>✓</i></div>
+        <div class="row">น้ำมันเกียร์ + กรองเกียร์ <i>✓</i></div>
+        <div class="row">น้ำมันพาวเวอร์ <i>✓</i></div>
+        <div class="row">น้ำมันเบรค <i>✓</i></div>
+        <div class="row">น้ำยาหม้อน้ำ <i>✓</i></div>
+        <div class="stamp">ส่งมอบแล้ว</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWLEDGE -->
+<section id="knowledge">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">รู้ก่อนจะลุยคับ</span>
+      <h2>ความรู้เรื่องรถ <em>ฉบับคุนปุ๊</em></h2>
+      <p>อ่านง่าย ขำได้ แต่เอาไปใช้ได้จริง เพราะ #ความปลอดภัยที่เราป้องกันได้</p>
+    </div>
+    <div class="know-grid">
+      <article class="card rv-on">
+        <div class="cv">
+          <span class="hash">#ยางแตก</span>
+          <svg width="230" height="150" viewBox="0 0 230 150" aria-hidden="true">
+            <g transform="translate(60 75)"><circle r="52" fill="#0E0E0E"/><circle r="24" fill="#FFD400" stroke="#0E0E0E" stroke-width="4"/><path d="M-20 -48 l10 18 -12 6 14 20" stroke="#FFD400" stroke-width="5" fill="none" stroke-linejoin="round"/></g>
+            <text x="118" y="86" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="30" fill="#0E0E0E">≠</text>
+            <g transform="translate(178 75)"><circle r="40" fill="#0E0E0E"/><circle r="18" fill="#FFD400" stroke="#0E0E0E" stroke-width="4"/>
+              <g stroke="#E63B2E" stroke-width="6" stroke-linecap="round"><path d="M0 -50v-14M0 50v14M-50 0h-10M50 0h-6M-36 -36l-8 -8M36 36l8 8M36 -36l8 -8M-36 36l-8 8"/></g></g>
+          </svg>
+        </div>
+        <div class="bd">
+          <h3>ยางแตก คนละประเด็นกับยางระเบิดนะคับ</h3>
+          <p>ยางแตกลายงา แก้มยางบวม กับยางระเบิดกลางทาง ต่างกันยังไง แล้วเมื่อไหร่ต้องเปลี่ยนก่อนสายเกินไป</p>
+          <a href="#" class="more">อ่านต่อ</a>
+        </div>
+      </article>
+      <article class="card rv-on">
+        <div class="cv">
+          <span class="hash">#ของเหลวในรถ</span>
+          <div class="fluids">
+            <div><i>🛢️</i>น้ำมันเครื่อง</div><div><i>⚙️</i>น้ำมันเกียร์</div><div><i>🛑</i>น้ำมันเบรค</div>
+            <div><i>🔄</i>พาวเวอร์</div><div><i>❄️</i>หม้อน้ำ</div><div><i>💦</i>ฉีดกระจก</div>
+          </div>
+        </div>
+        <div class="bd">
+          <h3>รถเก๋ง 1 คัน มีของเหลวกี่อย่าง?</h3>
+          <p>เช็กครบไหม? รวมของเหลว 6 อย่างที่ต้องดูแลตามระยะ</p>
+          <a href="#" class="more">อ่านต่อ</a>
+        </div>
+      </article>
+      <article class="card rv-on">
+        <div class="cv dark">
+          <span class="hash">#ปีกนก</span>
+          <div class="big" style="color:var(--y)">🪽🚗</div>
+        </div>
+        <div class="bd">
+          <h3>อันนี้เราเรียกว่า “ปีกนก” นะคับ</h3>
+          <p>เอาไว้ช่วยให้รถบินได้ แข่งกับ Tesla ตัวใหม่ของอีลอน…ล้อเล่นคับ 😂 มาดูหน้าที่จริงของปีกนก</p>
+          <a href="#" class="more">อ่านต่อ</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">ทำไมต้องร้านปุ๊</span>
+      <h2>ไม่ได้เก่งที่สุด<br>แต่ <span style="background:var(--k);color:var(--y);padding:0 12px;border-radius:10px">ใส่ใจที่สุด</span></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item rv-on"><div class="num">01</div><h3>งานช้าแต่ละเอียด</h3><p>ไม่รีบปิดงาน ขันทุกน็อต เช็กทุกจุดจนจบ ตามมาตรฐานร้านยาง</p><span class="hs">#งานช้าแต่ละเอียด</span></div>
+      <div class="why-item rv-on"><div class="num">02</div><h3>ราคาแจกแจงชัด</h3><p>บอกก่อนซ่อมทุกรายการ ไม่มีค่าใช้จ่ายแอบแฝง</p><span class="hs">#ผมจบบัญชีค้าบ</span></div>
+      <div class="why-item rv-on"><div class="num">03</div><h3>ความปลอดภัยมาก่อน</h3><p>อะไรที่ไม่จำเป็นเราบอกตรงๆ อะไรที่อันตรายเราก็เตือนตรงๆ</p><span class="hs">#ชีวิตเราเป็นสิ่งมีค่า</span></div>
+      <div class="why-item rv-on"><div class="num">04</div><h3>อาทิตย์ก็เปิด</h3><p>วันทำงานไม่ว่าง เอารถมาวันอาทิตย์ได้ โทรนัดคิวไว้ก่อน ไม่ต้องรอนาน</p><span class="hs">#นัดคิว</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">ขั้นตอนง่ายๆ</span>
+      <h2>เอารถเข้าร้าน <em>5 ขั้นตอน</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv-on"><div class="c">1</div><h4>โทรนัดคิว</h4><p>086-324-2422 หรือทักเพจ</p></div>
+      <div class="step rv-on"><div class="c">2</div><h4>ตรวจเช็ก</h4><p>ยกรถ เช็กยาง ช่วงล่าง เบรค</p></div>
+      <div class="step rv-on"><div class="c">3</div><h4>แจ้งราคา</h4><p>แยกรายการ ให้คุณเลือก</p></div>
+      <div class="step rv-on"><div class="c">4</div><h4>ลงมือซ่อม</h4><p>ละเอียดทุกขั้น</p></div>
+      <div class="step rv-on"><div class="c">5</div><h4>ส่งมอบ</h4><p>ทดลองขับ พร้อมคำแนะนำ</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">เสียงจากลูกค้า</span>
+      <h2>ชาววงศ์สว่าง <em>ไว้ใจ</em></h2>
+    </div>
+    <div class="rv-top rv-on">
+      <div class="pill"><b>100%</b> แนะนำ · 49 รีวิวบน Facebook</div>
+      <div class="pill">👥 ผู้ติดตาม 50,000+</div>
+    </div>
+    <div class="rv-grid">
+      <div class="rv rv-on"><div class="stars">★★★★★</div><p>เอาแคมรี่เข้าไปทำช่วงล่างทั้งชุด อธิบายละเอียดมาก บอกราคาก่อนทุกอย่าง ขับกลับมาเงียบเหมือนรถใหม่</p><div class="who"><div class="av">ก</div><div><b>คุณกอล์ฟ</b><small>Toyota Camry</small></div></div></div>
+      <div class="rv rv-on"><div class="stars">★★★★★</div><p>ยางแบนวันอาทิตย์ ร้านอื่นปิดหมด โทรหาร้านปุ๊ มาปะให้ถึงที่ เป็นกันเองมาก แนะนำเลยครับ</p><div class="who"><div class="av">น</div><div><b>คุณนิด</b><small>Honda City</small></div></div></div>
+      <div class="rv rv-on"><div class="stars">★★★★★</div><p>รถโดนมอไซค์ชนจนปีกนกพัง ต้องรออะไหล่นาน แต่ร้านอัปเดตตลอด ไม่ทิ้งงาน ตั้งศูนย์ให้เป๊ะ</p><div class="who"><div class="av">ต</div><div><b>คุณต้น</b><small>Jaecoo J5</small></div></div></div>
+    </div>
+    <p class="note">* ข้อความรีวิวในหน้านี้เป็นตัวอย่างสำหรับ demo จะใช้รีวิวจริงจากลูกค้าในเว็บไซต์จริง</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow" style="background:var(--y);color:var(--k)">ติดต่อ &amp; แผนที่</span>
+      <h2>แวะมาหา<span>ปุ๊</span>ได้เลย</h2>
+      <div class="info">
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div><div><b>โทรนัดคิว</b><a href="tel:0863242422" class="ph">086-324-2422</a></div></div>
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><b>ที่อยู่ร้าน</b><span>433 ตรงข้ามปั๊มน้ำมัน SUSCO ถ.วงศ์สว่าง แขวงบางซื่อ เขตบางซื่อ กรุงเทพฯ 10800</span></div></div>
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b>เวลาทำการ</b><span>วันอาทิตย์ 9.00 – 16.00 น. · วันอื่นโทรสอบถาม / นัดคิวล่วงหน้า</span></div></div>
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><path d="M3 16V8h11v8"/><path d="M14 11h4l3 3v2h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><div><b>พื้นที่ปะยางนอกสถานที่</b>
+          <div class="areas"><span>กรุงเทพมหานคร</span><span>นนทบุรี</span><span>บางเขน</span><span>บางบัวทอง</span><span>บางพลัด</span><span>บางใหญ่</span></div></div></div>
+      </div>
+      <div class="cta-row" style="margin-top:0">
+        <a href="https://g.co/kgs/1NuC75" target="_blank" rel="noopener" class="btn btn-y" style="box-shadow:5px 5px 0 var(--w)">📍 นำทางด้วย Google Maps</a>
+        <a href="https://m.me/RubberPu4U" target="_blank" rel="noopener" class="btn btn-w" style="background:transparent;color:#fff;border-color:#fff;box-shadow:none">💬 ทัก Messenger</a>
+      </div>
+    </div>
+    <div class="map rv-on">
+      <iframe title="แผนที่ร้านแร้วแต่ปุ๊ วงศ์สว่าง" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=%E0%B9%81%E0%B8%A3%E0%B9%89%E0%B8%A7%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%9B%E0%B8%B8%E0%B9%8A%20%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C%E0%B8%AA%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%20%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%8B%E0%B8%B7%E0%B9%88%E0%B8%AD&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- HIRING -->
+<section class="hire">
+  <div class="wrap">
+    <div class="hire-box rv-on">
+      <div class="big">🧰</div>
+      <div><h3>#รับสมัครเพื่อนร่วมงาน · ช่างร้านยางรถยนต์</h3><p>ไม่จำกัดอายุ · ฝีมือมาตรฐาน ละเอียดรอบคอบจนงานจบ · เงินเดือนเรียกได้ตามฝีมือ + คอมมิชชั่น</p></div>
+      <a href="tel:0863242422" class="btn btn-k">สมัครเลย</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand"><img src="assets/logo.jpg" alt="" style="width:56px;height:56px;border-radius:12px;border:3px solid var(--y)"><div><div class="t1 head" style="font-weight:900;font-size:24px">แร้วแต่ปุ๊</div><div class="t2" style="font-size:13px">TYRES · วงศ์สว่าง</div></div></div>
+        <p>ร้านยางรถยนต์ใกล้คุณ ยาง ช่วงล่าง เบรค ตั้งศูนย์ น้ำมันเครื่อง แบตเตอรี่ ปะยางนอกสถานที่</p>
+        <div class="social">
+          <a href="https://www.facebook.com/RubberPu4U" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="https://m.me/RubberPu4U" target="_blank" rel="noopener" aria-label="Messenger"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.1 2 11.3c0 2.9 1.4 5.5 3.7 7.2V22l3.4-1.9c.9.3 1.9.4 2.9.4 5.5 0 10-4.1 10-9.2S17.5 2 12 2zm1 12.4-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 5-2.7-5.5 5.8z"/></svg></a>
+          <a href="tel:0863242422" aria-label="โทร"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+        </div>
+      </div>
+      <div><h4 class="head">บริการ</h4><ul><li><a href="#services">ยางรถยนต์</a></li><li><a href="#services">ตั้งศูนย์ถ่วงล้อ</a></li><li><a href="#services">ช่วงล่าง</a></li><li><a href="#services">ระบบเบรค</a></li><li><a href="#services">ปะยางนอกสถานที่</a></li></ul></div>
+      <div><h4 class="head">เมนู</h4><ul><li><a href="#honest">ราคาโปร่งใส</a></li><li><a href="#knowledge">รู้ก่อนจะลุย</a></li><li><a href="#reviews">รีวิว</a></li><li><a href="#contact">ติดต่อ</a></li></ul></div>
+      <div><h4 class="head">ติดต่อ</h4><ul><li>☎️ <a href="tel:0863242422">086-324-2422</a></li><li>📍 433 ถ.วงศ์สว่าง บางซื่อ กทม. 10800</li><li>🕘 อาทิตย์ 9.00–16.00 น.</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 แร้วแต่ปุ๊ Tyres วงศ์สว่าง</span><span>Website demo โดย Relearn Solution</span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://m.me/RubberPu4U" target="_blank" rel="noopener" class="msg" aria-label="Messenger"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.1 2 11.3c0 2.9 1.4 5.5 3.7 7.2V22l3.4-1.9c.9.3 1.9.4 2.9.4 5.5 0 10-4.1 10-9.2S17.5 2 12 2zm1 12.4-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 5-2.7-5.5 5.8z"/></svg></a>
+  <a href="tel:0863242422" class="call" aria-label="โทร"><svg viewBox="0 0 24 24" fill="#0E0E0E"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+</div>
+
+<script>
+// reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: .12 });
+document.querySelectorAll('.rv-on').forEach((el, i) => {
+  el.style.transitionDelay = (i % 4) * 80 + 'ms';
+  io.observe(el);
+});
+// count-up
+document.querySelectorAll('[data-count]').forEach(el => {
+  const end = +el.dataset.count; let n = 0;
+  const t = setInterval(() => { n += 2; el.textContent = Math.min(n, end) + 'K+'; if (n >= end) clearInterval(t); }, 30);
+});
+// close mobile menu on click
+document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>

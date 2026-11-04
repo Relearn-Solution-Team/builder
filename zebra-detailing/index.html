@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZEBRA Car &amp; Detailing ม้าลายคาร์แคร์ | ศูนย์เคลือบแก้วเซรามิค กราฟีน ฟิล์มกรองแสง ปากเกร็ด นนทบุรี</title>
+<meta name="description" content="ZEBRA Car & Detailing ศูนย์เคลือบแก้วเซรามิค เคลือบกราฟีน ฟิล์มกรองแสง ซักเบาะซักพรม ขัดสีลบรอย ซอยสมเอก ถ.ติวานนท์ ปากเกร็ด นนทบุรี เปิดทุกวัน 09:00–19:00 ดูแลรถคุณเหมือนรถเรา">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141313; --ink2:#1d1b1b; --ink3:#2a2726; --ink4:#3a3634;
+  --teal:#1ea79b; --teal2:#43d1c3; --teal3:#0f7c73; --tealbg:#e6f6f4;
+  --cream:#f7dcc4; --cream2:#fdf3ea; --cream3:#fffaf5;
+  --w:#fff; --mute:#a9a29d;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:22px;
+  --hexclip:polygon(50% 0,100% 18%,100% 82%,50% 100%,0 82%,0 18%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--cream3);line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.head{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1200px,92%);margin:0 auto}
+svg{flex-shrink:0}
+
+/* ---------- top bar ---------- */
+.topbar{background:var(--ink);color:#cfc8c2;font-size:14px;border-bottom:1px solid #2b2827}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:8px 0;flex-wrap:wrap}
+.topbar b{color:var(--cream)}
+.status{display:inline-flex;align-items:center;gap:8px}
+.status i{width:9px;height:9px;border-radius:50%;background:#7a7370;display:inline-block}
+.status.open i{background:var(--teal2);box-shadow:0 0 0 4px rgba(67,209,195,.22);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 7px rgba(67,209,195,.05)}}
+
+/* ---------- nav ---------- */
+nav.main{position:sticky;top:0;z-index:60;background:rgba(20,19,19,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(247,220,196,.12)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--w)}
+.brand img{width:54px;height:54px;border-radius:14px;object-fit:cover}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:22px;letter-spacing:1.5px;line-height:1}
+.brand .t1 span{color:var(--teal2)}
+.brand .t2{font-size:12.5px;color:var(--cream);opacity:.85;letter-spacing:.3px}
+.menu{display:flex;gap:26px;font-family:var(--head);font-weight:600;font-size:15.5px;color:#e9e2dc}
+.menu a{position:relative;padding:4px 0;transition:color .2s}
+.menu a::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:0;background:var(--teal2);transition:.25s}
+.menu a:hover{color:var(--w)}
+.menu a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:700;border-radius:999px;padding:13px 26px;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap;border:0;font-size:16px;position:relative;overflow:hidden}
+.btn svg{width:20px;height:20px}
+.btn-teal{background:linear-gradient(135deg,var(--teal2),var(--teal) 55%,var(--teal3));color:var(--w);box-shadow:0 10px 28px -8px rgba(30,167,155,.7),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-teal::before{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:sheen 3.6s ease-in-out infinite}
+@keyframes sheen{0%,60%{left:-80%}100%{left:140%}}
+.btn-teal:hover{transform:translateY(-2px);box-shadow:0 16px 34px -8px rgba(30,167,155,.8)}
+.btn-ghost{background:rgba(255,255,255,.06);color:var(--w);border:1.5px solid rgba(247,220,196,.4)}
+.btn-ghost:hover{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.btn-dark{background:var(--ink);color:var(--w)}
+.btn-dark:hover{transform:translateY(-2px);background:var(--ink3)}
+.burger{display:none;background:none;border:0;cursor:pointer;color:var(--w)}
+.burger svg{width:30px;height:30px}
+
+/* ---------- zebra stripes ---------- */
+.zebra-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.zebra-bg svg{position:absolute;width:140%;height:140%;left:-20%;top:-20%}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:radial-gradient(1200px 700px at 78% 30%,#1f3a37 0%,var(--ink2) 45%,var(--ink) 100%);color:var(--w);overflow:hidden;padding:86px 0 130px}
+.hero .zebra-bg{opacity:.09;mask-image:linear-gradient(100deg,transparent 15%,#000 70%);-webkit-mask-image:linear-gradient(100deg,transparent 15%,#000 70%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:9px;background:rgba(67,209,195,.12);border:1px solid rgba(67,209,195,.4);color:var(--teal2);font-family:var(--head);font-weight:600;padding:7px 16px;border-radius:999px;font-size:14.5px}
+.pill svg{width:16px;height:16px}
+.hero h1{font-size:clamp(42px,6vw,80px);font-weight:900;margin:22px 0 18px;letter-spacing:-.5px;line-height:1.18}
+.gloss{background:linear-gradient(100deg,var(--cream) 0%,#fff 30%,var(--teal2) 48%,#fff 56%,var(--cream) 80%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:glossy 6s ease-in-out infinite}
+@keyframes glossy{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+.hero h1 small{display:block;font-size:.36em;font-weight:600;color:#bdb5ae;margin-top:14px;letter-spacing:0}
+.hero p.lead{font-size:19.5px;color:#d9d1ca;max-width:560px}
+.hero p.lead b{color:var(--cream);font-weight:600}
+.cta-row{display:flex;gap:16px;margin-top:34px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:12px 38px;margin-top:48px}
+.stat .n{font-family:var(--head);font-weight:800;font-size:34px;line-height:1;color:var(--w)}
+.stat .n em{font-style:normal;color:var(--teal2)}
+.stat .l{font-size:13.5px;color:#a49c96;margin-top:8px}
+
+.hero-art{position:relative;max-width:500px;width:100%;justify-self:center;aspect-ratio:.86}
+.hex-frame{position:absolute;inset:0 8% 4% 8%;clip-path:var(--hexclip);background:linear-gradient(160deg,var(--cream),#c9a98d);padding:7px}
+.hex-frame .in{width:100%;height:100%;clip-path:var(--hexclip);position:relative;overflow:hidden;background:#111}
+.hex-frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.05)}
+.hex-frame .in::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.35) 45%,transparent 55%);background-size:300% 100%;animation:sweep 5s ease-in-out infinite;mix-blend-mode:screen}
+@keyframes sweep{0%,30%{background-position:120% 0}100%{background-position:-60% 0}}
+.hex-frame .in::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,124,115,.15),rgba(20,19,19,.55));z-index:1}
+.hero-logo{position:absolute;left:-2%;bottom:6%;width:132px;height:132px;border-radius:28px;overflow:hidden;box-shadow:0 24px 50px -12px rgba(0,0,0,.7),0 0 0 3px rgba(247,220,196,.5);transform:rotate(-6deg);animation:bob 5s ease-in-out infinite;z-index:3}
+.hero-logo img{width:100%;height:100%;object-fit:cover}
+.chip{position:absolute;z-index:3;background:rgba(255,255,255,.1);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.22);color:var(--w);border-radius:16px;padding:11px 16px;font-family:var(--head);font-weight:700;font-size:15px;line-height:1.3;box-shadow:0 18px 40px -14px rgba(0,0,0,.6)}
+.chip small{display:block;font-family:var(--body);font-weight:400;font-size:12.5px;color:#d5cdc6}
+.chip .ic{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:10px;background:var(--teal);margin-right:8px;vertical-align:middle}
+.chip .ic svg{width:17px;height:17px;stroke:#fff;fill:none;stroke-width:2}
+.c1{top:8%;right:-4%;animation:bob 4.4s ease-in-out infinite}
+.c2{bottom:20%;right:-6%;animation:bob 5.2s ease-in-out infinite .8s}
+@keyframes bob{50%{translate:0 -10px}}
+.drop{position:absolute;width:22px;height:30px;background:linear-gradient(160deg,var(--teal2),var(--teal3));border-radius:50% 50% 50% 50%/60% 60% 40% 40%;clip-path:polygon(50% 0,100% 62%,90% 88%,50% 100%,10% 88%,0 62%);opacity:.85}
+.d1{top:2%;left:14%;transform:rotate(-20deg)}
+.d2{top:12%;left:4%;width:14px;height:20px;opacity:.6}
+.d3{top:30%;right:2%;width:16px;height:22px;opacity:.7;transform:rotate(18deg)}
+.hero-edge{position:absolute;left:0;right:0;bottom:-1px;height:80px;color:var(--cream3)}
+.hero-edge svg{width:100%;height:100%;display:block}
+
+/* ---------- marquee ---------- */
+.marquee{background:var(--teal);color:var(--w);overflow:hidden;padding:15px 0;position:relative;transform:rotate(-1.2deg);margin:-34px -10px 0;z-index:5;box-shadow:0 14px 30px -14px rgba(15,124,115,.6)}
+.track{display:flex;width:max-content;animation:slide 40s linear infinite;font-family:var(--head);font-weight:700;font-size:19px}
+.track span{display:flex;align-items:center;gap:22px;padding-right:22px}
+.track span::after{content:"";width:28px;height:12px;background:repeating-linear-gradient(100deg,var(--ink) 0 4px,transparent 4px 8px);border-radius:3px;opacity:.9}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{padding:104px 0;position:relative}
+.sec-head{text-align:center;max-width:780px;margin:0 auto 56px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:700;font-size:13.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--teal3);margin-bottom:14px}
+.eyebrow::before,.eyebrow::after{content:"";width:26px;height:10px;background:repeating-linear-gradient(100deg,currentColor 0 3px,transparent 3px 6px);border-radius:2px;opacity:.7}
+.sec-head h2{font-size:clamp(30px,4.2vw,50px);font-weight:800;letter-spacing:-.3px}
+.sec-head h2 em{font-style:normal;color:var(--teal);position:relative;white-space:nowrap}
+.sec-head p{margin-top:14px;color:#6b6460;font-size:18px}
+.dark{background:var(--ink2);color:var(--w)}
+.dark .sec-head p{color:#b4aca6}
+.dark .eyebrow{color:var(--teal2)}
+.dark .sec-head h2 em{color:var(--teal2)}
+.note{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;color:#7d7570;background:rgba(0,0,0,.04);border:1px dashed rgba(0,0,0,.2);padding:6px 14px;border-radius:999px;margin-top:22px}
+.dark .note{color:#b9b0aa;background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.22)}
+.note svg{width:15px;height:15px}
+
+/* ---------- services ---------- */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:var(--w);border-radius:var(--r);padding:30px 28px;position:relative;overflow:hidden;box-shadow:0 1px 0 rgba(0,0,0,.04),0 18px 40px -26px rgba(20,19,19,.35);transition:transform .25s,box-shadow .25s;border:1px solid #f0e4d9}
+.svc::after{content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;background:repeating-linear-gradient(110deg,var(--ink) 0 9px,transparent 9px 22px);opacity:.045;border-radius:50%;transition:.3s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 28px 50px -24px rgba(20,19,19,.45)}
+.svc:hover::after{opacity:.09;transform:scale(1.2)}
+.svc .ic{width:60px;height:68px;clip-path:var(--hexclip);background:linear-gradient(150deg,var(--teal2),var(--teal3));display:grid;place-items:center;margin-bottom:20px}
+.svc .ic svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svc h3{font-size:21px;font-weight:700;margin-bottom:8px}
+.svc p{font-size:15.5px;color:#5e5753}
+.svc .price{margin-top:16px;font-family:var(--head);font-weight:700;color:var(--teal3);font-size:15px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.svc .price b{font-size:22px;color:var(--ink)}
+.tagreal{font-family:var(--body);font-size:11.5px;font-weight:600;background:var(--tealbg);color:var(--teal3);border-radius:999px;padding:2px 9px}
+.tagdemo{font-family:var(--body);font-size:11.5px;font-weight:600;background:#f3ece6;color:#8a7f78;border-radius:999px;padding:2px 9px}
+.svc.feature{background:linear-gradient(160deg,var(--ink3),var(--ink));color:var(--w);border-color:transparent}
+.svc.feature p{color:#cbc3bd}
+.svc.feature .price{color:var(--teal2)}
+.svc.feature .price b{color:var(--w)}
+.svc.feature::after{background:repeating-linear-gradient(110deg,var(--cream) 0 9px,transparent 9px 22px);opacity:.08}
+
+/* ---------- packages ---------- */
+.packages{background:var(--ink2);color:var(--w);overflow:hidden}
+.packages .zebra-bg{opacity:.05}
+.tabs{display:flex;justify-content:center;gap:10px;margin:-20px auto 44px;flex-wrap:wrap;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:7px;border-radius:999px;width:max-content;max-width:100%}
+.tab{font-family:var(--head);font-weight:600;font-size:15.5px;color:#d6cec8;background:none;border:0;padding:11px 22px;border-radius:999px;cursor:pointer;transition:.2s;display:flex;align-items:center;gap:8px}
+.tab svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
+.tab.on{background:var(--cream);color:var(--ink)}
+.tab:not(.on):hover{color:var(--w);background:rgba(255,255,255,.08)}
+.pk-panel{display:none;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+.pk-panel.on{display:grid;animation:fadeUp .5s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.pk{position:relative;background:linear-gradient(170deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);border-radius:26px;padding:32px 28px 28px;display:flex;flex-direction:column}
+.pk .lvl{font-family:var(--head);font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--teal2);font-weight:700}
+.pk h3{font-size:24px;font-weight:800;margin:6px 0 4px}
+.pk .sub{font-size:14.5px;color:#aaa29c;min-height:44px}
+.pk .amt{font-family:var(--head);font-weight:800;font-size:40px;line-height:1;margin:22px 0 4px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.pk .amt small{font-size:15px;font-weight:500;color:#aaa29c}
+.pk .amt s{font-size:18px;color:#857d78;font-weight:500}
+.pk .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;min-height:22px}
+.pk ul{list-style:none;display:grid;gap:11px;margin:8px 0 26px;font-size:15.5px;border-top:1px solid rgba(255,255,255,.1);padding-top:20px;flex:1}
+.pk li{display:flex;gap:10px;align-items:flex-start;color:#e4ddd7}
+.pk li svg{width:20px;height:20px;margin-top:3px;stroke:var(--teal2);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.pk li.off{color:#6f6864}
+.pk li.off svg{stroke:#5a5450}
+.pk .btn{width:100%}
+.pk.best{background:linear-gradient(165deg,#25524d 0%,#183331 50%,#161515 100%);border:1px solid rgba(67,209,195,.55);box-shadow:0 30px 70px -30px rgba(30,167,155,.6);transform:translateY(-10px)}
+.pk.best::before{content:"แนะนำ";position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--cream);color:var(--ink);font-family:var(--head);font-weight:800;font-size:13.5px;padding:5px 18px;border-radius:999px;box-shadow:0 8px 20px -6px rgba(0,0,0,.5)}
+.pk .tagreal{background:rgba(67,209,195,.16);color:var(--teal2)}
+.pk .tagdemo{background:rgba(255,255,255,.08);color:#b3aaa4}
+.pk-foot{text-align:center;margin-top:44px;color:#b4aca6;font-size:15px}
+
+/* ---------- promo ticket ---------- */
+.promo{background:var(--cream2);overflow:hidden}
+.promo .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.promo h2{font-size:clamp(30px,4vw,46px);font-weight:800;margin:10px 0 16px}
+.promo h2 em{font-style:normal;color:var(--teal)}
+.promo p.lead{color:#5e5753;font-size:18px}
+.postsrc{display:flex;align-items:center;gap:12px;margin-top:26px;font-size:14.5px;color:#7d7570}
+.postsrc img{width:42px;height:42px;border-radius:50%}
+.ticket{position:relative;background:var(--ink);color:var(--w);border-radius:28px;padding:34px 34px 30px;box-shadow:0 40px 70px -30px rgba(20,19,19,.6);transform:rotate(2deg);overflow:hidden}
+.ticket .zebra-bg{opacity:.07}
+.ticket .top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;position:relative}
+.ticket .top .k{font-family:var(--head);font-weight:800;font-size:15px;color:var(--teal2);letter-spacing:1px}
+.ticket .top h3{font-size:27px;font-weight:800;margin-top:6px;line-height:1.3}
+.ticket .stamp{flex-shrink:0;width:86px;height:96px;clip-path:var(--hexclip);background:var(--cream);color:var(--ink);display:grid;place-items:center;text-align:center;font-family:var(--head);font-weight:900;font-size:13px;line-height:1.2}
+.ticket .stamp b{display:block;font-size:22px}
+.ticket .rain{font-size:15.5px;color:#cdc5bf;margin:14px 0 4px;position:relative}
+.ticket ul{list-style:none;display:grid;gap:10px;margin:20px 0;position:relative}
+.ticket li{display:flex;gap:12px;align-items:center;font-size:16.5px}
+.ticket li i{width:24px;height:24px;border-radius:8px;background:var(--teal);display:grid;place-items:center;flex-shrink:0}
+.ticket li i svg{width:14px;height:14px;stroke:#fff;fill:none;stroke-width:3}
+.perf{position:relative;margin:24px -34px;border-top:2px dashed rgba(247,220,196,.35)}
+.perf::before,.perf::after{content:"";position:absolute;top:-16px;width:30px;height:30px;border-radius:50%;background:var(--cream2)}
+.perf::before{left:-15px}.perf::after{right:-15px}
+.ticket .bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;position:relative}
+.ticket .was{color:#8d8580;font-size:16px}
+.ticket .was s{font-size:20px}
+.ticket .now{font-family:var(--head);font-weight:900;font-size:58px;line-height:1;color:var(--cream)}
+.ticket .now small{font-size:20px;font-weight:700;color:var(--teal2)}
+.ticket .limit{font-size:13.5px;background:rgba(67,209,195,.16);color:var(--teal2);padding:6px 12px;border-radius:999px;font-weight:600}
+.ticket .hash{margin-top:20px;font-size:13px;color:#8d8580;position:relative}
+
+/* ---------- portfolio ---------- */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:16px;grid-auto-flow:dense}
+.g{position:relative;border-radius:20px;overflow:hidden;background:#222}
+.g img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.g:hover img{transform:scale(1.07)}
+.g::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,19,19,.85))}
+.g .cap{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;color:var(--w)}
+.g .cap b{font-family:var(--head);font-size:17px;font-weight:700;display:block;line-height:1.35}
+.g .cap span{font-size:13px;color:#d6cec8}
+.g .hashchip{position:absolute;top:14px;left:14px;z-index:2;background:rgba(20,19,19,.55);backdrop-filter:blur(8px);color:var(--teal2);font-family:var(--head);font-weight:600;font-size:12.5px;padding:4px 11px;border-radius:999px}
+.g.tall{grid-row:span 2}
+.g.wide{grid-column:span 2}
+
+/* before/after */
+.ba-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;margin-top:80px}
+.ba{position:relative;border-radius:26px;overflow:hidden;aspect-ratio:16/10;box-shadow:0 30px 60px -30px rgba(20,19,19,.55);user-select:none;touch-action:none;cursor:ew-resize}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ba .before{filter:grayscale(.55) brightness(.72) contrast(.8) blur(.6px) sepia(.25)}
+.ba .after-clip{position:absolute;inset:0;clip-path:inset(0 0 0 50%)}
+.ba .after-clip img{filter:saturate(1.15) contrast(1.08)}
+.ba .after-clip::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.25) 48%,transparent 60%)}
+.ba .handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:var(--cream);transform:translateX(-50%);z-index:3}
+.ba .handle::after{content:"";position:absolute;top:50%;left:50%;width:54px;height:60px;transform:translate(-50%,-50%);clip-path:var(--hexclip);background:var(--cream) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23141313' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 6l-6 6 6 6M15 6l6 6-6 6'/%3E%3C/svg%3E") center/26px no-repeat}
+.ba .lbl{position:absolute;top:16px;z-index:2;font-family:var(--head);font-weight:700;font-size:13.5px;padding:6px 14px;border-radius:999px}
+.ba .lbl.l{left:16px;background:rgba(20,19,19,.7);color:#d6cec8}
+.ba .lbl.r{right:16px;background:var(--teal);color:#fff}
+.ba-text h3{font-size:clamp(26px,3vw,36px);font-weight:800;margin-bottom:14px}
+.ba-text h3 em{font-style:normal;color:var(--teal)}
+.ba-text p{color:#5e5753}
+.quote{margin-top:24px;background:var(--w);border-left:4px solid var(--teal);border-radius:0 16px 16px 0;padding:18px 22px;font-size:16px;box-shadow:0 14px 30px -22px rgba(0,0,0,.4)}
+.quote b{font-family:var(--head);display:block;margin-bottom:4px}
+.quote span{font-size:13px;color:#8a817b}
+
+/* ---------- why ---------- */
+.why{background:var(--ink);color:var(--w);overflow:hidden}
+.why .zebra-bg{opacity:.06}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative}
+.wy{padding:30px 26px;border-radius:24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);transition:.25s}
+.wy:hover{background:rgba(67,209,195,.08);border-color:rgba(67,209,195,.35)}
+.wy .num{font-family:var(--head);font-weight:900;font-size:52px;line-height:1;background:linear-gradient(180deg,var(--cream),rgba(247,220,196,.15));-webkit-background-clip:text;background-clip:text;color:transparent}
+.wy h3{font-size:20px;font-weight:700;margin:16px 0 8px}
+.wy p{font-size:15.5px;color:#b8b0aa}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;position:relative}
+.steps::before{content:"";position:absolute;top:44px;left:12%;right:12%;height:3px;background:repeating-linear-gradient(90deg,var(--ink) 0 14px,transparent 14px 26px);opacity:.18}
+.st{text-align:center;position:relative}
+.st .hx{width:88px;height:98px;margin:0 auto 20px;clip-path:var(--hexclip);background:linear-gradient(150deg,var(--teal2),var(--teal3));display:grid;place-items:center;position:relative}
+.st .hx svg{width:38px;height:38px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.st .hx b{position:absolute;top:8px;right:22px;font-family:var(--head);font-size:12px;color:var(--cream)}
+.st:nth-child(even) .hx{background:linear-gradient(150deg,var(--ink4),var(--ink))}
+.st h3{font-size:20px;font-weight:700;margin-bottom:6px}
+.st p{font-size:15.5px;color:#5e5753;max-width:250px;margin:0 auto}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--cream2)}
+.rv-top{display:flex;justify-content:center;margin-bottom:44px}
+.rv-score{display:flex;align-items:center;gap:22px;background:var(--ink);color:var(--w);border-radius:24px;padding:20px 30px;box-shadow:0 24px 50px -28px rgba(20,19,19,.6)}
+.rv-score .big{font-family:var(--head);font-weight:900;font-size:52px;line-height:1;color:var(--teal2)}
+.rv-score .t b{font-family:var(--head);font-size:18px;display:block}
+.rv-score .t span{font-size:14px;color:#b4aca6}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:var(--w);border-radius:24px;padding:28px;box-shadow:0 18px 40px -28px rgba(20,19,19,.4);border:1px solid #f0e4d9;position:relative}
+.rv .stars{color:var(--teal);font-size:18px;letter-spacing:2px}
+.rv p{margin:12px 0 20px;font-size:16px;color:#3f3936}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv .av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--head);font-weight:800;color:var(--w);background:linear-gradient(150deg,var(--teal2),var(--teal3))}
+.rv:nth-child(2) .av{background:linear-gradient(150deg,var(--ink4),var(--ink))}
+.rv:nth-child(3) .av{background:linear-gradient(150deg,#d7b394,#a9805f)}
+.rv .who b{font-family:var(--head);font-size:15.5px;display:block;line-height:1.3}
+.rv .who span{font-size:13px;color:#8a817b}
+
+/* ---------- contact ---------- */
+.contact .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:stretch}
+.ccard{background:var(--ink);color:var(--w);border-radius:28px;padding:40px 36px;position:relative;overflow:hidden}
+.ccard .zebra-bg{opacity:.045}
+.ccard h2{font-size:clamp(28px,3.4vw,40px);font-weight:800;position:relative}
+.ccard h2 em{font-style:normal;color:var(--teal2)}
+.ccard .intro{color:#bdb5ae;margin:10px 0 26px;position:relative}
+.crow{display:flex;gap:16px;padding:16px 0;border-top:1px solid rgba(255,255,255,.09);position:relative}
+.crow .ic{width:44px;height:44px;border-radius:14px;background:rgba(67,209,195,.14);display:grid;place-items:center;flex-shrink:0}
+.crow .ic svg{width:22px;height:22px;stroke:var(--teal2);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.crow .k{font-size:13px;color:#958d88}
+.crow .v{font-family:var(--head);font-weight:600;font-size:16.5px;line-height:1.5}
+.crow .v a{border-bottom:1px solid rgba(67,209,195,.5)}
+.crow .v small{display:block;font-family:var(--body);font-weight:400;font-size:13.5px;color:#a49c96}
+.hours{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:8px}
+.hours div{text-align:center;font-size:12.5px;padding:6px 0;border-radius:10px;background:rgba(255,255,255,.06);color:#cbc3bd;line-height:1.3}
+.hours div.today{background:var(--teal);color:#fff;font-weight:700}
+.ccta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;position:relative}
+.map{border-radius:28px;overflow:hidden;min-height:480px;box-shadow:0 30px 60px -32px rgba(20,19,19,.55);position:relative;background:#ddd}
+.map iframe{width:100%;height:100%;border:0;display:block;min-height:480px}
+.map .pin{position:absolute;left:18px;bottom:18px;background:var(--w);border-radius:16px;padding:12px 16px;font-size:14px;box-shadow:0 14px 30px -12px rgba(0,0,0,.4);max-width:290px}
+.map .pin b{font-family:var(--head);display:block;font-size:15px}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#a49c96;padding:46px 0 34px;font-size:14.5px;border-top:1px solid #2b2827}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer .brand .t1{font-size:19px}
+footer .demo{font-size:12.5px;color:#7a726d;max-width:520px;line-height:1.6}
+
+/* floating */
+.fab{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--teal2),var(--teal3));color:#fff;font-family:var(--head);font-weight:700;padding:14px 22px 14px 16px;border-radius:999px;box-shadow:0 18px 36px -10px rgba(15,124,115,.8);transition:transform .2s}
+.fab:hover{transform:translateY(-3px)}
+.fab svg{width:26px;height:26px}
+.fab::before{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:0 0 0 0 rgba(67,209,195,.6);animation:ring 2.4s infinite}
+@keyframes ring{70%{box-shadow:0 0 0 16px rgba(67,209,195,0)}100%{box-shadow:0 0 0 0 rgba(67,209,195,0)}}
+
+/* reveal */
+.rv-up{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+.rv-up.in{opacity:1;transform:none}
+
+/* mobile menu */
+.mnav{display:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .menu{gap:18px;font-size:14.5px}
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .gal{grid-template-columns:repeat(3,1fr)}
+  .gal .g.wide{grid-column:span 1}
+  .gal .g.extra{display:none}
+}
+@media (max-width:900px){
+  .menu,.nav-cta{display:none}
+  .burger{display:block}
+  .mnav{position:fixed;inset:76px 0 auto 0;background:var(--ink);z-index:59;padding:10px 4% 22px;flex-direction:column;border-bottom:1px solid #333}
+  .mnav.on{display:flex}
+  .mnav a{color:#eee;font-family:var(--head);font-weight:600;padding:13px 4px;border-bottom:1px solid #2a2726}
+  .mnav .btn{margin-top:16px}
+  .hero{padding:56px 0 110px}
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .hero-art{max-width:400px}
+  .stats{grid-template-columns:repeat(2,auto);gap:22px 40px}
+  .pk-panel{grid-template-columns:1fr;max-width:480px;margin:0 auto}
+  .pk.best{transform:none;margin-top:10px}
+  .promo .wrap,.ba-wrap,.contact .wrap{grid-template-columns:1fr}
+  .ticket{transform:rotate(1deg)}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:40px}
+  .steps::before{display:none}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding:74px 0}
+  .topbar .addr{display:none}
+  .brand img{width:46px;height:46px}
+  .brand .t1{font-size:19px}
+  .brand .t2{font-size:11px}
+  .hero h1{font-size:40px}
+  .hero p.lead{font-size:17px}
+  .cta-row .btn{flex:1 1 100%}
+  .stat .n{font-size:28px}
+  .hero-logo{width:96px;height:96px;border-radius:22px}
+  .chip{font-size:13px;padding:9px 12px}
+  .c1{right:-2%}.c2{right:-2%}
+  .svc-grid,.why-grid{grid-template-columns:1fr}
+  .tabs{border-radius:22px;width:100%}
+  .tab{flex:1 1 100%;justify-content:center}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px;gap:10px}
+  .g.tall{grid-row:span 2}
+  .gal .g.wide.last{grid-column:span 2}
+  .g .cap b{font-size:14.5px}
+  .g .cap span{display:none}
+  .ticket{padding:28px 22px 24px}
+  .perf{margin:22px -22px}
+  .ticket .top h3{font-size:22px}
+  .ticket .stamp{width:72px;height:80px;font-size:11px}
+  .ticket .stamp b{font-size:18px}
+  .ticket .now{font-size:48px}
+  .steps{grid-template-columns:1fr}
+  .rv-score{padding:16px 20px;gap:16px}
+  .rv-score .big{font-size:42px}
+  .ccard{padding:32px 22px}
+  .hours{grid-template-columns:repeat(4,1fr)}
+  .ccta .btn{flex:1 1 100%}
+  .map,.map iframe{min-height:360px}
+  .fab span{display:none}
+  .fab{padding:15px}
+}
+</style>
+</head>
+<body>
+
+<!-- reusable zebra stripe artwork -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="zebra" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+      <g fill="currentColor">
+        <path d="M-20 40 C120 10 220 70 360 40 S600 0 820 50 L820 78 C620 40 520 92 360 74 S130 46 -20 80Z"/>
+        <path d="M-20 130 C90 110 190 160 320 128 C430 100 520 150 640 120 C700 106 760 110 820 126 L820 150 C740 140 690 150 640 158 C500 186 420 140 320 166 C180 200 80 150 -20 172Z"/>
+        <path d="M-20 232 C140 196 250 262 400 226 C520 198 640 250 820 214 L820 236 C660 284 520 236 410 262 C250 300 120 236 -20 266Z"/>
+        <path d="M-20 330 C70 316 160 352 270 330 C380 306 470 356 600 330 C690 312 760 320 820 334 L820 360 C750 346 680 352 610 370 C470 402 380 350 270 372 C160 394 60 350 -20 372Z"/>
+        <path d="M-20 430 C130 404 240 458 380 428 C540 394 650 446 820 418 L820 444 C650 476 560 432 390 466 C240 494 120 444 -20 470Z"/>
+        <path d="M-20 520 C100 502 210 546 340 522 C470 498 580 548 820 512 L820 540 C590 584 480 528 350 556 C210 584 110 540 -20 560Z"/>
+        <path d="M120 0 C150 60 120 120 170 200 L150 205 C100 130 130 60 100 0Z" opacity=".7"/>
+        <path d="M660 600 C640 540 680 480 640 410 L662 404 C700 474 664 540 686 600Z" opacity=".7"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="status" id="status"><i></i><span id="statusTxt">เปิดทุกวัน 09:00–19:00 น.</span></div>
+    <div class="addr">📍 <b>ซอยสมเอก ถ.ติวานนท์</b> ต.บางพูด อ.ปากเกร็ด นนทบุรี</div>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="โลโก้ ZEBRA Car & Detailing">
+      <div>
+        <div class="t1">ZEBRA <span>CAR</span></div>
+        <div class="t2">Carcare &amp; Detailing · ม้าลายคาร์แคร์</div>
+      </div>
+    </a>
+    <div class="menu">
+      <a href="#services">บริการ</a>
+      <a href="#packages">เทียบแพ็กเกจ</a>
+      <a href="#portfolio">ผลงาน</a>
+      <a href="#how">ขั้นตอน</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#contact">แผนที่ร้าน</a>
+    </div>
+    <a class="btn btn-teal nav-cta" href="https://m.me/zebracarcare" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.6c0 2.9 1.2 5.4 3.2 7.1V22l2.9-1.6c1.2.3 2.5.5 3.9.5 5.6 0 10-4.1 10-9.4S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.5 5.8z"/></svg>
+      ทักแชตจองคิว
+    </a>
+    <button class="burger" id="burger" aria-label="เมนู"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+<div class="mnav" id="mnav">
+  <a href="#services">บริการ</a>
+  <a href="#packages">เทียบแพ็กเกจ</a>
+  <a href="#portfolio">ผลงาน</a>
+  <a href="#how">ขั้นตอน</a>
+  <a href="#reviews">รีวิว</a>
+  <a href="#contact">แผนที่ร้าน</a>
+  <a class="btn btn-teal" href="https://m.me/zebracarcare" target="_blank" rel="noopener">ทักแชตจองคิว</a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="zebra-bg" style="color:var(--cream)"><svg><use href="#zebra"/></svg></div>
+  <div class="wrap">
+    <div>
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg>ศูนย์เคลือบแก้วเซรามิค &amp; ฟิล์มกรองแสง ปากเกร็ด</span>
+      <h1><span class="gloss">ดูแลรถคุณ<br>เหมือนรถเรา</span>
+        <small>เคลือบแก้ว · กราฟีน · ฟิล์มกรองแสง · สปาภายใน</small></h1>
+      <p class="lead">จากรถหมองฝน คราบน้ำ รอยขนแมว จนถึงรถลุยน้ำที่ห้องโดยสารกลายเป็น “บ่อเลี้ยงปลา” — ทีมม้าลาย<b>เอาอยู่!</b> ล้างละเอียด ขัดลบรอย เคลือบเงาฉ่ำ แล้วนัดกลับมาบำรุงทุก 6 เดือน ให้สีรถเงาเหมือนเพิ่งออกโชว์รูม</p>
+      <div class="cta-row">
+        <a class="btn btn-teal" href="https://m.me/zebracarcare" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.6c0 2.9 1.2 5.4 3.2 7.1V22l2.9-1.6c1.2.3 2.5.5 3.9.5 5.6 0 10-4.1 10-9.4S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.5 5.8z"/></svg>
+          ทักแชตจองคิวได้เลย
+        </a>
+        <a class="btn btn-ghost" href="#packages">ดูแพ็กเกจ &amp; ราคา</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="n">2.4<em>K</em></div><div class="l">ผู้ติดตามบนเพจ</div></div>
+        <div class="stat"><div class="n">342</div><div class="l">เช็คอินที่ร้าน</div></div>
+        <div class="stat"><div class="n">100<em>%</em></div><div class="l">แนะนำ (18 รีวิว)</div></div>
+        <div class="stat"><div class="n">7<em>วัน</em></div><div class="l">เปิด 09:00–19:00</div></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <span class="drop d1"></span><span class="drop d2"></span><span class="drop d3"></span>
+      <div class="hex-frame"><div class="in"><img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=1000&q=75&auto=format&fit=crop" alt="รถสีดำขณะล้างด้วยน้ำแรงดัน"></div></div>
+      <div class="hero-logo"><img src="assets/logo.jpg" alt="ZEBRA Carcare & Detailing"></div>
+      <div class="chip c1"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7z"/></svg></span>เคลือบกราฟีน<small>เงาฉ่ำ ลื่นน้ำ</small></div>
+      <div class="chip c2"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></span>บำรุงทุก 6 เดือน<small>เงาต่อเนื่องเกิน 2 ปี</small></div>
+    </div>
+  </div>
+  <div class="hero-edge"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path fill="currentColor" d="M0 50 C240 10 480 80 720 46 C960 12 1200 70 1440 36 L1440 80 L0 80Z"/></svg></div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>#เคลือบแก้ว</span><span>#เคลือบกราฟิน</span><span>#ฟิล์มกรองแสง</span><span>#สปาภายในรถ</span><span>#ฟื้นฟูสภาพรถ</span><span>#ขัดลบรอย</span><span>#ขจัดคราบน้ำฝน</span><span>#รถเงา</span><span>#รถลุยน้ำ</span><span>#คาร์แคร์</span>
+    <span>#เคลือบแก้ว</span><span>#เคลือบกราฟิน</span><span>#ฟิล์มกรองแสง</span><span>#สปาภายในรถ</span><span>#ฟื้นฟูสภาพรถ</span><span>#ขัดลบรอย</span><span>#ขจัดคราบน้ำฝน</span><span>#รถเงา</span><span>#รถลุยน้ำ</span><span>#คาร์แคร์</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <div class="eyebrow">Our Services</div>
+      <h2>ครบจบที่ <em>ม้าลายคาร์แคร์</em></h2>
+      <p>ตั้งแต่ล้างพรีเมี่ยมไปจนถึงงานเคลือบระดับดีเทลลิ่ง ทุกคันทำด้วยมือ ใส่ใจทุกซอกมุม</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc feature rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>เคลือบแก้วเซรามิค / กราฟีน</h3>
+        <p>ปกป้องสีรถจากแดด ฝน คราบน้ำ เพิ่มความเงาลึกแบบฉ่ำน้ำ ล้างง่าย คราบไม่เกาะ พร้อมบริการบำรุงรักษาทุก 6 เดือน</p>
+        <div class="price">บริการหลักของร้าน <span class="tagreal">จากเพจ</span></div>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 15l2-6a2 2 0 0 1 2-1.4h10A2 2 0 0 1 19 9l2 6v3H3z"/><path d="M7 11h10"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg></div>
+        <h3>ฟิล์มกรองแสง</h3>
+        <p>ลดความร้อนในห้องโดยสาร กันรังสี UV เพิ่มความเป็นส่วนตัว เลือกความเข้มได้ตามสไตล์และตามกฎหมาย</p>
+        <div class="price">ราคาตามรุ่นรถ <span class="tagdemo">สอบถามร้าน</span></div>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 20V9a3 3 0 0 1 3-3h1v14"/><path d="M10 13h6a2 2 0 0 1 2 2v5"/><path d="M4 20h16"/></svg></div>
+        <h3>ซักเบาะ ซักพรม ฟื้นฟูภายใน</h3>
+        <p>สะอาดล้ำลึก ลดกลิ่นอับ รับงานรถลุยน้ำ รถหลังน้ำท่วม ให้ห้องโดยสารกลับมาน่าใช้อีกครั้ง</p>
+        <div class="price">เริ่มต้น <b>2,500.-</b> <span class="tagreal">ราคาจากโพสต์</span></div>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v2M12 18v2M4 12h2M18 12h2"/></svg></div>
+        <h3>ขัดสี ลบรอย ฟื้นฟูสภาพรถ</h3>
+        <p>ขจัดคราบน้ำฝน ลบรอยขนแมว คืนความเงาให้สีรถที่หมองจากฝนและแดด แล้วเคลือบ WAX ปิดท้าย</p>
+        <div class="price">โปร <b>1,500.-</b> <s style="color:#a09791">2,500.-</s> <span class="tagreal">ราคาจากโพสต์</span></div>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg></div>
+        <h3>ล้างพรีเมี่ยม Ultra Smooth</h3>
+        <p>โฟมแน่นๆ ล้างละเอียดถึงล้อและซุ้มล้อ “ล้อสะอาด รถก็ดูใหม่ทันที” เช็ดแห้งด้วยผ้าไมโครไฟเบอร์</p>
+        <div class="price">โปรเริ่มต้น <b>200.-</b> <span class="tagreal">ราคาจากโพสต์</span></div>
+      </div>
+      <div class="svc rv-up">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/><path d="M9 15l2 2 4-4"/></svg></div>
+        <h3>บำรุงรักษาหลังเคลือบ</h3>
+        <p>ลูกค้าเคลือบแก้วนัดเข้าดูแลทุก 6 เดือน ตรวจสภาพชั้นเคลือบ ล้างบำรุง ให้รถเงาต่อเนื่องยาวๆ</p>
+        <div class="price">ทุก 6 เดือน <span class="tagreal">จากเพจ</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages" id="packages">
+  <div class="zebra-bg" style="color:var(--cream)"><svg><use href="#zebra"/></svg></div>
+  <div class="wrap" style="position:relative">
+    <div class="sec-head rv-up">
+      <div class="eyebrow">Compare Packages</div>
+      <h2>เลือกแพ็กเกจที่ <em>ใช่</em> สำหรับรถคุณ</h2>
+      <p>เทียบให้ดูชัดๆ ทั้งงานเคลือบ ฟิล์ม และดูแลภายใน ไม่แน่ใจตัวไหน ทักแชตให้แอดมินช่วยเลือกได้เลยคร้าบบ</p>
+    </div>
+    <div class="tabs rv-up" role="tablist">
+      <button class="tab on" data-tab="coat"><svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V7z"/></svg>เคลือบสี</button>
+      <button class="tab" data-tab="film"><svg viewBox="0 0 24 24"><path d="M3 15l2-6a2 2 0 0 1 2-1.4h10A2 2 0 0 1 19 9l2 6v3H3z"/></svg>ฟิล์มกรองแสง</button>
+      <button class="tab" data-tab="int"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg>ล้าง &amp; ภายใน</button>
+    </div>
+
+    <!-- coating -->
+    <div class="pk-panel on" data-panel="coat">
+      <div class="pk">
+        <div class="lvl">Level 1</div>
+        <h3>ฟื้นฟูสภาพรถ + WAX</h3>
+        <div class="sub">สำหรับรถหมองจากหน้าฝน อยากเงาไวในงบสบาย</div>
+        <div class="amt">1,500.- <s>2,500.-</s></div>
+        <div class="tags"><span class="tagreal">ราคาโปรจากโพสต์ ส.ค. 69</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ขจัดคราบน้ำฝน</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ล้างพรีเมี่ยม ทำความสะอาดละเอียด</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ขัดลบรอย เพิ่มความเงางาม</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>เคลือบสีด้วย WAX</li>
+          <li class="off"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>ชั้นเคลือบแข็งระยะยาว</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://m.me/zebracarcare" target="_blank" rel="noopener">จองคิวโปรนี้</a>
+      </div>
+      <div class="pk best">
+        <div class="lvl">Level 2</div>
+        <h3>เคลือบแก้วเซรามิค</h3>
+        <div class="sub">ปกป้องสีระยะยาว เงาลึก ล้างง่าย คราบไม่ติด</div>
+        <div class="amt">สอบถาม <small>ประเมินตามสภาพรถ</small></div>
+        <div class="tags"><span class="tagdemo">ราคาตัวอย่าง · ขึ้นกับขนาดรถ</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ล้างพรีเมี่ยม + ล้างคราบยางมะตอย</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ขัดสีลบรอยก่อนเคลือบ</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>เคลือบแก้วเซรามิคทั้งคัน</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>เคลือบล้อแม็ก + กระจก</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>นัดบำรุงรักษาทุก 6 เดือน</li>
+        </ul>
+        <a class="btn btn-teal" href="https://m.me/zebracarcare" target="_blank" rel="noopener">ขอใบเสนอราคา</a>
+      </div>
+      <div class="pk">
+        <div class="lvl">Level 3</div>
+        <h3>เคลือบกราฟีน</h3>
+        <div class="sub">ท็อปสุดของร้าน เงาฉ่ำ ลื่นน้ำ ทนทานกว่า</div>
+        <div class="amt">สอบถาม <small>ประเมินตามสภาพรถ</small></div>
+        <div class="tags"><span class="tagdemo">ราคาตัวอย่าง · ขึ้นกับขนาดรถ</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ทุกอย่างใน Level 2</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ชั้นเคลือบกราฟีน ลดคราบน้ำ</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ขัดสี 2 ขั้นตอน เน้นความเงาลึก</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>เคลือบพลาสติกภายนอก</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>นัดบำรุงรักษาทุก 6 เดือน</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://m.me/zebracarcare" target="_blank" rel="noopener">ขอใบเสนอราคา</a>
+      </div>
+    </div>
+
+    <!-- film -->
+    <div class="pk-panel" data-panel="film">
+      <div class="pk">
+        <div class="lvl">Standard</div>
+        <h3>ฟิล์มเริ่มต้น</h3>
+        <div class="sub">ลดแสงจ้า เพิ่มความเป็นส่วนตัว เหมาะใช้งานในเมือง</div>
+        <div class="amt">สอบถาม <small>ตามขนาดรถ</small></div>
+        <div class="tags"><span class="tagdemo">ราคาตัวอย่าง</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ติดรอบคัน + บานหน้า</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>เลือกความเข้มได้</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>กันรังสี UV</li>
+          <li class="off"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>ฟิล์มเซรามิคกันร้อนสูง</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://m.me/zebracarcare" target="_blank" rel="noopener">สอบถามรุ่นฟิล์ม</a>
+      </div>
+      <div class="pk best">
+        <div class="lvl">Ceramic</div>
+        <h3>ฟิล์มเซรามิค</h3>
+        <div class="sub">กันร้อนดี มองชัดตอนกลางคืน ไม่รบกวนสัญญาณ</div>
+        <div class="amt">สอบถาม <small>ตามขนาดรถ</small></div>
+        <div class="tags"><span class="tagdemo">ราคาตัวอย่าง</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ติดรอบคัน + บานหน้า</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ลดความร้อนในห้องโดยสาร</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>กันรังสี UV สูง</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ไม่รบกวนสัญญาณมือถือ/GPS</li>
+        </ul>
+        <a class="btn btn-teal" href="https://m.me/zebracarcare" target="_blank" rel="noopener">สอบถามรุ่นฟิล์ม</a>
+      </div>
+      <div class="pk">
+        <div class="lvl">Premium</div>
+        <h3>ฟิล์มพรีเมี่ยม + เคลือบ</h3>
+        <div class="sub">จัดเต็มทั้งกระจกและสีรถในนัดเดียว</div>
+        <div class="amt">สอบถาม <small>ตามขนาดรถ</small></div>
+        <div class="tags"><span class="tagdemo">ราคาตัวอย่าง</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ฟิล์มเกรดสูงสุดของร้าน</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ลดความร้อนสูงสุด</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>แถมเคลือบกระจกกันน้ำ</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ล้างพรีเมี่ยมก่อนส่งรถ</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://m.me/zebracarcare" target="_blank" rel="noopener">สอบถามรุ่นฟิล์ม</a>
+      </div>
+    </div>
+
+    <!-- interior -->
+    <div class="pk-panel" data-panel="int">
+      <div class="pk">
+        <div class="lvl">Wash</div>
+        <h3>ล้างพรีเมี่ยม Ultra Smooth</h3>
+        <div class="sub">โฟมแน่นๆ ล้างละเอียด ล้อสะอาด รถดูใหม่ทันที</div>
+        <div class="amt">200.- <small>เริ่มต้น</small> <s>5XX.-</s></div>
+        <div class="tags"><span class="tagreal">ราคาโปรจากโพสต์</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ล้างโฟมหนานุ่ม</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ล้างล้อ ซุ้มล้อ</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ดูดฝุ่น เช็ดภายใน</li>
+          <li class="off"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>ซักเบาะ / ซักพรม</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://m.me/zebracarcare" target="_blank" rel="noopener">จองคิวล้าง</a>
+      </div>
+      <div class="pk best">
+        <div class="lvl">Interior Spa</div>
+        <h3>ซักเบาะ ซักพรม ฟื้นฟูภายใน</h3>
+        <div class="sub">สะอาดล้ำลึก ลดกลิ่นอับ รถลุยน้ำก็เอาอยู่</div>
+        <div class="amt">2,500.- <small>เริ่มต้น</small></div>
+        <div class="tags"><span class="tagreal">ราคาจากโพสต์ ก.ย. 69</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ซักเบาะ ซักพรม</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ทำความสะอาดห้องโดยสารทั้งหมด</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ลดกลิ่นอับ ความชื้นสะสม</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>รับงานรถหลังน้ำท่วม</li>
+        </ul>
+        <a class="btn btn-teal" href="https://m.me/zebracarcare" target="_blank" rel="noopener">สอบถามคิวซักเบาะ</a>
+      </div>
+      <div class="pk">
+        <div class="lvl">Full Detail</div>
+        <h3>ภายใน + ภายนอก ครบชุด</h3>
+        <div class="sub">ฟื้นฟูสภาพรถ + สปาภายใน รับรถกลับเหมือนใหม่</div>
+        <div class="amt">สอบถาม <small>ราคาพิเศษ</small></div>
+        <div class="tags"><span class="tagdemo">แพ็กเกจตัวอย่าง</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ซักเบาะ ซักพรม ฟื้นฟูภายใน</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ขจัดคราบน้ำฝน ขัดลบรอย</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>เคลือบสีด้วย WAX</li>
+          <li><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg>ล้างพรีเมี่ยมก่อนส่งรถ</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://m.me/zebracarcare" target="_blank" rel="noopener">ขอใบเสนอราคา</a>
+      </div>
+    </div>
+
+    <div class="pk-foot rv-up">
+      ราคาที่มีป้าย <b style="color:var(--teal2)">“จากโพสต์”</b> มาจากโพสต์โปรโมชั่นบนเพจของร้าน (อาจเปลี่ยนแปลงตามช่วงเวลา) · ราคา “สอบถาม” และรายละเอียดแพ็กเกจที่มีป้าย “ตัวอย่าง” เป็นเนื้อหาจำลองสำหรับเดโม
+    </div>
+  </div>
+</section>
+
+<!-- PROMO TICKET (from real post 28 Aug 2026) -->
+<section class="promo" id="promo">
+  <div class="wrap">
+    <div class="rv-up">
+      <div class="eyebrow">Promotion</div>
+      <h2>ฝนตกบ่อย รถหมอง?<br><em>จัดเต็มครบในครั้งเดียว</em></h2>
+      <p class="lead">คราบน้ำฝน คราบสกปรก และรอยต่างๆ ทำให้รถดูหมองลง โปรแกรมฟื้นฟูสภาพรถของเราจะทำให้รถกลับมาเงา สวยสะอาด เหมือนพร้อมออกจากโชว์รูมอีกครั้ง ✨</p>
+      <a class="btn btn-dark" style="margin-top:28px" href="https://m.me/zebracarcare" target="_blank" rel="noopener">📩 ทักแชท / จองคิวได้เลย</a>
+      <div class="postsrc"><img src="assets/logo.jpg" alt=""><div>เรียบเรียงจากโพสต์ของเพจ ZEBRA Car &amp; Detailing<br>28 สิงหาคม 2569</div></div>
+    </div>
+    <div class="ticket rv-up">
+      <div class="zebra-bg" style="color:var(--cream)"><svg><use href="#zebra"/></svg></div>
+      <div class="top">
+        <div>
+          <div class="k">ZEBRA · PROMO</div>
+          <h3>ฟื้นฟูสภาพรถยนต์<br>ดูแลครบในครั้งเดียว 💦</h3>
+        </div>
+        <div class="stamp"><div>ลด<b>1,000</b>บาท</div></div>
+      </div>
+      <p class="rain">🚘 รถหมองจากฝน อย่าปล่อยไว้นาน</p>
+      <ul>
+        <li><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>ขจัดคราบน้ำฝน</li>
+        <li><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>ล้างพรีเมี่ยม ทำความสะอาดอย่างละเอียด</li>
+        <li><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>ขัดลบรอย เพิ่มความเงางาม</li>
+        <li><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>เคลือบสีด้วย WAX ช่วยปกป้องสีรถ</li>
+      </ul>
+      <div class="perf"></div>
+      <div class="bottom">
+        <div>
+          <div class="was">จากราคา <s>2,500.-</s></div>
+          <div class="now">1,500<small>.- เท่านั้น!</small></div>
+        </div>
+        <span class="limit">🔥 จำนวนจำกัด รีบจองก่อนเต็ม!</span>
+      </div>
+      <div class="hash">#ฟื้นฟูสภาพรถ #ขจัดคราบน้ำฝน #ขัดลบรอย #เคลือบสีWAX #ล้างรถหน้าฝน #รถเงา</div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <div class="eyebrow">Portfolio</div>
+      <h2>ผลงาน <em>เงาฉ่ำ</em> ส่งตรงจากร้าน</h2>
+      <p>ส่งงานกันทุกวัน ทั้งเคลือบแก้ว เคลือบกราฟีน ขัดสี และสปาภายใน ติดตามผลงานล่าสุดได้ที่เพจ</p>
+    </div>
+    <div class="gal">
+      <div class="g tall rv-up"><img loading="lazy" src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=700&q=70&auto=format&fit=crop" alt="ล้างรถด้วยมือ"><span class="hashchip">#ล้างรถ</span><div class="cap"><b>“โฟมแน่นๆ แบบนี้ ใครเห็นก็อยากล้าง”</b><span>ล้างพรีเมี่ยม Ultra Smooth</span></div></div>
+      <div class="g wide rv-up"><img loading="lazy" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1000&q=70&auto=format&fit=crop" alt="รถสีดำเงา"><span class="hashchip">#เคลือบแก้ว</span><div class="cap"><b>รถสีดำเคลือบแก้วมาแล้วกว่า 2 ปี</b><span>เข้าบำรุงรักษาทุก 6 เดือน</span></div></div>
+      <div class="g rv-up"><img loading="lazy" src="https://images.unsplash.com/photo-1550355291-bbee04a92027?w=600&q=70&auto=format&fit=crop" alt="สีรถแดงเงา"><span class="hashchip">#ขัดลบรอย</span><div class="cap"><b>เทศกาลขัดสี!</b><span>ขัดลบรอย คืนความเงา</span></div></div>
+      <div class="g tall rv-up"><img loading="lazy" src="https://images.unsplash.com/photo-1605437241278-c1806d14a4d9?w=700&q=70&auto=format&fit=crop" alt="ภายในรถ เบาะหนัง"><span class="hashchip">#สปาภายในรถ</span><div class="cap"><b>คืนความสะอาดให้ห้องโดยสาร</b><span>ซักเบาะ ซักพรม ลดกลิ่นอับ</span></div></div>
+      <div class="g rv-up"><img loading="lazy" src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=600&q=70&auto=format&fit=crop" alt="รถสีขาวเงา"><span class="hashchip">#เคลือบกราฟิน</span><div class="cap"><b>เคลือบกราฟีน รถสีขาว</b><span>เงาใส ลื่นน้ำ</span></div></div>
+      <div class="g rv-up"><img loading="lazy" src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=600&q=70&auto=format&fit=crop" alt="ล้างล้อรถ"><span class="hashchip">#คาร์แคร์</span><div class="cap"><b>“ล้อสะอาด รถก็ดูใหม่ทันที”</b><span>ล้างล้อ ซุ้มล้อ</span></div></div>
+      <div class="g extra rv-up"><img loading="lazy" src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&q=70&auto=format&fit=crop" alt="รถสปอร์ตสีแดงเงา"><span class="hashchip">#รถเงา</span><div class="cap"><b>เงาลึก สะท้อนเหมือนกระจก</b><span>ขัดสี 2 ขั้นตอน + เคลือบ</span></div></div>
+      <div class="g wide last rv-up"><img loading="lazy" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1000&q=70&auto=format&fit=crop" alt="รถในโรงจอด"><span class="hashchip">#ฟิล์มกรองแสง</span><div class="cap"><b>เคลือบเสร็จ พร้อมส่งมอบ</b><span>ตรวจงานทุกคันก่อนส่งลูกค้า</span></div></div>
+    </div>
+    <div style="text-align:center"><span class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>ภาพประกอบจาก Unsplash สำหรับเดโม · คำบรรยายเรียบเรียงจากโพสต์จริงของร้าน · เว็บจริงจะใช้ภาพผลงานของร้าน</span></div>
+
+    <div class="ba-wrap">
+      <div class="ba rv-up" id="ba">
+        <img class="before" src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1200&q=75&auto=format&fit=crop" alt="ก่อนทำ">
+        <div class="after-clip" id="baClip"><img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1200&q=75&auto=format&fit=crop" alt="หลังทำ"></div>
+        <div class="handle" id="baHandle"></div>
+        <span class="lbl l">ก่อน · หมองฝน</span><span class="lbl r">หลัง · เงาฉ่ำ</span>
+      </div>
+      <div class="ba-text rv-up">
+        <div class="eyebrow">Before / After</div>
+        <h3>ลากดูความต่าง<br><em>ก่อน–หลัง</em> ฟื้นฟูสภาพ</h3>
+        <p>สีรถที่โดนฝนและแดดทุกวันจะค่อยๆ หมอง มีคราบน้ำ รอยขนแมว เราขจัดคราบ ขัดลบรอย แล้วเคลือบปิดท้าย ให้สีกลับมาสด เงา ลึก</p>
+        <div class="quote"><b>“ผลประกอบการของคำว่า เอาอยู่!!!”</b>รถลุยน้ำมาจนห้องโดยสารเป็นบ่อเลี้ยงปลา ก็ฟื้นฟูกลับมาได้<br><span>— จากโพสต์ของร้าน, 28 ก.ย. 2569</span></div>
+        <span class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>ภาพก่อน–หลังเป็นภาพจำลองสำหรับเดโม</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="zebra-bg" style="color:var(--cream)"><svg><use href="#zebra"/></svg></div>
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <div class="eyebrow">Why Zebra</div>
+      <h2>ทำไมต้อง <em>ม้าลาย</em></h2>
+      <p>ร้านเล็กที่ใส่ใจเหมือนดูแลรถตัวเอง — ไม่ใช่แค่สโลแกน แต่คือวิธีทำงานทุกวัน</p>
+    </div>
+    <div class="why-grid">
+      <div class="wy rv-up"><div class="num">01</div><h3>ดูแลรถคุณเหมือนรถเรา</h3><p>ทำมือทุกขั้นตอน ไม่รีบ ไม่ข้าม ตรวจงานทุกจุดก่อนส่งรถคืน</p></div>
+      <div class="wy rv-up"><div class="num">02</div><h3>ดูแลต่อเนื่อง ไม่ทิ้งกัน</h3><p>ลูกค้าเคลือบแก้วนัดบำรุงทุก 6 เดือน มีรถเคลือบที่ยังเงาเกิน 2 ปีให้ดูเป็นตัวอย่าง</p></div>
+      <div class="wy rv-up"><div class="num">03</div><h3>ครบจบที่เดียว</h3><p>เคลือบแก้ว กราฟีน ฟิล์ม ขัดสี ซักเบาะ ล้างพรีเมี่ยม ไม่ต้องวิ่งหลายร้าน</p></div>
+      <div class="wy rv-up"><div class="num">04</div><h3>เปิดทุกวัน ใกล้บ้าน</h3><p>09:00–19:00 น. ซอยสมเอก ถ.ติวานนท์ ปากเกร็ด เดินทางสะดวกจากแจ้งวัฒนะ–งามวงศ์วาน</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section id="how">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <div class="eyebrow">How to book</div>
+      <h2>จองคิวง่ายๆ <em>4 ขั้นตอน</em></h2>
+      <p>ไม่ต้องโทร แค่ทักแชตเพจ แอดมินตอบไว จัดคิวให้ตามสะดวก</p>
+    </div>
+    <div class="steps">
+      <div class="st rv-up"><div class="hx"><b>1</b><svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 10h8"/></svg></div><h3>ทักแชตเพจ</h3><p>ส่งรุ่นรถ + บริการที่สนใจ ขอรูปสภาพรถได้ยิ่งดี</p></div>
+      <div class="st rv-up"><div class="hx"><b>2</b><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></div><h3>นัดวัน–เวลา</h3><p>แอดมินแจ้งราคาและคิวว่าง เลือกวันที่สะดวก</p></div>
+      <div class="st rv-up"><div class="hx"><b>3</b><svg viewBox="0 0 24 24"><path d="M3 15l2-6a2 2 0 0 1 2-1.4h10A2 2 0 0 1 19 9l2 6v3H3z"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/></svg></div><h3>นำรถเข้าร้าน</h3><p>ตรวจสภาพสีและภายในร่วมกันก่อนเริ่มงาน</p></div>
+      <div class="st rv-up"><div class="hx"><b>4</b><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></div><h3>รับรถเงาฉ่ำ</h3><p>พร้อมคำแนะนำการดูแล และนัดบำรุงรอบถัดไป</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv-up">
+      <div class="eyebrow">Reviews</div>
+      <h2>ลูกค้า <em>แนะนำ 100%</em></h2>
+    </div>
+    <div class="rv-top rv-up">
+      <div class="rv-score">
+        <div class="big">100%</div>
+        <div class="t"><b>แนะนำ ZEBRA Car &amp; Detailing</b><span>จาก 18 รีวิวบน Facebook</span></div>
+      </div>
+    </div>
+    <div class="rv-grid">
+      <div class="rv rv-up"><div class="stars">★★★★★</div><p>“เอารถดำไปเคลือบแก้ว ผ่านมาเกือบปีล้างทีไรเงาเหมือนเดิม นัดเข้าบำรุงตามรอบ แอดมินเตือนให้ทุกครั้ง ประทับใจมากครับ”</p><div class="who"><div class="av">ก</div><div><b>คุณกิตติ</b><span>เคลือบแก้วเซรามิค</span></div></div></div>
+      <div class="rv rv-up"><div class="stars">★★★★★</div><p>“รถลุยน้ำมา พรมชื้นกลิ่นอับมาก ส่งซักเบาะซักพรม ได้รถคืนหอมสะอาดเหมือนใหม่ ใส่ใจทุกซอกจริงๆ ค่ะ”</p><div class="who"><div class="av">น</div><div><b>คุณนภา</b><span>ซักเบาะ ซักพรม</span></div></div></div>
+      <div class="rv rv-up"><div class="stars">★★★★★</div><p>“จัดโปรฟื้นฟูสภาพรถหน้าฝนไป คราบน้ำหายเกลี้ยง รอยขนแมวจางลงเยอะ คุ้มราคามาก ร้านอยู่ใกล้ติวานนท์ เดินทางง่าย”</p><div class="who"><div class="av">ธ</div><div><b>คุณธนวัฒน์</b><span>ฟื้นฟูสภาพรถ + WAX</span></div></div></div>
+    </div>
+    <div style="text-align:center"><span class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>คะแนน 100% แนะนำ (18 รีวิว) มาจากเพจจริง · ข้อความรีวิวด้านบนเป็นตัวอย่างสำหรับเดโม</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="ccard rv-up">
+      <div class="zebra-bg" style="color:var(--cream)"><svg><use href="#zebra"/></svg></div>
+      <div class="eyebrow">Visit us</div>
+      <h2>แวะมาหา <em>ม้าลาย</em> ได้ทุกวัน</h2>
+      <p class="intro">สอบถามคิว / ราคา ทักแชตได้เลยค่ะ 📩</p>
+      <div class="crow"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div><div><div class="k">ที่อยู่</div><div class="v">52/30 หมู่ 8 ซอยสมเอก ถ.ติวานนท์<br>ต.บางพูด อ.ปากเกร็ด จ.นนทบุรี 11120</div></div></div>
+      <div class="crow"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div style="flex:1"><div class="k">เวลาทำการ</div><div class="v">ทุกวัน 09:00–19:00 น.<small>วันหยุดพิเศษแจ้งทางเพจล่วงหน้า</small></div>
+        <div class="hours" id="hours"><div>จ.<br>9–19</div><div>อ.<br>9–19</div><div>พ.<br>9–19</div><div>พฤ.<br>9–19</div><div>ศ.<br>9–19</div><div>ส.<br>9–19</div><div>อา.<br>9–19</div></div></div></div>
+      <div class="crow"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><div class="k">อีเมล</div><div class="v"><a href="mailto:info.zebracarcare@gmail.com">info.zebracarcare@gmail.com</a></div></div></div>
+      <div class="crow"><div class="ic"><svg viewBox="0 0 24 24"><path d="M15 3h-3a4 4 0 0 0-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div><div><div class="k">Facebook</div><div class="v"><a href="https://www.facebook.com/zebracarcare" target="_blank" rel="noopener">facebook.com/zebracarcare</a></div></div></div>
+      <div class="ccta">
+        <a class="btn btn-teal" href="https://m.me/zebracarcare" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.6c0 2.9 1.2 5.4 3.2 7.1V22l2.9-1.6c1.2.3 2.5.5 3.9.5 5.6 0 10-4.1 10-9.4S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.5 5.8z"/></svg>ทักแชต Messenger</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=13.923021,100.519931" target="_blank" rel="noopener">นำทาง Google Maps</a>
+      </div>
+    </div>
+    <div class="map rv-up">
+      <iframe title="แผนที่ ZEBRA Car & Detailing" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=13.923021,100.519931&z=16&output=embed"></iframe>
+      <div class="pin"><b>ZEBRA Car &amp; Detailing</b>ซอยสมเอก ถ.ติวานนท์ ปากเกร็ด</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="">
+      <div><div class="t1">ZEBRA <span>CAR</span></div><div class="t2">ดูแลรถคุณเหมือนรถเรา</div></div>
+    </a>
+    <div class="demo">© 2569 ZEBRA Car &amp; Detailing ศูนย์เคลือบแก้วเซรามิคและฟิล์มกรองแสง นนทบุรี<br>เว็บไซต์ตัวอย่าง (เดโม) จัดทำเพื่อนำเสนอ — ราคา/รีวิว/ภาพที่ระบุว่าเป็นตัวอย่าง ไม่ใช่ข้อมูลจริงของร้าน</div>
+  </div>
+</footer>
+
+<a class="fab" href="https://m.me/zebracarcare" target="_blank" rel="noopener" aria-label="ทักแชตจองคิว">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.4 2 2 6.1 2 11.6c0 2.9 1.2 5.4 3.2 7.1V22l2.9-1.6c1.2.3 2.5.5 3.9.5 5.6 0 10-4.1 10-9.4S17.6 2 12 2zm1 12.6-2.5-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.5 5.8z"/></svg>
+  <span>ทักแชตจองคิว</span>
+</a>
+
+<script>
+// mobile menu
+const burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+burger.addEventListener('click',()=>mnav.classList.toggle('on'));
+mnav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mnav.classList.remove('on')));
+
+// package tabs
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));
+  document.querySelectorAll('.pk-panel').forEach(p=>p.classList.toggle('on',p.dataset.panel===t.dataset.tab));
+}));
+
+// open status (Asia/Bangkok, daily 09-19)
+(function(){
+  const now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Bangkok'}));
+  const h=now.getHours()+now.getMinutes()/60, open=h>=9&&h<19;
+  const s=document.getElementById('status');
+  if(open){s.classList.add('open');document.getElementById('statusTxt').textContent='เปิดอยู่ตอนนี้ · ถึง 19:00 น.';}
+  else{document.getElementById('statusTxt').textContent='ปิดแล้วตอนนี้ · เปิดทุกวัน 09:00 น.';}
+  const idx=(now.getDay()+6)%7; const hs=document.querySelectorAll('#hours div'); if(hs[idx])hs[idx].classList.add('today');
+})();
+
+// before/after slider
+(function(){
+  const ba=document.getElementById('ba'),clip=document.getElementById('baClip'),hd=document.getElementById('baHandle');
+  let drag=false;
+  function set(x){const r=ba.getBoundingClientRect();let p=Math.min(Math.max((x-r.left)/r.width,0.03),0.97)*100;clip.style.clipPath='inset(0 0 0 '+p+'%)';hd.style.left=p+'%';}
+  ba.addEventListener('pointerdown',e=>{drag=true;ba.setPointerCapture(e.pointerId);set(e.clientX)});
+  ba.addEventListener('pointermove',e=>{if(drag)set(e.clientX)});
+  ba.addEventListener('pointerup',()=>drag=false);
+})();
+
+// scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv-up').forEach((el,i)=>{el.style.transitionDelay=(i%4)*90+'ms';io.observe(el)});
+</script>
+</body>
+</html>

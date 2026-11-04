@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaroon AIR Repair &amp; Service | ล้างแอร์ ซ่อมแอร์ กรุงเทพฯ นนทบุรี ปทุมธานี</title>
+<meta name="description" content="Jaroon AIR Repair and service รับล้างแอร์ ซ่อมแอร์ เติมน้ำยา ตรวจเช็กอาการ ถึงบ้าน กรุงเทพฯ นนทบุรี ปทุมธานี โทร/ไลน์ 064-551-8495">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0A2E36; --ink2:#0E3D47; --ink3:#15525E;
+  --teal:#0F766E; --mint:#5EEAD4; --mint2:#A7F3E4; --ice:#EFFAF7; --frost:#F7FDFB;
+  --sun:#FF8A3D; --sun2:#FFC59B; --line:#06C755;
+  --txt:#16343B; --mut:#5B7479;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--txt);background:var(--frost);line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.head{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,92%);margin:0 auto}
+svg{display:block}
+
+/* demo banner */
+.demo{background:var(--sun);color:#fff;text-align:center;font-size:13.5px;font-weight:600;padding:6px 12px}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:50;background:rgba(247,253,251,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(10,46,54,.08)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:50px;height:50px;flex:0 0 50px}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:23px;line-height:1;color:var(--ink);letter-spacing:.2px}
+.brand .t1 b{color:var(--teal)}
+.brand .t2{font-size:12px;font-weight:600;letter-spacing:2.4px;color:var(--mut);text-transform:uppercase;margin-top:4px}
+.menu{display:flex;gap:30px;font-family:var(--head);font-weight:600;font-size:15.5px;color:var(--ink)}
+.menu a{position:relative;padding:4px 0}
+.menu a::after{content:"";position:absolute;left:50%;bottom:-3px;height:3px;width:0;border-radius:3px;background:var(--mint);transition:.25s;transform:translateX(-50%)}
+.menu a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:700;border-radius:999px;padding:13px 26px;cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s;white-space:nowrap;border:0;font-size:16px}
+.btn svg{width:20px;height:20px}
+.btn:hover{transform:translateY(-2px)}
+.btn-ink{background:var(--ink);color:#fff;box-shadow:0 10px 24px -10px rgba(10,46,54,.6)}
+.btn-mint{background:var(--mint);color:var(--ink);box-shadow:0 12px 30px -10px rgba(94,234,212,.8)}
+.btn-line{background:var(--line);color:#fff;box-shadow:0 12px 30px -12px rgba(6,199,85,.8)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.burger{display:none;background:none;border:0;cursor:pointer}
+
+/* hero */
+.hero{position:relative;background:radial-gradient(1200px 600px at 85% 10%,#14606B 0%,transparent 60%),linear-gradient(160deg,var(--ink) 0%,#0B3A43 60%,#0C4650 100%);color:#fff;overflow:hidden;padding:80px 0 150px}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(167,243,228,.12) 1.5px,transparent 1.5px);background-size:30px 30px;mask-image:linear-gradient(180deg,#000,transparent 85%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:8px;background:rgba(94,234,212,.14);border:1px solid rgba(94,234,212,.4);color:var(--mint2);font-family:var(--head);font-weight:600;padding:6px 16px;border-radius:999px;font-size:14.5px}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 4px rgba(94,234,212,.25);font-style:normal}
+.hero h1{font-size:clamp(38px,4.9vw,66px);font-weight:900;margin:22px 0 18px;letter-spacing:-.3px}
+.hero h1 .cool{background:linear-gradient(90deg,var(--mint),#C9FFF4);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 small{display:block;font-size:.4em;font-weight:600;color:#B9D6D9;margin-top:14px;letter-spacing:0}
+.lead{font-size:19.5px;color:#CFE6E7;max-width:560px}
+.lead b{color:#fff}
+.cta-row{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.trust{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}
+.trust div{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:10px 16px;font-size:15px;color:#DCEFEF}
+.trust div b{font-family:var(--head);font-size:20px;color:var(--mint);font-weight:800}
+
+.hero-art{position:relative;width:100%;max-width:540px;justify-self:center}
+.ac-card{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.14);border-radius:32px;padding:44px 34px 30px;box-shadow:0 40px 80px -30px rgba(0,0,0,.55)}
+.ac-unit{animation:hover 6s ease-in-out infinite}
+@keyframes hover{50%{transform:translateY(-6px)}}
+.flow path{stroke-dasharray:14 16;animation:flow 2.2s linear infinite}
+.flow path:nth-child(2){animation-duration:2.8s}
+.flow path:nth-child(3){animation-duration:2.5s}
+.flow path:nth-child(4){animation-duration:3.1s}
+@keyframes flow{to{stroke-dashoffset:-60}}
+.flake{animation:drift 7s ease-in-out infinite;transform-origin:center}
+@keyframes drift{50%{transform:translateY(14px) rotate(40deg);opacity:.5}}
+.float{position:absolute;background:#fff;color:var(--ink);border-radius:18px;padding:12px 16px;font-family:var(--head);font-weight:700;font-size:15px;line-height:1.3;box-shadow:0 18px 40px -16px rgba(0,0,0,.5);display:flex;gap:10px;align-items:center}
+.float small{display:block;font-family:var(--body);font-weight:500;font-size:12.5px;color:var(--mut)}
+.float .ico{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;font-size:20px;background:var(--ice)}
+.f1{top:-22px;right:-14px;animation:bob 4.5s ease-in-out infinite}
+.f2{bottom:-34px;left:50%;margin-left:-160px;animation:bob 5.2s ease-in-out infinite .8s}
+.f2 .ico{background:#FFF1E7}
+@keyframes bob{50%{translate:0 -10px}}
+.temp{font-family:var(--head);font-weight:900;font-size:52px;line-height:1;color:var(--ink);letter-spacing:-1px}
+.hero-curve{position:absolute;left:0;right:0;bottom:-1px;height:120px;width:100%}
+
+/* louvre strip */
+.louvre{background:var(--ink);padding:18px 0;overflow:hidden;position:relative}
+.louvre::before,.louvre::after{content:"";position:absolute;left:0;right:0;height:4px;background:repeating-linear-gradient(90deg,var(--mint) 0 40px,transparent 40px 52px);opacity:.35}
+.louvre::before{top:0}.louvre::after{bottom:0}
+.track{display:flex;width:max-content;animation:slide 40s linear infinite;font-family:var(--head);font-weight:700;font-size:19px;color:#DDF5F1}
+.track span{display:flex;align-items:center;gap:24px;padding-right:24px}
+.track span::after{content:"❄";color:var(--mint);font-size:16px}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:104px 0;position:relative}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 56px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:700;font-size:14px;letter-spacing:1.5px;color:var(--teal);background:#DDF7F1;padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.sec-head h2{font-size:clamp(30px,4.2vw,50px);font-weight:900;color:var(--ink)}
+.sec-head h2 em{font-style:normal;color:var(--teal);position:relative;white-space:nowrap}
+.sec-head h2 em::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 10' preserveAspectRatio='none'%3E%3Cpath d='M0 6 Q15 0 30 6 T60 6 T90 6 T120 6' fill='none' stroke='%235EEAD4' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+.sec-head p{margin-top:14px;color:var(--mut);font-size:18px}
+.note{color:#8AA0A4;font-size:13px;margin-top:22px;text-align:center}
+.note b{color:var(--sun)}
+
+/* symptoms */
+.symp{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.sy{background:#fff;border-radius:var(--r);padding:26px 22px;border:1px solid #E1F0EC;box-shadow:0 14px 30px -22px rgba(10,46,54,.35);transition:.25s}
+.sy:hover{transform:translateY(-6px);box-shadow:0 26px 40px -24px rgba(10,46,54,.45)}
+.sy .em{width:56px;height:56px;border-radius:18px;background:var(--ice);display:grid;place-items:center;margin-bottom:16px}
+.sy .em svg{width:30px;height:30px;stroke:var(--teal);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sy h3{font-size:19px;font-weight:800;color:var(--ink);margin-bottom:6px}
+.sy p{font-size:15.5px;color:var(--mut)}
+.symp-cta{margin-top:34px;text-align:center;font-family:var(--head);font-weight:700;color:var(--ink);font-size:19px}
+.symp-cta span{color:var(--sun)}
+
+/* packages */
+.pkgs{background:linear-gradient(180deg,var(--ice),var(--frost))}
+.pk-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:stretch}
+.pk{background:#fff;border-radius:26px;padding:30px 24px 26px;position:relative;display:flex;flex-direction:column;border:1px solid #DCEFEA;box-shadow:0 20px 40px -30px rgba(10,46,54,.5);transition:.25s;overflow:hidden}
+.pk:hover{transform:translateY(-6px)}
+.pk::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(90deg,var(--mint) 0 22px,transparent 22px 28px)}
+.pk .ty{font-family:var(--head);font-weight:700;font-size:13.5px;color:var(--teal);letter-spacing:1px}
+.pk h3{font-size:23px;font-weight:900;color:var(--ink);margin:6px 0 4px}
+.pk .btu{font-size:14.5px;color:var(--mut)}
+.pk .ill{height:96px;display:grid;place-items:center;margin:18px 0 10px}
+.pk .price{font-family:var(--head);display:flex;align-items:baseline;gap:6px;margin:8px 0 14px;color:var(--ink)}
+.pk .price small{font-size:14px;font-weight:600;color:var(--mut)}
+.pk .price b{font-size:42px;font-weight:900;line-height:1}
+.pk .price i{font-style:normal;font-size:18px;font-weight:700}
+.pk ul{list-style:none;display:grid;gap:7px;font-size:15px;flex:1}
+.pk li{display:flex;gap:10px;align-items:flex-start}
+.pk li::before{content:"";flex:0 0 18px;height:18px;margin-top:4px;border-radius:50%;background:var(--ice) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F766E' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.pk .btn{margin-top:22px;width:100%}
+.pk.hot{background:var(--ink);color:#DDEFEF;border-color:var(--ink)}
+.pk.hot h3,.pk.hot .price{color:#fff}
+.pk.hot .ty{color:var(--mint)}
+.pk.hot .btu,.pk.hot .price small{color:#9CC2C5}
+.pk.hot li::before{background-color:rgba(94,234,212,.18);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235EEAD4' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E")}
+.ribbon{position:absolute;top:18px;right:-34px;background:var(--sun);color:#fff;font-family:var(--head);font-weight:800;font-size:12.5px;padding:4px 40px;transform:rotate(38deg)}
+.extra{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ex{display:flex;gap:16px;align-items:center;background:#fff;border:1px dashed #A9DCD2;border-radius:18px;padding:18px 20px}
+.ex .i{flex:0 0 48px;height:48px;border-radius:14px;background:#FFF1E7;display:grid;place-items:center;font-size:22px}
+.ex b{font-family:var(--head);color:var(--ink);display:block;font-size:17px}
+.ex span{font-size:14.5px;color:var(--mut)}
+
+/* calculator */
+.calc{margin-top:46px;background:var(--ink);border-radius:30px;color:#fff;display:grid;grid-template-columns:1.2fr .8fr;overflow:hidden;box-shadow:0 30px 60px -30px rgba(10,46,54,.7)}
+.calc .l{padding:36px 38px}
+.calc h3{font-size:26px;font-weight:800}
+.calc h3 span{color:var(--mint)}
+.calc p.s{color:#A9C8CB;font-size:15px;margin:4px 0 20px}
+.row-c{display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.row-c label{font-family:var(--head);font-weight:600;font-size:16px}
+.row-c label small{display:block;font-family:var(--body);font-weight:400;font-size:13px;color:#8FB3B6}
+.stepper{display:flex;align-items:center;background:rgba(255,255,255,.07);border-radius:999px;padding:4px}
+.stepper button{width:36px;height:36px;border-radius:50%;border:0;background:rgba(94,234,212,.18);color:var(--mint);font-size:20px;font-weight:700;cursor:pointer;line-height:1}
+.stepper button:hover{background:var(--mint);color:var(--ink)}
+.stepper output{width:44px;text-align:center;font-family:var(--head);font-weight:800;font-size:19px}
+.calc .r{background:linear-gradient(160deg,#12505B,#0F766E);padding:36px 34px;display:flex;flex-direction:column;justify-content:center;position:relative}
+.calc .r::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;border:30px solid rgba(94,234,212,.12)}
+.calc .r small{color:#BFE3E2;font-size:15px}
+.calc .total{font-family:var(--head);font-weight:900;font-size:58px;line-height:1.1;margin:6px 0}
+.calc .total i{font-style:normal;font-size:24px;margin-left:6px}
+.calc .r p{font-size:14px;color:#BFE3E2}
+.calc .r .btn{margin-top:20px;align-self:flex-start;position:relative;z-index:1}
+
+/* before/after */
+.ba{background:var(--frost)}
+.ba .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.ba h2{font-size:clamp(30px,4vw,46px);font-weight:900;color:var(--ink)}
+.ba h2 span{color:var(--teal)}
+.ba p.d{color:var(--mut);margin:16px 0 24px;font-size:18px}
+.steps-l{list-style:none;display:grid;gap:14px;counter-reset:s}
+.steps-l li{display:flex;gap:16px;align-items:flex-start;counter-increment:s}
+.steps-l li::before{content:counter(s);flex:0 0 38px;height:38px;border-radius:12px;background:var(--ink);color:var(--mint);font-family:var(--head);font-weight:800;display:grid;place-items:center}
+.steps-l b{font-family:var(--head);color:var(--ink);display:block}
+.steps-l span{font-size:15.5px;color:var(--mut)}
+.compare{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 30px 60px -30px rgba(10,46,54,.6);user-select:none;background:#fff}
+.compare svg{position:absolute;inset:0;width:100%;height:100%}
+.compare .after{clip-path:inset(0 0 0 50%)}
+.compare .handle{position:absolute;top:0;bottom:0;left:50%;width:4px;background:#fff;transform:translateX(-2px);pointer-events:none;box-shadow:0 0 0 1px rgba(10,46,54,.15)}
+.compare .handle::after{content:"⟷";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:52px;height:52px;border-radius:50%;background:#fff;color:var(--ink);display:grid;place-items:center;font-size:22px;font-weight:700;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.compare input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+.lab{position:absolute;top:16px;font-family:var(--head);font-weight:800;font-size:14px;padding:5px 14px;border-radius:999px;pointer-events:none}
+.lab.b{left:16px;background:rgba(80,52,20,.85);color:#FFE3C2}
+.lab.a{right:16px;background:var(--mint);color:var(--ink)}
+
+/* portfolio */
+.works{background:var(--ink);color:#fff;overflow:hidden}
+.works .sec-head h2{color:#fff}
+.works .sec-head p{color:#A9C8CB}
+.works .eyebrow{background:rgba(94,234,212,.14);color:var(--mint)}
+.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:-24px 0 36px}
+.filters button{font-family:var(--head);font-weight:600;font-size:15px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#DDEFEF;padding:8px 18px;border-radius:999px;cursor:pointer;transition:.2s}
+.filters button.on,.filters button:hover{background:var(--mint);border-color:var(--mint);color:var(--ink)}
+.w-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.w{background:var(--ink2);border:1px solid rgba(255,255,255,.08);border-radius:24px;overflow:hidden;transition:.3s}
+.w:hover{transform:translateY(-6px);border-color:rgba(94,234,212,.4)}
+.w.hide{display:none}
+.w .pic{aspect-ratio:16/10;position:relative;overflow:hidden}
+.w .pic svg{width:100%;height:100%}
+.w .tag{position:absolute;left:14px;top:14px;background:rgba(10,46,54,.85);color:var(--mint);font-family:var(--head);font-weight:700;font-size:12.5px;padding:4px 12px;border-radius:999px}
+.w .bd{padding:18px 20px 22px}
+.w h3{font-size:18px;font-weight:700}
+.w .meta{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;color:#9CC2C5;margin-top:6px}
+
+/* area */
+.area .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.zones{display:grid;gap:16px;margin-top:28px}
+.zone{display:flex;gap:18px;align-items:center;background:#fff;border-radius:20px;padding:18px 20px;border:1px solid #E1F0EC;box-shadow:0 14px 30px -24px rgba(10,46,54,.4)}
+.zone .pin{flex:0 0 54px;height:54px;border-radius:16px;display:grid;place-items:center;font-family:var(--head);font-weight:900;font-size:18px;color:#fff}
+.zone b{font-family:var(--head);font-size:19px;color:var(--ink);display:block}
+.zone span{font-size:15px;color:var(--mut)}
+.area h2{font-size:clamp(30px,4vw,46px);font-weight:900;color:var(--ink)}
+.area h2 span{color:var(--teal)}
+.area p.d{color:var(--mut);font-size:18px;margin-top:14px}
+.mapbox{position:relative;border-radius:30px;overflow:hidden;min-height:470px;box-shadow:0 30px 60px -30px rgba(10,46,54,.6);border:6px solid #fff}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.75) hue-rotate(-8deg)}
+.mapbox .ov{position:absolute;left:16px;bottom:16px;right:16px;background:rgba(10,46,54,.9);color:#fff;border-radius:16px;padding:12px 16px;font-size:14.5px;display:flex;gap:10px;align-items:center;backdrop-filter:blur(6px)}
+.mapbox .ov b{color:var(--mint);font-family:var(--head)}
+
+/* why */
+.why{background:linear-gradient(180deg,var(--ice),var(--frost))}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.wy{background:#fff;border-radius:var(--r);padding:30px 24px;position:relative;overflow:hidden;border:1px solid #E1F0EC}
+.wy::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:var(--ice)}
+.wy .n{font-family:var(--head);font-weight:900;font-size:15px;color:var(--sun);position:relative;z-index:1}
+.wy .ic{font-size:34px;margin:8px 0 10px;position:relative;z-index:1}
+.wy h3{font-size:20px;font-weight:800;color:var(--ink);margin-bottom:6px}
+.wy p{font-size:15.5px;color:var(--mut)}
+
+/* booking steps */
+.book{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative}
+.book::before{content:"";position:absolute;top:40px;left:12%;right:12%;height:3px;background:repeating-linear-gradient(90deg,var(--mint) 0 14px,transparent 14px 24px)}
+.bk{text-align:center;position:relative}
+.bk .c{width:80px;height:80px;margin:0 auto 16px;border-radius:26px;background:var(--ink);display:grid;place-items:center;font-size:32px;box-shadow:0 14px 30px -14px rgba(10,46,54,.7);position:relative}
+.bk .c b{position:absolute;top:-8px;right:-8px;width:28px;height:28px;border-radius:50%;background:var(--sun);color:#fff;font-family:var(--head);font-size:14px;display:grid;place-items:center}
+.bk h4{font-size:19px;font-weight:800;color:var(--ink)}
+.bk p{font-size:15px;color:var(--mut);margin-top:4px}
+
+/* reviews */
+.reviews{background:var(--frost)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border-radius:24px;padding:28px;border:1px solid #E1F0EC;position:relative}
+.rv .stars{color:var(--sun);letter-spacing:3px;font-size:17px}
+.rv p{margin:12px 0 20px;font-size:16.5px}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv .av{width:46px;height:46px;border-radius:15px;background:var(--ice);color:var(--teal);display:grid;place-items:center;font-family:var(--head);font-weight:900}
+.rv .who b{display:block;font-family:var(--head);color:var(--ink)}
+.rv .who small{color:var(--mut)}
+.rv .q{position:absolute;right:22px;top:18px;width:36px;height:36px;opacity:.9}
+
+/* faq */
+.faq{max-width:860px;margin:0 auto;display:grid;gap:14px}
+.faq details{background:#fff;border:1px solid #E1F0EC;border-radius:18px;padding:4px 22px}
+.faq summary{list-style:none;cursor:pointer;font-family:var(--head);font-weight:700;font-size:18px;color:var(--ink);padding:16px 0;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:0 0 32px;height:32px;border-radius:10px;background:var(--ice);color:var(--teal);display:grid;place-items:center;font-size:22px;transition:.2s}
+.faq details[open] summary::after{content:"−";background:var(--mint);color:var(--ink)}
+.faq details p{padding:0 0 18px;color:var(--mut)}
+
+/* contact */
+.contact{background:linear-gradient(150deg,var(--ink),#0C4650);color:#fff;overflow:hidden}
+.contact::before{content:"";position:absolute;left:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(94,234,212,.06)}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;position:relative}
+.contact h2{font-size:clamp(32px,4.4vw,54px);font-weight:900}
+.contact h2 span{color:var(--mint)}
+.contact p.d{color:#BFD9DB;font-size:18px;margin:14px 0 30px;max-width:520px}
+.phone-big{display:inline-flex;align-items:center;gap:16px;font-family:var(--head);font-weight:900;font-size:clamp(34px,5vw,56px);letter-spacing:1px;color:#fff}
+.phone-big .i{width:66px;height:66px;border-radius:22px;background:var(--mint);display:grid;place-items:center;flex:0 0 66px}
+.phone-big .i svg{width:32px;height:32px;fill:var(--ink)}
+.c-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.c-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:30px;display:grid;gap:16px}
+.c-it{display:flex;gap:14px;align-items:flex-start}
+.c-it .i{flex:0 0 44px;height:44px;border-radius:14px;background:rgba(94,234,212,.15);display:grid;place-items:center}
+.c-it .i svg{width:22px;height:22px;stroke:var(--mint);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.c-it b{font-family:var(--head);display:block;color:var(--mint);font-size:15px}
+.c-it span{color:#DDEFEF;font-size:16px}
+
+/* footer */
+footer{background:#061E24;color:#8FAEB2;padding:56px 0 28px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.08)}
+footer h4{color:#fff;font-size:17px;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:var(--mint)}
+.ft .brand .t1{color:#fff}
+.ft .brand .t2{color:#8FAEB2}
+.ft p{margin-top:14px;max-width:340px}
+.copy{display:flex;justify-content:space-between;padding-top:22px;font-size:13px;flex-wrap:wrap;gap:10px}
+
+/* floating */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;gap:12px}
+.fab a{width:60px;height:60px;border-radius:20px;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(10,46,54,.6);transition:.2s}
+.fab a:hover{transform:scale(1.08)}
+.fab .call{background:var(--mint);animation:ring 2.4s infinite}
+.fab .ln{background:var(--line)}
+.fab svg{width:28px;height:28px}
+@keyframes ring{0%,100%{box-shadow:0 14px 30px -10px rgba(10,46,54,.6),0 0 0 0 rgba(94,234,212,.7)}50%{box-shadow:0 14px 30px -10px rgba(10,46,54,.6),0 0 0 16px rgba(94,234,212,0)}}
+
+/* reveal */
+.rv-on{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv-on.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1080px){
+  .symp,.pk-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+  .w-grid{grid-template-columns:repeat(2,1fr)}
+  .extra{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  .menu,.nav-cta{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:var(--frost);padding:20px 4%;border-bottom:1px solid #DDEDEA;gap:16px}
+  .hero{padding:50px 0 120px}
+  .hero .wrap,.ba .wrap,.area .wrap,.contact .wrap{grid-template-columns:1fr}
+  .hero-art{max-width:440px;margin-top:20px}
+  .calc{grid-template-columns:1fr}
+  .book{grid-template-columns:1fr 1fr;row-gap:36px}
+  .book::before{display:none}
+  .rv-grid{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr 1fr}
+  .mapbox{min-height:380px}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:72px 0}
+  .symp,.pk-grid{grid-template-columns:1fr}
+  .w-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .w{border-radius:18px}
+  .w .bd{padding:12px 12px 14px}
+  .w h3{font-size:14.5px;line-height:1.4}
+  .w .meta{font-size:12px;gap:8px}
+  .w .tag{left:8px;top:8px;font-size:11px;padding:2px 8px}
+  .why-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .wy{padding:20px 16px}
+  .wy h3{font-size:17px}
+  .wy p{font-size:14px}
+  .sy{padding:20px 18px}
+  .hero h1{font-size:40px}
+  .lead{font-size:17.5px}
+  .cta-row .btn{flex:1 1 100%}
+  .trust{gap:8px}
+  .trust div{flex:1 1 auto;padding:8px 12px;font-size:14px}
+  .f2{display:none}
+  .acrow .temp{font-size:38px}
+  .acrow>div:first-child{font-size:13px!important}
+  .acrow b{font-size:15px!important}
+  .ac-card{padding:34px 18px 22px}
+  .f1{right:-4px;top:-26px}
+  .f2{left:50%}
+  .calc .l,.calc .r{padding:28px 22px}
+  .calc .total{font-size:46px}
+  .ft{grid-template-columns:1fr}
+  .phone-big .i{width:54px;height:54px;flex-basis:54px}
+  .brand .t1{font-size:20px}
+  .fab a{width:54px;height:54px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="demo">ตัวอย่างเว็บไซต์ (Demo) สำหรับนำเสนอ Jaroon AIR Repair and service · ราคา รีวิว และผลงานบางส่วนเป็นข้อมูลตัวอย่าง</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Jaroon AIR">
+      <svg class="logo" viewBox="0 0 50 50" aria-hidden="true">
+        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0F766E"/><stop offset="1" stop-color="#0A2E36"/></linearGradient></defs>
+        <rect width="50" height="50" rx="15" fill="url(#lg)"/>
+        <g stroke="#5EEAD4" stroke-width="2.6" stroke-linecap="round" fill="none">
+          <path d="M25 11v28M13 18l24 14M37 18 13 32"/>
+          <path d="M21 13l4 3 4-3M21 37l4-3 4 3"/>
+        </g>
+        <circle cx="25" cy="25" r="4.2" fill="#FF8A3D"/>
+      </svg>
+      <div><div class="t1">Jaroon <b>AIR</b></div><div class="t2">Repair &amp; Service</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#packages">แพ็กเกจล้างแอร์</a>
+      <a href="#works">ผลงาน</a>
+      <a href="#area">พื้นที่บริการ</a>
+      <a href="#faq">คำถามที่พบบ่อย</a>
+      <a href="#contact">ติดต่อ</a>
+    </div>
+    <a href="tel:0645518495" class="btn btn-ink nav-cta">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+      064-551-8495
+    </a>
+    <button class="burger" aria-label="เมนู" onclick="document.getElementById('menu').classList.toggle('open')">
+      <svg width="32" height="32" viewBox="0 0 24 24" stroke="#0A2E36" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="chip"><i></i>ช่างแอร์ถึงบ้าน · กรุงเทพฯ · นนทบุรี · ปทุมธานี</span>
+      <h1>แอร์กลับมา<span class="cool">เย็นฉ่ำ</span><br>ลมสะอาด หายใจโล่ง
+        <small>ล้างแอร์ · ซ่อมแอร์ · เติมน้ำยา · ตรวจเช็กอาการ<br>งานแอร์บ้านครบ จบในทีมเดียว</small></h1>
+      <p class="lead">แอร์ไม่เย็น มีกลิ่นอับ น้ำหยด หรือค่าไฟพุ่ง? ทัก <b>Jaroon AIR</b> ได้เลยครับ ช่างเข้าไปดูถึงที่ <b>แจ้งราคาก่อนลงมือ</b> ทำงานเรียบร้อย เก็บกวาดให้สะอาดก่อนกลับ</p>
+      <div class="cta-row">
+        <a href="https://line.me/R/ti/p/~0645518495" class="btn btn-line" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8zM8 13.6H6.1c-.3 0-.5-.2-.5-.5V9.3c0-.3.2-.5.5-.5s.5.2.5.5v3.3H8c.3 0 .5.2.5.5s-.2.5-.5.5zm2-.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.3c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm4.5 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-2-2.6v2.3c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.3c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l2 2.7V9.3c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm3.1-2.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9h1.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5V9.3c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9h1.4z"/></svg>
+          แอดไลน์จองคิว
+        </a>
+        <a href="tel:0645518495" class="btn btn-mint">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          โทร 064-551-8495
+        </a>
+        <a href="#packages" class="btn btn-ghost">ดูแพ็กเกจ →</a>
+      </div>
+      <div class="trust">
+        <div><b>3</b> จังหวัดที่ให้บริการ</div>
+        <div><b>❄</b> แอร์บ้าน · คอนโด · ร้านค้า</div>
+        <div><b>฿</b> แจ้งราคาก่อนทำ</div>
+      </div>
+    </div>
+
+    <div class="hero-art rv-on">
+      <div class="ac-card">
+        <svg class="ac-unit" viewBox="0 0 460 250" aria-hidden="true">
+          <defs>
+            <linearGradient id="acb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCEFEC"/></linearGradient>
+            <linearGradient id="air" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A7F3E4"/><stop offset="1" stop-color="#A7F3E4" stop-opacity="0"/></linearGradient>
+          </defs>
+          <rect x="20" y="10" width="420" height="120" rx="28" fill="url(#acb)"/>
+          <rect x="20" y="10" width="420" height="120" rx="28" fill="none" stroke="#fff" stroke-opacity=".7"/>
+          <rect x="44" y="34" width="250" height="8" rx="4" fill="#C9E4E0"/>
+          <rect x="44" y="50" width="190" height="8" rx="4" fill="#C9E4E0"/>
+          <circle cx="400" cy="46" r="6" fill="#06C755"/>
+          <text x="364" y="52" font-family="Noto Sans Thai" font-weight="800" font-size="16" fill="#0F766E" text-anchor="end">25°</text>
+          <rect x="40" y="100" width="380" height="18" rx="9" fill="#0A2E36" opacity=".9"/>
+          <g stroke="#5EEAD4" stroke-width="2" opacity=".8"><path d="M60 109h340"/></g>
+          <path d="M60 130 L40 245 H420 L400 130 Z" fill="url(#air)" opacity=".18"/>
+          <g class="flow" fill="none" stroke="#A7F3E4" stroke-width="4" stroke-linecap="round" opacity=".85">
+            <path d="M90 140 C 80 170, 120 190, 100 235"/>
+            <path d="M180 140 C 170 175, 210 195, 190 240"/>
+            <path d="M270 140 C 260 170, 300 195, 280 238"/>
+            <path d="M360 140 C 350 175, 390 190, 370 235"/>
+          </g>
+          <g fill="#fff" class="flake"><text x="140" y="215" font-size="18">❄</text></g>
+          <g fill="#fff" class="flake" style="animation-delay:2s"><text x="320" y="205" font-size="14">❄</text></g>
+          <g fill="#fff" class="flake" style="animation-delay:4s"><text x="230" y="228" font-size="12">❄</text></g>
+        </svg>
+        <div class="acrow" style="display:flex;justify-content:space-between;align-items:flex-end;margin-top:14px;gap:16px">
+          <div style="color:#CFE6E7;font-size:15px;line-height:1.5">หลังล้างใหญ่<br><b style="font-family:var(--head);color:#fff;font-size:18px">ลมแรงขึ้น เย็นไวขึ้น</b></div>
+          <div style="background:#fff;border-radius:20px;padding:12px 18px;text-align:right">
+            <div class="temp">25°<span style="font-size:22px;color:var(--teal)">C</span></div>
+            <div style="font-size:12.5px;color:var(--mut)">เย็นสบาย ประหยัดไฟ</div>
+          </div>
+        </div>
+      </div>
+      <div class="float f1"><span class="ico">🧼</span><div>ล้างแอร์ถึงบ้าน<small>ผ้าใบกันน้ำ · ฉีดแรงดันสูง</small></div></div>
+      <div class="float f2"><span class="ico">🔧</span><div>ซ่อม/เติมน้ำยา<small>ตรวจเช็กอาการก่อนเสมอ</small></div></div>
+    </div>
+  </div>
+  <svg class="hero-curve" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 70 C 240 120, 480 20, 720 60 S 1200 110, 1440 40 V120 H0 Z" fill="#0A2E36" opacity=".5"/>
+    <path d="M0 90 C 260 130, 520 40, 760 80 S 1220 120, 1440 70 V120 H0 Z" fill="#F7FDFB"/>
+  </svg>
+</header>
+
+<!-- SYMPTOMS -->
+<section id="symptoms">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">❄ เช็กก่อน</span>
+      <h2>แอร์มีอาการแบบนี้<br><em>ถึงเวลาล้าง</em>แล้วครับ</h2>
+      <p>ฝุ่นและคราบสะสมในคอยล์ทำให้แอร์ทำงานหนัก เย็นช้า กินไฟ ล้างทุก 4–6 เดือนช่วยให้แอร์อายุยาวขึ้น</p>
+    </div>
+    <div class="symp">
+      <div class="sy rv-on"><div class="em"><svg viewBox="0 0 24 24"><path d="M14 4v10.5a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z"/><path d="M12 9v7"/></svg></div><h3>เปิดนานแต่ไม่เย็น</h3><p>ตั้ง 25° แล้วห้องยังร้อน ลมออกเบา อาจเป็นเพราะฝุ่นอุดตันหรือน้ำยาพร่อง</p></div>
+      <div class="sy rv-on"><div class="em"><svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><h3>น้ำหยดจากตัวเครื่อง</h3><p>ถาดน้ำทิ้งหรือท่อน้ำตันจากคราบสกปรก ปล่อยไว้เสี่ยงผนังเสียหาย</p></div>
+      <div class="sy rv-on"><div class="em"><svg viewBox="0 0 24 24"><path d="M4 12c2-3 4-3 6 0s4 3 6 0 4-3 4-3M4 17c2-3 4-3 6 0s4 3 6 0 4-3 4-3M4 7c2-3 4-3 6 0s4 3 6 0 4-3 4-3"/></svg></div><h3>มีกลิ่นอับ กลิ่นเหม็น</h3><p>เชื้อราและแบคทีเรียสะสมในแผงคอยล์เย็น ไม่ดีต่อคนในบ้าน โดยเฉพาะเด็กและผู้สูงอายุ</p></div>
+      <div class="sy rv-on"><div class="em"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3>ค่าไฟแพงขึ้นผิดปกติ</h3><p>คอมเพรสเซอร์ต้องทำงานหนักขึ้นเมื่อแอร์สกปรก ล้างแล้วช่วยประหยัดไฟได้</p></div>
+    </div>
+    <p class="symp-cta rv-on">มีสักข้อ? <span>ทักไลน์ส่งรูปแอร์มาให้ช่างดูก่อนได้ครับ</span> 📸</p>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="pkgs" id="packages">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">🧼 แพ็กเกจล้างแอร์</span>
+      <h2>เลือกแพ็กเกจ <em>ตามแอร์ของคุณ</em></h2>
+      <p>ราคาเริ่มต้นชัดเจน ช่างแจ้งราคาจริงหน้างานก่อนลงมือทุกครั้ง ไม่มีบวกเพิ่มทีหลัง</p>
+    </div>
+    <div class="pk-grid">
+      <div class="pk rv-on">
+        <div class="ty">ล้างปกติ</div>
+        <h3>แอร์ติดผนัง</h3>
+        <div class="btu">9,000 – 12,000 BTU</div>
+        <div class="ill"><svg width="150" height="80" viewBox="0 0 150 80"><rect x="5" y="8" width="140" height="44" rx="14" fill="#EFFAF7" stroke="#0F766E" stroke-width="2.5"/><rect x="18" y="38" width="114" height="6" rx="3" fill="#0A2E36"/><g stroke="#5EEAD4" stroke-width="3" stroke-linecap="round" fill="none"><path d="M35 58c-4 6 4 10 0 16M75 58c-4 6 4 10 0 16M115 58c-4 6 4 10 0 16"/></g></svg></div>
+        <div class="price"><small>เริ่มต้น</small><b>500</b><i>บาท</i></div>
+        <ul><li>ล้างแผงคอยล์เย็น ฟิลเตอร์ ถาดน้ำทิ้ง</li><li>ล้างคอยล์ร้อนด้วยน้ำแรงดันสูง</li><li>เช็กแรงดันน้ำยา + กระแสไฟ</li></ul>
+        <a href="https://line.me/R/ti/p/~0645518495" target="_blank" rel="noopener" class="btn btn-ink">จองคิวแพ็กนี้</a>
+      </div>
+      <div class="pk rv-on">
+        <div class="ty">ล้างปกติ</div>
+        <h3>แอร์ติดผนัง</h3>
+        <div class="btu">18,000 – 24,000 BTU</div>
+        <div class="ill"><svg width="170" height="80" viewBox="0 0 170 80"><rect x="3" y="6" width="164" height="48" rx="15" fill="#EFFAF7" stroke="#0F766E" stroke-width="2.5"/><rect x="16" y="40" width="138" height="7" rx="3.5" fill="#0A2E36"/><g stroke="#5EEAD4" stroke-width="3" stroke-linecap="round" fill="none"><path d="M30 60c-4 6 4 10 0 16M65 60c-4 6 4 10 0 16M100 60c-4 6 4 10 0 16M135 60c-4 6 4 10 0 16"/></g></svg></div>
+        <div class="price"><small>เริ่มต้น</small><b>700</b><i>บาท</i></div>
+        <ul><li>ทุกอย่างในแพ็กล้างปกติ</li><li>สำหรับห้องใหญ่ ห้องนั่งเล่น ออฟฟิศเล็ก</li><li>ทดสอบการทำงานหลังล้าง</li></ul>
+        <a href="https://line.me/R/ti/p/~0645518495" target="_blank" rel="noopener" class="btn btn-ink">จองคิวแพ็กนี้</a>
+      </div>
+      <div class="pk hot rv-on">
+        <span class="ribbon">ยอดนิยม</span>
+        <div class="ty">ล้างใหญ่ (ถอดล้าง)</div>
+        <h3>ล้างแบบละเอียด</h3>
+        <div class="btu">แอร์สกปรกมาก / มีกลิ่น / น้ำหยด</div>
+        <div class="ill"><svg width="170" height="86" viewBox="0 0 170 86"><rect x="20" y="4" width="130" height="40" rx="13" fill="#0E3D47" stroke="#5EEAD4" stroke-width="2.5" stroke-dasharray="6 5"/><rect x="34" y="52" width="102" height="26" rx="8" fill="#5EEAD4"/><g stroke="#0A2E36" stroke-width="2.2"><path d="M44 56v18M54 56v18M64 56v18M74 56v18M84 56v18M94 56v18M104 56v18M114 56v18M124 56v18"/></g><text x="85" y="30" text-anchor="middle" font-family="Noto Sans Thai" font-weight="800" font-size="14" fill="#5EEAD4">ถอดแผง</text></svg></div>
+        <div class="price"><small>เริ่มต้น</small><b>1,200</b><i>บาท</i></div>
+        <ul><li>ถอดชุดพัดลมกรงกระรอก + ถาดน้ำล้างแยก</li><li>ขจัดเชื้อรา คราบเมือก กลิ่นอับ</li><li>ลมแรงขึ้น เย็นไวขึ้นชัดเจน</li></ul>
+        <a href="https://line.me/R/ti/p/~0645518495" target="_blank" rel="noopener" class="btn btn-mint">จองคิวแพ็กนี้</a>
+      </div>
+      <div class="pk rv-on">
+        <div class="ty">แอร์ตั้งพื้น / สี่ทิศทาง</div>
+        <h3>แอร์ร้านค้า</h3>
+        <div class="btu">ตั้งแขวน · Cassette</div>
+        <div class="ill"><svg width="120" height="86" viewBox="0 0 120 86"><rect x="10" y="6" width="100" height="74" rx="12" fill="#EFFAF7" stroke="#0F766E" stroke-width="2.5"/><rect x="34" y="28" width="52" height="30" rx="6" fill="#fff" stroke="#0F766E" stroke-width="2"/><g stroke="#0A2E36" stroke-width="5" stroke-linecap="round"><path d="M32 16h56M32 70h56M20 26v34M100 26v34"/></g></svg></div>
+        <div class="price"><small>ราคา</small><b style="font-size:30px">สอบถาม</b></div>
+        <ul><li>ร้านอาหาร ร้านกาแฟ สำนักงาน</li><li>ประเมินหน้างานก่อน แจ้งราคาชัดเจน</li><li>นัดวัน-เวลาที่ไม่กระทบการขาย</li></ul>
+        <a href="tel:0645518495" class="btn btn-ink">โทรสอบถาม</a>
+      </div>
+    </div>
+
+    <div class="extra">
+      <div class="ex rv-on"><div class="i">🧪</div><div><b>เติมน้ำยาแอร์</b><span>ตรวจหารอยรั่วก่อนเติม ไม่เติมทิ้งเปล่า</span></div></div>
+      <div class="ex rv-on"><div class="i">🔧</div><div><b>ซ่อมแอร์ ตรวจเช็กอาการ</b><span>แอร์ไม่ติด ไม่เย็น เสียงดัง ไฟกะพริบ</span></div></div>
+      <div class="ex rv-on"><div class="i">📦</div><div><b>ติดตั้ง / ย้ายแอร์</b><span>สอบถามรายละเอียดหน้างานได้ครับ</span></div></div>
+    </div>
+
+    <!-- calculator -->
+    <div class="calc rv-on" id="calc">
+      <div class="l">
+        <h3>คำนวณค่าล้าง<span>เบื้องต้น</span></h3>
+        <p class="s">กดเลือกจำนวนแอร์ที่บ้าน ดูราคาประมาณการได้ทันที</p>
+        <div class="row-c"><label>ติดผนัง 9,000–12,000 BTU<small>ล้างปกติ · เริ่ม 500.-</small></label><div class="stepper" data-p="500"><button aria-label="ลด">−</button><output>1</output><button aria-label="เพิ่ม">+</button></div></div>
+        <div class="row-c"><label>ติดผนัง 18,000–24,000 BTU<small>ล้างปกติ · เริ่ม 700.-</small></label><div class="stepper" data-p="700"><button aria-label="ลด">−</button><output>0</output><button aria-label="เพิ่ม">+</button></div></div>
+        <div class="row-c" style="border:0"><label>ล้างใหญ่ (ถอดล้าง)<small>เริ่ม 1,200.-</small></label><div class="stepper" data-p="1200"><button aria-label="ลด">−</button><output>0</output><button aria-label="เพิ่ม">+</button></div></div>
+      </div>
+      <div class="r">
+        <small>ราคาประมาณการ</small>
+        <div class="total"><span id="total">500</span><i>บาท</i></div>
+        <p id="units">แอร์ 1 เครื่อง · ราคาจริงขึ้นกับสภาพแอร์และหน้างาน</p>
+        <a href="https://line.me/R/ti/p/~0645518495" target="_blank" rel="noopener" class="btn btn-mint">ส่งรายการนี้ทางไลน์ →</a>
+      </div>
+    </div>
+    <p class="note"><b>*</b> ราคาในหน้านี้เป็นราคาตัวอย่างสำหรับ demo · เว็บไซต์จริงจะใช้ราคาเริ่มต้นตามที่ร้านประกาศบนเพจ</p>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="ba">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow">✨ ก่อน – หลัง</span>
+      <h2>เห็นความต่าง<br><span>ตั้งแต่คอยล์เย็น</span></h2>
+      <p class="d">เลื่อนดูได้เลยครับ คราบฝุ่นและเชื้อราที่ซ่อนอยู่หลังฟิลเตอร์ คือเหตุผลที่แอร์ไม่เย็นและมีกลิ่น</p>
+      <ol class="steps-l">
+        <li><div><b>คลุมผ้าใบกันน้ำ ป้องกันผนังและพื้น</b><span>บ้านไม่เลอะ ของใช้ไม่เปียก</span></div></li>
+        <li><div><b>ฉีดล้างด้วยปั๊มแรงดันสูง</b><span>คอยล์เย็น ถาดน้ำทิ้ง ใบพัด และคอยล์ร้อน</span></div></li>
+        <li><div><b>ตรวจเช็กระบบหลังล้าง</b><span>วัดแรงดันน้ำยา กระแสไฟ และอุณหภูมิลมออก</span></div></li>
+        <li><div><b>เก็บกวาดให้เรียบร้อย</b><span>ส่งมอบงานพร้อมคำแนะนำการดูแล</span></div></li>
+      </ol>
+    </div>
+    <div class="compare rv-on" id="cmp">
+      <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <pattern id="finD" width="10" height="300" patternUnits="userSpaceOnUse"><rect width="10" height="300" fill="#8A7558"/><rect width="3" height="300" fill="#6E5B42"/></pattern>
+          <filter id="grime"><feTurbulence type="fractalNoise" baseFrequency=".05" numOctaves="3" seed="4"/><feColorMatrix values="0 0 0 0 .3  0 0 0 0 .22  0 0 0 0 .12  0 0 0 1.6 -.55"/></filter>
+        </defs>
+        <rect width="400" height="300" fill="url(#finD)"/>
+        <rect width="400" height="300" filter="url(#grime)"/>
+        <g fill="#3E5C3A" opacity=".55"><circle cx="70" cy="80" r="16"/><circle cx="90" cy="96" r="10"/><circle cx="260" cy="210" r="20"/><circle cx="290" cy="190" r="9"/><circle cx="160" cy="240" r="12"/><circle cx="330" cy="70" r="14"/></g>
+        <g stroke="#B8A27F" stroke-width="2" opacity=".5"><path d="M0 60h400M0 150h400M0 240h400"/></g>
+      </svg>
+      <svg class="after" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <pattern id="finC" width="10" height="300" patternUnits="userSpaceOnUse"><rect width="10" height="300" fill="#E4F1F0"/><rect width="3" height="300" fill="#B9CFCF"/></pattern>
+          <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".6"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#5EEAD4" stop-opacity=".25"/></linearGradient>
+        </defs>
+        <rect width="400" height="300" fill="url(#finC)"/>
+        <rect width="400" height="300" fill="url(#shine)"/>
+        <g stroke="#9DB8B8" stroke-width="2" opacity=".6"><path d="M0 60h400M0 150h400M0 240h400"/></g>
+        <g fill="#5EEAD4"><circle cx="300" cy="100" r="5" opacity=".8"/><circle cx="318" cy="92" r="3"/><circle cx="250" cy="200" r="4" opacity=".8"/></g>
+      </svg>
+      <span class="lab b">ก่อนล้าง</span><span class="lab a">หลังล้าง</span>
+      <div class="handle" id="hdl"></div>
+      <input type="range" min="0" max="100" value="50" aria-label="เลื่อนเปรียบเทียบก่อนและหลังล้าง" id="rng">
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">📷 ผลงานของเรา</span>
+      <h2>ตัวอย่างผลงานหน้างาน</h2>
+      <p>ตัวอย่างงานล้างและซ่อมแอร์ในกรุงเทพฯ นนทบุรี และปทุมธานี</p>
+    </div>
+    <div class="filters rv-on" id="filters">
+      <button class="on" data-f="all">ทั้งหมด</button>
+      <button data-f="clean">ล้างแอร์</button>
+      <button data-f="fix">ซ่อม / เติมน้ำยา</button>
+      <button data-f="shop">ร้านค้า / สำนักงาน</button>
+    </div>
+    <div class="w-grid">
+      <article class="w rv-on" data-c="clean">
+        <div class="pic"><svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#12505B"/><rect x="0" y="150" width="320" height="50" fill="#0E3D47"/><rect x="60" y="40" width="200" height="60" rx="16" fill="#EFFAF7"/><rect x="74" y="82" width="172" height="8" rx="4" fill="#0A2E36"/><path d="M50 96 L270 96 L290 150 L30 150Z" fill="#5EEAD4" opacity=".25"/><g stroke="#A7F3E4" stroke-width="3" stroke-dasharray="4 6"><path d="M110 104v40M160 104v40M210 104v40"/></g></svg><span class="tag">ล้างแอร์</span></div>
+        <div class="bd"><h3>คอนโด 1 ห้องนอน · ล้างปกติ 2 เครื่อง</h3><div class="meta"><span>📍 นนทบุรี</span><span>⏱ ~2 ชม.</span></div></div>
+      </article>
+      <article class="w rv-on" data-c="clean">
+        <div class="pic"><svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#0F766E"/><circle cx="260" cy="40" r="60" fill="#5EEAD4" opacity=".15"/><rect x="40" y="50" width="110" height="50" rx="10" fill="#0E3D47" stroke="#5EEAD4" stroke-dasharray="5 5" stroke-width="2"/><rect x="170" y="70" width="110" height="80" rx="10" fill="#EFFAF7"/><g stroke="#0F766E" stroke-width="2.5"><path d="M185 80v60M197 80v60M209 80v60M221 80v60M233 80v60M245 80v60M257 80v60M269 80v60"/></g><path d="M150 75h20" stroke="#FF8A3D" stroke-width="4" stroke-linecap="round"/></svg><span class="tag">ล้างใหญ่</span></div>
+        <div class="bd"><h3>บ้านเดี่ยว · ถอดล้างพัดลมกรงกระรอก</h3><div class="meta"><span>📍 ปทุมธานี</span><span>⏱ ~3 ชม.</span></div></div>
+      </article>
+      <article class="w rv-on" data-c="fix">
+        <div class="pic"><svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#15525E"/><rect x="70" y="60" width="140" height="100" rx="12" fill="#EFFAF7"/><circle cx="140" cy="110" r="36" fill="none" stroke="#0F766E" stroke-width="6"/><g stroke="#0F766E" stroke-width="5" stroke-linecap="round"><path d="M140 80v60M110 110h60"/></g><circle cx="250" cy="90" r="26" fill="#fff"/><path d="M250 90l12-12" stroke="#FF8A3D" stroke-width="4" stroke-linecap="round"/><path d="M226 90a24 24 0 0 1 48 0" fill="none" stroke="#0F766E" stroke-width="3"/><path d="M250 116v40h-40" fill="none" stroke="#A7F3E4" stroke-width="4"/></svg><span class="tag">เติมน้ำยา</span></div>
+        <div class="bd"><h3>แอร์ไม่เย็น · หารอยรั่ว + เติมน้ำยา</h3><div class="meta"><span>📍 กรุงเทพฯ</span><span>⏱ ~1.5 ชม.</span></div></div>
+      </article>
+      <article class="w rv-on" data-c="shop">
+        <div class="pic"><svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#0E3D47"/><rect x="0" y="0" width="320" height="40" fill="#0A2E36"/><rect x="100" y="0" width="120" height="34" rx="6" fill="#EFFAF7"/><rect x="130" y="8" width="60" height="18" rx="3" fill="#fff" stroke="#0F766E" stroke-width="2"/><g fill="#15525E"><rect x="30" y="110" width="70" height="60" rx="6"/><rect x="125" y="110" width="70" height="60" rx="6"/><rect x="220" y="110" width="70" height="60" rx="6"/></g><g stroke="#A7F3E4" stroke-width="3" stroke-dasharray="4 6"><path d="M110 40l-30 50M160 40v50M210 40l30 50"/></g></svg><span class="tag">ร้านค้า</span></div>
+        <div class="bd"><h3>ร้านกาแฟ · ล้างแอร์สี่ทิศทาง 3 เครื่อง</h3><div class="meta"><span>📍 นนทบุรี</span><span>⏱ ก่อนร้านเปิด</span></div></div>
+      </article>
+      <article class="w rv-on" data-c="fix">
+        <div class="pic"><svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#12505B"/><rect x="60" y="70" width="200" height="100" rx="14" fill="#EFFAF7"/><circle cx="130" cy="120" r="34" fill="#fff" stroke="#0F766E" stroke-width="4"/><g stroke="#0F766E" stroke-width="3"><path d="M130 86v68M96 120h68M106 96l48 48M154 96l-48 48"/></g><rect x="190" y="95" width="50" height="50" rx="6" fill="#0A2E36"/><circle cx="215" cy="120" r="8" fill="#FF8A3D"/><path d="M40 60l20 10M280 60l-20 10" stroke="#FF8A3D" stroke-width="4" stroke-linecap="round"/></svg><span class="tag">ซ่อม</span></div>
+        <div class="bd"><h3>คอมเพรสเซอร์ไม่ทำงาน · ตรวจเช็กแคปสตาร์ท</h3><div class="meta"><span>📍 ปทุมธานี</span><span>⏱ ~1 ชม.</span></div></div>
+      </article>
+      <article class="w rv-on" data-c="clean">
+        <div class="pic"><svg viewBox="0 0 320 200"><rect width="320" height="200" fill="#0F766E"/><rect x="30" y="30" width="120" height="40" rx="12" fill="#EFFAF7"/><rect x="170" y="30" width="120" height="40" rx="12" fill="#EFFAF7"/><rect x="30" y="110" width="120" height="40" rx="12" fill="#EFFAF7"/><rect x="170" y="110" width="120" height="40" rx="12" fill="#EFFAF7"/><g fill="#0A2E36"><rect x="40" y="58" width="100" height="5" rx="2.5"/><rect x="180" y="58" width="100" height="5" rx="2.5"/><rect x="40" y="138" width="100" height="5" rx="2.5"/><rect x="180" y="138" width="100" height="5" rx="2.5"/></g><circle cx="290" cy="180" r="14" fill="#FF8A3D"/><text x="290" y="185" text-anchor="middle" font-family="Noto Sans Thai" font-weight="800" font-size="13" fill="#fff">4</text></svg><span class="tag">ล้างแอร์</span></div>
+        <div class="bd"><h3>ทาวน์โฮม · ล้างยกบ้าน 4 เครื่อง</h3><div class="meta"><span>📍 กรุงเทพฯ</span><span>⏱ ครึ่งวัน</span></div></div>
+      </article>
+    </div>
+    <p class="note" style="color:#7FA3A7"><b>*</b> ผลงานในส่วนนี้เป็นตัวอย่างสำหรับ demo · เว็บไซต์จริงจะใช้รูปหน้างานจริงจากเพจ Facebook ของร้าน</p>
+  </div>
+</section>
+
+<!-- AREA -->
+<section class="area" id="area">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow">📍 พื้นที่บริการ</span>
+      <h2>ช่างวิ่งถึงบ้านคุณ<br><span>3 จังหวัด</span></h2>
+      <p class="d">รับงานทั้งบ้าน คอนโด ทาวน์โฮม และร้านค้า ไม่แน่ใจว่าอยู่ในพื้นที่หรือเปล่า ทักไลน์บอกโลเคชันมาได้เลยครับ</p>
+      <div class="zones">
+        <div class="zone"><div class="pin" style="background:var(--ink)">กทม</div><div><b>กรุงเทพมหานคร</b><span>รับงานบ้านพักอาศัย คอนโด และร้านค้า</span></div></div>
+        <div class="zone"><div class="pin" style="background:var(--teal)">นบ</div><div><b>นนทบุรี</b><span>ปากเกร็ด เมืองนนท์ บางบัวทอง บางใหญ่ และใกล้เคียง</span></div></div>
+        <div class="zone"><div class="pin" style="background:var(--sun)">ปท</div><div><b>ปทุมธานี</b><span>รังสิต คลองหลวง ลำลูกกา ธัญบุรี และใกล้เคียง</span></div></div>
+      </div>
+      <div class="cta-row"><a href="https://line.me/R/ti/p/~0645518495" target="_blank" rel="noopener" class="btn btn-line">ส่งโลเคชันทางไลน์</a></div>
+      <p class="note" style="text-align:left">* ชื่ออำเภอเป็นตัวอย่าง · ร้านแจ้งพื้นที่บริการเป็นระดับจังหวัด</p>
+    </div>
+    <div class="mapbox rv-on">
+      <iframe src="https://maps.google.com/maps?q=%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5&z=10&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="แผนที่พื้นที่บริการ"></iframe>
+      <div class="ov">🚐 <span><b>บริการถึงที่</b> · กรุงเทพฯ · นนทบุรี · ปทุมธานี</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">💙 ทำไมต้อง Jaroon AIR</span>
+      <h2>งานแอร์ที่ <em>ไว้ใจได้</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="wy rv-on"><div class="n">01</div><div class="ic">💬</div><h3>แจ้งราคาก่อนทำ</h3><p>ตรวจเช็กอาการ บอกสาเหตุ บอกราคาให้ตัดสินใจก่อน ไม่มีบวกเพิ่มทีหลัง</p></div>
+      <div class="wy rv-on"><div class="n">02</div><div class="ic">🧹</div><h3>บ้านไม่เลอะ</h3><p>คลุมผ้าใบกันน้ำทุกครั้ง ทำเสร็จเก็บกวาดให้เรียบร้อยก่อนกลับ</p></div>
+      <div class="wy rv-on"><div class="n">03</div><div class="ic">🔍</div><h3>ตรวจเช็กทุกเครื่อง</h3><p>วัดน้ำยา วัดกระแสไฟ หลังล้างทุกครั้ง เจออะไรผิดปกติแจ้งตรงๆ</p></div>
+      <div class="wy rv-on"><div class="n">04</div><div class="ic">📱</div><h3>นัดง่ายผ่านไลน์</h3><p>ส่งรูปแอร์ ส่งโลเคชัน เลือกวันเวลาที่สะดวก จบในแชทเดียว</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING STEPS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">📅 จองคิวง่ายๆ</span>
+      <h2>4 ขั้นตอน <em>แอร์เย็นฉ่ำ</em></h2>
+    </div>
+    <div class="book">
+      <div class="bk rv-on"><div class="c">📱<b>1</b></div><h4>ทักไลน์ / โทร</h4><p>064-551-8495</p></div>
+      <div class="bk rv-on"><div class="c">📸<b>2</b></div><h4>ส่งรูป + โลเคชัน</h4><p>บอกขนาด BTU จำนวนเครื่อง อาการ</p></div>
+      <div class="bk rv-on"><div class="c">🗓️<b>3</b></div><h4>นัดวันเวลา</h4><p>แจ้งราคาเบื้องต้นก่อนเข้างาน</p></div>
+      <div class="bk rv-on"><div class="c">❄️<b>4</b></div><h4>ช่างเข้าบริการ</h4><p>ล้าง/ซ่อม ทดสอบ ส่งมอบงาน</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">⭐ เสียงจากลูกค้า</span>
+      <h2>ลูกค้า <em>บอกต่อ</em></h2>
+    </div>
+    <div class="rv-grid">
+      <div class="rv rv-on"><svg class="q" viewBox="0 0 24 24" fill="#A7F3E4"><path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6a1 1 0 0 1 1-1h3zM21 7h-4a3 3 0 0 0-3 3v7h7v-7h-4a1 1 0 0 1 1-1h3z"/></svg><div class="stars">★★★★★</div><p>นัดผ่านไลน์ง่ายมาก ช่างมาตรงเวลา คลุมผ้าใบอย่างดี ล้างเสร็จแอร์เย็นขึ้นเห็นได้ชัด กลิ่นอับหายเลยครับ</p><div class="who"><div class="av">ภ</div><div><b>คุณภูมิ</b><small>คอนโด · นนทบุรี</small></div></div></div>
+      <div class="rv rv-on"><svg class="q" viewBox="0 0 24 24" fill="#A7F3E4"><path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6a1 1 0 0 1 1-1h3zM21 7h-4a3 3 0 0 0-3 3v7h7v-7h-4a1 1 0 0 1 1-1h3z"/></svg><div class="stars">★★★★★</div><p>แอร์ไม่เย็นมาเป็นเดือน ช่างเช็กให้ละเอียด บอกสาเหตุและราคาก่อนทำ ไม่ยัดเยียดเปลี่ยนอะไหล่ ประทับใจค่ะ</p><div class="who"><div class="av">ป</div><div><b>คุณปลา</b><small>บ้านเดี่ยว · ปทุมธานี</small></div></div></div>
+      <div class="rv rv-on"><svg class="q" viewBox="0 0 24 24" fill="#A7F3E4"><path d="M10 7H6a3 3 0 0 0-3 3v7h7v-7H6a1 1 0 0 1 1-1h3zM21 7h-4a3 3 0 0 0-3 3v7h7v-7h-4a1 1 0 0 1 1-1h3z"/></svg><div class="stars">★★★★★</div><p>ล้างแอร์ร้าน 3 เครื่อง มาก่อนร้านเปิด เสร็จทันขาย เก็บงานสะอาด เดี๋ยวรอบหน้าเรียกอีกแน่นอน</p><div class="who"><div class="av">ต</div><div><b>คุณต่าย</b><small>ร้านกาแฟ · กรุงเทพฯ</small></div></div></div>
+    </div>
+    <p class="note"><b>*</b> รีวิวในหน้านี้เป็นตัวอย่างสำหรับ demo · เว็บไซต์จริงจะใช้รีวิวจริงจากลูกค้าของร้าน</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">❓ คำถามที่พบบ่อย</span>
+      <h2>สงสัยเรื่องแอร์ <em>ถามได้</em></h2>
+    </div>
+    <div class="faq rv-on">
+      <details open><summary>ควรล้างแอร์บ่อยแค่ไหน?</summary><p>แอร์บ้านที่ใช้ทุกวันแนะนำล้างทุก 4–6 เดือน ถ้าบ้านอยู่ใกล้ถนน มีฝุ่นเยอะ หรือเลี้ยงสัตว์ ควรล้างถี่ขึ้น ส่วนฟิลเตอร์หน้าเครื่องถอดล้างเองได้ทุก 2–4 สัปดาห์ครับ</p></details>
+      <details><summary>ล้างปกติกับล้างใหญ่ต่างกันยังไง?</summary><p>ล้างปกติคือฉีดล้างคอยล์เย็น ฟิลเตอร์ และคอยล์ร้อนโดยไม่ถอดชิ้นส่วนหลัก ส่วนล้างใหญ่จะถอดพัดลมกรงกระรอกและถาดน้ำทิ้งออกมาล้างแยก เหมาะกับแอร์ที่สกปรกมาก มีกลิ่น หรือมีน้ำหยด</p></details>
+      <details><summary>ใช้เวลานานไหม ต้องเตรียมอะไรบ้าง?</summary><p>ล้างปกติใช้เวลาประมาณ 45 นาที – 1 ชั่วโมงต่อเครื่อง แค่เคลียร์พื้นที่ใต้แอร์และทางเข้าคอยล์ร้อนไว้ ที่เหลือช่างจัดการให้ครับ</p></details>
+      <details><summary>แอร์ไม่เย็น ต้องเติมน้ำยาเลยไหม?</summary><p>ไม่เสมอไปครับ แอร์ไม่เย็นอาจเกิดจากความสกปรก พัดลมคอยล์ร้อนไม่หมุน หรืออะไหล่เสื่อม ช่างจะตรวจเช็กก่อน ถ้าน้ำยาพร่องจริงจะหารอยรั่วก่อนเติม</p></details>
+      <details><summary>รับงานพื้นที่ไหนบ้าง?</summary><p>กรุงเทพมหานคร นนทบุรี และปทุมธานี ส่งโลเคชันมาทางไลน์ 064-551-8495 เพื่อเช็กคิวได้เลยครับ</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow" style="background:rgba(94,234,212,.14);color:var(--mint)">📞 ติดต่อจองคิว</span>
+      <h2>ร้อนนี้ให้แอร์<br><span>ทำงานเต็มที่</span></h2>
+      <p class="d">โทรหรือแอดไลน์เบอร์เดียวกัน ส่งรูปแอร์และโลเคชันมา ช่างตอบกลับพร้อมคิวว่างและราคาเบื้องต้นครับ</p>
+      <a href="tel:0645518495" class="phone-big"><span class="i"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>064-551-8495</a>
+      <div class="c-actions">
+        <a href="https://line.me/R/ti/p/~0645518495" target="_blank" rel="noopener" class="btn btn-line">แอดไลน์ 064-551-8495</a>
+        <a href="https://www.facebook.com/search/top?q=Jaroon%20AIR%20Repair%20and%20service" target="_blank" rel="noopener" class="btn btn-ghost">เพจ Facebook</a>
+      </div>
+    </div>
+    <div class="c-card rv-on">
+      <div class="c-it"><div class="i"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div><div><b>โทร / LINE</b><span>064-551-8495</span></div></div>
+      <div class="c-it"><div class="i"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><b>พื้นที่บริการ</b><span>กรุงเทพฯ · นนทบุรี · ปทุมธานี (บริการถึงที่)</span></div></div>
+      <div class="c-it"><div class="i"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b>เวลานัดหมาย</b><span>นัดคิวล่วงหน้าทางโทรศัพท์หรือไลน์</span></div></div>
+      <div class="c-it"><div class="i"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><div><b>บริการ</b><span>ล้างแอร์ · ซ่อมแอร์ · เติมน้ำยา · ตรวจเช็กอาการ</span></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand">
+          <svg class="logo" viewBox="0 0 50 50" aria-hidden="true"><rect width="50" height="50" rx="15" fill="#0F766E"/><g stroke="#5EEAD4" stroke-width="2.6" stroke-linecap="round" fill="none"><path d="M25 11v28M13 18l24 14M37 18 13 32"/><path d="M21 13l4 3 4-3M21 37l4-3 4 3"/></g><circle cx="25" cy="25" r="4.2" fill="#FF8A3D"/></svg>
+          <div><div class="t1">Jaroon AIR</div><div class="t2">Repair &amp; Service</div></div>
+        </div>
+        <p>ล้างแอร์ ซ่อมแอร์ เติมน้ำยา ถึงบ้าน กรุงเทพฯ นนทบุรี ปทุมธานี</p>
+      </div>
+      <div><h4>บริการ</h4><ul><li><a href="#packages">แพ็กเกจล้างแอร์</a></li><li><a href="#packages">ซ่อม / เติมน้ำยา</a></li><li><a href="#calc">คำนวณราคา</a></li><li><a href="#works">ผลงาน</a></li></ul></div>
+      <div><h4>ติดต่อ</h4><ul><li><a href="tel:0645518495">โทร 064-551-8495</a></li><li><a href="https://line.me/R/ti/p/~0645518495" target="_blank" rel="noopener">LINE 064-551-8495</a></li><li><a href="#area">พื้นที่บริการ</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© Jaroon AIR Repair and service</span><span>Demo website · ข้อมูลบางส่วนเป็นตัวอย่าง</span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://line.me/R/ti/p/~0645518495" class="ln" target="_blank" rel="noopener" aria-label="แอดไลน์"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg></a>
+  <a href="tel:0645518495" class="call" aria-label="โทร"><svg viewBox="0 0 24 24" fill="#0A2E36"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+</div>
+
+<script>
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv-on').forEach(el=>io.observe(el));
+// before/after
+const rng=document.getElementById('rng'),aft=document.querySelector('.compare .after'),hdl=document.getElementById('hdl');
+rng.addEventListener('input',()=>{aft.style.clipPath=`inset(0 0 0 ${rng.value}%)`;hdl.style.left=rng.value+'%'});
+// calculator
+function calc(){let t=0,n=0;document.querySelectorAll('.stepper').forEach(s=>{const q=+s.querySelector('output').textContent;t+=q*+s.dataset.p;n+=q});
+  document.getElementById('total').textContent=t.toLocaleString('th-TH');
+  document.getElementById('units').textContent=n?`แอร์ ${n} เครื่อง · ราคาจริงขึ้นกับสภาพแอร์และหน้างาน`:'เลือกจำนวนแอร์ที่ต้องการล้าง'}
+document.querySelectorAll('.stepper').forEach(s=>{const o=s.querySelector('output'),[m,p]=s.querySelectorAll('button');
+  m.onclick=()=>{o.textContent=Math.max(0,+o.textContent-1);calc()};p.onclick=()=>{o.textContent=Math.min(20,+o.textContent+1);calc()}});
+// portfolio filter
+document.querySelectorAll('#filters button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  const f=b.dataset.f;document.querySelectorAll('.w').forEach(w=>w.classList.toggle('hide',f!=='all'&&w.dataset.c!==f))});
+// close mobile menu on click
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>document.getElementById('menu').classList.remove('open'));
+</script>
+</body>
+</html>
