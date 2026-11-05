@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>นพพรขนส่ง | รถรับจ้าง รังสิต ลำลูกกา ดอนเมือง ย้ายบ้าน ย้ายหอ ถอดประกอบเฟอร์นิเจอร์</title>
+<meta name="description" content="นพพรขนส่ง (great blessing transport) รถรับจ้าง กระบะ 4 ล้อ 6 ล้อ รังสิต ลำลูกกา ดอนเมือง ปทุมธานี นนทบุรี กรุงเทพฯ และทั่วประเทศ ย้ายบ้าน ย้ายหอ รับถอดประกอบเฟอร์นิเจอร์ 24 ชม. โทร 093-998-8995">
+<link rel="icon" href="assets/badge.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1E3157; --navy2:#152341; --navy3:#2A4373;
+  --tarp:#2F6DB5; --tarp2:#5B93D6; --sky:#E7F0FB;
+  --orange:#F28C1E; --orange2:#FFB255; --tape:#E9B872;
+  --green:#2E9E44; --line:#06C755;
+  --kraft:#D9B98A; --kraft2:#EAD7B5; --paper:#FBF6EC; --ink:#1B2230; --muted:#5D6678;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.7;overflow-x:hidden}
+h1,h2,h3,h4,.head{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input,select{font:inherit}
+.wrap{width:min(1200px,92%);margin:0 auto}
+.sample{display:inline-block;font-size:12.5px;font-weight:600;color:#8a5200;background:#FFF1D9;border:1px dashed #E2A35A;border-radius:6px;padding:1px 8px}
+
+/* tarp stripe */
+.tarp{background:repeating-linear-gradient(0deg,var(--tarp) 0 10px,#fff 10px 16px,var(--tarp) 16px 22px,#cfe0f5 22px 26px)}
+.tarp-v{background:repeating-linear-gradient(90deg,var(--tarp) 0 14px,#fff 14px 22px)}
+
+/* topbar */
+.topbar{background:var(--navy2);color:#c9d3e6;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:8px 0;flex-wrap:wrap}
+.topbar b{color:var(--orange2)}
+.live{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ddc84;margin-right:7px;box-shadow:0 0 0 3px rgba(61,220,132,.25);animation:pulse 1.8s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 7px rgba(61,220,132,0)}}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:50;background:rgba(251,246,236,.94);backdrop-filter:blur(10px);border-bottom:1px solid #e6dac3}
+nav.main::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:5px}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:48px;height:56px;object-fit:cover;object-position:top;border-radius:10px;box-shadow:0 4px 12px -4px rgba(30,49,87,.5)}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:22px;line-height:1;color:var(--navy)}
+.brand .t2{font-size:12.5px;font-weight:600;color:var(--tarp);letter-spacing:.6px;margin-top:3px}
+.menu{display:flex;gap:26px;font-family:var(--head);font-weight:700;font-size:15.5px;color:var(--navy)}
+.menu a{position:relative;padding:4px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:-2px;height:3px;width:0;background:var(--orange);border-radius:3px;transition:.25s}
+.menu a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:800;border-radius:12px;padding:13px 24px;cursor:pointer;transition:transform .15s,box-shadow .15s,background .2s;white-space:nowrap;border:0;font-size:16.5px}
+.btn svg{width:21px;height:21px;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn-o{background:var(--orange);color:#fff;box-shadow:0 6px 0 #B9620A}
+.btn-o:hover{box-shadow:0 8px 0 #B9620A}
+.btn-l{background:var(--line);color:#fff;box-shadow:0 6px 0 #04913E}
+.btn-l:hover{box-shadow:0 8px 0 #04913E}
+.btn-n{background:var(--navy);color:#fff;box-shadow:0 6px 0 var(--navy2)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.55)}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.btn.sm{padding:10px 18px;font-size:15px}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:6px}
+
+/* hero */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;padding:76px 0 0}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(700px 420px at 85% 20%,rgba(91,147,214,.35),transparent 65%),
+  radial-gradient(500px 360px at 0% 90%,rgba(242,140,30,.18),transparent 65%)}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(180deg,#000,transparent 80%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:#fff;font-family:var(--head);font-weight:700;padding:6px 16px;border-radius:999px;font-size:14.5px}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--orange2)}
+.hero h1{font-size:clamp(38px,5vw,68px);font-weight:900;margin:20px 0 16px;letter-spacing:-.5px}
+.hero h1 .hl{color:var(--orange2);position:relative;display:inline-block}
+.hero h1 .hl svg{position:absolute;left:0;right:0;bottom:-8px;width:100%;height:16px}
+.nw{white-space:nowrap}
+.hero h1 small{display:block;font-size:.36em;font-weight:700;color:#BFD3F0;margin-top:14px;letter-spacing:0}
+.hero p.lead{font-size:19px;color:#D5DEEE;max-width:580px}
+.hero p.lead b{color:#fff}
+.cta-row{display:flex;gap:16px;margin-top:30px;flex-wrap:wrap}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.chip{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:10px 14px}
+.chip b{font-family:var(--head);font-size:22px;font-weight:900;color:var(--orange2);line-height:1}
+.chip span{font-size:13.5px;color:#C9D5EA;line-height:1.3}
+
+.hero-art{position:relative;max-width:500px;width:100%;justify-self:center;padding:10px 0 80px}
+.box{position:relative;background:linear-gradient(160deg,var(--kraft2),var(--kraft));border-radius:10px;padding:16px 16px 18px;box-shadow:0 30px 60px -25px rgba(0,0,0,.7),inset 0 0 0 2px rgba(120,80,30,.15);transform:rotate(-2.5deg)}
+.box::before{content:"";position:absolute;left:50%;top:-14px;width:110px;height:34px;transform:translateX(-50%) rotate(2deg);background:rgba(233,184,114,.85);box-shadow:0 2px 4px rgba(0,0,0,.15)}
+.box img{border-radius:6px;aspect-ratio:1/1;object-fit:cover;width:100%;height:auto}
+.box .lbl{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-family:var(--head);color:#4b3417;font-weight:800;font-size:15px}
+.box .lbl span{border:2px solid #4b3417;border-radius:6px;padding:0 8px;font-size:12.5px}
+.arrows{display:flex;gap:4px}
+.arrows svg{width:18px;height:18px}
+.stk{position:absolute;font-family:var(--head);font-weight:800;border-radius:12px;padding:10px 15px;font-size:14.5px;line-height:1.3;box-shadow:0 14px 30px -14px rgba(0,0,0,.6)}
+.stk small{display:block;font-weight:600;font-size:12px;opacity:.85}
+.stk.a{top:2%;right:-6%;background:var(--orange);color:#fff;transform:rotate(5deg);animation:bob 4.4s ease-in-out infinite}
+.stk.b{top:46%;left:-9%;background:#fff;color:var(--navy);transform:rotate(-5deg);animation:bob 5s ease-in-out infinite .5s}
+.stk.c{bottom:84px;right:-4%;background:var(--green);color:#fff;transform:rotate(3deg);animation:bob 4.8s ease-in-out infinite 1s}
+@keyframes bob{50%{translate:0 -9px}}
+.road{position:relative;z-index:2;height:88px;margin-top:-30px;background:linear-gradient(#253A63,#1A2A49);border-top:3px solid #3A5487;overflow:hidden}
+.road::before{content:"";position:absolute;left:0;right:0;top:50%;height:4px;background:repeating-linear-gradient(90deg,#F2C14E 0 46px,transparent 46px 86px);animation:lane 1.6s linear infinite}
+@keyframes lane{to{background-position:-86px 0}}
+.truck{position:absolute;bottom:22px;left:-240px;width:220px;animation:drive 16s linear infinite}
+@keyframes drive{to{left:110%}}
+
+/* marquee */
+.marquee{overflow:hidden;padding:0;position:relative}
+.marquee .inner{background:var(--orange);color:#fff;padding:13px 0;position:relative}
+.track{display:flex;gap:40px;width:max-content;animation:slide 42s linear infinite;font-family:var(--head);font-weight:800;font-size:19px}
+.track span{display:flex;align-items:center;gap:40px;white-space:nowrap}
+.track span::after{content:"";width:22px;height:14px;background:#fff;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 14'%3E%3Cpath d='M0 2h12v9H0zM12 5h5l4 4v2h-9z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 14'%3E%3Cpath d='M0 2h12v9H0zM12 5h5l4 4v2h-9z'/%3E%3C/svg%3E") center/contain no-repeat}
+@keyframes slide{to{transform:translateX(-50%)}}
+.marquee .tarp{height:12px}
+
+/* sections */
+section{padding:96px 0;position:relative}
+.sec-head{max-width:760px;margin:0 auto 52px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:800;font-size:14px;letter-spacing:1.5px;color:var(--tarp);background:var(--sky);padding:6px 14px;border-radius:8px;margin-bottom:14px}
+.eyebrow svg{width:16px;height:16px}
+.sec-head h2,.h2{font-size:clamp(30px,4.2vw,50px);font-weight:900;color:var(--navy)}
+.sec-head h2 em,.h2 em{font-style:normal;color:var(--orange)}
+.sec-head p{margin-top:12px;color:var(--muted);font-size:18px}
+
+/* services — box labels */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.svc{position:relative;background:#fff;border-radius:var(--r);padding:30px 26px 24px;box-shadow:0 18px 40px -28px rgba(30,49,87,.55);border:1px solid #ece2cf;transition:.25s;overflow:hidden;display:flex;flex-direction:column}
+.svc::before{content:"";position:absolute;left:0;right:0;top:0;height:7px}
+.svc:nth-child(3n+1)::before{background:var(--tarp)}
+.svc:nth-child(3n+2)::before{background:var(--orange)}
+.svc:nth-child(3n)::before{background:var(--green)}
+.svc:hover{transform:translateY(-6px);box-shadow:0 26px 50px -28px rgba(30,49,87,.7)}
+.svc .ic{width:64px;height:64px;border-radius:16px;background:var(--sky);display:grid;place-items:center;margin-bottom:16px}
+.svc .ic svg{width:38px;height:38px;fill:none;stroke:var(--navy);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.svc .ic svg .f{fill:var(--orange);stroke:none}
+.svc h3{font-size:22px;font-weight:800;color:var(--navy)}
+.svc p{color:var(--muted);font-size:15.5px;margin-top:6px;flex:1}
+.svc ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.svc li{font-size:13px;font-weight:600;background:var(--paper);border:1px solid #e6dac3;border-radius:999px;padding:2px 10px;color:#4a4f5c}
+.price{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-top:18px;padding-top:14px;border-top:2px dashed #e6dac3;flex-wrap:wrap}
+.price b{font-family:var(--head);font-size:24px;font-weight:900;color:var(--navy);line-height:1}
+.price b small{font-size:13px;font-weight:700;color:var(--muted)}
+.svc.hot{background:var(--navy);color:#fff;border-color:var(--navy)}
+.svc.hot h3,.svc.hot .price b{color:#fff}
+.svc.hot p{color:#C8D4EA}
+.svc.hot .ic{background:rgba(255,255,255,.1)}
+.svc.hot .ic svg{stroke:#fff}
+.svc.hot li{background:transparent;color:var(--orange2);border-color:rgba(255,178,85,.5)}
+.svc.hot .price{border-color:rgba(255,255,255,.2)}
+.ribbon{position:absolute;top:18px;right:-34px;transform:rotate(38deg);background:var(--orange);color:#fff;font-family:var(--head);font-weight:800;font-size:12.5px;padding:4px 40px}
+.svc-note{text-align:center;margin-top:28px;color:var(--muted);font-size:14.5px}
+
+/* furniture USP */
+.furni{background:var(--navy);color:#fff;overflow:hidden}
+.furni::before{content:"";position:absolute;inset:0 0 auto 0;height:14px}
+.furni .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.furni .h2{color:#fff}
+.furni .h2 em{color:var(--orange2)}
+.furni .eyebrow{background:rgba(255,255,255,.1);color:var(--orange2)}
+.furni p.lead{color:#C8D4EA;font-size:18px;margin-top:14px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:30px 0 32px}
+.flow div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:16px 10px;text-align:center;position:relative}
+.flow div:not(:last-child)::after{content:"›";position:absolute;right:-11px;top:50%;transform:translateY(-50%);color:var(--orange2);font-weight:900;font-size:22px}
+.flow svg{width:40px;height:40px;margin:0 auto 8px;fill:none;stroke:var(--orange2);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.flow b{font-family:var(--head);font-size:16px;display:block}
+.flow small{color:#AFC0DD;font-size:12.5px;line-height:1.35;display:block}
+.items{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}
+.items span{background:#fff;color:var(--navy);font-family:var(--head);font-weight:700;font-size:14px;border-radius:8px;padding:5px 12px}
+.photo-stack{position:relative;height:560px}
+.pol{position:absolute;background:#fff;padding:10px 10px 38px;border-radius:4px;box-shadow:0 30px 50px -25px rgba(0,0,0,.8)}
+.pol img{width:100%;height:100%;object-fit:cover;border-radius:2px}
+.pol figcaption{position:absolute;left:12px;right:12px;bottom:8px;font-family:var(--head);font-weight:700;color:var(--navy);font-size:14px;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pol::before{content:"";position:absolute;top:-12px;left:50%;width:84px;height:26px;transform:translateX(-50%) rotate(-3deg);background:rgba(233,184,114,.85)}
+.pol.p1{width:54%;height:54%;left:0;top:5%;transform:rotate(-4deg)}
+.pol.p2{width:50%;height:52%;right:0;top:0;transform:rotate(4deg)}
+.pol.p3{width:52%;height:44%;left:24%;bottom:0;transform:rotate(-1deg);z-index:2}
+
+/* quote widget */
+.quote{background:linear-gradient(180deg,var(--paper),#F3EAD8)}
+.qz{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:start}
+.panel{background:#fff;border-radius:22px;box-shadow:0 24px 60px -34px rgba(30,49,87,.6);border:1px solid #ece2cf;padding:30px}
+.panel h3{font-size:21px;color:var(--navy);display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.panel h3 .n{width:30px;height:30px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-size:15px;flex:none}
+.grp{padding:20px 0;border-bottom:1px dashed #e6dac3}
+.grp:first-child{padding-top:0}
+.grp:last-child{border-bottom:0;padding-bottom:0}
+.hint{font-size:14px;color:var(--muted);margin-bottom:12px}
+.load{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.load label,.veh label{cursor:pointer}
+.load input,.veh input,.opts input{position:absolute;opacity:0;pointer-events:none}
+.load .c{display:block;text-align:center;border:2px solid #e6dac3;border-radius:14px;padding:12px 6px;transition:.2s;height:100%}
+.load .c svg{width:44px;height:36px;margin:0 auto 4px;fill:none;stroke:var(--navy);stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.load .c b{display:block;font-family:var(--head);font-size:14px;color:var(--navy);line-height:1.3}
+.load .c small{font-size:12px;color:var(--muted);line-height:1.3;display:block}
+.load input:checked+.c{border-color:var(--orange);background:#FFF4E6;box-shadow:0 0 0 3px rgba(242,140,30,.18)}
+.load input:focus-visible+.c,.veh input:focus-visible+.c,.opts input:focus-visible+span{outline:3px solid var(--tarp);outline-offset:2px}
+.veh{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.veh .c{display:block;border:2px solid #e6dac3;border-radius:16px;padding:14px 12px;text-align:center;position:relative;transition:.2s;height:100%}
+.veh .c svg{width:100%;max-width:130px;height:60px;margin:0 auto}
+.veh .c b{font-family:var(--head);font-size:17px;color:var(--navy);display:block}
+.veh .c small{color:var(--muted);font-size:12.5px;line-height:1.35;display:block}
+.veh input:checked+.c{border-color:var(--tarp);background:var(--sky);box-shadow:0 0 0 3px rgba(47,109,181,.18)}
+.veh .rec{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;font-family:var(--head);font-weight:700;font-size:11.5px;padding:1px 10px;border-radius:999px;white-space:nowrap;display:none}
+.veh .c.is-rec .rec{display:block}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fld label{display:block;font-family:var(--head);font-weight:700;font-size:14.5px;color:var(--navy);margin-bottom:6px}
+.fld input,.fld select{width:100%;border:2px solid #e6dac3;border-radius:12px;padding:11px 14px;background:var(--paper);color:var(--ink);font-size:16px}
+.fld input:focus,.fld select:focus{outline:0;border-color:var(--tarp);background:#fff}
+.floors{display:flex;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+.step-n{display:inline-flex;align-items:center;border:2px solid #e6dac3;border-radius:12px;overflow:hidden;background:var(--paper)}
+.step-n button{width:38px;height:40px;border:0;background:transparent;font-size:20px;font-weight:700;color:var(--navy);cursor:pointer}
+.step-n button:hover{background:var(--sky)}
+.step-n output{min-width:52px;text-align:center;font-family:var(--head);font-weight:800;color:var(--navy)}
+.tog{display:inline-flex;align-items:center;gap:8px;font-size:14.5px;cursor:pointer;user-select:none}
+.tog input{width:18px;height:18px;accent-color:var(--tarp)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{cursor:pointer;position:relative}
+.opts span{display:inline-flex;align-items:center;gap:6px;border:2px solid #e6dac3;border-radius:999px;padding:6px 14px;font-size:14.5px;font-weight:600;transition:.15s;background:#fff}
+.opts input:checked+span{background:var(--navy);color:#fff;border-color:var(--navy)}
+.opts input:checked+span::before{content:"✓";font-weight:900;color:var(--orange2)}
+.ticket{position:sticky;top:96px;background:var(--navy);color:#fff;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(21,35,65,.9)}
+.ticket .tarp{height:12px}
+.ticket .in{padding:26px 26px 28px}
+.ticket h3{font-size:20px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.ticket h3 span{font-size:12px;background:rgba(255,255,255,.12);border-radius:6px;padding:2px 8px;font-weight:600;color:#C8D4EA}
+.sumv{display:flex;align-items:center;gap:14px;margin:18px 0;background:rgba(255,255,255,.06);border-radius:14px;padding:14px}
+.sumv svg{width:96px;height:46px;flex:none}
+.sumv b{font-family:var(--head);font-size:20px;display:block;color:var(--orange2);line-height:1.2}
+.sumv small{color:#B8C7E2;font-size:13px}
+.msg{background:#fff;color:var(--ink);border-radius:14px 14px 14px 4px;padding:14px 16px;font-size:14.5px;line-height:1.6;white-space:pre-line;max-height:290px;overflow:auto;position:relative}
+.msg::before{content:"ข้อความที่จะส่งทาง LINE";display:block;font-family:var(--head);font-weight:700;font-size:12px;color:var(--green);margin-bottom:6px}
+.ticket .btns{display:grid;gap:10px;margin-top:18px}
+.ticket .fine{font-size:12.5px;color:#9FB2D4;margin-top:12px;line-height:1.5}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,200px);opacity:0;visibility:hidden;background:var(--ink);color:#fff;padding:12px 20px;border-radius:12px;font-family:var(--head);font-weight:700;z-index:90;transition:.3s;box-shadow:0 10px 30px rgba(0,0,0,.4);max-width:90%;text-align:center}
+.toast.show{transform:translate(-50%,0);opacity:1;visibility:visible}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative}
+.steps::before{content:"";position:absolute;top:42px;left:9%;right:9%;height:4px;background:repeating-linear-gradient(90deg,var(--tarp) 0 18px,transparent 18px 30px)}
+.step{text-align:center;position:relative}
+.step .c{width:86px;height:86px;margin:0 auto 16px;border-radius:20px;background:#fff;border:3px solid var(--navy);display:grid;place-items:center;position:relative;box-shadow:0 8px 0 var(--navy)}
+.step .c svg{width:40px;height:40px;fill:none;stroke:var(--navy);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.step .c i{position:absolute;top:-12px;right:-12px;width:30px;height:30px;border-radius:50%;background:var(--orange);color:#fff;font-style:normal;font-family:var(--head);font-weight:900;font-size:15px;display:grid;place-items:center}
+.step h4{font-size:18px;color:var(--navy);font-weight:800}
+.step p{font-size:14.5px;color:var(--muted);margin-top:4px}
+
+/* gallery */
+.gallery{background:#fff}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+.gal figure{position:relative;border-radius:14px;overflow:hidden;cursor:zoom-in;background:#ddd}
+.gal figure img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(21,35,65,.88));color:#fff;font-family:var(--head);font-weight:700;font-size:14.5px}
+.gal .w2{grid-column:span 2}
+.gal .h2r{grid-row:span 2}
+.lb{position:fixed;inset:0;background:rgba(10,16,30,.92);z-index:100;display:none;place-items:center;padding:30px}
+.lb.open{display:grid}
+.lb img{max-height:84vh;max-width:92vw;border-radius:10px}
+.lb p{color:#fff;text-align:center;margin-top:12px;font-family:var(--head)}
+.lb button{position:absolute;top:18px;right:22px;background:#fff;border:0;border-radius:50%;width:46px;height:46px;font-size:24px;cursor:pointer}
+
+/* guide table */
+.why{background:var(--sky)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.why .eyebrow{background:#fff}
+.why-item{background:#fff;border-radius:18px;padding:28px 24px;border:1px solid #d6e3f4;position:relative;overflow:hidden}
+.why-item .q{font-family:var(--head);font-weight:900;font-size:54px;line-height:1;color:var(--sky);position:absolute;right:14px;top:8px}
+.why-item svg{width:46px;height:46px;fill:none;stroke:var(--tarp);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;position:relative}
+.why-item h3{font-size:20px;color:var(--navy);margin:12px 0 6px;position:relative}
+.why-item p{font-size:15px;color:var(--muted);position:relative}
+
+/* reviews */
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:#fff;border-radius:18px;padding:26px;border:1px solid #ece2cf;position:relative;box-shadow:0 18px 40px -30px rgba(30,49,87,.5)}
+.rv .stars{color:var(--orange);letter-spacing:2px}
+.rv p{margin:10px 0 18px;font-size:16px}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv .av{width:44px;height:44px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center;font-family:var(--head);font-weight:900}
+.rv .who b{display:block;font-family:var(--head);color:var(--navy);line-height:1.2}
+.rv .who small{color:var(--muted)}
+.rv .job{position:absolute;top:22px;right:22px;font-size:12px;font-weight:700;color:var(--tarp);background:var(--sky);border-radius:6px;padding:2px 8px}
+.note{text-align:center;color:#8a8f99;font-size:13.5px;margin-top:22px}
+
+/* contact */
+.contact{background:var(--navy2);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:stretch}
+.contact .h2{color:#fff}
+.contact .h2 em{color:var(--orange2)}
+.contact .eyebrow{background:rgba(255,255,255,.1);color:var(--orange2)}
+.info{display:grid;gap:14px;margin:28px 0}
+.info .it{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:15px 18px}
+.info .it .i{flex:0 0 46px;height:46px;border-radius:12px;background:var(--orange);display:grid;place-items:center}
+.info .it .i svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.info .it b{font-family:var(--head);color:var(--orange2);display:block;font-size:14.5px}
+.info .it span{color:#D3DCEC}
+.info .ph{font-family:var(--head);font-weight:900;font-size:30px;color:#fff;letter-spacing:.5px;line-height:1.2}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.areas span{border:1px solid rgba(255,178,85,.6);color:var(--orange2);border-radius:999px;padding:1px 12px;font-size:14px}
+.areas span.all{background:var(--orange);color:#fff;border-color:var(--orange)}
+.map{border-radius:20px;overflow:hidden;min-height:460px;position:relative;border:6px solid #fff}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map .pin{position:absolute;right:14px;top:14px;background:#fff;color:var(--navy);font-family:var(--head);font-weight:800;font-size:13.5px;border-radius:10px;padding:6px 12px;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:2}
+
+/* footer */
+footer{background:#0E1830;color:#98A6C2;padding:64px 0 28px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid #22304F}
+footer h4{color:#fff;font-size:17px;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:7px}
+footer a:hover{color:var(--orange2)}
+.ft .brand .t1{color:#fff}
+.ft .brand .t2{color:var(--orange2)}
+.ft p{margin-top:14px;max-width:340px}
+.copy{display:flex;justify-content:space-between;padding-top:22px;font-size:13.5px;flex-wrap:wrap;gap:10px}
+.copy b{color:#fff}
+
+/* floating */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;gap:12px}
+.fab a{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.5);transition:.2s}
+.fab a:hover{transform:scale(1.08)}
+.fab .ln{background:var(--line)}
+.fab .call{background:var(--orange);animation:ring 2.4s infinite}
+.fab svg{width:30px;height:30px}
+@keyframes ring{0%,100%{box-shadow:0 10px 24px -8px rgba(0,0,0,.5),0 0 0 0 rgba(242,140,30,.6)}50%{box-shadow:0 10px 24px -8px rgba(0,0,0,.5),0 0 0 14px rgba(242,140,30,0)}}
+
+.rv-on{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv-on.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .qz{grid-template-columns:1fr}
+  .ticket{position:relative;top:0}
+  .gal{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:900px){
+  .menu,.nav-cta{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:var(--paper);padding:18px 4% 22px;border-bottom:4px solid var(--orange);gap:14px;box-shadow:0 20px 30px -20px rgba(0,0,0,.3)}
+  .hero{padding-top:48px}
+  .hero .wrap,.furni .wrap,.contact .wrap{grid-template-columns:1fr}
+  .hero-art{max-width:400px;padding-bottom:60px}
+  .steps{grid-template-columns:1fr 1fr;row-gap:34px}
+  .steps::before{display:none}
+  .rv-grid{grid-template-columns:1fr}
+  .photo-stack{height:480px;max-width:560px;width:100%;margin:0 auto}
+  .ft{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding:70px 0}
+  .topbar .hide-sm{display:none}
+  .svc-grid,.why-grid{grid-template-columns:1fr}
+  .load{grid-template-columns:repeat(2,1fr)}
+  .veh{grid-template-columns:1fr;gap:16px}
+  .veh .c{display:grid;grid-template-columns:110px 1fr;text-align:left;align-items:center;gap:10px}
+  .veh .rec{left:auto;right:12px;transform:none}
+  .row2{grid-template-columns:1fr}
+  .panel{padding:22px 18px}
+  .flow{grid-template-columns:repeat(2,1fr);row-gap:14px}
+  .flow div:nth-child(2)::after{display:none}
+  .stk.b{left:-2%}
+  .stk.a{right:-2%}
+  .stk.c{right:0}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
+  .gal .w2{grid-column:span 2}
+  .photo-stack{height:440px}
+  .pol.p3{height:40%}
+  .ft{grid-template-columns:1fr}
+  .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .chip{flex-direction:column;align-items:flex-start;gap:4px;padding:10px 11px}
+  .chip b{font-size:19px}
+  .chip span{font-size:12.5px}
+  .tag{font-size:13px;padding:5px 12px}
+  .cta-row .btn{flex:1 1 100%}
+  .truck{width:170px}
+  .brand .t1{font-size:20px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv-on{opacity:1;transform:none}.truck{left:8%}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><span class="live"></span>เวลาทำการ <b>24 ชม. ไม่มีวันหยุด</b> · ทักมาตีราคาก่อน ประเมินให้ฟรี</div>
+    <div class="hide-sm">สายด่วน คุณนพพร <b>093-998-8995</b> · รังสิต · ลำลูกกา · ดอนเมือง และทั่วประเทศ</div>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="assets/badge.jpg" alt="ตราสัญลักษณ์ นพพรขนส่ง">
+      <div><div class="t1">นพพรขนส่ง</div><div class="t2">GREAT BLESSING TRANSPORT</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#services">บริการ</a>
+      <a href="#furniture">ถอด–ประกอบ</a>
+      <a href="#quote">ประเมินราคา</a>
+      <a href="#gallery">ผลงาน</a>
+      <a href="#contact">พื้นที่บริการ</a>
+    </div>
+    <a href="https://line.me/ti/p/hJFqem1QND" target="_blank" rel="noopener" class="btn btn-l sm nav-cta">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.6 7.2 8.4 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.6 8.2-6.1C21.6 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8zM8 13.4H6.2c-.3 0-.5-.2-.5-.5V9.3c0-.3.2-.5.5-.5s.5.2.5.5v3.1H8c.3 0 .5.2.5.5s-.2.5-.5.5zm1.9-.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.3c0-.3.2-.5.5-.5s.5.2.5.5v3.6zm4.3 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-1.8-2.5v2.2c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.3c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l1.8 2.5V9.3c0-.3.2-.5.5-.5s.5.2.5.5v3.6zm2.9-2.3c.3 0 .5.2.5.5s-.2.5-.5.5h-1.3v.8h1.3c.3 0 .5.2.5.5s-.2.5-.5.5h-1.8c-.3 0-.5-.2-.5-.5V9.3c0-.3.2-.5.5-.5h1.8c.3 0 .5.2.5.5s-.2.5-.5.5h-1.3v.8h1.3z"/></svg>
+      ทัก LINE ตีราคาฟรี
+    </a>
+    <button class="burger" aria-label="เปิดเมนู" aria-expanded="false" id="burger">
+      <svg width="30" height="30" viewBox="0 0 24 24" stroke="#1E3157" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="tag"><i></i>รถรับจ้าง รังสิต · ลำลูกกา · ดอนเมือง และทั่วประเทศ</span>
+      <h1>ย้ายบ้าน ย้ายหอ<br><span class="hl">ถอด–ประกอบ<svg viewBox="0 0 300 16" preserveAspectRatio="none" aria-hidden="true"><path d="M3 11 C 70 3, 150 3, 297 9" stroke="#F28C1E" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span> <span class="nw">ให้ด้วย</span>
+        <small>บริการเป็นกันเอง ด้วยทีมงานมืออาชีพ · สุภาพ คุยง่าย</small></h1>
+      <p class="lead">กระบะ · 4 ล้อ · 6 ล้อ รับจ้างทั่วไป <b>ปทุมธานี นนทบุรี กรุงเทพฯ และต่างจังหวัด</b> เตียง 2 ชั้น ตู้เสื้อผ้า ถอดก่อนขน แล้วประกอบคืนให้ที่บ้านใหม่ ทักมาสอบถามตีราคาก่อน <b>ประเมินราคาให้ฟรี</b></p>
+      <div class="cta-row">
+        <a href="tel:0939988995" class="btn btn-o">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          โทร 093-998-8995
+        </a>
+        <a href="#quote" class="btn btn-ghost">ประเมินราคาฟรี →</a>
+      </div>
+      <div class="chips">
+        <div class="chip"><b>24 ชม.</b><span>ไม่มีวันหยุด<br>รับงานด่วน</span></div>
+        <div class="chip"><b>3 ขนาด</b><span>กระบะ · 4 ล้อ<br>· 6 ล้อ</span></div>
+        <div class="chip"><b>ฟรี</b><span>ประเมินราคา<br>ก่อนตกลง</span></div>
+      </div>
+    </div>
+
+    <div class="hero-art rv-on">
+      <div class="box">
+        <img src="assets/bunkbed.jpg" alt="ทีมนพพรขนส่งกำลังประกอบเตียง 2 ชั้นให้ลูกค้า" width="900" height="893">
+        <div class="lbl">
+          <div>ห้องนอน · เตียง 2 ชั้น<br><span>ประกอบเสร็จ ✓</span></div>
+          <div class="arrows" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4b3417" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20V6M3 10l4-4 4 4"/><path d="M17 20V6M13 10l4-4 4 4"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#4b3417" stroke-width="2.2" stroke-linecap="round"><path d="M7 3h10l-1 8a4 4 0 0 1-8 0zM12 15v5M8 21h8"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="stk a">🛠️ รับถอดประกอบเฟอร์นิเจอร์<small>เตียง · ตู้ · ชั้นวาง</small></div>
+      <div class="stk b">💬 สุภาพ คุยง่าย<small>ทุกอาชีพมีคุณค่า</small></div>
+      <div class="stk c">🚚 ทั่วประเทศ<small>ขนของกลับต่างจังหวัด</small></div>
+    </div>
+  </div>
+  <div class="road" aria-hidden="true">
+    <svg class="truck" viewBox="0 0 220 80">
+      <rect x="4" y="8" width="128" height="52" rx="4" fill="#fff"/>
+      <g fill="#2F6DB5"><rect x="4" y="16" width="128" height="7"/><rect x="4" y="30" width="128" height="7"/><rect x="4" y="44" width="128" height="7"/></g>
+      <rect x="4" y="8" width="128" height="52" rx="4" fill="none" stroke="#1E3157" stroke-width="3"/>
+      <path d="M136 22h40l22 20v18h-62z" fill="#F28C1E" stroke="#1E3157" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M146 28h26l14 13h-40z" fill="#BFD3F0" stroke="#1E3157" stroke-width="2.4" stroke-linejoin="round"/>
+      <rect x="0" y="58" width="204" height="8" rx="3" fill="#1E3157"/>
+      <circle cx="38" cy="66" r="11" fill="#1B2230" stroke="#fff" stroke-width="3"/><circle cx="38" cy="66" r="3" fill="#fff"/>
+      <circle cx="170" cy="66" r="11" fill="#1B2230" stroke="#fff" stroke-width="3"/><circle cx="170" cy="66" r="3" fill="#fff"/>
+      <rect x="196" y="46" width="8" height="6" rx="2" fill="#FFD36B"/>
+      <text x="68" y="42" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="14" fill="#1E3157" stroke="#fff" stroke-width="4" paint-order="stroke">นพพรขนส่ง</text>
+    </svg>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="tarp"></div>
+  <div class="inner">
+    <div class="track">
+      <span>บริการเป็นกันเอง ด้วยทีมงานมืออาชีพ</span><span>#รับถอดประกอบเฟอร์นิเจอร์</span><span>#กระบะรับจ้างใกล้ฉัน</span><span>ย้ายหอ ย้ายบ้าน ย้ายของ โทรเลย ถึงไวมาก</span><span>ทุกอาชีพมีคุณค่า</span><span>เวลาทำการ 24 ชม. ไม่มีวันหยุด</span><span>great blessing transport</span>
+      <span>บริการเป็นกันเอง ด้วยทีมงานมืออาชีพ</span><span>#รับถอดประกอบเฟอร์นิเจอร์</span><span>#กระบะรับจ้างใกล้ฉัน</span><span>ย้ายหอ ย้ายบ้าน ย้ายของ โทรเลย ถึงไวมาก</span><span>ทุกอาชีพมีคุณค่า</span><span>เวลาทำการ 24 ชม. ไม่มีวันหยุด</span><span>great blessing transport</span>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 7l9-4 9 4-9 4z M3 7v10l9 4 9-4V7M12 11v10"/></svg>บริการของเรา</span>
+      <h2>ของชิ้นเดียวก็ขน <em>ทั้งบ้านก็ย้าย</em></h2>
+      <p>เลือกรถให้พอดีกับของ ไม่ต้องจ่ายเกินจำเป็น พร้อมคนช่วยยก ห่อผ้าใบกันรอย และถอด–ประกอบเฟอร์นิเจอร์ให้ครบ</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 48 48"><path d="M4 30V16h22v14"/><path d="M26 21h9l7 7v6H26"/><path d="M4 30h22"/><circle cx="13" cy="35" r="4"/><circle cx="34" cy="35" r="4"/><rect class="f" x="8" y="19" width="7" height="7" rx="1"/><rect class="f" x="16" y="21" width="6" height="5" rx="1"/></svg></div>
+        <h3>กระบะรับจ้างทั่วไป</h3>
+        <p>ขนของชิ้นใหญ่ ตู้เย็น เครื่องซักผ้า โต๊ะ ที่นอน ส่งของในเมืองหรือข้ามจังหวัด</p>
+        <ul><li>ขนของชิ้นเดียว</li><li>ส่งของร้านค้า</li><li>ซื้อของออนไลน์ไปรับ</li></ul>
+        <div class="price"><b><small>เริ่มต้น</small> 400.-</b><span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span></div>
+      </article>
+      <article class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 48 48"><path d="M6 22 24 8l18 14"/><path d="M10 19v21h28V19"/><rect class="f" x="19" y="28" width="10" height="12" rx="1"/><path d="M15 26h6M27 26h6"/></svg></div>
+        <h3>ย้ายบ้าน · ย้ายห้อง · ย้ายหอ</h3>
+        <p>แพ็กของ ห่อผ้าใบ ยกขึ้นรถ ส่งถึงห้องใหม่ ทั้งหอพัก คอนโด ทาวน์โฮม บ้านเดี่ยว</p>
+        <ul><li>ย้ายหอนักศึกษา</li><li>คอนโด</li><li>บ้านทั้งหลัง</li></ul>
+        <div class="price"><b><small>ประเมิน</small> ฟรี</b><span class="sample">ราคาตามระยะทาง/ปริมาณของ</span></div>
+      </article>
+      <article class="svc hot rv-on">
+        <span class="ribbon">จุดเด่น</span>
+        <div class="ic"><svg viewBox="0 0 48 48"><rect x="8" y="6" width="22" height="36" rx="2"/><path d="M19 6v36M15 22v4M23 22v4"/><path d="M33 30l8-8M36 20l5 5-3 3-5-5z" stroke="#FFB255"/><path d="M34 40l-4-4" stroke="#FFB255"/></svg></div>
+        <h3>ถอด–ประกอบเฟอร์นิเจอร์</h3>
+        <p>เตียง 2 ชั้น ตู้เสื้อผ้า ฐานเตียง ชั้นวาง ถอดชิ้นส่วนก่อนขน แล้วประกอบคืนให้ที่ใหม่</p>
+        <ul><li>เตียง 2 ชั้น</li><li>ตู้เสื้อผ้า</li><li>กรุงเทพฯ & ต่างจังหวัด</li></ul>
+        <div class="price"><b><small>สอบถาม</small> ตามชิ้นงาน</b><span class="sample" style="background:rgba(255,255,255,.1);color:#FFD9A8;border-color:rgba(255,178,85,.6)">ส่งรูปมาให้ประเมินก่อน</span></div>
+      </article>
+      <article class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 48 48"><path d="M4 34c6-2 10-10 20-10s14 8 20 10"/><path d="M24 6c-5 0-8 4-8 8 0 6 8 12 8 12s8-6 8-12c0-4-3-8-8-8z"/><circle class="f" cx="24" cy="14" r="3"/><path d="M4 40h40"/></svg></div>
+        <h3>ขนของกลับต่างจังหวัด</h3>
+        <p>เรียนจบ ย้ายงาน กลับบ้านเกิด เหมาคันไปส่งถึงหน้าบ้าน ทั่วประเทศ</p>
+        <ul><li>เหมาเที่ยว</li><li>ทั่วประเทศ</li><li>นัดวันล่วงหน้า</li></ul>
+        <div class="price"><b><small>เหมา</small> ตามระยะทาง</b><span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span></div>
+      </article>
+      <article class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 48 48"><circle cx="11" cy="32" r="7"/><circle cx="37" cy="32" r="7"/><path d="M11 32l8-12h10l8 12M19 20l-3-6h-4M29 20l4-6h5"/><path class="f" d="M20 24h8l-2 6h-4z"/></svg></div>
+        <h3>ขนมอเตอร์ไซค์</h3>
+        <p>รถเสีย ย้ายที่อยู่ หรือส่งรถกลับบ้าน มัดยึดแน่นหนา ปลอดภัยตลอดทาง</p>
+        <ul><li>บิ๊กไบค์/สกู๊ตเตอร์</li><li>รถเสียกลางทาง</li></ul>
+        <div class="price"><b><small>สอบถาม</small> ตามระยะทาง</b><span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span></div>
+      </article>
+      <article class="svc rv-on">
+        <div class="ic"><svg viewBox="0 0 48 48"><path d="M2 32V12h28v20"/><path d="M30 18h9l7 8v6H30"/><path d="M2 32h28"/><circle cx="10" cy="36" r="4"/><circle cx="20" cy="36" r="4"/><circle cx="38" cy="36" r="4"/><path class="f" d="M6 16h20v4H6zM6 23h20v4H6z"/></svg></div>
+        <h3>รถ 4 ล้อ · 6 ล้อ งานใหญ่</h3>
+        <p>บ้านทั้งหลัง ย้ายสำนักงาน ร้านค้า ของเยอะเที่ยวเดียวจบ ไม่ต้องวิ่งหลายรอบ</p>
+        <ul><li>ย้ายสำนักงาน</li><li>ของชิ้นใหญ่จำนวนมาก</li></ul>
+        <div class="price"><b><small>ประเมิน</small> ฟรี</b><span class="sample">ราคาตามขนาดรถ/ระยะทาง</span></div>
+      </article>
+    </div>
+    <p class="svc-note rv-on">* ราคาในหน้านี้เป็นตัวอย่างสำหรับ demo (ราคาเริ่มต้น 400 บาทอ้างอิงจากบล็อกเก่าของร้าน) — ราคาจริงขึ้นกับระยะทาง ขนาดรถ จำนวนคนยก และชั้นตึก ทักมาประเมินฟรีก่อนได้เลย</p>
+  </div>
+</section>
+
+<!-- FURNITURE USP -->
+<section class="furni" id="furniture">
+  <div class="tarp-v" style="position:absolute;left:0;right:0;top:0;height:12px"></div>
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow">จุดเด่นของนพพรขนส่ง</span>
+      <h2 class="h2">ไม่ใช่แค่ขน<br><em>ถอด–ประกอบคืน</em><br>ให้ถึงห้องใหม่</h2>
+      <p class="lead">เตียง 2 ชั้นเหล็ก ตู้เสื้อผ้าบานใหญ่ ฐานเตียงไม้ ขึ้นรถทั้งชิ้นไม่ได้ เราถอดเป็นชิ้น ห่อกันรอย ขนไป แล้วประกอบตั้งให้ที่ห้องใหม่ พร้อมใช้งาน — รับงานทั้งกรุงเทพฯ และต่างจังหวัด</p>
+      <div class="flow">
+        <div><svg viewBox="0 0 40 40"><path d="M8 32 22 18M20 12l8 8 4-4-8-8z"/><circle cx="9" cy="31" r="2"/></svg><b>ถอด</b><small>แยกชิ้น เก็บน็อตเป็นชุด</small></div>
+        <div><svg viewBox="0 0 40 40"><rect x="7" y="9" width="26" height="24" rx="2"/><path d="M7 15h26M7 21h26M7 27h26"/></svg><b>ห่อ</b><small>ผ้าใบ/พลาสติก กันรอย</small></div>
+        <div><svg viewBox="0 0 40 40"><path d="M3 26V12h19v14M22 17h7l6 6v3H22M3 26h19"/><circle cx="10" cy="29" r="3"/><circle cx="29" cy="29" r="3"/></svg><b>ขน</b><small>มัดยึดแน่น ส่งถึงที่</small></div>
+        <div><svg viewBox="0 0 40 40"><path d="M6 34V10h28v24M6 22h28M20 10v24"/><path d="M14 30l3 3 6-6"/></svg><b>ประกอบ</b><small>ตั้งให้ พร้อมใช้งาน</small></div>
+      </div>
+      <div class="items"><span>เตียง 2 ชั้น</span><span>ตู้เสื้อผ้า</span><span>ฐานเตียง</span><span>ชั้นวาง / โต๊ะ</span><span>ตู้โชว์</span></div>
+      <div class="cta-row" style="margin-top:0">
+        <a href="https://line.me/ti/p/hJFqem1QND" target="_blank" rel="noopener" class="btn btn-l">ส่งรูปเฟอร์นิเจอร์ให้ประเมิน</a>
+      </div>
+    </div>
+    <div class="photo-stack rv-on">
+      <figure class="pol p1"><img src="assets/wardrobe-parts.jpg" alt="ถอดตู้เสื้อผ้าและฐานเตียงเป็นชิ้นก่อนขนย้าย" loading="lazy"><figcaption>ถอดเป็นชิ้น ก่อนขน</figcaption></figure>
+      <figure class="pol p2"><img src="assets/tarp-wrap.jpg" alt="ห่อเฟอร์นิเจอร์ด้วยผ้าใบลายฟ้าขาวกันรอย" loading="lazy"><figcaption>ห่อผ้าใบกันรอย</figcaption></figure>
+      <figure class="pol p3"><img src="assets/wardrobe-build.jpg" alt="ประกอบตู้เสื้อผ้าคืนที่บ้านใหม่" loading="lazy"><figcaption>ประกอบคืนที่บ้านใหม่</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE WIDGET -->
+<section class="quote" id="quote">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 4h16v16H4zM8 9h8M8 13h8M8 17h5"/></svg>ประเมินราคาฟรี</span>
+      <h2>ของแค่ไหน <em>ใช้รถอะไรดี?</em></h2>
+      <p>เลือกปริมาณของ ระบบจะแนะนำขนาดรถให้ แล้วกรอกรายละเอียดสั้นๆ — เราเรียบเรียงเป็นข้อความพร้อมส่งทาง LINE ให้คุณนพพรตีราคาได้ทันที</p>
+    </div>
+    <div class="qz">
+      <div class="panel rv-on">
+        <div class="grp">
+          <h3><span class="n">1</span>ของมีประมาณไหน?</h3>
+          <p class="hint">เลือกที่ใกล้เคียงที่สุด เดี๋ยวเราแนะนำรถให้</p>
+          <div class="load" id="load">
+            <label><input type="radio" name="load" value="few" data-veh="pickup"><span class="c"><svg viewBox="0 0 44 36"><rect x="8" y="12" width="16" height="16" rx="1"/><path d="M8 18h16"/><rect x="26" y="18" width="10" height="10" rx="1"/></svg><b>ของไม่กี่ชิ้น</b><small>ตู้เย็น/ที่นอน/โต๊ะ</small></span></label>
+            <label><input type="radio" name="load" value="dorm" data-veh="pickup" checked><span class="c"><svg viewBox="0 0 44 36"><path d="M6 30V12l16-8 16 8v18z"/><rect x="17" y="18" width="10" height="12"/></svg><b>ห้องหอ 1 ห้อง</b><small>นักศึกษา/คนเดียว</small></span></label>
+            <label><input type="radio" name="load" value="condo" data-veh="4w"><span class="c"><svg viewBox="0 0 44 36"><rect x="10" y="4" width="24" height="28" rx="1"/><path d="M15 10h4M25 10h4M15 16h4M25 16h4M15 22h4M25 22h4"/></svg><b>คอนโด 1–2 ห้องนอน</b><small>ครอบครัวเล็ก</small></span></label>
+            <label><input type="radio" name="load" value="house" data-veh="6w"><span class="c"><svg viewBox="0 0 44 36"><path d="M4 16 22 4l18 12"/><path d="M8 14v18h28V14"/><path d="M16 32v-9h12v9"/></svg><b>บ้านทั้งหลัง</b><small>ทาวน์โฮม/บ้านเดี่ยว</small></span></label>
+          </div>
+        </div>
+        <div class="grp">
+          <h3><span class="n">2</span>ขนาดรถ</h3>
+          <p class="hint">เปลี่ยนเองได้ ถ้าไม่แน่ใจปล่อยตามที่แนะนำ</p>
+          <div class="veh" id="veh">
+            <label><input type="radio" name="veh" value="pickup" checked><span class="c"><span class="rec">แนะนำ</span>
+              <svg viewBox="0 0 130 60"><path d="M6 40V26h58v14" fill="#E7F0FB" stroke="#1E3157" stroke-width="2.5"/><path d="M64 40V20h26l16 14v6z" fill="#F28C1E" stroke="#1E3157" stroke-width="2.5" stroke-linejoin="round"/><path d="M70 24h17l10 9H70z" fill="#BFD3F0"/><rect x="4" y="38" width="108" height="6" rx="2" fill="#1E3157"/><circle cx="26" cy="46" r="7" fill="#1B2230"/><circle cx="92" cy="46" r="7" fill="#1B2230"/></svg>
+              <span><b>กระบะ</b><small>ของน้อย–ห้องหอ<br>คล่องตัว ซอยแคบได้</small></span></span></label>
+            <label><input type="radio" name="veh" value="4w"><span class="c"><span class="rec">แนะนำ</span>
+              <svg viewBox="0 0 130 60"><rect x="4" y="8" width="70" height="32" rx="2" fill="#fff" stroke="#1E3157" stroke-width="2.5"/><g fill="#2F6DB5"><rect x="5" y="14" width="68" height="5"/><rect x="5" y="25" width="68" height="5"/></g><path d="M76 40V18h22l16 14v8z" fill="#F28C1E" stroke="#1E3157" stroke-width="2.5" stroke-linejoin="round"/><path d="M82 22h14l10 9H82z" fill="#BFD3F0"/><rect x="2" y="38" width="114" height="6" rx="2" fill="#1E3157"/><circle cx="26" cy="46" r="7" fill="#1B2230"/><circle cx="98" cy="46" r="7" fill="#1B2230"/></svg>
+              <span><b>4 ล้อ (ตู้/คอก)</b><small>คอนโด–ห้องใหญ่<br>กันแดดกันฝน</small></span></span></label>
+            <label><input type="radio" name="veh" value="6w"><span class="c"><span class="rec">แนะนำ</span>
+              <svg viewBox="0 0 130 60"><rect x="2" y="4" width="84" height="36" rx="2" fill="#fff" stroke="#1E3157" stroke-width="2.5"/><g fill="#2F6DB5"><rect x="3" y="10" width="82" height="5"/><rect x="3" y="20" width="82" height="5"/><rect x="3" y="30" width="82" height="5"/></g><path d="M88 40V14h20l18 16v10z" fill="#F28C1E" stroke="#1E3157" stroke-width="2.5" stroke-linejoin="round"/><path d="M93 18h13l12 11H93z" fill="#BFD3F0"/><rect x="0" y="38" width="126" height="6" rx="2" fill="#1E3157"/><circle cx="18" cy="46" r="7" fill="#1B2230"/><circle cx="36" cy="46" r="7" fill="#1B2230"/><circle cx="108" cy="46" r="7" fill="#1B2230"/></svg>
+              <span><b>6 ล้อ</b><small>บ้านทั้งหลัง/สำนักงาน<br>เที่ยวเดียวจบ</small></span></span></label>
+          </div>
+        </div>
+        <div class="grp">
+          <h3><span class="n">3</span>รับจากไหน ส่งที่ไหน</h3>
+          <div class="row2" style="margin-top:12px">
+            <div class="fld"><label for="from">ต้นทาง</label><input id="from" placeholder="เช่น หอพักแถวรังสิต คลอง 3"></div>
+            <div class="fld"><label for="to">ปลายทาง</label><input id="to" placeholder="เช่น คอนโด ดอนเมือง / ขอนแก่น"></div>
+          </div>
+          <div class="row2" style="margin-top:14px">
+            <div>
+              <div class="fld"><label>ต้นทาง ชั้นที่</label></div>
+              <div class="floors"><div class="step-n" data-for="fFrom"><button type="button" data-d="-1" aria-label="ลดชั้น">−</button><output id="fFrom">1</output><button type="button" data-d="1" aria-label="เพิ่มชั้น">+</button></div>
+              <label class="tog"><input type="checkbox" id="liftFrom">มีลิฟต์</label></div>
+            </div>
+            <div>
+              <div class="fld"><label>ปลายทาง ชั้นที่</label></div>
+              <div class="floors"><div class="step-n" data-for="fTo"><button type="button" data-d="-1" aria-label="ลดชั้น">−</button><output id="fTo">1</output><button type="button" data-d="1" aria-label="เพิ่มชั้น">+</button></div>
+              <label class="tog"><input type="checkbox" id="liftTo">มีลิฟต์</label></div>
+            </div>
+          </div>
+          <div class="row2" style="margin-top:14px">
+            <div class="fld"><label for="date">วันที่สะดวก</label><input id="date" type="date"></div>
+            <div class="fld"><label for="helpers">คนช่วยยก</label>
+              <select id="helpers"><option value="0">ไม่ต้อง (ยกเองได้)</option><option value="1" selected>ต้องการ 1 คน</option><option value="2">ต้องการ 2 คน</option><option value="3">3 คนขึ้นไป</option></select></div>
+          </div>
+        </div>
+        <div class="grp">
+          <h3><span class="n">4</span>บริการเสริม</h3>
+          <p class="hint">เลือกได้หลายข้อ</p>
+          <div class="opts" id="opts">
+            <label><input type="checkbox" value="ถอด–ประกอบเตียง 2 ชั้น"><span>ถอด–ประกอบเตียง 2 ชั้น</span></label>
+            <label><input type="checkbox" value="ถอด–ประกอบตู้เสื้อผ้า"><span>ถอด–ประกอบตู้เสื้อผ้า</span></label>
+            <label><input type="checkbox" value="ถอด–ประกอบฐานเตียง/ชั้นวาง"><span>ฐานเตียง / ชั้นวาง</span></label>
+            <label><input type="checkbox" value="ห่อผ้าใบกันรอย"><span>ห่อผ้าใบกันรอย</span></label>
+            <label><input type="checkbox" value="ขนมอเตอร์ไซค์ 1 คัน"><span>ขนมอเตอร์ไซค์</span></label>
+            <label><input type="checkbox" value="มีตู้เย็น/เครื่องซักผ้า"><span>มีตู้เย็น/เครื่องซักผ้า</span></label>
+          </div>
+        </div>
+      </div>
+
+      <aside class="ticket rv-on" aria-live="polite">
+        <div class="tarp"></div>
+        <div class="in">
+          <h3>ใบสรุปงานขนย้าย <span>ยังไม่ใช่ใบเสนอราคา</span></h3>
+          <div class="sumv">
+            <svg id="sumSvg" viewBox="0 0 130 60"></svg>
+            <div><b id="sumVeh">กระบะ</b><small id="sumWhy">เหมาะกับห้องหอ 1 ห้อง</small></div>
+          </div>
+          <div class="msg" id="msg"></div>
+          <div class="btns">
+            <button class="btn btn-l" id="sendLine" type="button">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.6 7.2 8.4 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.6 8.2-6.1C21.6 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8z"/></svg>
+              คัดลอกข้อความ & เปิด LINE
+            </button>
+            <a class="btn btn-o" href="tel:0939988995">โทรคุยเลย 093-998-8995</a>
+          </div>
+          <p class="fine">กดปุ่มแล้วข้อความจะถูกคัดลอกไว้ เปิดแชต LINE ของร้านแล้ว “วาง” ส่งได้ทันที แนบรูปของ/เฟอร์นิเจอร์ด้วยจะประเมินได้แม่นขึ้น · ราคาจริงร้านเป็นผู้แจ้ง</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">ทำไมเรียกนพพรขนส่ง</span>
+      <h2>สบายใจตั้งแต่ <em>ทักแชตแรก</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item rv-on"><span class="q">01</span><svg viewBox="0 0 48 48"><path d="M8 10h32v22H20l-8 7v-7H8z"/><path d="M16 19h16M16 25h10"/></svg><h3>สุภาพ คุยง่าย</h3><p>บริการเป็นกันเอง ถามได้ทุกเรื่อง ไม่ต้องเกรงใจ เพราะทุกอาชีพมีคุณค่า</p></div>
+      <div class="why-item rv-on"><span class="q">02</span><svg viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="32" rx="4"/><path d="M16 24l6 6 10-12"/></svg><h3>ตีราคาก่อน ฟรี</h3><p>ส่งรูป บอกต้นทาง–ปลายทาง แจ้งราคาให้ก่อน ตกลงแล้วค่อยนัดวัน</p></div>
+      <div class="why-item rv-on"><span class="q">03</span><svg viewBox="0 0 48 48"><path d="M10 38 28 20M26 12l10 10 4-4-10-10z"/><path d="M8 40l4-2"/></svg><h3>ถอด–ประกอบเป็น</h3><p>เตียง 2 ชั้น ตู้เสื้อผ้า ประกอบคืนให้พร้อมใช้ ไม่ต้องหาช่างเพิ่ม</p></div>
+      <div class="why-item rv-on"><span class="q">04</span><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><path d="M24 14v10l7 5"/></svg><h3>24 ชม. ไม่มีวันหยุด</h3><p>ย้ายกลางคืน วันหยุด เสาร์–อาทิตย์ หรืองานด่วน โทรถามคิวได้ตลอด</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">จองรถง่ายๆ</span>
+      <h2>ย้ายของกับเรา <em>5 ขั้นตอน</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv-on"><div class="c"><i>1</i><svg viewBox="0 0 40 40"><path d="M8 8h24v18H18l-7 6v-6H8z"/></svg></div><h4>ทัก LINE / โทร</h4><p>093-998-8995 ตลอด 24 ชม.</p></div>
+      <div class="step rv-on"><div class="c"><i>2</i><svg viewBox="0 0 40 40"><rect x="6" y="11" width="28" height="20" rx="3"/><circle cx="20" cy="21" r="6"/><path d="M14 11l2-4h8l2 4"/></svg></div><h4>ส่งรูปของ + พิกัด</h4><p>ต้นทาง ปลายทาง ชั้นตึก</p></div>
+      <div class="step rv-on"><div class="c"><i>3</i><svg viewBox="0 0 40 40"><path d="M10 6h20v28H10z"/><path d="M15 13h10M15 19h10M15 25h6"/></svg></div><h4>ประเมินราคาฟรี</h4><p>แนะนำขนาดรถให้พอดี</p></div>
+      <div class="step rv-on"><div class="c"><i>4</i><svg viewBox="0 0 40 40"><rect x="6" y="9" width="28" height="25" rx="3"/><path d="M6 16h28M13 5v7M27 5v7"/><path d="M15 25l3 3 7-7"/></svg></div><h4>นัดวัน–เวลา</h4><p>วันธรรมดา วันหยุด กลางคืนได้</p></div>
+      <div class="step rv-on"><div class="c"><i>5</i><svg viewBox="0 0 40 40"><path d="M3 26V12h19v14M22 17h7l6 6v3H22M3 26h19"/><circle cx="10" cy="29" r="3"/><circle cx="29" cy="29" r="3"/></svg></div><h4>ขน ถอด ประกอบ</h4><p>ส่งถึงที่ ตั้งของให้เรียบร้อย</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">ผลงานจากหน้างานจริง</span>
+      <h2>ภาพงานล่าสุด <em>จากเพจ</em></h2>
+      <p>รูปจากเพจ Facebook ของร้าน — แตะเพื่อดูภาพใหญ่</p>
+    </div>
+    <div class="gal rv-on" id="gal">
+      <figure class="w2 h2r"><img src="assets/bunkbed.jpg" alt="ประกอบเตียง 2 ชั้นเหล็ก" loading="lazy"><figcaption>ประกอบเตียง 2 ชั้นให้ลูกค้า</figcaption></figure>
+      <figure><img src="assets/truck-loaded.jpg" alt="จัดของเต็มคันรถ ห่อผ้าใบ" loading="lazy"><figcaption>จัดของเต็มคัน ห่อผ้าใบ</figcaption></figure>
+      <figure class="h2r"><img src="assets/wardrobe-parts.jpg" alt="ถอดตู้และฐานเตียงเป็นชิ้น" loading="lazy"><figcaption>ถอดตู้–ฐานเตียงเป็นชิ้น</figcaption></figure>
+      <figure><img src="assets/tarp-wrap.jpg" alt="ห่อผ้าใบกันรอย" loading="lazy"><figcaption>ห่อผ้าใบกันรอย</figcaption></figure>
+      <figure><img src="assets/truck-village.jpg" alt="รถรับจ้างเข้าหมู่บ้าน" loading="lazy"><figcaption>รับงานในหมู่บ้าน</figcaption></figure>
+      <figure><img src="assets/trucks-condo.jpg" alt="รถ 4 ล้อและ 6 ล้อหน้าคอนโด" loading="lazy"><figcaption>งานใหญ่ หลายคัน</figcaption></figure>
+      <figure class="w2"><img src="assets/wardrobe-build.jpg" alt="ประกอบตู้เสื้อผ้าบานใหญ่" loading="lazy" style="object-position:center 30%"><figcaption>ประกอบตู้เสื้อผ้าที่บ้านใหม่</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">เสียงจากลูกค้า</span>
+      <h2>ย้ายเสร็จ <em>ยิ้มได้</em></h2>
+    </div>
+    <div class="rv-grid">
+      <div class="rv rv-on"><span class="job">ย้ายหอ</span><div class="stars">★★★★★</div><p>ย้ายหอจากรังสิตไปห้องใหม่ พี่ช่วยถอดเตียง 2 ชั้นแล้วประกอบให้ด้วย คุยง่าย สุภาพมาก ไม่ต้องหาช่างเพิ่มเลย</p><div class="who"><div class="av">ฟ</div><div><b>คุณฟ้า</b><small>นักศึกษา · รังสิต</small></div></div></div>
+      <div class="rv rv-on"><span class="job">ตู้เสื้อผ้า</span><div class="stars">★★★★★</div><p>ตู้เสื้อผ้าบานใหญ่ ขึ้นรถไม่ได้ ทีมถอดเป็นชิ้น ห่อกันรอยอย่างดี ไปถึงประกอบคืนเหมือนเดิม ตีราคาให้ก่อนชัดเจน</p><div class="who"><div class="av">ต</div><div><b>คุณต่าย</b><small>ลำลูกกา</small></div></div></div>
+      <div class="rv rv-on"><span class="job">กลับต่างจังหวัด</span><div class="stars">★★★★★</div><p>เหมารถขนของกลับบ้านต่างจังหวัด โทรตอนดึกยังรับสาย นัดเวลาตรง ของถึงครบ ไม่มีเสียหาย</p><div class="who"><div class="av">บ</div><div><b>คุณบอย</b><small>ดอนเมือง → อีสาน</small></div></div></div>
+    </div>
+    <p class="note">* ข้อความรีวิวในหน้านี้เป็นตัวอย่างสำหรับ demo จะใช้รีวิวจริงจากลูกค้าเมื่อทำเว็บไซต์จริง</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow">พื้นที่บริการ & ติดต่อ</span>
+      <h2 class="h2">อยู่แถวไหน <em>ก็ไปรับ</em></h2>
+      <div class="info">
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div><div><b>สายด่วน · คุณนพพร</b><a href="tel:0939988995" class="ph">093-998-8995</a></div></div>
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg></div><div><b>LINE</b><span><a href="https://line.me/ti/p/hJFqem1QND" target="_blank" rel="noopener" style="text-decoration:underline">เพิ่มเพื่อน / ทักแชต</a> ส่งรูปของให้ประเมินราคาฟรี</span></div></div>
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b>เวลาทำการ</b><span>24 ชม. ไม่มีวันหยุด</span></div></div>
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><b>พื้นที่ให้บริการ</b>
+          <div class="areas"><span>รังสิต</span><span>ลำลูกกา</span><span>ดอนเมือง</span><span>ปทุมธานี</span><span>นนทบุรี</span><span>กรุงเทพฯ</span><span class="all">ต่างจังหวัด · ทั่วประเทศ</span></div></div></div>
+      </div>
+      <div class="cta-row" style="margin-top:0">
+        <a href="https://line.me/ti/p/hJFqem1QND" target="_blank" rel="noopener" class="btn btn-l">ทัก LINE</a>
+        <a href="https://www.facebook.com/mymove99/" target="_blank" rel="noopener" class="btn btn-ghost">เพจ Facebook</a>
+      </div>
+    </div>
+    <div class="map rv-on">
+      <span class="pin">📍 ฐานบริการ ดอนเมือง · รังสิต · ลำลูกกา</span>
+      <iframe title="แผนที่พื้นที่บริการ นพพรขนส่ง" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=%E0%B8%94%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%20%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B8%95%20%E0%B8%A5%E0%B8%B3%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%81%E0%B8%B2&z=13&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand"><img src="assets/badge.jpg" alt=""><div><div class="t1">นพพรขนส่ง</div><div class="t2">GREAT BLESSING TRANSPORT</div></div></div>
+        <p>บริการ รถรับจ้าง รังสิต ลำลูกกา และทั่วประเทศ กระบะ 4 ล้อ 6 ล้อ ย้ายบ้าน ย้ายหอ รับถอดประกอบเฟอร์นิเจอร์</p>
+      </div>
+      <div><h4 class="head">บริการ</h4><ul><li><a href="#services">กระบะรับจ้างทั่วไป</a></li><li><a href="#services">ย้ายบ้าน · ย้ายหอ</a></li><li><a href="#furniture">ถอด–ประกอบเฟอร์นิเจอร์</a></li><li><a href="#services">ขนของกลับต่างจังหวัด</a></li><li><a href="#services">ขนมอเตอร์ไซค์</a></li></ul></div>
+      <div><h4 class="head">ติดต่อ</h4><ul><li>☎️ <a href="tel:0939988995">093-998-8995</a> (คุณนพพร)</li><li>💬 <a href="https://line.me/ti/p/hJFqem1QND" target="_blank" rel="noopener">LINE</a> · <a href="https://www.facebook.com/mymove99/" target="_blank" rel="noopener">Facebook</a></li><li>🕘 24 ชม. ไม่มีวันหยุด</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 นพพรขนส่ง · great blessing transport</span><span><b>Website demo โดย Relearn Solution</b></span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://line.me/ti/p/hJFqem1QND" target="_blank" rel="noopener" class="ln" aria-label="ทัก LINE"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.6 7.2 8.4 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.6 1.1-.5 6-3.6 8.2-6.1C21.6 14.4 22 12.8 22 11c0-4.4-4.5-8-10-8zM8 13.4H6.2c-.3 0-.5-.2-.5-.5V9.3c0-.3.2-.5.5-.5s.5.2.5.5v3.1H8c.3 0 .5.2.5.5s-.2.5-.5.5zm1.9-.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.3c0-.3.2-.5.5-.5s.5.2.5.5v3.6zm4.3 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-1.8-2.5v2.2c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.3c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l1.8 2.5V9.3c0-.3.2-.5.5-.5s.5.2.5.5v3.6zm2.9-2.3c.3 0 .5.2.5.5s-.2.5-.5.5h-1.3v.8h1.3c.3 0 .5.2.5.5s-.2.5-.5.5h-1.8c-.3 0-.5-.2-.5-.5V9.3c0-.3.2-.5.5-.5h1.8c.3 0 .5.2.5.5s-.2.5-.5.5h-1.3v.8h1.3z" fill-rule="evenodd"/></svg></a>
+  <a href="tel:0939988995" class="call" aria-label="โทร 093-998-8995"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="ภาพผลงาน"><button type="button" aria-label="ปิด">×</button><div><img alt=""><p></p></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+// reveal
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: .12 });
+document.querySelectorAll('.rv-on').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+
+// burger
+const menu = document.getElementById('menu'), burger = document.getElementById('burger');
+burger.addEventListener('click', () => { const o = menu.classList.toggle('open'); burger.setAttribute('aria-expanded', o); });
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); }));
+
+// lightbox
+const lb = document.getElementById('lb');
+document.querySelectorAll('#gal figure').forEach(f => f.addEventListener('click', () => {
+  lb.querySelector('img').src = f.querySelector('img').src;
+  lb.querySelector('img').alt = f.querySelector('img').alt;
+  lb.querySelector('p').textContent = f.querySelector('figcaption').textContent;
+  lb.classList.add('open');
+}));
+lb.addEventListener('click', e => { if (e.target === lb || e.target.tagName === 'BUTTON') lb.classList.remove('open'); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
+
+// quote helper
+const VEH = {
+  pickup: { name: 'กระบะ', why: 'เหมาะกับของไม่กี่ชิ้น – ห้องหอ 1 ห้อง' },
+  '4w': { name: 'รถ 4 ล้อ', why: 'เหมาะกับคอนโด 1–2 ห้องนอน' },
+  '6w': { name: 'รถ 6 ล้อ', why: 'เหมาะกับบ้านทั้งหลัง / สำนักงาน' }
+};
+const LOAD = { few: 'ของไม่กี่ชิ้น', dorm: 'ห้องหอ 1 ห้อง', condo: 'คอนโด 1–2 ห้องนอน', house: 'บ้านทั้งหลัง' };
+const $ = id => document.getElementById(id);
+const floors = { fFrom: 1, fTo: 1 };
+document.querySelectorAll('.step-n').forEach(s => s.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  const k = s.dataset.for; floors[k] = Math.max(1, Math.min(60, floors[k] + +b.dataset.d));
+  $(k).textContent = floors[k]; render();
+}));
+function markRec() {
+  const l = document.querySelector('input[name=load]:checked');
+  document.querySelectorAll('#veh .c').forEach(c => c.classList.toggle('is-rec', c.previousElementSibling.value === l.dataset.veh));
+}
+document.querySelectorAll('input[name=load]').forEach(r => r.addEventListener('change', () => {
+  document.querySelector(`input[name=veh][value="${r.dataset.veh}"]`).checked = true; markRec(); render();
+}));
+document.querySelectorAll('#quote input, #quote select').forEach(el => el.addEventListener('input', render));
+function render() {
+  const load = document.querySelector('input[name=load]:checked').value;
+  const vEl = document.querySelector('input[name=veh]:checked');
+  const v = vEl.value;
+  $('sumVeh').textContent = VEH[v].name;
+  $('sumWhy').textContent = VEH[v].why;
+  $('sumSvg').innerHTML = vEl.nextElementSibling.querySelector('svg').innerHTML;
+  const opts = [...document.querySelectorAll('#opts input:checked')].map(i => '• ' + i.value);
+  const h = $('helpers'); const d = $('date').value;
+  const fl = (n, lift) => `ชั้น ${n}${n > 1 ? (lift ? ' (มีลิฟต์)' : ' (ไม่มีลิฟต์)') : ''}`;
+  const lines = [
+    'สวัสดีครับ/ค่ะ คุณนพพร 🙏 ขอประเมินราคาขนย้ายครับ',
+    `🚚 รถ: ${VEH[v].name}`,
+    `📦 ของ: ${LOAD[load]}`,
+    `📍 ต้นทาง: ${$('from').value.trim() || '(ระบุ)'} · ${fl(floors.fFrom, $('liftFrom').checked)}`,
+    `🏁 ปลายทาง: ${$('to').value.trim() || '(ระบุ)'} · ${fl(floors.fTo, $('liftTo').checked)}`,
+    `👷 คนช่วยยก: ${h.options[h.selectedIndex].text}`,
+    `📅 วันที่สะดวก: ${d ? new Date(d + 'T00:00').toLocaleDateString('th-TH', { day: 'numeric', month: 'short', year: 'numeric' }) : '(ยังไม่กำหนด)'}`
+  ];
+  if (opts.length) lines.push('🛠️ บริการเสริม:', ...opts);
+  lines.push('', 'เดี๋ยวส่งรูปของให้ดูครับ ขอบคุณครับ');
+  $('msg').textContent = lines.join('\n');
+}
+markRec(); render();
+const toast = t => { const el = $('toast'); el.textContent = t; el.classList.add('show'); setTimeout(() => el.classList.remove('show'), 2600); };
+$('sendLine').addEventListener('click', async () => {
+  const text = $('msg').textContent;
+  try { await navigator.clipboard.writeText(text); toast('คัดลอกข้อความแล้ว — วางในแชต LINE ได้เลย'); }
+  catch (e) { toast('เปิด LINE แล้วพิมพ์รายละเอียดตามใบสรุปได้เลย'); }
+  setTimeout(() => window.open('https://line.me/ti/p/hJFqem1QND', '_blank', 'noopener'), 500);
+});
+</script>
+</body>
+</html>

@@ -27,6 +27,26 @@ Single-file HTML homepage demos (Noto Sans Thai headings, Sarabun body) made to 
 | `zebra-interior` | ZEBRA · ดูแลภายในรถ | ปากเกร็ด | 2nd ZEBRA page: interior-care packages |
 | `be-my-craft` | Be My Craft By Kru Kate | ลาดกระบัง | Corporate workshop catalog + quote builder |
 | `bougainvillea-soap` | Bougainvillea Soap | ตลิ่งชัน | Soap-making course comparison |
+| `pornasarin-curtain` | พรอัสรินทร์ดีไซน์ | อ้อมน้อย กระทุ่มแบน | Curtains: window-size sender with live curtain preview |
+| `sp-lucky-curtain` | ผ้าม่าน S.P lucky design | ซ.กำนันแม้น กทม. | Curtains: real jobs filtered by style × tone |
+| `ntchemical-termite` | Ntchemical กำจัดปลวก | ธัญบุรี ปทุมธานี | Termite control: method quiz + annual-visit calendar |
+| `pp-services-termite` | PP Services กำจัดปลวก | ประชาอุทิศ 90 | Termite control: tappable house cross-section |
+| `noppon-transport` | นพพรขนส่ง | รังสิต–ลำลูกกา–ดอนเมือง | Movers: vehicle-by-load picker, furniture assembly |
+| `carmove-setthawut` | CARMOVE เศรษฐวุฒิ | ลาดกระบัง | Movers: dorm move vs booth quote builder, job log |
+| `chang-u-washer` | ช่างยู ล้างเครื่องซักผ้า | กทม.–ปริมณฑล | Washer cleaning: before/after slider, machine picker |
+| `nong-kul-service` | น้องกุล ล้าง ซ่อม เครื่องซักผ้า | ปทุมธานี–นนทบุรี | Washer repair: area checker, coin-op section |
+| `praipom-makeup` | ปลายผม แต่งหน้า | ศาลายา | Makeup: look picker + start-time planner |
+| `panda-aui-makeup` | Panda Aui | สมุทรปราการ | Bridal hair & makeup: lookbook + wedding-day timeline |
+| `pconscape` | PCONSCAPE | กทม. | Graduation photographer: package comparator, film-strip gallery |
+| `panwadee-photography` | Panwadee Photography | กทม.–รังสิต | Graduation photographer: rehearsal + day planner |
+| `tham-massage` | ธรรม นวดเพื่อสุขภาพ | บางบัวทอง | Thai massage: real 11-course prices, course picker |
+| `chorcher-massage` | ฌ.เฌอ นวดเพื่อสุขภาพ | บิ๊กซี ลาดพร้าว | Massage & grey-hair plucking estimator, mall map |
+| `est1981-barberclub` | Est.1981 Barberclub | ลำลูกกาคลองสอง | Barber: style → barber → time booking ticket |
+| `oldhead-studio` | Oldhead Studio | ศาลายา | Hair studio: "we've moved" banner, lookbook |
+| `kitchen-twobaby` | Kitchen_Twobaby | พระราม 2 | Snack box: budget-per-head set builder for corporate buyers |
+| `onemore-homemade` | ONE MORE Homemade | อารีย์ | Snack box vs food-support order builder |
+| `siam-sneaker-care` | Siam Sneaker Care | บางพลี | Brand-name shoe & bag spa: mail-in steps, estimate helper |
+| `pjt-shoe-spa` | PJT บ้านสปารองเท้า | เมืองนครปฐม | Shoe spa + laundry: live open/closed sign |
 
 Content that could not be verified (some prices, reviews, portfolio photos) is marked on each page as demo sample content.
 

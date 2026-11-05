@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ONE MORE Homemade | Snack box จัดเบรค &amp; Food support ศิลปิน ส่งทั่วกรุงเทพฯ</title>
+<meta name="description" content="ONE MORE Homemade ขนมโฮมเมด snack box จัดเบรค เริ่มต้น 55 บาท/กล่อง และ Food support สำหรับศิลปิน ไอดอล เริ่มต้น 700 บาท ส่งจากย่านอารีย์ทั่วกรุงเทพฯ สั่งล่วงหน้า 3–5 วัน ทาง LINE @onemorehomemade">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#F8DDD4; --pink2:#F1C3B5; --pink3:#FBEAE4; --blush:#FFF6F2; --milk:#FFFCFA;
+  --brick:#8E3B2F; --brick2:#B4523F; --brick3:#C9705D; --ink:#55261E; --muted:#91615A;
+  --butter:#F8DFA6; --mint:#D6E8DA; --sky:#D5E4F3; --lilac:#E3D8F1;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --line:1.5px solid var(--brick);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--body);color:var(--ink);background:var(--blush);line-height:1.75;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.hd{font-family:var(--head);line-height:1.3}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{width:min(1160px,92%);margin:0 auto}
+.sample{display:inline-block;font-size:12.5px;font-weight:600;color:#8a5a00;background:#fff4d6;border:1px dashed #e2b860;border-radius:8px;padding:1px 9px;line-height:1.6}
+.en{font-family:var(--head);font-weight:900;letter-spacing:.06em;text-transform:uppercase}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:700;border-radius:999px;padding:13px 26px;font-size:16px;border:var(--line);cursor:pointer;transition:transform .2s,background .2s,color .2s,box-shadow .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:21px;height:21px;flex:none}
+.btn-line{background:#06C755;border-color:#06C755;color:#fff;box-shadow:0 10px 22px -10px #06C755}
+.btn-brick{background:var(--brick);color:#fff;box-shadow:0 10px 22px -10px var(--brick)}
+.btn-out{background:var(--milk);color:var(--brick)}
+.btn-out:hover{background:var(--pink)}
+.btn-sm{padding:9px 18px;font-size:14.5px}
+
+/* scallop edge helper (from logo) */
+.scallop-b{position:relative}
+.scallop-b::after{content:"";position:absolute;left:0;right:0;bottom:-17px;height:18px;background:inherit;
+  -webkit-mask:radial-gradient(circle at 18px 0,#000 17px,transparent 18px) 0 0/36px 18px repeat-x;mask:radial-gradient(circle at 18px 0,#000 17px,transparent 18px) 0 0/36px 18px repeat-x;z-index:2}
+
+/* announcement */
+.ann{background:var(--brick);color:var(--pink);font-size:14px;text-align:center;padding:7px 12px}
+.ann b{color:#fff}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:60;background:rgba(255,246,242,.9);backdrop-filter:blur(10px);border-bottom:var(--line)}
+nav.main .wrap{display:flex;align-items:center;gap:22px;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:50px;height:50px;border-radius:50% 50% 12px 12px;border:var(--line);object-fit:cover}
+.brand .t1{font-size:17px;color:var(--brick);line-height:1.05}
+.brand .t2{font-size:12px;color:var(--muted);font-style:italic}
+.menu{display:flex;gap:26px;margin-left:auto;font-family:var(--head);font-weight:600;font-size:15px;color:var(--brick)}
+.menu a{padding:4px 0;border-bottom:1.5px solid transparent;transition:.2s}
+.menu a:hover{border-color:var(--brick)}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border-radius:50% 50% 14px 14px;border:var(--line);background:var(--milk);cursor:pointer;place-items:center}
+
+/* hero */
+.hero{background:var(--pink);padding:60px 0 90px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;position:relative;z-index:3}
+.pill{display:inline-flex;align-items:center;gap:8px;border:var(--line);border-radius:999px;padding:5px 14px;font-family:var(--head);font-weight:600;font-size:14px;color:var(--brick);background:var(--milk)}
+.hero h1{margin:20px 0 6px;color:var(--brick)}
+.hero h1 .big{display:block;font-family:var(--head);font-weight:900;font-size:clamp(46px,6.6vw,86px);line-height:1;letter-spacing:-.01em}
+.hero h1 .big i{font-style:normal;display:inline-block;transform:rotate(-4deg);background:var(--milk);border:var(--line);border-radius:18px;padding:0 .18em;margin:0 .04em}
+.hero h1 .th{display:block;font-size:clamp(22px,2.6vw,32px);font-weight:800;color:var(--ink);margin-top:20px;line-height:1.4}
+.lead{color:var(--muted);font-size:18.5px;max-width:540px;margin-top:12px}
+.lead b{color:var(--brick)}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.facts{display:flex;gap:0;margin-top:34px;border:var(--line);border-radius:22px;background:var(--milk);max-width:540px;overflow:hidden}
+.facts div{flex:1;padding:12px 16px;border-right:var(--line)}
+.facts div:last-child{border:0}
+.facts b{display:block;font-family:var(--head);font-weight:900;font-size:24px;color:var(--brick);line-height:1.2}
+.facts span{font-size:13px;color:var(--muted)}
+
+.art{position:relative;justify-self:center;width:100%;max-width:470px}
+.arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px 28px 28px;border:var(--line);padding:14px;background:var(--milk)}
+.arch .in{width:100%;height:100%;border-radius:999px 999px 18px 18px;overflow:hidden;position:relative}
+.arch img{width:100%;height:100%;object-fit:cover;transform:scale(1.02)}
+.doodle{position:absolute;width:110px;filter:drop-shadow(0 8px 0 rgba(142,59,47,.08))}
+.d1{left:-58px;bottom:16%;animation:bob 4.6s ease-in-out infinite}
+.d2{right:-40px;bottom:-4%;width:96px;animation:bob 5.2s ease-in-out infinite .7s}
+@keyframes bob{50%{translate:0 -10px}}
+.tagS{position:absolute;background:var(--milk);border:var(--line);border-radius:16px;padding:8px 14px;font-family:var(--head);font-weight:700;font-size:14px;color:var(--brick);line-height:1.35}
+.tagS small{display:block;font-weight:500;color:var(--muted);font-size:12px}
+.t1p{top:9%;right:-30px;transform:rotate(5deg)}
+.t2p{top:44%;left:-46px;transform:rotate(-5deg);background:var(--brick);color:#fff}
+.t2p small{color:var(--pink)}
+.spark{position:absolute;color:var(--brick);animation:tw 2.6s ease-in-out infinite}
+@keyframes tw{50%{opacity:.25;transform:scale(.7)}}
+
+/* marquee */
+.marquee{background:var(--milk);border-top:var(--line);border-bottom:var(--line);overflow:hidden;padding:12px 0}
+.track{display:flex;width:max-content;animation:slide 42s linear infinite;font-family:var(--head);font-weight:700;font-size:18px;color:var(--brick)}
+.track span{display:flex;align-items:center;gap:26px;padding-right:26px;white-space:nowrap}
+.track span::after{content:"✦";font-size:14px;color:var(--brick3)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:96px 0;position:relative}
+.sh{text-align:center;max-width:720px;margin:0 auto 50px}
+.kick{font-family:var(--head);font-weight:700;font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--brick3)}
+.sh h2,.h2{font-size:clamp(30px,4vw,46px);font-weight:900;color:var(--brick);margin:6px 0 10px}
+.sh h2 u,.h2 u{text-decoration:none;background:linear-gradient(transparent 64%,var(--pink2) 64%)}
+.sh p{color:var(--muted);font-size:18px}
+
+/* two services */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.svc{border:var(--line);border-radius:240px 240px 28px 28px;background:var(--milk);padding:64px 40px 36px;text-align:center;position:relative;display:flex;flex-direction:column;align-items:center}
+.svc.fs{background:var(--brick);color:#fff;border-color:var(--brick)}
+.svc .ill{width:150px;height:120px;margin-bottom:8px}
+.svc .kick{color:var(--brick3)}
+.svc.fs .kick{color:var(--pink2)}
+.svc h3{font-size:30px;font-weight:900;color:var(--brick);margin:2px 0 6px}
+.svc.fs h3{color:#fff}
+.svc .for{color:var(--muted);font-size:16px;max-width:420px}
+.svc.fs .for{color:#f5d6cc}
+.svc .price{display:flex;align-items:baseline;gap:8px;justify-content:center;margin:20px 0 4px;font-family:var(--head)}
+.svc .price small{font-weight:600;font-size:15px}
+.svc .price b{font-weight:900;font-size:56px;line-height:1;color:var(--brick)}
+.svc.fs .price b{color:var(--butter)}
+.svc .unit{font-family:var(--head);font-weight:700;font-size:14px;border:var(--line);border-radius:999px;padding:2px 12px}
+.svc.fs .unit{border-color:var(--pink2);color:var(--pink)}
+.svc ul{list-style:none;text-align:left;display:grid;gap:9px;margin:22px 0 26px;width:100%;max-width:400px}
+.svc li{display:flex;gap:10px;font-size:15.5px}
+.svc li::before{content:"✦";color:var(--brick3);flex:none}
+.svc.fs li::before{color:var(--butter)}
+.svc .btn{margin-top:auto}
+.svc.fs .btn-out{background:transparent;color:#fff;border-color:#fff}
+.svc.fs .btn-out:hover{background:#fff;color:var(--brick)}
+.diff{margin:30px auto 0;max-width:820px;border:1.5px dashed var(--brick3);border-radius:20px;padding:14px 22px;display:flex;gap:14px;align-items:flex-start;background:var(--milk);font-size:15.5px}
+.diff b{font-family:var(--head);color:var(--brick)}
+.diff .ic{flex:none;width:34px;height:34px;border-radius:50%;background:var(--pink);display:grid;place-items:center;font-weight:900;color:var(--brick);font-family:var(--head)}
+
+/* in-the-box */
+.box-sec{background:var(--pink3)}
+.box-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.photo{border:var(--line);border-radius:28px;padding:12px;background:var(--milk);transform:rotate(-1.5deg)}
+.photo img{border-radius:18px;width:100%;aspect-ratio:4/3;object-fit:cover}
+.photo figcaption{font-size:13.5px;color:var(--muted);padding:10px 6px 2px;text-align:center}
+.menu-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.mi{display:flex;gap:12px;align-items:center;background:var(--milk);border:var(--line);border-radius:18px;padding:12px 14px}
+.mi svg{width:46px;height:46px;flex:none}
+.mi b{display:block;font-family:var(--head);font-size:15.5px;color:var(--brick);line-height:1.3}
+.mi span{font-size:13px;color:var(--muted);line-height:1.4;display:block}
+
+/* builder */
+.builder{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start}
+.card{background:var(--milk);border:var(--line);border-radius:28px;padding:28px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;border:var(--line);border-radius:999px;padding:5px;margin-bottom:24px;background:var(--pink3)}
+.tab{border:0;background:transparent;border-radius:999px;padding:11px 10px;font-family:var(--head);font-weight:800;font-size:15.5px;color:var(--brick);cursor:pointer;transition:.2s;line-height:1.3}
+.tab small{display:block;font-weight:600;font-size:12px;opacity:.8}
+.tab[aria-selected=true]{background:var(--brick);color:#fff}
+.pane[hidden]{display:none}
+.fld{margin-bottom:18px}
+.fld label,.fld .lab{display:block;font-family:var(--head);font-weight:700;font-size:15px;color:var(--brick);margin-bottom:7px}
+.fld label small,.fld .lab small{font-weight:500;color:var(--muted)}
+.inp{width:100%;border:var(--line);border-radius:14px;background:#fff;padding:11px 14px;font-size:16px}
+.inp:focus{outline:3px solid var(--pink2);outline-offset:1px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-family:var(--head);font-weight:600;font-size:14.5px;color:var(--brick);cursor:pointer;transition:.15s}
+.chip[aria-pressed=true]{background:var(--brick);color:#fff}
+.sw{width:34px;height:34px;border-radius:50%;border:var(--line);cursor:pointer;position:relative}
+.sw[aria-pressed=true]::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--brick)}
+.stepper{display:flex;gap:8px;align-items:center}
+.stepper button{width:44px;height:44px;flex:none;border-radius:50%;border:var(--line);background:#fff;color:var(--brick);font-size:22px;font-weight:800;cursor:pointer}
+.stepper .inp{text-align:center;font-family:var(--head);font-weight:800;font-size:19px;height:44px;padding:4px}
+.lead-chk{display:flex;gap:10px;align-items:center;border-radius:14px;padding:9px 14px;font-size:14.5px;margin-top:8px;font-weight:600}
+.lead-chk.ok{background:#e4f3e6;color:#246b37}
+.lead-chk.mid{background:#fff3d6;color:#7a5600}
+.lead-chk.bad{background:#fde3df;color:#a3281b}
+.lead-chk i{font-style:normal;font-size:18px}
+
+.side{position:sticky;top:96px;display:grid;gap:18px}
+.preview{background:var(--pink);border:var(--line);border-radius:28px;padding:24px;text-align:center}
+.preview .kick{display:block;margin-bottom:8px;letter-spacing:.02em;text-transform:none;font-size:15px}
+.stage{position:relative;height:250px;display:grid;place-items:end center}
+.stage svg{width:100%;height:100%}
+.est{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:6px;text-align:left;flex-wrap:wrap}
+.est b{font-family:var(--head);font-weight:900;font-size:28px;color:var(--brick);line-height:1.1}
+.est span{font-size:13px;color:var(--muted);display:block}
+.msg{background:#fff;border:var(--line);border-radius:22px 22px 22px 6px;padding:14px 16px;font-size:14.5px;line-height:1.55;white-space:pre-wrap;max-height:240px;overflow:auto}
+.msg::before{content:"ข้อความถึง @onemorehomemade";display:block;font-family:var(--head);font-weight:700;font-size:12px;color:var(--brick3);margin-bottom:4px}
+.acts{display:flex;gap:10px;flex-wrap:wrap}
+.acts .btn{flex:1 1 150px}
+.fine{font-size:12.5px;color:var(--muted)}
+
+/* happy drink */
+.happy{background:var(--brick);color:#fff;overflow:hidden}
+.happy .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.happy .h2{color:#fff}
+.happy .h2 u{background:linear-gradient(transparent 64%,rgba(248,223,166,.45) 64%)}
+.happy p{color:#f5d6cc;font-size:18px}
+.stampcard{background:var(--pink);color:var(--brick);border-radius:24px;padding:26px 26px 22px;transform:rotate(-2.5deg);box-shadow:16px 16px 0 rgba(0,0,0,.18);position:relative}
+.stampcard::before{content:"";position:absolute;inset:8px;border:1.5px dashed var(--brick);border-radius:18px;pointer-events:none}
+.stampcard header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap}
+.stampcard header b{font-family:var(--head);font-weight:900;font-size:26px;letter-spacing:.04em}
+.stamps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.stamp{aspect-ratio:1/1;border-radius:50%;border:1.5px solid var(--brick);background:var(--milk);display:grid;place-items:center;cursor:pointer;transition:.2s;padding:0}
+.stamp svg{width:60%;height:60%;opacity:0;transform:scale(.4) rotate(-20deg);transition:.3s}
+.stamp.on{background:var(--butter)}
+.stamp.on svg{opacity:1;transform:none}
+.stamp:last-child{background:var(--brick);color:#fff;font-family:var(--head);font-weight:800;font-size:12px;line-height:1.15}
+.stampcard footer{border:0;background:none;padding:0;margin-top:14px;font-size:13px;color:var(--muted);text-align:center}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.st{border:var(--line);border-radius:160px 160px 22px 22px;background:var(--milk);padding:40px 20px 26px;text-align:center;position:relative}
+.st .n{position:absolute;top:-18px;left:50%;transform:translateX(-50%);width:38px;height:38px;border-radius:50%;background:var(--brick);color:#fff;font-family:var(--head);font-weight:800;display:grid;place-items:center}
+.st svg{width:60px;height:60px;margin:0 auto 6px}
+.st h4{font-size:18.5px;font-weight:800;color:var(--brick)}
+.st p{font-size:15px;color:var(--muted);line-height:1.6;margin-top:4px}
+
+/* gallery */
+.gal-sec{background:var(--pink3)}
+.gal{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:230px 230px;gap:18px}
+.g{border:var(--line);border-radius:26px;overflow:hidden;background:var(--milk);position:relative;display:grid;place-items:center}
+.g.big{grid-row:span 2;border-radius:260px 260px 26px 26px}
+.g img{width:100%;height:100%;object-fit:cover}
+.g svg{width:62%;height:62%}
+.g .cap{position:absolute;left:12px;bottom:12px;background:var(--milk);border:var(--line);border-radius:999px;padding:2px 12px;font-family:var(--head);font-weight:700;font-size:13px;color:var(--brick)}
+.g.p1{background:var(--pink)}.g.p2{background:var(--butter)}.g.p3{background:var(--mint)}.g.p4{background:var(--lilac)}
+.gal-note{text-align:center;margin-top:26px;color:var(--muted);font-size:14.5px}
+.gal-note a{color:var(--brick);font-weight:700;text-decoration:underline}
+
+/* reviews as chat */
+.chats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.chat{background:var(--milk);border:var(--line);border-radius:26px;padding:22px}
+.chat .top{display:flex;gap:10px;align-items:center;margin-bottom:14px;border-bottom:1.5px dashed var(--pink2);padding-bottom:12px}
+.chat .av{width:40px;height:40px;border-radius:50%;background:var(--pink);border:var(--line);display:grid;place-items:center;font-family:var(--head);font-weight:800;color:var(--brick)}
+.chat .top b{display:block;font-family:var(--head);font-size:15px;color:var(--brick);line-height:1.2}
+.chat .top small{color:var(--muted);font-size:12.5px}
+.bub{background:var(--pink);border-radius:18px 18px 18px 4px;padding:10px 14px;font-size:15.5px;margin-bottom:8px;max-width:92%}
+.bub.me{background:var(--brick);color:#fff;border-radius:18px 18px 4px 18px;margin-left:auto;max-width:80%}
+.note{text-align:center;color:var(--muted);font-size:13px;margin-top:22px}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:var(--milk);border:var(--line);border-radius:20px;padding:2px 22px}
+.faq summary{cursor:pointer;list-style:none;font-family:var(--head);font-weight:700;font-size:16.5px;color:var(--brick);padding:14px 0;display:flex;justify-content:space-between;gap:14px}
+.faq summary::after{content:"✦";transition:.3s}
+.faq details[open] summary::after{transform:rotate(135deg)}
+.faq p{padding:0 0 16px;color:var(--muted)}
+
+/* area */
+.area .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:stretch}
+.ainfo{display:grid;gap:14px;margin:24px 0}
+.ai{display:flex;gap:14px;align-items:flex-start;border:var(--line);border-radius:20px;padding:15px 18px;background:var(--milk)}
+.ai .i{flex:0 0 44px;height:44px;border-radius:50%;background:var(--pink);display:grid;place-items:center}
+.ai .i svg{width:22px;height:22px;stroke:var(--brick);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ai b{display:block;font-family:var(--head);color:var(--brick);font-size:15.5px}
+.ai span{font-size:15px;color:var(--muted)}
+.apps{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.apps em{font-style:normal;font-family:var(--head);font-weight:700;font-size:13.5px;border-radius:999px;padding:2px 12px;color:#fff}
+.map{border:var(--line);border-radius:260px 260px 28px 28px;overflow:hidden;min-height:480px;position:relative;background:var(--pink)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.18) saturate(.9)}
+.map .pin{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:2;background:var(--milk);border:var(--line);border-radius:999px;padding:6px 16px;font-family:var(--head);font-weight:700;font-size:14px;color:var(--brick);white-space:nowrap}
+
+/* footer */
+footer{background:var(--pink);border-top:var(--line);padding:56px 0 26px;font-size:15px;color:var(--ink)}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:30px;border-bottom:1.5px dashed var(--brick3)}
+footer h4{color:var(--brick);font-size:16.5px;margin-bottom:10px}
+footer ul{list-style:none;display:grid;gap:6px}
+footer a:hover{color:var(--brick);text-decoration:underline}
+.ft p{margin-top:12px;max-width:340px;color:var(--muted)}
+.copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:20px;font-size:13.5px;color:var(--muted)}
+.copy b{color:var(--brick)}
+
+/* floating */
+.fab{position:fixed;right:18px;bottom:18px;z-index:70;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.fab a{display:flex;align-items:center;gap:8px;height:56px;min-width:56px;border-radius:999px;justify-content:center;box-shadow:0 10px 24px -8px rgba(85,38,30,.5);transition:.2s;font-family:var(--head);font-weight:800;color:#fff}
+.fab a:hover{transform:translateY(-3px)}
+.fab .ln{background:#06C755;padding:0 20px 0 16px;animation:ring 2.6s infinite}
+.fab .ig{background:var(--milk);border:var(--line);width:56px}
+.fab svg{width:26px;height:26px}
+@keyframes ring{0%,100%{box-shadow:0 0 0 0 rgba(6,199,85,.5)}50%{box-shadow:0 0 0 14px rgba(6,199,85,0)}}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,30px);background:var(--brick);color:#fff;padding:10px 20px;border-radius:999px;font-family:var(--head);font-weight:700;opacity:0;transition:.3s;z-index:80;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* reveal */
+.rv-on{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv-on.in{opacity:1;transform:none}
+
+@media (max-width:1060px){
+  .steps{grid-template-columns:1fr 1fr;row-gap:34px}
+  .chats{grid-template-columns:1fr 1fr}
+  .chats .chat:last-child{grid-column:1/-1}
+}
+@media (max-width:920px){
+  .menu,.nav-cta{display:none}
+  .burger{display:grid}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:74px;left:0;right:0;background:var(--blush);padding:18px 5%;gap:14px;border-bottom:var(--line)}
+  .hero{padding:36px 0 80px}
+  .hero .wrap,.two,.box-grid,.builder,.happy .wrap,.area .wrap{grid-template-columns:1fr}
+  .art{max-width:360px;margin-top:20px}
+  .side{position:static}
+  .gal{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .g{height:200px}
+  .g.big{grid-column:1/-1;grid-row:auto;height:360px}
+  .stampcard{transform:rotate(-1.5deg)}
+  .ft{grid-template-columns:1fr 1fr}
+  .ft>div:first-child{grid-column:1/-1}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:66px 0}
+  .facts b{font-size:19px}
+  .facts div{padding:10px 10px}
+  .facts span{font-size:12px;line-height:1.4;display:block}
+  .d1{left:-14px;width:80px;bottom:6%}
+  .d2{right:-8px;width:74px}
+  .t1p{right:-6px}
+  .t2p{left:-8px}
+  .tagS{font-size:13px;padding:6px 11px}
+  .svc{padding:50px 22px 28px;border-radius:200px 200px 24px 24px}
+  .svc h3{font-size:25px}
+  .svc .price b{font-size:46px}
+  .menu-list{grid-template-columns:1fr}
+  .card{padding:20px}
+  .g2{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;gap:30px 12px}
+  .st{padding:34px 12px 20px}
+  .st svg{width:48px;height:48px}
+  .st p{font-size:14px}
+  .chats{grid-template-columns:1fr}
+  .stamps{gap:8px}
+  .ft{grid-template-columns:1fr}
+  .map{min-height:360px;border-radius:200px 200px 24px 24px}
+  .fab .ln span{display:none}
+  .fab .ln{padding:0;width:56px}
+  .tab{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv-on{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- line-art sprite (brick outline, like the logo) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="l-milk" viewBox="0 0 64 64"><g fill="none" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M18 22 L24 10 H40 L46 22 V58 H18 Z" fill="#FFFCFA"/><path d="M24 10 L30 22 H46 M18 22 H30 V58"/><path d="M30 38 q4 -4 8 0 t8 0" /><path d="M18 40 q3 -3 6 0 t6 0"/><path d="M26 4 h12 v6 h-12z" fill="#F8DDD4"/></g></symbol>
+    <symbol id="l-cup" viewBox="0 0 64 64"><g fill="none" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M12 34 H52 L46 58 H18 Z" fill="#FFFCFA"/><path d="M22 34 L24 58 M32 34 V58 M42 34 L40 58"/><path d="M10 34 Q8 22 20 22 Q22 12 32 14 Q42 12 44 22 Q56 22 54 34 Z" fill="#F8DDD4"/><circle cx="34" cy="10" r="4" fill="#C9705D"/><path d="M34 6 q2 -4 6 -4"/></g></symbol>
+    <symbol id="l-sand" viewBox="0 0 64 64"><g fill="none" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M6 52 L54 12 Q60 10 58 18 L58 52 Z" fill="#FFFCFA"/><path d="M14 52 Q30 40 56 22" stroke="#C9705D"/><path d="M20 52 Q36 42 57 32"/><path d="M6 52 H58"/></g></symbol>
+    <symbol id="l-cookie" viewBox="0 0 64 64"><g fill="none" stroke="#8E3B2F" stroke-width="1.8" stroke-linecap="round"><circle cx="32" cy="32" r="22" fill="#F8DFA6"/><circle cx="24" cy="26" r="2.5" fill="#8E3B2F"/><circle cx="38" cy="22" r="2.5" fill="#8E3B2F"/><circle cx="40" cy="38" r="2.5" fill="#8E3B2F"/><circle cx="26" cy="40" r="2.5" fill="#8E3B2F"/></g></symbol>
+    <symbol id="l-drink" viewBox="0 0 64 64"><g fill="none" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M16 20 H48 L44 58 H20 Z" fill="#FFFCFA"/><path d="M18 34 H46 L44 58 H20Z" fill="#F8DDD4"/><path d="M12 20 H52"/><path d="M36 20 L42 4 H50"/><circle cx="27" cy="44" r="2"/><circle cx="36" cy="49" r="2"/></g></symbol>
+    <symbol id="l-box" viewBox="0 0 64 64"><g fill="none" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M8 26 L32 18 L56 26 V52 L32 60 L8 52 Z" fill="#FFFCFA"/><path d="M8 26 L32 34 L56 26 M32 34 V60"/><path d="M8 26 L20 12 L44 4 L56 26" fill="#F8DDD4"/><circle cx="44" cy="44" r="6" fill="#F8DFA6"/></g></symbol>
+    <symbol id="l-heart" viewBox="0 0 24 24"><path d="M12 21S2 14.5 2 8.2A5 5 0 0 1 12 6a5 5 0 0 1 10 2.2C22 14.5 12 21 12 21z" fill="#8E3B2F"/></symbol>
+    <symbol id="l-spark" viewBox="0 0 24 24"><path d="M12 1 L14 10 L23 12 L14 14 L12 23 L10 14 L1 12 L10 10 Z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<div class="ann">สั่งล่วงหน้า <b>3–5 วัน</b> · ส่งจากย่านอารีย์ทั่วกรุงเทพฯ ผ่าน Grab / LINE MAN · ทักสั่งทาง LINE <b>@onemorehomemade</b> 💗</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="โลโก้ ONE MORE Homemade">
+      <div><div class="t1 en">One More<br>Homemade</div><div class="t2">One more is never enough</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#services">บริการ &amp; ราคา</a>
+      <a href="#inbox">ในกล่อง</a>
+      <a href="#builder">สร้างออร์เดอร์</a>
+      <a href="#happy">Happy drink</a>
+      <a href="#gallery">ผลงาน</a>
+      <a href="#area">พื้นที่ส่ง</a>
+    </div>
+    <a href="https://line.me/R/ti/p/@onemorehomemade" target="_blank" rel="noopener" class="btn btn-line btn-sm nav-cta">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.4 5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>แอด LINE</a>
+    <button class="burger" id="burger" aria-label="เปิดเมนู" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" stroke="#8E3B2F" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero scallop-b" id="top">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="pill">💫 Homemade snack box · since 2020</span>
+      <h1>
+        <span class="big en">One <i>more</i><br>is never<br>enough</span>
+        <span class="th">ขนมโฮมเมด กล่องน่ารัก ที่ใครได้ไปก็ขออีกกล่อง 💗</span>
+      </h1>
+      <p class="lead">รับ<b>จัดเบรครายกล่อง</b>สำหรับประชุม เวิร์กช็อป และ <b>Food support</b> ส่งกำลังใจให้ศิลปิน ไอดอลที่คุณรัก ทำใหม่ทุกออร์เดอร์ ปรับเมนูได้ตามใจ</p>
+      <div class="cta-row">
+        <a href="#builder" class="btn btn-brick">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16l-1.5 11h-13z"/><path d="M8 9V7a4 4 0 0 1 8 0v2"/></svg>สร้างออร์เดอร์ของฉัน</a>
+        <a href="https://line.me/R/ti/p/@onemorehomemade" target="_blank" rel="noopener" class="btn btn-out">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.4 5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>@onemorehomemade</a>
+      </div>
+      <div class="facts">
+        <div><b>55฿</b><span>จัดเบรค เริ่มต้น/กล่อง</span></div>
+        <div><b>700฿</b><span>Food support เริ่มต้น</span></div>
+        <div><b>2,245</b><span>เพื่อนใน LINE OA</span></div>
+      </div>
+    </div>
+
+    <div class="art rv-on">
+      <div class="arch">
+        <div class="in"><img src="assets/cover.jpg" alt="แซนด์วิชไส้ปูอัด ข้าวโพด และสาหร่าย ในกล่องใส จาก ONE MORE Homemade"></div>
+      </div>
+      <svg class="doodle d1" viewBox="0 0 64 64" aria-hidden="true"><use href="#l-milk"/></svg>
+      <svg class="doodle d2" viewBox="0 0 64 64" aria-hidden="true"><use href="#l-cup"/></svg>
+      <div class="tagS t1p">Pre-order 3–5 วัน<small>ทำสดใหม่ทุกออร์เดอร์</small></div>
+      <div class="tagS t2p">Food support 💫<small>ส่งกำลังใจถึงกองถ่าย</small></div>
+      <svg class="spark" style="width:22px;top:2%;left:8%" viewBox="0 0 24 24" aria-hidden="true"><use href="#l-spark"/></svg>
+      <svg class="spark" style="width:14px;top:30%;right:-14px;animation-delay:.8s" viewBox="0 0 24 24" aria-hidden="true"><use href="#l-spark"/></svg>
+      <svg class="spark" style="width:16px;bottom:-22px;left:30%;animation-delay:1.4s" viewBox="0 0 24 24" aria-hidden="true"><use href="#l-spark"/></svg>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true" style="margin-top:17px">
+  <div class="track">
+    <span>One more is never enough 💗</span><span>Homemade snack box</span><span>จัดเบรค</span><span>Food support 💫</span><span>Happy drink</span><span>ส่งทั่วกรุงเทพฯ</span><span>Since 2020</span>
+    <span>One more is never enough 💗</span><span>Homemade snack box</span><span>จัดเบรค</span><span>Food support 💫</span><span>Happy drink</span><span>ส่งทั่วกรุงเทพฯ</span><span>Since 2020</span>
+  </div>
+</div>
+
+<!-- TWO SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="kick">two ways to say one more</span>
+      <h2>สองบริการ <u>คนละสไตล์</u></h2>
+      <p>เลือกให้ตรงงาน แล้วราคาจะชัดขึ้นทันที — จัดเบรคคิดเป็นรายกล่อง ส่วน Food support คิดเป็นชุดต่อออร์เดอร์</p>
+    </div>
+    <div class="two">
+      <article class="svc rv-on">
+        <svg class="ill" viewBox="0 0 150 120" aria-hidden="true"><use href="#l-box" x="8" y="30" width="80" height="80"/><use href="#l-drink" x="78" y="40" width="64" height="70"/><use href="#l-spark" x="66" y="8" width="16" height="16" style="color:#C9705D"/></svg>
+        <span class="kick">Snack box · Coffee break</span>
+        <h3>จัดเบรครายกล่อง</h3>
+        <p class="for">สำหรับประชุม อบรม เวิร์กช็อป งานออฟฟิศ หรือปาร์ตี้เล็ก ๆ — แจกง่าย ทานสะดวก</p>
+        <div class="price"><small>เริ่มต้น</small><b>55</b><span class="unit">฿ / กล่อง</span></div>
+        <ul>
+          <li>ขนมโฮมเมด + เครื่องดื่ม ในกล่องเดียว</li>
+          <li>เลือกเมนูเองหรือให้ร้านจัดให้ ปรับตามงบได้</li>
+          <li>สั่งล่วงหน้า 3–5 วัน</li>
+          <li>ส่งผ่าน Grab / LINE MAN ค่าส่งตามระยะทาง</li>
+        </ul>
+        <a href="#builder" class="btn btn-out" data-tab="break">คำนวณจัดเบรค →</a>
+      </article>
+      <article class="svc fs rv-on">
+        <svg class="ill" viewBox="0 0 150 120" aria-hidden="true"><rect x="46" y="10" width="60" height="44" rx="6" fill="#F8DDD4" stroke="#fff" stroke-width="1.8"/><path d="M76 54 V76" stroke="#fff" stroke-width="1.8"/><text x="76" y="38" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="15" fill="#8E3B2F">WE ♥</text><g transform="translate(10 58)"><use href="#l-box" width="56" height="56"/></g><g transform="translate(86 58)"><use href="#l-box" width="56" height="56"/></g></svg>
+        <span class="kick">Food support · Fan project</span>
+        <h3>Food support</h3>
+        <p class="for">ส่งขนมกำลังใจให้ศิลปิน ไอดอล และทีมงานในกองถ่าย อีเวนต์ หรือวันเกิดศิลปิน</p>
+        <div class="price"><small>เริ่มต้น</small><b>700</b><span class="unit">฿ / ชุด</span></div>
+        <ul>
+          <li>Snack box ตกแต่งตามธีมศิลปิน / แฟนคลับ</li>
+          <li>ใส่สติกเกอร์ ข้อความ และป้ายให้กำลังใจได้</li>
+          <li>คัสตอมเมนูตามที่ต้องการ</li>
+          <li>สั่งล่วงหน้า 3–5 วัน · ส่งถึงสถานที่</li>
+        </ul>
+        <a href="#builder" class="btn btn-out" data-tab="fs">ออกแบบ Food support →</a>
+      </article>
+    </div>
+    <div class="diff rv-on"><span class="ic">!</span><div><b>ราคา “เริ่มต้น” ตามที่ร้านแจ้ง</b> — ราคาจริงขึ้นกับเมนู จำนวน และการตกแต่ง ร้านจะสรุปให้ในแชต LINE · รายละเอียดในชุดเป็นตัวอย่าง <span class="sample">รอร้านยืนยัน</span></div></div>
+  </div>
+</section>
+
+<!-- IN THE BOX -->
+<section class="box-sec scallop-b" id="inbox">
+  <div class="wrap box-grid">
+    <figure class="photo rv-on">
+      <img src="assets/cover.jpg" alt="แซนด์วิชไส้ปูอัด ข้าวโพด สาหร่าย จัดเรียงในกล่อง" loading="lazy">
+      <figcaption>แซนด์วิชไส้ปูอัด · ข้าวโพด · สาหร่าย — ภาพจากหน้า LINE OA ของร้าน</figcaption>
+    </figure>
+    <div class="rv-on">
+      <span class="kick">what's inside</span>
+      <h2 class="h2">ในกล่องมี <u>อะไรบ้าง?</u></h2>
+      <p style="color:var(--muted);font-size:18px">ทุกกล่องทำแบบโฮมเมด จัดวางสวยพร้อมถ่ายรูป เมนูด้านล่างเป็นแนวทาง — ทักมาบอกได้เลยว่าอยากได้แบบไหน ร้านคัสตอมให้</p>
+      <div class="menu-list">
+        <div class="mi"><svg aria-hidden="true"><use href="#l-sand"/></svg><div><b>แซนด์วิชโฮมเมด</b><span>ไส้ปูอัด ข้าวโพด สาหร่าย</span></div></div>
+        <div class="mi"><svg aria-hidden="true"><use href="#l-cup"/></svg><div><b>ขนมหวาน / คัพเค้ก</b><span>เมนูตัวอย่าง · ปรับได้</span></div></div>
+        <div class="mi"><svg aria-hidden="true"><use href="#l-cookie"/></svg><div><b>คุกกี้ &amp; ขนมอบ</b><span>เมนูตัวอย่าง · ปรับได้</span></div></div>
+        <div class="mi"><svg aria-hidden="true"><use href="#l-drink"/></svg><div><b>เครื่องดื่ม Happy drink</b><span>จับคู่กับกล่องขนม</span></div></div>
+      </div>
+      <p style="margin-top:16px"><span class="sample">เมนูตัวอย่าง · รอร้านยืนยันเมนูประจำ</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- BUILDER -->
+<section id="builder" style="padding-top:120px">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="kick">order builder</span>
+      <h2>สร้างออร์เดอร์ <u>ส่งทาง LINE</u> ได้ทันที</h2>
+      <p>กรอกไม่กี่ช่อง ระบบเช็กวันสั่งล่วงหน้าให้ แล้วเขียนข้อความพร้อมส่งถึง @onemorehomemade</p>
+    </div>
+    <div class="builder">
+      <div class="card rv-on">
+        <div class="tabs" role="tablist">
+          <button class="tab" role="tab" id="tab-break" aria-selected="true" aria-controls="pane-break">จัดเบรครายกล่อง<small>เริ่มต้น 55฿/กล่อง</small></button>
+          <button class="tab" role="tab" id="tab-fs" aria-selected="false" aria-controls="pane-fs">Food support<small>เริ่มต้น 700฿/ชุด</small></button>
+        </div>
+
+        <!-- common -->
+        <div class="g2">
+          <div class="fld"><label for="date">วันที่ต้องการรับ</label><input class="inp" type="date" id="date"></div>
+          <div class="fld"><label for="time">เวลา</label><input class="inp" type="time" id="time" value="10:00"></div>
+        </div>
+        <div class="lead-chk ok" id="leadChk" style="margin:-8px 0 18px"><i>✓</i><span></span></div>
+
+        <div class="pane" id="pane-break" role="tabpanel" aria-labelledby="tab-break">
+          <div class="fld">
+            <span class="lab">จำนวนกล่อง</span>
+            <div class="stepper"><button type="button" data-step="-5" aria-label="ลด">−</button><input class="inp" id="qty" type="number" min="1" value="30" inputmode="numeric" aria-label="จำนวนกล่อง"><button type="button" data-step="5" aria-label="เพิ่ม">+</button></div>
+          </div>
+          <div class="fld">
+            <span class="lab">ใช้ในงาน</span>
+            <div class="chips" id="evChips">
+              <button type="button" class="chip" aria-pressed="true">ประชุม</button>
+              <button type="button" class="chip" aria-pressed="false">อบรม / เวิร์กช็อป</button>
+              <button type="button" class="chip" aria-pressed="false">ปาร์ตี้ / วันเกิด</button>
+              <button type="button" class="chip" aria-pressed="false">อื่น ๆ</button>
+            </div>
+          </div>
+          <div class="fld"><label for="bNote">เมนูที่อยากได้ / หมายเหตุ <small>(ไม่บังคับ)</small></label><input class="inp" id="bNote" placeholder="เช่น ขอแซนด์วิช + ขนมหวาน 1 + เครื่องดื่ม"></div>
+        </div>
+
+        <div class="pane" id="pane-fs" role="tabpanel" aria-labelledby="tab-fs" hidden>
+          <div class="g2">
+            <div class="fld"><label for="artist">ชื่อศิลปิน / ไอดอล</label><input class="inp" id="artist" placeholder="เช่น น้อง…" maxlength="24"></div>
+            <div class="fld"><label for="event">งาน / โปรเจกต์</label><input class="inp" id="event" placeholder="เช่น ถ่ายซีรีส์ วันเกิดศิลปิน"></div>
+          </div>
+          <div class="g2">
+            <div class="fld">
+              <span class="lab">จำนวนชุด</span>
+              <div class="stepper"><button type="button" data-fstep="-1" aria-label="ลด">−</button><input class="inp" id="sets" type="number" min="1" value="1" inputmode="numeric" aria-label="จำนวนชุด"><button type="button" data-fstep="1" aria-label="เพิ่ม">+</button></div>
+            </div>
+            <div class="fld"><label for="crew">ทีมงานประมาณ <small>(คน)</small></label><input class="inp" id="crew" type="number" min="1" placeholder="เช่น 30" inputmode="numeric"></div>
+          </div>
+          <div class="fld"><label for="sticker">ข้อความบนสติกเกอร์</label><input class="inp" id="sticker" maxlength="22" value="Fighting! 💗"></div>
+          <div class="fld"><label for="sign">ข้อความบนป้าย</label><input class="inp" id="sign" maxlength="26" placeholder="เช่น WE ♥ (ชื่อศิลปิน)"></div>
+          <div class="fld">
+            <span class="lab">สีธีมแฟนคลับ</span>
+            <div class="chips" id="colors">
+              <button type="button" class="sw" style="background:#F8DDD4" data-c="#F8DDD4" data-n="ชมพูพาสเทล" aria-label="ชมพู" aria-pressed="true"></button>
+              <button type="button" class="sw" style="background:#D5E4F3" data-c="#D5E4F3" data-n="ฟ้า" aria-label="ฟ้า" aria-pressed="false"></button>
+              <button type="button" class="sw" style="background:#D6E8DA" data-c="#D6E8DA" data-n="มิ้นต์" aria-label="มิ้นต์" aria-pressed="false"></button>
+              <button type="button" class="sw" style="background:#E3D8F1" data-c="#E3D8F1" data-n="ม่วงไลแลค" aria-label="ม่วง" aria-pressed="false"></button>
+              <button type="button" class="sw" style="background:#F8DFA6" data-c="#F8DFA6" data-n="เหลืองบัตเตอร์" aria-label="เหลือง" aria-pressed="false"></button>
+              <button type="button" class="sw" style="background:#F2A7A0" data-c="#F2A7A0" data-n="แดงพีช" aria-label="แดงพีช" aria-pressed="false"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="fld" style="margin-bottom:0"><label for="place">สถานที่ส่ง <small>(ส่งผ่าน Grab / LINE MAN ค่าส่งตามระยะทาง)</small></label><input class="inp" id="place" placeholder="เช่น สตูดิโอ… ลาดพร้าว / ออฟฟิศย่านอโศก"></div>
+      </div>
+
+      <div class="side rv-on">
+        <div class="preview" aria-live="polite">
+          <span class="kick" id="pvKick">ตัวอย่างกล่องของคุณ</span>
+          <div class="stage">
+            <svg viewBox="0 0 320 250" id="stageSvg" aria-hidden="true">
+              <g id="signG">
+                <rect x="190" y="18" width="116" height="80" rx="10" id="signRect" fill="#F8DDD4" stroke="#8E3B2F" stroke-width="1.8"/>
+                <path d="M248 98 V196" stroke="#8E3B2F" stroke-width="2.4"/>
+                <text x="248" y="64" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="15" fill="#8E3B2F" id="signText">WE ♥ YOU</text>
+                <text x="248" y="86" text-anchor="middle" font-family="Noto Sans Thai" font-weight="600" font-size="10" fill="#8E3B2F">✦ food support ✦</text>
+              </g>
+              <ellipse cx="150" cy="232" rx="140" ry="10" fill="#8E3B2F" opacity=".1"/>
+              <g id="boxes"></g>
+            </svg>
+          </div>
+          <div class="est">
+            <div><span id="estLbl">ประมาณการเริ่มต้น</span><b id="est">1,650 ฿</b></div>
+            <span class="sample">ราคาเริ่มต้น · ร้านยืนยันในแชต</span>
+          </div>
+        </div>
+        <div class="msg" id="msg"></div>
+        <div class="acts">
+          <a class="btn btn-line" id="sendLine" href="https://line.me/R/oaMessage/@onemorehomemade/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.4 5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>ส่งทาง LINE</a>
+          <button class="btn btn-out" id="copyBtn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>คัดลอก</button>
+        </div>
+        <p class="fine">ปุ่ม “ส่งทาง LINE” จะเปิดแชต @onemorehomemade พร้อมข้อความนี้ (ต้องมีแอป LINE) · ภาพกล่องด้านบนเป็นภาพจำลองเพื่อสื่อสารไอเดียกับร้าน</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HAPPY DRINK -->
+<section class="happy" id="happy">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="kick" style="color:var(--pink2)">point card</span>
+      <h2 class="h2">ดื่มแล้ว <u>Happy</u><br>สะสมแต้มด้วย 💗</h2>
+      <p>ร้านมีบัตรสะสมแต้ม <b style="color:#fff">“Happy drink”</b> ในบัญชี LINE OA — แอดเพื่อนแล้วสะสมแต้มได้ทุกครั้งที่สั่ง ดูเงื่อนไขการสะสมและของรางวัลได้ในแชตของร้าน</p>
+      <p style="margin-top:12px"><span class="sample">เงื่อนไขแต้ม/รางวัลในหน้านี้เป็นภาพตัวอย่าง · ดูของจริงใน LINE OA</span></p>
+      <div class="cta-row"><a href="https://line.me/R/ti/p/@onemorehomemade" target="_blank" rel="noopener" class="btn btn-line">แอดเพื่อน รับบัตรสะสมแต้ม</a></div>
+    </div>
+    <div class="rv-on">
+      <div class="stampcard">
+        <header><b class="en">Happy drink</b><span style="font-family:var(--head);font-weight:700;font-size:14px">ONE MORE HOMEMADE</span></header>
+        <div class="stamps" id="stamps"></div>
+        <footer>แตะวงกลมเพื่อลองปั๊มแต้ม ✦ ภาพตัวอย่าง</footer>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section>
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="kick">how to order</span>
+      <h2>สั่งง่าย <u>4 ขั้นตอน</u></h2>
+    </div>
+    <div class="steps">
+      <div class="st rv-on"><span class="n">1</span><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round"><path d="M10 14 H54 V42 H30 L18 52 V42 H10 Z" fill="#F8DDD4"/><circle cx="24" cy="28" r="2" fill="#8E3B2F"/><circle cx="32" cy="28" r="2" fill="#8E3B2F"/><circle cx="40" cy="28" r="2" fill="#8E3B2F"/></g></svg><h4>ทัก LINE</h4><p>@onemorehomemade บอกวันที่ จำนวน และแบบที่ต้องการ</p></div>
+      <div class="st rv-on"><span class="n">2</span><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="14" width="44" height="40" rx="6" fill="#FFFCFA"/><path d="M10 24 H54 M22 8 V18 M42 8 V18"/><path d="M24 38 l6 6 12 -12"/></g></svg><h4>จองวัน 3–5 วันก่อน</h4><p>ร้านเช็กคิว สรุปเมนูและราคาให้</p></div>
+      <div class="st rv-on"><span class="n">3</span><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#l-box"/></svg><h4>ยืนยัน &amp; ชำระ</h4><p>ยืนยันรายละเอียด ช่องทางชำระตามที่ร้านแจ้ง <span class="sample">รอร้านยืนยัน</span></p></div>
+      <div class="st rv-on"><span class="n">4</span><svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><circle cx="16" cy="46" r="7" fill="#F8DDD4"/><circle cx="48" cy="46" r="7" fill="#F8DDD4"/><path d="M16 46 L26 26 H38 L48 46 M30 26 L26 16 H20"/><rect x="36" y="14" width="18" height="14" rx="3" fill="#FFFCFA"/></g></svg><h4>ส่งถึงมือ</h4><p>ส่งผ่าน Grab / LINE MAN ทั่วกรุงเทพฯ ค่าส่งตามระยะทาง</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gal-sec" id="gallery">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="kick">gallery</span>
+      <h2>กล่องน่ารัก <u>จากครัวเรา</u></h2>
+      <p>ตัวอย่างงานจัดเบรคและ Food support</p>
+    </div>
+    <div class="gal">
+      <figure class="g big rv-on"><img src="assets/cover.jpg" alt="แซนด์วิชในกล่องใส ONE MORE Homemade" loading="lazy"><figcaption class="cap">แซนด์วิชโฮมเมด</figcaption></figure>
+      <figure class="g p1 rv-on"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#l-box"/></svg><figcaption class="cap">Snack box</figcaption></figure>
+      <figure class="g p2 rv-on"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#l-cookie"/></svg><figcaption class="cap">ขนมอบ</figcaption></figure>
+      <figure class="g p3 rv-on"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#l-drink"/></svg><figcaption class="cap">Happy drink</figcaption></figure>
+      <figure class="g p4 rv-on"><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#l-cup"/></svg><figcaption class="cap">Food support</figcaption></figure>
+    </div>
+    <p class="gal-note rv-on">ช่องภาพวาดเส้นจะแทนที่ด้วยรูปผลงานจริงของร้าน · ดูผลงานล่าสุดที่ <a href="https://www.instagram.com/onemore_homemade/" target="_blank" rel="noopener">Instagram @onemore_homemade</a></p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="kick">sweet words</span>
+      <h2>แชตจากลูกค้า <u>ที่ขออีกกล่อง</u></h2>
+    </div>
+    <div class="chats">
+      <div class="chat rv-on"><div class="top"><span class="av">ม</span><div><b>คุณมุก (ตัวอย่าง)</b><small>จัดเบรคประชุม 40 กล่อง</small></div></div>
+        <div class="bub">กล่องน่ารักมากค่ะ ทุกคนถ่ายรูปก่อนกิน 😆</div><div class="bub">แซนด์วิชอร่อย ไส้แน่นมาก</div><div class="bub me">ขอบคุณมากค่ะ 💗 ไว้สั่งอีกนะคะ</div></div>
+      <div class="chat rv-on"><div class="top"><span class="av">F</span><div><b>บ้านแฟนคลับ (ตัวอย่าง)</b><small>Food support กองถ่าย</small></div></div>
+        <div class="bub">ศิลปินลงสตอรี่ถือกล่องด้วยค่ะ ดีใจมาก 🥹</div><div class="bub">สติกเกอร์ชื่อน้องสวยตรงธีมเป๊ะ</div><div class="bub me">ยินดีมาก ๆ ค่ะ 💫</div></div>
+      <div class="chat rv-on"><div class="top"><span class="av">อ</span><div><b>คุณออย (ตัวอย่าง)</b><small>ปาร์ตี้วันเกิด</small></div></div>
+        <div class="bub">สั่งล่วงหน้า 5 วัน ได้ตรงเวลา ส่ง LINE MAN สะดวกมาก</div><div class="bub">ชื่อร้านตรงมาก One more จริง ๆ</div></div>
+    </div>
+    <p class="note">* บทสนทนาในหน้านี้เป็นตัวอย่างสำหรับ demo — เว็บไซต์จริงจะใช้รีวิว/ข้อความจากลูกค้าของร้าน (เมื่อได้รับอนุญาต)</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv-on"><span class="kick">faq</span><h2>คำถาม <u>ที่พบบ่อย</u></h2></div>
+    <div class="faq">
+      <details class="rv-on"><summary>ต้องสั่งล่วงหน้ากี่วัน?</summary><p>สั่งล่วงหน้า 3–5 วัน งานจำนวนมากหรือ Food support ที่ตกแต่งพิเศษ แนะนำให้ทักเร็วที่สุดเพื่อจองคิว</p></details>
+      <details class="rv-on"><summary>จัดเบรค กับ Food support ต่างกันยังไง?</summary><p>จัดเบรคคิดราคาเป็นรายกล่อง เริ่มต้น 55 บาท/กล่อง เหมาะกับประชุม/อบรม ส่วน Food support เป็นชุดตกแต่งตามธีมศิลปิน เริ่มต้น 700 บาท ใส่สติกเกอร์ ป้าย และข้อความได้</p></details>
+      <details class="rv-on"><summary>ส่งที่ไหนได้บ้าง ค่าส่งเท่าไหร่?</summary><p>ส่งจากย่านอารีย์ไปได้ทั่วกรุงเทพฯ ผ่าน Grab / LINE MAN ค่าส่งคิดตามระยะทางจริงของแอป</p></details>
+      <details class="rv-on"><summary>คัสตอมเมนูได้ไหม?</summary><p>ได้ค่ะ บอกเมนูที่อยากได้ ข้อจำกัดอาหาร หรือธีมสีมาในแชต ร้านจะช่วยจัดให้</p></details>
+      <details class="rv-on"><summary>ติดต่อทางโทรศัพท์ได้ไหม?</summary><p>ร้านรับออร์เดอร์ทาง LINE OA @onemorehomemade เป็นหลัก ทักแชตได้เลย</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section class="area" id="area" style="background:var(--pink3)">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="kick">delivery area</span>
+      <h2 class="h2">ส่งจาก<u>อารีย์</u><br>ทั่วกรุงเทพฯ</h2>
+      <div class="ainfo">
+        <div class="ai"><div class="i"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><b>ครัวย่านอารีย์</b><span>กรุงเทพฯ · ที่อยู่ละเอียด/จุดรับสินค้า รอร้านยืนยัน</span></div></div>
+        <div class="ai"><div class="i"><svg viewBox="0 0 24 24"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-8h5l3 8M11 9l-1-3H7"/></svg></div><div><b>จัดส่งทั่วกรุงเทพฯ</b><span>ค่าส่งตามระยะทาง</span><div class="apps"><em style="background:#00B14F">Grab</em><em style="background:#06C755">LINE MAN</em></div></div></div>
+        <div class="ai"><div class="i"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4-.9L3 20l1.1-4A8.4 8.4 0 1 1 21 11.5z"/></svg></div><div><b>สั่งทาง LINE เท่านั้น</b><span><a href="https://line.me/R/ti/p/@onemorehomemade" target="_blank" rel="noopener" style="color:var(--brick);font-weight:700">@onemorehomemade</a> · IG <a href="https://www.instagram.com/onemore_homemade/" target="_blank" rel="noopener" style="color:var(--brick);font-weight:700">@onemore_homemade</a></span></div></div>
+        <div class="ai"><div class="i"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><div><b>Pre-order</b><span>ล่วงหน้า 3–5 วัน · คัสตอมเมนูได้</span></div></div>
+      </div>
+      <a href="https://line.me/R/ti/p/@onemorehomemade" target="_blank" rel="noopener" class="btn btn-line">ทักสั่งทาง LINE</a>
+    </div>
+    <div class="map rv-on">
+      <iframe title="แผนที่ย่านอารีย์ กรุงเทพ" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%E0%B8%AD%E0%B8%B2%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C%20%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E&z=15&output=embed"></iframe>
+      <span class="pin">📍 ย่านอารีย์ · ส่งทั่ว กทม.</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand"><img src="assets/logo.jpg" alt=""><div><div class="t1 en">One More<br>Homemade</div><div class="t2">One more is never enough</div></div></div>
+        <p>Homemade snack box · จัดเบรค · Food support สำหรับศิลปินและไอดอล ส่งจากย่านอารีย์ทั่วกรุงเทพฯ ตั้งแต่ปี 2020</p>
+      </div>
+      <div><h4 class="hd">เมนู</h4><ul><li><a href="#services">บริการ &amp; ราคา</a></li><li><a href="#builder">สร้างออร์เดอร์</a></li><li><a href="#happy">Happy drink</a></li><li><a href="#gallery">ผลงาน</a></li><li><a href="#area">พื้นที่ส่ง</a></li></ul></div>
+      <div><h4 class="hd">ติดต่อ</h4><ul><li>💬 LINE <a href="https://line.me/R/ti/p/@onemorehomemade" target="_blank" rel="noopener">@onemorehomemade</a></li><li>📷 IG <a href="https://www.instagram.com/onemore_homemade/" target="_blank" rel="noopener">@onemore_homemade</a></li><li>🛵 Grab / LINE MAN ทั่ว กทม.</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 ONE MORE Homemade · อารีย์ กรุงเทพฯ</span><span>Website demo โดย <b>Relearn Solution</b></span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://www.instagram.com/onemore_homemade/" target="_blank" rel="noopener" class="ig" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="#8E3B2F" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#8E3B2F"/></svg></a>
+  <a href="https://line.me/R/ti/p/@onemorehomemade" target="_blank" rel="noopener" class="ln" aria-label="แชต LINE @onemorehomemade"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.4 5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg><span>สั่งทาง LINE</span></a>
+</div>
+<div class="toast" id="toast">คัดลอกข้อความแล้ว ✓</div>
+
+<script>
+const $ = id => document.getElementById(id);
+// reveal
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.rv-on').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+// burger
+const menu = $('menu'), burger = $('burger');
+burger.addEventListener('click', () => { const o = menu.classList.toggle('open'); burger.setAttribute('aria-expanded', o); });
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+// stamp card
+const stamps = $('stamps');
+for (let i = 0; i < 10; i++) {
+  const b = document.createElement('button'); b.type = 'button'; b.className = 'stamp' + (i < 4 ? ' on' : '');
+  b.setAttribute('aria-label', 'แต้มที่ ' + (i + 1));
+  b.innerHTML = i === 9 ? '<span>ONE<br>MORE<br>🎁</span>' : '<svg viewBox="0 0 24 24"><use href="#l-heart"/></svg>';
+  if (i < 9) b.onclick = () => b.classList.toggle('on');
+  stamps.appendChild(b);
+}
+
+// ---------- order builder ----------
+const st = { tab:'break', ev:'ประชุม', color:'#F8DDD4', colorName:'ชมพูพาสเทล' };
+function setTab(t){
+  st.tab = t;
+  ['break','fs'].forEach(k => { $('tab-'+k).setAttribute('aria-selected', k === t); $('pane-'+k).hidden = k !== t; });
+  render();
+}
+$('tab-break').onclick = () => setTab('break');
+$('tab-fs').onclick = () => setTab('fs');
+document.querySelectorAll('[data-tab]').forEach(a => a.addEventListener('click', () => setTab(a.dataset.tab)));
+$('evChips').querySelectorAll('.chip').forEach(c => c.onclick = () => { $('evChips').querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', x === c)); st.ev = c.textContent.trim(); render(); });
+$('colors').querySelectorAll('.sw').forEach(c => c.onclick = () => { $('colors').querySelectorAll('.sw').forEach(x => x.setAttribute('aria-pressed', x === c)); st.color = c.dataset.c; st.colorName = c.dataset.n; render(); });
+document.querySelectorAll('[data-step]').forEach(b => b.onclick = () => { $('qty').value = Math.max(1, (+$('qty').value || 0) + +b.dataset.step); render(); });
+document.querySelectorAll('[data-fstep]').forEach(b => b.onclick = () => { $('sets').value = Math.max(1, (+$('sets').value || 0) + +b.dataset.fstep); render(); });
+document.querySelectorAll('#builder input').forEach(i => i.addEventListener('input', render));
+
+const tz = d => new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+const today = new Date(); today.setHours(0,0,0,0);
+$('date').min = tz(new Date());
+const d5 = new Date(); d5.setDate(d5.getDate() + 5); $('date').value = tz(d5);
+const thDate = v => { if (!v) return '(ยังไม่ระบุ)'; const [y,m,d] = v.split('-').map(Number); return d + ' ' + ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'][m-1] + ' ' + (y + 543); };
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function boxSVG(x, y, s, color, label){
+  return `<g transform="translate(${x} ${y}) scale(${s})">
+    <path d="M0 30 L50 14 L100 30 V86 L50 102 L0 86 Z" fill="#FFFCFA" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round"/>
+    <path d="M0 30 L50 46 L100 30 M50 46 V102" fill="none" stroke="#8E3B2F" stroke-width="1.8"/>
+    <path d="M0 30 L50 14 L100 30 L50 46 Z" fill="${color}" stroke="#8E3B2F" stroke-width="1.8" stroke-linejoin="round"/>
+    <circle cx="76" cy="66" r="17" fill="${color}" stroke="#8E3B2F" stroke-width="1.5"/>
+    <text x="76" y="70" text-anchor="middle" font-family="Noto Sans Thai" font-weight="800" font-size="${label.length > 8 ? 6.5 : 8.5}" fill="#8E3B2F">${esc(label)}</text>
+    <path d="M14 58 q8 -6 16 0" fill="none" stroke="#8E3B2F" stroke-width="1.5" stroke-linecap="round"/>
+  </g>`;
+}
+let msg = '';
+function render(){
+  // lead time
+  const dv = $('date').value, chk = $('leadChk');
+  let days = null; if (dv) { const d = new Date(dv + 'T00:00:00'); days = Math.round((d - today) / 864e5); }
+  chk.className = 'lead-chk ' + (days === null ? 'mid' : days < 3 ? 'bad' : days < 5 ? 'mid' : 'ok');
+  chk.querySelector('i').textContent = days === null ? '…' : days < 3 ? '✕' : days < 5 ? '!' : '✓';
+  chk.querySelector('span').textContent = days === null ? 'เลือกวันที่ต้องการรับ' :
+    days < 3 ? `อีก ${days} วัน — เร็วกว่ากำหนดสั่งล่วงหน้า 3–5 วัน ทักถามคิวกับร้านก่อนนะคะ` :
+    days < 5 ? `อีก ${days} วัน — อยู่ในช่วงสั่งล่วงหน้า แนะนำทักจองคิวเลยค่ะ` :
+    `อีก ${days} วัน — ทันสบาย ๆ ✦`;
+  const place = $('place').value.trim() || '(ระบุภายหลัง)';
+  const time = $('time').value || '-';
+  const g = $('boxes');
+  if (st.tab === 'break') {
+    const q = Math.max(1, parseInt($('qty').value) || 1);
+    $('est').textContent = (q * 55).toLocaleString('th-TH') + ' ฿';
+    $('estLbl').textContent = `เริ่มต้น ${q} กล่อง × 55฿`;
+    $('pvKick').textContent = 'จัดเบรครายกล่อง';
+    $('signG').style.display = 'none';
+    const n = Math.min(q, 6); let h = '';
+    const pos = [[20,120],[110,120],[200,120],[65,70],[155,70],[110,22]];
+    for (let i = 0; i < n; i++) h += boxSVG(pos[i][0], pos[i][1], .9, '#F8DDD4', 'ONE MORE');
+    g.innerHTML = h + (q > 6 ? `<text x="300" y="238" text-anchor="end" font-family="Noto Sans Thai" font-weight="800" font-size="15" fill="#8E3B2F">× ${q} กล่อง</text>` : '');
+    const note = $('bNote').value.trim();
+    msg = `สวัสดีค่ะ ONE MORE Homemade 💗 ขอสั่ง “จัดเบรครายกล่อง” ค่ะ
+• วันที่รับ: ${thDate(dv)} เวลา ${time} น.
+• จำนวน: ${q} กล่อง (เริ่มต้น 55฿/กล่อง)
+• ใช้ในงาน: ${st.ev}
+• เมนู/หมายเหตุ: ${note || 'ให้ร้านแนะนำ'}
+• สถานที่ส่ง: ${place} (Grab / LINE MAN)
+รบกวนเช็กคิวและสรุปราคาให้หน่อยนะคะ ขอบคุณค่ะ 💫`;
+  } else {
+    const sets = Math.max(1, parseInt($('sets').value) || 1);
+    const artist = $('artist').value.trim(), event = $('event').value.trim(), crew = $('crew').value.trim();
+    const sticker = $('sticker').value.trim() || 'Fighting!';
+    const sign = $('sign').value.trim() || ('WE ♥ ' + (artist || 'YOU'));
+    $('est').textContent = (sets * 700).toLocaleString('th-TH') + ' ฿';
+    $('estLbl').textContent = `เริ่มต้น ${sets} ชุด × 700฿`;
+    $('pvKick').textContent = 'Food support · ' + (artist || 'ศิลปินของคุณ');
+    $('signG').style.display = '';
+    $('signRect').setAttribute('fill', st.color);
+    const sg = $('signText'); sg.textContent = sign; sg.setAttribute('font-size', sign.length > 14 ? 10 : sign.length > 10 ? 12.5 : 15);
+    g.innerHTML = boxSVG(14, 124, .9, st.color, sticker) + boxSVG(100, 128, .9, st.color, sticker) + boxSVG(56, 76, .9, st.color, sticker);
+    msg = `สวัสดีค่ะ ONE MORE Homemade 💗 สนใจ “Food support” ค่ะ
+• ศิลปิน/ไอดอล: ${artist || '-'}
+• งาน/โปรเจกต์: ${event || '-'}
+• วันที่ส่ง: ${thDate(dv)} เวลา ${time} น.
+• จำนวน: ${sets} ชุด (เริ่มต้น 700฿/ชุด)${crew ? ` · ทีมงานประมาณ ${crew} คน` : ''}
+• ข้อความสติกเกอร์: ${sticker}
+• ข้อความป้าย: ${sign}
+• สีธีม: ${st.colorName}
+• สถานที่ส่ง: ${place} (Grab / LINE MAN)
+รบกวนแนะนำเมนูและสรุปราคาให้หน่อยนะคะ ขอบคุณค่ะ 💫`;
+  }
+  $('msg').textContent = msg;
+  $('sendLine').href = 'https://line.me/R/oaMessage/@onemorehomemade/?' + encodeURIComponent(msg);
+}
+function toast(t){ const el = $('toast'); el.textContent = t; el.classList.add('on'); setTimeout(() => el.classList.remove('on'), 2200); }
+$('copyBtn').onclick = async () => {
+  try { await navigator.clipboard.writeText(msg); toast('คัดลอกข้อความแล้ว ✓'); }
+  catch (e) { const ta = document.createElement('textarea'); ta.value = msg; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); toast('คัดลอกข้อความแล้ว ✓'); } catch(_) { toast('คัดลอกไม่สำเร็จ'); } ta.remove(); }
+};
+render();
+</script>
+</body>
+</html>

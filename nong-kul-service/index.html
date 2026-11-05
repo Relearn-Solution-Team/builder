@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>น้องกุล กุล | ล้าง ซ่อม เครื่องซักผ้า ล้างแอร์ บริการถึงบ้าน ปทุมธานี–นนทบุรี</title>
+<meta name="description" content="น้องกุล กุล รับซ่อมเครื่องซักผ้า ล้างเครื่องซักผ้า ล้างแอร์ และเครื่องซักผ้าหยอดเหรียญ บริการถึงบ้าน ปทุมธานี รังสิต คลองหลวง ลำลูกกา บางบัวทอง ปากเกร็ด รับทุกยี่ห้อ โทร 091-615-1148">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111111; --ink2:#2b2b2b; --mut:#5a6470;
+  --sky:#2B8FD8; --skyd:#1C6FB0; --sky2:#7DBDEB; --card:#DCEBFA; --card2:#EEF6FD;
+  --yel:#F5C518; --yel2:#FFE27A; --teal:#A9D6DC; --teald:#5FA9B3; --tealbg:#E8F5F6;
+  --w:#fff; --ok:#1F9D55; --fb:#0866FF;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:24px; --sh:0 18px 40px -22px rgba(28,111,176,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--w);line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.hd{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(1180px,92%);margin:0 auto}
+.sample{display:inline-block;font-size:12.5px;font-weight:600;color:#7a5600;background:#FFF6D4;border:1px dashed #d9ad2b;border-radius:8px;padding:1px 9px}
+.mark{background:linear-gradient(transparent 60%,var(--yel) 60%);padding:0 4px}
+
+/* top strip */
+.strip{background:var(--sky);color:#fff;font-family:var(--head);font-weight:700;font-size:14.5px}
+.strip .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;flex-wrap:wrap}
+.strip a{display:inline-flex;align-items:center;gap:6px}
+.strip .tel{background:#fff;color:var(--skyd);border-radius:999px;padding:1px 12px;margin-left:6px}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:50;background:#fff;border-bottom:3px solid var(--ink)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .lg{width:52px;height:52px;border-radius:16px;overflow:hidden;border:3px solid var(--ink);flex:none;background:var(--card)}
+.brand .lg img{width:100%;height:100%;object-fit:cover}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:23px;line-height:1}
+.brand .t2{font-size:12.5px;font-weight:600;color:var(--mut)}
+.menu{display:flex;gap:24px;font-family:var(--head);font-weight:700;font-size:15.5px}
+.menu a{padding:4px 2px;border-radius:6px;transition:background .2s}
+.menu a:hover{background:var(--yel)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:800;border-radius:999px;padding:13px 24px;font-size:16px;border:3px solid var(--ink);transition:transform .18s,background .18s;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:hover{transform:translateY(-2px) rotate(-1deg)}
+.btn-k{background:var(--ink);color:#fff}
+.btn-sky{background:var(--sky);color:#fff}
+.btn-sky:hover{background:var(--skyd)}
+.btn-y{background:var(--yel);color:var(--ink)}
+.btn-w{background:#fff;color:var(--ink)}
+.btn-fb{background:var(--fb);color:#fff;border-color:var(--fb)}
+.burger{display:none;background:var(--yel);border:3px solid var(--ink);border-radius:14px;width:48px;height:44px;place-items:center}
+
+/* hero */
+.hero{position:relative;padding:64px 0 110px;overflow:hidden;background:
+  radial-gradient(circle at 92% 18%,var(--card) 0 180px,transparent 181px),
+  radial-gradient(circle at 4% 92%,var(--tealbg) 0 140px,transparent 141px),#fff}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;position:relative}
+.hello{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:800;font-size:15px;background:var(--card);border-radius:999px;padding:6px 16px 6px 6px}
+.hello b{background:var(--ink);color:#fff;border-radius:999px;padding:2px 12px;font-size:13px}
+.board{margin:22px 0 18px}
+.board .ln{display:block;font-family:var(--head);font-weight:900;font-size:clamp(38px,5.4vw,68px);line-height:1.18;letter-spacing:-.5px}
+.board .ln::before{content:"-";color:var(--sky);margin-right:4px}
+.board .ln:nth-child(3)::before{color:var(--teald)}
+.board .ln em{font-style:normal;color:var(--sky)}
+.board .ln:nth-child(3) em{color:var(--teald)}
+.home{display:inline-block;font-family:var(--head);font-weight:900;font-size:clamp(22px,2.6vw,30px);background:var(--ink);color:var(--yel);padding:4px 18px 6px;border-radius:12px;transform:rotate(-2.5deg);margin:4px 0 8px}
+.hero .lead{font-size:18.5px;color:var(--ink2);max-width:540px;margin-top:14px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.hstats{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
+.hstat{background:var(--card2);border:2px solid var(--card);border-radius:18px;padding:10px 18px}
+.hstat .n{font-family:var(--head);font-weight:900;font-size:28px;line-height:1.1}
+.hstat .n i{font-style:normal;color:var(--sky)}
+.hstat .l{font-size:13.5px;color:var(--mut)}
+
+.hero-art{position:relative;max-width:500px;width:100%;justify-self:center}
+.frame{position:relative;border:4px solid var(--ink);border-radius:30px;overflow:hidden;aspect-ratio:1/1.02;background:var(--card);transform:rotate(1.5deg);box-shadow:var(--sh)}
+.frame img{width:100%;height:100%;object-fit:cover}
+.tape{position:absolute;width:110px;height:30px;background:rgba(245,197,24,.85);z-index:3;border-radius:4px}
+.tape.a{top:-10px;left:30px;transform:rotate(-8deg)}
+.tape.b{bottom:-8px;right:40px;transform:rotate(6deg);background:rgba(169,214,220,.9)}
+.burst{position:absolute;top:-26px;right:-22px;width:150px;height:150px;z-index:4;animation:wob 5s ease-in-out infinite}
+.burst svg{width:100%;height:100%}
+@keyframes wob{50%{transform:rotate(8deg) scale(1.04)}}
+.callcard{position:absolute;left:-30px;bottom:34px;z-index:4;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:12px 16px;box-shadow:var(--sh);font-family:var(--head);animation:bob 4.6s ease-in-out infinite}
+.callcard small{display:block;font-weight:700;font-size:12px;color:var(--mut)}
+.callcard a{display:flex;align-items:center;gap:8px;font-weight:900;font-size:19px;line-height:1.5}
+.callcard a svg{width:16px;height:16px;fill:var(--sky)}
+.vanbadge{position:absolute;right:-18px;bottom:-26px;z-index:4;width:170px;animation:bob 5.2s ease-in-out infinite .8s}
+@keyframes bob{50%{translate:0 -8px}}
+.bubbles span{position:absolute;border-radius:50%;border:3px solid var(--sky2);background:rgba(255,255,255,.6);animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-22px)}}
+.wave{position:absolute;left:0;right:0;bottom:-1px;height:70px}
+.wave svg{width:100%;height:100%;display:block}
+
+/* marquee */
+.marquee{background:var(--sky);color:#fff;overflow:hidden;padding:13px 0;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.track{display:flex;width:max-content;animation:slide 42s linear infinite;font-family:var(--head);font-weight:800;font-size:18.5px}
+.track span{display:flex;align-items:center;gap:20px;padding-right:20px}
+.track span::after{content:"";width:14px;height:18px;background:var(--yel);clip-path:path("M7 0C7 0 0 8 0 12a7 7 0 0 0 14 0C14 8 7 0 7 0z")}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:96px 0;position:relative}
+.sh{text-align:center;max-width:760px;margin:0 auto 52px}
+.tagline{display:inline-block;font-family:var(--head);font-weight:800;font-size:14.5px;background:var(--yel);border:2.5px solid var(--ink);border-radius:10px;padding:3px 14px;transform:rotate(-1.5deg)}
+.sh h2,.h2{font-size:clamp(30px,4.2vw,50px);font-weight:900;margin:16px 0 10px}
+.sh h2 em,.h2 em{font-style:normal;color:var(--sky)}
+.sh p{color:var(--mut);font-size:18px}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.svc{background:var(--card);border-radius:28px;padding:28px 26px 26px;position:relative;display:flex;flex-direction:column;transition:transform .2s}
+.svc:hover{transform:translateY(-6px)}
+.svc.teal{background:var(--tealbg)}
+.svc .art{height:150px;background:#fff;border-radius:20px;display:grid;place-items:center;margin-bottom:20px;border:2.5px solid var(--ink)}
+.svc .art svg{height:120px;width:auto}
+.svc h3{font-size:25px;font-weight:900}
+.svc h3 span{color:var(--sky)}
+.svc.teal h3 span{color:var(--teald)}
+.svc p{color:var(--ink2);font-size:16px;margin:6px 0 14px}
+.plist{list-style:none;display:grid;gap:8px;margin-top:auto}
+.plist li{display:flex;justify-content:space-between;align-items:baseline;gap:10px;background:#fff;border-radius:14px;padding:9px 14px;font-weight:600;font-size:15.5px}
+.plist li b{font-family:var(--head);font-weight:900;color:var(--skyd);white-space:nowrap}
+.svc.teal .plist li b{color:#2f7f8a}
+.svc .sample{margin-top:12px;align-self:flex-start}
+.brandbar{margin-top:34px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;background:var(--ink);color:#fff;border-radius:22px;padding:18px 24px}
+.brandbar .yb{background:var(--yel);color:var(--ink);font-family:var(--head);font-weight:900;padding:4px 14px;border-radius:10px;transform:rotate(-3deg);font-size:18px}
+.brandbar span.b{font-family:var(--head);font-weight:800;letter-spacing:1px;opacity:.9;font-size:15px}
+.brandbar small{color:#aaa;width:100%;text-align:center;font-size:13px}
+
+/* coin-op */
+.coin{background:var(--yel);overflow:hidden;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.coin::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(17,17,17,.08) 2px,transparent 2.5px);background-size:24px 24px}
+.coin .grid{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.coin-photo{position:relative}
+.coin-photo .ph{border:4px solid var(--ink);border-radius:28px;overflow:hidden;transform:rotate(-2deg);background:#fff}
+.coin-photo .ph img{width:100%;aspect-ratio:1/0.95;object-fit:cover}
+.coin-photo .cap{position:absolute;left:18px;bottom:-18px;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:6px 14px;font-family:var(--head);font-weight:800;font-size:14px;transform:rotate(-2deg)}
+.coin-photo .c1{position:absolute;top:-30px;right:-14px;width:96px;animation:flip 4s ease-in-out infinite}
+@keyframes flip{50%{transform:rotateY(180deg) translateY(-6px)}}
+.coin .h2 em{color:var(--ink);background:#fff;padding:0 10px;border-radius:10px}
+.coin p.lead{font-size:18px;color:var(--ink2)}
+.who{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.who span{background:#fff;border:2.5px solid var(--ink);border-radius:999px;padding:3px 14px;font-family:var(--head);font-weight:700;font-size:14.5px}
+.calc{background:#fff;border:3px solid var(--ink);border-radius:24px;padding:22px;margin-top:20px}
+.calc h4{font-size:18px;font-weight:900;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.calc .row{display:flex;align-items:center;gap:14px;margin:14px 0;flex-wrap:wrap}
+.stepper{display:flex;align-items:center;border:2.5px solid var(--ink);border-radius:999px;overflow:hidden}
+.stepper button{width:44px;height:44px;background:var(--card);border:0;font-size:22px;font-weight:900}
+.stepper button:hover{background:var(--sky);color:#fff}
+.stepper output{min-width:64px;text-align:center;font-family:var(--head);font-weight:900;font-size:22px}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg button{border:2px solid var(--ink);background:#fff;border-radius:999px;padding:6px 14px;font-family:var(--head);font-weight:700;font-size:14px}
+.seg button.on{background:var(--ink);color:var(--yel)}
+.calc .out{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
+.calc .out div{background:var(--card2);border-radius:16px;padding:10px 12px}
+.calc .out b{display:block;font-family:var(--head);font-weight:900;font-size:22px;color:var(--skyd);line-height:1.2}
+.calc .out small{font-size:12.5px;color:var(--mut)}
+
+/* area checker */
+.area{background:var(--card2)}
+.ac{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.ac-box{background:#fff;border:3px solid var(--ink);border-radius:28px;padding:28px}
+.ac-box label{font-family:var(--head);font-weight:800;font-size:17px;display:block;margin-bottom:10px}
+.srch{display:flex;gap:10px}
+.srch input{flex:1;min-width:0;padding:13px 18px;border-radius:999px;border:2.5px solid var(--ink);font:inherit;font-size:16.5px}
+.srch input:focus{outline:none;box-shadow:0 0 0 4px var(--yel)}
+.srch button{flex:none}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.quick button{background:var(--card);border:0;border-radius:999px;padding:5px 13px;font-family:var(--head);font-weight:700;font-size:14px;transition:.15s}
+.quick button:hover,.quick button.on{background:var(--sky);color:#fff}
+.res{margin-top:22px;border-radius:20px;padding:18px 20px;border:2.5px dashed var(--sky2);background:var(--card2);min-height:120px}
+.res h4{font-size:20px;font-weight:900;display:flex;align-items:center;gap:10px}
+.res h4 .dot{width:14px;height:14px;border-radius:50%;background:var(--sky2);flex:none}
+.res.in{border-style:solid;border-color:var(--ok);background:#EAF7EF}
+.res.in h4 .dot{background:var(--ok);box-shadow:0 0 0 5px rgba(31,157,85,.2)}
+.res.ask{border-style:solid;border-color:#d9ad2b;background:#FFF8DD}
+.res.ask h4 .dot{background:var(--yel)}
+.res p{color:var(--ink2);font-size:15.5px;margin-top:6px}
+.res .btn{margin-top:12px;padding:9px 18px;font-size:15px}
+.zone{background:#fff;border:3px solid var(--ink);border-radius:28px;padding:18px;position:relative;overflow:hidden}
+.zone svg{width:100%;height:auto;display:block}
+.zone .z{cursor:pointer;transition:.2s}
+.zone .z circle{fill:var(--card);stroke:var(--sky);stroke-width:2.5;transition:.2s}
+.zone .z.hi circle{fill:var(--sky);stroke:var(--ink)}
+.zone .z.hi text{fill:#fff}
+.zone .z text{font-family:'Noto Sans Thai';font-weight:800;font-size:14.5px;fill:var(--ink);text-anchor:middle;pointer-events:none}
+.zone .z:hover circle{fill:var(--yel)}
+.zone .z:focus{outline:none}.zone .z:focus-visible circle{stroke:var(--ink);stroke-width:4}
+.zone .cap{position:absolute;right:16px;bottom:12px;font-size:12px;color:var(--mut)}
+.villages{margin-top:14px;font-size:15px;color:var(--ink2);background:var(--tealbg);border-radius:16px;padding:12px 16px}
+.villages b{font-family:var(--head)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.step{background:#fff;border:3px solid var(--ink);border-radius:26px;padding:24px 22px;position:relative}
+.step .num{position:absolute;top:-22px;left:20px;width:48px;height:48px;border-radius:50%;background:var(--yel);border:3px solid var(--ink);display:grid;place-items:center;font-family:var(--head);font-weight:900;font-size:20px}
+.step svg{width:54px;height:54px;margin:12px 0 10px}
+.step h4{font-size:19px;font-weight:900}
+.step p{font-size:15px;color:var(--mut);margin-top:4px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:260px 260px;gap:16px}
+.gal figure{position:relative;border-radius:24px;overflow:hidden;border:3px solid var(--ink);background:var(--card)}
+.gal figure:first-child{grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:#fff;border:2px solid var(--ink);border-radius:999px;padding:2px 12px;font-family:var(--head);font-weight:800;font-size:13.5px}
+.gal .tile{display:grid;place-items:center;text-align:center;background:var(--sky);color:#fff;padding:16px}
+.gal .tile svg{width:84px;height:84px;margin:0 auto 6px}
+.gal .tile b{font-family:var(--head);font-size:20px;display:block;line-height:1.3}
+.gal .tile small{opacity:.9}
+
+/* reviews */
+.reviews{background:var(--tealbg)}
+.rvtop{display:flex;justify-content:center;margin-bottom:40px}
+.score{display:flex;align-items:center;gap:18px;background:#fff;border:3px solid var(--ink);border-radius:24px;padding:14px 26px}
+.score .big{font-family:var(--head);font-weight:900;font-size:46px;line-height:1;color:var(--ok)}
+.score b{font-family:var(--head);font-size:17px;display:block}
+.score small{color:var(--mut)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border-radius:24px;padding:24px;position:relative;border:2px solid #cfe5e8}
+.rv .bubble{position:absolute;top:-14px;right:20px;background:var(--yel);border:2px solid var(--ink);border-radius:10px;padding:0 10px;font-size:12px;font-weight:700;font-family:var(--head)}
+.rv .rec{display:inline-flex;align-items:center;gap:6px;font-weight:700;color:var(--ok);font-size:14px}
+.rv p{margin:10px 0 16px;font-size:16.5px}
+.rv .p{display:flex;align-items:center;gap:12px}
+.rv .av{width:44px;height:44px;border-radius:50%;background:var(--card);border:2.5px solid var(--ink);display:grid;place-items:center;font-family:var(--head);font-weight:900}
+.rv .p b{font-family:var(--head);display:block}
+.rv .p small{color:var(--mut)}
+.note{text-align:center;color:var(--mut);font-size:13.5px;margin-top:22px}
+
+/* contact */
+.contact .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:stretch}
+.phones{display:grid;gap:12px;margin:24px 0}
+.phone{display:flex;align-items:center;gap:16px;background:var(--card);border-radius:22px;padding:14px 18px;border:3px solid transparent;transition:.2s}
+.phone:hover{border-color:var(--ink);background:#fff}
+.phone .i{width:52px;height:52px;border-radius:50%;background:var(--sky);display:grid;place-items:center;flex:none}
+.phone .i svg{width:24px;height:24px;fill:#fff}
+.phone small{display:block;font-weight:700;color:var(--mut);font-size:13px}
+.phone b{font-family:var(--head);font-weight:900;font-size:28px;letter-spacing:1px;line-height:1.2}
+.phone.m .i{background:var(--fb)}
+.phone.m b{font-size:20px;letter-spacing:0}
+.areas{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.areas span{background:#fff;border:2px solid var(--ink);border-radius:999px;padding:1px 11px;font-size:14px;font-weight:600}
+.mapbox{border:4px solid var(--ink);border-radius:30px;overflow:hidden;position:relative;min-height:460px;background:var(--card)}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapbox .pin{position:absolute;left:14px;top:14px;background:var(--yel);border:3px solid var(--ink);border-radius:14px;padding:6px 14px;font-family:var(--head);font-weight:800;font-size:14px}
+
+/* footer */
+footer{background:var(--ink);color:#bbb;padding:64px 0 28px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid #333}
+footer h4{color:#fff;font-size:17px;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:6px}
+footer a:hover{color:var(--yel)}
+.ft .brand .t1{color:#fff}.ft .brand .t2{color:#999}
+.ft p{margin-top:14px;max-width:360px}
+.copy{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:22px;font-size:13px}
+
+/* fab */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.fab a{height:58px;min-width:58px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;border:3px solid var(--ink);box-shadow:0 10px 22px -8px rgba(0,0,0,.4);transition:transform .2s;font-family:var(--head);font-weight:800}
+.fab a:hover{transform:scale(1.06)}
+.fab .m{background:var(--fb);border-color:#fff}
+.fab .c{background:var(--yel);padding:0 20px 0 16px;animation:ring 2.4s infinite}
+.fab svg{width:26px;height:26px}
+@keyframes ring{0%,100%{box-shadow:0 10px 22px -8px rgba(0,0,0,.4),0 0 0 0 rgba(245,197,24,.8)}50%{box-shadow:0 10px 22px -8px rgba(0,0,0,.4),0 0 0 14px rgba(245,197,24,0)}}
+
+.rvl{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rvl.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:40px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .svc-grid .svc:last-child{grid-column:1/-1}
+}
+@media (max-width:920px){
+  .menu,.nav-cta{display:none}
+  .burger{display:grid}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 4%;gap:12px;border-bottom:3px solid var(--ink)}
+  .hero{padding:44px 0 100px}
+  .hero .wrap,.coin .grid,.ac,.contact .grid{grid-template-columns:1fr}
+  .hero-art{max-width:400px;margin-top:20px}
+  .coin-photo{max-width:440px;margin:0 auto;width:100%}
+  .rv-grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gal figure{height:240px}
+  .gal figure:first-child{grid-column:1/-1;grid-row:auto;height:300px}
+  .ft{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:68px 0}
+  .strip .hide-sm{display:none}
+  .brand .t2{display:none}
+  .svc-grid{grid-template-columns:1fr}
+  .hero-art{max-width:310px}
+  .burst{width:110px;height:110px;top:-22px;right:-14px}
+  .callcard{left:-12px;bottom:20px;padding:8px 12px}
+  .callcard a{font-size:16px}
+  .vanbadge{width:120px;right:-10px;bottom:-24px}
+  .hstat{padding:8px 14px;flex:1}
+  .hstat .n{font-size:23px}
+  .cta-row .btn{flex:1}
+  .calc .out{grid-template-columns:1fr}
+  .calc .out div{display:flex;justify-content:space-between;align-items:baseline}
+  .ac-box{padding:20px}
+  .srch{flex-direction:column}
+  .steps{grid-template-columns:1fr 1fr;gap:14px;row-gap:34px}
+  .step{padding:22px 14px 16px}
+  .step h4{font-size:16.5px}
+  .step p{font-size:14px}
+  .step svg{width:42px;height:42px;margin:8px 0 6px}
+  .bubbles{display:none}
+  .gal figcaption{font-size:12px;padding:1px 9px;white-space:nowrap}
+  .gal .tile small{display:none}
+  .gal{gap:10px}
+  .gal figure{height:180px}
+  .gal figure:first-child{height:240px}
+  .gal .tile b{font-size:16px}
+  .gal .tile svg{width:56px;height:56px}
+  .ft{grid-template-columns:1fr}
+  .mapbox{min-height:340px}
+  .phone b{font-size:24px}
+  .fab .c span{display:none}
+  .fab .c{padding:0}
+  .score{padding:12px 16px;gap:12px}
+  .score .big{font-size:36px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rvl{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-msg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.1 2 11.3c0 2.9 1.4 5.5 3.7 7.2V22l3.4-1.9c.9.3 1.9.4 2.9.4 5.5 0 10-4.1 10-9.2S17.5 2 12 2zm1 12.4-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 5-2.7-5.5 5.8z"/></symbol>
+  </defs>
+</svg>
+
+<div class="strip">
+  <div class="wrap">
+    <span>🏠 บริการถึงบ้านครับ · ปทุมธานี – นนทบุรี</span>
+    <span class="hide-sm">โทร <a class="tel" href="tel:0916151148">091-615-1148</a> <a class="tel" href="tel:0924727173">092-472-7173</a></span>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="น้องกุล กุล หน้าแรก">
+      <span class="lg"><img src="assets/tech-cleaning.jpg" alt=""></span>
+      <div><div class="t1">น้องกุล กุล</div><div class="t2">ล้าง ซ่อม เครื่องซักผ้า · ล้างแอร์</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#services">บริการ</a>
+      <a href="#coin">เครื่องหยอดเหรียญ</a>
+      <a href="#area">เช็กพื้นที่</a>
+      <a href="#gallery">ผลงาน</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#contact">ติดต่อ</a>
+    </div>
+    <a href="tel:0916151148" class="btn btn-k nav-cta"><svg fill="currentColor"><use href="#i-phone"/></svg>โทรเรียกช่าง</a>
+    <button class="burger" id="burger" aria-label="เปิดเมนู" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" stroke="#111" stroke-width="2.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="bubbles" aria-hidden="true"><span style="width:26px;height:26px;left:46%;top:14%"></span><span style="width:14px;height:14px;left:52%;top:70%;animation-delay:1.5s"></span><span style="width:40px;height:40px;left:6%;top:30%;animation-delay:.8s"></span></div>
+  <div class="wrap">
+    <div class="rvl">
+      <span class="hello"><b>สวัสดีครับ</b> ช่างน้องกุล ปทุมธานี–นนทบุรี</span>
+      <h1 class="board">
+        <span class="ln">ซ่อม<em>เครื่องซักผ้า</em></span>
+        <span class="ln">ล้าง<em>เครื่องซักผ้า</em></span>
+        <span class="ln">ล้าง<em>แอร์</em></span>
+      </h1>
+      <span class="home">บริการถึงบ้านครับ 🏠</span>
+      <p class="lead">ถอดถังล้างจนเห็นสแตนเลสเงา ซ่อมอาการเสียให้ใช้งานได้ต่อ รวมถึง<b class="mark">เครื่องซักผ้าหยอดเหรียญ</b>สำหรับหอพักและร้านสะดวกซัก — <b>รับทุกยี่ห้อ!</b></p>
+      <div class="cta-row">
+        <a href="tel:0916151148" class="btn btn-sky"><svg fill="currentColor"><use href="#i-phone"/></svg>091-615-1148</a>
+        <a href="#area" class="btn btn-w">บ้านเราอยู่ในพื้นที่ไหม? →</a>
+      </div>
+      <div class="hstats">
+        <div class="hstat"><div class="n">1.6<i>K</i></div><div class="l">ผู้ติดตาม Facebook</div></div>
+        <div class="hstat"><div class="n">100<i>%</i></div><div class="l">แนะนำ (12 รีวิว)</div></div>
+        <div class="hstat"><div class="n">12<i>+</i></div><div class="l">อำเภอ/ย่านที่ให้บริการ</div></div>
+      </div>
+    </div>
+    <div class="hero-art rvl">
+      <div class="burst" aria-hidden="true"><svg viewBox="0 0 150 150"><path d="M75 4l10 20 21-12 2 23 23-3-8 22 21 10-18 15 14 18-23 4 4 23-22-7-6 22-17-15-17 15-6-22-22 7 4-23-23-4 14-18-18-15 21-10-8-22 23 3 2-23 21 12z" fill="#F5C518" stroke="#111" stroke-width="4" stroke-linejoin="round"/><text x="75" y="72" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="22" fill="#111">รับทุก</text><text x="75" y="98" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="22" fill="#111">ยี่ห้อ!</text></svg></div>
+      <div class="frame"><span class="tape a"></span><img src="assets/tech-cleaning.jpg" alt="ช่างน้องกุลกำลังขัดล้างถังซักเครื่องซักผ้าที่บ้านลูกค้า"><span class="tape b"></span></div>
+      <div class="callcard"><small>โทรเรียกช่างได้ 2 เบอร์</small><a href="tel:0916151148"><svg><use href="#i-phone"/></svg>091-615-1148</a><a href="tel:0924727173"><svg><use href="#i-phone"/></svg>092-472-7173</a></div>
+      <svg class="vanbadge" viewBox="0 0 170 110" aria-hidden="true"><rect x="6" y="22" width="104" height="62" rx="12" fill="#fff" stroke="#111" stroke-width="4"/><path d="M110 40h28l24 22v22h-52z" fill="#2B8FD8" stroke="#111" stroke-width="4" stroke-linejoin="round"/><path d="M118 46h18l14 14h-32z" fill="#DCEBFA" stroke="#111" stroke-width="3"/><circle cx="38" cy="88" r="13" fill="#111"/><circle cx="38" cy="88" r="5" fill="#F5C518"/><circle cx="134" cy="88" r="13" fill="#111"/><circle cx="134" cy="88" r="5" fill="#F5C518"/><text x="58" y="50" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="15" fill="#111">ถึงบ้าน</text><text x="58" y="70" text-anchor="middle" font-family="Noto Sans Thai" font-weight="800" font-size="12" fill="#2B8FD8">น้องกุล กุล</text><path d="M0 104h170" stroke="#111" stroke-width="3" stroke-dasharray="10 8"/></svg>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0 40 Q180 0 360 30 T720 30 T1080 26 T1440 34 V70 H0z" fill="#2B8FD8"/></svg></div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>ซ่อมเครื่องซักผ้า</span><span>ล้างเครื่องซักผ้า</span><span>ล้างแอร์</span><span>บริการถึงบ้านครับ</span><span>รับทุกยี่ห้อ!</span><span>#ล้างเครื่องซักผ้าหยอดเหรียญSAMSUNG</span><span>คลอง 9 อ.ลำลูกกา</span><span>สนใจสอบถามข้อมูลได้ที่เพจ Facebook</span>
+    <span>ซ่อมเครื่องซักผ้า</span><span>ล้างเครื่องซักผ้า</span><span>ล้างแอร์</span><span>บริการถึงบ้านครับ</span><span>รับทุกยี่ห้อ!</span><span>#ล้างเครื่องซักผ้าหยอดเหรียญSAMSUNG</span><span>คลอง 9 อ.ลำลูกกา</span><span>สนใจสอบถามข้อมูลได้ที่เพจ Facebook</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="tagline">บริการของน้องกุล</span>
+      <h2>3 งานหลัก <em style="white-space:nowrap">จบในช่างคนเดียว</em></h2>
+      <p>ไม่ต้องหาช่างหลายเจ้า เครื่องซักผ้าก็ได้ แอร์ก็ได้ นัดวันเดียวทำให้ครบ</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rvl">
+        <div class="art"><svg viewBox="0 0 160 120" aria-hidden="true"><path d="M30 30 v60 a50 14 0 0 0 100 0 v-60" fill="#EEF6FD" stroke="#111" stroke-width="4"/><g fill="#7DBDEB"><circle cx="48" cy="52" r="4"/><circle cx="64" cy="60" r="4"/><circle cx="80" cy="52" r="4"/><circle cx="96" cy="60" r="4"/><circle cx="112" cy="52" r="4"/><circle cx="56" cy="76" r="4"/><circle cx="72" cy="84" r="4"/><circle cx="88" cy="76" r="4"/><circle cx="104" cy="84" r="4"/></g><ellipse cx="80" cy="30" rx="50" ry="14" fill="#fff" stroke="#111" stroke-width="4"/><g fill="#fff" stroke="#2B8FD8" stroke-width="3"><circle cx="140" cy="20" r="10"/><circle cx="150" cy="44" r="6"/><circle cx="16" cy="28" r="8"/></g><path d="M118 8l6 10 10-4" stroke="#F5C518" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div>
+        <h3>ล้าง<span>เครื่องซักผ้า</span></h3>
+        <p>ถอดถังซัก ใบพัด ถาดผงซักฟอก ล้างคราบดำ คราบสนิม ให้ผ้าหายเหม็นอับ</p>
+        <ul class="plist"><li>ฝาบน <b>เริ่ม ฿1,000</b></li><li>ฝาหน้า <b>เริ่ม ฿1,500</b></li><li>2 ถัง <b>เริ่ม ฿800</b></li></ul>
+        <span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span>
+      </div>
+      <div class="svc rvl">
+        <div class="art"><svg viewBox="0 0 160 120" aria-hidden="true"><rect x="36" y="10" width="70" height="98" rx="12" fill="#EEF6FD" stroke="#111" stroke-width="4"/><path d="M36 32h70" stroke="#111" stroke-width="4"/><circle cx="71" cy="70" r="24" fill="#fff" stroke="#111" stroke-width="4"/><circle cx="50" cy="21" r="4" fill="#2B8FD8"/><g transform="translate(96 46) rotate(30)"><rect x="-6" y="0" width="12" height="54" rx="5" fill="#F5C518" stroke="#111" stroke-width="4"/><path d="M-14 -4 a14 14 0 1 1 28 0 l-7 8 h-14z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/></g></svg></div>
+        <h3>ซ่อม<span>เครื่องซักผ้า</span></h3>
+        <p>ไม่ปั่น ไม่หมุน น้ำไม่เข้า น้ำไม่ออก เสียงดัง ตรวจเช็กหน้างาน บอกราคาก่อนซ่อม</p>
+        <ul class="plist"><li>ค่าตรวจเช็กอาการ <b>฿300–500</b></li><li>ค่าซ่อม + อะไหล่ <b>แจ้งก่อนทำ</b></li></ul>
+        <span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span>
+      </div>
+      <div class="svc teal rvl">
+        <div class="art"><svg viewBox="0 0 160 120" aria-hidden="true"><rect x="14" y="18" width="132" height="46" rx="12" fill="#E8F5F6" stroke="#111" stroke-width="4"/><path d="M26 50h108" stroke="#111" stroke-width="3"/><circle cx="128" cy="32" r="4" fill="#1F9D55"/><g stroke="#5FA9B3" stroke-width="4" stroke-linecap="round" fill="none"><path d="M44 74 q-8 12 0 22 t0 20"/><path d="M80 74 q-8 12 0 22 t0 20"/><path d="M116 74 q-8 12 0 22 t0 20"/></g><g fill="#7DBDEB"><path d="M62 82 l5 8 a6 6 0 1 1-10 0z"/><path d="M98 90 l5 8 a6 6 0 1 1-10 0z"/></g></svg></div>
+        <h3>ล้าง<span>แอร์</span></h3>
+        <p>ล้างแอร์ติดผนังให้ลมเย็นฉ่ำ หายกลิ่น ลดค่าไฟ นัดพร้อมงานล้างเครื่องซักผ้าได้</p>
+        <ul class="plist"><li>แอร์ผนัง 9,000–12,000 BTU <b>เริ่ม ฿500</b></li><li>18,000 BTU ขึ้นไป <b>สอบถาม</b></li></ul>
+        <span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span>
+      </div>
+    </div>
+    <div class="brandbar rvl">
+      <span class="yb">รับทุกยี่ห้อ!</span>
+      <span class="b">SAMSUNG</span><span class="b">HITACHI</span><span class="b">LG</span><span class="b">Panasonic</span><span class="b">TOSHIBA</span><span class="b">Electrolux</span><span class="b">SHARP</span><span class="b">Haier</span>
+      <small>ตัวอย่างยี่ห้อ — ร้านระบุว่า "รับทุกยี่ห้อ" (ภาพผลงานมี Samsung และ Hitachi)</small>
+    </div>
+  </div>
+</section>
+
+<!-- COIN-OP -->
+<section class="coin" id="coin">
+  <div class="wrap grid">
+    <div class="coin-photo rvl">
+      <svg class="c1" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="44" fill="#F5C518" stroke="#111" stroke-width="4"/><circle cx="48" cy="48" r="32" fill="none" stroke="#111" stroke-width="3" stroke-dasharray="4 5"/><text x="48" y="60" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="34" fill="#111">฿</text></svg>
+      <div class="ph"><img src="assets/job-coin-samsung.jpg" alt="เครื่องซักผ้าหยอดเหรียญ Samsung 2 เครื่อง งานของร้านน้องกุล กุล"></div>
+      <span class="cap">งานจริง · เครื่องหยอดเหรียญ SAMSUNG</span>
+    </div>
+    <div class="rvl">
+      <span class="tagline" style="background:#fff">สำหรับเจ้าของหอพัก &amp; ร้านสะดวกซัก</span>
+      <h2 class="h2">ล้างเครื่องซักผ้า<br><em>หยอดเหรียญ</em></h2>
+      <p class="lead">เครื่องหยอดเหรียญซักวันละหลายรอบ คราบสะสมไวกว่าเครื่องบ้าน ผ้าลูกค้ามีกลิ่น = รีวิวไม่ดี น้องกุลรับล้างและซ่อมเครื่องหยอดเหรียญถึงที่ ทำทีละเครื่องเพื่อให้เครื่องอื่นยังเปิดให้บริการได้</p>
+      <div class="who"><span>🏢 หอพัก / อพาร์ตเมนต์</span><span>🧺 ร้านสะดวกซัก</span><span>🏘️ หมู่บ้าน / คอนโด</span></div>
+      <div class="calc">
+        <h4>คำนวณงบล้างหลายเครื่อง <span class="sample">ตัวอย่างเท่านั้น</span></h4>
+        <div class="row"><b class="hd">จำนวนเครื่อง</b>
+          <div class="stepper"><button id="cMinus" aria-label="ลดจำนวน">−</button><output id="cN">4</output><button id="cPlus" aria-label="เพิ่มจำนวน">+</button></div></div>
+        <div class="row"><b class="hd">ล้างทุก</b><div class="seg" id="cFreq"><button data-m="3">3 เดือน</button><button data-m="6" class="on">6 เดือน</button><button data-m="12">ปีละครั้ง</button></div></div>
+        <div class="out">
+          <div><small>ต่อครั้ง (ประมาณ)</small><b id="cPer">฿3,600</b></div>
+          <div><small>ต่อปี (ประมาณ)</small><b id="cYear">฿7,200</b></div>
+          <div><small>เวลาหน้างาน</small><b id="cTime">~4–6 ชม.</b></div>
+        </div>
+        <p style="font-size:13px;color:var(--mut);margin-top:10px">* ตัวเลขเป็นตัวอย่างสำหรับ demo (สมมุติ ฿1,000/เครื่อง ลด 10% เมื่อ 3 เครื่องขึ้นไป) ราคาจริงโทรสอบถามร้าน</p>
+        <a href="tel:0916151148" class="btn btn-k" style="margin-top:12px"><svg fill="currentColor"><use href="#i-phone"/></svg>ขอใบเสนอราคา</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREA CHECKER -->
+<section class="area" id="area">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="tagline">งานในหมู่บ้านใกล้คุณ</span>
+      <h2>บ้านเรา <em>อยู่ในพื้นที่ไหม?</em></h2>
+      <p>พิมพ์อำเภอ ตำบล หรือชื่อหมู่บ้าน แล้วเช็กได้ทันที — ร้านให้บริการตามรายชื่อด้านล่าง "และพื้นที่ใกล้เคียง"</p>
+    </div>
+    <div class="ac">
+      <div class="ac-box rvl">
+        <label for="q">พิมพ์ย่านของคุณ</label>
+        <div class="srch"><input id="q" placeholder="เช่น ลำลูกกา, คลอง 9, รังสิต, พฤกษา" maxlength="60" autocomplete="off"><button class="btn btn-sky" id="qBtn">เช็กเลย</button></div>
+        <div class="quick" id="quick"></div>
+        <div class="res" id="res" aria-live="polite"><h4><span class="dot"></span>ลองพิมพ์หรือแตะชื่อย่านด้านบน</h4><p>ระบบจะบอกว่าอยู่ในพื้นที่ที่ร้านระบุไว้หรือไม่</p></div>
+        <div class="villages">🏘️ <b>ลงงานบ่อยในหมู่บ้านจัดสรร</b> ย่านคลองหลวง–ลำลูกกา เช่น หมู่บ้านพฤกษา และศุภาลัย</div>
+      </div>
+      <div class="zone rvl">
+        <svg viewBox="0 0 520 420" role="img" aria-label="แผนผังพื้นที่บริการ (ภาพประกอบ ไม่ใช่แผนที่จริง)">
+          <path d="M40 210 C80 60 300 20 440 90 C520 140 500 330 380 380 C240 430 60 360 40 210z" fill="#EEF6FD" stroke="#7DBDEB" stroke-width="3" stroke-dasharray="10 8"/>
+          <path d="M250 30 C240 140 270 240 240 400" stroke="#7DBDEB" stroke-width="10" fill="none" opacity=".5" stroke-linecap="round"/>
+          <text x="262" y="60" font-family="Noto Sans Thai" font-size="12" fill="#1C6FB0" font-weight="700">แม่น้ำเจ้าพระยา</text>
+          <g id="zones"></g>
+        </svg>
+        <span class="cap">* แผนผังประกอบ ไม่ใช่ตำแหน่งจริงตามแผนที่</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section id="steps">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="tagline">เรียกช่างง่ายๆ</span>
+      <h2>4 ขั้นตอน <em>ช่างไปถึงบ้าน</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step rvl"><span class="num">1</span><svg viewBox="0 0 54 54"><rect x="14" y="4" width="26" height="46" rx="6" fill="#DCEBFA" stroke="#111" stroke-width="3"/><circle cx="27" cy="42" r="3" fill="#111"/><path d="M42 12a10 10 0 0 1 0 14M46 8a16 16 0 0 1 0 22" stroke="#2B8FD8" stroke-width="3" fill="none" stroke-linecap="round"/></svg><h4>โทร / ทักเพจ</h4><p>091-615-1148 หรือ 092-472-7173</p></div>
+      <div class="step rvl"><span class="num">2</span><svg viewBox="0 0 54 54"><rect x="6" y="12" width="42" height="32" rx="6" fill="#fff" stroke="#111" stroke-width="3"/><circle cx="27" cy="28" r="9" fill="#DCEBFA" stroke="#111" stroke-width="3"/><rect x="18" y="6" width="16" height="8" rx="2" fill="#F5C518" stroke="#111" stroke-width="3"/></svg><h4>บอกยี่ห้อ + อาการ</h4><p>ส่งรูปเครื่อง/แอร์ ให้ช่างประเมินคร่าวๆ</p></div>
+      <div class="step rvl"><span class="num">3</span><svg viewBox="0 0 54 54"><rect x="6" y="10" width="42" height="38" rx="6" fill="#fff" stroke="#111" stroke-width="3"/><path d="M6 20h42M16 6v8M38 6v8" stroke="#111" stroke-width="3" stroke-linecap="round"/><rect x="28" y="28" width="10" height="10" rx="2" fill="#2B8FD8"/></svg><h4>นัดวัน-เวลา</h4><p>ช่างเดินทางไปถึงบ้าน หอพัก หรือร้าน</p></div>
+      <div class="step rvl"><span class="num">4</span><svg viewBox="0 0 54 54"><circle cx="27" cy="27" r="22" fill="#E8F5F6" stroke="#111" stroke-width="3"/><path d="M17 28l7 7 14-15" stroke="#1F9D55" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><h4>ล้าง/ซ่อม เสร็จ</h4><p>ทดลองเดินเครื่องให้ดูก่อนส่งมอบ</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="background:var(--card2)">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="tagline">ผลงานจากเพจ</span>
+      <h2>ล้างจน<em>เงาวับ</em> เห็นกันชัดๆ</h2>
+      <p>ภาพจากเพจ Facebook "น้องกุล กุล ล้าง ซ่อม เครื่องซักผ้า ล้างแอร์ บริการถึงบ้าน"</p>
+    </div>
+    <div class="gal">
+      <figure class="rvl"><img src="assets/cover-drums.jpg" alt="ถังซักสแตนเลส ใบพัด และชิ้นส่วนเครื่องซักผ้าที่ถอดล้างสะอาดแล้ว"><figcaption>ถอดถัง ใบพัด ล้างทุกชิ้น</figcaption></figure>
+      <figure class="rvl"><img src="assets/tech-cleaning.jpg" alt="ช่างขัดล้างคราบสนิมในถังเครื่องซักผ้า"><figcaption>ขัดคราบสนิมในถัง</figcaption></figure>
+      <figure class="rvl"><img src="assets/job-hitachi.jpg" alt="เครื่องซักผ้าฝาบน Hitachi 14 กก. งานของร้านน้องกุล" style="object-position:50% 30%"><figcaption>ฝาบน HITACHI</figcaption></figure>
+      <figure class="rvl"><img src="assets/job-coin-samsung.jpg" alt="เครื่องซักผ้าหยอดเหรียญ Samsung"><figcaption>หยอดเหรียญ</figcaption></figure>
+      <figure class="tile rvl"><div><svg viewBox="0 0 84 84" aria-hidden="true"><rect x="8" y="20" width="68" height="30" rx="8" fill="#fff" stroke="#111" stroke-width="4"/><path d="M16 42h52" stroke="#111" stroke-width="3"/><g stroke="#F5C518" stroke-width="4" stroke-linecap="round" fill="none"><path d="M26 58q-5 7 0 14"/><path d="M42 58q-5 7 0 14"/><path d="M58 58q-5 7 0 14"/></g></svg><b>ล้างแอร์ด้วย<br>นัดทีเดียวจบ</b><small>ภาพงานแอร์ · รอร้านส่งเพิ่ม</small></div></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="tagline">เสียงจากลูกค้า</span>
+      <h2>ลูกค้า <em>แนะนำต่อ</em></h2>
+    </div>
+    <div class="rvtop rvl"><div class="score"><div class="big">100%</div><div><b>แนะนำ จาก 12 รีวิวบน Facebook</b><small>ข้อมูลจากหน้าเพจของร้าน</small></div></div></div>
+    <div class="rv-grid">
+      <div class="rv rvl"><span class="bubble">ตัวอย่างรีวิว</span><span class="rec">✔ แนะนำ</span><p>เรียกมาล้างเครื่องฝาบนที่บ้านแถวลำลูกกา ช่างถอดถังออกมาให้ดู คราบดำเยอะมาก ล้างเสร็จเงาเหมือนใหม่ ผ้าไม่เหม็นอับแล้ว</p><div class="p"><div class="av">ม</div><div><b>คุณมด</b><small>ล้างเครื่องซักผ้า · ลำลูกกา</small></div></div></div>
+      <div class="rv rvl"><span class="bubble">ตัวอย่างรีวิว</span><span class="rec">✔ แนะนำ</span><p>หอพักมีเครื่องหยอดเหรียญหลายเครื่อง ช่างทยอยล้างให้ทีละเครื่อง ลูกหอยังใช้เครื่องอื่นได้ ไม่ต้องปิดทั้งวัน</p><div class="p"><div class="av">ต</div><div><b>คุณต่าย</b><small>เจ้าของหอพัก · คลองหลวง</small></div></div></div>
+      <div class="rv rvl"><span class="bubble">ตัวอย่างรีวิว</span><span class="rec">✔ แนะนำ</span><p>นัดล้างแอร์กับล้างเครื่องซักผ้าวันเดียวกัน คุยง่าย มาตรงเวลา ราคาบอกก่อนทำ</p><div class="p"><div class="av">บ</div><div><b>คุณบี</b><small>ล้างแอร์ · บางบัวทอง</small></div></div></div>
+    </div>
+    <p class="note">* ข้อความรีวิวด้านบนเป็นตัวอย่างสำหรับ demo (ตัวเลข 100% แนะนำ จาก 12 รีวิว มาจากเพจจริง) — เว็บไซต์จริงจะใช้รีวิวจริงจากลูกค้า</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap grid">
+    <div class="rvl">
+      <span class="tagline">ติดต่อน้องกุล</span>
+      <h2 class="h2">โทรเลยครับ <em>ไปถึงบ้าน</em></h2>
+      <div class="phones">
+        <a class="phone" href="tel:0916151148"><span class="i"><svg><use href="#i-phone"/></svg></span><span><small>เบอร์ 1</small><b>091-615-1148</b></span></a>
+        <a class="phone" href="tel:0924727173"><span class="i"><svg><use href="#i-phone"/></svg></span><span><small>เบอร์ 2</small><b>092-472-7173</b></span></a>
+        <a class="phone m" href="https://m.me/100049007385100" target="_blank" rel="noopener"><span class="i"><svg><use href="#i-msg"/></svg></span><span><small>ทักแชทเพจ Facebook</small><b>Messenger น้องกุล กุล</b></span></a>
+      </div>
+      <b class="hd" style="font-size:17px">พื้นที่บริการ (ตามที่ร้านระบุ)</b>
+      <div class="areas"><span>เมืองปทุมธานี</span><span>ลาดหลุมแก้ว</span><span>บางบัวทอง</span><span>บางใหญ่</span><span>ปากเกร็ด</span><span>สามโคก</span><span>รังสิต</span><span>นวนคร</span><span>คลองหลวง</span><span>ธัญบุรี</span><span>ลำลูกกา</span><span>สายไหม</span></div>
+      <p style="margin-top:10px;color:var(--mut);font-size:15px">และพื้นที่ใกล้เคียง · บริการถึงบ้านครับ</p>
+    </div>
+    <div class="mapbox rvl">
+      <iframe title="แผนที่พื้นที่บริการ ปทุมธานี" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%E0%B8%84%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%20%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5&z=12&output=embed"></iframe>
+      <span class="pin">📍 บริการถึงบ้าน · ปทุมธานี–นนทบุรี</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand"><span class="lg"><img src="assets/tech-cleaning.jpg" alt=""></span><div><div class="t1">น้องกุล กุล</div><div class="t2">ล้าง ซ่อม เครื่องซักผ้า · ล้างแอร์</div></div></div>
+        <p>ล้าง ซ่อม เครื่องซักผ้า ล้างแอร์ และเครื่องซักผ้าหยอดเหรียญ บริการถึงบ้าน ปทุมธานี–นนทบุรี รับทุกยี่ห้อ</p>
+      </div>
+      <div><h4 class="hd">บริการ</h4><ul><li><a href="#services">ล้างเครื่องซักผ้า</a></li><li><a href="#services">ซ่อมเครื่องซักผ้า</a></li><li><a href="#services">ล้างแอร์</a></li><li><a href="#coin">เครื่องหยอดเหรียญ</a></li></ul></div>
+      <div><h4 class="hd">ติดต่อ</h4><ul><li>☎ <a href="tel:0916151148">091-615-1148</a></li><li>☎ <a href="tel:0924727173">092-472-7173</a></li><li><a href="https://www.facebook.com/100049007385100" target="_blank" rel="noopener">เพจ Facebook</a> · <a href="https://m.me/100049007385100" target="_blank" rel="noopener">Messenger</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 น้องกุล กุล ล้าง ซ่อม เครื่องซักผ้า ล้างแอร์</span><span>Website demo โดย Relearn Solution</span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://m.me/100049007385100" target="_blank" rel="noopener" class="m" aria-label="ทัก Messenger"><svg fill="#fff"><use href="#i-msg"/></svg></a>
+  <a href="tel:0916151148" class="c" aria-label="โทร 091-615-1148"><svg fill="#111"><use href="#i-phone"/></svg><span>โทรเรียกช่าง</span></a>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rvl').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+const menu=document.getElementById('menu'),burger=document.getElementById('burger');
+burger.addEventListener('click',()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+
+/* coin calculator (sample numbers) */
+let n=4,m=6;const fmt=v=>'฿'+v.toLocaleString('th-TH');
+function calc(){
+  const per=Math.round(n*1000*(n>=3?.9:1));
+  document.getElementById('cN').textContent=n;
+  document.getElementById('cPer').textContent=fmt(per);
+  document.getElementById('cYear').textContent=fmt(per*(12/m));
+  const h=n*1.25;document.getElementById('cTime').textContent='~'+Math.max(1,Math.floor(h))+'–'+Math.ceil(h*1.5)+' ชม.';
+}
+document.getElementById('cMinus').onclick=()=>{n=Math.max(1,n-1);calc()};
+document.getElementById('cPlus').onclick=()=>{n=Math.min(30,n+1);calc()};
+document.querySelectorAll('#cFreq button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#cFreq button').forEach(x=>x.classList.remove('on'));b.classList.add('on');m=+b.dataset.m;calc()});
+calc();
+
+/* area checker */
+const Z=[
+ {id:'ladlum',n:'ลาดหลุมแก้ว',p:'ปทุมธานี',x:110,y:150,k:['ลาดหลุมแก้ว','ลาดหลุม']},
+ {id:'samkhok',n:'สามโคก',p:'ปทุมธานี',x:210,y:90,k:['สามโคก']},
+ {id:'muang',n:'เมืองปทุมฯ',p:'ปทุมธานี',x:295,y:112,k:['เมืองปทุม','ปทุมธานี','บางกะดี','บางพูน','บ้านกลาง']},
+ {id:'klongluang',n:'คลองหลวง',p:'ปทุมธานี',x:390,y:110,k:['คลองหลวง','คลองหนึ่ง','คลอง1','คลอง 1']},
+ {id:'navanakorn',n:'นวนคร',p:'ปทุมธานี',x:318,y:200,k:['นวนคร']},
+ {id:'thanyaburi',n:'ธัญบุรี',p:'ปทุมธานี',x:440,y:200,k:['ธัญบุรี','ประชาธิปัตย์','รังสิตคลอง']},
+ {id:'rangsit',n:'รังสิต',p:'ปทุมธานี',x:348,y:282,k:['รังสิต','ฟิวเจอร์']},
+ {id:'lamlukka',n:'ลำลูกกา',p:'ปทุมธานี',x:440,y:300,k:['ลำลูกกา','คูคต','ลาดสวาย','บึงคำพร้อย']},
+ {id:'saimai',n:'สายไหม',p:'กรุงเทพฯ',x:362,y:364,k:['สายไหม','ออเงิน']},
+ {id:'bangbuathong',n:'บางบัวทอง',p:'นนทบุรี',x:100,y:250,k:['บางบัวทอง','บัวทอง']},
+ {id:'bangyai',n:'บางใหญ่',p:'นนทบุรี',x:130,y:340,k:['บางใหญ่']},
+ {id:'pakkret',n:'ปากเกร็ด',p:'นนทบุรี',x:220,y:310,k:['ปากเกร็ด','แจ้งวัฒนะ','เมืองทอง']}
+];
+const zg=document.getElementById('zones'),quick=document.getElementById('quick'),res=document.getElementById('res');
+Z.forEach(z=>{
+  const g=document.createElementNS('http://www.w3.org/2000/svg','g');g.setAttribute('class','z');g.dataset.id=z.id;g.setAttribute('tabindex','0');g.setAttribute('role','button');g.setAttribute('aria-label',z.n);
+  g.innerHTML=`<circle cx="${z.x}" cy="${z.y}" r="40"/><text x="${z.x}" y="${z.y+5}">${z.n}</text>`;
+  g.addEventListener('click',()=>show(z));g.addEventListener('keydown',e=>{if(e.key==='Enter')show(z)});
+  zg.appendChild(g);
+  const b=document.createElement('button');b.textContent=z.n;b.dataset.id=z.id;b.onclick=()=>{document.getElementById('q').value=z.n;show(z)};quick.appendChild(b);
+});
+function hi(id){document.querySelectorAll('.z').forEach(g=>g.classList.toggle('hi',g.dataset.id===id));quick.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.id===id))}
+function show(z,extra){
+  hi(z.id);res.className='res in';
+  res.innerHTML=`<h4><span class="dot"></span>อยู่ในพื้นที่บริการ ✓ ${z.n}</h4><p>${extra||''}${z.n} (${z.p}) อยู่ในรายชื่อพื้นที่ที่ร้านระบุไว้ ช่างน้องกุลเข้าไปบริการถึงบ้านได้ครับ</p><a class="btn btn-sky" href="tel:0916151148">โทรนัดช่าง 091-615-1148</a>`;
+}
+function check(){
+  const raw=document.getElementById('q').value.trim();if(!raw)return;
+  const q=raw.replace(/\s+/g,'').replace(/^(อ\.|อำเภอ|ต\.|ตำบล|เขต)/,'');
+  const v=/(พฤกษา|ศุภาลัย|pruksa|supalai)/i.test(q);
+  const k=q.match(/คลอง(\d{1,2})/);
+  if(k){const no=+k[1];const z=no>=7?Z.find(x=>x.id==='lamlukka'):Z.find(x=>x.id==='klongluang');return show(z,`ย่านคลอง ${no} — `)}
+  const nk=w=>w.replace(/\s/g,'');
+  const z=Z.find(z=>z.k.some(w=>q.includes(nk(w))))||(q.length>=3&&Z.find(z=>z.k.some(w=>nk(w).startsWith(q))));
+  if(z)return show(z,v?'หมู่บ้านจัดสรรที่ร้านลงงานบ่อย — ':'');
+  if(v){hi('');res.className='res in';res.innerHTML=`<h4><span class="dot"></span>ร้านลงงานหมู่บ้านนี้บ่อย ✓</h4><p>ร้านเคยลงงานในหมู่บ้านพฤกษา/ศุภาลัย ย่านคลองหลวง–ลำลูกกา แจ้งชื่อโครงการและซอยตอนโทรนัดได้เลยครับ</p><a class="btn btn-sky" href="tel:0916151148">โทรนัดช่าง</a>`;return}
+  hi('');res.className='res ask';
+  res.innerHTML=`<h4><span class="dot"></span>ยังไม่อยู่ในรายชื่อ — โทรถามก่อนได้</h4><p>"${raw.replace(/[<>&"]/g,'')}" ไม่อยู่ในรายชื่อที่ร้านระบุ แต่ร้านรับ "พื้นที่ใกล้เคียง" ด้วย โทรหรือทักแชทถามได้เลยครับ</p><a class="btn btn-y" href="tel:0916151148">โทรถามพื้นที่</a> <a class="btn btn-fb" href="https://m.me/100049007385100" target="_blank" rel="noopener">ทัก Messenger</a>`;
+}
+document.getElementById('qBtn').onclick=check;
+document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter')check()});
+</script>
+</body>
+</html>

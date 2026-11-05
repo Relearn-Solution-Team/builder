@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panda Aui | ช่างแต่งหน้า-ทำผมเจ้าสาว สมุทรปราการ · Makeup &amp; Hair</title>
+<meta name="description" content="Panda Aui ช่างแต่งหน้าและทำผมเจ้าสาว สมุทรปราการ ทำผมเรียบ ผมเกล้า ทรงผมออกงาน ชุดไทย แต่งหน้าเจ้าสาว รับงานนอกสถานที่ โทร 089-306-3436 LINE aui_2527">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#E8C4C0; --pink2:#F5E3E0; --pink3:#FBF1EF; --rose:#C47F78; --rosed:#A5615A;
+  --ch:#333333; --ch2:#242424; --ch3:#454545; --w:#FFFFFF; --grey:#7A7472; --line:#E7DCDA;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:var(--body);color:var(--ch);background:var(--w);line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.head{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input,select{font:inherit;color:inherit}
+.wrap{width:min(1200px,92%);margin:0 auto}
+.dots{background-image:radial-gradient(var(--ch) 1.2px,transparent 1.3px);background-size:22px 22px}
+
+/* topbar */
+.topbar{background:var(--ch2);color:#ddd;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:14px;padding:8px 0;flex-wrap:wrap}
+.topbar b{color:var(--pink)}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1.5px solid var(--ch)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand svg{width:50px;height:50px;flex:0 0 50px}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:23px;line-height:1;letter-spacing:-.01em}
+.brand .t1 span{color:var(--rose)}
+.brand .t2{font-size:12.5px;font-weight:600;color:var(--grey);margin-top:3px}
+.menu{display:flex;gap:6px;font-family:var(--head);font-weight:600;font-size:15.5px}
+.menu a{padding:8px 14px;border-radius:999px;transition:.2s}
+.menu a:hover{background:var(--pink2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--head);font-weight:700;border-radius:999px;padding:13px 26px;cursor:pointer;transition:.18s;white-space:nowrap;font-size:16px;border:2px solid var(--ch)}
+.btn svg{width:20px;height:20px}
+.btn-ch{background:var(--ch);color:#fff;box-shadow:4px 4px 0 var(--pink)}
+.btn-pk{background:var(--pink);color:var(--ch);box-shadow:4px 4px 0 var(--ch)}
+.btn-w{background:#fff;color:var(--ch);box-shadow:4px 4px 0 var(--ch)}
+.btn-ln{background:#06C755;color:#fff;border-color:var(--ch);box-shadow:4px 4px 0 var(--ch)}
+.btn:hover{transform:translate(-2px,-2px)}
+.btn-ch:hover{box-shadow:6px 6px 0 var(--pink)}
+.btn-pk:hover,.btn-w:hover,.btn-ln:hover{box-shadow:6px 6px 0 var(--ch)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:6px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:64px 0 96px;background:linear-gradient(180deg,#fff 0%,var(--pink3) 100%)}
+.hero::before{content:"";position:absolute;width:720px;height:720px;border-radius:50%;background:var(--pink2);right:-180px;top:-160px}
+.hero .dotfield{position:absolute;left:-40px;bottom:40px;width:260px;height:200px;opacity:.12;border-radius:30px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1.5px solid var(--ch);border-radius:999px;padding:6px 16px 6px 8px;font-family:var(--head);font-weight:700;font-size:14.5px;box-shadow:3px 3px 0 var(--pink)}
+.hero-tag i{width:26px;height:26px;border-radius:50%;background:var(--ch);display:grid;place-items:center}
+.hero h1{font-size:clamp(44px,6.2vw,86px);font-weight:900;letter-spacing:-.02em;margin:22px 0 16px;line-height:1.08}
+.hero h1 .pk{color:var(--rose);position:relative;display:inline-block}
+.hero h1 .ol{-webkit-text-stroke:2px var(--ch);color:transparent;display:inline-block;margin-top:.42em}
+.hero h1 .pk svg{position:absolute;left:0;right:0;bottom:-6px;width:100%;height:18px}
+.hero p.lead{font-size:19px;color:#555;max-width:520px}
+.hero p.lead b{color:var(--ch)}
+.cta-row{display:flex;gap:16px;margin-top:30px;flex-wrap:wrap}
+.stats{display:flex;gap:14px;margin-top:38px;flex-wrap:wrap}
+.stat{background:#fff;border:1.5px solid var(--ch);border-radius:20px;padding:12px 18px;min-width:140px}
+.stat .n{font-family:var(--head);font-weight:900;font-size:28px;line-height:1.1}
+.stat .l{font-size:13px;color:var(--grey);line-height:1.4}
+.stat.dark{background:var(--ch);color:#fff}
+.stat.dark .n{color:var(--pink)}
+.stat.dark .l{color:#bbb}
+
+.reels{position:relative;height:600px;justify-self:center;width:100%;max-width:540px}
+.reel{position:absolute;width:250px;aspect-ratio:9/16;border-radius:30px;overflow:hidden;border:3px solid var(--ch);background:var(--ch);box-shadow:8px 8px 0 var(--ch)}
+.reel img{width:100%;height:100%;object-fit:cover}
+.reel .play{position:absolute;top:14px;left:14px;display:flex;align-items:center;gap:6px;background:rgba(0,0,0,.55);color:#fff;font-size:12.5px;font-family:var(--head);font-weight:600;border-radius:999px;padding:3px 10px 3px 6px}
+.reel .play svg{width:16px;height:16px}
+.reel.r1{left:0;top:70px;transform:rotate(-8deg);z-index:1}
+.reel.r2{left:50%;top:0;margin-left:-135px;width:270px;z-index:3;box-shadow:10px 10px 0 var(--pink)}
+.reel.r3{right:0;top:90px;transform:rotate(7deg);z-index:2}
+.ears{position:absolute;top:-34px;left:50%;margin-left:-135px;width:270px;z-index:2;display:flex;justify-content:space-between;padding:0 14px;pointer-events:none}
+.ears i{width:64px;height:64px;border-radius:50%;background:var(--ch)}
+.hs{position:absolute;z-index:5;background:#fff;border:2px solid var(--ch);border-radius:16px;padding:8px 14px;font-family:var(--head);font-weight:800;font-size:14.5px;line-height:1.3;box-shadow:4px 4px 0 var(--ch)}
+.hs small{display:block;font-family:var(--body);font-weight:500;font-size:12px;color:var(--grey)}
+.hs1{left:-6%;top:22px;transform:rotate(-4deg);animation:bob 4.4s ease-in-out infinite}
+.hs2{right:-5%;top:52%;background:var(--pink);transform:rotate(5deg);animation:bob 5s ease-in-out infinite .6s}
+.hs3{left:6%;bottom:6px;background:var(--ch);color:#fff;box-shadow:4px 4px 0 var(--pink);display:flex;align-items:center;gap:10px;animation:bob 5.4s ease-in-out infinite 1s}
+.hs3 img{width:38px;height:38px;border-radius:50%;border:2px solid var(--pink);object-fit:cover}
+.hs3 small{color:#ccc}
+@keyframes bob{50%{translate:0 -9px}}
+
+/* marquee */
+.marquee{background:var(--ch);color:#fff;overflow:hidden;padding:14px 0;border-block:2px solid var(--ch)}
+.marquee.alt{background:var(--pink);color:var(--ch);transform:rotate(-1.2deg);margin-top:-10px;position:relative;z-index:2}
+.track{display:flex;width:max-content;animation:slide 36s linear infinite;font-family:var(--head);font-weight:800;font-size:20px}
+.marquee.alt .track{animation-direction:reverse;animation-duration:44s}
+.track span{display:flex;align-items:center;gap:22px;padding-right:22px;white-space:nowrap}
+.track span::after{content:"";width:22px;height:18px;background:
+  radial-gradient(circle at 25% 30%,currentColor 0 3.6px,transparent 4px),radial-gradient(circle at 75% 30%,currentColor 0 3.6px,transparent 4px),radial-gradient(ellipse at 50% 72%,currentColor 0 6px,transparent 6.5px)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* section */
+section{padding:100px 0;position:relative}
+.sec-head{max-width:760px;margin:0 auto 52px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:800;font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;background:var(--pink);border:1.5px solid var(--ch);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+.sec-head h2{font-size:clamp(32px,4.4vw,54px);font-weight:900;letter-spacing:-.01em}
+.sec-head h2 em{font-style:normal;color:var(--rose)}
+.sec-head h2 .hl{background:linear-gradient(transparent 52%,var(--pink) 52%,var(--pink) 80%,transparent 80%);padding:0 4px}
+.sec-head p{color:var(--grey);font-size:17.5px;margin-top:12px}
+
+/* hair first */
+.hair{background:var(--ch);color:#fff;overflow:hidden}
+.hair::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:2px dashed rgba(232,196,192,.25)}
+.hair .sec-head p{color:#bbb}
+.hair .sec-head h2 em{color:var(--pink)}
+.hair-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative;z-index:1}
+.hc{background:var(--ch3);border-radius:var(--r);padding:28px 24px;border:1.5px solid #555;transition:.25s}
+.hc:hover{background:#4d4d4d;transform:translateY(-4px)}
+.hc .ic{width:66px;height:66px;border-radius:50%;background:var(--pink);display:grid;place-items:center;margin-bottom:18px;position:relative}
+.hc .ic::before,.hc .ic::after{content:"";position:absolute;top:-6px;width:22px;height:22px;border-radius:50%;background:#111}
+.hc .ic::before{left:-4px}.hc .ic::after{right:-4px}
+.hc .ic svg{width:36px;height:36px;stroke:var(--ch);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;position:relative;z-index:1}
+.hc h3{font-size:21px;font-weight:800}
+.hc p{color:#c8c8c8;font-size:15.5px;margin-top:6px}
+
+/* packages */
+.pk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.pkc{background:#fff;border:2px solid var(--ch);border-radius:var(--r);padding:30px 28px;position:relative;box-shadow:8px 8px 0 var(--pink);display:flex;flex-direction:column;transition:.2s}
+.pkc:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--pink)}
+.pkc .num{font-family:var(--head);font-weight:900;font-size:14px;color:var(--rose);letter-spacing:.12em}
+.pkc h3{font-size:24px;font-weight:800;margin:4px 0 6px}
+.pkc p{color:#666;font-size:15.5px}
+.pkc .price{font-family:var(--head);font-weight:900;font-size:40px;margin:16px 0 0;line-height:1}
+.pkc .price small{font-size:15px;font-weight:600;color:var(--grey)}
+.pkc .smp{display:inline-block;align-self:flex-start;margin-top:10px;font-size:12px;font-weight:600;background:var(--pink3);border:1px dashed var(--rose);color:var(--rosed);border-radius:999px;padding:2px 10px}
+.pkc ul{list-style:none;margin:18px 0 0;display:grid;gap:8px;font-size:15px;flex:1}
+.pkc li{display:flex;gap:10px;align-items:flex-start}
+.pkc li::before{content:"";flex:0 0 16px;height:16px;margin-top:5px;border-radius:50%;background:var(--ch);box-shadow:inset 0 0 0 4px var(--pink)}
+.pkc.star{background:var(--ch);color:#fff;box-shadow:8px 8px 0 var(--rose)}
+.pkc.star p,.pkc.star .price small{color:#bbb}
+.pkc.star .num{color:var(--pink)}
+.pkc.star li::before{background:var(--pink);box-shadow:inset 0 0 0 4px var(--ch)}
+.pkc.star .smp{background:transparent;color:var(--pink);border-color:var(--pink)}
+.badge{position:absolute;top:-16px;right:22px;background:var(--pink);color:var(--ch);border:2px solid var(--ch);border-radius:999px;font-family:var(--head);font-weight:800;font-size:13px;padding:3px 14px;transform:rotate(3deg)}
+.pk-note{text-align:center;margin-top:34px;color:var(--grey);font-size:14.5px}
+
+/* lookbook */
+.lookbook{background:var(--pink3)}
+.lb-filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.lb-filters button{border:2px solid var(--ch);background:#fff;border-radius:999px;padding:9px 20px;cursor:pointer;font-family:var(--head);font-weight:700;font-size:15.5px;transition:.15s;display:inline-flex;align-items:center;gap:8px}
+.lb-filters button b{background:var(--pink2);border-radius:999px;font-size:12px;padding:0 8px;min-width:22px}
+.lb-filters button[aria-pressed=true]{background:var(--ch);color:#fff;box-shadow:3px 3px 0 var(--rose)}
+.lb-filters button[aria-pressed=true] b{background:var(--rose);color:#fff}
+.lb-hint{text-align:center;color:var(--grey);font-size:14.5px;margin-bottom:38px}
+.lb-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 22px}
+.lk{position:relative;padding-top:20px}
+.lk.hide{display:none}
+.lk .ear{position:absolute;top:0;width:52px;height:52px;border-radius:50%;background:var(--ch);z-index:0}
+.lk .ear.l{left:14px}.lk .ear.r{right:14px}
+.lk .fr{position:relative;z-index:1;border-radius:26px;overflow:hidden;border:2px solid var(--ch);aspect-ratio:4/5.6;background:var(--pink2);cursor:pointer}
+.lk .fr img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.lk:hover .fr img{transform:scale(1.05)}
+.lk .tags{position:absolute;top:12px;left:12px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}
+.lk .tags span{background:#fff;border:1.5px solid var(--ch);border-radius:999px;font-size:11.5px;font-weight:700;padding:0 8px;font-family:var(--head)}
+.lk .reel-link{position:absolute;right:10px;bottom:10px;z-index:2;background:rgba(0,0,0,.6);color:#fff;font-size:12px;font-family:var(--head);font-weight:600;border-radius:999px;padding:3px 10px;display:flex;align-items:center;gap:5px}
+.lk .reel-link svg{width:14px;height:14px}
+.lk .meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px}
+.lk h3{font-size:17.5px;font-weight:800;line-height:1.3}
+.lk h3 small{display:block;font-family:var(--body);font-weight:500;font-size:13px;color:var(--grey)}
+.pick{flex:0 0 auto;border:2px solid var(--ch);background:#fff;border-radius:999px;font-family:var(--head);font-weight:700;font-size:13px;padding:5px 12px;cursor:pointer;transition:.15s}
+.pick:hover{background:var(--pink)}
+.pick[aria-pressed=true]{background:var(--ch);color:#fff}
+.ph{width:100%;height:100%;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#fff 0,transparent 65%),var(--pink2);position:relative}
+.ph svg{width:70%;stroke:var(--ch);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ph .phl{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11.5px;font-weight:600;background:#fff;border:1.5px dashed var(--ch);border-radius:999px;padding:1px 10px}
+.lb-note{text-align:center;margin-top:34px;color:var(--grey);font-size:14px}
+.lb-note a{color:var(--rosed);font-weight:600;border-bottom:1.5px solid var(--pink)}
+.lightbox{position:fixed;inset:0;background:rgba(20,20,20,.9);z-index:90;display:none;place-items:center;padding:24px}
+.lightbox.on{display:grid}
+.lightbox img{max-height:88vh;max-width:92vw;border-radius:22px;border:4px solid #fff}
+.lightbox button{position:absolute;top:18px;right:20px;width:48px;height:48px;border-radius:50%;border:2px solid var(--ch);background:var(--pink);font-size:24px;cursor:pointer}
+
+/* planner */
+.planner{background:#fff}
+.pl-box{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid var(--ch);border-radius:34px;overflow:hidden;box-shadow:12px 12px 0 var(--ch)}
+.pl-form{padding:40px;background:#fff}
+.pl-form h3{font-size:25px;font-weight:900}
+.pl-form .hint{color:var(--grey);font-size:14.5px;margin-bottom:22px}
+.fg{margin-bottom:20px}
+.fl{font-family:var(--head);font-weight:800;font-size:15px;margin-bottom:9px;display:flex;align-items:center;gap:9px}
+.fl i{font-style:normal;width:26px;height:26px;border-radius:50%;background:var(--ch);color:var(--pink);display:grid;place-items:center;font-size:13px}
+.seg{display:flex;border:2px solid var(--ch);border-radius:999px;overflow:hidden;background:var(--pink3)}
+.seg label{flex:1;position:relative}
+.seg input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.seg span{display:block;text-align:center;padding:10px 6px;font-family:var(--head);font-weight:700;font-size:14.5px;transition:.15s;line-height:1.3}
+.seg label+label span{border-left:2px solid var(--ch)}
+.seg input:checked+span{background:var(--ch);color:#fff}
+.seg input:focus-visible+span{outline:3px solid var(--rose);outline-offset:-3px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.inp{width:100%;border:2px solid var(--ch);border-radius:16px;padding:11px 14px;background:#fff;font-size:15.5px}
+.inp:focus{outline:3px solid var(--pink)}
+.sub{font-size:12.5px;color:var(--grey);margin-top:5px}
+.stepper{display:flex;align-items:center;border:2px solid var(--ch);border-radius:16px;overflow:hidden}
+.stepper button{width:46px;height:46px;border:0;background:var(--pink);font-size:22px;font-weight:800;cursor:pointer}
+.stepper output{flex:1;text-align:center;font-family:var(--head);font-weight:800;font-size:18px}
+.chosen{display:flex;align-items:center;gap:10px;border:2px dashed var(--rose);background:var(--pink3);border-radius:16px;padding:10px 14px;font-size:14.5px}
+.chosen b{font-family:var(--head)}
+.chosen a{margin-left:auto;font-size:13px;color:var(--rosed);font-weight:700;white-space:nowrap}
+.pl-out{background:var(--ch);color:#fff;padding:40px 36px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.pl-out::before{content:"";position:absolute;inset:0;opacity:.06;background-image:radial-gradient(#fff 1.2px,transparent 1.3px);background-size:20px 20px}
+.pl-out>*{position:relative}
+.pl-out .eyebrow{align-self:flex-start;color:var(--ch)}
+.pl-out h3{font-size:24px;font-weight:900;margin-bottom:18px}
+.pl-out h3 span{color:var(--pink)}
+.tl{list-style:none;display:grid;gap:0;margin-bottom:18px}
+.tl li{display:grid;grid-template-columns:62px 22px 1fr;gap:10px;align-items:start;position:relative;padding:6px 0}
+.tl li::before{content:"";position:absolute;left:82px;top:24px;bottom:-12px;border-left:2px dotted #777}
+.tl li:last-child::before{display:none}
+.tl b{font-family:var(--head);font-weight:900;font-size:17px;color:var(--pink)}
+.tl .dot{width:22px;height:22px;border-radius:50%;background:var(--ch3);border:2px solid var(--pink);display:grid;place-items:center;font-size:11px;position:relative;z-index:1}
+.tl li.ev .dot{background:var(--pink);border-color:#fff}
+.tl li.ev span{font-weight:700}
+.tl span{font-size:15px;line-height:1.45}
+.tl span small{display:block;color:#aaa;font-size:12.5px}
+.sumrow{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.sumrow div{flex:1;min-width:120px;background:var(--ch3);border-radius:16px;padding:10px 14px}
+.sumrow small{display:block;color:#aaa;font-size:12px}
+.sumrow b{font-family:var(--head);font-size:18px}
+.alert{display:none;margin-top:10px;background:rgba(232,196,192,.14);border:1.5px solid var(--pink);border-radius:14px;padding:8px 12px;font-size:13.5px;color:var(--pink)}
+.alert.on{display:block}
+.msg{margin-top:16px;background:#2a2a2a;border:1.5px solid #555;border-radius:16px;padding:12px 14px;font-size:13px;white-space:pre-wrap;color:#ddd;max-height:150px;overflow:auto}
+.out-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.out-actions .btn{flex:1;padding:11px 16px;font-size:15px}
+.out-actions .btn-w{box-shadow:4px 4px 0 var(--pink)}
+.ok{font-size:13px;color:#8EE3A8;min-height:18px;margin-top:8px}
+.pl-out .fine{font-size:12.5px;color:#999}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.st{background:#fff;border:2px solid var(--ch);border-radius:24px;padding:24px 18px 22px;position:relative;text-align:center}
+.st .n{width:50px;height:50px;margin:-50px auto 12px;border-radius:50%;background:var(--ch);color:var(--pink);font-family:var(--head);font-weight:900;font-size:20px;display:grid;place-items:center;border:4px solid #fff;box-shadow:0 0 0 2px var(--ch)}
+.st h4{font-size:18px;font-weight:800}
+.st p{font-size:14.5px;color:#666;margin-top:4px}
+.st.dep{background:var(--pink)}
+.st.dep .n{background:#fff;color:var(--ch)}
+.steps-wrap{padding-top:30px}
+
+/* area */
+.area{background:var(--pink3)}
+.area-box{display:grid;grid-template-columns:1fr 1.15fr;gap:46px;align-items:stretch}
+.area h2{font-size:clamp(30px,4vw,48px);font-weight:900}
+.area h2 em{font-style:normal;color:var(--rose)}
+.area p{color:#555;margin-top:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 8px}
+.chips span{background:#fff;border:1.5px solid var(--ch);border-radius:999px;padding:4px 14px;font-weight:600;font-size:14.5px}
+.chips span.main{background:var(--ch);color:#fff}
+.contact-list{display:grid;gap:12px;margin-top:24px}
+.ci{display:flex;gap:14px;align-items:center;background:#fff;border:2px solid var(--ch);border-radius:20px;padding:12px 16px;transition:.15s}
+a.ci:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--ch)}
+.ci .i{flex:0 0 46px;height:46px;border-radius:50%;background:var(--pink);display:grid;place-items:center;border:2px solid var(--ch)}
+.ci .i svg{width:22px;height:22px}
+.ci small{display:block;color:var(--grey);font-size:13px}
+.ci b{font-family:var(--head);font-weight:900;font-size:21px}
+.map{position:relative;border:2px solid var(--ch);border-radius:34px;overflow:hidden;min-height:460px;box-shadow:10px 10px 0 var(--pink)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.55) contrast(1.05)}
+.map .pin{position:absolute;left:16px;bottom:44px;z-index:2;background:#fff;border:2px solid var(--ch);border-radius:16px;padding:8px 14px;font-family:var(--head);font-weight:800;font-size:14px;box-shadow:3px 3px 0 var(--ch)}
+.map .pin small{display:block;font-family:var(--body);font-weight:500;color:var(--grey);font-size:12px}
+
+/* reviews */
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{border:2px solid var(--ch);border-radius:var(--r);padding:28px 26px;background:#fff;position:relative}
+.rv:nth-child(2){background:var(--ch);color:#fff}
+.rv:nth-child(2) p{color:#ddd}
+.rv:nth-child(2) .who small{color:#aaa}
+.rv .stars{color:var(--rose);letter-spacing:3px;font-size:18px}
+.rv:nth-child(2) .stars{color:var(--pink)}
+.rv p{margin:10px 0 18px;color:#555;font-size:16px}
+.rv .who{display:flex;gap:12px;align-items:center}
+.rv .av{width:46px;height:46px;border-radius:50%;background:var(--pink);color:var(--ch);border:2px solid var(--ch);display:grid;place-items:center;font-family:var(--head);font-weight:900}
+.rv .who b{font-family:var(--head);display:block}
+.rv .who small{color:var(--grey)}
+.rv .q{position:absolute;top:-22px;right:22px;width:44px;height:44px;border-radius:50%;background:var(--pink);border:2px solid var(--ch);display:grid;place-items:center;font-family:Georgia,serif;font-size:34px;line-height:1;padding-top:12px}
+.note{text-align:center;color:var(--grey);font-size:13px;margin-top:24px}
+
+/* footer */
+footer{background:var(--ch2);color:#aaa;padding:60px 0 26px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:32px;border-bottom:1px solid #3a3a3a}
+footer .brand .t1{color:#fff}
+footer .brand .t2{color:#999}
+footer h4{color:var(--pink);font-size:16px;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:6px}
+footer a:hover{color:var(--pink)}
+.ft p{margin-top:14px;max-width:340px}
+.copy{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:22px;font-size:13px}
+
+/* fab */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;gap:12px}
+.fab a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;border:2.5px solid var(--ch);box-shadow:3px 3px 0 var(--ch);transition:.2s}
+.fab a:hover{transform:scale(1.08)}
+.fab .ln{background:#06C755}
+.fab .call{background:var(--pink);animation:ring 2.4s infinite}
+.fab svg{width:27px;height:27px}
+@keyframes ring{0%,100%{box-shadow:3px 3px 0 var(--ch),0 0 0 0 rgba(196,127,120,.6)}50%{box-shadow:3px 3px 0 var(--ch),0 0 0 14px rgba(196,127,120,0)}}
+
+.rv-on{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv-on.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  .hair-grid{grid-template-columns:repeat(2,1fr)}
+  .lb-grid{grid-template-columns:repeat(3,1fr)}
+  .pk-grid{grid-template-columns:repeat(2,1fr)}
+  .pl-box{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(3,1fr);row-gap:44px}
+}
+@media (max-width:900px){
+  .menu,.nav-cta{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:74px;left:0;right:0;background:#fff;padding:14px 4%;border-bottom:2px solid var(--ch);gap:4px}
+  .hero{padding:40px 0 80px}
+  .hero .wrap,.area-box{grid-template-columns:1fr}
+  .reels{height:520px;max-width:460px;order:-1;margin-top:30px}
+  .rv-grid{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding:72px 0}
+  .reels{height:430px}
+  .reel{width:170px;border-radius:24px;box-shadow:5px 5px 0 var(--ch)}
+  .reel.r2{width:196px;margin-left:-98px;box-shadow:6px 6px 0 var(--pink)}
+  .ears{width:196px;margin-left:-98px;top:-26px;padding:0 10px}
+  .ears i{width:46px;height:46px}
+  .reel.r1{left:-4px;top:60px}.reel.r3{right:-4px;top:76px}
+  .hs{font-size:13px;padding:6px 10px}
+  .hs1{left:-2%;top:6px}.hs2{right:-2%}
+  .hs3{left:2%;bottom:0}
+  .hero h1 .ol{-webkit-text-stroke:1.5px var(--ch)}
+  .stats{gap:8px;flex-wrap:nowrap}
+  .stat{min-width:0;flex:1 1 0;padding:10px 10px;border-radius:16px}
+  .stat .n{font-size:21px}
+  .stat .l{font-size:11.5px}
+  .hair-grid,.pk-grid{grid-template-columns:1fr}
+  .lb-grid{grid-template-columns:repeat(2,1fr);gap:22px 12px}
+  .lk .ear{width:38px;height:38px;left:8px}.lk .ear.r{right:8px;left:auto}
+  .lk .meta{flex-direction:column;align-items:flex-start;gap:6px}
+  .lk h3{font-size:15.5px}
+  .lk .tags span{font-size:10.5px}
+  .pl-form,.pl-out{padding:28px 20px}
+  .pl-box{box-shadow:6px 6px 0 var(--ch);border-radius:26px}
+  .seg span{font-size:13px;padding:9px 4px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .ft{grid-template-columns:1fr}
+  .topbar .hide-sm{display:none}
+  .map{min-height:360px}
+  .cta-row .btn{flex:1 1 auto}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv-on{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- panda with a hair bun: brand mark -->
+    <symbol id="panda" viewBox="0 0 64 64">
+      <circle cx="14" cy="17" r="9" fill="#333"/><circle cx="50" cy="17" r="9" fill="#333"/>
+      <circle cx="32" cy="9" r="7.5" fill="#333"/><path d="M27 14q5-3 10 0" stroke="#E8C4C0" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+      <circle cx="32" cy="36" r="22" fill="#fff" stroke="#333" stroke-width="2.4"/>
+      <ellipse cx="23" cy="34" rx="6" ry="8" transform="rotate(-25 23 34)" fill="#333"/><ellipse cx="41" cy="34" rx="6" ry="8" transform="rotate(25 41 34)" fill="#333"/>
+      <circle cx="24" cy="33" r="2" fill="#fff"/><circle cx="40" cy="33" r="2" fill="#fff"/>
+      <ellipse cx="32" cy="43" rx="3.4" ry="2.4" fill="#333"/><path d="M29 47q3 2.4 6 0" stroke="#333" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <ellipse cx="18" cy="44" rx="4" ry="2.6" fill="#E8C4C0"/><ellipse cx="46" cy="44" rx="4" ry="2.6" fill="#E8C4C0"/>
+    </symbol>
+    <symbol id="ico-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="ico-line" viewBox="0 0 24 24"><path d="M12 2.5C6.2 2.5 1.5 6.3 1.5 11c0 4.2 3.7 7.7 8.8 8.4.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s6-3.5 8.2-6c1.5-1.7 2.3-3.4 2.3-5.3 0-4.7-4.7-8.5-10.5-8.5zM8 13.6H6c-.3 0-.5-.2-.5-.5V9c0-.3.2-.5.5-.5s.5.2.5.5v3.6H8c.3 0 .5.2.5.5s-.2.5-.5.5zm2.1-.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9c0-.3.2-.5.5-.5s.5.2.5.5zm4.8 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-2-2.8v2.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l2 2.8V9c0-.3.2-.5.5-.5s.5.2.5.5zm3.3-2.6c.3 0 .5.2.5.5s-.2.5-.5.5h-1.5v1.1h1.5c.3 0 .5.2.5.5s-.2.5-.5.5h-2c-.3 0-.5-.2-.5-.5V9c0-.3.2-.5.5-.5h2c.3 0 .5.2.5.5s-.2.5-.5.5h-1.5v1z"/></symbol>
+    <symbol id="ico-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>🐼 ช่างแต่งหน้า-ทำผมเจ้าสาว · <b>สมุทรปราการ</b><span class="hide-sm"> · รับงานนอกสถานที่</span></div>
+    <div class="hide-sm">☎ <b>089-306-3436</b> · LINE <b>aui_2527</b></div>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Panda Aui">
+      <svg aria-hidden="true"><use href="#panda"/></svg>
+      <div><div class="t1">Panda <span>Aui</span></div><div class="t2">Makeup &amp; Hair · เจ้าสาว</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#hair">ทำผม</a>
+      <a href="#packages">แพ็กเกจ</a>
+      <a href="#lookbook">Look book</a>
+      <a href="#planner">วางแผนวันงาน</a>
+      <a href="#area">พื้นที่ &amp; ติดต่อ</a>
+    </div>
+    <a href="https://line.me/ti/p/Y9lQ5yZS9F" target="_blank" rel="noopener" class="btn btn-ch nav-cta"><svg fill="currentColor"><use href="#ico-line"/></svg> ทัก LINE จองคิว</a>
+    <button class="burger" id="burger" aria-label="เปิดเมนู" aria-expanded="false" aria-controls="menu">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h10M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="dotfield dots" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="hero-tag"><i><svg width="18" height="18"><use href="#panda"/></svg></i>Makeup &amp; Hair by Panda Aui</span>
+      <h1>เจ้าสาวสวย<br><span class="pk">ผมต้องปัง<svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12C60 3 120 3 297 9" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round"/></svg></span><br><span class="ol">ทั้งวัน</span></h1>
+      <p class="lead">ช่างแต่งหน้าและ<b>ทำผมเจ้าสาว</b>ในสมุทรปราการ ผมเรียบ ผมเกล้า ลอนออกงาน จนถึงทรงชุดไทย จัดให้ครบในคิวเดียว ตั้งแต่พิธีเช้าถึงงานเลี้ยงเย็น</p>
+      <div class="cta-row">
+        <a href="#planner" class="btn btn-pk">🗓️ วางแผนเวลาวันงาน</a>
+        <a href="#lookbook" class="btn btn-w">ดูทรงผม →</a>
+      </div>
+      <div class="stats">
+        <div class="stat dark"><div class="n" data-count="1424">0</div><div class="l">ผู้ติดตาม Instagram</div></div>
+        <div class="stat"><div class="n">9+</div><div class="l">Reels ผลงานใหม่<br>ใน 30 วันล่าสุด</div></div>
+        <div class="stat"><div class="n">2in1</div><div class="l">แต่งหน้า + ทำผม</div></div>
+      </div>
+    </div>
+
+    <div class="reels rv-on" aria-label="ผลงานจาก Reels">
+      <div class="reel r1"><img src="assets/hair-halfup.jpg" alt="ทรงผมครึ่งหัวบิดเกลียว ลอนยาว"><span class="play"><svg><use href="#ico-play"/></svg>Reels</span></div>
+      <div class="ears" aria-hidden="true"><i></i><i></i></div>
+      <div class="reel r2"><img src="assets/bride-updo.jpg" alt="เจ้าสาวชุดเกาะอก ผมเกล้าสูงปล่อยปอยข้าง" fetchpriority="high"><span class="play"><svg><use href="#ico-play"/></svg>เจ้าสาว</span></div>
+      <div class="reel r3"><img src="assets/hair-lowbun.jpg" alt="ทรงผมเกล้าต่ำบิดเกลียว ชุดเปิดไหล่" style="object-position:50% 30%"><span class="play"><svg><use href="#ico-play"/></svg>ผมเกล้า</span></div>
+      <div class="hs hs1">💇🏻‍♀️ ผมเรียบ · เกล้า<small>เก็บไรผมเนี้ยบ</small></div>
+      <div class="hs hs2">👰🏻 เจ้าสาว · ชุดไทย<small>เปลี่ยนลุคได้</small></div>
+      <div class="hs hs3"><img src="assets/profile.jpg" alt="โปรไฟล์ Panda Aui"><span>@panda.aui<small>สมุทรปราการ</small></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Makeup &amp; Hair</span><span>ช่างแต่งหน้าเจ้าสาว</span><span>ทำผมเจ้าสาว</span><span>ผมเรียบ</span><span>ทรงผมออกงาน</span><span>ชุดไทย</span><span>สมุทรปราการ</span><span>Panda Aui</span>
+    <span>Makeup &amp; Hair</span><span>ช่างแต่งหน้าเจ้าสาว</span><span>ทำผมเจ้าสาว</span><span>ผมเรียบ</span><span>ทรงผมออกงาน</span><span>ชุดไทย</span><span>สมุทรปราการ</span><span>Panda Aui</span>
+  </div>
+</div>
+
+<!-- HAIR FIRST -->
+<section class="hair" id="hair">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">Hair is the star</span>
+      <h2>ทรงผม คือ<em>ไฮไลต์</em>ของงานเรา</h2>
+      <p>ดูจาก Reels ล่าสุดได้เลย ทั้งผมเกล้าต่ำบิดเกลียว ครึ่งหัวลอนยาว และผมเกล้าสูงเจ้าสาว</p>
+    </div>
+    <div class="hair-grid">
+      <div class="hc rv-on"><div class="ic"><svg viewBox="0 0 40 40"><circle cx="20" cy="12" r="6"/><path d="M10 34c0-10 4-16 10-16s10 6 10 16"/><path d="M15 9q5-4 10 0"/></svg></div><h3>ผมเรียบ · เกล้า</h3><p>มวยต่ำ มวยสูง เก็บไรผมเรียบเนียน อยู่ทรงตลอดพิธี</p></div>
+      <div class="hc rv-on"><div class="ic"><svg viewBox="0 0 40 40"><path d="M12 8c-4 8 4 10 0 18s4 10 0 12M20 6c-4 8 4 10 0 18s4 10 0 12M28 8c-4 8 4 10 0 18s4 10 0 12"/></svg></div><h3>ลอน · ครึ่งหัว</h3><p>ลอนยาวพลิ้ว บิดเกลียวครึ่งหัว ลุคหวานสำหรับงานเลี้ยง</p></div>
+      <div class="hc rv-on"><div class="ic"><svg viewBox="0 0 40 40"><path d="M20 4l3 6 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1z"/><path d="M12 34c0-7 4-11 8-11s8 4 8 11"/></svg></div><h3>ทรงชุดไทย</h3><p>เกล้ามวยประดับดอกไม้ ทัดดอก เข้ากับชุดไทยพิธีเช้า</p></div>
+      <div class="hc rv-on"><div class="ic"><svg viewBox="0 0 40 40"><path d="M8 30c2-12 8-18 12-18s10 6 12 18"/><circle cx="20" cy="18" r="5"/><path d="M27 6l2 3 3 1-3 1-2 3-1-3-3-1 3-1z"/></svg></div><h3>แต่งหน้าเจ้าสาว</h3><p>Makeup &amp; hair ในคิวเดียว ลุคเข้ากับชุดและทรงผม</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee alt" aria-hidden="true">
+  <div class="track">
+    <span>เจ้าสาว</span><span>ชุดไทย</span><span>ผมเรียบ-เกล้า</span><span>ออกงาน</span><span>แม่เจ้าสาว · เพื่อนเจ้าสาว</span><span>รับงานนอกสถานที่</span>
+    <span>เจ้าสาว</span><span>ชุดไทย</span><span>ผมเรียบ-เกล้า</span><span>ออกงาน</span><span>แม่เจ้าสาว · เพื่อนเจ้าสาว</span><span>รับงานนอกสถานที่</span>
+  </div>
+</div>
+
+<!-- PACKAGES -->
+<section id="packages">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">Packages</span>
+      <h2>เลือกแพ็กเกจ<span class="hl">ที่ใช่</span></h2>
+      <p>ราคาทุกแพ็กเกจในหน้านี้เป็น <b>ราคาตัวอย่าง · รอยืนยัน</b> ทักมาบอกวัน เวลา และสถานที่ ร้านจะเสนอราคาให้</p>
+    </div>
+    <div class="pk-grid">
+      <article class="pkc rv-on"><div class="num">01 · HAIR ONLY</div><h3>ทำผมอย่างเดียว</h3><p>ผมเรียบ เกล้า ลอน หรือครึ่งหัว สำหรับคนที่แต่งหน้าเองแล้ว</p>
+        <div class="price">฿700<small> เริ่มต้น</small></div><span class="smp">ราคาตัวอย่าง · รอยืนยัน</span>
+        <ul><li>เลือกทรงจาก Look book</li><li>เพิ่มเครื่องประดับผมได้</li></ul></article>
+      <article class="pkc rv-on"><div class="num">02 · EVENT</div><h3>แต่งหน้า + ทำผม ออกงาน</h3><p>งานแต่งเพื่อน งานบวช งานเลี้ยง งานพิธี ลุคสุภาพหรือหวานตามชุด</p>
+        <div class="price">฿1,500<small> / ท่าน</small></div><span class="smp">ราคาตัวอย่าง · รอยืนยัน</span>
+        <ul><li>แม่ / ญาติ / เพื่อนเจ้าสาว</li><li>จองพร้อมเจ้าสาวได้</li></ul></article>
+      <article class="pkc star rv-on"><span class="badge">🐼 แนะนำ</span><div class="num">03 · BRIDE · 1 LOOK</div><h3>เจ้าสาว พิธีเช้า</h3><p>แต่งหน้า + ทำผมเจ้าสาว 1 ลุค สำหรับพิธีสงฆ์ แห่ขันหมาก หรือรดน้ำสังข์</p>
+        <div class="price">฿4,500<small> เริ่มต้น</small></div><span class="smp">ราคาตัวอย่าง · รอยืนยัน</span>
+        <ul><li>คุยลุคและทรงผมล่วงหน้า</li><li>ช่างไปหาที่บ้าน / โรงแรม</li></ul></article>
+      <article class="pkc rv-on"><div class="num">04 · BRIDE · 2 LOOKS</div><h3>เจ้าสาว เช้า + เย็น</h3><p>ลุคชุดไทยพิธีเช้า เปลี่ยนเป็นลุคชุดขาวงานเลี้ยงเย็น รื้อทรงผมใหม่</p>
+        <div class="price">฿8,000<small> เริ่มต้น</small></div><span class="smp">ราคาตัวอย่าง · รอยืนยัน</span>
+        <ul><li>เปลี่ยนทรงผม + เติมหน้า</li><li>ใช้ตัวช่วยวางแผนเวลาด้านล่าง</li></ul></article>
+      <article class="pkc rv-on"><div class="num">05 · PRE-WEDDING</div><h3>ถ่ายพรีเวดดิ้ง</h3><p>แต่งหน้าทำผมสำหรับวันถ่ายภาพ เปลี่ยนลุคตามคอนเซ็ปต์ช่างภาพ</p>
+        <div class="price">สอบถาม</div><span class="smp">ราคาตัวอย่าง · รอยืนยัน</span>
+        <ul><li>แจ้งจำนวนชุด/โลเคชัน</li></ul></article>
+      <article class="pkc rv-on" style="background:var(--pink);box-shadow:8px 8px 0 var(--ch)"><div class="num" style="color:var(--ch)">06 · CUSTOM</div><h3>ไม่แน่ใจ? ทักมาคุยก่อน</h3><p style="color:#444">ส่งรูปชุดและทรงผมที่ชอบมาทาง LINE ช่างช่วยเลือกทรงที่เข้ากับหน้าและชุดให้</p>
+        <ul><li>LINE ID: aui_2527</li><li>โทร 089-306-3436</li></ul>
+        <a href="https://line.me/ti/p/Y9lQ5yZS9F" target="_blank" rel="noopener" class="btn btn-ch" style="margin-top:18px;align-self:flex-start"><svg fill="currentColor"><use href="#ico-line"/></svg> ทัก LINE</a></article>
+    </div>
+    <p class="pk-note">* รายละเอียดแพ็กเกจและค่าเดินทางนอกพื้นที่ ร้านจะยืนยันอีกครั้งทาง LINE</p>
+  </div>
+</section>
+
+<!-- LOOKBOOK -->
+<section class="lookbook" id="lookbook">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">Look book</span>
+      <h2>ผลงาน<em>ทรงผม</em> แยกตามงาน</h2>
+      <p>รวมผลงานจาก Reels และไฮไลต์ไว้ในที่เดียว กรองตามประเภท แล้วกด “เลือกทรงนี้” เพื่อใส่ในแผนวันงาน</p>
+    </div>
+    <div class="lb-filters rv-on" role="group" aria-label="กรองทรงผม">
+      <button type="button" data-f="all" aria-pressed="true">ทั้งหมด <b data-n="all"></b></button>
+      <button type="button" data-f="bride" aria-pressed="false">เจ้าสาว <b data-n="bride"></b></button>
+      <button type="button" data-f="thai" aria-pressed="false">ชุดไทย <b data-n="thai"></b></button>
+      <button type="button" data-f="updo" aria-pressed="false">ผมเรียบ-เกล้า <b data-n="updo"></b></button>
+      <button type="button" data-f="event" aria-pressed="false">ออกงาน <b data-n="event"></b></button>
+    </div>
+    <p class="lb-hint rv-on" id="lbHint">แสดงทุกทรง</p>
+    <div class="lb-grid" id="lbGrid">
+      <div class="lk rv-on" data-c="bride updo" data-name="ผมเกล้าสูงเจ้าสาว"><i class="ear l"></i><i class="ear r"></i>
+        <div class="fr"><img src="assets/bride-updo.jpg" alt="เจ้าสาวชุดเกาะอก ผมเกล้าสูงปล่อยปอยข้างหน้า" loading="lazy"><div class="tags"><span>เจ้าสาว</span><span>เกล้า</span></div>
+          <a class="reel-link" href="https://www.instagram.com/reel/De8Qs5kQhfh/" target="_blank" rel="noopener"><svg><use href="#ico-play"/></svg>ดูคลิป</a></div>
+        <div class="meta"><h3>เกล้าสูง ปล่อยปอย<small>เจ้าสาว · ชุดเกาะอก</small></h3><button class="pick" type="button" aria-pressed="false">เลือกทรงนี้</button></div></div>
+      <div class="lk rv-on" data-c="updo bride" data-name="มวยต่ำบิดเกลียว"><i class="ear l"></i><i class="ear r"></i>
+        <div class="fr"><img src="assets/hair-lowbun.jpg" alt="ทรงผมมวยต่ำบิดเกลียว มองจากด้านหลัง" loading="lazy" style="object-position:50% 30%"><div class="tags"><span>ผมเกล้า</span></div>
+          <a class="reel-link" href="https://www.instagram.com/reel/DfT_CloQp3J/" target="_blank" rel="noopener"><svg><use href="#ico-play"/></svg>ดูคลิป</a></div>
+        <div class="meta"><h3>มวยต่ำบิดเกลียว<small>ชุดเปิดไหล่ · เรียบหรู</small></h3><button class="pick" type="button" aria-pressed="false">เลือกทรงนี้</button></div></div>
+      <div class="lk rv-on" data-c="event" data-name="ครึ่งหัวบิดเกลียว ลอนยาว"><i class="ear l"></i><i class="ear r"></i>
+        <div class="fr"><img src="assets/hair-halfup.jpg" alt="ทรงผมครึ่งหัวบิดเกลียว ลอนยาว มองจากด้านหลัง" loading="lazy" style="object-position:50% 35%"><div class="tags"><span>ออกงาน</span><span>ลอน</span></div>
+          <a class="reel-link" href="https://www.instagram.com/reel/DfM6xD1sFLB/" target="_blank" rel="noopener"><svg><use href="#ico-play"/></svg>ดูคลิป</a></div>
+        <div class="meta"><h3>ครึ่งหัว ลอนยาว<small>หวาน · งานเลี้ยง</small></h3><button class="pick" type="button" aria-pressed="false">เลือกทรงนี้</button></div></div>
+      <div class="lk rv-on" data-c="event" data-name="ลอนใหญ่ ครึ่งหัวมัดสูง"><i class="ear l"></i><i class="ear r"></i>
+        <div class="fr"><img src="assets/event-waves.jpg" alt="ลุคออกงาน ชุดลายดอก ผมลอนใหญ่ครึ่งหัว" loading="lazy" style="object-position:50% 25%"><div class="tags"><span>ออกงาน</span></div>
+          <a class="reel-link" href="https://www.instagram.com/reel/DfJSYlNh0Qg/" target="_blank" rel="noopener"><svg><use href="#ico-play"/></svg>ดูคลิป</a></div>
+        <div class="meta"><h3>ลอนใหญ่ ครึ่งหัว<small>ออกงาน · ปาร์ตี้</small></h3><button class="pick" type="button" aria-pressed="false">เลือกทรงนี้</button></div></div>
+      <div class="lk rv-on" data-c="updo event" data-name="เกล้าสูงสุภาพ ลุคผู้ใหญ่"><i class="ear l"></i><i class="ear r"></i>
+        <div class="fr"><img src="assets/mother-updo.jpg" alt="ลุคสุภาพออกงานพิธี ผมเกล้าสูง ชุดลูกไม้" loading="lazy" style="object-position:50% 20%"><div class="tags"><span>ผมเกล้า</span><span>ออกงาน</span></div>
+          <a class="reel-link" href="https://www.instagram.com/reel/De77lYiBtOF/" target="_blank" rel="noopener"><svg><use href="#ico-play"/></svg>ดูคลิป</a></div>
+        <div class="meta"><h3>เกล้าสูงสุภาพ<small>ออกงานพิธี · ชุดลูกไม้</small></h3><button class="pick" type="button" aria-pressed="false">เลือกทรงนี้</button></div></div>
+      <div class="lk rv-on" data-c="thai bride" data-name="มวยไทยประดับดอกไม้"><i class="ear l"></i><i class="ear r"></i>
+        <div class="fr"><div class="ph"><svg viewBox="0 0 120 150"><circle cx="60" cy="34" r="16"/><circle cx="46" cy="24" r="4"/><circle cx="60" cy="18" r="4"/><circle cx="74" cy="24" r="4"/><path d="M60 50c-20 0-30 16-30 36 0 22 13 38 30 42 17-4 30-20 30-42 0-20-10-36-30-36z"/><path d="M46 88q6 4 12 0M62 88q6 4 12 0M54 108q6 4 12 0"/></svg><span class="phl">ภาพผลงานจริงจากร้าน</span></div><div class="tags"><span>ชุดไทย</span></div></div>
+        <div class="meta"><h3>มวยไทยประดับดอก<small>ชุดไทย · พิธีเช้า</small></h3><button class="pick" type="button" aria-pressed="false">เลือกทรงนี้</button></div></div>
+      <div class="lk rv-on" data-c="thai" data-name="เกล้าต่ำทัดดอกไม้"><i class="ear l"></i><i class="ear r"></i>
+        <div class="fr"><div class="ph"><svg viewBox="0 0 120 150"><path d="M60 30c-20 0-30 16-30 38 0 24 13 40 30 44 17-4 30-20 30-44 0-22-10-38-30-38z"/><circle cx="86" cy="108" r="12"/><path d="M80 102l12 12M92 102l-12 12"/><path d="M92 50q8 6 6 16"/><circle cx="96" cy="44" r="5"/><path d="M46 70q6 4 12 0M62 70q6 4 12 0M54 92q6 4 12 0"/></svg><span class="phl">ภาพผลงานจริงจากร้าน</span></div><div class="tags"><span>ชุดไทย</span></div></div>
+        <div class="meta"><h3>เกล้าต่ำทัดดอกไม้<small>ชุดไทย · รดน้ำสังข์</small></h3><button class="pick" type="button" aria-pressed="false">เลือกทรงนี้</button></div></div>
+      <div class="lk rv-on" data-c="bride" data-name="ลุคเจ้าสาวชุดขาว"><i class="ear l"></i><i class="ear r"></i>
+        <div class="fr"><div class="ph"><svg viewBox="0 0 120 150"><path d="M60 24C30 24 18 70 14 140M60 24c30 0 42 46 46 116"/><path d="M60 40c-18 0-26 14-26 32 0 20 11 34 26 38 15-4 26-18 26-38 0-18-8-32-26-32z"/><path d="M48 76q5 3 10 0M62 76q5 3 10 0M54 94q6 4 12 0"/><path d="M48 30l4-6 4 4 4-6 4 6 4-4 4 6"/></svg><span class="phl">ภาพผลงานจริงจากร้าน</span></div><div class="tags"><span>เจ้าสาว</span></div></div>
+        <div class="meta"><h3>เจ้าสาวชุดขาว<small>งานเลี้ยงเย็น · คลุมผ้า</small></h3><button class="pick" type="button" aria-pressed="false">เลือกทรงนี้</button></div></div>
+    </div>
+    <p class="lb-note">ภาพถ่ายทั้งหมดมาจาก Reels บน IG <a href="https://www.instagram.com/panda.aui/" target="_blank" rel="noopener">@panda.aui</a> · ช่อง “ภาพผลงานจริงจากร้าน” รอใส่ภาพผลงานชุดไทย/เจ้าสาวจากร้าน</p>
+  </div>
+</section>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="ภาพผลงาน"><button type="button" aria-label="ปิด">×</button><img alt=""></div>
+
+<!-- PLANNER -->
+<section class="planner" id="planner">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">Wedding-day planner</span>
+      <h2>วันงานต้อง<em>เริ่มกี่โมง?</em></h2>
+      <p>ใส่เวลาพิธีและจำนวนลุค แล้วดูไทม์ไลน์แต่งหน้า-ทำผมแบบคร่าวๆ พร้อมข้อความสำหรับส่งทาง LINE</p>
+    </div>
+    <div class="pl-box rv-on">
+      <form class="pl-form" id="plForm" onsubmit="return false">
+        <h3>รายละเอียดวันงาน 💍</h3>
+        <p class="hint">ยังไม่ใช่การจองจริง · ช่างจะยืนยันคิว เวลา และราคาอีกครั้ง</p>
+        <div class="fg">
+          <div class="fl"><i>1</i>รูปแบบงาน</div>
+          <div class="seg">
+            <label><input type="radio" name="mode" value="morning"><span>พิธีเช้า</span></label>
+            <label><input type="radio" name="mode" value="both" checked><span>เช้า + เลี้ยงเย็น</span></label>
+            <label><input type="radio" name="mode" value="evening"><span>เลี้ยงเย็นอย่างเดียว</span></label>
+          </div>
+        </div>
+        <div class="fg">
+          <div class="fl"><i>2</i>วันและเวลาพิธี</div>
+          <div class="g2">
+            <div><input class="inp" type="date" id="pDate" aria-label="วันงาน"><div class="sub">วันงาน</div></div>
+            <div id="t1Wrap"><input class="inp" type="time" id="t1" value="08:09" aria-label="เวลาเริ่มพิธีเช้า"><div class="sub">พิธีเช้าเริ่ม (เช่น แห่ขันหมาก)</div></div>
+            <div id="t2Wrap"><input class="inp" type="time" id="t2" value="18:00" aria-label="เวลางานเลี้ยง"><div class="sub">งานเลี้ยงเย็นเริ่ม</div></div>
+            <div><select class="inp" id="loc" aria-label="สถานที่"><option>บ้านเจ้าสาว</option><option>โรงแรม</option><option>สถานที่จัดงาน</option><option>ยังไม่แน่ใจ</option></select><div class="sub">ช่างไปแต่งที่</div></div>
+          </div>
+        </div>
+        <div class="fg">
+          <div class="fl"><i>3</i>จำนวนลุค &amp; คนแต่งเพิ่ม</div>
+          <div class="g2">
+            <div><div class="stepper"><button type="button" data-s="looks" data-d="-1" aria-label="ลดจำนวนลุค">−</button><output id="looksOut">2 ลุค</output><button type="button" data-s="looks" data-d="1" aria-label="เพิ่มจำนวนลุค">+</button></div><div class="sub">ลุคเจ้าสาว (เปลี่ยนชุด/ทรงผม)</div></div>
+            <div><div class="stepper"><button type="button" data-s="extra" data-d="-1" aria-label="ลดจำนวนคน">−</button><output id="extraOut">0 คน</output><button type="button" data-s="extra" data-d="1" aria-label="เพิ่มจำนวนคน">+</button></div><div class="sub">แม่ / ญาติ / เพื่อนเจ้าสาว</div></div>
+          </div>
+        </div>
+        <div class="fg">
+          <div class="fl"><i>4</i>ทรงผมที่ชอบ</div>
+          <div class="chosen" id="chosen">🐼 <span>ยังไม่ได้เลือก — <b>ให้ช่างช่วยเลือก</b></span><a href="#lookbook">เลือกจาก Look book →</a></div>
+        </div>
+        <div class="fg" style="margin-bottom:0"><input class="inp" id="areaTxt" placeholder="พื้นที่ / ชื่อสถานที่ เช่น บางพลี, เมืองสมุทรปราการ..."></div>
+      </form>
+
+      <aside class="pl-out" aria-live="polite">
+        <span class="eyebrow">Your wedding day</span>
+        <h3 id="outTitle">ไทม์ไลน์ <span>เช้า + เลี้ยงเย็น</span></h3>
+        <ul class="tl" id="tl"></ul>
+        <div class="sumrow">
+          <div><small>ช่างเริ่มงาน</small><b id="sStart">—</b></div>
+          <div><small>เวลางานของช่างรวม</small><b id="sTotal">—</b></div>
+        </div>
+        <div class="alert" id="alert"></div>
+        <div class="msg" id="msg"></div>
+        <div class="out-actions">
+          <button type="button" class="btn btn-w" id="copy">📋 คัดลอกข้อความ</button>
+          <a class="btn btn-ln" href="https://line.me/ti/p/Y9lQ5yZS9F" target="_blank" rel="noopener"><svg fill="currentColor"><use href="#ico-line"/></svg> เปิด LINE</a>
+        </div>
+        <div class="ok" id="ok"></div>
+        <p class="fine">เวลาเป็นค่าประมาณ (แต่งหน้า ~90 นาที · ทำผม ~60 นาที · เปลี่ยนลุค ~60 นาที · คนแต่งเพิ่ม ~60 นาที/ท่าน) ช่างจะยืนยันอีกครั้ง · กดคัดลอก แล้ววางในแชต LINE ID aui_2527</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section style="background:var(--pink3)">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">How to book</span>
+      <h2>จองคิว <span class="hl">5 ขั้นตอน</span></h2>
+      <p>คิวช่วงฤกษ์ดีมักเต็มก่อน ทักมาเช็กวันว่างให้เร็วที่สุด</p>
+    </div>
+    <div class="steps steps-wrap">
+      <div class="st rv-on"><div class="n">1</div><h4>ทัก LINE</h4><p>aui_2527 แจ้งวันงาน เวลา และสถานที่</p></div>
+      <div class="st rv-on"><div class="n">2</div><h4>เช็กคิว &amp; ราคา</h4><p>ช่างยืนยันวันว่างและเสนอราคา</p></div>
+      <div class="st dep rv-on"><div class="n">3</div><h4>โอนมัดจำ</h4><p>เพื่อล็อกคิว (ยอดตามที่ร้านแจ้ง)</p></div>
+      <div class="st rv-on"><div class="n">4</div><h4>คุยลุค &amp; ทรงผม</h4><p>ส่งรูปชุด ทรงที่ชอบ จาก Look book</p></div>
+      <div class="st rv-on"><div class="n">5</div><h4>วันงาน</h4><p>ช่างไปตามเวลานัด สวยทั้งวัน 🐼</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">Reviews</span>
+      <h2>เสียงจาก<em>เจ้าสาว</em></h2>
+    </div>
+    <div class="rv-grid">
+      <div class="rv rv-on"><span class="q">“</span><div class="stars">★★★★★</div><p>ผมเกล้าอยู่ทรงตั้งแต่ตีห้าจนจบพิธีเช้า ไม่มีหลุดสักเส้น ตอนเย็นรื้อเป็นลอนให้ใหม่ไวมาก</p><div class="who"><div class="av">พ</div><div><b>คุณพลอย</b><small>เจ้าสาว · เช้า + เย็น</small></div></div></div>
+      <div class="rv rv-on"><span class="q">“</span><div class="stars">★★★★★</div><p>จองให้แม่กับน้องสาวด้วย ช่างจัดลำดับคิวให้ทันฤกษ์ ทุกคนได้ทรงผมสุภาพสวยเข้ากับชุด</p><div class="who"><div class="av">ฟ</div><div><b>คุณฟ้า</b><small>เจ้าสาว + ครอบครัว</small></div></div></div>
+      <div class="rv rv-on"><span class="q">“</span><div class="stars">★★★★★</div><p>ส่งรูปทรงผมที่ชอบไปให้ดู ช่างปรับให้เข้ากับหน้าและชุด เป็นกันเองมาก</p><div class="who"><div class="av">บ</div><div><b>คุณบีม</b><small>ออกงาน</small></div></div></div>
+    </div>
+    <p class="note">* รีวิวในหน้านี้เป็นตัวอย่างสำหรับเว็บไซต์ demo เท่านั้น เว็บไซต์จริงจะใช้รีวิวจริงจากลูกค้า</p>
+  </div>
+</section>
+
+<!-- AREA + CONTACT -->
+<section class="area" id="area-sec">
+  <span id="area" style="position:absolute;top:-80px"></span>
+  <div class="wrap">
+    <div class="area-box">
+      <div class="rv-on">
+        <span class="eyebrow">Service area</span>
+        <h2>รับงานใน<em>สมุทรปราการ</em><br>และใกล้เคียง</h2>
+        <p>ช่างเดินทางไปแต่งหน้าทำผมที่บ้าน โรงแรม หรือสถานที่จัดงาน แจ้งพื้นที่ในแชตเพื่อเช็กค่าเดินทาง</p>
+        <div class="chips">
+          <span class="main">📍 สมุทรปราการ</span><span>เมืองสมุทรปราการ</span><span>บางพลี</span><span>บางบ่อ</span><span>บางเสาธง</span><span>พระประแดง</span><span>พระสมุทรเจดีย์</span>
+        </div>
+        <p style="font-size:13px;color:var(--grey);margin-top:0">* ตัวอย่างพื้นที่ · รอยืนยันกับร้าน · นอกพื้นที่สอบถามได้</p>
+        <div class="contact-list">
+          <a class="ci" href="tel:0893063436"><span class="i"><svg fill="#333"><use href="#ico-phone"/></svg></span><span><small>โทร</small><b>089-306-3436</b></span></a>
+          <a class="ci" href="https://line.me/ti/p/Y9lQ5yZS9F" target="_blank" rel="noopener"><span class="i" style="background:#06C755"><svg fill="#fff"><use href="#ico-line"/></svg></span><span><small>LINE ID</small><b>aui_2527</b></span></a>
+          <a class="ci" href="https://www.instagram.com/panda.aui/" target="_blank" rel="noopener"><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="#333"/></svg></span><span><small>Instagram · Reels ผลงานล่าสุด</small><b>@panda.aui</b></span></a>
+        </div>
+      </div>
+      <div class="map rv-on">
+        <div class="pin">🐼 พื้นที่ให้บริการ<small>จังหวัดสมุทรปราการ (ไม่มีหน้าร้าน)</small></div>
+        <iframe title="แผนที่จังหวัดสมุทรปราการ พื้นที่ให้บริการ Panda Aui" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3&z=11&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand"><svg aria-hidden="true" style="width:50px;height:50px"><use href="#panda"/></svg><div><div class="t1">Panda <span style="color:var(--pink)">Aui</span></div><div class="t2">Makeup &amp; Hair · สมุทรปราการ</div></div></div>
+        <p>ช่างแต่งหน้า-ทำผมเจ้าสาว ผมเรียบ ผมเกล้า ทรงผมออกงาน ชุดไทย รับงานนอกสถานที่ในสมุทรปราการ</p>
+      </div>
+      <div><h4>เมนู</h4><ul><li><a href="#hair">ทำผม</a></li><li><a href="#packages">แพ็กเกจ</a></li><li><a href="#lookbook">Look book</a></li><li><a href="#planner">วางแผนวันงาน</a></li></ul></div>
+      <div><h4>ติดต่อ</h4><ul><li>☎ <a href="tel:0893063436">089-306-3436</a></li><li>LINE <a href="https://line.me/ti/p/Y9lQ5yZS9F" target="_blank" rel="noopener">aui_2527</a></li><li>IG <a href="https://www.instagram.com/panda.aui/" target="_blank" rel="noopener">@panda.aui</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Panda Aui · Makeup &amp; Hair</span><span>Website demo โดย Relearn Solution</span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://line.me/ti/p/Y9lQ5yZS9F" target="_blank" rel="noopener" class="ln" aria-label="แชต LINE aui_2527"><svg fill="#fff"><use href="#ico-line"/></svg></a>
+  <a href="tel:0893063436" class="call" aria-label="โทร 089-306-3436"><svg fill="#333"><use href="#ico-phone"/></svg></a>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv-on').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+// count
+document.querySelectorAll('[data-count]').forEach(el=>{const end=+el.dataset.count;let n=0;const st=Math.ceil(end/40);const t=setInterval(()=>{n=Math.min(n+st,end);el.textContent=n.toLocaleString('en-US');if(n>=end)clearInterval(t)},30)});
+// burger
+const menu=$('menu'),burger=$('burger');
+burger.addEventListener('click',()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+
+// ---------- look book ----------
+const cards=[...document.querySelectorAll('.lk')];
+const LBL={all:'ทุกทรง',bride:'เจ้าสาว',thai:'ชุดไทย',updo:'ผมเรียบ-เกล้า',event:'ออกงาน'};
+document.querySelectorAll('[data-n]').forEach(b=>{const k=b.dataset.n;b.textContent=k==='all'?cards.length:cards.filter(c=>c.dataset.c.split(' ').includes(k)).length});
+document.querySelectorAll('.lb-filters button').forEach(btn=>btn.addEventListener('click',()=>{
+  document.querySelectorAll('.lb-filters button').forEach(x=>x.setAttribute('aria-pressed',x===btn));
+  const f=btn.dataset.f;let n=0;
+  cards.forEach(c=>{const show=f==='all'||c.dataset.c.split(' ').includes(f);c.classList.toggle('hide',!show);if(show)n++});
+  $('lbHint').textContent=f==='all'?'แสดงทุกทรง':'แสดง '+n+' ทรงในหมวด “'+LBL[f]+'”';
+}));
+let chosenStyle='';
+cards.forEach(c=>c.querySelector('.pick').addEventListener('click',e=>{
+  const on=e.currentTarget.getAttribute('aria-pressed')!=='true';
+  cards.forEach(x=>{const p=x.querySelector('.pick');p.setAttribute('aria-pressed','false');p.textContent='เลือกทรงนี้'});
+  if(on){e.currentTarget.setAttribute('aria-pressed','true');e.currentTarget.textContent='✓ เลือกแล้ว';chosenStyle=c.dataset.name}else chosenStyle='';
+  $('chosen').querySelector('span').innerHTML=chosenStyle?'ทรงที่เลือก: <b>'+chosenStyle+'</b>':'ยังไม่ได้เลือก — <b>ให้ช่างช่วยเลือก</b>';
+  plan();
+}));
+const lb=$('lightbox');
+cards.forEach(c=>{const img=c.querySelector('.fr img');if(img)img.addEventListener('click',()=>{lb.querySelector('img').src=img.src;lb.querySelector('img').alt=img.alt;lb.classList.add('on')})});
+lb.addEventListener('click',e=>{if(e.target!==lb.querySelector('img'))lb.classList.remove('on')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+
+// ---------- planner ----------
+const st={looks:2,extra:0};
+document.querySelectorAll('.stepper button').forEach(b=>b.addEventListener('click',()=>{
+  const k=b.dataset.s,max=k==='looks'?3:6,min=k==='looks'?1:0;
+  st[k]=Math.max(min,Math.min(max,st[k]+ +b.dataset.d));plan();
+}));
+const pad=n=>String(n).padStart(2,'0');
+const fmt=m=>{m=((m%1440)+1440)%1440;return pad(Math.floor(m/60))+':'+pad(m%60)};
+const toM=v=>{const[a,b]=(v||'00:00').split(':').map(Number);return a*60+b};
+const dur=m=>{const h=Math.floor(m/60),x=m%60;return(h?h+' ชม.':'')+(x?' '+x+' นาที':'')};
+const thDate=v=>v?new Date(v+'T00:00').toLocaleDateString('th-TH',{weekday:'short',day:'numeric',month:'short',year:'numeric'}):'ยังไม่ระบุ';
+let msgText='';
+function plan(){
+  const f=$('plForm');const mode=f.mode.value;
+  $('t1Wrap').style.display=mode==='evening'?'none':'';
+  $('t2Wrap').style.display=mode==='morning'?'none':'';
+  if(mode!=='both'&&st.looks>2)st.looks=2;
+  $('looksOut').textContent=st.looks+' ลุค';$('extraOut').textContent=st.extra+' คน';
+  const MK=90,HR=60,DRESS=30,EXTRA=60,CHG=60,SETUP=20;
+  const first=mode==='evening'?toM($('t2').value):toM($('t1').value);
+  const ev2=toM($('t2').value);
+  const ready=first-DRESS, hairS=ready-HR, mkS=hairS-MK, exS=mkS-st.extra*EXTRA, arrive=exS-SETUP;
+  const L=[];
+  L.push([arrive,'ช่างถึง '+$('loc').value,'จัดโต๊ะ ไฟ อุปกรณ์']);
+  if(st.extra)L.push([exS,'แต่งหน้า-ทำผม คนแต่งเพิ่ม',st.extra+' ท่าน (ก่อนเจ้าสาว)']);
+  L.push([mkS,'เริ่มแต่งหน้าเจ้าสาว','ลุค 1 · ประมาณ 90 นาที']);
+  L.push([hairS,'ทำผมเจ้าสาว',chosenStyle||'ทรงตามที่คุยกันไว้']);
+  L.push([ready,'ใส่ชุด · ถ่ายรูปก่อนงาน','เผื่อเวลา 30 นาที']);
+  L.push([first,mode==='evening'?'งานเลี้ยงเริ่ม':'พิธีเช้าเริ่ม','',1]);
+  let changes=0,work=first-arrive;
+  if(mode==='both'){
+    if(st.looks===3){const mid=first+180;L.push([mid-CHG,'เปลี่ยนลุค 2','รื้อทรงผม + เติมหน้า']);L.push([mid,'พร้อมลุค 2','ช่วงสาย / ถ่ายรูปหลังพิธี',1]);changes++}
+    if(st.looks>=2){L.push([ev2-CHG-15,'เปลี่ยนลุค '+st.looks+' · งานเย็น','ทำผมใหม่ + เติมหน้า']);changes++}
+    L.push([ev2,'งานเลี้ยงเย็นเริ่ม','',1]);
+    work=(st.looks>=2?ev2-15:first)-arrive;
+  } else if(st.looks===2){
+    L.push([first+120-CHG,'เปลี่ยนลุค 2','หลังพิธี']);L.push([first+120,'พร้อมลุค 2','',1]);changes++;work=first+120-arrive;
+  }
+  $('tl').innerHTML=L.map(x=>'<li'+(x[3]?' class="ev"':'')+'><b>'+fmt(x[0])+'</b><span class="dot">'+(x[3]?'★':'')+'</span><span>'+x[1]+(x[2]?'<small>'+x[2]+'</small>':'')+'</span></li>').join('');
+  $('outTitle').innerHTML='ไทม์ไลน์ <span>'+({morning:'พิธีเช้า',both:'เช้า + เลี้ยงเย็น',evening:'เลี้ยงเย็น'})[mode]+' · '+st.looks+' ลุค</span>';
+  $('sStart').textContent=fmt(arrive)+' น.';
+  $('sTotal').textContent=dur(work);
+  const a=$('alert');
+  if(arrive<4*60&&mode!=='evening'){a.textContent='⏰ ช่างต้องเริ่มก่อนตี 4 ('+fmt(arrive)+') — ทักไปเช็กคิวเช้าตรู่ หรือขอเพิ่มผู้ช่วยสำหรับคนแต่งเพิ่ม';a.classList.add('on')}
+  else if(mode==='both'&&ev2-first<300){a.textContent='⚠️ เวลางานเช้ากับงานเย็นห่างกันน้อย ลองเช็กเวลาอีกครั้ง';a.classList.add('on')}
+  else a.classList.remove('on');
+  const modeTxt={morning:'พิธีเช้า',both:'พิธีเช้า + งานเลี้ยงเย็น',evening:'งานเลี้ยงเย็น'}[mode];
+  msgText='สวัสดีค่ะ Panda Aui 🐼 ขอเช็กคิวแต่งหน้า-ทำผมเจ้าสาวค่ะ\n'+
+   '• วันงาน: '+thDate($('pDate').value)+'\n• รูปแบบ: '+modeTxt+'\n'+
+   (mode!=='evening'?'• พิธีเช้าเริ่ม: '+$('t1').value+' น.\n':'')+
+   (mode!=='morning'?'• งานเลี้ยงเริ่ม: '+$('t2').value+' น.\n':'')+
+   '• จำนวนลุคเจ้าสาว: '+st.looks+' ลุค\n• คนแต่งเพิ่ม: '+st.extra+' ท่าน\n'+
+   '• ทรงผมที่ชอบ: '+(chosenStyle||'ให้ช่างช่วยเลือก')+'\n'+
+   '• สถานที่: '+$('loc').value+($("areaTxt").value?' ('+$("areaTxt").value+')':'')+'\n'+
+   '• เวลาเริ่มที่ประเมินไว้: ~'+fmt(arrive)+' น.\nรบกวนเช็กวันว่างและราคาให้หน่อยนะคะ 💕';
+  $('msg').textContent=msgText;
+}
+$('plForm').addEventListener('input',plan);$('plForm').addEventListener('change',plan);
+$('copy').addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(msgText);$('ok').textContent='✓ คัดลอกแล้ว เปิด LINE แล้ววางในแชต aui_2527 ได้เลย'}
+  catch(e){const r=document.createRange();r.selectNodeContents($('msg'));const s=getSelection();s.removeAllRanges();s.addRange(r);$('ok').textContent='เลือกข้อความแล้ว กดคัดลอกได้เลย'}
+});
+const d=new Date();d.setDate(d.getDate()+60);$('pDate').value=d.toISOString().slice(0,10);
+plan();
+</script>
+</body>
+</html>

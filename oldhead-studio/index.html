@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oldhead Studio | ร้านตัดผมศาลายา ใกล้ ม.มหิดล · The Sense Salaya</title>
+<meta name="description" content="Oldhead Studio (Est. 2022) hair studio ศาลายา ย้ายร้านแล้ว ที่อยู่ใหม่ The Sense Salaya หลัง ม.มหิดล ตัดผมชาย-หญิง ทำสี ดัด Men's haircut starting from 300 THB · Open daily 10:00–20:00 · จองล่วงหน้าทาง LINE">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --w:#FFFFFF; --k:#0E0E0E; --k2:#1c1c1c; --g:#6f6f6f; --g2:#a3a3a3;
+  --line:#e6e6e6; --line2:#cfcfcf; --soft:#f6f7f8;
+  --b:#9ED3F0; --b2:#d8eefa; --b3:#4f9fca;
+  --red:#d6262b;
+  --line-g:#06C755;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--w);color:var(--k);font-size:17px;line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.head{font-family:var(--head);line-height:1.15}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+.wrap{width:min(1240px,92%);margin:0 auto}
+svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.heart{color:var(--b)}
+.hrt{width:.95em;height:.95em;vertical-align:-.1em;display:inline-block}
+.tm .ph.mono img{width:150px;height:150px;border-radius:50%;box-shadow:0 20px 40px -18px rgba(0,0,0,.4)}
+.en{font-family:var(--head);letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-weight:600}
+
+/* moved banner */
+.moved{background:var(--b);color:var(--k);font-family:var(--head);font-size:14.5px}
+.moved .wrap{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 0;flex-wrap:wrap;text-align:center}
+.moved b{font-weight:800}
+.moved .pill{background:var(--k);color:var(--w);border-radius:999px;padding:2px 12px;font-size:12px;letter-spacing:.12em;font-weight:700}
+.moved s{color:#3b5b6e}
+.moved a{text-decoration:underline;text-underline-offset:3px;font-weight:700}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:42px;height:42px;border-radius:50%}
+.brand .wm{font-family:var(--head);font-weight:900;font-size:22px;letter-spacing:-.02em}
+.brand .wm small{font-weight:500;font-size:11px;letter-spacing:.24em;color:var(--g);margin-left:8px;vertical-align:middle}
+.menu{display:flex;gap:30px;font-family:var(--head);font-weight:500;font-size:15px}
+.menu a{color:#333;position:relative}
+.menu a:hover{color:var(--k)}
+.menu a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--b);transition:.25s}
+.menu a:hover::after{width:100%}
+.menu a sup{font-size:9px;color:var(--g2);margin-right:4px}
+.burger{display:none;background:none;border:1px solid var(--line2);border-radius:999px;width:44px;height:44px;cursor:pointer;place-items:center}
+.burger svg{width:22px;height:22px;stroke:var(--k);stroke-width:2;stroke-linecap:round}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:600;font-size:15.5px;padding:14px 26px;border-radius:999px;cursor:pointer;transition:.25s;white-space:nowrap;border:1px solid var(--k)}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-k{background:var(--k);color:var(--w)}
+.btn-k:hover{background:#2a2a2a;transform:translateY(-2px)}
+.btn-o{background:transparent;color:var(--k)}
+.btn-o:hover{background:var(--k);color:var(--w)}
+.btn-line{background:var(--line-g);border-color:var(--line-g);color:#fff}
+.btn-line:hover{filter:brightness(1.06);transform:translateY(-2px)}
+.btn-sm{padding:9px 18px;font-size:14px}
+.arrow{transition:transform .25s}
+.btn:hover .arrow{transform:translateX(4px)}
+
+/* section heads */
+section{padding:110px 0;position:relative}
+.sh{display:grid;grid-template-columns:200px 1fr auto;gap:30px;align-items:end;border-top:1px solid var(--k);padding-top:22px;margin-bottom:54px}
+.sh .no{font-family:var(--head);font-weight:500;font-size:14px;color:var(--g)}
+.sh .no b{display:block;font-weight:800;color:var(--k);font-size:13px;letter-spacing:.2em}
+.sh h2{font-size:clamp(34px,4.6vw,60px);font-weight:800;letter-spacing:-.02em}
+.sh h2 .th{display:block;font-size:.42em;font-weight:500;color:var(--g);letter-spacing:0;margin-top:10px}
+.sh p{max-width:340px;color:var(--g);font-size:15.5px;text-align:right}
+.sample{display:inline-flex;align-items:center;gap:6px;font-family:var(--head);font-size:12px;font-weight:600;color:#245e80;background:var(--b2);border-radius:999px;padding:3px 11px}
+
+/* hero */
+.hero{padding:60px 0 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:60px;align-items:center}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.meta span{border:1px solid var(--line2);border-radius:999px;padding:5px 14px;font-family:var(--head);font-size:13px;font-weight:500;color:#333;display:inline-flex;align-items:center;gap:8px}
+.meta span i{width:8px;height:8px;border-radius:50%;background:var(--b);display:block}
+.meta .live.on i{background:#2fc27a;box-shadow:0 0 0 4px rgba(47,194,122,.18)}
+.meta .live.off i{background:#d6262b}
+.hero h1{font-size:clamp(46px,6vw,86px);font-weight:800;letter-spacing:-.035em;line-height:1.02}
+.hero h1 em{font-style:normal;position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:-2px;right:-4px;bottom:.2em;height:.2em;background:var(--b);z-index:-1;border-radius:2px}
+.hero .th{font-family:var(--head);font-size:clamp(19px,1.8vw,23px);font-weight:500;color:#333;margin:24px 0 8px;max-width:520px;line-height:1.5}
+.hero .note{color:var(--g);font-size:15.5px}
+.price-tag{display:inline-flex;align-items:stretch;margin:28px 0 30px;border:1px solid var(--k);border-radius:999px;overflow:hidden;font-family:var(--head)}
+.price-tag span{padding:10px 18px;font-size:12.5px;letter-spacing:.14em;font-weight:600;display:flex;align-items:center}
+.price-tag b{background:var(--k);color:var(--w);padding:10px 20px;font-size:20px;font-weight:800;letter-spacing:-.01em}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero-ph{position:relative;display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:auto auto;gap:14px}
+.hero-ph figure{position:relative;overflow:hidden;background:var(--soft)}
+.hero-ph figure img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.hero-ph figure:hover img{transform:scale(1.04)}
+.hero-ph .p1{grid-row:span 2;aspect-ratio:4/5}
+.hero-ph .p2,.hero-ph .p3{aspect-ratio:1/1}
+.hero-ph figcaption{position:absolute;left:12px;bottom:12px;background:var(--w);font-family:var(--head);font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px}
+.hero-ph .sticker{position:absolute;top:-22px;right:-14px;width:120px;height:120px;z-index:3;animation:spin 24s linear infinite}
+.hero-ph .sticker-in{position:absolute;top:8px;right:16px;width:76px;height:76px;border-radius:50%;z-index:4;box-shadow:0 10px 26px -8px rgba(0,0,0,.35)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.wordmark{font-family:var(--head);font-weight:900;font-size:min(10.6vw,152px);letter-spacing:-.055em;line-height:.8;margin-top:70px;white-space:nowrap;text-align:center;user-select:none}
+.wordmark span{color:var(--b)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--k);border-bottom:1px solid var(--line);margin-top:24px}
+.stat{padding:22px 20px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat .n{font-family:var(--head);font-weight:800;font-size:34px;letter-spacing:-.02em;line-height:1}
+.stat .l{font-size:14px;color:var(--g);margin-top:6px}
+
+/* marquee */
+.marquee{overflow:hidden;padding:16px 0;border-bottom:1px solid var(--line)}
+.track{display:flex;width:max-content;animation:slide 40s linear infinite;font-family:var(--head);font-weight:600;font-size:18px}
+.track span{display:flex;align-items:center;gap:30px;padding-right:30px;white-space:nowrap}
+.track span::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--b)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* lookbook */
+.lb-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{border:1px solid var(--line2);background:var(--w);border-radius:999px;padding:9px 20px;cursor:pointer;font-family:var(--head);font-weight:500;font-size:15px;transition:.2s}
+.filters button:hover{border-color:var(--k)}
+.filters button[aria-pressed="true"]{background:var(--k);color:var(--w);border-color:var(--k)}
+.filters button small{color:var(--g2);margin-left:4px;font-size:12px}
+.filters button[aria-pressed="true"] small{color:var(--b)}
+.count{font-family:var(--head);font-size:14px;color:var(--g)}
+.look-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 18px}
+.look{display:flex;flex-direction:column;transition:opacity .3s}
+.look.hide{display:none}
+.look .ph{aspect-ratio:4/5;overflow:hidden;background:var(--soft);position:relative}
+.look .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.look:hover .ph img{transform:scale(1.05)}
+.look .ph .tg{position:absolute;top:12px;left:12px;display:flex;gap:6px}
+.look .ph .tg span{background:rgba(255,255,255,.92);font-family:var(--head);font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:999px}
+.look .ph.ill{display:grid;place-items:center;background:linear-gradient(180deg,#f4f6f8,#e9eef2)}
+.look .ph.ill svg{width:58%;color:var(--k)}
+.look .ph.ill .il{position:absolute;bottom:12px;right:12px;font-size:11px;font-family:var(--head);color:var(--g)}
+.look .cap{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding-top:12px}
+.look h3{font-size:17px;font-weight:700}
+.look .by{font-size:13px;color:var(--g)}
+.look .add{flex:none;width:38px;height:38px;border-radius:50%;border:1px solid var(--k);background:var(--w);display:grid;place-items:center;cursor:pointer;transition:.2s}
+.look .add:hover,.look .add.on{background:var(--k);color:var(--w)}
+.look .add svg{width:18px;height:18px}
+.lb-note{margin-top:26px;font-size:13.5px;color:var(--g)}
+
+/* menu */
+.menu-sec{background:var(--soft)}
+.price-list{border-top:1px solid var(--k)}
+.row{display:grid;grid-template-columns:70px 1.2fr 1.6fr 200px;gap:24px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line2);transition:background .2s}
+.row:hover{background:rgba(158,211,240,.14)}
+.row .ix{font-family:var(--head);font-size:13px;color:var(--g)}
+.row h3{font-size:24px;font-weight:700;letter-spacing:-.01em}
+.row h3 small{display:block;font-family:var(--body);font-size:14px;color:var(--g);font-weight:400;letter-spacing:0}
+.row p{color:#444;font-size:15.5px}
+.row .pr{text-align:right;font-family:var(--head)}
+.row .pr b{font-size:26px;font-weight:800;letter-spacing:-.02em}
+.row .pr small{display:block;font-size:12px;margin-top:2px}
+.row.real .pr small{color:#1a7a4c;font-weight:600}
+.row:not(.real) .pr b{color:#555}
+.menu-foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:26px;font-size:14px;color:var(--g)}
+
+/* booking */
+.book .wrap>.grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--k)}
+.bk-form{padding:40px;border-right:1px solid var(--k);display:grid;gap:28px}
+.fld label.lbl{display:flex;justify-content:space-between;align-items:center;font-family:var(--head);font-weight:700;font-size:15px;margin-bottom:12px}
+.fld label.lbl span{font-weight:500;color:var(--g);font-size:13px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{border:1px solid var(--line2);background:var(--w);border-radius:999px;padding:8px 16px;cursor:pointer;font-family:var(--head);font-size:14.5px;font-weight:500;transition:.15s}
+.opt:hover{border-color:var(--k)}
+.opt[aria-pressed="true"]{background:var(--k);color:var(--w);border-color:var(--k)}
+.opt:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.day{border:1px solid var(--line2);background:var(--w);border-radius:14px;padding:8px 0;text-align:center;cursor:pointer;font-family:var(--head);line-height:1.25;position:relative}
+.day small{display:block;font-size:11px;color:var(--g)}
+.day b{font-size:19px;font-weight:700}
+.day[aria-pressed="true"]{background:var(--k);color:var(--w);border-color:var(--k)}
+.day[aria-pressed="true"] small{color:var(--b)}
+.day .q{position:absolute;top:-6px;right:-4px;width:16px;height:16px;border-radius:50%;background:var(--b);color:var(--k);font-size:10px;font-weight:800;display:grid;place-items:center}
+.times{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}
+.times .opt{padding:7px 0;text-align:center;border-radius:10px;font-size:13.5px}
+.wed-note{display:none;margin-top:10px;font-size:13.5px;background:var(--b2);border-radius:10px;padding:8px 12px}
+.wed-note.show{display:block}
+.inp{width:100%;border:1px solid var(--line2);border-radius:12px;padding:12px 14px;font:inherit;background:var(--w)}
+.inp:focus{outline:2px solid var(--b);border-color:var(--k)}
+.bk-side{padding:40px;background:var(--k);color:var(--w);display:flex;flex-direction:column;gap:22px}
+.bk-side h3{font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-.02em}
+.bk-side h3 span{color:var(--b)}
+.bk-side .sub{color:#bbb;font-size:15.5px}
+.chat{background:#1b1b1b;border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:10px;flex:1;min-height:260px}
+.chat .hd{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid #2c2c2c;font-family:var(--head);font-size:14px}
+.chat .hd img{width:32px;height:32px;border-radius:50%}
+.chat .hd small{display:block;color:#8a8a8a;font-size:12px}
+.bubble{align-self:flex-end;background:var(--b);color:var(--k);border-radius:18px 18px 4px 18px;padding:14px 16px;max-width:92%;white-space:pre-line;font-size:14.5px;line-height:1.6}
+.bubble.r{align-self:flex-start;background:#2a2a2a;color:#ddd;border-radius:18px 18px 18px 4px;font-size:13.5px}
+.bk-act{display:flex;gap:10px;flex-wrap:wrap}
+.bk-act .btn{flex:1}
+.bk-side .btn-o{color:var(--w);border-color:#555}
+.bk-side .btn-o:hover{background:var(--w);color:var(--k)}
+.bk-side .fine{font-size:12.5px;color:#8a8a8a}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,120px);background:var(--k);color:var(--w);padding:12px 22px;border-radius:999px;font-family:var(--head);font-weight:600;z-index:90;transition:.35s;opacity:0;visibility:hidden}
+.toast.show{transform:translate(-50%,0);opacity:1;visibility:visible}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{border:1px solid var(--line2);border-radius:22px;padding:28px 26px;position:relative;transition:.25s;background:var(--w)}
+.step:hover{border-color:var(--k);transform:translateY(-4px)}
+.step .ic{width:52px;height:52px;border-radius:50%;background:var(--b2);display:grid;place-items:center;margin-bottom:22px}
+.step .ic svg{width:26px;height:26px}
+.step .n{position:absolute;top:26px;right:26px;font-family:var(--head);font-weight:800;color:var(--line2);font-size:34px;line-height:1}
+.step h4{font-size:20px;font-weight:700}
+.step p{color:var(--g);font-size:15px;margin-top:6px}
+
+/* team */
+.team-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}
+.tm{border:1px solid var(--line2);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;background:var(--w)}
+.tm .ph{aspect-ratio:4/3;overflow:hidden;background:var(--soft);position:relative}
+.tm .ph img{width:100%;height:100%;object-fit:cover}
+.tm .ph.mono{display:grid;place-items:center;background:var(--b2)}
+.tm .ph.mono b{font-family:var(--head);font-weight:900;font-size:80px;letter-spacing:-.04em}
+.tm .ph .handle{position:absolute;left:14px;bottom:14px;background:var(--k);color:var(--w);font-family:var(--head);font-size:13px;padding:4px 12px;border-radius:999px}
+.tm .bd{padding:24px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tm h3{font-size:23px;font-weight:800}
+.tm .role{font-size:13px;color:var(--g);font-family:var(--head);letter-spacing:.12em;text-transform:uppercase}
+.tm p{color:#444;font-size:15px;flex:1}
+.tm .acts{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.tm.collab{background:var(--k);color:var(--w);border-color:var(--k)}
+.tm.collab p{color:#bbb}
+.tm.collab .ph{background:#161616;display:grid;place-items:center}
+.collab-mark{font-family:var(--head);text-align:center;line-height:1.1}
+.collab-mark b{display:block;font-size:30px;font-weight:900;letter-spacing:-.02em}
+.collab-mark span{font-size:12px;letter-spacing:.3em;color:var(--b)}
+.collab-mark i{display:block;font-style:normal;font-size:26px;margin:8px 0;color:#555}
+
+/* location */
+.loc{background:var(--k);color:var(--w)}
+.loc .sh{border-top-color:var(--w)}
+.loc .sh .no{color:#999}.loc .sh .no b{color:var(--w)}
+.loc .sh h2 .th,.loc .sh p{color:#aaa}
+.loc-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:40px;align-items:stretch}
+.move{display:grid;gap:14px}
+.addr{border-radius:22px;padding:24px 26px;border:1px solid #333;position:relative}
+.addr .en{color:#888}
+.addr h3{font-size:22px;font-weight:700;margin-top:6px}
+.addr p{color:#aaa;font-size:15px}
+.addr.old h3{text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px;color:#777}
+.addr.new{background:var(--b);color:var(--k);border-color:var(--b)}
+.addr.new .en{color:#245e80}
+.addr.new h3{font-size:30px;font-weight:800;letter-spacing:-.02em}
+.addr.new p{color:#1d3d50}
+.addr.new .badge{position:absolute;top:20px;right:20px;background:var(--k);color:var(--w);font-family:var(--head);font-size:12px;padding:3px 12px;border-radius:999px;font-weight:700}
+.move .arrow-d{display:flex;align-items:center;gap:12px;color:#888;font-family:var(--head);font-size:13px;padding-left:26px}
+.move .arrow-d svg{width:22px;height:22px;color:var(--b)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fact{border:1px solid #333;border-radius:18px;padding:18px 20px}
+.fact svg{width:24px;height:24px;color:var(--b)}
+.fact b{display:block;font-family:var(--head);font-size:17px;margin-top:8px}
+.fact span{color:#999;font-size:14px}
+.map{border-radius:26px;overflow:hidden;min-height:520px;position:relative;background:#1a1a1a}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.6) contrast(1.05)}
+.map .pin{position:absolute;left:16px;top:16px;background:var(--w);color:var(--k);border-radius:999px;padding:8px 16px;font-family:var(--head);font-size:13.5px;font-weight:700;box-shadow:0 10px 30px -10px rgba(0,0,0,.4);display:flex;gap:8px;align-items:center}
+.map .pin i{width:10px;height:10px;border-radius:50%;background:var(--b3)}
+.loc .cta-row{margin-top:6px}
+.loc .btn-o{color:var(--w);border-color:#555}
+.loc .btn-o:hover{background:var(--w);color:var(--k)}
+
+/* reviews */
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rv{border:1px solid var(--line2);border-radius:24px;padding:30px 28px;display:flex;flex-direction:column;gap:14px}
+.rv .stars{letter-spacing:3px;color:var(--k)}
+.rv p{font-family:var(--head);font-size:19px;font-weight:500;line-height:1.5;flex:1}
+.rv .who{display:flex;gap:12px;align-items:center;border-top:1px solid var(--line);padding-top:14px}
+.rv .av{width:40px;height:40px;border-radius:50%;background:var(--b);display:grid;place-items:center;font-family:var(--head);font-weight:800}
+.rv .who b{display:block;font-family:var(--head);font-size:15px}
+.rv .who small{color:var(--g)}
+.note{color:var(--g);font-size:13.5px;margin-top:22px}
+
+/* thank you band */
+.ty{padding:90px 0;text-align:center;border-top:1px solid var(--line)}
+.ty h2{font-size:clamp(34px,5.4vw,74px);font-weight:800;letter-spacing:-.035em;line-height:1.05}
+.ty h2 span{color:var(--b)}
+.ty p{color:var(--g);margin:16px 0 30px}
+
+/* footer */
+footer{background:var(--k);color:#9a9a9a;padding:64px 0 26px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;border-bottom:1px solid #262626}
+footer .brand .wm{color:var(--w)}
+footer h4{color:var(--w);font-size:13px;letter-spacing:.2em;margin-bottom:14px;font-weight:700}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:var(--b)}
+.ft p{margin-top:14px;max-width:320px}
+.socials{display:flex;gap:10px;margin-top:18px}
+.socials a{width:42px;height:42px;border-radius:50%;border:1px solid #333;display:grid;place-items:center;color:var(--w);transition:.2s}
+.socials a:hover{background:var(--b);color:var(--k);border-color:var(--b)}
+.socials svg{width:19px;height:19px}
+.copy{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:22px;font-size:13.5px}
+.copy b{color:var(--w)}
+
+/* floating */
+.fab{position:fixed;right:20px;bottom:20px;z-index:70;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.fab a{display:flex;align-items:center;gap:10px;border-radius:999px;box-shadow:0 14px 30px -10px rgba(0,0,0,.45);transition:.2s;font-family:var(--head);font-weight:700;font-size:15px}
+.fab a:hover{transform:translateY(-3px)}
+.fab .ln{background:var(--line-g);color:#fff;padding:14px 22px 14px 16px}
+.fab .ig{width:52px;height:52px;justify-content:center;background:var(--w);color:var(--k);border:1px solid var(--line2)}
+.fab svg{width:26px;height:26px}
+
+/* reveal */
+.rv-on{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv-on.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1100px){
+  .look-grid{grid-template-columns:repeat(3,1fr)}
+  .row{grid-template-columns:50px 1fr 160px}
+  .row p{display:none}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .team-grid .tm:first-child{grid-column:1/-1}
+  .team-grid .tm:first-child{flex-direction:row}
+  .team-grid .tm:first-child .ph{aspect-ratio:auto;width:45%}
+  .ft{grid-template-columns:1fr 1fr}
+}
+@media (max-width:940px){
+  .menu,.nav-cta{display:none}
+  .burger{display:grid}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:74px;left:0;right:0;background:var(--w);padding:12px 4% 22px;border-bottom:1px solid var(--k);gap:0}
+  .menu.open a{padding:14px 0;border-bottom:1px solid var(--line);font-size:17px}
+  .hero-grid,.loc-grid{grid-template-columns:1fr}
+  .hero-ph{max-width:640px}
+  .sh{grid-template-columns:1fr;gap:10px}
+  .sh p{text-align:left}
+  .book .wrap>.grid{grid-template-columns:1fr}
+  .bk-form{border-right:0;border-bottom:1px solid var(--k)}
+  .steps{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding:76px 0}
+  .moved{font-size:13px}
+  .moved .wrap{gap:6px 10px}
+  .brand .wm{font-size:19px}
+  .brand .wm small{display:none}
+  .hero{padding-top:36px}
+  .hero h1{font-size:46px}
+  .price-tag span{font-size:10.5px;padding:8px 12px}
+  .price-tag b{font-size:17px;padding:8px 14px}
+  .hero-ph .sticker{width:92px;height:92px;top:-16px;right:-6px}
+  .hero-ph .sticker-in{width:58px;height:58px;top:1px;right:11px}
+  .wordmark{margin-top:46px}
+  .stat{padding:16px 12px}
+  .stat .n{font-size:26px}
+  .look-grid{grid-template-columns:1fr 1fr;gap:18px 12px}
+  .look h3{font-size:15px}
+  .look .add{width:34px;height:34px}
+  .row{grid-template-columns:1fr auto;gap:6px 14px;padding:20px 0}
+  .row .ix{display:none}
+  .row h3{font-size:20px}
+  .row .pr b{font-size:21px}
+  .bk-form,.bk-side{padding:24px 18px}
+  .days{gap:4px}
+  .day b{font-size:16px}
+  .times{grid-template-columns:repeat(4,1fr)}
+  .steps{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr}
+  .team-grid .tm:first-child{flex-direction:column}
+  .team-grid .tm:first-child .ph{width:100%;aspect-ratio:4/3}
+  .facts{grid-template-columns:1fr 1fr}
+  .addr.new h3{font-size:24px}
+  .map{min-height:380px}
+  .ft{grid-template-columns:1fr}
+  .fab .ln span{display:none}
+  .fab .ln{padding:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .rv-on{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-scissors" viewBox="0 0 32 32"><circle cx="8" cy="24" r="4.5"/><circle cx="24" cy="24" r="4.5"/><path d="M11.2 20.8 25 3.5M20.8 20.8 7 3.5"/></symbol>
+    <symbol id="i-clipper" viewBox="0 0 32 32"><path d="M10 11h12l-1.5 17a2 2 0 0 1-2 1.8h-5a2 2 0 0 1-2-1.8z"/><path d="M9 11V6.5h14V11"/><path d="M11 4h10M12 2.5v1.5M15 2.5v1.5M18 2.5v1.5M21 2.5v1.5"/><path d="M14 24h4"/></symbol>
+    <symbol id="i-razor" viewBox="0 0 32 32"><path d="M4 20 18 6c2-2 6-1 7 0s1.5 4-.5 6L14 20z"/><path d="M14 20l-2 2a3 3 0 0 0 0 4l3.5 3.5"/><path d="M9 15l5 5"/></symbol>
+    <symbol id="i-pole" viewBox="0 0 32 32"><rect x="11" y="6" width="10" height="20" rx="5"/><path d="M13 3.5h6M13 28.5h6"/><path d="M11 13l10-5M11 19l10-5M11 25l10-5"/></symbol>
+    <symbol id="i-comb" viewBox="0 0 32 32"><path d="M4 12h24v4H4z"/><path d="M6 16v10M9 16v10M12 16v10M15 16v10M18 16v10M21 16v10M24 16v10M27 16v6"/></symbol>
+    <symbol id="i-brush" viewBox="0 0 32 32"><path d="M20 4l8 8-9 9-8-8z"/><path d="M11 13l-6 6c-2 2-1 6 2 7l3 1c1-4 4-6 8-7"/></symbol>
+    <symbol id="i-curl" viewBox="0 0 32 32"><path d="M9 26c-3-3-3-8 1-9s5 4 2 5-3-3 0-4M18 26c-3-3-3-8 1-9s5 4 2 5-3-3 0-4"/><path d="M5 9c5-5 17-5 22 0"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 10h8M8 13h5"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M4 16v-4l2-5h12l2 5v4"/><path d="M3 16h18v3h-3v-1H6v1H3z"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
+    <symbol id="i-uni" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></symbol>
+    <symbol id="i-line" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8.1-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8zM8.3 13.4H6.3a.5.5 0 0 1-.5-.5V9a.5.5 0 0 1 1 0v3.4h1.5a.5.5 0 0 1 0 1zm2 -.5a.5.5 0 0 1-1 0V9a.5.5 0 0 1 1 0zm4.8 0a.5.5 0 0 1-.9.3l-2-2.7v2.4a.5.5 0 0 1-1 0V9a.5.5 0 0 1 .9-.3l2 2.7V9a.5.5 0 0 1 1 0zm3.2-2.5a.5.5 0 0 1 0 1h-1.5v.9h1.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5V9a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-1.5v.9z"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 3 2.5 5 5.5 5.2"/></symbol>
+    <symbol id="i-lemon" viewBox="0 0 24 24"><ellipse cx="12" cy="13" rx="8" ry="6.5"/><path d="M12 6.5V4M8.5 13a3.5 3.5 0 0 1 7 0"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="#9ED3F0" stroke="none" d="M12 21s-8.5-5.4-8.5-11.2A4.6 4.6 0 0 1 12 7a4.6 4.6 0 0 1 8.5 2.8C20.5 15.6 12 21 12 21z"/></symbol>
+    <symbol id="bust" viewBox="0 0 200 200"><path d="M72 100c0 28 12 46 28 46s28-18 28-46"/><path d="M89 144v14M111 144v14"/><path d="M42 196c6-22 24-32 47-36M158 196c-6-22-24-32-47-36"/></symbol>
+  </defs>
+</svg>
+
+<!-- MOVED BANNER -->
+<div class="moved" role="note">
+  <div class="wrap">
+    <span class="pill">NEW SHOP 2026</span>
+    <span><b>ย้ายร้านแล้ว · ที่อยู่ใหม่</b> The Sense Salaya (หลัง ม.มหิดล ศาลายา)</span>
+    <span><s>หน้ามหิดล ตรงข้ามประตู 4 ซอย 7</s></span>
+    <a href="#location">ดูแผนที่ใหม่ →</a>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Oldhead Studio หน้าแรก"><img src="assets/logo.jpg" alt="โลโก้ Oldhead Studio"><span class="wm">Oldhead Studio<small>EST. 2022</small></span></a>
+    <div class="menu" id="menu">
+      <a href="#lookbook"><sup>01</sup>Lookbook</a>
+      <a href="#menu-price"><sup>02</sup>Menu</a>
+      <a href="#book"><sup>03</sup>Book</a>
+      <a href="#team"><sup>05</sup>Team</a>
+      <a href="#location"><sup>06</sup>New Location</a>
+    </div>
+    <a href="#book" class="btn btn-k btn-sm nav-cta">Book an appointment <span class="arrow">→</span></a>
+    <button class="burger" id="burger" aria-label="เปิดเมนู" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="rv-on">
+        <div class="meta">
+          <span class="live" id="live"><i></i><b id="liveTxt">Open Daily · 10:00–20:00</b></span>
+          <span><i></i>Salaya · Nakhon Pathom</span>
+          <span><i></i>Men &amp; Women</span>
+        </div>
+        <h1>Haircut, <em>Colour</em><br>&amp; Perm.</h1>
+        <p class="th">ตัดผมชาย-หญิง ทำสี ดัด · สตูดิโอเล็ก ๆ ใกล้ ม.มหิดล ศาลายา ที่ตั้งใจทุกทรง <svg class="hrt" aria-hidden="true"><use href="#i-heart"/></svg></p>
+        <p class="note">Please book an appointment in advance.</p>
+        <div class="price-tag"><span>MEN’S HAIRCUT STARTING FROM</span><b>300 THB</b></div>
+        <div class="cta-row">
+          <a href="#book" class="btn btn-k"><svg class="i"><use href="#i-cal"/></svg>จองล่วงหน้า <span class="arrow">→</span></a>
+          <a href="#lookbook" class="btn btn-o">ดู Lookbook</a>
+        </div>
+      </div>
+      <div class="hero-ph rv-on">
+        <svg class="sticker" viewBox="0 0 120 120" aria-hidden="true">
+          <path id="stk" d="M60,60 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0" fill="none"/>
+          <circle cx="60" cy="60" r="59" fill="#9ED3F0"/>
+          <text font-family="Noto Sans Thai" font-weight="700" font-size="10.5" letter-spacing="3.1" fill="#0E0E0E"><textPath href="#stk">OLDHEAD STUDIO · EST. 2022 · SALAYA · </textPath></text>
+        </svg>
+        <img class="sticker-in" src="assets/logo.jpg" alt="">
+        <figure class="p1"><img src="assets/bob.jpg" alt="Bob Haircut ผลงาน TA_OLDHEAD"><figcaption>Bob Haircut — by TA</figcaption></figure>
+        <figure class="p2"><img src="assets/textured-crop.jpg" alt="ทรงผมชาย textured ผลงาน TA_OLDHEAD" style="object-position:center 30%"><figcaption>Men’s Cut</figcaption></figure>
+        <figure class="p3"><img src="assets/leopard.jpg" alt="Leopard hair painting ผลงาน TA_OLDHEAD" style="object-position:center 40%"><figcaption>Leopard 🐆 Colour</figcaption></figure>
+      </div>
+    </div>
+    <div class="wordmark rv-on" aria-hidden="true">Oldhead<span>.</span>Studio</div>
+    <div class="stats rv-on">
+      <div class="stat"><div class="n">16K+</div><div class="l">Instagram followers</div></div>
+      <div class="stat"><div class="n">29,547</div><div class="l">Facebook likes</div></div>
+      <div class="stat"><div class="n">2022</div><div class="l">Established</div></div>
+      <div class="stat"><div class="n">20+</div><div class="l">ที่จอดรถ ร้านใหม่</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>#oldheadstudio</span><span>#ร้านตัดผมศาลายา</span><span>#ร้านตัดผมหน้ามหิดล</span><span>#Oldhead</span><span>Thank you for always supporting us.</span><span>Haircut · Colour · Perm</span>
+    <span>#oldheadstudio</span><span>#ร้านตัดผมศาลายา</span><span>#ร้านตัดผมหน้ามหิดล</span><span>#Oldhead</span><span>Thank you for always supporting us.</span><span>Haircut · Colour · Perm</span>
+  </div>
+</div>
+
+<!-- LOOKBOOK -->
+<section id="lookbook">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <div class="no"><b>(01)</b>Lookbook</div>
+      <h2>Find your look.<span class="th">เลือกทรงที่ชอบ แล้วกด ＋ เพื่อใส่ลงในข้อความจอง</span></h2>
+      <p>ผลงานจาก Instagram ของร้าน · กรองตามหมวด ชาย / หญิง / สี / ดัด</p>
+    </div>
+    <div class="lb-bar rv-on">
+      <div class="filters" id="filters">
+        <button aria-pressed="true" data-f="all">ทั้งหมด</button>
+        <button aria-pressed="false" data-f="men">ชาย <small>Men</small></button>
+        <button aria-pressed="false" data-f="women">หญิง <small>Women</small></button>
+        <button aria-pressed="false" data-f="color">สี <small>Colour</small></button>
+        <button aria-pressed="false" data-f="perm">ดัด <small>Perm</small></button>
+      </div>
+      <div class="count" id="count">8 looks</div>
+    </div>
+    <div class="look-grid" id="looks">
+      <article class="look rv-on" data-c="women" data-name="Bob Haircut">
+        <a class="ph" href="https://www.instagram.com/p/DfT_z-Vn4Hx/" target="_blank" rel="noopener"><img src="assets/bob.jpg" alt="Bob Haircut" loading="lazy"><div class="tg"><span>หญิง</span><span>Cut</span></div></a>
+        <div class="cap"><div><h3>Bob Haircut</h3><div class="by">by @ta_oldhead</div></div><button class="add" aria-label="เลือกทรง Bob Haircut"><svg class="i"><use href="#i-plus"/></svg></button></div>
+      </article>
+      <article class="look rv-on" data-c="men" data-name="Men’s Textured Cut">
+        <a class="ph" href="https://www.instagram.com/p/DfLywe2Hy0F/" target="_blank" rel="noopener"><img src="assets/textured-crop.jpg" alt="Men's textured cut" loading="lazy"><div class="tg"><span>ชาย</span><span>Cut &amp; Styling</span></div></a>
+        <div class="cap"><div><h3>Textured Cut</h3><div class="by">Haircut &amp; styling by TA</div></div><button class="add" aria-label="เลือกทรง Textured Cut"><svg class="i"><use href="#i-plus"/></svg></button></div>
+      </article>
+      <article class="look rv-on" data-c="men color" data-name="Leopard Hair Painting">
+        <a class="ph" href="https://www.instagram.com/p/DfPibbXn0P2/" target="_blank" rel="noopener"><img src="assets/leopard.jpg" alt="Leopard hair colouring and painting" loading="lazy"><div class="tg"><span>สี</span><span>Painting</span></div></a>
+        <div class="cap"><div><h3>Leopard 🐆</h3><div class="by">Colouring &amp; painting by TA</div></div><button class="add" aria-label="เลือกทรง Leopard"><svg class="i"><use href="#i-plus"/></svg></button></div>
+      </article>
+      <article class="look rv-on" data-c="men" data-name="Men’s Slick Cut">
+        <a class="ph" href="https://www.instagram.com/p/DfG2kS_H_5H/" target="_blank" rel="noopener"><img src="assets/slick-back.jpg" alt="Men's haircut back view" loading="lazy"><div class="tg"><span>ชาย</span><span>Cut</span></div></a>
+        <div class="cap"><div><h3>Clean Taper</h3><div class="by">Haircut &amp; styling by TA</div></div><button class="add" aria-label="เลือกทรง Clean Taper"><svg class="i"><use href="#i-plus"/></svg></button></div>
+      </article>
+      <article class="look rv-on" data-c="men perm" data-name="Men’s Perm">
+        <div class="ph ill"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><use href="#bust"/><path d="M70 98c-8-8-8-22 0-30 0-12 14-18 22-12 6-10 22-8 26 2 12-2 20 10 14 20 6 6 4 16-2 20"/><path d="M80 76c4-6 10-6 12 0M98 72c4-6 10-6 12 0M114 78c4-6 10-6 12 0"/></svg><span class="il">ภาพประกอบ</span><div class="tg"><span>ชาย</span><span>Perm</span></div></div>
+        <div class="cap"><div><h3>Men’s Perm</h3><div class="by">ดัดผมชาย · รอรูปผลงานจริง</div></div><button class="add" aria-label="เลือก Men's Perm"><svg class="i"><use href="#i-plus"/></svg></button></div>
+      </article>
+      <article class="look rv-on" data-c="women perm" data-name="Women’s Perm">
+        <div class="ph ill"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><use href="#bust"/><path d="M72 100c-4-30 8-48 28-48s32 18 28 48"/><path d="M72 100c-8 10-2 20-10 28s0 18-6 24M128 100c8 10 2 20 10 28s0 18 6 24"/><path d="M66 118c4 4 4 10 0 14M134 118c-4 4-4 10 0 14"/><path d="M84 58c4 12 12 18 30 20"/></svg><span class="il">ภาพประกอบ</span><div class="tg"><span>หญิง</span><span>Perm</span></div></div>
+        <div class="cap"><div><h3>Soft Wave Perm</h3><div class="by">ดัดลอนผู้หญิง · รอรูปผลงานจริง</div></div><button class="add" aria-label="เลือก Soft Wave Perm"><svg class="i"><use href="#i-plus"/></svg></button></div>
+      </article>
+      <article class="look rv-on" data-c="women color" data-name="Women’s Colour">
+        <div class="ph ill"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><use href="#bust"/><path d="M72 100c-4-30 8-48 28-48s32 18 28 48v40M72 100v40"/><path d="M84 58l-6 70M100 54v80M116 58l6 70" stroke="#9ED3F0" stroke-width="5"/></svg><span class="il">ภาพประกอบ</span><div class="tg"><span>หญิง</span><span>Colour</span></div></div>
+        <div class="cap"><div><h3>Colour &amp; Highlight</h3><div class="by">ทำสีผู้หญิง · รอรูปผลงานจริง</div></div><button class="add" aria-label="เลือก Colour"><svg class="i"><use href="#i-plus"/></svg></button></div>
+      </article>
+      <article class="look rv-on" data-c="men color" data-name="Men’s Bleach / Colour">
+        <div class="ph ill"><svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><use href="#bust"/><path d="M70 96c-4-24 8-40 30-40s34 16 30 40"/><path d="M78 62c6 10 14 14 22 14s16-4 22-14" stroke="#9ED3F0" stroke-width="5"/><path d="M70 96v-8M130 96v-8"/></svg><span class="il">ภาพประกอบ</span><div class="tg"><span>ชาย</span><span>Colour</span></div></div>
+        <div class="cap"><div><h3>Bleach &amp; Tone</h3><div class="by">ฟอก-ทำสีผู้ชาย · รอรูปผลงานจริง</div></div><button class="add" aria-label="เลือก Bleach and Tone"><svg class="i"><use href="#i-plus"/></svg></button></div>
+      </article>
+    </div>
+    <p class="lb-note">* 4 ลุคแรกเป็นผลงานจริงจาก Instagram @oldhead_studio (กดรูปเพื่อดูโพสต์) · ลุคที่เป็นลายเส้นคือภาพประกอบสำหรับ demo</p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-sec" id="menu-price">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <div class="no"><b>(02)</b>Menu</div>
+      <h2>Service menu.<span class="th">ราคาเริ่มต้น · ปรับตามความยาวและสภาพผม</span></h2>
+      <p><span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span><br>ยกเว้น Men’s Haircut ที่ร้านประกาศเอง</p>
+    </div>
+    <div class="price-list rv-on">
+      <div class="row real"><span class="ix">01</span><h3>Men’s Haircut<small>ตัดผมชาย + สไตลิ่ง</small></h3><p>ปรึกษาทรงก่อนตัด เข้ากับรูปหน้าและไลฟ์สไตล์</p><div class="pr"><b>300 THB~</b><small>✓ ราคาจากร้าน · starting from</small></div></div>
+      <div class="row"><span class="ix">02</span><h3>Women’s Haircut<small>ตัดผมผู้หญิง · บ็อบ · เลเยอร์</small></h3><p>บ็อบ หน้าม้า หรือเลเยอร์ ตามเรฟที่ชอบ</p><div class="pr"><b>฿500~</b><small><span class="sample">ราคาตัวอย่าง</span></small></div></div>
+      <div class="row"><span class="ix">03</span><h3>Hair Colouring<small>ทำสี · ฟอก · โทนสี</small></h3><p>ทำสีทั้งศีรษะ ฟอกบลอนด์ หรือโทนแฟชั่น</p><div class="pr"><b>฿1,500~</b><small><span class="sample">ราคาตัวอย่าง</span></small></div></div>
+      <div class="row"><span class="ix">04</span><h3>Hair Painting<small>ลายบนผม · เช่น Leopard 🐆</small></h3><p>ลายพิเศษเฉพาะตัว ประเมินราคาจากรูปเรฟ</p><div class="pr"><b>฿—</b><small><span class="sample">ประเมินจากรูปเรฟ</span></small></div></div>
+      <div class="row"><span class="ix">05</span><h3>Perm<small>ดัดผมชาย / ผู้หญิง</small></h3><p>ดัดวอลลุ่ม ดัดลอน ให้ทรงอยู่ตัวจัดง่าย</p><div class="pr"><b>฿1,200~</b><small><span class="sample">ราคาตัวอย่าง</span></small></div></div>
+    </div>
+    <div class="menu-foot rv-on"><span>ราคาจริงขึ้นกับความยาว/ปริมาณผม · สอบถามทาง LINE ก่อนนัดได้</span><span>Please book an appointment in advance. <svg class="hrt" aria-hidden="true"><use href="#i-heart"/></svg></span></div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="book" id="book">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <div class="no"><b>(03)</b>Book</div>
+      <h2>Book in advance.<span class="th">จองล่วงหน้า · กรอก 4 ช่อง ระบบเขียนข้อความ LINE ให้</span></h2>
+      <p>Open Daily 10:00 AM – 8:00 PM<br><span class="sample">รอร้านยืนยันวันหยุด</span></p>
+    </div>
+    <div class="grid rv-on">
+      <div class="bk-form">
+        <div class="fld"><label class="lbl">1 · Service / ทรงที่ต้องการ <span id="lookPicked"></span></label>
+          <div class="opts" id="oSvc">
+            <button class="opt" aria-pressed="true" data-v="Men’s Haircut">Men’s Haircut</button>
+            <button class="opt" aria-pressed="false" data-v="Women’s Haircut">Women’s Haircut</button>
+            <button class="opt" aria-pressed="false" data-v="Hair Colouring">Colour</button>
+            <button class="opt" aria-pressed="false" data-v="Hair Painting">Painting</button>
+            <button class="opt" aria-pressed="false" data-v="Perm">Perm</button>
+          </div>
+        </div>
+        <div class="fld"><label class="lbl">2 · Stylist <span>เลือกช่าง</span></label>
+          <div class="opts" id="oSty">
+            <button class="opt" aria-pressed="true" data-v="ช่างคนไหนก็ได้">ใครว่างก่อน</button>
+            <button class="opt" aria-pressed="false" data-v="TA (@ta_oldhead)">TA · @ta_oldhead</button>
+          </div>
+        </div>
+        <div class="fld"><label class="lbl">3 · Date &amp; Time <span>เวลาไทย</span></label>
+          <div class="days" id="oDays"></div>
+          <div class="wed-note" id="wedNote">🩵 บางโพสต์ระบุว่าร้านปิดวันพุธ · ส่งข้อความไปก่อนได้ ร้านจะยืนยันว่าเปิดหรือไม่</div>
+          <div class="times" id="oTimes"></div>
+        </div>
+        <div class="fld"><label class="lbl">4 · Name <span>ไม่บังคับ</span></label>
+          <input class="inp" id="oName" placeholder="ชื่อเล่น / Nickname" maxlength="30">
+        </div>
+      </div>
+      <div class="bk-side">
+        <div>
+          <h3>Your booking<br>message<span>.</span></h3>
+          <p class="sub">กดส่งแล้วเปิด LINE ของร้าน · ข้อความถูกคัดลอกไว้ วางในแชตได้ทันที</p>
+        </div>
+        <div class="chat">
+          <div class="hd"><img src="assets/logo.jpg" alt=""><div>Oldhead Studio<small>LINE Official Account</small></div></div>
+          <div class="bubble" id="oPreview"></div>
+          <div class="bubble r">Thank you for always supporting us. <svg class="hrt" aria-hidden="true"><use href="#i-heart"/></svg><br><small style="color:#888">(ตัวอย่างข้อความตอบกลับ)</small></div>
+        </div>
+        <div class="bk-act">
+          <a class="btn btn-line" id="oSend" href="https://lin.ee/QR4JO2C" target="_blank" rel="noopener"><svg class="i"><use href="#i-line"/></svg>Copy &amp; open LINE</a>
+          <button class="btn btn-o" id="oCopy" type="button">คัดลอกข้อความ</button>
+        </div>
+        <div class="fine">คิวยืนยันเมื่อร้านตอบกลับใน LINE · แนบรูปเรฟทรงในแชตได้เลย</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <div class="no"><b>(04)</b>How to book</div>
+      <h2>4 easy steps.<span class="th">จองง่าย ไม่ต้องรอหน้าร้าน</span></h2>
+      <p></p>
+    </div>
+    <div class="steps">
+      <div class="step rv-on"><span class="n">1</span><div class="ic"><svg class="i"><use href="#i-scissors"/></svg></div><h4>เลือกลุค</h4><p>ดู Lookbook หรือเตรียมรูปเรฟทรงที่ชอบ</p></div>
+      <div class="step rv-on"><span class="n">2</span><div class="ic"><svg class="i"><use href="#i-chat"/></svg></div><h4>ทัก LINE</h4><p>ส่งข้อความจองพร้อมวัน-เวลาที่สะดวก</p></div>
+      <div class="step rv-on"><span class="n">3</span><div class="ic"><svg class="i"><use href="#i-cal"/></svg></div><h4>ร้านยืนยันคิว</h4><p>ได้เวลาแน่นอน · Please book in advance</p></div>
+      <div class="step rv-on"><span class="n">4</span><div class="ic"><svg class="i"><use href="#i-car"/></svg></div><h4>มาที่ร้านใหม่</h4><p>The Sense Salaya · ที่จอดรถ 20+ คัน</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <div class="no"><b>(05)</b>Team</div>
+      <h2>The people.<span class="th">ทีมช่างและคอลแลบของ Oldhead</span></h2>
+      <p>ชื่อจากโพสต์ของร้าน · รายชื่อทีมทั้งหมดรอร้านยืนยัน</p>
+    </div>
+    <div class="team-grid">
+      <article class="tm rv-on">
+        <div class="ph"><img src="assets/leopard.jpg" alt="ผลงาน Leopard โดย TA_OLDHEAD" loading="lazy" style="object-position:center 40%"><span class="handle">@ta_oldhead</span></div>
+        <div class="bd"><div class="role">Stylist · Cut &amp; Colour</div><h3>TA</h3><p>เครดิตผลงานในโพสต์ล่าสุดของร้าน — Bob Haircut, Haircut &amp; Styling และ Leopard Colouring &amp; Painting</p>
+          <div class="acts"><button class="btn btn-k btn-sm pick" type="button">จองกับ TA →</button><a class="btn btn-o btn-sm" href="https://www.instagram.com/explore/tags/ta_oldhead/" target="_blank" rel="noopener">#TA_OLDHEAD</a></div></div>
+      </article>
+      <article class="tm rv-on">
+        <div class="ph mono"><img src="assets/logo.jpg" alt="Oldhead Studio"></div>
+        <div class="bd"><div class="role">Stylists</div><h3>Team Oldhead</h3><p>ช่างคนอื่น ๆ ของร้าน · เว็บไซต์จริงจะใส่รูป ชื่อ และความถนัดตามที่ร้านยืนยัน</p>
+          <div class="acts"><a class="btn btn-o btn-sm" href="https://www.instagram.com/oldhead_studio/" target="_blank" rel="noopener">ดูผลงานบน IG</a></div></div>
+      </article>
+      <article class="tm collab rv-on">
+        <div class="ph"><div class="collab-mark"><b>OLDHEAD</b><i>×</i><b>UPPERCUT</b><span>DELUXE</span></div></div>
+        <div class="bd"><div class="role" style="color:#9ED3F0">Collab</div><h3>Uppercut Deluxe</h3><p>เคยมีโพสต์คอลแลบร่วมกับแบรนด์ผลิตภัณฑ์จัดแต่งทรงผม Uppercut Deluxe บน Instagram</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="loc" id="location">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <div class="no"><b>(06)</b>New Location</div>
+      <h2>We’ve moved.<span class="th">ย้ายร้านแล้ว · Welcome to the new shop Oldhead2026</span></h2>
+      <p>Open Daily · 10:00 AM – 8:00 PM<br><span class="sample">รอร้านยืนยันวันหยุด</span></p>
+    </div>
+    <div class="loc-grid">
+      <div class="move rv-on">
+        <div class="addr old"><div class="en">Old address · ที่อยู่เดิม</div><h3>หน้ามหิดล ตรงข้ามประตู 4 ซอย 7</h3><p>ข้อมูลเก่าในอินเทอร์เน็ตบางแห่งยังเป็นที่อยู่นี้</p></div>
+        <div class="arrow-d"><svg class="i"><use href="#i-down"/></svg>MOVED TO</div>
+        <div class="addr new"><span class="badge">NEW</span><div class="en">New shop · ที่อยู่ใหม่</div><h3>The Sense Salaya</h3><p>Behind Mahidol University (Salaya Campus) · ศาลายา จ.นครปฐม</p></div>
+        <div class="facts">
+          <div class="fact"><svg class="i"><use href="#i-car"/></svg><b>20+ Parking</b><span>ที่จอดรถมากกว่า 20 คัน</span></div>
+          <div class="fact"><svg class="i"><use href="#i-clock"/></svg><b>10:00 – 20:00</b><span>Open daily · รอยืนยันวันหยุด</span></div>
+          <div class="fact"><svg class="i"><use href="#i-uni"/></svg><b>หลัง ม.มหิดล</b><span>Salaya Campus</span></div>
+          <div class="fact"><svg class="i"><use href="#i-line"/></svg><b>Book on LINE</b><span>No walk-in guarantee</span></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-k" style="background:#fff;color:#0E0E0E;border-color:#fff" href="https://maps.app.goo.gl/RtzRJLUaQAK713XK8" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg>นำทาง Google Maps</a>
+          <a class="btn btn-o" href="https://lin.ee/QR4JO2C" target="_blank" rel="noopener">ถามทางใน LINE</a>
+        </div>
+      </div>
+      <div class="map rv-on">
+        <iframe title="แผนที่ The Sense Salaya ศาลายา ที่ตั้งใหม่ของ Oldhead Studio" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=The%20Sense%20Salaya%20%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%B2&z=16&output=embed"></iframe>
+        <div class="pin"><i></i>Oldhead Studio · The Sense Salaya</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <div class="no"><b>(07)</b>Reviews</div>
+      <h2>Kind words.<span class="th">เสียงจากลูกค้า</span></h2>
+      <p><span class="sample">ตัวอย่างรีวิวสำหรับ demo</span></p>
+    </div>
+    <div class="rv-grid">
+      <div class="rv rv-on"><div class="stars">★★★★★</div><p>“ตัดบ็อบมาแล้วทรงเป๊ะมาก เส้นคมสวย ช่างอธิบายวิธีดูแลให้ด้วย”</p><div class="who"><div class="av">M</div><div><b>คุณมิว</b><small>Bob Haircut · ตัวอย่างรีวิว</small></div></div></div>
+      <div class="rv rv-on"><div class="stars">★★★★★</div><p>“ใกล้มหาลัย จองผ่านไลน์ง่าย ไม่ต้องรอ ร้านใหม่จอดรถสะดวกขึ้นเยอะ”</p><div class="who"><div class="av">P</div><div><b>คุณภูมิ</b><small>Men’s Haircut · ตัวอย่างรีวิว</small></div></div></div>
+      <div class="rv rv-on"><div class="stars">★★★★★</div><p>“อยากได้สีแปลก ๆ ส่งเรฟไป ช่างช่วยปรับให้เข้ากับผมเรา ชอบมาก”</p><div class="who"><div class="av">N</div><div><b>คุณนิว</b><small>Colour · ตัวอย่างรีวิว</small></div></div></div>
+    </div>
+    <p class="note">* รีวิวในหน้านี้เป็นข้อความตัวอย่างสำหรับ demo · เว็บไซต์จริงจะใช้รีวิวจริงจากลูกค้าของร้าน</p>
+  </div>
+</section>
+
+<div class="ty">
+  <div class="wrap rv-on">
+    <h2>Thank you for always<br>supporting us<span>.</span> <svg class="hrt" aria-hidden="true"><use href="#i-heart"/></svg></h2>
+    <p>Oldhead Studio · Est. 2022 · The Sense Salaya</p>
+    <a href="#book" class="btn btn-k">Book an appointment <span class="arrow">→</span></a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <a href="#" class="brand"><img src="assets/logo.jpg" alt=""><span class="wm">Oldhead Studio</span></a>
+        <p>Hair studio · Haircut, Colour &amp; Perm for men &amp; women · ศาลายา ใกล้ ม.มหิดล</p>
+        <div class="socials">
+          <a href="https://www.instagram.com/oldhead_studio/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i"><use href="#i-ig"/></svg></a>
+          <a href="https://www.facebook.com/p/Oldhead-Studio-100037521953591/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="i"><use href="#i-fb"/></svg></a>
+          <a href="https://www.tiktok.com/@oldheadstudio" target="_blank" rel="noopener" aria-label="TikTok"><svg class="i"><use href="#i-tt"/></svg></a>
+          <a href="https://www.lemon8-app.com/@oldheadstudio" target="_blank" rel="noopener" aria-label="Lemon8"><svg class="i"><use href="#i-lemon"/></svg></a>
+          <a href="https://lin.ee/QR4JO2C" target="_blank" rel="noopener" aria-label="LINE"><svg class="i"><use href="#i-line"/></svg></a>
+        </div>
+      </div>
+      <div><h4>STUDIO</h4><ul><li><a href="#lookbook">Lookbook</a></li><li><a href="#menu-price">Menu</a></li><li><a href="#team">Team</a></li><li><a href="#reviews">Reviews</a></li></ul></div>
+      <div><h4>VISIT</h4><ul><li>The Sense Salaya</li><li>Behind Mahidol University</li><li>Salaya, Nakhon Pathom</li><li><a href="https://maps.app.goo.gl/RtzRJLUaQAK713XK8" target="_blank" rel="noopener">Google Maps →</a></li></ul></div>
+      <div><h4>HOURS</h4><ul><li>Open Daily</li><li>10:00 AM – 8:00 PM</li><li>(รอร้านยืนยันวันหยุด)</li><li><a href="https://lin.ee/QR4JO2C" target="_blank" rel="noopener">Book on LINE →</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Oldhead Studio</span><span>Website demo โดย <b>Relearn Solution</b></span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://www.instagram.com/oldhead_studio/" target="_blank" rel="noopener" class="ig" aria-label="Instagram @oldhead_studio"><svg class="i"><use href="#i-ig"/></svg></a>
+  <a href="https://lin.ee/QR4JO2C" target="_blank" rel="noopener" class="ln" aria-label="จองล่วงหน้าทาง LINE"><svg viewBox="0 0 24 24"><use href="#i-line"/></svg><span>จองทาง LINE</span></a>
+</div>
+<div class="toast" id="toast">คัดลอกข้อความแล้ว 🩵</div>
+
+<script>
+(() => {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .08 });
+  document.querySelectorAll('.rv-on').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+
+  const menu = document.getElementById('menu'), burger = document.getElementById('burger');
+  burger.addEventListener('click', () => { const o = menu.classList.toggle('open'); burger.setAttribute('aria-expanded', o); });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); }));
+
+  // Bangkok clock
+  const OPEN = 10 * 60, CLOSE = 20 * 60;
+  const EN_D = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const TH_D = ['อา.', 'จ.', 'อ.', 'พ.', 'พฤ.', 'ศ.', 'ส.'];
+  const TH_M = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
+  const pad = n => String(n).padStart(2, '0');
+  function bkk() {
+    const p = Object.fromEntries(new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Bangkok', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date()).map(x => [x.type, x.value]));
+    return { y: +p.year, mo: +p.month, d: +p.day, h: +p.hour, mi: +p.minute, mins: +p.hour * 60 + +p.minute };
+  }
+  function live() {
+    const t = bkk(), open = t.mins >= OPEN && t.mins < CLOSE;
+    const el = document.getElementById('live');
+    el.className = 'live ' + (open ? 'on' : 'off');
+    document.getElementById('liveTxt').textContent = open ? `Open now · until 8:00 PM` : `Closed now · opens 10:00 AM`;
+    return t;
+  }
+  let now = live(); setInterval(() => { now = live(); }, 30000);
+
+  // booking builder
+  const st = { svc: 'Men’s Haircut', look: '', sty: 'ช่างคนไหนก็ได้', day: 0, time: null };
+  const group = (id, key) => {
+    const w = document.getElementById(id);
+    w.addEventListener('click', e => { const b = e.target.closest('.opt'); if (!b || b.disabled) return; w.querySelectorAll('.opt').forEach(o => o.setAttribute('aria-pressed', o === b)); st[key] = b.dataset.v; render(); });
+    return w;
+  };
+  group('oSvc', 'svc'); const sty = group('oSty', 'sty');
+
+  const days = [];
+  for (let i = 0; i < 7; i++) { const dt = new Date(Date.UTC(now.y, now.mo - 1, now.d + i)); days.push({ dow: dt.getUTCDay(), d: dt.getUTCDate(), m: dt.getUTCMonth(), i }); }
+  const dW = document.getElementById('oDays');
+  dW.innerHTML = days.map(x => `<button class="day" type="button" aria-pressed="${x.i === 0}" data-i="${x.i}">${x.dow === 3 ? '<span class="q" title="รอร้านยืนยันวันหยุด">?</span>' : ''}<small>${x.i === 0 ? 'Today' : EN_D[x.dow]}</small><b>${x.d}</b><small>${TH_M[x.m]}</small></button>`).join('');
+  dW.addEventListener('click', e => { const b = e.target.closest('.day'); if (!b) return; dW.querySelectorAll('.day').forEach(o => o.setAttribute('aria-pressed', o === b)); st.day = +b.dataset.i; st.time = null; times(); render(); });
+  const tW = document.getElementById('oTimes');
+  function times() {
+    document.getElementById('wedNote').classList.toggle('show', days[st.day].dow === 3);
+    const s = []; for (let m = OPEN; m <= CLOSE - 60; m += 30) s.push(m);
+    tW.innerHTML = s.map(m => { const past = st.day === 0 && m <= now.mins + 30; const v = `${pad(Math.floor(m / 60))}:${pad(m % 60)}`; return `<button class="opt" type="button" data-v="${v}" aria-pressed="false" ${past ? 'disabled' : ''}>${v}</button>`; }).join('');
+    if (st.day === 0 && !tW.querySelector('.opt:not(:disabled)')) tW.innerHTML = '<div style="grid-column:1/-1;font-size:14px;color:#6f6f6f">วันนี้เลยเวลารับคิวแล้ว · เลือกวันอื่นได้เลย</div>';
+  }
+  tW.addEventListener('click', e => { const b = e.target.closest('.opt'); if (!b || b.disabled) return; tW.querySelectorAll('.opt').forEach(o => o.setAttribute('aria-pressed', o === b)); st.time = b.dataset.v; render(); });
+  times();
+  const nm = document.getElementById('oName'); nm.addEventListener('input', render);
+
+  function msg() {
+    const d = days[st.day];
+    return `Hello Oldhead Studio 🩵\nขอจองคิวล่วงหน้าค่ะ/ครับ\n• Service: ${st.svc}` + (st.look ? `\n• Look: ${st.look}` : '') + `\n• Stylist: ${st.sty}\n• Date: ${EN_D[d.dow]} ${d.d} ${TH_M[d.m]}\n• Time: ${st.time || 'ให้ร้านแนะนำเวลาว่าง'}` + (nm.value.trim() ? `\n• Name: ${nm.value.trim()}` : '') + `\n(จองผ่านเว็บไซต์)`;
+  }
+  function render() { document.getElementById('oPreview').textContent = msg(); document.getElementById('lookPicked').textContent = st.look ? 'Look: ' + st.look : 'เลือกบริการ'; }
+  render();
+
+  const toast = document.getElementById('toast');
+  function copy() {
+    const m = msg();
+    (navigator.clipboard ? navigator.clipboard.writeText(m) : Promise.reject()).catch(() => { const ta = document.createElement('textarea'); ta.value = m; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} ta.remove(); });
+    toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 2200);
+  }
+  document.getElementById('oCopy').addEventListener('click', copy);
+  document.getElementById('oSend').addEventListener('click', copy);
+
+  // lookbook filter + add to booking
+  const looks = [...document.querySelectorAll('.look')];
+  const cnt = document.getElementById('count');
+  document.getElementById('filters').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    document.querySelectorAll('#filters button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    const f = b.dataset.f; let n = 0;
+    looks.forEach(l => { const show = f === 'all' || l.dataset.c.split(' ').includes(f); l.classList.toggle('hide', !show); if (show) n++; });
+    cnt.textContent = n + ' looks';
+  });
+  const svcFor = c => c.includes('perm') ? 'Perm' : c.includes('color') ? 'Hair Colouring' : c.includes('women') ? 'Women’s Haircut' : 'Men’s Haircut';
+  looks.forEach(l => l.querySelector('.add').addEventListener('click', () => {
+    looks.forEach(x => x.querySelector('.add').classList.remove('on'));
+    l.querySelector('.add').classList.add('on');
+    st.look = l.dataset.name;
+    const name = l.dataset.name.toLowerCase();
+    const v = name.includes('painting') || name.includes('leopard') ? 'Hair Painting' : svcFor(l.dataset.c);
+    const btn = [...document.querySelectorAll('#oSvc .opt')].find(o => o.dataset.v === v);
+    if (btn) btn.click(); else render();
+    document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+  }));
+  document.querySelector('.pick').addEventListener('click', () => {
+    const b = [...sty.querySelectorAll('.opt')].find(o => o.dataset.v.startsWith('TA')); if (b) b.click();
+    document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+  });
+})();
+</script>
+</body>
+</html>

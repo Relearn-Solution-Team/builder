@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCONSCAPE | ช่างภาพรับปริญญา &amp; งานแต่ง กรุงเทพฯ · ถ่ายไม่จำกัด ช่วยโพส</title>
+<meta name="description" content="PCONSCAPE (พี่พี) ช่างภาพรับปริญญา วันซ้อม วันจริง นอกรอบ และงานแต่ง กรุงเทพฯ ถ่ายไม่จำกัดจำนวนรูป ช่วยหามุม ช่วยโพส ส่งไฟล์ผ่าน Google Photos ภายใน 1–4 วัน โทร 081-645-8885 LINE 43pit698">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#2A314B; --navy2:#222840; --navy3:#1A1F33; --ink:#141829;
+  --beige:#BBAC9E; --beige2:#D9CDBF; --paper:#F6EFE4; --paper2:#EFE5D6;
+  --cream:#F2DBA9; --amber:#E9A25A; --stamp:#FF8A3D; --leaf:#5E7A4E;
+  --w:#FFFFFF;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --mono:'Courier New',ui-monospace,monospace;
+  --r:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px;overflow-x:hidden}
+/* film grain */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;opacity:.07;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+h1,h2,h3,h4,.head{font-family:var(--head);line-height:1.22}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+.wrap{width:min(1200px,92%);margin:0 auto}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+
+/* focus brackets utility */
+.fb{position:relative}
+.fb::before,.fb::after{content:"";position:absolute;width:26px;height:26px;border:2.5px solid var(--cream);pointer-events:none}
+.fb::before{top:-10px;left:-10px;border-right:0;border-bottom:0}
+.fb::after{bottom:-10px;right:-10px;border-left:0;border-top:0}
+
+/* logo */
+.logo{font-family:'Noto Sans Thai',sans-serif;font-weight:800;letter-spacing:.06em;line-height:.95;color:var(--w);display:inline-block;font-size:20px}
+.logo .o{display:inline-block;width:.78em;height:.78em;position:relative;margin:0 .04em;vertical-align:-.04em;
+  background:
+   linear-gradient(currentColor,currentColor) 0 0/.22em .1em no-repeat,linear-gradient(currentColor,currentColor) 0 0/.1em .22em no-repeat,
+   linear-gradient(currentColor,currentColor) 100% 0/.22em .1em no-repeat,linear-gradient(currentColor,currentColor) 100% 0/.1em .22em no-repeat,
+   linear-gradient(currentColor,currentColor) 0 100%/.22em .1em no-repeat,linear-gradient(currentColor,currentColor) 0 100%/.1em .22em no-repeat,
+   linear-gradient(currentColor,currentColor) 100% 100%/.22em .1em no-repeat,linear-gradient(currentColor,currentColor) 100% 100%/.1em .22em no-repeat}
+.logo .o::after{content:"";position:absolute;left:50%;top:50%;width:.16em;height:.16em;margin:-.08em 0 0 -.08em;border-radius:50%;background:var(--beige)}
+.logo .l2{display:block}
+
+/* top bar */
+.topbar{background:var(--ink);color:var(--beige2);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;padding:8px 0;flex-wrap:wrap}
+.topbar b{color:var(--cream);font-weight:600}
+.rec{display:inline-block;width:8px;height:8px;border-radius:50%;background:#ff4d4d;margin-right:8px;animation:blink 1.4s steps(2) infinite}
+@keyframes blink{50%{opacity:.15}}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:80;background:rgba(42,49,75,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(242,219,169,.18)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand small{display:block;font-size:12px;color:var(--beige);letter-spacing:.08em;margin-top:3px}
+.menu{display:flex;gap:26px;font-family:var(--head);font-weight:600;font-size:15.5px;color:#e9e3d8}
+.menu a{position:relative;padding:4px 0}
+.menu a::before{content:"[";opacity:0;margin-right:4px;color:var(--cream);transition:.2s}
+.menu a::after{content:"]";opacity:0;margin-left:4px;color:var(--cream);transition:.2s}
+.menu a:hover::before,.menu a:hover::after{opacity:1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:700;border-radius:999px;padding:13px 24px;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap;border:1.5px solid transparent;font-size:16px}
+.btn:hover{transform:translateY(-2px)}
+.btn-cream{background:var(--cream);color:var(--navy);box-shadow:0 10px 30px -10px rgba(242,219,169,.6)}
+.btn-ghost{border-color:rgba(242,219,169,.6);color:var(--cream)}
+.btn-ghost:hover{background:rgba(242,219,169,.1)}
+.btn-navy{background:var(--navy);color:var(--cream)}
+.btn-line{background:#06C755;color:#fff}
+.btn-out{border-color:var(--navy);color:var(--navy)}
+.btn .ic{width:20px;height:20px}
+.burger{display:none;background:none;border:0;cursor:pointer;color:var(--cream)}
+
+/* hero */
+.hero{position:relative;background:var(--navy);color:var(--w);overflow:hidden;padding:80px 0 120px}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(800px 500px at 80% 20%,rgba(233,162,90,.22),transparent 60%),
+  radial-gradient(600px 400px at 0% 100%,rgba(187,172,158,.18),transparent 60%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:600;font-size:14px;letter-spacing:.08em;color:var(--cream);border:1px solid rgba(242,219,169,.4);border-radius:999px;padding:6px 16px}
+.kicker .ic{width:18px;height:18px}
+.hero h1{font-size:clamp(40px,5.6vw,74px);font-weight:900;margin:24px 0 10px;letter-spacing:-.01em}
+.hero h1 .u{position:relative;display:inline-block;color:var(--cream)}
+.hero h1 .u::after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.12em;background:var(--amber);opacity:.55;border-radius:4px;z-index:-1}
+.en{font-family:var(--head);font-weight:600;font-style:italic;color:var(--cream);font-size:clamp(18px,2vw,24px);opacity:.9;letter-spacing:.01em}
+.hero p.lead{font-size:19px;color:#d6d3dc;max-width:560px;margin-top:20px}
+.hero p.lead b{color:var(--cream);font-weight:600}
+.cta-row{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,auto);gap:30px;margin-top:46px;justify-content:start}
+.stat{border-left:2px solid rgba(242,219,169,.35);padding-left:14px}
+.stat .n{font-family:var(--head);font-weight:800;font-size:32px;color:var(--cream);line-height:1}
+.stat .l{font-size:13.5px;color:#b9b6c4;margin-top:8px;line-height:1.35}
+
+/* viewfinder hero art */
+.vf{position:relative;justify-self:center;width:100%;max-width:470px}
+.vf .shot{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:4px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.vf .shot img{width:100%;height:100%;object-fit:cover;filter:saturate(.95) contrast(1.02)}
+.vf .shot::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),transparent 20%,transparent 75%,rgba(0,0,0,.35))}
+.hud{position:absolute;inset:14px;pointer-events:none;z-index:2;color:#fff;font-family:var(--mono);font-size:12px;letter-spacing:.06em}
+.hud .c{position:absolute;width:30px;height:30px;border:2px solid rgba(255,255,255,.9)}
+.hud .tl{top:0;left:0;border-right:0;border-bottom:0}.hud .tr{top:0;right:0;border-left:0;border-bottom:0}
+.hud .bl{bottom:0;left:0;border-right:0;border-top:0}.hud .br{bottom:0;right:0;border-left:0;border-top:0}
+.hud .top{position:absolute;top:8px;left:44px;right:44px;display:flex;justify-content:space-between}
+.hud .bot{position:absolute;bottom:8px;left:44px;right:44px;display:flex;justify-content:space-between}
+.hud .af{position:absolute;left:58%;top:58%;width:64px;height:64px;transform:translate(-50%,-50%);border:1.5px solid #9dff9d;animation:af 3.2s ease-in-out infinite}
+.hud .af::before,.hud .af::after{content:"";position:absolute;background:#9dff9d}
+.hud .af::before{left:50%;top:-8px;width:1.5px;height:8px}.hud .af::after{top:50%;left:-8px;height:1.5px;width:8px}
+@keyframes af{0%,100%{transform:translate(-50%,-50%) scale(1.25);opacity:.4}40%,80%{transform:translate(-50%,-50%) scale(1);opacity:1}}
+.datestamp{position:absolute;right:22px;bottom:44px;z-index:3;font-family:var(--mono);font-weight:700;font-size:18px;color:var(--stamp);text-shadow:0 0 6px rgba(255,138,61,.8);letter-spacing:.08em}
+.polaroid{position:absolute;background:#fff;padding:8px 8px 30px;box-shadow:0 20px 40px -12px rgba(0,0,0,.55);z-index:4;width:150px}
+.polaroid img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.polaroid span{position:absolute;bottom:6px;left:0;right:0;text-align:center;font-family:var(--head);font-weight:600;font-size:12.5px;color:var(--navy)}
+.pol1{left:-70px;bottom:40px;transform:rotate(-8deg);animation:bob 5s ease-in-out infinite}
+.pol2{right:-60px;top:36px;transform:rotate(7deg);animation:bob 5.6s ease-in-out infinite .8s;width:130px}
+@keyframes bob{50%{translate:0 -10px}}
+.sticker{position:absolute;z-index:5;font-family:var(--head);font-weight:800;background:var(--cream);color:var(--navy);border-radius:12px;padding:9px 14px;font-size:14.5px;line-height:1.25;box-shadow:0 12px 26px -10px rgba(0,0,0,.5)}
+.sticker small{display:block;font-weight:600;font-size:11.5px;color:#6a6252}
+.st1{top:-18px;left:12px;transform:rotate(-4deg)}
+.st2{bottom:-22px;right:30px;transform:rotate(3deg);background:var(--w)}
+
+.tear{position:absolute;left:0;right:0;bottom:-1px;height:40px;background:var(--paper);
+  -webkit-mask:radial-gradient(circle 12px at 12px 0,transparent 98%,#000) 0 0/24px 100% repeat-x;mask:radial-gradient(circle 12px at 12px 0,transparent 98%,#000) 0 0/24px 100% repeat-x}
+
+/* marquee as film strip */
+.strip{background:var(--ink);padding:16px 0;overflow:hidden;position:relative}
+.strip::before,.strip::after{content:"";position:absolute;left:0;right:0;height:8px;background:repeating-linear-gradient(90deg,transparent 0 10px,rgba(246,239,228,.85) 10px 22px,transparent 22px 34px)}
+.strip::before{top:4px}.strip::after{bottom:4px}
+.track{display:flex;width:max-content;animation:slide 44s linear infinite;font-family:var(--head);font-weight:700;font-size:19px;color:var(--cream);padding:6px 0}
+.track span{display:flex;align-items:center;gap:22px;padding-right:22px}
+.track span::after{content:"";width:12px;height:12px;border:2px solid var(--amber);border-radius:2px}
+.track .itl{font-style:italic;font-weight:600;color:var(--beige2)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:100px 0;position:relative}
+.sec-head{max-width:760px;margin:0 auto 54px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);margin-bottom:14px}
+.eyebrow::before{content:"[";color:var(--amber);font-size:18px}.eyebrow::after{content:"]";color:var(--amber);font-size:18px}
+.sec-head h2{font-size:clamp(30px,4.2vw,50px);font-weight:900;color:var(--navy)}
+.sec-head h2 em{font-style:normal;background:linear-gradient(transparent 60%,rgba(233,162,90,.45) 60%)}
+.sec-head p{margin-top:14px;color:#5d5a63;font-size:18px}
+.dark{background:var(--navy);color:var(--w)}
+.dark .sec-head h2{color:var(--w)}
+.dark .sec-head p{color:#c9c6d2}
+.dark .eyebrow{color:var(--cream)}
+
+/* occasions */
+.occ-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.occ{background:var(--w);border-radius:var(--r);padding:28px 24px 26px;position:relative;box-shadow:0 1px 0 rgba(0,0,0,.04),0 20px 40px -28px rgba(42,49,75,.35);transition:.25s}
+.occ:hover{transform:translateY(-6px)}
+.occ .num{position:absolute;top:18px;right:20px;font-family:var(--mono);font-size:13px;color:var(--beige);font-weight:700}
+.occ .bx{width:58px;height:58px;border-radius:14px;background:var(--navy);color:var(--cream);display:grid;place-items:center;margin-bottom:18px}
+.occ .bx .ic{width:30px;height:30px;stroke-width:1.6}
+.occ h3{font-size:21px;font-weight:800;color:var(--navy)}
+.occ p{font-size:15.5px;color:#5d5a63;margin-top:6px}
+.occ.feat{background:var(--navy);color:#fff}
+.occ.feat h3{color:var(--cream)}
+.occ.feat p{color:#c9c6d2}
+.occ.feat .bx{background:var(--cream);color:var(--navy)}
+
+/* packages */
+.pk-grid{display:grid;grid-template-columns:1.05fr 1.6fr;gap:26px;align-items:stretch}
+.pk-card{background:var(--navy2);border:1px solid rgba(242,219,169,.18);border-radius:14px;padding:30px;position:relative;overflow:hidden}
+.pk-card h3{font-size:24px;font-weight:800;color:var(--cream)}
+.pk-card .sub{color:#b9b6c4;font-size:15px;margin-top:4px}
+.price{font-family:var(--head);font-weight:900;font-size:54px;color:#fff;line-height:1;margin:22px 0 4px}
+.price small{font-size:18px;font-weight:600;color:var(--beige2);margin-left:6px}
+.tbc{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:var(--navy);background:var(--cream);border-radius:999px;padding:2px 10px;margin-top:8px}
+.perhr{font-family:var(--mono);font-size:13.5px;color:var(--cream);margin-top:10px;opacity:.85}
+.inc{list-style:none;display:grid;gap:10px;margin-top:24px}
+.inc li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:#e8e5ee}
+.inc li .ic{color:var(--cream);width:20px;height:20px;margin-top:3px}
+.pk-card .corner{position:absolute;right:-30px;top:-30px;width:140px;height:140px;border:2px dashed rgba(242,219,169,.2);border-radius:50%}
+.out{display:flex;flex-direction:column}
+.hours{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.hr{background:transparent;border:1.5px solid rgba(242,219,169,.3);border-radius:12px;padding:18px 14px;cursor:pointer;text-align:left;transition:.2s;color:#fff;position:relative}
+.hr:hover{border-color:var(--cream)}
+.hr.on{background:var(--cream);color:var(--navy);border-color:var(--cream)}
+.hr .h{font-family:var(--head);font-weight:800;font-size:18px}
+.hr .p{font-family:var(--head);font-weight:900;font-size:30px;line-height:1.1;margin-top:6px}
+.hr .ph{font-family:var(--mono);font-size:12.5px;opacity:.8;margin-top:4px}
+.hr .best{position:absolute;top:-11px;right:10px;background:var(--amber);color:var(--ink);font-family:var(--head);font-weight:800;font-size:11.5px;border-radius:6px;padding:1px 8px}
+.bars{margin-top:26px;display:grid;gap:10px}
+.bar{display:grid;grid-template-columns:120px 1fr 86px;gap:12px;align-items:center;font-size:14px;color:#d3d0dc}
+.bar .t{height:12px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden}
+.bar .t i{display:block;height:100%;background:linear-gradient(90deg,var(--beige),var(--cream));border-radius:999px;width:0;transition:width 1s cubic-bezier(.2,.8,.2,1)}
+.bar b{font-family:var(--mono);color:var(--cream);text-align:right}
+.bar.on{color:#fff;font-weight:600}
+.bar.on .t i{background:linear-gradient(90deg,var(--amber),var(--cream))}
+.pk-note{margin-top:28px;font-size:14px;color:#a9a6b6;text-align:center}
+.pk-note b{color:var(--cream)}
+
+/* booking widget */
+.book{background:var(--paper2)}
+.bk{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:start}
+.panel{background:var(--w);border-radius:16px;padding:32px;box-shadow:0 30px 60px -40px rgba(42,49,75,.5)}
+.fld{margin-bottom:22px}
+.fld>label,.fld>.lb{display:flex;align-items:center;gap:8px;font-family:var(--head);font-weight:700;color:var(--navy);margin-bottom:10px;font-size:15.5px}
+.fld>label .n,.fld>.lb .n{width:24px;height:24px;border-radius:6px;background:var(--navy);color:var(--cream);font-family:var(--mono);font-size:13px;display:grid;place-items:center}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.opt{border:1.5px solid #d8d0c4;background:var(--paper);border-radius:999px;padding:8px 16px;cursor:pointer;font-family:var(--head);font-weight:600;font-size:14.5px;transition:.15s;color:var(--navy)}
+.opt:hover{border-color:var(--navy)}
+.opt.on{background:var(--navy);border-color:var(--navy);color:var(--cream)}
+input[type=text],input[type=date],select,textarea{width:100%;font:inherit;font-size:16px;border:1.5px solid #d8d0c4;border-radius:10px;padding:11px 14px;background:var(--paper);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--amber);outline-offset:1px;border-color:transparent}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ticket{background:var(--navy);color:#fff;border-radius:16px;position:sticky;top:96px;overflow:hidden}
+.ticket .th{padding:24px 26px 18px;border-bottom:2px dashed rgba(242,219,169,.3);position:relative}
+.ticket .th::before,.ticket .th::after{content:"";position:absolute;bottom:-13px;width:24px;height:24px;border-radius:50%;background:var(--paper2)}
+.ticket .th::before{left:-12px}.ticket .th::after{right:-12px}
+.ticket .tt{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12.5px;color:var(--beige2);letter-spacing:.1em}
+.ticket .pkg{font-family:var(--head);font-weight:800;font-size:22px;color:var(--cream);margin-top:10px}
+.ticket .est{font-family:var(--head);font-weight:900;font-size:44px;line-height:1.1}
+.ticket .est small{font-size:15px;font-weight:600;color:var(--beige2)}
+.ticket .rows{padding:18px 26px;display:grid;gap:6px;font-size:14.5px}
+.ticket .row{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dotted rgba(255,255,255,.14);padding:4px 0}
+.ticket .row span:first-child{color:#aeb0c4}
+.ticket .row span:last-child{text-align:right;font-weight:600}
+.msg{margin:4px 26px 0;background:rgba(0,0,0,.25);border-radius:10px;padding:14px 16px;font-size:14px;white-space:pre-wrap;color:#e7e4ee;max-height:220px;overflow:auto;font-family:var(--body)}
+.tk-act{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:18px 26px 26px}
+.tk-act .btn{padding:12px 14px;font-size:15px}
+.tk-act .full{grid-column:1/-1}
+.copyok{min-height:20px;font-size:13px;color:var(--cream);padding:0 26px 18px;margin-top:-10px}
+
+/* gallery */
+.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:34px}
+.fbtn{border:1.5px solid rgba(242,219,169,.35);background:transparent;color:#e7e4ee;border-radius:999px;padding:8px 18px;cursor:pointer;font-family:var(--head);font-weight:600;font-size:14.5px;transition:.15s}
+.fbtn:hover{border-color:var(--cream)}
+.fbtn.on{background:var(--cream);border-color:var(--cream);color:var(--navy)}
+.film{background:#0f1220;border-radius:6px;padding:30px 22px;position:relative}
+.film::before,.film::after{content:"";position:absolute;left:14px;right:14px;height:12px;background:repeating-linear-gradient(90deg,transparent 0 12px,#e9e1d3 12px 26px,transparent 26px 38px);border-radius:2px;opacity:.85}
+.film::before{top:9px}.film::after{bottom:9px}
+.frames{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.frame{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:3px;cursor:zoom-in;background:#222;transition:opacity .3s,transform .3s}
+.frame img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.frame:hover img{transform:scale(1.05)}
+.frame .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font-family:var(--head);font-weight:700;font-size:14.5px;display:flex;justify-content:space-between;align-items:end}
+.frame .cap small{font-family:var(--mono);color:var(--stamp);font-weight:700;font-size:12px}
+.frame .no{position:absolute;top:8px;left:10px;font-family:var(--mono);font-size:11px;color:var(--stamp);font-weight:700;z-index:2}
+.frame.hide{display:none}
+.frame.ph{cursor:default;background:linear-gradient(160deg,#c9b9a7,#8f7f70 70%,#5a4f48);display:grid;place-items:center;text-align:center;color:#fff}
+.frame.ph.b{background:linear-gradient(160deg,#a8b3c9,#5c6788 70%,#353c58)}
+.frame.ph.c{background:linear-gradient(160deg,#d8c48f,#a8875a 70%,#6d5236)}
+.frame.ph .in{padding:16px}
+.frame.ph .in .ic{width:40px;height:40px;margin:0 auto 10px;stroke-width:1.4;opacity:.9}
+.frame.ph .in b{font-family:var(--head);display:block;font-size:17px}
+.frame.ph .in span{font-size:12.5px;opacity:.9;display:block;margin-top:4px}
+.frame.ph .lbl{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:11px;padding:1px 8px;font-family:var(--head)}
+.gal-note{text-align:center;color:#a9a6b6;font-size:13.5px;margin-top:22px}
+.hl-row{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-top:46px}
+.hl{display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--head);font-weight:600;font-size:14px;color:#e7e4ee}
+.hl .ring{width:78px;height:78px;border-radius:50%;padding:3px;background:conic-gradient(var(--amber),var(--cream),var(--beige),var(--amber));transition:.2s}
+.hl:hover .ring{transform:scale(1.06)}
+.hl .ring div{width:100%;height:100%;border-radius:50%;background:var(--navy);border:3px solid var(--navy);display:grid;place-items:center;color:var(--cream);font-weight:800;font-size:15px;text-align:center;line-height:1.1}
+
+/* lightbox */
+.lbox{position:fixed;inset:0;background:rgba(10,12,22,.92);z-index:150;display:none;place-items:center;padding:30px}
+.lbox.open{display:grid}
+.lbox img{max-height:82vh;max-width:92vw;border:8px solid #fff;border-bottom-width:40px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lbox .x{position:absolute;top:18px;right:22px;background:none;border:0;color:#fff;font-size:38px;cursor:pointer;line-height:1}
+.lbox p{color:var(--cream);font-family:var(--head);font-weight:700;text-align:center;margin-top:-34px;position:relative;color:var(--navy)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative}
+.steps::before{content:"";position:absolute;top:38px;left:8%;right:8%;border-top:2px dashed var(--beige)}
+.step{text-align:center;position:relative;padding:0 6px}
+.step .c{width:78px;height:78px;margin:0 auto 18px;background:var(--paper);display:grid;place-items:center;position:relative;color:var(--navy)}
+.step .c::before{content:"";position:absolute;inset:0;background:
+   linear-gradient(var(--navy),var(--navy)) 0 0/18px 3px no-repeat,linear-gradient(var(--navy),var(--navy)) 0 0/3px 18px no-repeat,
+   linear-gradient(var(--navy),var(--navy)) 100% 0/18px 3px no-repeat,linear-gradient(var(--navy),var(--navy)) 100% 0/3px 18px no-repeat,
+   linear-gradient(var(--navy),var(--navy)) 0 100%/18px 3px no-repeat,linear-gradient(var(--navy),var(--navy)) 0 100%/3px 18px no-repeat,
+   linear-gradient(var(--navy),var(--navy)) 100% 100%/18px 3px no-repeat,linear-gradient(var(--navy),var(--navy)) 100% 100%/3px 18px no-repeat}
+.step .c .ic{width:32px;height:32px;stroke-width:1.6}
+.step .k{font-family:var(--mono);font-size:12px;color:var(--amber);font-weight:700;letter-spacing:.1em}
+.step h4{font-size:19px;font-weight:800;color:var(--navy);margin-top:2px}
+.step p{font-size:15px;color:#5d5a63;margin-top:4px}
+.deliver{margin-top:56px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.dv{background:var(--w);border-radius:12px;padding:22px 22px;display:flex;gap:16px;align-items:flex-start;border:1px solid #e6dccd}
+.dv .bx{flex:0 0 50px;height:50px;border-radius:12px;background:var(--cream);color:var(--navy);display:grid;place-items:center}
+.dv .bx .ic{width:26px;height:26px}
+.dv b{font-family:var(--head);font-size:18px;color:var(--navy);display:block}
+.dv span{font-size:15px;color:#5d5a63}
+
+/* why / pose */
+.why{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.collage{position:relative;height:520px}
+.collage .p{position:absolute;background:#fff;padding:10px 10px 38px;box-shadow:0 26px 50px -24px rgba(42,49,75,.6)}
+.collage .p img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.collage .p span{position:absolute;bottom:10px;left:12px;font-family:var(--mono);font-size:12px;color:var(--stamp);font-weight:700}
+.collage .p1{width:62%;left:0;top:20px;transform:rotate(-5deg)}
+.collage .p2{width:55%;right:0;top:170px;transform:rotate(6deg)}
+.collage .tape{position:absolute;width:90px;height:26px;background:rgba(242,219,169,.8);top:-12px;left:50%;transform:translateX(-50%) rotate(-3deg)}
+.why h2{font-size:clamp(30px,4vw,48px);font-weight:900;color:var(--navy)}
+.why .q{font-family:var(--head);font-style:italic;font-weight:600;font-size:22px;color:#8a6d4a;margin:16px 0}
+.pts{display:grid;gap:16px;margin-top:26px}
+.pt{display:flex;gap:16px;align-items:flex-start}
+.pt .bx{flex:0 0 46px;height:46px;border-radius:50%;border:1.5px solid var(--navy);display:grid;place-items:center;color:var(--navy)}
+.pt b{font-family:var(--head);font-size:18px;color:var(--navy);display:block}
+.pt span{color:#5d5a63;font-size:15.5px}
+.press{display:inline-flex;align-items:center;gap:14px;margin-top:30px;background:var(--navy);color:#fff;border-radius:12px;padding:14px 20px}
+.press .ic{color:var(--cream);width:28px;height:28px}
+.press b{font-family:var(--head);color:var(--cream)}
+.press small{display:block;color:#b9b6c4;font-size:13px}
+
+/* reviews */
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rvw{background:var(--w);border-radius:4px;padding:16px 16px 22px;box-shadow:0 22px 40px -28px rgba(42,49,75,.55);position:relative}
+.rvw:nth-child(1){transform:rotate(-1.2deg)}.rvw:nth-child(2){transform:rotate(.8deg)}.rvw:nth-child(3){transform:rotate(-.6deg)}
+.rvw .top{background:var(--navy);color:var(--cream);border-radius:2px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;font-family:var(--head);font-weight:700;font-size:14px}
+.rvw .top i{font-style:normal;color:var(--amber);letter-spacing:2px}
+.rvw p{margin:16px 6px 14px;font-size:16.5px;color:#34323b}
+.rvw .who{display:flex;align-items:center;gap:12px;padding:0 6px}
+.rvw .av{width:42px;height:42px;border-radius:50%;background:var(--cream);color:var(--navy);display:grid;place-items:center;font-family:var(--head);font-weight:800}
+.rvw .who b{display:block;font-family:var(--head);color:var(--navy)}
+.rvw .who small{color:#7d7a85}
+.demo-tag{position:absolute;top:-12px;right:14px;background:var(--amber);color:var(--ink);font-family:var(--head);font-weight:700;font-size:12px;padding:2px 10px;border-radius:6px}
+.note{text-align:center;color:#7d7a85;font-size:13.5px;margin-top:30px}
+
+/* faq */
+.faq{max-width:860px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:var(--w);border-radius:12px;padding:18px 22px;border:1px solid #e6dccd}
+.faq summary{cursor:pointer;font-family:var(--head);font-weight:700;color:var(--navy);font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--mono);font-size:22px;line-height:1;color:var(--amber)}
+.faq details[open] summary::after{content:"–"}
+.faq p{margin-top:10px;color:#5d5a63}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.contact h2{font-size:clamp(32px,4.2vw,52px);font-weight:900}
+.contact h2 span{color:var(--cream)}
+.info{display:grid;gap:14px;margin:30px 0}
+.it{display:flex;gap:16px;align-items:center;background:var(--navy2);border:1px solid rgba(242,219,169,.14);border-radius:14px;padding:16px 18px;transition:.2s}
+a.it:hover{border-color:var(--cream)}
+.it .i{flex:0 0 46px;height:46px;border-radius:12px;background:var(--cream);color:var(--navy);display:grid;place-items:center}
+.it b{font-family:var(--head);color:var(--cream);display:block;font-size:14px;font-weight:600}
+.it span{color:#e7e4ee}
+.it .ph{font-family:var(--head);font-weight:800;font-size:26px;color:#fff;letter-spacing:.02em}
+.area{background:var(--paper);color:var(--ink);border-radius:16px;padding:32px;position:relative;overflow:hidden}
+.area h3{font-size:24px;font-weight:800;color:var(--navy)}
+.area p{color:#5d5a63;margin-top:6px}
+.map-art{margin:22px 0;background:var(--paper2);border-radius:12px;position:relative;height:240px;overflow:hidden}
+.map-art svg{width:100%;height:100%}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1.5px solid var(--navy);color:var(--navy);border-radius:999px;padding:3px 12px;font-size:14px;font-weight:600}
+.chips span.soft{border-style:dashed;color:#7d7a85;border-color:#a9a090}
+.socials{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
+.socials a{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(242,219,169,.3);border-radius:999px;padding:8px 16px;font-size:14.5px;color:#e7e4ee;transition:.2s}
+.socials a:hover{background:var(--cream);color:var(--navy)}
+.socials .ic{width:18px;height:18px}
+
+footer{background:var(--ink);color:#9a98a6;padding:60px 0 30px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid #2a2e44}
+footer h4{color:#fff;font-size:17px;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:var(--cream)}
+.ft p{margin-top:14px;max-width:340px}
+.copy{display:flex;justify-content:space-between;padding-top:22px;font-size:13.5px;flex-wrap:wrap;gap:10px}
+.copy b{color:var(--cream);font-weight:600}
+
+.fab{position:fixed;right:20px;bottom:20px;z-index:90;display:flex;flex-direction:column;gap:12px}
+.fab a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45);transition:.2s;position:relative}
+.fab a:hover{transform:scale(1.08)}
+.fab .line{background:#06C755}
+.fab .call{background:var(--cream);color:var(--navy);animation:ring 2.6s infinite}
+.fab .ic{width:26px;height:26px}
+@keyframes ring{0%,100%{box-shadow:0 12px 26px -8px rgba(0,0,0,.45),0 0 0 0 rgba(242,219,169,.7)}50%{box-shadow:0 12px 26px -8px rgba(0,0,0,.45),0 0 0 14px rgba(242,219,169,0)}}
+
+.rv-on{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.rv-on.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  .occ-grid{grid-template-columns:repeat(2,1fr)}
+  .frames{grid-template-columns:repeat(3,1fr)}
+  .stats{grid-template-columns:repeat(2,auto)}
+  .pk-grid{grid-template-columns:1fr}
+}
+@media (max-width:920px){
+  .menu,.nav-cta{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:74px;left:0;right:0;background:var(--navy);padding:20px 4% 26px;gap:16px;border-bottom:1px solid rgba(242,219,169,.2)}
+  .hero{padding:56px 0 100px}
+  .hero .wrap,.bk,.why,.contact .wrap{grid-template-columns:1fr}
+  .vf{max-width:360px;margin-top:20px}
+  .pol1{left:-40px}.pol2{right:-34px}
+  .ticket{position:relative;top:0}
+  .steps{grid-template-columns:1fr 1fr;row-gap:34px}
+  .steps::before{display:none}
+  .deliver{grid-template-columns:1fr}
+  .rv-grid{grid-template-columns:1fr}
+  .rvw{transform:none!important}
+  .collage{height:440px;max-width:520px;margin:0 auto;width:100%}
+  .ft{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:72px 0}
+  .occ-grid{grid-template-columns:1fr}
+  .frames{grid-template-columns:1fr 1fr;gap:10px}
+  .film{padding:26px 10px}
+  .hours{grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .hr{padding:14px 8px}.hr .p{font-size:22px}.hr .h{font-size:15px}
+  .bar{grid-template-columns:92px 1fr 70px;font-size:13px}
+  .two{grid-template-columns:1fr}
+  .panel{padding:22px}
+  .price{font-size:44px}
+  .stat .n{font-size:26px}
+  .stats{gap:22px 18px}
+  .vf{max-width:290px}
+  .polaroid{width:110px;padding:6px 6px 24px}
+  .pol2{width:96px;right:-22px}
+  .pol1{left:-24px}
+  .sticker{font-size:12.5px;padding:7px 10px}
+  .topbar .hide-sm{display:none}
+  .ft{grid-template-columns:1fr}
+  .collage{height:360px}
+  .tk-act{grid-template-columns:1fr}
+  .it .ph{font-size:22px}
+  .area{padding:24px}
+  .fab a{width:52px;height:52px}
+  .topbar{font-size:12.5px}
+  .hr .ph{font-size:11px}
+  .hl-row{gap:14px}
+  .hl .ring{width:64px;height:64px}
+  .hl{font-size:12.5px}
+  .steps .step:last-child{grid-column:1/-1}
+  .collage{height:300px}
+  .collage .p{padding:7px 7px 28px}
+  .collage .p2{top:110px}
+  .sec-head h2{font-size:29px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv-on{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- hand-made icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-cam" viewBox="0 0 24 24"><path d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.3l1.4-2h7.6l1.4 2h2.3A1.5 1.5 0 0 1 21 8.5v9A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5z"/><circle cx="12" cy="12.8" r="3.6"/><circle cx="12" cy="12.8" r="1.2"/><path d="M17.5 9.6h.01"/></symbol>
+    <symbol id="i-focus" viewBox="0 0 24 24"><path d="M3 8V4.5A1.5 1.5 0 0 1 4.5 3H8M16 3h3.5A1.5 1.5 0 0 1 21 4.5V8M21 16v3.5a1.5 1.5 0 0 1-1.5 1.5H16M8 21H4.5A1.5 1.5 0 0 1 3 19.5V16"/><circle cx="12" cy="12" r="1.6"/></symbol>
+    <symbol id="i-film" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M7 4v16M17 4v16M3 8h4M3 12h4M3 16h4M17 8h4M17 12h4M17 16h4"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9.5 12 5l10 4.5-10 4.5z"/><path d="M6 11.3v4.2c0 1.4 2.7 2.8 6 2.8s6-1.4 6-2.8v-4.2"/><path d="M21 10v5"/></symbol>
+    <symbol id="i-rings" viewBox="0 0 24 24"><circle cx="9" cy="14" r="5.5"/><circle cx="15" cy="14" r="5.5"/><path d="m10.5 3.5 1.5 2 1.5-2"/></symbol>
+    <symbol id="i-pose" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M5 9.5 12 8l7-3.5M12 8v6l-3.5 6.5M12 14l3.5 6.5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5h10.5a4 4 0 0 0 .6-8 6 6 0 0 0-11.6 1.6A3.3 3.3 0 0 0 7 18.5z"/><path d="M12 11v5M9.8 13.8 12 16l2.2-2.2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.5 6v5.5c0 4.4 3.1 8.2 7.5 9.5 4.4-1.3 7.5-5.1 7.5-9.5V6z"/><path d="m8.8 12 2.2 2.2 4.2-4.4"/></symbol>
+    <symbol id="i-inf" viewBox="0 0 24 24"><path d="M6.5 8.5C3 8.5 3 15.5 6.5 15.5S10 12 12 12s2 3.5 5.5 3.5 3.5-7 0-7S14 12 12 12 10 8.5 6.5 8.5z"/></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><path d="m4 20 11-11M14 4v2M18 8h2M17.6 5.4 19 4M12.5 7.5l4 4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.2c0 4-3.8 7.2-8.5 7.2-1 0-1.9-.1-2.8-.4L5 19.8l1-3.4c-1.6-1.3-2.5-3.1-2.5-5.2 0-4 3.8-7.2 8.5-7.2s8.5 3.2 8.5 7.2z"/><path d="M8.5 11.2h.01M12 11.2h.01M15.5 11.2h.01"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4M8 13.5h2M14 13.5h2M8 17h2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.5l1.4 4-1.9 1.3a11 11 0 0 0 6.6 6.6l1.3-1.9 4 1.4v2.5A2.1 2.1 0 0 1 18.3 20 15 15 0 0 1 4 5.7a2.1 2.1 0 0 1 2.6-2.2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+    <symbol id="i-news" viewBox="0 0 24 24"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2M7 9h7M7 12.5h7M7 16h4"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17 7h.01"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8.5h2.5V5H14a3.5 3.5 0 0 0-3.5 3.5V11H8v3.5h2.5V21H14v-6.5h2.5L17 11h-3V8.5z"/></symbol>
+    <symbol id="i-at" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.6"/><path d="M15.6 12v1.4a2.4 2.4 0 0 0 4.8 0V12a8.4 8.4 0 1 0-3.3 6.7"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-line" viewBox="0 0 24 24"><path d="M12 3.5c-5 0-9 3.2-9 7.2 0 3.6 3.2 6.6 7.5 7.1.3.1.7.2.8.5.1.3 0 .7 0 .9l-.1.8c0 .3-.2.9.8.5s5.5-3.2 7.5-5.5c1.4-1.5 2-2.9 2-4.3 0-4-4-7.2-9-7.2z" fill="currentColor" stroke="none"/><path d="M7 9v3.6h2M10.6 9v3.6M12.6 12.6V9l2.6 3.6V9M19 9h-2v3.6h2M17 10.8h1.8" stroke="#06C755" stroke-width="1.3" fill="none"/></symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><span class="rec"></span>รับคิวถ่ายรับปริญญา <b>วันซ้อม · วันจริง · นอกรอบ</b> และงานแต่ง</div>
+    <div class="hide-sm">โทร <b>081-645-8885</b> · LINE <b>43pit698</b></div>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="PCONSCAPE หน้าแรก">
+      <span class="logo">PC<i class="o"></i>N<span class="l2">SCΛPE</span></span>
+      <span class="hide-sm" style="display:none"></span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#packages">แพ็กเกจ</a>
+      <a href="#book">เช็กคิว</a>
+      <a href="#portfolio">ผลงาน</a>
+      <a href="#how">ขั้นตอน &amp; ส่งไฟล์</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#contact">ติดต่อ</a>
+    </div>
+    <a href="#book" class="btn btn-cream nav-cta"><svg class="ic"><use href="#i-cal"/></svg>เช็กคิวว่าง</a>
+    <button class="burger" aria-label="เปิดเมนู" aria-expanded="false" id="burger">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="kicker"><svg class="ic"><use href="#i-focus"/></svg>ช่างภาพรับปริญญา &amp; งานแต่ง · กรุงเทพฯ</span>
+      <h1>ซัมเมอร์ปีสุดท้าย<br>ขอเก็บให้<span class="u">เต็มม้วน</span></h1>
+      <div class="en">“My summer in a bunch of photos.”</div>
+      <p class="lead">พี่พีจาก <b>PCONSCAPE</b> ถ่ายรับปริญญาแบบ<b>ไม่จำกัดจำนวนรูป</b> ช่วยหามุม ช่วยโพส คุยง่ายเป็นกันเอง โทนอุ่นละมุนแบบฟิล์ม แล้วส่งไฟล์ปรับแสงสีให้ผ่าน Google Photos ภายใน 1–4 วัน</p>
+      <div class="cta-row">
+        <a href="#book" class="btn btn-cream"><svg class="ic"><use href="#i-cal"/></svg>เช็กคิว &amp; ราคา</a>
+        <a href="#portfolio" class="btn btn-ghost"><svg class="ic"><use href="#i-film"/></svg>ดูผลงาน</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="n" data-count="6374">6,374</div><div class="l">ผู้ติดตามบน<br>Instagram</div></div>
+        <div class="stat"><div class="n">∞</div><div class="l">ไม่จำกัด<br>จำนวนรูป</div></div>
+        <div class="stat"><div class="n">1–4 วัน</div><div class="l">ได้ไฟล์ผ่าน<br>Google Photos</div></div>
+        <div class="stat"><div class="n">6 เดือน</div><div class="l">เก็บไฟล์<br>สำรองให้ฟรี</div></div>
+      </div>
+    </div>
+
+    <div class="vf rv-on">
+      <div class="sticker st1">ช่วยโพส ช่วยหามุม<small>ไม่ต้องเขินกล้อง</small></div>
+      <div class="shot">
+        <img src="assets/summer.jpg" alt="ผลงาน PCONSCAPE: นักศึกษาสองคนในชุดนักศึกษาหลบใต้ผ้าขาว ข้อความ My summer in a bunch of photos" width="480" height="640">
+        <div class="hud" aria-hidden="true">
+          <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+          <div class="top"><span>● REC</span><span>ISO 200</span></div>
+          <div class="bot"><span>1/250 · f2.0</span><span>[ 36 ]</span></div>
+          <div class="af"></div>
+        </div>
+        <div class="datestamp" aria-hidden="true">'26 10 27</div>
+      </div>
+      <div class="polaroid pol1"><img src="assets/tonkao-rsu.jpg" alt="ผลงาน: บัณฑิตถือช่อดอกไม้ ยิ้มกลางแดดบ่าย"><span>Tonkao · RSU</span></div>
+      <div class="polaroid pol2"><img src="assets/yiing-ku.jpg" alt="ผลงาน: ภาพพอร์ตเทรตนักศึกษาหญิง"><span>Yiing · KU</span></div>
+      <div class="sticker st2">ถ่ายไม่จำกัด ∞<small>แก้ไขได้ 1 ครั้ง</small></div>
+    </div>
+  </div>
+  <div class="tear"></div>
+</header>
+
+<div class="strip" aria-hidden="true">
+  <div class="track">
+    <span class="itl">My summer in a bunch of photos.</span><span>วันซ้อม | วันจริง | นอกรอบ</span><span>ถ่ายภาพไม่จำกัด</span><span>ช่วยหามุม ช่วยโพส</span><span>ช่างภาพเป็นกันเองคุยง่าย</span><span>ไฟล์ปรับแต่งแสงสี</span><span>ส่งไฟล์ผ่าน Google Photos</span><span>สำรองไฟล์ฟรี 6 เดือน</span><span>#รับปริญญา</span>
+    <span class="itl">My summer in a bunch of photos.</span><span>วันซ้อม | วันจริง | นอกรอบ</span><span>ถ่ายภาพไม่จำกัด</span><span>ช่วยหามุม ช่วยโพส</span><span>ช่างภาพเป็นกันเองคุยง่าย</span><span>ไฟล์ปรับแต่งแสงสี</span><span>ส่งไฟล์ผ่าน Google Photos</span><span>สำรองไฟล์ฟรี 6 เดือน</span><span>#รับปริญญา</span>
+  </div>
+</div>
+
+<!-- OCCASIONS -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">What we shoot</span>
+      <h2>ทุกช็อตสำคัญของ<em>วันจบการศึกษา</em></h2>
+      <p>ตั้งแต่วันซ้อมที่ยังตื่นเต้น วันจริงที่ทั้งบ้านมาครบ จนถึงทริปนอกรอบกับแก๊งเพื่อนสนิท — และงานแต่งเมื่อถึงวันนั้น</p>
+    </div>
+    <div class="occ-grid">
+      <div class="occ rv-on"><span class="num">01</span><div class="bx"><svg class="ic"><use href="#i-cal"/></svg></div><h3>วันซ้อม</h3><p>วันที่บรรยากาศสบาย ๆ เหมาะเก็บภาพเดี่ยว ภาพกลุ่มเพื่อนในคณะ และมุมเด็ดทั่วมหาวิทยาลัย</p></div>
+      <div class="occ feat rv-on"><span class="num">02</span><div class="bx"><svg class="ic"><use href="#i-cap"/></svg></div><h3>วันจริง</h3><p>ชุดครุยพร้อม ครอบครัวพร้อม ช่อดอกไม้เต็มมือ ช่างภาพช่วยจัดคิวถ่ายให้ครบทุกคนที่มาแสดงความยินดี</p></div>
+      <div class="occ rv-on"><span class="num">03</span><div class="bx"><svg class="ic"><use href="#i-sun"/></svg></div><h3>นอกรอบ</h3><p>เลือกวัน เลือกแสงเองได้ ถ่ายชิล ๆ เริ่มต้น 1 ชั่วโมง ชุดนักศึกษา ชุดครุย หรือคอนเซ็ปต์ของตัวเอง</p></div>
+      <div class="occ rv-on"><span class="num">04</span><div class="bx"><svg class="ic"><use href="#i-rings"/></svg></div><h3>งานแต่ง</h3><p>โทนอุ่นแบบเดียวกันสำหรับวันสำคัญอีกวันของชีวิต สอบถามรายละเอียดและคิวว่างได้ทาง LINE</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="dark" id="packages">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">Packages</span>
+      <h2>แพ็กเกจชัด ๆ <span style="color:var(--cream)">เลือกง่าย</span></h2>
+      <p>ทุกแพ็กเกจถ่ายไม่จำกัดจำนวนรูป ปรับแต่งแสงสีทุกไฟล์ ส่งผ่าน Google Photos — ต่างกันแค่เวลาที่อยากได้</p>
+    </div>
+    <div class="pk-grid">
+      <div class="pk-card rv-on">
+        <span class="corner"></span>
+        <h3>ครึ่งวัน · 3 ชั่วโมง</h3>
+        <div class="sub">เหมาะกับวันซ้อม / วันจริงที่อยากได้ภาพครบ</div>
+        <div class="price">5,800<small>บาท</small></div>
+        <span class="tbc">รอยืนยันราคาล่าสุด</span>
+        <div class="perhr">≈ 1,933 บาท / ชั่วโมง</div>
+        <ul class="inc">
+          <li><svg class="ic"><use href="#i-inf"/></svg>ถ่ายภาพไม่จำกัดจำนวน</li>
+          <li><svg class="ic"><use href="#i-wand"/></svg>ไฟล์ปรับแต่งแสงสี · แก้ไขได้ 1 ครั้ง</li>
+          <li><svg class="ic"><use href="#i-cloud"/></svg>ส่งไฟล์ผ่าน Google Photos ภายใน 1–4 วัน</li>
+          <li><svg class="ic"><use href="#i-shield"/></svg>เก็บไฟล์สำรองให้ฟรี 6 เดือน</li>
+        </ul>
+        <a href="#book" class="btn btn-cream" style="margin-top:26px;width:100%" data-pick="half">เลือกครึ่งวัน</a>
+      </div>
+      <div class="pk-card out rv-on">
+        <h3>นอกรอบ · เลือกชั่วโมงเอง</h3>
+        <div class="sub">แตะเพื่อเปรียบเทียบ — ยิ่งนาน ยิ่งคุ้มต่อชั่วโมง</div>
+        <div class="hours" id="hours">
+          <button class="hr" data-h="1"><div class="h">1 ชม.</div><div class="p">3,000฿</div><div class="ph">3,000 / ชม.</div></button>
+          <button class="hr on" data-h="2"><div class="h">2 ชม.</div><div class="p">3,800฿</div><div class="ph">1,900 / ชม.</div></button>
+          <button class="hr" data-h="3"><span class="best">คุ้มสุด</span><div class="h">3 ชม.</div><div class="p">4,800฿</div><div class="ph">1,600 / ชม.</div></button>
+        </div>
+        <div class="bars" id="bars" aria-label="เปรียบเทียบราคาต่อชั่วโมง">
+          <div class="bar" data-k="o1"><span>นอกรอบ 1 ชม.</span><div class="t"><i data-w="100"></i></div><b>3,000</b></div>
+          <div class="bar" data-k="half"><span>ครึ่งวัน 3 ชม.</span><div class="t"><i data-w="64"></i></div><b>1,933</b></div>
+          <div class="bar on" data-k="o2"><span>นอกรอบ 2 ชม.</span><div class="t"><i data-w="63"></i></div><b>1,900</b></div>
+          <div class="bar" data-k="o3"><span>นอกรอบ 3 ชม.</span><div class="t"><i data-w="53"></i></div><b>1,600</b></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:auto;padding-top:26px;flex-wrap:wrap">
+          <div><div style="font-family:var(--mono);font-size:12.5px;color:var(--beige2)">ราคาต่อชั่วโมง (บาท)</div><span class="tbc">รอยืนยันราคาล่าสุด</span></div>
+          <a href="#book" class="btn btn-cream" id="pickOut" data-pick="o2">เลือกนอกรอบ 2 ชม.</a>
+        </div>
+      </div>
+    </div>
+    <p class="pk-note rv-on">ราคาอ้างอิงจากประกาศบน Fastwork ของ PCONSCAPE (ไม่ระบุวันที่) · <b>เต็มวัน / งานแต่ง สอบถามราคา</b> · ราคาจริงยืนยันกับช่างภาพก่อนจองทุกครั้ง</p>
+  </div>
+</section>
+
+<!-- BOOKING WIDGET -->
+<section class="book" id="book">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">Check availability</span>
+      <h2>เช็กคิวใน 30 วินาที <em>ส่งเข้า LINE</em></h2>
+      <p>เลือกแพ็กเกจ วัน และมหาวิทยาลัย ระบบจะเขียนข้อความให้ — กดคัดลอกแล้วส่งหาพี่พีใน LINE ได้เลย</p>
+    </div>
+    <div class="bk">
+      <div class="panel rv-on">
+        <div class="fld">
+          <div class="lb"><span class="n">1</span>แพ็กเกจ</div>
+          <div class="seg" id="fPkg">
+            <button class="opt" data-v="half">ครึ่งวัน 3 ชม.</button>
+            <button class="opt" data-v="o1">นอกรอบ 1 ชม.</button>
+            <button class="opt on" data-v="o2">นอกรอบ 2 ชม.</button>
+            <button class="opt" data-v="o3">นอกรอบ 3 ชม.</button>
+            <button class="opt" data-v="full">เต็มวัน (สอบถาม)</button>
+            <button class="opt" data-v="wed">งานแต่ง (สอบถาม)</button>
+          </div>
+        </div>
+        <div class="fld">
+          <div class="lb"><span class="n">2</span>ถ่ายวันไหน</div>
+          <div class="seg" id="fDay">
+            <button class="opt" data-v="วันซ้อม">วันซ้อม</button>
+            <button class="opt" data-v="วันจริง">วันจริง</button>
+            <button class="opt on" data-v="นอกรอบ">นอกรอบ</button>
+            <button class="opt" data-v="ยังไม่แน่ใจ">ยังไม่แน่ใจ</button>
+          </div>
+        </div>
+        <div class="two">
+          <div class="fld"><label for="fDate"><span class="n">3</span>วันที่อยากถ่าย</label><input type="date" id="fDate"></div>
+          <div class="fld"><label for="fUni"><span class="n">4</span>มหาวิทยาลัย / สถานที่</label>
+            <select id="fUni">
+              <option value="">— เลือก —</option>
+              <option>สจล. ลาดกระบัง</option><option>มศว.</option><option>มธ.</option><option>มหิดล</option>
+              <option>ม.เกษตรศาสตร์</option><option>ม.รังสิต</option><option>จุฬาฯ</option>
+              <option value="other">อื่น ๆ (พิมพ์เอง)</option>
+            </select>
+          </div>
+        </div>
+        <div class="fld" id="uniOtherWrap" hidden><input type="text" id="fUniOther" placeholder="พิมพ์ชื่อมหาวิทยาลัย / สถานที่"></div>
+        <div class="fld">
+          <div class="lb"><span class="n">5</span>ถ่ายกี่คน</div>
+          <div class="seg" id="fPax">
+            <button class="opt on" data-v="เดี่ยว">เดี่ยว</button>
+            <button class="opt" data-v="คู่ / กับแฟน">คู่</button>
+            <button class="opt" data-v="กลุ่มเพื่อน">กลุ่มเพื่อน</button>
+            <button class="opt" data-v="มีครอบครัวร่วมด้วย">มีครอบครัวด้วย</button>
+          </div>
+        </div>
+        <div class="two">
+          <div class="fld" style="margin-bottom:0"><label for="fName"><span class="n">6</span>ชื่อเล่น</label><input type="text" id="fName" placeholder="เช่น น้องมิ้นท์"></div>
+          <div class="fld" style="margin-bottom:0"><label for="fNote"><span class="n">7</span>คอนเซ็ปต์ / หมายเหตุ</label><input type="text" id="fNote" placeholder="เช่น โทนฟิล์ม มีช่อดอกไม้"></div>
+        </div>
+      </div>
+
+      <aside class="ticket rv-on" aria-live="polite">
+        <div class="th">
+          <div class="tt"><span>PCONSCAPE · BOOKING SLIP</span><span id="tNo">No. 036</span></div>
+          <div class="pkg" id="tPkg">นอกรอบ 2 ชม.</div>
+          <div class="est" id="tEst">3,800 <small>บาท</small></div>
+          <span class="tbc">ราคาตัวอย่าง · รอยืนยัน</span>
+        </div>
+        <div class="rows">
+          <div class="row"><span>ถ่ายวัน</span><span id="tDay">นอกรอบ</span></div>
+          <div class="row"><span>วันที่</span><span id="tDate">ยังไม่เลือก</span></div>
+          <div class="row"><span>สถานที่</span><span id="tUni">ยังไม่เลือก</span></div>
+          <div class="row"><span>จำนวน</span><span id="tPax">เดี่ยว</span></div>
+          <div class="row"><span>รวมในแพ็กเกจ</span><span>ไม่จำกัดรูป · แก้ 1 ครั้ง</span></div>
+          <div class="row"><span>ส่งไฟล์</span><span>Google Photos · 1–4 วัน</span></div>
+        </div>
+        <div class="msg" id="preview"></div>
+        <div class="tk-act">
+          <button class="btn btn-cream" id="copyBtn"><svg class="ic"><use href="#i-copy"/></svg>คัดลอกข้อความ</button>
+          <a class="btn btn-line" href="https://line.me/ti/p/~43pit698" target="_blank" rel="noopener"><svg class="ic"><use href="#i-line"/></svg>เปิด LINE</a>
+          <a class="btn btn-ghost full" href="tel:0816458885"><svg class="ic"><use href="#i-phone"/></svg>หรือโทร 081-645-8885</a>
+        </div>
+        <div class="copyok" id="copyOk"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="dark" id="portfolio">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">Portfolio</span>
+      <h2>ม้วนฟิล์มของ<span style="color:var(--cream)">น้อง ๆ แต่ละมหาลัย</span></h2>
+      <p>คัดจากโพสต์ล่าสุดบน Instagram @pconscape — แตะกรองตามมหาวิทยาลัย แตะรูปเพื่อดูใหญ่</p>
+    </div>
+    <div class="filters rv-on" id="filters">
+      <button class="fbtn on" data-f="all">ทั้งหมด</button>
+      <button class="fbtn" data-f="ku">KU</button>
+      <button class="fbtn" data-f="swu">มศว. · SWU</button>
+      <button class="fbtn" data-f="rsu">RSU</button>
+      <button class="fbtn" data-f="kmitl">ลาดกระบัง</button>
+      <button class="fbtn" data-f="tu">มธ.</button>
+      <button class="fbtn" data-f="mu">มหิดล</button>
+      <button class="fbtn" data-f="out">นอกรอบ / เพื่อน</button>
+    </div>
+    <div class="film rv-on">
+      <div class="frames" id="frames">
+        <figure class="frame" data-c="out" data-cap="My summer in a bunch of photos."><span class="no">01A</span><img src="assets/summer.jpg" alt="เพื่อนสองคนในชุดนักศึกษาหลบใต้ผ้าขาว" loading="lazy"><figcaption class="cap"><span>Summer set</span><small>'26</small></figcaption></figure>
+        <figure class="frame" data-c="ku" data-cap="Yiing · KU"><span class="no">02A</span><img src="assets/yiing-ku.jpg" alt="พอร์ตเทรตนักศึกษาหญิง แสงนุ่ม" loading="lazy"><figcaption class="cap"><span>Yiing · KU</span><small>23.10</small></figcaption></figure>
+        <figure class="frame" data-c="swu" data-cap="View · SWU"><span class="no">03A</span><img src="assets/view-swu.jpg" alt="พอร์ตเทรตนักศึกษาชายใส่แว่น มุมเอียงสร้างสรรค์" loading="lazy"><figcaption class="cap"><span>View · SWU</span><small>22.10</small></figcaption></figure>
+        <figure class="frame" data-c="rsu" data-cap="Tonkao · RSU"><span class="no">04A</span><img src="assets/tonkao-rsu.jpg" alt="บัณฑิตหญิงถือช่อดอกไม้ แสงแดดและโบเก้" loading="lazy"><figcaption class="cap"><span>Tonkao · RSU</span><small>22.10</small></figcaption></figure>
+        <figure class="frame" data-c="out" data-cap="นอกรอบ · ชุดครุยกลางแจ้ง"><span class="no">05A</span><img src="assets/sash-outdoor.jpg" alt="บัณฑิตหญิงนั่งริมระเบียงในชุดครุยลายแถบ" loading="lazy"><figcaption class="cap"><span>นอกรอบ</span><small>FW</small></figcaption></figure>
+        <figure class="frame ph" data-c="kmitl"><span class="lbl">ภาพผลงานจริง</span><div class="in"><svg class="ic"><use href="#i-cam"/></svg><b>สจล. ลาดกระบัง</b><span>ใส่ภาพจริงจาก IG Highlight</span></div></figure>
+        <figure class="frame ph b" data-c="tu"><span class="lbl">ภาพผลงานจริง</span><div class="in"><svg class="ic"><use href="#i-cam"/></svg><b>มธ.</b><span>ใส่ภาพจริงจาก IG Highlight</span></div></figure>
+        <figure class="frame ph c" data-c="mu"><span class="lbl">ภาพผลงานจริง</span><div class="in"><svg class="ic"><use href="#i-cam"/></svg><b>มหิดล</b><span>ใส่ภาพจริงจาก IG Highlight</span></div></figure>
+      </div>
+    </div>
+    <p class="gal-note">ชื่อในภาพตามแคปชันโพสต์ของช่างภาพ · ช่อง “ภาพผลงานจริง” รอใส่รูปจาก Highlight · ไม่ได้เป็นช่างภาพทางการของมหาวิทยาลัยใด</p>
+    <div class="hl-row rv-on">
+      <a class="hl" href="https://www.instagram.com/pconscape/" target="_blank" rel="noopener"><span class="ring"><div>KMITL</div></span>รีวิว ลาดกระบัง</a>
+      <a class="hl" href="https://www.instagram.com/pconscape/" target="_blank" rel="noopener"><span class="ring"><div>SWU</div></span>รีวิว มศว.</a>
+      <a class="hl" href="https://www.instagram.com/pconscape/" target="_blank" rel="noopener"><span class="ring"><div>TU</div></span>รีวิว มธ.</a>
+      <a class="hl" href="https://www.instagram.com/pconscape/" target="_blank" rel="noopener"><span class="ring"><div>MU</div></span>รีวิว มหิดล</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap why">
+    <div class="collage rv-on" aria-hidden="true">
+      <div class="p p1"><span class="tape"></span><img src="assets/view-swu.jpg" alt=""><span>'26 10 22</span></div>
+      <div class="p p2"><span class="tape"></span><img src="assets/tonkao-rsu.jpg" alt=""><span>'26 10 22</span></div>
+    </div>
+    <div class="rv-on">
+      <span class="eyebrow">Why PCONSCAPE</span>
+      <h2>ไม่ต้องเป็นนายแบบ<br>ก็ได้รูปสวยเป็นธรรมชาติ</h2>
+      <div class="q">“ช่างภาพเป็นกันเอง คุยง่าย”</div>
+      <div class="pts">
+        <div class="pt"><span class="bx"><svg class="ic"><use href="#i-pose"/></svg></span><div><b>ช่วยหามุม ช่วยโพส</b><span>ไม่รู้จะทำท่าอะไร ไม่เป็นไร พี่พีพาเล่นจนลืมเขินกล้อง</span></div></div>
+        <div class="pt"><span class="bx"><svg class="ic"><use href="#i-sun"/></svg></span><div><b>โทนอุ่นแบบฟิล์ม</b><span>สีครีม-เบจละมุน แสงแดดบ่ายนุ่ม ๆ ดูกี่ปีก็ยังอบอุ่น</span></div></div>
+        <div class="pt"><span class="bx"><svg class="ic"><use href="#i-inf"/></svg></span><div><b>ไม่จำกัดจำนวนรูป</b><span>ไม่ต้องนับช็อต ถ่ายเพื่อนได้ ถ่ายครอบครัวได้ตลอดเวลาที่จอง</span></div></div>
+      </div>
+      <div class="press"><svg class="ic"><use href="#i-news"/></svg><div><b>เคยถูกแนะนำโดย The Thaiger</b><small>ในบทความรวมช่างภาพรับปริญญา 10 ราย</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO BOOK -->
+<section id="how" style="background:var(--paper2)">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">How to book</span>
+      <h2>จองง่าย ได้ไฟล์ไว <em>5 ขั้นตอน</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv-on"><div class="c"><svg class="ic"><use href="#i-chat"/></svg></div><div class="k">STEP 01</div><h4>ทัก LINE เช็กคิว</h4><p>แจ้งวัน มหาวิทยาลัย และแพ็กเกจที่สนใจ</p></div>
+      <div class="step rv-on"><div class="c"><svg class="ic"><use href="#i-cal"/></svg></div><div class="k">STEP 02</div><h4>ยืนยันคิว</h4><p>สรุปเวลา จุดนัดพบ และเงื่อนไขการจองกับช่างภาพ</p></div>
+      <div class="step rv-on"><div class="c"><svg class="ic"><use href="#i-cam"/></svg></div><div class="k">STEP 03</div><h4>วันถ่ายจริง</h4><p>ถ่ายไม่จำกัด ช่วยโพส ช่วยหามุม สนุกตลอดคิว</p></div>
+      <div class="step rv-on"><div class="c"><svg class="ic"><use href="#i-wand"/></svg></div><div class="k">STEP 04</div><h4>ปรับแสงสี</h4><p>แต่งโทนให้ทุกไฟล์ ขอแก้ไขได้ 1 ครั้ง</p></div>
+      <div class="step rv-on"><div class="c"><svg class="ic"><use href="#i-cloud"/></svg></div><div class="k">STEP 05</div><h4>รับไฟล์</h4><p>ลิงก์ Google Photos ภายใน 1–4 วัน</p></div>
+    </div>
+    <div class="deliver">
+      <div class="dv rv-on"><span class="bx"><svg class="ic"><use href="#i-cloud"/></svg></span><div><b>Google Photos</b><span>เปิดดูในมือถือได้ทันที แชร์ลิงก์ให้เพื่อนและครอบครัวได้ง่าย</span></div></div>
+      <div class="dv rv-on"><span class="bx"><svg class="ic"><use href="#i-clock"/></svg></span><div><b>ภายใน 1–4 วัน</b><span>ไม่ต้องรอนานเป็นเดือน ทันโพสต์อวดวันรับปริญญา</span></div></div>
+      <div class="dv rv-on"><span class="bx"><svg class="ic"><use href="#i-shield"/></svg></span><div><b>สำรองไฟล์ฟรี 6 เดือน</b><span>ทำมือถือหาย ลบเผลอ ก็ยังขอไฟล์ใหม่ได้</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">Reviews</span>
+      <h2>เสียงจาก<em>บัณฑิต</em></h2>
+      <p>รีวิวจริงแยกตามมหาวิทยาลัยอยู่ใน Highlight ของ Instagram @pconscape</p>
+    </div>
+    <div class="rv-grid">
+      <div class="rvw rv-on"><span class="demo-tag">ตัวอย่าง</span><div class="top"><span>วันซ้อม · ครึ่งวัน</span><i>★★★★★</i></div><p>ไม่เคยถ่ายรูปเก่งเลย แต่พี่ช่างภาพช่วยจัดท่าให้ตลอด คุยสนุกจนลืมเขิน ได้ไฟล์เร็วมาก โทนสีอุ่นสวยเหมือนฟิล์ม</p><div class="who"><span class="av">ม</span><div><b>น้องมิ้นท์</b><small>บัณฑิต (ตัวอย่าง)</small></div></div></div>
+      <div class="rvw rv-on"><span class="demo-tag">ตัวอย่าง</span><div class="top"><span>นอกรอบ · 2 ชม.</span><i>★★★★★</i></div><p>ไปกับแก๊งเพื่อน 4 คน ถ่ายได้ไม่จำกัดจริง ทุกคนได้รูปเดี่ยวครบ มีมุมตลก ๆ ด้วย ส่งลิงก์ Google Photos แชร์ในกลุ่มง่ายมาก</p><div class="who"><span class="av">บ</span><div><b>น้องบอส</b><small>บัณฑิต (ตัวอย่าง)</small></div></div></div>
+      <div class="rvw rv-on"><span class="demo-tag">ตัวอย่าง</span><div class="top"><span>วันจริง · ครึ่งวัน</span><i>★★★★★</i></div><p>คุณพ่อคุณแม่ชอบมาก พี่ช่วยเรียกญาติมาถ่ายครบทุกคน ไม่วุ่นวาย ภาพครอบครัวออกมาอบอุ่นสุด ๆ</p><div class="who"><span class="av">ฝ</span><div><b>น้องฝ้าย</b><small>บัณฑิต (ตัวอย่าง)</small></div></div></div>
+    </div>
+    <p class="note">* ข้อความรีวิวในหน้านี้เป็นตัวอย่างสำหรับเว็บไซต์ demo เท่านั้น เว็บไซต์จริงจะใช้รีวิวจากลูกค้าจริงของ PCONSCAPE</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv-on" style="margin-bottom:34px"><span class="eyebrow">FAQ</span><h2>คำถามที่น้อง ๆ ถามบ่อย</h2></div>
+    <div class="faq rv-on">
+      <details><summary>ถ่ายไม่จำกัดจำนวนรูปจริงไหม?</summary><p>จริง ภายในเวลาที่จอง ถ่ายได้ไม่จำกัดช็อต ทั้งภาพเดี่ยว ภาพกลุ่มเพื่อน และครอบครัว</p></details>
+      <details><summary>ได้ไฟล์ภายในกี่วัน ส่งทางไหน?</summary><p>ส่งไฟล์ที่ปรับแต่งแสงสีแล้วผ่าน Google Photos ภายใน 1–4 วัน และเก็บไฟล์สำรองให้ฟรี 6 เดือน</p></details>
+      <details><summary>ไม่ถนัดโพสท่า ทำยังไงดี?</summary><p>ไม่ต้องกังวล ช่างภาพช่วยหามุม ช่วยโพส และพาเล่นให้ได้ภาพเป็นธรรมชาติ</p></details>
+      <details><summary>รับถ่ายมหาวิทยาลัยไหนบ้าง?</summary><p>มีผลงานจากหลายมหาวิทยาลัยในกรุงเทพฯ และปริมณฑล ทักบอกชื่อมหาวิทยาลัยและวันที่ เพื่อเช็กคิวว่างได้เลย</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="dark contact" id="contact">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow">Contact</span>
+      <h2>ทักมาเช็กคิว<br><span>ก่อนคิวเต็ม</span></h2>
+      <div class="info">
+        <a class="it" href="tel:0816458885"><span class="i"><svg class="ic"><use href="#i-phone"/></svg></span><div><b>โทร</b><span class="ph">081-645-8885</span></div></a>
+        <a class="it" href="https://line.me/ti/p/~43pit698" target="_blank" rel="noopener"><span class="i"><svg class="ic"><use href="#i-chat"/></svg></span><div><b>LINE ID</b><span class="ph">43pit698</span></div></a>
+        <a class="it" href="https://fastwork.co/user/pconscape/photography-11534897" target="_blank" rel="noopener"><span class="i"><svg class="ic"><use href="#i-check"/></svg></span><div><b>จองผ่าน Fastwork ได้ด้วย</b><span>fastwork.co/user/pconscape</span></div></a>
+      </div>
+      <div class="socials">
+        <a href="https://www.instagram.com/pconscape/" target="_blank" rel="noopener"><svg class="ic"><use href="#i-ig"/></svg>@pconscape</a>
+        <a href="https://www.facebook.com/pconscape" target="_blank" rel="noopener"><svg class="ic"><use href="#i-fb"/></svg>facebook.com/pconscape</a>
+        <a href="https://www.threads.com/@pconscape" target="_blank" rel="noopener"><svg class="ic"><use href="#i-at"/></svg>Threads @pconscape</a>
+      </div>
+    </div>
+    <div class="area rv-on">
+      <h3>พื้นที่รับงาน</h3>
+      <p>รับงานในกรุงเทพฯ เป็นหลัก มหาวิทยาลัยหรือสถานที่อื่นสอบถามได้</p>
+      <div class="map-art" aria-hidden="true">
+        <svg viewBox="0 0 500 240" preserveAspectRatio="xMidYMid slice">
+          <defs><pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0v24" fill="none" stroke="#d6cab9" stroke-width="1"/></pattern></defs>
+          <rect width="500" height="240" fill="url(#g)"/>
+          <path d="M40 200C120 170 140 120 210 120S330 60 470 40" fill="none" stroke="#BBAC9E" stroke-width="14" stroke-linecap="round" opacity=".5"/>
+          <path d="M60 30C140 80 200 160 300 180S420 210 480 220" fill="none" stroke="#c9d3e6" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+          <g fill="none" stroke="#2A314B" stroke-width="3"><path d="M215 92v-14h14M271 78h14v14M285 148v14h-14M229 162h-14v-14"/></g>
+          <circle cx="250" cy="120" r="6" fill="#E9A25A"/><circle cx="250" cy="120" r="18" fill="none" stroke="#E9A25A" stroke-width="2" opacity=".5"/>
+          <text x="250" y="200" text-anchor="middle" font-family="Noto Sans Thai" font-weight="800" font-size="20" fill="#2A314B">กรุงเทพฯ</text>
+        </svg>
+      </div>
+      <div class="chips"><span>สจล. ลาดกระบัง</span><span>มศว.</span><span>มธ.</span><span>มหิดล</span><span>KU</span><span>RSU</span><span class="soft">ที่อื่น ๆ สอบถาม</span></div>
+      <p style="font-size:13px;margin-top:14px">รายชื่อมหาวิทยาลัยมาจากผลงานและ Highlight รีวิวของช่างภาพ ไม่ได้หมายถึงความร่วมมืออย่างเป็นทางการ</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <span class="logo" style="font-size:26px">PC<i class="o"></i>N<span class="l2">SCΛPE</span></span>
+        <p>ช่างภาพรับปริญญา วันซ้อม วันจริง นอกรอบ และงานแต่ง กรุงเทพฯ · My summer in a bunch of photos.</p>
+      </div>
+      <div><h4 class="head">เมนู</h4><ul><li><a href="#packages">แพ็กเกจ</a></li><li><a href="#book">เช็กคิว</a></li><li><a href="#portfolio">ผลงาน</a></li><li><a href="#how">ขั้นตอน &amp; ส่งไฟล์</a></li></ul></div>
+      <div><h4 class="head">ติดต่อ</h4><ul><li><a href="tel:0816458885">โทร 081-645-8885</a></li><li><a href="https://line.me/ti/p/~43pit698" target="_blank" rel="noopener">LINE 43pit698</a></li><li><a href="https://www.instagram.com/pconscape/" target="_blank" rel="noopener">IG @pconscape</a></li><li><a href="https://www.facebook.com/pconscape" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 PCONSCAPE · ภาพผลงานเป็นลิขสิทธิ์ของช่างภาพ</span><span>Website demo โดย <b>Relearn Solution</b></span></div>
+  </div>
+</footer>
+
+<div class="lbox" id="lb" role="dialog" aria-modal="true" aria-label="ดูภาพขยาย">
+  <button class="x" id="lbX" aria-label="ปิด">×</button>
+  <div><img id="lbImg" src="" alt=""><p id="lbCap"></p></div>
+</div>
+
+<div class="fab">
+  <a href="https://line.me/ti/p/~43pit698" target="_blank" rel="noopener" class="line" aria-label="LINE 43pit698"><svg class="ic" style="color:#fff;width:30px;height:30px"><use href="#i-line"/></svg></a>
+  <a href="tel:0816458885" class="call" aria-label="โทร 081-645-8885"><svg class="ic"><use href="#i-phone"/></svg></a>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+/* burger */
+$('burger').addEventListener('click',()=>{const o=$('menu').classList.toggle('open');$('burger').setAttribute('aria-expanded',o)});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>$('menu').classList.remove('open')));
+
+/* packages */
+const P={half:{name:'ครึ่งวัน 3 ชม.',price:5800,h:3},o1:{name:'นอกรอบ 1 ชม.',price:3000,h:1},o2:{name:'นอกรอบ 2 ชม.',price:3800,h:2},o3:{name:'นอกรอบ 3 ชม.',price:4800,h:3},full:{name:'เต็มวัน',price:null},wed:{name:'งานแต่ง',price:null}};
+const fmt=n=>n.toLocaleString('en-US');
+let pkg='o2',day='นอกรอบ',pax='เดี่ยว';
+function markBars(k){document.querySelectorAll('#bars .bar').forEach(b=>b.classList.toggle('on',b.dataset.k===k))}
+document.querySelectorAll('#hours .hr').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#hours .hr').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  const k='o'+b.dataset.h;markBars(k);$('pickOut').dataset.pick=k;$('pickOut').textContent='เลือกนอกรอบ '+b.dataset.h+' ชม.';
+}));
+document.querySelectorAll('[data-pick]').forEach(a=>a.addEventListener('click',()=>{setPkg(a.dataset.pick)}));
+function setPkg(k){pkg=k;document.querySelectorAll('#fPkg .opt').forEach(o=>o.classList.toggle('on',o.dataset.v===k));
+  if(k.startsWith('o')){setSeg('fDay','นอกรอบ');day='นอกรอบ'}build()}
+function setSeg(id,v){document.querySelectorAll('#'+id+' .opt').forEach(o=>o.classList.toggle('on',o.dataset.v===v))}
+function seg(id,fn){document.querySelectorAll('#'+id+' .opt').forEach(o=>o.addEventListener('click',()=>{setSeg(id,o.dataset.v);fn(o.dataset.v);build()}))}
+seg('fPkg',v=>pkg=v);seg('fDay',v=>day=v);seg('fPax',v=>pax=v);
+['fDate','fName','fNote','fUniOther'].forEach(i=>$(i).addEventListener('input',build));
+$('fUni').addEventListener('change',()=>{$('uniOtherWrap').hidden=$('fUni').value!=='other';build()});
+function thDate(v){if(!v)return'';const d=new Date(v+'T00:00:00');return d.toLocaleDateString('th-TH',{day:'numeric',month:'short',year:'numeric'})}
+function build(){
+  const p=P[pkg];
+  $('tPkg').textContent=p.name;
+  $('tEst').innerHTML=p.price?fmt(p.price)+' <small>บาท</small>':'สอบถาม <small>ราคา</small>';
+  $('tDay').textContent=day;
+  const date=thDate($('fDate').value);$('tDate').textContent=date||'ยังไม่เลือก';
+  let uni=$('fUni').value==='other'?$('fUniOther').value.trim():$('fUni').value;$('tUni').textContent=uni||'ยังไม่เลือก';
+  $('tPax').textContent=pax;
+  const name=$('fName').value.trim(),note=$('fNote').value.trim();
+  let m=`สวัสดีค่ะ/ครับ พี่พี${name?' ('+name+')':''} 📸\nขอเช็กคิวถ่ายรับปริญญาหน่อยนะคะ/ครับ\n• แพ็กเกจ: ${p.name}${p.price?' ('+fmt(p.price)+' บาท)':''}\n• ถ่ายวัน: ${day}`;
+  if(date)m+=`\n• วันที่: ${date}`;
+  if(uni)m+=`\n• มหาวิทยาลัย/สถานที่: ${uni}`;
+  m+=`\n• จำนวน: ${pax}`;
+  if(note)m+=`\n• หมายเหตุ: ${note}`;
+  m+=`\n\nรบกวนเช็กคิวว่างและยืนยันราคาล่าสุดให้หน่อยนะคะ/ครับ ขอบคุณค่ะ/ครับ`;
+  $('preview').textContent=m;
+}
+build();
+$('copyBtn').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('preview').textContent);$('copyOk').textContent='คัดลอกแล้ว — กด “เปิด LINE” แล้ววางข้อความในแชต 43pit698 ได้เลย';}catch(e){$('copyOk').textContent='คัดลอกไม่สำเร็จ กรุณาเลือกข้อความแล้วคัดลอกเอง';}});
+
+/* gallery filter + lightbox */
+document.querySelectorAll('#filters .fbtn').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#filters .fbtn').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  const f=b.dataset.f;document.querySelectorAll('#frames .frame').forEach(fr=>fr.classList.toggle('hide',f!=='all'&&fr.dataset.c!==f));
+}));
+document.querySelectorAll('#frames .frame:not(.ph)').forEach(fr=>fr.addEventListener('click',()=>{
+  const img=fr.querySelector('img');$('lbImg').src=img.src;$('lbImg').alt=img.alt;$('lbCap').textContent=fr.dataset.cap;$('lb').classList.add('open');
+}));
+$('lb').addEventListener('click',e=>{if(e.target.id==='lb'||e.target.id==='lbX')$('lb').classList.remove('open')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')$('lb').classList.remove('open')});
+
+/* reveal + bars */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll&&e.target.querySelectorAll('.bar i').forEach(i=>i.style.width=i.dataset.w+'%');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv-on').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+</script>
+</body>
+</html>

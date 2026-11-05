@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ช่างยู @U2nited 24 | ล้างเครื่องซักผ้าแบบถอดถังซัก ซ่อมเครื่องซักผ้า กทม.–ปริมณฑล</title>
+<meta name="description" content="ช่างยู บริการล้างเครื่องซักผ้าแบบถอดถังซัก และซ่อมเครื่องซักผ้าถึงบ้าน กรุงเทพฯ และปริมณฑล ฝาบน ฝาหน้า 2 ถัง เปิดตลอดเวลา โทร 065-245-2529">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#3A7BBF; --blue2:#5B9BDB; --blue3:#CFE2F5; --blued:#24578E;
+  --g900:#14191F; --g800:#1C232B; --g700:#29323D; --g600:#3A4552; --g400:#8C97A4; --g300:#B9C2CC; --g200:#DCE2E8; --g100:#EEF2F6; --g50:#F7F9FB;
+  --w:#fff; --line:#06C755; --foam:#E9F3FD; --ok:#2FA36B; --warn:#E8A33B;
+  --steel:linear-gradient(100deg,#c9d0d7 0%,#f4f6f8 22%,#b7c0c9 38%,#eef1f4 55%,#aab4be 72%,#e7ebef 88%,#c3cbd3 100%);
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:20px; --sh:0 22px 50px -24px rgba(20,25,31,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--g800);background:var(--g50);line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.hd{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(1200px,92%);margin:0 auto}
+.sample{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:#8a5a00;background:#fff5dc;border:1px dashed #e2b860;border-radius:8px;padding:1px 9px}
+
+/* top bar */
+.topbar{background:var(--g900);color:var(--g300);font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:14px;padding:8px 0;flex-wrap:wrap}
+.topbar b{color:#fff}
+.live{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ddc84;margin-right:8px;box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:50;background:rgba(247,249,251,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--g200)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:46px;height:46px;flex:none}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:22px;line-height:1;color:var(--g900)}
+.brand .t2{font-family:var(--head);font-size:12px;font-weight:700;letter-spacing:2px;color:var(--blue)}
+.menu{display:flex;gap:26px;font-family:var(--head);font-weight:600;font-size:15.5px;color:var(--g700)}
+.menu a{position:relative;padding:4px 0}
+.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;background:var(--blue);transition:right .25s}
+.menu a:hover::after{right:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:800;border-radius:14px;padding:13px 22px;font-size:16px;border:0;transition:transform .18s,box-shadow .18s,background .18s;white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:hover{transform:translateY(-2px)}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 14px 28px -14px var(--blue)}
+.btn-blue:hover{background:var(--blued)}
+.btn-line{background:var(--line);color:#fff;box-shadow:0 14px 28px -14px var(--line)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-steel{background:var(--steel);color:var(--g900);box-shadow:inset 0 1px 0 #fff,0 10px 24px -14px rgba(0,0,0,.5);border:1px solid #9aa5b1}
+.burger{display:none;background:none;border:0;width:44px;height:44px;place-items:center;border-radius:12px}
+.burger:hover{background:var(--g100)}
+
+/* hero */
+.hero{position:relative;background:radial-gradient(1200px 600px at 80% 10%,#2c3a4a 0%,transparent 60%),var(--g800);color:#fff;overflow:hidden;padding:84px 0 120px}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.09) 2px,transparent 2.4px);background-size:22px 22px;mask-image:radial-gradient(circle at 78% 45%,#000 0,transparent 62%);-webkit-mask-image:radial-gradient(circle at 78% 45%,#000 0,transparent 62%)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:56px;background:var(--steel);clip-path:polygon(0 100%,0 70%,100% 0,100% 100%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+.chip{display:inline-flex;align-items:center;gap:10px;background:rgba(58,123,191,.18);border:1px solid rgba(91,155,219,.5);color:#d6e7f8;font-family:var(--head);font-weight:700;padding:7px 16px 7px 8px;border-radius:999px;font-size:14.5px}
+.chip i{font-style:normal;background:var(--blue);color:#fff;border-radius:999px;padding:2px 10px;font-size:12.5px;letter-spacing:1px}
+.hero h1{font-size:clamp(40px,6vw,78px);font-weight:900;margin:22px 0 18px;letter-spacing:-.5px;line-height:1.12}
+.hero h1 .out{color:transparent;-webkit-text-stroke:2px #fff}
+.hero h1 .bl{color:var(--blue2)}
+.hero h1 small{display:block;font-size:.36em;font-weight:700;color:var(--g300);margin-top:14px;letter-spacing:0}
+.hero .lead{font-size:19px;color:var(--g300);max-width:560px}
+.hero .lead b{color:#fff}
+.cta-row{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.specs{display:grid;grid-template-columns:repeat(3,auto);gap:0;margin-top:42px;border:1px solid rgba(255,255,255,.14);border-radius:16px;width:max-content;max-width:100%;overflow:hidden;background:rgba(255,255,255,.03)}
+.specs>div{padding:14px 22px;border-right:1px solid rgba(255,255,255,.14)}
+.specs>div:last-child{border-right:0}
+.specs .n{font-family:var(--head);font-weight:900;font-size:30px;line-height:1.1}
+.specs .n em{font-style:normal;color:var(--blue2)}
+.specs .l{font-size:13px;color:var(--g400)}
+
+.hero-art{position:relative;max-width:470px;width:100%;justify-self:center}
+.washer{width:100%;filter:drop-shadow(0 40px 50px rgba(0,0,0,.55))}
+.drum-spin{transform-origin:200px 292px;animation:spin 6s linear infinite}
+.water{animation:slosh 3s ease-in-out infinite;transform-origin:200px 292px}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes slosh{50%{transform:rotate(-14deg)}}
+.led{font-family:var(--head);font-weight:800}
+.bub{animation:rise 3.6s ease-in infinite;opacity:0}
+.bub:nth-child(2){animation-delay:1.1s}.bub:nth-child(3){animation-delay:2.2s}.bub:nth-child(4){animation-delay:.6s}
+@keyframes rise{0%{opacity:0;transform:translateY(20px)}20%{opacity:.9}100%{opacity:0;transform:translateY(-90px)}}
+.stk{position:absolute;background:#fff;color:var(--g900);border-radius:16px;padding:10px 16px;font-family:var(--head);font-weight:800;font-size:15px;line-height:1.3;box-shadow:var(--sh);display:flex;align-items:center;gap:10px}
+.stk small{display:block;font-weight:600;font-size:12px;color:var(--g600)}
+.stk .ic{width:36px;height:36px;border-radius:10px;background:var(--blue);display:grid;place-items:center;flex:none}
+.stk .ic svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.st1{top:36%;left:-14%;animation:bob 4.4s ease-in-out infinite}
+.st2{bottom:16%;right:-10%;animation:bob 5s ease-in-out infinite .8s}
+.st3{bottom:-2%;left:2%;background:var(--blue);color:#fff;animation:bob 4.7s ease-in-out infinite 1.4s}
+.st3 small{color:#d6e7f8}
+@keyframes bob{50%{translate:0 -9px}}
+
+/* marquee */
+.marquee{background:var(--steel);border-bottom:1px solid #9aa5b1;overflow:hidden;padding:14px 0}
+.track{display:flex;width:max-content;animation:slide 40s linear infinite;font-family:var(--head);font-weight:800;font-size:19px;color:var(--g900)}
+.track span{display:flex;align-items:center;gap:22px;padding-right:22px}
+.track span::after{content:"";width:14px;height:14px;border-radius:50%;border:3px solid var(--blue);background:radial-gradient(circle,var(--blue) 2px,transparent 3px)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:100px 0;position:relative}
+.sh{max-width:760px;margin:0 auto 54px;text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:800;font-size:13.5px;letter-spacing:2.5px;color:var(--blue);text-transform:uppercase}
+.eyebrow::before,.eyebrow::after{content:"";width:22px;height:2px;background:currentColor;opacity:.5}
+.sh h2,.h2{font-size:clamp(30px,4.2vw,50px);font-weight:900;color:var(--g900);margin:12px 0 12px}
+.sh h2 em,.h2 em{font-style:normal;color:var(--blue)}
+.sh p{color:var(--g600);font-size:18px}
+
+/* why disassemble */
+.why{background:#fff}
+.why .grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.explode{position:relative;background:var(--g100);border-radius:28px;padding:20px;border:1px solid var(--g200)}
+.explode svg{width:100%;height:auto}
+.explode .cap{position:absolute;left:20px;top:18px;font-family:var(--head);font-weight:800;font-size:12px;letter-spacing:2px;color:var(--g400)}
+.compare{margin-top:26px;border:1px solid var(--g200);border-radius:18px;overflow:hidden}
+.compare .row{display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid var(--g200);font-size:15.5px}
+.compare .row:last-child{border-bottom:0}
+.compare .row>div{padding:11px 14px}
+.compare .row.h{background:var(--g800);color:#fff;font-family:var(--head);font-weight:700;font-size:14.5px}
+.compare .row.h div:last-child{background:var(--blue)}
+.compare .row div:nth-child(3){background:var(--foam);font-weight:600}
+.compare .row.h div:nth-child(3){background:var(--blue)}
+.yes{color:var(--ok);font-weight:800}.no{color:#c0504d;font-weight:800}
+.why p.lead{color:var(--g600);font-size:18px}
+
+/* before/after */
+.ba{background:var(--g800);color:#fff;overflow:hidden}
+.ba::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.06) 2px,transparent 2.4px);background-size:22px 22px}
+.ba .grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.ba .h2{color:#fff}
+.ba .h2 em{color:var(--blue2)}
+.ba p{color:var(--g300);font-size:18px}
+.quote{margin:28px 0;padding:22px 24px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);position:relative}
+.quote::before{content:"“";position:absolute;top:-28px;left:16px;font-family:Georgia,serif;font-size:90px;color:var(--blue2);line-height:1}
+.quote p{font-family:var(--head);font-weight:700;font-size:20px;color:#fff}
+.quote small{color:var(--g400)}
+.slider{position:relative;aspect-ratio:1/1;border-radius:26px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);border:6px solid #fff;background:#fff;user-select:none;touch-action:pan-y;--p:50%}
+.slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.slider .bf{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.slider .bar{position:absolute;top:0;bottom:0;left:var(--p);width:4px;margin-left:-2px;background:#fff;box-shadow:0 0 12px rgba(0,0,0,.5)}
+.slider .knob{position:absolute;top:50%;left:50%;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;background:var(--blue);border:4px solid #fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.slider .knob svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.slider input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.slider .lb{position:absolute;bottom:14px;font-family:var(--head);font-weight:800;font-size:13px;padding:4px 12px;border-radius:999px;background:rgba(20,25,31,.75);color:#fff;pointer-events:none}
+.slider .lb.l{left:14px}.slider .lb.r{right:14px;background:var(--blue)}
+.ba .hint{font-size:14px;color:var(--g400);margin-top:12px;text-align:center}
+
+/* services */
+.services{background:var(--g100)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.svc{background:#fff;border-radius:var(--r);padding:26px 22px 22px;position:relative;border:1px solid var(--g200);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;overflow:hidden}
+.svc::before{content:"";position:absolute;left:0;right:0;top:0;height:8px;background:var(--steel)}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--sh)}
+.svc .ic{width:74px;height:74px;margin-bottom:16px}
+.svc h3{font-size:21px;font-weight:800;color:var(--g900)}
+.svc p{font-size:15.5px;color:var(--g600);margin:6px 0 14px;flex:1}
+.svc ul{list-style:none;display:grid;gap:4px;margin-bottom:16px;font-size:14.5px}
+.svc li{display:flex;gap:8px}
+.svc li::before{content:"";flex:0 0 16px;height:16px;margin-top:4px;border-radius:50%;background:var(--blue3) radial-gradient(circle,var(--blue) 3px,transparent 3.5px)}
+.price{border-top:1px dashed var(--g300);padding-top:14px}
+.price .v{font-family:var(--head);font-weight:900;font-size:28px;color:var(--blue);line-height:1.1}
+.price .v small{font-size:14px;color:var(--g600);font-weight:700}
+.svc.hot{background:var(--g800);color:#fff;border-color:var(--g800)}
+.svc.hot h3{color:#fff}.svc.hot p,.svc.hot li{color:var(--g300)}
+.svc.hot .price{border-color:var(--g600)}.svc.hot .price .v{color:var(--blue2)}.svc.hot .price .v small{color:var(--g300)}
+.ribbon{position:absolute;top:18px;right:-34px;transform:rotate(40deg);background:var(--blue);color:#fff;font-family:var(--head);font-weight:800;font-size:12px;padding:3px 40px}
+.svc-note{text-align:center;margin-top:26px;color:var(--g600);font-size:14.5px}
+
+/* picker */
+.picker{background:#fff}
+.pk{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+.pk-form{background:var(--g100);border:1px solid var(--g200);border-radius:28px;padding:30px}
+.q{margin-bottom:24px}
+.q:last-child{margin-bottom:0}
+.q h4{font-size:17px;font-weight:800;color:var(--g900);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.q h4 b{width:28px;height:28px;border-radius:50%;background:var(--g800);color:#fff;display:grid;place-items:center;font-size:14px}
+.q h4 span{font-family:var(--body);font-weight:500;font-size:13.5px;color:var(--g400)}
+.types{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.opt{background:#fff;border:2px solid var(--g200);border-radius:16px;padding:12px 10px;text-align:center;font-family:var(--head);font-weight:700;font-size:15px;color:var(--g700);transition:.15s}
+.opt:hover{border-color:var(--blue2)}
+.opt.on{border-color:var(--blue);background:var(--foam);color:var(--blued);box-shadow:0 0 0 3px rgba(58,123,191,.18)}
+.opt svg{width:64px;height:64px;margin:0 auto 6px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips .opt{padding:7px 14px;border-radius:999px;font-size:14.5px}
+.chips .opt.sym{display:inline-flex;align-items:center;gap:8px}
+.chips .opt.sym i{font-style:normal;font-size:16px}
+.area-in{width:100%;padding:12px 16px;border-radius:14px;border:2px solid var(--g200);font:inherit;font-size:16px;background:#fff}
+.area-in:focus{outline:none;border-color:var(--blue)}
+.pk-out{position:sticky;top:96px;background:var(--g800);color:#fff;border-radius:28px;padding:28px;overflow:hidden}
+.pk-out::before{content:"";position:absolute;right:-80px;top:-80px;width:220px;height:220px;border-radius:50%;border:26px solid rgba(91,155,219,.14)}
+.lcd{background:#0c1a12;border-radius:14px;padding:14px 16px;font-family:var(--head);color:#7CFFB2;border:2px solid #24323f;box-shadow:inset 0 0 20px rgba(124,255,178,.12);position:relative}
+.lcd small{display:block;font-size:12px;letter-spacing:2px;color:#4fbf83}
+.lcd .big{font-size:30px;font-weight:900;line-height:1.2;text-shadow:0 0 10px rgba(124,255,178,.4)}
+.pk-out h3{font-size:22px;margin:18px 0 8px;position:relative}
+.pk-out ul{list-style:none;display:grid;gap:6px;font-size:15px;color:var(--g300);margin-bottom:16px}
+.pk-out li{display:flex;gap:8px}
+.pk-out li::before{content:"›";color:var(--blue2);font-weight:900}
+.msg{background:#fff;color:var(--g800);border-radius:16px 16px 16px 4px;padding:14px 16px;font-size:14.5px;white-space:pre-line;position:relative;margin-bottom:16px;max-height:210px;overflow:auto}
+.msg-h{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--g400);margin-bottom:8px}
+.msg-h::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--line)}
+.pk-out .btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pk-out .btns .btn{padding:12px 10px;font-size:15px}
+.toast{font-size:13px;color:#7CFFB2;min-height:18px;margin-top:8px;text-align:center}
+
+/* brands */
+.brands{background:var(--g100);padding:54px 0}
+.brands .wrap{display:flex;align-items:center;gap:30px;flex-wrap:wrap;justify-content:center}
+.brands .lbl{font-family:var(--head);font-weight:800;color:var(--g900);font-size:18px}
+.brands .lbl small{display:block;font-family:var(--body);font-weight:500;font-size:13px;color:var(--g400)}
+.blist{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.blist span{background:var(--steel);border:1px solid #a4aeb9;border-radius:10px;padding:8px 16px;font-family:var(--head);font-weight:800;letter-spacing:1px;color:var(--g700);font-size:15px;box-shadow:inset 0 1px 0 #fff}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;position:relative}
+.steps::before{content:"";position:absolute;top:46px;left:9%;right:9%;height:4px;background:repeating-linear-gradient(90deg,var(--blue) 0 14px,transparent 14px 24px)}
+.step{text-align:center;position:relative}
+.step .c{width:92px;height:92px;margin:0 auto 18px;border-radius:50%;background:var(--steel);display:grid;place-items:center;box-shadow:inset 0 2px 0 #fff,0 12px 24px -12px rgba(0,0,0,.4);border:1px solid #9aa5b1;position:relative}
+.step .c::before{content:"";position:absolute;inset:12px;border-radius:50%;background:var(--g800);box-shadow:inset 0 0 0 3px #4b5866}
+.step .c span{position:relative;font-family:var(--head);font-weight:900;font-size:28px;color:#7CFFB2;text-shadow:0 0 8px rgba(124,255,178,.5)}
+.step h4{font-size:18px;font-weight:800;color:var(--g900)}
+.step p{font-size:15px;color:var(--g600);margin-top:4px}
+
+/* gallery */
+.gallery{background:var(--g100)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:16px}
+.gal figure{position:relative;border-radius:20px;overflow:hidden;background:var(--g200)}
+.gal figure.wide{grid-column:span 2}
+.gal figure.tall{grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:12px;bottom:12px;right:12px;background:rgba(20,25,31,.78);color:#fff;font-family:var(--head);font-weight:700;font-size:14px;padding:6px 12px;border-radius:10px;backdrop-filter:blur(4px)}
+.gal .art{display:grid;place-items:center;background:var(--g800);color:#fff;text-align:center;padding:20px}
+.gal .art svg{width:110px;height:110px;margin:0 auto 8px}
+.gal .art b{font-family:var(--head);font-size:19px;display:block}
+.gal .art small{color:var(--g400)}
+.gal .art.bl{background:var(--blue)}
+.gal .art.bl small{color:#d6e7f8}
+
+/* reviews */
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border:1px solid var(--g200);border-radius:22px;padding:26px;position:relative}
+.rv .stars{color:#F2A900;letter-spacing:3px}
+.rv p{margin:10px 0 18px;font-size:16.5px}
+.rv .who{display:flex;gap:12px;align-items:center}
+.rv .av{width:44px;height:44px;border-radius:50%;background:var(--steel);border:1px solid #9aa5b1;display:grid;place-items:center;font-family:var(--head);font-weight:900;color:var(--g800)}
+.rv .who b{font-family:var(--head);display:block}
+.rv .who small{color:var(--g400)}
+.rv .tagd{position:absolute;top:18px;right:18px;font-size:11.5px;font-weight:700;color:var(--g400);border:1px solid var(--g200);border-radius:999px;padding:1px 9px}
+.note{text-align:center;color:var(--g400);font-size:13.5px;margin-top:22px}
+
+/* contact */
+.contact{background:var(--g800);color:#fff}
+.contact .grid{display:grid;grid-template-columns:1fr 1.05fr;gap:50px;align-items:stretch}
+.contact .h2{color:#fff}.contact .h2 em{color:var(--blue2)}
+.info{display:grid;gap:14px;margin:26px 0}
+.it{display:flex;gap:14px;align-items:flex-start;background:var(--g700);border:1px solid var(--g600);border-radius:16px;padding:14px 16px}
+.it .i{flex:0 0 44px;height:44px;border-radius:12px;background:var(--blue);display:grid;place-items:center}
+.it .i svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+.it b{display:block;font-family:var(--head);font-size:14px;color:var(--blue2)}
+.it .ph{font-family:var(--head);font-weight:900;font-size:28px;letter-spacing:1px}
+.it span{color:var(--g300)}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.areas span{border:1px solid var(--g400);border-radius:999px;padding:2px 12px;font-size:14px;color:#fff}
+.mapbox{border-radius:26px;overflow:hidden;position:relative;min-height:460px;border:6px solid var(--g700)}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.7)}
+.mapbox .ov{position:absolute;left:14px;top:14px;background:#fff;color:var(--g900);border-radius:14px;padding:10px 14px;font-family:var(--head);font-weight:800;font-size:14px;box-shadow:var(--sh);max-width:80%}
+.mapbox .ov small{display:block;font-family:var(--body);font-weight:500;color:var(--g600);font-size:12.5px}
+
+/* footer */
+footer{background:var(--g900);color:var(--g400);padding:70px 0 30px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid #2a323c}
+footer h4{color:#fff;font-size:17px;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:6px}
+footer a:hover{color:#fff}
+.ft .brand .t1{color:#fff}
+.ft p{margin-top:14px;max-width:340px}
+.social{display:flex;gap:10px;margin-top:16px}
+.social a{width:42px;height:42px;border-radius:12px;background:#222a33;display:grid;place-items:center;transition:.2s}
+.social a:hover{background:var(--blue)}
+.social svg{width:20px;height:20px;fill:#fff}
+.copy{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:22px;font-size:13px}
+
+/* fab */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;gap:12px}
+.fab a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 12px 24px -8px rgba(0,0,0,.45);transition:transform .2s}
+.fab a:hover{transform:scale(1.08)}
+.fab .ln{background:var(--line)}
+.fab .call{background:var(--blue);animation:ring 2.4s infinite}
+.fab svg{width:28px;height:28px}
+@keyframes ring{0%,100%{box-shadow:0 12px 24px -8px rgba(0,0,0,.45),0 0 0 0 rgba(58,123,191,.6)}50%{box-shadow:0 12px 24px -8px rgba(0,0,0,.45),0 0 0 14px rgba(58,123,191,0)}}
+
+/* reveal */
+.rvl{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rvl.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .st1{left:-6%}.st2{right:-2%}
+}
+@media (max-width:920px){
+  .menu,.nav-cta{display:none}
+  .burger{display:grid}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:#fff;padding:18px 4%;gap:14px;border-bottom:1px solid var(--g200);box-shadow:var(--sh)}
+  .hero{padding:48px 0 100px}
+  .hero .wrap,.why .grid,.ba .grid,.pk,.contact .grid{grid-template-columns:1fr}
+  .hero-art{max-width:360px}
+  .pk-out{position:relative;top:0}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps::before{display:none}
+  .rv-grid{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr 1fr}
+  .ba .slider{max-width:520px;margin:0 auto;width:100%}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:70px 0}
+  .svc-grid{grid-template-columns:1fr}
+  .specs{grid-template-columns:repeat(3,1fr);width:100%}
+  .specs>div{padding:12px 10px}
+  .specs .n{font-size:22px}
+  .specs .l{font-size:12px}
+  .hero-art{max-width:300px}
+  .st1{left:-8%;top:30%}.st2{right:-6%}
+  .stk{font-size:13px;padding:8px 12px}
+  .stk .ic{width:30px;height:30px}
+  .topbar .hide-sm{display:none}
+  .types{gap:8px}
+  .opt svg{width:50px;height:50px}
+  .pk-form{padding:20px}
+  .pk-out{padding:22px}
+  .compare .row{font-size:14px}
+  .compare .row>div{padding:9px 9px}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px;gap:10px}
+  .gal figure.wide{grid-column:1/-1}
+  .gal .art svg{width:70px;height:70px}
+  .gal .art b{font-size:16px}
+  .gal figcaption{font-size:12px;left:8px;right:8px;bottom:8px;padding:4px 8px}
+  .ft{grid-template-columns:1fr}
+  .mapbox{min-height:340px}
+  .cta-row .btn{flex:1}
+  .pk-out .btns{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rvl{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-line" viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.4 5.8-3.4 7.9-5.9C21.3 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8zM8.3 13.4H6.4c-.3 0-.5-.2-.5-.5V9.1c0-.3.2-.5.5-.5s.5.2.5.5v3.3h1.4c.3 0 .5.2.5.5s-.2.5-.5.5zm2-.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.1c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm4.6 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-2-2.6v2.3c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.1c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l2 2.6V9.1c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm3.1-2.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9h1.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5V9.1c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9H18z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></symbol>
+    <symbol id="i-drum" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 7v2M12 15v2M7 12h2M15 12h2"/></symbol>
+    <pattern id="holes" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="2.6" fill="#4b5866"/></pattern>
+    <linearGradient id="steelG" x1="0" x2="1"><stop offset="0" stop-color="#c9d0d7"/><stop offset=".25" stop-color="#f4f6f8"/><stop offset=".45" stop-color="#b3bcc6"/><stop offset=".65" stop-color="#eef1f4"/><stop offset="1" stop-color="#aab4be"/></linearGradient>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><span class="live"></span><b>เปิดตลอดเวลา</b> · ทัก LINE / โทรนัดคิวได้เลยครับ</div>
+    <div class="hide-sm">กรุงเทพฯ – ปริมณฑล · ☎ <b>065-245-2529</b></div>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="ช่างยู หน้าแรก">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="13" fill="url(#steelG)" stroke="#8c97a4"/><circle cx="24" cy="25" r="15" fill="#1C232B"/><circle cx="24" cy="25" r="11" fill="#3A7BBF"/><path d="M19 19v7a5 5 0 0 0 10 0v-7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><circle cx="12" cy="9.5" r="1.8" fill="#3A7BBF"/><circle cx="18" cy="9.5" r="1.8" fill="#8c97a4"/></svg>
+      <div><div class="t1">ช่างยู</div><div class="t2">@U2NITED 24</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#why">ทำไมต้องถอดถัง</a>
+      <a href="#ba">ก่อน/หลัง</a>
+      <a href="#services">บริการ &amp; ราคา</a>
+      <a href="#picker">ประเมินอาการ</a>
+      <a href="#gallery">ผลงาน</a>
+      <a href="#contact">พื้นที่บริการ</a>
+    </div>
+    <a href="https://line.me/ti/p/DRWVZqWmP5" target="_blank" rel="noopener" class="btn btn-line nav-cta"><svg fill="currentColor"><use href="#i-line"/></svg>แอดไลน์นัดคิว</a>
+    <button class="burger" id="burger" aria-label="เปิดเมนู" aria-expanded="false"><svg width="28" height="28" viewBox="0 0 24 24" stroke="#1C232B" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h10M4 17h16"/></svg></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="rvl">
+      <span class="chip"><i>24/7</i> ช่างล้าง-ซ่อมเครื่องซักผ้า ถึงบ้าน กทม.–ปริมณฑล</span>
+      <h1>ถอด<span class="bl">ถังซัก</span>ล้าง<br><span class="out">สะอาด 100%</span>
+        <small>ไม่ใช่แค่เทน้ำยาแล้วปั่น — ช่างยูถอดถังออกมาขัดให้เห็นกันจะจะ</small></h1>
+      <p class="lead">ล้างเครื่องซักผ้า <b>ฝาบน · ฝาหน้า · 2 ถัง</b> และรับซ่อมอาการ ไม่ปั่น น้ำไม่ลง ถ่ายรูป<b>ก่อนล้าง/หลังล้าง</b>ให้ดูทุกงาน</p>
+      <div class="cta-row">
+        <a href="tel:0652452529" class="btn btn-blue"><svg fill="currentColor"><use href="#i-phone"/></svg>065-245-2529</a>
+        <a href="#picker" class="btn btn-ghost">เช็กราคาจากอาการ →</a>
+      </div>
+      <div class="specs">
+        <div><div class="n">1.7<em>K</em></div><div class="l">ผู้ติดตามบน Facebook</div></div>
+        <div><div class="n">24<em>ชม.</em></div><div class="l">เปิดตลอดเวลา</div></div>
+        <div><div class="n">3<em>แบบ</em></div><div class="l">ฝาบน · ฝาหน้า · 2 ถัง</div></div>
+      </div>
+    </div>
+
+    <div class="hero-art rvl">
+      <svg class="washer" viewBox="0 0 400 470" aria-hidden="true">
+        <defs>
+          <linearGradient id="body" x1="0" x2="1"><stop offset="0" stop-color="#dfe4e9"/><stop offset=".3" stop-color="#ffffff"/><stop offset=".6" stop-color="#e6eaee"/><stop offset="1" stop-color="#c3cbd3"/></linearGradient>
+          <radialGradient id="glass" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#5B9BDB" stop-opacity=".55"/><stop offset="1" stop-color="#1C232B" stop-opacity=".95"/></radialGradient>
+          <clipPath id="port"><circle cx="200" cy="292" r="112"/></clipPath>
+          <pattern id="holes2" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="9" cy="9" r="3" fill="#97a3b0" fill-opacity=".55"/></pattern>
+        </defs>
+        <rect x="20" y="10" width="360" height="450" rx="34" fill="url(#body)" stroke="#9aa5b1" stroke-width="2"/>
+        <rect x="20" y="10" width="360" height="96" rx="34" fill="#1C232B"/>
+        <rect x="20" y="70" width="360" height="36" fill="#1C232B"/>
+        <rect x="44" y="34" width="110" height="46" rx="10" fill="#0c1a12" stroke="#2c3a48" stroke-width="2"/>
+        <text x="99" y="68" text-anchor="middle" class="led" font-size="30" fill="#7CFFB2">24:00</text>
+        <circle cx="300" cy="58" r="28" fill="url(#steelG)" stroke="#5c6774" stroke-width="2"/>
+        <circle cx="300" cy="58" r="16" fill="#e9edf1" stroke="#9aa5b1"/>
+        <path d="M300 44v10" stroke="#3A7BBF" stroke-width="4" stroke-linecap="round"/>
+        <g fill="#3A7BBF"><circle cx="190" cy="46" r="5"/><circle cx="214" cy="46" r="5" fill="#5c6774"/><circle cx="238" cy="46" r="5" fill="#5c6774"/></g>
+        <text x="214" y="80" text-anchor="middle" font-family="Noto Sans Thai" font-weight="800" font-size="13" fill="#8C97A4" letter-spacing="2">U2NITED</text>
+        <circle cx="200" cy="292" r="138" fill="url(#steelG)" stroke="#8c97a4" stroke-width="2"/>
+        <circle cx="200" cy="292" r="122" fill="#29323D"/>
+        <g clip-path="url(#port)">
+          <rect x="80" y="170" width="240" height="250" fill="url(#glass)"/>
+          <g class="drum-spin"><rect x="60" y="150" width="280" height="290" fill="url(#holes2)"/>
+            <path d="M200 182 l14 26 h-28z M310 300 l-26 14 v-28z M200 402 l-14 -26 h28z M90 284 l26 -14 v28z" fill="#cfd7df" fill-opacity=".85"/></g>
+          <g class="water"><path d="M70 320 Q120 296 170 318 T270 316 T340 318 V430 H70z" fill="#3A7BBF" fill-opacity=".55"/>
+            <path d="M70 336 Q130 318 190 336 T340 334 V430 H70z" fill="#5B9BDB" fill-opacity=".5"/></g>
+          <g fill="#fff" fill-opacity=".85"><circle class="bub" cx="150" cy="350" r="8"/><circle class="bub" cx="230" cy="360" r="6"/><circle class="bub" cx="190" cy="372" r="10"/><circle class="bub" cx="260" cy="340" r="5"/></g>
+          <path d="M120 220 Q150 190 196 184" stroke="#fff" stroke-opacity=".55" stroke-width="10" stroke-linecap="round" fill="none"/>
+        </g>
+        <circle cx="200" cy="292" r="112" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3"/>
+        <rect x="334" y="270" width="12" height="46" rx="6" fill="#8c97a4"/>
+        <rect x="60" y="446" width="40" height="14" rx="4" fill="#8c97a4"/><rect x="300" y="446" width="40" height="14" rx="4" fill="#8c97a4"/>
+      </svg>
+      <div class="stk st1"><span class="ic"><svg><use href="#i-drum"/></svg></span><div>ถอดถังซักทุกงาน<small>ล้างถึงซอกที่มองไม่เห็น</small></div></div>
+      <div class="stk st2"><span class="ic"><svg><use href="#i-clock"/></svg></span><div>เปิดตลอดเวลา<small>ทักได้ทุกวัน</small></div></div>
+      <div class="stk st3">📸 มีรูปก่อน/หลังให้ทุกงาน</div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>#ล้างเครื่องซักผ้า</span><span>#ซ่อมเครื่องซักผ้า</span><span>#งานบ้านที่รัก</span><span>ถอดถังซัก สะอาด 100%</span><span>เปิดตลอดเวลา</span><span>@U2nited 24</span><span>สกิดมาได้ตลอดครับ จัดให้ไม่เคยขัด</span>
+    <span>#ล้างเครื่องซักผ้า</span><span>#ซ่อมเครื่องซักผ้า</span><span>#งานบ้านที่รัก</span><span>ถอดถังซัก สะอาด 100%</span><span>เปิดตลอดเวลา</span><span>@U2nited 24</span><span>สกิดมาได้ตลอดครับ จัดให้ไม่เคยขัด</span>
+  </div>
+</div>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="wrap grid">
+    <div class="explode rvl">
+      <span class="cap">EXPLODED VIEW · เครื่องฝาบน</span>
+      <svg viewBox="0 0 520 470" role="img" aria-label="ภาพแยกชิ้นส่วนเครื่องซักผ้า: ฝา ถังซักใน ใบพัด ถังนอก ฟิลเตอร์">
+        <g font-family="Noto Sans Thai" font-weight="700" font-size="15" fill="#1C232B">
+          <!-- lid -->
+          <g><ellipse cx="220" cy="62" rx="120" ry="22" fill="#fff" stroke="#8c97a4" stroke-width="2"/><ellipse cx="220" cy="58" rx="80" ry="12" fill="#CFE2F5"/></g>
+          <!-- inner drum -->
+          <g><path d="M120 128 v100 a100 26 0 0 0 200 0 v-100" fill="url(#steelG)" stroke="#8c97a4" stroke-width="2"/>
+            <path d="M120 128 v100 a100 26 0 0 0 200 0 v-100" fill="url(#holes)" opacity=".7"/>
+            <ellipse cx="220" cy="128" rx="100" ry="26" fill="#e9edf1" stroke="#8c97a4" stroke-width="2"/>
+            <ellipse cx="220" cy="128" rx="84" ry="19" fill="#29323D"/></g>
+          <!-- pulsator -->
+          <g><ellipse cx="220" cy="300" rx="82" ry="20" fill="#A9D6DC" stroke="#5c8f96" stroke-width="2"/>
+            <path d="M220 282 l-36 26 M220 282 l40 22 M220 282 l2 36 M220 282 l-60 4 M220 282 l62 0" stroke="#5c8f96" stroke-width="3"/>
+            <ellipse cx="220" cy="296" rx="12" ry="5" fill="#fff" stroke="#5c8f96"/></g>
+          <!-- outer tub with grime -->
+          <g><path d="M100 360 v52 a120 30 0 0 0 240 0 v-52" fill="#dfe4e9" stroke="#8c97a4" stroke-width="2"/>
+            <ellipse cx="220" cy="360" rx="120" ry="30" fill="#f2f4f6" stroke="#8c97a4" stroke-width="2"/>
+            <g fill="#6b4a2b" fill-opacity=".55"><circle cx="160" cy="366" r="7"/><circle cx="182" cy="374" r="4"/><circle cx="252" cy="372" r="9"/><circle cx="286" cy="364" r="5"/><circle cx="222" cy="378" r="6"/><circle cx="135" cy="358" r="4"/></g></g>
+          <!-- filter -->
+          <g transform="translate(380 220)"><rect x="0" y="0" width="34" height="74" rx="8" fill="#fff" stroke="#8c97a4" stroke-width="2"/><path d="M6 14h22M6 26h22M6 38h22M6 50h22M6 62h22" stroke="#B9C2CC" stroke-width="3"/></g>
+          <!-- arrows -->
+          <g stroke="#3A7BBF" stroke-width="2" stroke-dasharray="5 6" fill="none"><path d="M220 86v14"/><path d="M220 256v14"/><path d="M220 324v12"/><path d="M325 190 Q360 200 376 240"/></g>
+          <!-- labels -->
+          <g><circle cx="40" cy="62" r="14" fill="#3A7BBF"/><text x="40" y="67" text-anchor="middle" fill="#fff" font-size="13">1</text><text x="22" y="96" font-size="13" fill="#3A4552">ฝาเครื่อง</text></g>
+          <g><circle cx="40" cy="170" r="14" fill="#3A7BBF"/><text x="40" y="175" text-anchor="middle" fill="#fff" font-size="13">2</text><text x="22" y="200" font-size="13" fill="#3A4552">ถังซักใน</text></g>
+          <g><circle cx="40" cy="300" r="14" fill="#3A7BBF"/><text x="40" y="305" text-anchor="middle" fill="#fff" font-size="13">3</text><text x="22" y="330" font-size="13" fill="#3A4552">ใบพัด</text></g>
+          <g><circle cx="40" cy="410" r="14" fill="#3A7BBF"/><text x="40" y="415" text-anchor="middle" fill="#fff" font-size="13">4</text><text x="22" y="444" font-size="13" fill="#3A4552">ถังนอก (คราบซ่อน)</text></g>
+          <g><circle cx="458" cy="236" r="14" fill="#3A7BBF"/><text x="458" y="241" text-anchor="middle" fill="#fff" font-size="13">5</text><text x="430" y="320" font-size="13" fill="#3A4552">ฟิลเตอร์</text></g>
+        </g>
+      </svg>
+    </div>
+    <div class="rvl">
+      <span class="eyebrow">ทำไมต้องถอดถัง</span>
+      <h2 class="h2">คราบดำ กลิ่นอับ<br>มัน<em>ซ่อนอยู่ใต้ถัง</em></h2>
+      <p class="lead">ถังซักด้านในดูสะอาด แต่ช่องว่างระหว่างถังในกับถังนอก ใต้ใบพัด และตามซอกฟิลเตอร์ คือที่สะสมของคราบผงซักฟอก ตะกรัน และขุยผ้า ช่างยูเลยเลือกวิธี <b>ถอดถังซักออกมาล้างทีละชิ้น</b></p>
+      <div class="compare">
+        <div class="row h"><div>เทียบวิธีล้าง</div><div>เทน้ำยาแล้วปั่น</div><div>ถอดถังซัก (ช่างยู)</div></div>
+        <div class="row"><div>เห็นคราบใต้ถังจริง</div><div class="no">✕</div><div class="yes">✓ เห็นกับตา</div></div>
+        <div class="row"><div>ขัดใบพัด / ถังนอก</div><div class="no">✕</div><div class="yes">✓ ขัดทีละชิ้น</div></div>
+        <div class="row"><div>ตรวจอะไหล่สึกหรอไปด้วย</div><div class="no">✕</div><div class="yes">✓ แจ้งก่อนเปลี่ยน</div></div>
+        <div class="row"><div>รูปก่อน/หลังให้ลูกค้า</div><div>—</div><div class="yes">✓ ทุกงาน</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="ba" id="ba">
+  <div class="wrap grid">
+    <div class="rvl">
+      <span class="eyebrow" style="color:var(--blue2)">ผลงานจริงจากเพจ</span>
+      <h2 class="h2">ลากดูเอง<br><em>ก่อนล้าง</em> vs <em>หลังล้าง</em></h2>
+      <p>ภาพชุดเดียวกับหน้าปกเพจช่างยู — เครื่องฝาบนที่ถอดออกมาทั้งถังซัก ใบพัด ฟิลเตอร์ และยางขอบถัง ล้างเสร็จแล้วประกอบกลับ ส่งรูปให้ลูกค้าดูครบทุกขั้น</p>
+      <div class="quote"><p>Panasonic หาช่างถอดล้างยาก สกิดมาได้ตลอดครับ จัดให้ไม่เคยขัด</p><small>— ช่างยู @U2nited 24</small></div>
+      <a href="https://line.me/ti/p/DRWVZqWmP5" target="_blank" rel="noopener" class="btn btn-line"><svg fill="currentColor"><use href="#i-line"/></svg>ส่งรูปเครื่องให้ช่างดู</a>
+    </div>
+    <div class="rvl">
+      <div class="slider" id="slider">
+        <img src="assets/after.jpg" alt="หลังล้าง: ถังซักและชิ้นส่วนเครื่องซักผ้าสะอาดเงา">
+        <img src="assets/before.jpg" class="bf" alt="ก่อนล้าง: คราบสนิมและคราบดำในถังเครื่องซักผ้า">
+        <div class="bar"><div class="knob"><svg viewBox="0 0 24 24"><path d="M9 6 3 12l6 6M15 6l6 6-6 6"/></svg></div></div>
+        <span class="lb l">ก่อน</span><span class="lb r">หลัง</span>
+        <input type="range" min="0" max="100" value="50" id="baRange" aria-label="เลื่อนเปรียบเทียบภาพก่อนล้างและหลังล้าง">
+      </div>
+      <p class="hint">← ลากแถบกลางภาพเพื่อเปรียบเทียบ →</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="eyebrow">บริการ &amp; ราคา</span>
+      <h2>ล้างให้<em>ถึงแก่น</em> ซ่อมให้<em>จบ</em></h2>
+      <p>ช่างเข้าไปทำให้ถึงบ้าน กรุงเทพฯ และปริมณฑล ราคาจริงขึ้นกับรุ่นและขนาดถัง — ส่งรูปเครื่องให้ประเมินก่อนได้ฟรี</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rvl">
+        <svg class="ic" viewBox="0 0 74 74" aria-hidden="true"><rect x="12" y="10" width="50" height="58" rx="9" fill="#EEF2F6" stroke="#3A7BBF" stroke-width="3"/><rect x="12" y="10" width="50" height="14" rx="7" fill="#3A7BBF"/><ellipse cx="37" cy="44" rx="15" ry="6" fill="#CFE2F5" stroke="#3A7BBF" stroke-width="2.5"/><path d="M22 44v10a15 6 0 0 0 30 0V44" fill="none" stroke="#3A7BBF" stroke-width="2.5"/><circle cx="52" cy="17" r="3" fill="#fff"/></svg>
+        <h3>ล้างเครื่องฝาบน</h3>
+        <p>ถอดถังซัก ใบพัด ฟิลเตอร์ ล้างขัดทีละชิ้น แล้วประกอบกลับ</p>
+        <ul><li>ถอดถังซักทั้งใบ</li><li>ขัดคราบตะกรัน/คราบดำ</li><li>รูปก่อน-หลังทุกงาน</li></ul>
+        <div class="price"><div class="v">฿1,200<small> เริ่มต้น</small></div><span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span></div>
+      </div>
+      <div class="svc hot rvl">
+        <span class="ribbon">งานละเอียด</span>
+        <svg class="ic" viewBox="0 0 74 74" aria-hidden="true"><rect x="10" y="8" width="54" height="60" rx="10" fill="#29323D" stroke="#5B9BDB" stroke-width="3"/><path d="M10 22h54" stroke="#5B9BDB" stroke-width="3"/><circle cx="37" cy="45" r="16" fill="#1C232B" stroke="#5B9BDB" stroke-width="3"/><path d="M27 48q5-5 10 0t10 0" stroke="#5B9BDB" stroke-width="2.5" fill="none"/><circle cx="20" cy="15" r="3" fill="#5B9BDB"/></svg>
+        <h3>ล้างเครื่องฝาหน้า</h3>
+        <p>รื้อถังฝาหน้า (Front Load) ซึ่งงานละเอียดกว่า ล้างยางขอบประตูที่มักขึ้นรา</p>
+        <ul><li>ถอดถัง/ชุดลูกปืนตามรุ่น</li><li>ล้างยางขอบประตู</li><li>ล้างช่องผงซักฟอก</li></ul>
+        <div class="price"><div class="v">฿1,800<small> เริ่มต้น</small></div><span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span></div>
+      </div>
+      <div class="svc rvl">
+        <svg class="ic" viewBox="0 0 74 74" aria-hidden="true"><rect x="6" y="14" width="62" height="50" rx="9" fill="#EEF2F6" stroke="#3A7BBF" stroke-width="3"/><path d="M37 14v50" stroke="#3A7BBF" stroke-width="3"/><circle cx="21" cy="40" r="10" fill="#CFE2F5" stroke="#3A7BBF" stroke-width="2.5"/><circle cx="53" cy="40" r="10" fill="#fff" stroke="#3A7BBF" stroke-width="2.5"/><path d="M48 40a5 5 0 0 1 10 0" stroke="#3A7BBF" stroke-width="2" fill="none"/></svg>
+        <h3>ล้างเครื่อง 2 ถัง</h3>
+        <p>ถังซัก + ถังปั่นแห้ง ล้างคราบขุยผ้าและเมือกใต้ใบพัด</p>
+        <ul><li>ถอดใบพัด/ถังปั่น</li><li>ล้างท่อน้ำทิ้ง</li><li>เช็กสายพาน</li></ul>
+        <div class="price"><div class="v">฿800<small> เริ่มต้น</small></div><span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span></div>
+      </div>
+      <div class="svc rvl">
+        <svg class="ic" viewBox="0 0 74 74" aria-hidden="true"><circle cx="37" cy="37" r="27" fill="#EEF2F6" stroke="#3A7BBF" stroke-width="3"/><path d="M46 20a10 10 0 0 0-12 13L20 47a4 4 0 0 0 6 6l14-14a10 10 0 0 0 13-12l-6 6-5-2-2-5z" fill="#CFE2F5" stroke="#3A7BBF" stroke-width="2.5" stroke-linejoin="round"/></svg>
+        <h3>ซ่อมเครื่องซักผ้า</h3>
+        <p>ไม่ปั่น น้ำไม่ลง น้ำไม่ออก เสียงดัง ขึ้นโค้ด Error ตรวจหาสาเหตุ แจ้งราคาก่อนซ่อม</p>
+        <ul><li>ตรวจเช็กอาการหน้างาน</li><li>แจ้งค่าอะไหล่ก่อนลงมือ</li><li>ฝาบน / ฝาหน้า / 2 ถัง</li></ul>
+        <div class="price"><div class="v">ประเมินหน้างาน</div><span class="sample">ค่าตรวจเช็ค · รอร้านยืนยัน</span></div>
+      </div>
+    </div>
+    <p class="svc-note">* ราคาทั้งหมดในหน้านี้เป็นตัวอย่างสำหรับ demo — ช่างยูจะยืนยันราคาจริงตามรุ่นและสภาพเครื่อง</p>
+  </div>
+</section>
+
+<!-- PICKER -->
+<section class="picker" id="picker">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="eyebrow">ประเมินเบื้องต้นใน 30 วินาที</span>
+      <h2>เครื่องเรา<em>เป็นแบบไหน?</em></h2>
+      <p>เลือก 3 ข้อ แล้วระบบจะแนะนำบริการ ช่วงราคาตัวอย่าง และเขียนข้อความ LINE ให้ส่งช่างยูได้ทันที</p>
+    </div>
+    <div class="pk">
+      <div class="pk-form rvl">
+        <div class="q" data-q="type">
+          <h4><b>1</b>ประเภทเครื่อง</h4>
+          <div class="types">
+            <button class="opt on" data-v="ฝาบน"><svg viewBox="0 0 64 64"><rect x="12" y="8" width="40" height="50" rx="7" fill="#fff" stroke="currentColor" stroke-width="3"/><rect x="12" y="8" width="40" height="11" rx="5" fill="currentColor"/><ellipse cx="32" cy="38" rx="12" ry="5" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>ฝาบน</button>
+            <button class="opt" data-v="ฝาหน้า"><svg viewBox="0 0 64 64"><rect x="10" y="6" width="44" height="52" rx="7" fill="#fff" stroke="currentColor" stroke-width="3"/><path d="M10 18h44" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="38" r="13" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="38" r="7" fill="currentColor" opacity=".25"/></svg>ฝาหน้า</button>
+            <button class="opt" data-v="2 ถัง"><svg viewBox="0 0 64 64"><rect x="6" y="14" width="52" height="42" rx="7" fill="#fff" stroke="currentColor" stroke-width="3"/><path d="M32 14v42" stroke="currentColor" stroke-width="3"/><circle cx="19" cy="36" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="45" cy="36" r="8" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>2 ถัง</button>
+          </div>
+        </div>
+        <div class="q" data-q="brand">
+          <h4><b>2</b>ยี่ห้อ <span>(ไม่แน่ใจเลือก "อื่นๆ")</span></h4>
+          <div class="chips">
+            <button class="opt on" data-v="Panasonic">Panasonic</button><button class="opt" data-v="LG">LG</button><button class="opt" data-v="Samsung">Samsung</button><button class="opt" data-v="Electrolux">Electrolux</button><button class="opt" data-v="Toshiba">Toshiba</button><button class="opt" data-v="Hitachi">Hitachi</button><button class="opt" data-v="Sharp">Sharp</button><button class="opt" data-v="Haier">Haier</button><button class="opt" data-v="อื่นๆ">อื่นๆ</button>
+          </div>
+        </div>
+        <div class="q" data-q="sym" data-multi="1">
+          <h4><b>3</b>อาการ <span>(เลือกได้หลายข้อ)</span></h4>
+          <div class="chips">
+            <button class="opt sym on" data-v="กลิ่นเหม็น" data-k="clean"><i>👃</i>กลิ่นเหม็น/อับ</button>
+            <button class="opt sym" data-v="คราบดำ/ขุยดำติดผ้า" data-k="clean"><i>🖤</i>คราบดำติดผ้า</button>
+            <button class="opt sym" data-v="ไม่ปั่น" data-k="fix"><i>🌀</i>ไม่ปั่น</button>
+            <button class="opt sym" data-v="น้ำไม่ลง/ไม่ออก" data-k="fix"><i>💧</i>น้ำไม่ลง</button>
+          </div>
+        </div>
+        <div class="q">
+          <h4><b>4</b>พื้นที่ <span>(ไม่บังคับ)</span></h4>
+          <input class="area-in" id="area" placeholder="เช่น ปิ่นเกล้า, พัฒนาการ, ปากเกร็ด" maxlength="60">
+        </div>
+      </div>
+      <div class="pk-out rvl" aria-live="polite">
+        <div class="lcd"><small>ESTIMATE · ราคาตัวอย่าง</small><div class="big" id="oPrice">฿1,200 – 1,800</div></div>
+        <h3 id="oName">ล้างเครื่องฝาบน แบบถอดถังซัก</h3>
+        <ul id="oList"></ul>
+        <div class="msg-h">ข้อความที่จะส่งให้ช่างยู</div>
+        <div class="msg" id="oMsg"></div>
+        <div class="btns">
+          <button class="btn btn-steel" id="copyBtn">📋 คัดลอกข้อความ</button>
+          <a class="btn btn-line" id="lineBtn" href="https://line.me/ti/p/DRWVZqWmP5" target="_blank" rel="noopener"><svg fill="currentColor"><use href="#i-line"/></svg>เปิด LINE ช่างยู</a>
+        </div>
+        <div class="toast" id="toast"></div>
+        <p style="font-size:12.5px;color:var(--g400);margin-top:6px;position:relative">* ช่วงราคาเป็นตัวอย่างสำหรับ demo ยังไม่ใช่ราคาจริงของร้าน</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<div class="brands">
+  <div class="wrap rvl">
+    <div class="lbl">รับหลายยี่ห้อ<small>ตัวอย่างยี่ห้อ · รอร้านยืนยัน</small></div>
+    <div class="blist"><span>Panasonic</span><span>LG</span><span>SAMSUNG</span><span>Electrolux</span><span>TOSHIBA</span><span>HITACHI</span><span>SHARP</span><span>Haier</span></div>
+  </div>
+</div>
+
+<!-- STEPS -->
+<section id="steps" style="background:#fff">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="eyebrow">ขั้นตอนนัดช่าง</span>
+      <h2>ตั้งโปรแกรมง่ายๆ <em>5 สเต็ป</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step rvl"><div class="c"><span>01</span></div><h4>ทัก LINE / โทร</h4><p>065-245-2529 ได้ตลอดเวลา</p></div>
+      <div class="step rvl"><div class="c"><span>02</span></div><h4>ส่งรูปเครื่อง</h4><p>ยี่ห้อ รุ่น และอาการ ให้ช่างประเมิน</p></div>
+      <div class="step rvl"><div class="c"><span>03</span></div><h4>นัดวัน-เวลา</h4><p>ช่างเข้าไปทำที่บ้านคุณ</p></div>
+      <div class="step rvl"><div class="c"><span>04</span></div><h4>ถอดถังล้าง</h4><p>ล้าง/ซ่อม หน้างานทีละชิ้น</p></div>
+      <div class="step rvl"><div class="c"><span>05</span></div><h4>ส่งรูปก่อน-หลัง</h4><p>ทดลองเดินเครื่องก่อนส่งมอบ</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="eyebrow">ผลงาน</span>
+      <h2>งานจริงจาก<em>หน้างาน</em></h2>
+      <p>ภาพจากเพจ Facebook ของช่างยู — เครื่องฝาบน ฝาหน้า และเครื่องซัก-อบแบบตั้งซ้อน</p>
+    </div>
+    <div class="gal">
+      <figure class="wide rvl"><img src="assets/cover-collage.jpg" alt="ภาพเปรียบเทียบก่อนล้างและหลังล้างเครื่องซักผ้าฝาบน LG"><figcaption>ก่อนล้าง / หลังล้าง · เครื่องฝาบน</figcaption></figure>
+      <figure class="tall rvl"><img src="assets/job-lg-frontload.jpg" alt="เครื่องซักผ้าฝาหน้า LG 15 กก. หลังเข้าบริการ"><figcaption>ฝาหน้า LG 15 กก.</figcaption></figure>
+      <figure class="tall rvl"><img src="assets/job-samsung-tower.jpg" alt="เครื่องซักผ้าและเครื่องอบผ้า Samsung แบบตั้งซ้อน"><figcaption>ซัก-อบ Samsung ตั้งซ้อน</figcaption></figure>
+      <figure class="art rvl"><div><svg viewBox="0 0 110 110"><circle cx="55" cy="55" r="48" fill="none" stroke="#5B9BDB" stroke-width="5"/><circle cx="55" cy="55" r="32" fill="url(#holes)" stroke="#8c97a4" stroke-width="3"/><path d="M55 30 l8 14h-16z M80 55l-14 8v-16z M55 80l-8-14h16z M30 55l14-8v16z" fill="#CFE2F5"/></svg><b>ถอดถังทุกงาน</b><small>ฝาบน · ฝาหน้า · 2 ถัง</small></div></figure>
+      <figure class="art bl rvl"><div><svg viewBox="0 0 110 110"><rect x="18" y="26" width="74" height="58" rx="12" fill="none" stroke="#fff" stroke-width="5"/><circle cx="55" cy="55" r="16" fill="none" stroke="#fff" stroke-width="5"/><rect x="40" y="16" width="30" height="12" rx="4" fill="#fff"/><circle cx="80" cy="38" r="4" fill="#fff"/></svg><b>ส่งรูปทุกขั้นตอน</b><small>ลูกค้าเห็นก่อน/หลังชัดๆ</small></div></figure>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" style="background:#fff">
+  <div class="wrap">
+    <div class="sh rvl">
+      <span class="eyebrow">เสียงจากลูกค้า</span>
+      <h2>ผ้าหอมขึ้น <em>บ้านสบายใจ</em></h2>
+    </div>
+    <div class="rv-grid">
+      <div class="rv rvl"><span class="tagd">ตัวอย่าง</span><div class="stars">★★★★★</div><p>เครื่อง Panasonic ฝาบนที่บ้านมีขุยดำติดผ้ามาหลายเดือน ช่างถอดถังออกมาให้ดู คราบเยอะมาก ล้างเสร็จกลิ่นหายเลย</p><div class="who"><div class="av">พ</div><div><b>คุณพลอย</b><small>ฝาบน · ฝั่งธนฯ</small></div></div></div>
+      <div class="rv rvl"><span class="tagd">ตัวอย่าง</span><div class="stars">★★★★★</div><p>ทักไปตอนดึกก็ยังตอบ นัดวันได้เร็ว ส่งรูประหว่างทำให้ตลอด รู้สึกว่าคุ้มกว่าซื้อน้ำยาล้างถังมาเทเองเยอะ</p><div class="who"><div class="av">อ</div><div><b>คุณเอก</b><small>ฝาหน้า · พัฒนาการ</small></div></div></div>
+      <div class="rv rvl"><span class="tagd">ตัวอย่าง</span><div class="stars">★★★★★</div><p>เครื่องไม่ปั่น ช่างมาเช็กแล้วบอกสาเหตุ แจ้งราคาอะไหล่ก่อน ซ่อมเสร็จสอนวิธีดูแลต่อด้วย</p><div class="who"><div class="av">น</div><div><b>คุณนุ่น</b><small>ซ่อม · ปากเกร็ด</small></div></div></div>
+    </div>
+    <p class="note">* รีวิวในหน้านี้เป็นข้อความตัวอย่างสำหรับ demo — เว็บไซต์จริงจะใช้รีวิวจริงจากลูกค้าของช่างยู</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap grid">
+    <div class="rvl">
+      <span class="eyebrow" style="color:var(--blue2)">ติดต่อ &amp; พื้นที่บริการ</span>
+      <h2 class="h2">ช่างวิ่งไปหา<br><em>ทั่วกรุงเทพฯ–ปริมณฑล</em></h2>
+      <div class="info">
+        <div class="it"><div class="i"><svg><use href="#i-phone" fill="#fff" stroke="none"/></svg></div><div><b>โทรนัดคิว</b><a href="tel:0652452529" class="ph">065-245-2529</a></div></div>
+        <div class="it"><div class="i"><svg><use href="#i-clock"/></svg></div><div><b>เวลาให้บริการ</b><span>เปิดตลอดเวลา · ทัก LINE ทิ้งไว้ได้เลย</span></div></div>
+        <div class="it"><div class="i"><svg><use href="#i-pin"/></svg></div><div><b>ตัวอย่างย่านที่เคยไปงาน</b>
+          <div class="areas"><span>ปิ่นเกล้า</span><span>พัฒนาการ</span><span>พระราม 3</span><span>ปากเกร็ด</span><span>แพรกษา</span><span>บางพูน</span><span>พระประแดง</span></div>
+          <span style="display:block;font-size:13.5px;margin-top:8px">ย่านอื่นใน กทม.–ปริมณฑล ทักถามได้ครับ</span></div></div>
+      </div>
+      <div class="cta-row" style="margin-top:0">
+        <a href="https://line.me/ti/p/DRWVZqWmP5" target="_blank" rel="noopener" class="btn btn-line"><svg fill="currentColor"><use href="#i-line"/></svg>แอด LINE</a>
+        <a href="https://www.facebook.com/100084046002241" target="_blank" rel="noopener" class="btn btn-ghost">เพจ Facebook</a>
+      </div>
+    </div>
+    <div class="mapbox rvl">
+      <iframe title="แผนที่พื้นที่บริการ กรุงเทพฯ และปริมณฑล" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%A3&z=12&output=embed"></iframe>
+      <div class="ov">บริการถึงบ้าน ไม่มีหน้าร้าน<small>แผนที่แสดงพื้นที่บริการโดยประมาณ</small></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="2" y="2" width="44" height="44" rx="13" fill="url(#steelG)"/><circle cx="24" cy="25" r="15" fill="#1C232B"/><circle cx="24" cy="25" r="11" fill="#3A7BBF"/><path d="M19 19v7a5 5 0 0 0 10 0v-7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/></svg><div><div class="t1">ช่างยู</div><div class="t2">@U2NITED 24</div></div></div>
+        <p>บริการล้างเครื่องซักผ้าแบบถอดถังซัก และซ่อมเครื่องซักผ้าถึงบ้าน กรุงเทพฯ – ปริมณฑล</p>
+        <div class="social">
+          <a href="https://www.facebook.com/100084046002241" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+          <a href="https://www.instagram.com/u2nited" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3 0-4.1.1C4.3 2.2 2.2 4.3 2.1 7.9 2 9 2 9.3 2 12s0 3 .1 4.1c.1 3.6 2.2 5.7 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c3.6-.1 5.7-2.2 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.1-3.6-2.2-5.7-5.8-5.8C15 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.7.1 4 1.4 4.1 4.1.1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.7-1.4 4-4.1 4.1-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.7-.1-4-1.4-4.1-4.1-.1-1-.1-1.3-.1-4s0-3 .1-4C3.9 5.3 5.3 4 8 3.9c1-.1 1.3-.1 4-.1z"/></svg></a>
+          <a href="https://www.tiktok.com/@u.anek" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.7 5.7 0 1 0 4.9 5.7V9a7.4 7.4 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg></a>
+          <a href="https://line.me/ti/p/DRWVZqWmP5" target="_blank" rel="noopener" aria-label="LINE"><svg><use href="#i-line"/></svg></a>
+        </div>
+      </div>
+      <div><h4 class="hd">บริการ</h4><ul><li><a href="#services">ล้างเครื่องฝาบน</a></li><li><a href="#services">ล้างเครื่องฝาหน้า</a></li><li><a href="#services">ล้างเครื่อง 2 ถัง</a></li><li><a href="#services">ซ่อมเครื่องซักผ้า</a></li></ul></div>
+      <div><h4 class="hd">ติดต่อ</h4><ul><li>☎ <a href="tel:0652452529">065-245-2529</a></li><li>LINE: <a href="https://line.me/ti/p/DRWVZqWmP5" target="_blank" rel="noopener">แอดไลน์ช่างยู</a></li><li>IG: u2nited · TikTok: @u.anek</li><li>เปิดตลอดเวลา</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 ช่างยู @U2nited 24</span><span>Website demo โดย Relearn Solution</span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://line.me/ti/p/DRWVZqWmP5" target="_blank" rel="noopener" class="ln" aria-label="แอด LINE ช่างยู"><svg fill="#fff"><use href="#i-line"/></svg></a>
+  <a href="tel:0652452529" class="call" aria-label="โทรหาช่างยู"><svg fill="#fff"><use href="#i-phone"/></svg></a>
+</div>
+
+<script>
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rvl').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+// burger
+const menu=document.getElementById('menu'),burger=document.getElementById('burger');
+burger.addEventListener('click',()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+// before/after
+const sl=document.getElementById('slider'),rg=document.getElementById('baRange');
+rg.addEventListener('input',()=>sl.style.setProperty('--p',rg.value+'%'));
+// picker
+const st={type:'ฝาบน',brand:'Panasonic',sym:['กลิ่นเหม็น']};
+const BASE={'ฝาบน':[1200,1800],'ฝาหน้า':[1800,2800],'2 ถัง':[800,1300]};
+const fmt=n=>n.toLocaleString('th-TH');
+document.querySelectorAll('.q[data-q]').forEach(q=>{
+  const key=q.dataset.q,multi=q.dataset.multi;
+  q.querySelectorAll('.opt').forEach(o=>o.addEventListener('click',()=>{
+    if(multi){o.classList.toggle('on');st[key]=[...q.querySelectorAll('.opt.on')].map(x=>x.dataset.v);}
+    else{q.querySelectorAll('.opt').forEach(x=>x.classList.remove('on'));o.classList.add('on');st[key]=o.dataset.v;}
+    calc();
+  }));
+});
+document.getElementById('area').addEventListener('input',calc);
+function calc(){
+  const symEls=[...document.querySelectorAll('[data-q=sym] .opt.on')];
+  const clean=symEls.some(x=>x.dataset.k==='clean'),fix=symEls.some(x=>x.dataset.k==='fix');
+  const [lo,hi]=BASE[st.type];let name,price,list=[];
+  if(fix&&!clean){name='ตรวจเช็ก + ซ่อมเครื่อง'+st.type;price='ประเมินหน้างาน';list.push('ช่างตรวจหาสาเหตุ แจ้งค่าอะไหล่ก่อนลงมือ');}
+  else if(fix&&clean){name='ซ่อม + ล้างถอดถัง เครื่อง'+st.type;price='฿'+fmt(lo)+' + ค่าซ่อม';list.push('ถอดถังล้างไปพร้อมตรวจอาการ ประหยัดค่าเดินทางรอบเดียวจบ');}
+  else{name='ล้างเครื่อง'+st.type+' แบบถอดถังซัก';price='฿'+fmt(lo)+' – '+fmt(hi);list.push('ถอดถังซัก ใบพัด ฟิลเตอร์ ล้างทีละชิ้น');}
+  if(!symEls.length){name='ล้างเครื่อง'+st.type+' (ดูแลประจำปี)';price='฿'+fmt(lo)+' – '+fmt(hi);}
+  if(st.type==='ฝาหน้า')list.push('ฝาหน้าใช้เวลานานกว่า ช่างจะแจ้งเวลาโดยประมาณ');
+  if(st.brand==='Panasonic')list.push('Panasonic ถอดล้างยาก — ช่างยูบอกว่า "จัดให้ไม่เคยขัด"');
+  else if(st.brand==='อื่นๆ')list.push('ยี่ห้ออื่น ส่งรูปป้ายรุ่นให้ช่างเช็กก่อน');
+  list.push('ส่งรูปก่อน/หลังให้ทุกงาน');
+  document.getElementById('oName').textContent=name;
+  document.getElementById('oPrice').textContent=price;
+  document.getElementById('oList').innerHTML=list.map(x=>'<li>'+x+'</li>').join('');
+  const area=document.getElementById('area').value.trim();
+  const msg='สวัสดีครับช่างยู 🙏\nสนใจ: '+name+'\nเครื่อง: '+st.type+' ยี่ห้อ '+st.brand+'\nอาการ: '+(st.sym.length?st.sym.join(', '):'ไม่มีอาการ อยากล้างประจำปี')+'\nพื้นที่: '+(area||'(ระบุย่าน)')+'\nเดี๋ยวส่งรูปเครื่อง/ป้ายรุ่นตามไปครับ สะดวกเข้ามาวันไหนบ้างครับ';
+  document.getElementById('oMsg').textContent=msg;
+}
+calc();
+document.getElementById('copyBtn').addEventListener('click',async()=>{
+  const t=document.getElementById('oMsg').textContent,toast=document.getElementById('toast');
+  try{await navigator.clipboard.writeText(t)}catch(e){const ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(_){}ta.remove()}
+  toast.textContent='คัดลอกแล้ว ✓ เปิด LINE แล้ววางข้อความได้เลย';setTimeout(()=>toast.textContent='',3500);
+});
+</script>
+</body>
+</html>

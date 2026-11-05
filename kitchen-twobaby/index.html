@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitchen_Twobaby | รับจัดเบรค อาหารว่าง Snack box ข้าวกล่อง พระราม 2</title>
+<meta name="description" content="Kitchen_Twobaby รับจัดเบรค อาหารว่าง snack box ข้าวกล่อง จัดนอกสถานที่ ย่านพระราม 2 ส่งฟรีในพระราม 2 ส่งทั่วกรุงเทพฯ อร่อย คุ้มค่า ใส่ใจทุกกล่อง โทร 090-906-2345">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brown:#6B4A3A; --brown2:#8A6450; --cocoa:#3E2A20;
+  --cream:#FCF7F0; --peach:#F3E3D3; --peach2:#EACDB3; --kraft:#C9A27A; --kraft2:#B48A60;
+  --sage:#7F9771; --sage2:#DCE6D3; --sage3:#EEF3E9;
+  --heart:#D0846A; --butter:#F6D98B; --ink:#3E2A20; --muted:#7A6255;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:26px; --sh:0 22px 44px -24px rgba(62,42,32,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--body);color:var(--ink);background:var(--cream);line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.hd{font-family:var(--head);line-height:1.3}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit}
+.wrap{width:min(1180px,92%);margin:0 auto}
+.sample{display:inline-block;font-size:12.5px;font-weight:600;color:#8a5a00;background:#fff4d6;border:1px dashed #e2b860;border-radius:8px;padding:1px 9px;line-height:1.6}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:700;border-radius:999px;padding:14px 26px;font-size:16.5px;border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:21px;height:21px;flex:none}
+.btn-br{background:var(--brown);color:#fff;box-shadow:0 6px 0 var(--cocoa)}
+.btn-br:hover{box-shadow:0 8px 0 var(--cocoa)}
+.btn-line{background:#06C755;color:#fff;box-shadow:0 6px 0 #04903d}
+.btn-ghost{background:#fff;color:var(--brown);border-color:var(--brown);border-style:dashed}
+.btn-sm{padding:10px 18px;font-size:15px}
+
+/* stitch helper — like the dashed ring in the logo */
+.stitch{position:relative}
+.stitch::after{content:"";position:absolute;inset:9px;border:2px dashed rgba(107,74,58,.28);border-radius:calc(var(--r) - 8px);pointer-events:none}
+
+/* top bar */
+.topbar{background:var(--brown);color:#f4e6da;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;gap:14px;padding:7px 0;flex-wrap:wrap}
+.topbar b{color:var(--butter)}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:60;background:rgba(252,247,240,.92);backdrop-filter:blur(10px);border-bottom:2px dashed var(--peach2)}
+nav.main .wrap{display:flex;align-items:center;gap:20px;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:54px;height:54px;border-radius:50%;border:2px solid var(--sage);background:#fff}
+.brand .t1{font-family:var(--head);font-weight:800;font-size:20px;color:var(--brown);line-height:1.1}
+.brand .t2{font-size:12.5px;color:var(--sage);font-weight:600}
+.menu{display:flex;gap:24px;margin-left:auto;font-family:var(--head);font-weight:600;font-size:15.5px;color:var(--brown)}
+.menu a{position:relative;padding:4px 0}
+.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:3px;border-radius:3px;background:var(--heart);transition:.25s}
+.menu a:hover::after{right:0}
+.burger{display:none;margin-left:auto;background:#fff;border:2px solid var(--brown);border-radius:14px;width:46px;height:46px;cursor:pointer;place-items:center}
+
+/* hero: gingham picnic cloth */
+.hero{position:relative;overflow:hidden;padding:64px 0 110px;background:
+  linear-gradient(90deg,rgba(127,151,113,.13) 50%,transparent 0) 0 0/44px 44px,
+  linear-gradient(rgba(127,151,113,.13) 50%,transparent 0) 0 0/44px 44px,var(--peach)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:60px;background:var(--cream);
+  -webkit-mask:radial-gradient(30px 30px at 30px 0,transparent 98%,#000) 0 0/60px 60px repeat-x;mask:radial-gradient(30px 30px at 30px 0,transparent 98%,#000) 0 0/60px 60px repeat-x}
+.hero .wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:40px;align-items:center;position:relative;z-index:2}
+.tag{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--brown);font-family:var(--head);font-weight:700;padding:7px 16px;border-radius:999px;font-size:14.5px;border:2px dashed var(--sage);transform:rotate(-1.5deg)}
+.tag i{width:9px;height:9px;border-radius:50%;background:var(--sage);box-shadow:0 0 0 4px rgba(127,151,113,.25);animation:pulse 2s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(127,151,113,0)}}
+.hero h1{font-size:clamp(38px,5.4vw,68px);font-weight:900;color:var(--cocoa);margin:20px 0 16px;letter-spacing:-.3px}
+.hero h1 .u{position:relative;display:inline-block;color:var(--brown)}
+.hero h1 .u svg{position:absolute;left:-2%;bottom:-.18em;width:104%;height:.4em}
+.hero h1 small{display:block;font-size:.4em;font-weight:700;color:var(--sage);margin-top:12px;letter-spacing:0}
+.lead{font-size:19px;color:var(--muted);max-width:560px}
+.lead b{color:var(--brown)}
+.cta-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:30px}
+.stats{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap}
+.stat{background:#fff;border-radius:20px;padding:12px 18px;box-shadow:var(--sh);min-width:140px}
+.stat .n{font-family:var(--head);font-weight:900;font-size:30px;color:var(--brown);line-height:1.1}
+.stat .l{font-size:13.5px;color:var(--muted)}
+.stat .n small{font-size:.6em}
+
+.hero-art{position:relative;width:100%;max-width:500px;justify-self:center;aspect-ratio:1/1}
+.ring{position:absolute;inset:0;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.plate{position:absolute;inset:9%;border-radius:50%;background:#fff;box-shadow:0 30px 60px -20px rgba(62,42,32,.5),inset 0 0 0 12px var(--sage3);display:grid;place-items:center}
+.plate img{width:86%;height:86%;border-radius:50%;object-fit:cover}
+.stk{position:absolute;background:#fff;border-radius:18px;padding:10px 14px;font-family:var(--head);font-weight:800;font-size:14.5px;color:var(--brown);box-shadow:var(--sh);line-height:1.3;display:flex;gap:10px;align-items:center}
+.stk small{display:block;font-weight:600;font-size:12px;color:var(--muted)}
+.stk svg{width:34px;height:34px;flex:none}
+.stk.a{top:3%;right:-4%;transform:rotate(4deg);animation:bob 4.4s ease-in-out infinite}
+.stk.b{bottom:13%;left:-7%;transform:rotate(-4deg);animation:bob 5s ease-in-out infinite .5s}
+.stk.c{bottom:-1%;right:6%;background:var(--brown);color:#fff;transform:rotate(2deg);animation:bob 4.8s ease-in-out infinite 1s}
+.stk.c small{color:var(--peach)}
+.tape{position:absolute;width:80px;height:20px;background:rgba(127,151,113,.5);top:-13px;left:50%;transform:translateX(-50%) rotate(-3deg);border-radius:3px}
+@keyframes bob{50%{translate:0 -9px}}
+
+/* marquee */
+.marquee{background:var(--brown);color:#fff;overflow:hidden;padding:13px 0;transform:rotate(-1deg);margin:-26px -10px 0;position:relative;z-index:3;box-shadow:0 10px 30px -14px rgba(62,42,32,.6)}
+.track{display:flex;width:max-content;animation:slide 40s linear infinite;font-family:var(--head);font-weight:700;font-size:18.5px}
+.track span{display:flex;align-items:center;gap:22px;padding-right:22px;white-space:nowrap}
+.track span::after{content:"";width:16px;height:14px;background:var(--peach);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22'%3E%3Cpath d='M12 21S1 14 1 7a5.5 5.5 0 0 1 11-1 5.5 5.5 0 0 1 11 1c0 7-11 14-11 14z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 22'%3E%3Cpath d='M12 21S1 14 1 7a5.5 5.5 0 0 1 11-1 5.5 5.5 0 0 1 11 1c0 7-11 14-11 14z'/%3E%3C/svg%3E") center/contain no-repeat}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* sections */
+section{padding:96px 0;position:relative}
+.sh{text-align:center;max-width:740px;margin:0 auto 50px}
+.eb{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:700;font-size:14px;letter-spacing:.08em;color:var(--sage)}
+.eb::before,.eb::after{content:"";width:22px;height:0;border-top:2px dashed var(--sage)}
+.sh h2,.h2{font-size:clamp(30px,4.2vw,48px);font-weight:900;color:var(--cocoa);margin:8px 0 10px}
+.sh h2 em,.h2 em{font-style:normal;color:var(--brown);background:linear-gradient(transparent 62%,var(--peach2) 62%);padding:0 4px}
+.sh p{color:var(--muted);font-size:18px}
+
+/* trust strip */
+.trust{padding:56px 0 20px}
+.trust .box{display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:center;background:#fff;border-radius:999px;padding:16px 28px;box-shadow:var(--sh)}
+.trust b{font-family:var(--head);color:var(--brown)}
+.trust .org{font-family:var(--head);font-weight:700;color:var(--cocoa);background:var(--sage3);border-radius:999px;padding:4px 16px;font-size:15.5px}
+.trust small{color:var(--muted);font-size:12.5px;width:100%;text-align:center}
+
+/* menu (items) */
+.items{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.it{background:#fff;border-radius:var(--r);padding:24px 18px 20px;text-align:center;box-shadow:var(--sh);transition:.25s}
+.it:hover{transform:translateY(-6px) rotate(-1deg)}
+.it .ic{width:96px;height:96px;margin:0 auto 10px;border-radius:50%;background:var(--peach);display:grid;place-items:center}
+.it .ic svg{width:70px;height:70px}
+.it h3{font-size:18px;font-weight:800;color:var(--cocoa)}
+.it p{font-size:14.5px;color:var(--muted);line-height:1.55;margin-top:4px}
+
+/* sets */
+.sets-sec{background:var(--sage3)}
+.sets{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
+.set{background:#fff;border-radius:var(--r);padding:30px 24px 26px;display:flex;flex-direction:column;box-shadow:var(--sh);position:relative;overflow:hidden}
+.set .lbl{font-family:var(--head);font-weight:800;font-size:13px;letter-spacing:.06em;color:var(--sage)}
+.set h3{font-size:23px;font-weight:900;color:var(--cocoa);margin:4px 0 6px}
+.set .price{font-family:var(--head);font-weight:900;font-size:44px;color:var(--brown);line-height:1.1;margin:8px 0 2px}
+.set .price small{font-size:16px;font-weight:700;color:var(--muted)}
+.set ul{list-style:none;margin:16px 0 20px;display:grid;gap:7px;flex:1}
+.set li{display:flex;gap:10px;font-size:15.5px;align-items:flex-start}
+.set li::before{content:"";flex:0 0 18px;height:18px;margin-top:4px;border-radius:50%;background:var(--sage2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236B4A3A' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.set.pop{background:var(--brown);color:#fff}
+.set.pop h3,.set.pop .price{color:#fff}
+.set.pop .lbl{color:var(--butter)}
+.set.pop .price small{color:var(--peach)}
+.set.pop li::before{background-color:var(--peach)}
+.set.pop.stitch::after{border-color:rgba(255,255,255,.3)}
+.set .ribbon{position:absolute;top:18px;right:-34px;background:var(--butter);color:var(--cocoa);font-family:var(--head);font-weight:800;font-size:12.5px;padding:4px 40px;transform:rotate(38deg)}
+.set .btn{position:relative;z-index:2}
+.sets-note{text-align:center;margin-top:26px;color:var(--muted);font-size:14.5px}
+
+/* buyer sheet */
+.buyer{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.buyer p.l{color:var(--muted);font-size:18px}
+.clip{background:#fff;border-radius:22px;padding:42px 34px 30px;box-shadow:var(--sh);position:relative;transform:rotate(1.2deg)}
+.clip::before{content:"";position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:120px;height:34px;border-radius:10px;background:var(--kraft2);box-shadow:inset 0 -6px 0 rgba(0,0,0,.12)}
+.clip h3{font-size:21px;font-weight:800;color:var(--brown);display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;border-bottom:2px dashed var(--peach2);padding-bottom:12px;margin-bottom:6px}
+.row{display:grid;grid-template-columns:40px 1fr auto;gap:14px;align-items:center;padding:13px 0;border-bottom:1px dotted #e3d2c4}
+.row:last-child{border:0}
+.row .i{width:40px;height:40px;border-radius:12px;background:var(--peach);display:grid;place-items:center}
+.row .i svg{width:22px;height:22px;stroke:var(--brown);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.row b{font-family:var(--head);display:block;font-size:16px}
+.row span{font-size:14.5px;color:var(--muted)}
+.row .v{font-family:var(--head);font-weight:800;color:var(--brown);text-align:right;font-size:15px}
+.checks{list-style:none;display:grid;gap:12px;margin:24px 0 30px}
+.checks li{display:flex;gap:12px;align-items:flex-start}
+.checks li::before{content:"✓";flex:0 0 28px;height:28px;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;font-weight:800}
+
+/* planner widget */
+.planner-sec{background:var(--peach);overflow:hidden}
+.planner-sec::before{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(107,74,58,.08) 1.5px,transparent 1.6px) 0 0/22px 22px}
+.planner{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;position:relative}
+.panel{background:#fff;border-radius:var(--r);padding:30px;box-shadow:var(--sh)}
+.fld{margin-bottom:20px}
+.fld>label,.fld>.lab{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-family:var(--head);font-weight:700;font-size:15.5px;color:var(--cocoa);margin-bottom:8px}
+.fld>label output,.fld>.lab output{font-weight:900;color:var(--brown);font-size:20px}
+input[type=range]{width:100%;accent-color:var(--brown);height:28px}
+.ticks{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:2px solid var(--peach2);background:var(--cream);color:var(--brown);border-radius:999px;padding:6px 14px;font-family:var(--head);font-weight:600;font-size:14.5px;cursor:pointer;transition:.15s}
+.chip:hover{border-color:var(--brown)}
+.chip[aria-pressed=true]{background:var(--brown);border-color:var(--brown);color:#fff}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.inp{width:100%;border:2px solid var(--peach2);background:var(--cream);border-radius:14px;padding:11px 14px;color:var(--ink);font-size:16px}
+.inp:focus{outline:none;border-color:var(--brown);background:#fff}
+.stepper{display:flex;align-items:center;gap:8px}
+.stepper button{width:44px;height:44px;border-radius:12px;border:2px solid var(--brown);background:#fff;color:var(--brown);font-size:22px;font-weight:800;cursor:pointer}
+.stepper input{height:44px;padding:6px;text-align:center;font-family:var(--head);font-weight:800;font-size:20px}
+.warn{display:none;margin-top:8px;font-size:14px;color:#9a4b1a;background:#fff1e4;border-radius:10px;padding:6px 12px}
+.warn.on{display:block}
+.result{align-self:start;position:sticky;top:96px;background:var(--cocoa);color:#fff;border-radius:var(--r);padding:28px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:18px}
+.boxvis{background:var(--kraft);border-radius:18px;padding:16px;box-shadow:inset 0 0 0 6px var(--kraft2),0 14px 0 -6px rgba(0,0,0,.25);position:relative}
+.boxvis .lid{position:absolute;top:-12px;left:18px;background:#fff;color:var(--brown);font-family:var(--head);font-weight:800;font-size:13px;border-radius:999px;padding:3px 12px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;min-height:150px}
+.slot{background:#fff8ef;border-radius:12px;display:grid;place-items:center;padding:8px 4px 6px;text-align:center;font-size:12px;color:var(--brown);font-weight:600;line-height:1.3;animation:pop .35s ease}
+.slot svg{width:60px;height:60px}
+@keyframes pop{from{transform:scale(.6);opacity:0}}
+.rtier{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.rtier .nm{font-family:var(--head);font-weight:900;font-size:24px;color:var(--butter);line-height:1.2}
+.rtier small{color:#d8c4b6}
+.sum{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.sum div{background:rgba(255,255,255,.07);border-radius:14px;padding:10px 14px}
+.sum b{display:block;font-family:var(--head);font-size:22px;font-weight:900;color:#fff}
+.sum span{font-size:13px;color:#d8c4b6}
+.msg{background:#fff;color:var(--ink);border-radius:16px;padding:14px 16px;font-size:14.5px;white-space:pre-wrap;line-height:1.55;max-height:220px;overflow:auto;position:relative}
+.msg::before{content:"ข้อความที่จะส่ง";display:block;font-family:var(--head);font-weight:700;font-size:12.5px;color:var(--sage);margin-bottom:4px}
+.acts{display:flex;gap:10px;flex-wrap:wrap}
+.acts .btn{flex:1 1 160px}
+.btn-cp{background:var(--peach);color:var(--cocoa)}
+.fine{font-size:12.5px;color:#cbb6a8}
+
+/* events */
+.events{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.ev{background:#fff;border-radius:var(--r);padding:26px 20px;box-shadow:var(--sh);text-align:center;border-top:8px solid var(--sage2);transition:.25s}
+.ev:hover{border-top-color:var(--heart);transform:translateY(-4px)}
+.ev svg{width:56px;height:56px;margin:0 auto 10px;stroke:var(--brown);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ev h3{font-size:19px;font-weight:800;color:var(--cocoa)}
+.ev p{font-size:14.5px;color:var(--muted);margin-top:6px;line-height:1.55}
+
+/* big-morning story */
+.morning{background:var(--brown);color:#fff;overflow:hidden}
+.morning .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative}
+.morning h2{font-size:clamp(32px,4.4vw,52px);font-weight:900;line-height:1.25}
+.morning h2 span{color:var(--butter)}
+.morning p{color:#f0e0d3;font-size:18px;margin-top:14px}
+.clock{position:relative;aspect-ratio:1/1;max-width:440px;width:100%;justify-self:center}
+.big500{position:absolute;right:-6%;bottom:-5%;background:var(--butter);color:var(--cocoa);border-radius:24px;padding:14px 22px;font-family:var(--head);font-weight:900;font-size:44px;line-height:1;transform:rotate(-5deg);box-shadow:0 18px 30px -14px rgba(0,0,0,.5)}
+.big500 small{display:block;font-size:14px;font-weight:700;margin-top:6px}
+.tl{list-style:none;margin-top:28px;display:grid;gap:0;border-left:2px dashed rgba(255,255,255,.35);padding-left:22px}
+.tl li{position:relative;padding:8px 0}
+.tl li::before{content:"";position:absolute;left:-30px;top:16px;width:14px;height:14px;border-radius:50%;background:var(--butter);box-shadow:0 0 0 4px var(--brown)}
+.tl b{font-family:var(--head);color:var(--butter)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+.steps::before{content:"";position:absolute;top:46px;left:12%;right:12%;border-top:3px dashed var(--peach2)}
+.st{text-align:center;position:relative}
+.st .c{width:92px;height:92px;margin:0 auto 16px;border-radius:50%;background:#fff;box-shadow:var(--sh),inset 0 0 0 6px var(--peach);display:grid;place-items:center;position:relative}
+.st .c svg{width:40px;height:40px;stroke:var(--brown);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.st .c i{position:absolute;top:-4px;right:-4px;width:32px;height:32px;border-radius:50%;background:var(--sage);color:#fff;font-style:normal;font-family:var(--head);font-weight:800;display:grid;place-items:center}
+.st h4{font-size:19px;font-weight:800;color:var(--cocoa)}
+.st p{font-size:15px;color:var(--muted)}
+
+/* gallery */
+.gal-sec{background:var(--sage3)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:18px}
+.pol{background:#fff;padding:12px 12px 44px;border-radius:6px;box-shadow:var(--sh);position:relative;transition:.3s}
+.pol:nth-child(odd){transform:rotate(-1.6deg)}
+.pol:nth-child(even){transform:rotate(1.4deg)}
+.pol:hover{transform:rotate(0) scale(1.03);z-index:2}
+.pol .scene{height:100%;border-radius:3px;overflow:hidden;display:grid;place-items:center}
+.pol .scene svg{width:100%;height:100%}
+.pol .cap{position:absolute;left:14px;right:14px;bottom:10px;font-family:var(--head);font-weight:700;font-size:14px;color:var(--brown);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pol.w2{grid-column:span 2}
+.pol.h2r{grid-row:span 2}
+.gal-note{text-align:center;margin-top:30px;color:var(--muted);font-size:14.5px}
+.gal-note a{color:var(--brown);font-weight:700;text-decoration:underline}
+
+/* reviews */
+.rvs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border-radius:var(--r);padding:28px;box-shadow:var(--sh);position:relative}
+.rv .q{position:absolute;top:-18px;left:24px;width:44px;height:44px;border-radius:50%;background:var(--heart);color:#fff;display:grid;place-items:center;font-family:Georgia,serif;font-size:34px;line-height:1;padding-top:10px}
+.rv .stars{color:#E0A100;letter-spacing:2px;margin-top:6px}
+.rv p{margin:8px 0 18px;font-size:16.5px}
+.who{display:flex;gap:12px;align-items:center}
+.av{width:44px;height:44px;border-radius:50%;background:var(--sage2);color:var(--brown);display:grid;place-items:center;font-family:var(--head);font-weight:800}
+.who b{display:block;font-family:var(--head);font-size:15.5px}
+.who small{color:var(--muted)}
+.note{text-align:center;color:var(--muted);font-size:13px;margin-top:22px}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+.faq details{background:#fff;border-radius:18px;box-shadow:var(--sh);padding:4px 22px}
+.faq summary{cursor:pointer;list-style:none;font-family:var(--head);font-weight:700;font-size:17px;padding:14px 0;display:flex;justify-content:space-between;gap:14px;color:var(--cocoa)}
+.faq summary::after{content:"+";font-size:24px;color:var(--brown);line-height:1;transition:.2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 16px;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--cocoa);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:46px;align-items:stretch}
+.contact h2,.morning h2{margin-top:10px}
+.contact h2{font-size:clamp(32px,4.2vw,48px);font-weight:900}
+.contact h2 span{color:var(--butter)}
+.cinfo{display:grid;gap:14px;margin:26px 0}
+.ci{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px dashed rgba(255,255,255,.18);border-radius:18px;padding:15px 18px}
+.ci .i{flex:0 0 46px;height:46px;border-radius:14px;background:var(--peach);display:grid;place-items:center}
+.ci .i svg{width:24px;height:24px;stroke:var(--brown);fill:none;stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+.ci b{display:block;font-family:var(--head);color:var(--butter);font-size:15px}
+.ci .ph{font-family:var(--head);font-weight:900;font-size:24px;letter-spacing:.5px;display:inline-block;margin-right:14px}
+.ci span{color:#e9dbd0}
+.zones{display:grid;gap:8px;margin-top:8px}
+.zone{display:flex;justify-content:space-between;gap:10px;background:rgba(255,255,255,.08);border-radius:12px;padding:8px 12px;font-size:15px}
+.zone em{font-style:normal;font-family:var(--head);font-weight:800;color:var(--butter);white-space:nowrap}
+.map{border-radius:var(--r);overflow:hidden;min-height:460px;position:relative;background:linear-gradient(90deg,rgba(127,151,113,.18) 50%,transparent 0) 0 0/36px 36px,linear-gradient(rgba(127,151,113,.18) 50%,transparent 0) 0 0/36px 36px,var(--peach);border:6px solid #fff;box-shadow:0 0 0 2px var(--peach2)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map .pin{position:absolute;left:14px;bottom:30px;z-index:2;background:#fff;color:var(--brown);border-radius:14px;padding:8px 14px;font-family:var(--head);font-weight:800;font-size:14px;box-shadow:var(--sh)}
+
+/* footer */
+footer{background:#2C1D16;color:#c9b4a6;padding:60px 0 28px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px dashed rgba(255,255,255,.15)}
+footer h4{color:#fff;font-size:17px;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:7px}
+footer a:hover{color:var(--butter)}
+.ft .brand .t1{color:#fff}
+.ft p{margin-top:14px;max-width:340px}
+.copy{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:22px;font-size:13.5px}
+.copy b{color:var(--butter)}
+
+/* floating */
+.fab{position:fixed;right:18px;bottom:18px;z-index:70;display:flex;flex-direction:column;gap:12px}
+.fab a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;box-shadow:0 10px 24px -8px rgba(0,0,0,.45);transition:.2s;position:relative}
+.fab a:hover{transform:scale(1.08)}
+.fab .ln{background:#06C755}
+.fab .call{background:var(--brown);animation:ring 2.4s infinite}
+.fab svg{width:28px;height:28px}
+@keyframes ring{0%,100%{box-shadow:0 0 0 0 rgba(107,74,58,.55)}50%{box-shadow:0 0 0 14px rgba(107,74,58,0)}}
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,30px);background:var(--cocoa);color:#fff;padding:10px 20px;border-radius:999px;font-family:var(--head);font-weight:700;opacity:0;transition:.3s;z-index:80;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* reveal */
+.rv-on{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv-on.in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1080px){
+  .items,.sets{grid-template-columns:repeat(2,1fr)}
+  .events{grid-template-columns:repeat(3,1fr)}
+  .gal{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .menu,.nav-cta{display:none}
+  .burger{display:grid}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:var(--cream);padding:18px 5%;gap:14px;border-bottom:2px dashed var(--peach2);box-shadow:var(--sh)}
+  .hero{padding:40px 0 100px}
+  .hero .wrap,.buyer,.planner,.morning .wrap,.contact .wrap{grid-template-columns:1fr}
+  .result{position:static}
+  .hero-art{max-width:400px;margin-top:10px}
+  .steps{grid-template-columns:1fr 1fr;row-gap:36px}
+  .steps::before{display:none}
+  .rvs{grid-template-columns:1fr}
+  .clip{transform:none}
+  .ft{grid-template-columns:1fr 1fr}
+  .ft>div:first-child{grid-column:1/-1}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:68px 0}
+  .items{grid-template-columns:1fr 1fr;gap:14px}
+  .it{padding:18px 12px}
+  .it .ic{width:78px;height:78px}.it .ic svg{width:56px;height:56px}
+  .sets{grid-template-columns:1fr}
+  .events{grid-template-columns:1fr 1fr;gap:12px}
+  .events .ev:last-child{grid-column:1/-1}
+  .ev{padding:20px 14px}
+  .ev svg{width:44px;height:44px}
+  .stats{gap:10px}
+  .stat{min-width:0;flex:1 1 30%;padding:10px 12px}
+  .stat .n{font-size:22px}
+  .stat .l{font-size:12px}
+  .stk.a{right:0}.stk.b{left:0}
+  .tape{display:none}
+  .stk{font-size:13px;padding:8px 11px}
+  .stk svg{width:26px;height:26px}
+  .g2{grid-template-columns:1fr}
+  .panel,.result{padding:22px}
+  .slots{grid-template-columns:repeat(3,1fr);gap:7px}
+  .slot svg{width:40px;height:40px}
+  .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:12px}
+  .pol{padding:8px 8px 34px}
+  .pol .cap{font-size:12.5px;bottom:7px;left:9px;right:9px}
+  .pol.w2{grid-column:span 2}
+  .steps{grid-template-columns:1fr 1fr;gap:28px 14px}
+  .st .c{width:76px;height:76px}
+  .st p{font-size:14px}
+  .ft{grid-template-columns:1fr}
+  .topbar .hide-sm{display:none}
+  .trust .box{border-radius:26px}
+  .map{min-height:340px}
+  .big500{font-size:30px;right:0;bottom:-4%}
+  .ci .ph{font-size:21px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv-on{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- SVG sprite: hand-drawn food icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="f-sand" viewBox="0 0 64 64"><path d="M8 50 L50 10 Q56 8 56 16 L56 50 Z" fill="#F7E7C2" stroke="#6B4A3A" stroke-width="2.5" stroke-linejoin="round"/><path d="M14 50 L52 16 L52 50 Z" fill="#fff8ea"/><path d="M16 44 L50 22" stroke="#8DB36B" stroke-width="5" stroke-linecap="round"/><path d="M18 49 L51 30" stroke="#F2C84B" stroke-width="5" stroke-linecap="round"/><path d="M8 50 H56" stroke="#6B4A3A" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="f-ksand" viewBox="0 0 64 64"><rect x="9" y="16" width="46" height="34" rx="6" fill="#F7E7C2" stroke="#6B4A3A" stroke-width="2.5"/><rect x="13" y="24" width="38" height="8" rx="3" fill="#F4A6A0"/><rect x="13" y="32" width="38" height="9" rx="3" fill="#F6D24F"/><path d="M13 42 q6 4 12 0 t12 0 t14 0" stroke="#8DB36B" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M9 22 H55" stroke="#6B4A3A" stroke-width="2"/></symbol>
+    <symbol id="f-crois" viewBox="0 0 64 64"><path d="M6 38 Q10 18 32 16 Q54 18 58 38 Q52 44 46 40 Q40 48 32 46 Q24 48 18 40 Q12 44 6 38Z" fill="#E7B166" stroke="#6B4A3A" stroke-width="2.5" stroke-linejoin="round"/><path d="M22 22 Q26 32 20 40 M32 18 V44 M42 22 Q38 32 44 40" stroke="#B7793A" stroke-width="2.5" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="f-cake" viewBox="0 0 64 64"><path d="M8 26 Q8 16 18 16 H46 Q56 16 56 26 V48 H8 Z" fill="#D9A06A" stroke="#6B4A3A" stroke-width="2.5" stroke-linejoin="round"/><path d="M8 26 Q8 16 18 16 H46 Q56 16 56 26 Z" fill="#9C6338"/><circle cx="20" cy="36" r="2.5" fill="#6B4A3A"/><circle cx="34" cy="40" r="2.5" fill="#6B4A3A"/><circle cx="44" cy="33" r="2.5" fill="#6B4A3A"/><path d="M40 8 q10 2 10 12" stroke="#F2C84B" stroke-width="5" fill="none" stroke-linecap="round"/></symbol>
+    <symbol id="f-juice" viewBox="0 0 64 64"><path d="M24 6 H40 V14 L44 20 V56 Q44 59 41 59 H23 Q20 59 20 56 V20 L24 14 Z" fill="#fff" stroke="#6B4A3A" stroke-width="2.5" stroke-linejoin="round"/><path d="M21 30 H43 V56 Q43 58 41 58 H23 Q21 58 21 56 Z" fill="#F59A2C"/><rect x="23" y="4" width="18" height="6" rx="2" fill="#7F9771" stroke="#6B4A3A" stroke-width="2"/><circle cx="32" cy="42" r="7" fill="#FFC45C" stroke="#fff" stroke-width="2"/><path d="M32 35 V49 M25 42 H39" stroke="#fff" stroke-width="1.5"/></symbol>
+    <symbol id="f-fruit" viewBox="0 0 64 64"><path d="M6 30 H58 Q56 54 32 56 Q8 54 6 30Z" fill="#fff" stroke="#6B4A3A" stroke-width="2.5" stroke-linejoin="round"/><path d="M12 30 Q14 16 26 18 L30 30Z" fill="#F26B5B"/><path d="M28 30 L36 14 L44 30Z" fill="#F6D24F" stroke="#6B4A3A" stroke-width="1.5"/><circle cx="48" cy="25" r="6" fill="#8DB36B"/><circle cx="20" cy="24" r="1.2" fill="#3E2A20"/><circle cx="24" cy="26" r="1.2" fill="#3E2A20"/></symbol>
+    <symbol id="f-mac" viewBox="0 0 64 64"><path d="M10 44 Q8 18 32 14 Q56 18 54 44 Z" fill="#FFF6E6" stroke="#6B4A3A" stroke-width="2.5" stroke-linejoin="round"/><path d="M10 44 H54 Q54 50 48 50 H16 Q10 50 10 44Z" fill="#D9A06A" stroke="#6B4A3A" stroke-width="2.5"/><g stroke="#C9A27A" stroke-width="2.4" stroke-linecap="round"><path d="M20 30 l4 -3M30 24 l3 3M38 32 l4 -2M26 38 l4 1M42 22 l2 3M18 38 l2 -3"/></g></symbol>
+    <symbol id="f-cock" viewBox="0 0 64 64"><path d="M10 24 H54 L48 52 Q47 56 43 56 H21 Q17 56 16 52 Z" fill="#fff" stroke="#6B4A3A" stroke-width="2.5" stroke-linejoin="round"/><path d="M12 30 H52 L47 52 Q46 55 43 55 H21 Q18 55 17 52 Z" fill="#FBE3D6"/><circle cx="24" cy="38" r="5" fill="#F6D24F"/><circle cx="36" cy="44" r="5" fill="#F26B5B"/><circle cx="40" cy="35" r="4" fill="#8DB36B"/><circle cx="28" cy="48" r="3.5" fill="#F59A2C"/><path d="M44 24 L50 8" stroke="#D0846A" stroke-width="3" stroke-linecap="round"/><circle cx="34" cy="20" r="5" fill="#E2463F"/></symbol>
+    <symbol id="f-rice" viewBox="0 0 64 64"><rect x="6" y="18" width="52" height="36" rx="6" fill="#fff" stroke="#6B4A3A" stroke-width="2.5"/><path d="M32 18 V54" stroke="#6B4A3A" stroke-width="2"/><path d="M10 40 Q10 26 20 26 Q30 26 29 40Z" fill="#FFFDF7" stroke="#C9A27A" stroke-width="1.6"/><path d="M10 40 H29 V50 H10Z" fill="#FFFDF7"/><ellipse cx="45" cy="30" rx="9" ry="6" fill="#B7793A"/><circle cx="40" cy="44" r="5" fill="#8DB36B"/><circle cx="50" cy="45" r="4.5" fill="#F6D24F" stroke="#fff" stroke-width="2"/></symbol>
+    <symbol id="f-water" viewBox="0 0 64 64"><path d="M26 4 H38 V12 Q44 16 44 22 V56 Q44 60 40 60 H24 Q20 60 20 56 V22 Q20 16 26 12Z" fill="#E6F3F6" stroke="#6B4A3A" stroke-width="2.5" stroke-linejoin="round"/><rect x="20" y="30" width="24" height="14" fill="#7F9771"/><path d="M26 36 h12" stroke="#fff" stroke-width="2"/></symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div>🚚 <b>ส่งฟรี</b> ในพระราม 2 · ส่งทั่ว กทม. · มารับเองได้</div>
+    <div class="hide-sm">☎️ <a href="tel:0909062345"><b>090-906-2345</b></a> / <a href="tel:0971087111"><b>097-108-7111</b></a> · LINE ID <b>Byissareema</b></div>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="assets/logo.jpg" alt="โลโก้ Kitchen Twobaby">
+      <div><div class="t1">Kitchen_Twobaby</div><div class="t2">รับจัดเบรค · อาหารว่าง · snack box</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#menuitems">เมนู</a>
+      <a href="#sets">ชุดเบรค</a>
+      <a href="#planner">จัดชุดตามงบ</a>
+      <a href="#events">งานที่รับ</a>
+      <a href="#gallery">ผลงาน</a>
+      <a href="#contact">ติดต่อ</a>
+    </div>
+    <a href="#planner" class="btn btn-br btn-sm nav-cta">ขอใบเสนอราคา</a>
+    <button class="burger" aria-label="เปิดเมนู" aria-expanded="false" id="burger">
+      <svg width="24" height="24" viewBox="0 0 24 24" stroke="#6B4A3A" stroke-width="2.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="tag"><i></i>ครัวแม่บ้าน ย่านพระราม 2 · รับออร์เดอร์ทุกขนาดงาน</span>
+      <h1>จัดเบรคให้ทั้งออฟฟิศ<br><span class="u">อร่อยทุกกล่อง<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 Q60 2 120 11 T297 8" stroke="#D0846A" stroke-width="7" fill="none" stroke-linecap="round"/></svg></span>
+        <small>อร่อย · คุ้มค่า · ใส่ใจทุกกล่อง</small></h1>
+      <p class="lead">Snack box ข้าวกล่อง และจัดเบรคนอกสถานที่ สำหรับ<b>ประชุม สัมมนา งานบุญ งานแต่ง</b> ทำสดใหม่ทุกเช้า <b>ล้อหมุนตั้งแต่ 6 โมงเช้า</b> ส่งถึงที่ทันเวลาเปิดงาน</p>
+      <div class="cta-row">
+        <a href="#planner" class="btn btn-br">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+          จัดชุดตามงบ / ขอราคา
+        </a>
+        <a href="tel:0909062345" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          090-906-2345
+        </a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="n"><span data-count="500">0</span><small> กล่อง</small></div><div class="l">ส่งในเช้าเดียว (4 พ.ย.)</div></div>
+        <div class="stat"><div class="n">06:00</div><div class="l">ล้อเริ่มหมุนส่งของ</div></div>
+        <div class="stat"><div class="n">ฟรี</div><div class="l">ค่าส่งในพระราม 2</div></div>
+      </div>
+    </div>
+
+    <div class="hero-art rv-on">
+      <svg class="ring" viewBox="0 0 400 400" aria-hidden="true">
+        <circle cx="200" cy="200" r="194" fill="none" stroke="#7F9771" stroke-width="2" stroke-dasharray="6 9"/>
+        <path id="arc" d="M200,200 m-176,0 a176,176 0 1,1 352,0 a176,176 0 1,1 -352,0" fill="none"/>
+        <text font-family="Noto Sans Thai" font-weight="800" font-size="17" fill="#6B4A3A" letter-spacing="1.5"><textPath href="#arc">อร่อย คุ้มค่า ใส่ใจทุกกล่อง ♥ snack box ♥ ข้าวกล่อง ♥ จัดเบรคนอกสถานที่ ♥ </textPath></text>
+      </svg>
+      <div class="plate"><img src="assets/logo.jpg" alt="โลโก้ Kitchen Twobaby เด็กชายหญิงถือกล่องขนม"></div>
+      <div class="stk a"><span class="tape"></span>
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="16" width="26" height="18" rx="3" fill="#F3E3D3" stroke="#6B4A3A" stroke-width="2.4"/><path d="M30 22h7l6 6v6H30z" fill="#fff" stroke="#6B4A3A" stroke-width="2.4" stroke-linejoin="round"/><circle cx="12" cy="36" r="4" fill="#6B4A3A"/><circle cx="36" cy="36" r="4" fill="#6B4A3A"/><path d="M2 10h10M6 6h8" stroke="#7F9771" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <div>ล้อหมุนตั้งแต่ 6 โมงเช้า<small>ส่งทันก่อนเริ่มประชุม</small></div></div>
+      <div class="stk b">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#f-crois"/></svg>
+        <div>ครัวซองต์ · เค้กกล้วยหอม<small>ทำใหม่ทุกออร์เดอร์</small></div></div>
+      <div class="stk c">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 42S6 31 6 18a9 9 0 0 1 18-2 9 9 0 0 1 18 2c0 13-18 24-18 24z" fill="#F6D98B"/></svg>
+        <div>ส่งฟรีในพระราม 2<small>ทั่ว กทม. / มารับเองได้</small></div></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>อร่อย คุ้มค่า ใส่ใจทุกกล่อง</span><span>ล้อหมุนตั้งแต่ 6 โมงเช้า</span><span>รับจัดเบรค</span><span>อาหารว่าง</span><span>Snack box</span><span>ข้าวกล่อง</span><span>จัดนอกสถานที่</span><span>ส่งฟรีพระราม 2</span>
+    <span>อร่อย คุ้มค่า ใส่ใจทุกกล่อง</span><span>ล้อหมุนตั้งแต่ 6 โมงเช้า</span><span>รับจัดเบรค</span><span>อาหารว่าง</span><span>Snack box</span><span>ข้าวกล่อง</span><span>จัดนอกสถานที่</span><span>ส่งฟรีพระราม 2</span>
+  </div>
+</div>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap">
+    <div class="box rv-on">
+      <b>เคยดูแลงานของ</b>
+      <span class="org">ธนาคารออมสิน ภาค 3</span>
+      <span class="org">มศว</span>
+      <span class="org">จุฬาฯ</span>
+      <span class="org">มจธ</span>
+      <small>* รายชื่อจากแฮชแท็กในโพสต์ผลงานของร้าน · แสดงเป็นชื่อเท่านั้น ไม่ใช่โลโก้หรือการรับรองจากหน่วยงาน</small>
+    </div>
+  </div>
+</div>
+
+<!-- MENU ITEMS -->
+<section id="menuitems">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="eb">ในกล่องมีอะไรบ้าง</span>
+      <h2>เมนูประจำครัว <em>Twobaby</em></h2>
+      <p>เมนูที่เห็นบ่อยในโพสต์ของร้าน หยิบมาจัดชุดได้ตามงบ ตามธีมงาน หรือจะขอเมนูพิเศษก็ทักมาคุยได้เลย</p>
+    </div>
+    <div class="items">
+      <div class="it rv-on"><div class="ic"><svg aria-hidden="true"><use href="#f-sand"/></svg></div><h3>แซนด์วิชโบราณ</h3><p>ขนมปังนุ่ม ไส้แน่น รสคุ้นเคยแบบที่ทุกคนชอบ</p></div>
+      <div class="it rv-on"><div class="ic"><svg aria-hidden="true"><use href="#f-ksand"/></svg></div><h3>แซนด์วิชเกาหลี</h3><p>ชั้นไส้สีสวย ไข่ แฮม ผัก ตัดชิ้นพอดีคำ</p></div>
+      <div class="it rv-on"><div class="ic"><svg aria-hidden="true"><use href="#f-crois"/></svg></div><h3>ครัวซองต์</h3><p>อบหอมเนย ชิ้นเดียวอิ่มสบายช่วงพักประชุม</p></div>
+      <div class="it rv-on"><div class="ic"><svg aria-hidden="true"><use href="#f-cake"/></svg></div><h3>เค้กกล้วยหอม</h3><p>เนื้อนุ่มชุ่ม กลิ่นกล้วยหอม ขนมไทย-ฝรั่งที่ทุกวัยชอบ</p></div>
+      <div class="it rv-on"><div class="ic"><svg aria-hidden="true"><use href="#f-mac"/></svg></div><h3>มาการองมะพร้าว</h3><p>มะพร้าวอบหอม กรอบนอกนุ่มใน หวานกำลังดี</p></div>
+      <div class="it rv-on"><div class="ic"><svg aria-hidden="true"><use href="#f-juice"/></svg></div><h3>น้ำส้มคั้น</h3><p>สดชื่น เติมพลังช่วงบ่าย ประชุมยาวก็ไม่ง่วง</p></div>
+      <div class="it rv-on"><div class="ic"><svg aria-hidden="true"><use href="#f-fruit"/></svg></div><h3>ผลไม้</h3><p>ผลไม้ตามฤดู หั่นพร้อมทาน จัดใส่ถ้วยสะอาด</p></div>
+      <div class="it rv-on"><div class="ic"><svg aria-hidden="true"><use href="#f-cock"/></svg></div><h3>ฟรุตค็อกเทล</h3><p>ผลไม้รวมในถ้วยใส สีสันสดใส เหมาะกับงานแต่ง</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SETS -->
+<section class="sets-sec" id="sets">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="eb">ชุดเบรคแนะนำ</span>
+      <h2>ราคาชัด <em>ขออนุมัติงบง่าย</em></h2>
+      <p>ร้านจัดให้ตามงบจริงได้เสมอ ชุดด้านล่างเป็นตัวอย่างไว้กะงบคร่าว ๆ ก่อนทักมาขอใบเสนอราคา</p>
+    </div>
+    <div class="sets">
+      <div class="set stitch rv-on">
+        <span class="lbl">SET S · เบรคเบา</span>
+        <h3>ขนม 1 + น้ำ 1</h3>
+        <div class="price">35<small> ฿/กล่อง</small></div>
+        <span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span>
+        <ul><li>แซนด์วิช หรือ เค้กกล้วยหอม</li><li>น้ำดื่ม / น้ำผลไม้กล่อง</li><li>เหมาะกับประชุมสั้น อบรมครึ่งวัน</li></ul>
+        <a href="#planner" class="btn btn-ghost btn-sm" data-pick="35">เลือกชุดนี้</a>
+      </div>
+      <div class="set stitch pop rv-on">
+        <span class="ribbon">ขายดี</span>
+        <span class="lbl">SET M · มาตรฐานออฟฟิศ</span>
+        <h3>ขนม 2 + น้ำ 1</h3>
+        <div class="price">45<small> ฿/กล่อง</small></div>
+        <span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span>
+        <ul><li>คาว 1 + หวาน 1 เช่น ครัวซองต์ + มาการองมะพร้าว</li><li>น้ำผลไม้ / น้ำดื่ม</li><li>เหมาะกับประชุม สัมมนา งานบุญ</li></ul>
+        <a href="#planner" class="btn btn-sm" style="background:#fff;color:var(--brown)" data-pick="45">เลือกชุดนี้</a>
+      </div>
+      <div class="set stitch rv-on">
+        <span class="lbl">SET L · จัดเต็ม</span>
+        <h3>ขนม 2 + ผลไม้ + น้ำส้มคั้น</h3>
+        <div class="price">59<small> ฿/กล่อง</small></div>
+        <span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span>
+        <ul><li>แซนด์วิชเกาหลี + เค้กกล้วยหอม</li><li>ผลไม้หั่นพร้อมทาน</li><li>น้ำส้มคั้นสด</li></ul>
+        <a href="#planner" class="btn btn-ghost btn-sm" data-pick="59">เลือกชุดนี้</a>
+      </div>
+      <div class="set stitch rv-on">
+        <span class="lbl">RICE BOX · ข้าวกล่อง</span>
+        <h3>ข้าวกล่อง + ขนม + น้ำ</h3>
+        <div class="price">79<small> ฿/ชุด</small></div>
+        <span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span>
+        <ul><li>ข้าวกล่องเมนูตามตกลง</li><li>ขนม 1 ชิ้น + น้ำดื่ม</li><li>เหมาะกับอบรมเต็มวัน งานบุญ</li></ul>
+        <a href="#planner" class="btn btn-ghost btn-sm" data-pick="79">เลือกชุดนี้</a>
+      </div>
+    </div>
+    <p class="sets-note rv-on">🍽️ <b>จัดเบรคนอกสถานที่ (ไลน์บุฟเฟต์)</b> สำหรับสัมมนา งานแต่ง งานบุญ — คิดราคาตามจำนวนคนและรูปแบบงาน ทักมาคุยรายละเอียดได้เลย</p>
+  </div>
+</section>
+
+<!-- BUYER SHEET -->
+<section>
+  <div class="wrap buyer">
+    <div class="rv-on">
+      <span class="eb">สำหรับฝ่ายจัดซื้อ / ธุรการ</span>
+      <h2 class="h2">ข้อมูลครบ<br><em>ส่งขออนุมัติงบได้ทันที</em></h2>
+      <p class="l">เข้าใจดีว่าก่อนสั่งเบรคให้องค์กร ต้องมีราคาต่อหัว ขั้นต่ำ และเวลาสั่งล่วงหน้าไปแนบเรื่อง เราสรุปไว้ให้ในหน้าเดียว</p>
+      <ul class="checks">
+        <li>บอกงบต่อหัว จำนวนคน และวันงาน ร้านจัดชุดให้พอดีงบ</li>
+        <li>ส่งเป็นกล่องแยกรายคน สะดวกแจกตอนลงทะเบียน</li>
+        <li>เคยรับออร์เดอร์ใหญ่ 500 กล่องในเช้าเดียว งานหลักร้อยคนไม่ต้องกังวล</li>
+      </ul>
+      <a href="#planner" class="btn btn-br">ทำใบขอราคาใน 1 นาที →</a>
+    </div>
+    <div class="clip rv-on">
+      <h3>สรุปเงื่อนไขการสั่ง <span class="sample">ข้อมูลตัวอย่าง · รอร้านยืนยัน</span></h3>
+      <div class="row"><div class="i"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M4 11h16M9 7V4h6v3"/></svg></div><div><b>สั่งขั้นต่ำ</b><span>ต่อ 1 ออร์เดอร์</span></div><div class="v">20 กล่อง</div></div>
+      <div class="row"><div class="i"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><div><b>สั่งล่วงหน้า</b><span>งานใหญ่ / ไลน์บุฟเฟต์ ควรเร็วกว่านี้</span></div><div class="v">2–3 วัน</div></div>
+      <div class="row"><div class="i"><svg viewBox="0 0 24 24"><path d="M3 16V8h11v8"/><path d="M14 11h4l3 3v2h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><div><b>ค่าจัดส่ง</b><span>ในพระราม 2 ฟรี · ทั่ว กทม. ตามระยะทาง</span></div><div class="v">ฟรี* </div></div>
+      <div class="row"><div class="i"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></div><div><b>ใบเสนอราคา / ใบเสร็จ</b><span>สอบถามรูปแบบเอกสารที่องค์กรต้องใช้</span></div><div class="v">สอบถาม</div></div>
+      <div class="row"><div class="i"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg></div><div><b>การชำระเงิน</b><span>มัดจำ / โอนก่อนส่ง ตามตกลง</span></div><div class="v">ตามตกลง</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANNER -->
+<section class="planner-sec" id="planner">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="eb">ตัวช่วยจัดชุดตามงบ</span>
+      <h2>บอกงบต่อหัว <em>เดี๋ยวเราจัดกล่องให้</em></h2>
+      <p>เลื่อนงบ ใส่จำนวนคน เลือกเมนูที่ชอบ ระบบจะเขียนข้อความขอใบเสนอราคาให้ ส่งทาง LINE หรือ Messenger ได้เลย</p>
+    </div>
+    <div class="planner">
+      <div class="panel rv-on">
+        <div class="fld">
+          <label for="budget">งบต่อหัว (ต่อกล่อง) <output id="budgetOut">45 ฿</output></label>
+          <input type="range" id="budget" min="30" max="150" step="5" value="45">
+          <div class="ticks"><span>30฿</span><span>60฿</span><span>90฿</span><span>120฿</span><span>150฿</span></div>
+        </div>
+        <div class="fld">
+          <span class="lab">จำนวนคน / กล่อง</span>
+          <div class="stepper">
+            <button type="button" id="minus" aria-label="ลดจำนวน">−</button>
+            <input class="inp" id="qty" type="number" min="1" value="50" inputmode="numeric" aria-label="จำนวนกล่อง">
+            <button type="button" id="plus" aria-label="เพิ่มจำนวน">+</button>
+          </div>
+          <div class="warn" id="minWarn">ขั้นต่ำตัวอย่าง 20 กล่อง — จำนวนน้อยกว่านี้ทักถามร้านก่อนนะคะ</div>
+        </div>
+        <div class="fld">
+          <span class="lab">ประเภทงาน</span>
+          <div class="chips" id="evChips">
+            <button type="button" class="chip" aria-pressed="true">ประชุม</button>
+            <button type="button" class="chip" aria-pressed="false">สัมมนา / อบรม</button>
+            <button type="button" class="chip" aria-pressed="false">งานบุญ</button>
+            <button type="button" class="chip" aria-pressed="false">งานสวดอภิธรรม</button>
+            <button type="button" class="chip" aria-pressed="false">งานแต่ง</button>
+            <button type="button" class="chip" aria-pressed="false">อื่น ๆ</button>
+          </div>
+        </div>
+        <div class="fld">
+          <span class="lab">เมนูที่อยากได้ (เลือกได้หลายอย่าง)</span>
+          <div class="chips" id="favChips">
+            <button type="button" class="chip" aria-pressed="false" data-k="sand">แซนด์วิชโบราณ</button>
+            <button type="button" class="chip" aria-pressed="false" data-k="ksand">แซนด์วิชเกาหลี</button>
+            <button type="button" class="chip" aria-pressed="false" data-k="crois">ครัวซองต์</button>
+            <button type="button" class="chip" aria-pressed="false" data-k="cake">เค้กกล้วยหอม</button>
+            <button type="button" class="chip" aria-pressed="false" data-k="mac">มาการองมะพร้าว</button>
+            <button type="button" class="chip" aria-pressed="false" data-k="fruit">ผลไม้</button>
+            <button type="button" class="chip" aria-pressed="false" data-k="cock">ฟรุตค็อกเทล</button>
+            <button type="button" class="chip" aria-pressed="false" data-k="juice">น้ำส้มคั้น</button>
+          </div>
+        </div>
+        <div class="g2 fld">
+          <div><label class="lab" for="date" style="display:block;font-family:var(--head);font-weight:700;margin-bottom:8px">วันที่ใช้งาน</label><input class="inp" type="date" id="date"></div>
+          <div><label class="lab" for="time" style="display:block;font-family:var(--head);font-weight:700;margin-bottom:8px">เวลาส่งถึง</label><input class="inp" type="time" id="time" value="08:30"></div>
+        </div>
+        <div class="warn" id="dateWarn" style="margin:-10px 0 18px">งานด่วนภายใน 2 วัน ทักถามคิวกับร้านก่อนนะคะ 🙏</div>
+        <div class="fld">
+          <span class="lab">การรับสินค้า</span>
+          <div class="chips" id="delChips">
+            <button type="button" class="chip" aria-pressed="true" data-fee="ส่งฟรี">ส่งในพระราม 2</button>
+            <button type="button" class="chip" aria-pressed="false" data-fee="ตามระยะทาง">ส่งที่อื่นใน กทม.</button>
+            <button type="button" class="chip" aria-pressed="false" data-fee="ไม่มีค่าส่ง">มารับเอง</button>
+          </div>
+          <input class="inp" id="place" style="margin-top:10px" placeholder="สถานที่ส่ง / เขต (เช่น อาคาร…, บางขุนเทียน)">
+        </div>
+        <div class="fld" style="margin-bottom:0">
+          <input class="inp" id="org" placeholder="ชื่อผู้ติดต่อ / หน่วยงาน (ไม่บังคับ)">
+        </div>
+      </div>
+
+      <div class="result rv-on" aria-live="polite">
+        <div class="rtier">
+          <div><small>ชุดที่แนะนำตามงบ</small><div class="nm" id="tierName">SET M · ขนม 2 + น้ำ 1</div></div>
+          <span class="sample">ราคาตัวอย่าง</span>
+        </div>
+        <div class="boxvis"><span class="lid">กล่องตัวอย่าง</span><div class="slots" id="slots"></div></div>
+        <div class="sum">
+          <div><span>ประมาณการรวม</span><b id="total">2,250 ฿</b></div>
+          <div><span>ค่าส่ง</span><b id="fee">ส่งฟรี</b></div>
+        </div>
+        <div class="msg" id="msg"></div>
+        <div class="acts">
+          <button type="button" class="btn btn-cp" id="copyBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>คัดลอกข้อความ</button>
+          <a class="btn btn-line" id="lineBtn" href="https://line.me/ti/p/~Byissareema" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.4 5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>ส่งทาง LINE</a>
+        </div>
+        <p class="fine">กด “ส่งทาง LINE” ระบบจะคัดลอกข้อความให้อัตโนมัติ แล้วเปิดหน้าแอดไลน์ร้าน (ID: Byissareema) — วางข้อความในแชตได้เลย · หรือส่งทาง <a href="https://m.me/kitchentwobaby" target="_blank" rel="noopener" style="color:var(--butter);text-decoration:underline">Messenger</a> · ราคาในตัวช่วยนี้เป็นตัวอย่าง ร้านจะยืนยันราคาจริงในแชต</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="eb">งานที่เราดูแล</span>
+      <h2>ทุกโอกาส <em>มีกล่องที่ใช่</em></h2>
+      <p>ปรับเมนู สีกล่อง และการจัดวางให้เข้ากับบรรยากาศงาน</p>
+    </div>
+    <div class="events">
+      <div class="ev rv-on"><svg viewBox="0 0 48 48"><rect x="6" y="8" width="36" height="22" rx="3"/><path d="M24 30v8M16 42l8-4 8 4M12 22l7-6 6 4 9-8"/></svg><h3>ประชุม</h3><p>Snack box แจกตอนลงทะเบียน กินง่าย ไม่เลอะเอกสาร</p></div>
+      <div class="ev rv-on"><svg viewBox="0 0 48 48"><rect x="18" y="4" width="12" height="22" rx="6"/><path d="M12 22a12 12 0 0 0 24 0M24 34v8M16 42h16"/></svg><h3>สัมมนา / อบรม</h3><p>เบรคเช้า–บ่าย + ข้าวกล่องกลางวัน จบในเจ้าเดียว</p></div>
+      <div class="ev rv-on"><svg viewBox="0 0 48 48"><path d="M24 40c-8 0-14-5-16-12 6 0 11 2 16 8 5-6 10-8 16-8-2 7-8 12-16 12z"/><path d="M24 36c-4-5-4-13 0-22 4 9 4 17 0 22zM14 30c-2-6 0-12 4-16 2 5 3 10 2 15M34 30c2-6 0-12-4-16-2 5-3 10-2 15"/></svg><h3>งานบุญ</h3><p>จัดชุดถวายพระ และชุดเลี้ยงแขกให้เรียบร้อย</p></div>
+      <div class="ev rv-on"><svg viewBox="0 0 48 48"><rect x="18" y="20" width="12" height="22" rx="2"/><path d="M24 20v-4M24 6c3 3 3 7 0 10-3-3-3-7 0-10zM12 42h24"/></svg><h3>งานสวดอภิธรรม</h3><p>กล่องโทนสุภาพ ส่งตรงเวลาทุกคืนตามกำหนดสวด</p></div>
+      <div class="ev rv-on"><svg viewBox="0 0 48 48"><circle cx="18" cy="28" r="10"/><circle cx="30" cy="28" r="10"/><path d="M20 10l4-4 4 4-4 4z"/></svg><h3>งานแต่ง</h3><p>ฟรุตค็อกเทล มาการอง และเบรคเลี้ยงแขกช่วงพิธีเช้า</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- MORNING STORY -->
+<section class="morning">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eb" style="color:var(--peach)">เบื้องหลังครัว</span>
+      <h2>ล้อหมุนตั้งแต่<br><span>6 โมงเช้า</span> ☀️</h2>
+      <p>ทุกกล่องทำสดใหม่ในเช้าวันงาน จัดเรียงทีละกล่องด้วยมือ แล้วออกรถตั้งแต่เช้าตรู่ เพื่อให้ถึงก่อนเวลาเปิดงานเสมอ — งานเล็ก 20 กล่อง หรืองานใหญ่ 500 กล่อง ก็ใส่ใจเท่ากัน</p>
+      <ul class="tl">
+        <li><b>ก่อนรุ่งสาง</b> — อบ ห่อ จัดกล่องสดใหม่</li>
+        <li><b>06:00 น.</b> — ล้อหมุน ออกส่งตามรอบงาน</li>
+        <li><b>4 พ.ย.</b> — ส่ง 500 กล่องในเช้าเดียว ✔️</li>
+      </ul>
+    </div>
+    <div class="clock rv-on">
+      <svg viewBox="0 0 400 400" aria-hidden="true">
+        <circle cx="200" cy="200" r="170" fill="#F3E3D3"/>
+        <circle cx="200" cy="200" r="170" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="2 18" stroke-linecap="round"/>
+        <circle cx="200" cy="200" r="140" fill="#fff"/>
+        <g fill="#6B4A3A" font-family="Noto Sans Thai" font-weight="800" font-size="24" text-anchor="middle"><text x="200" y="88">12</text><text x="320" y="208">3</text><text x="200" y="330">6</text><text x="80" y="208">9</text></g>
+        <path d="M200 200 V112" stroke="#6B4A3A" stroke-width="10" stroke-linecap="round"/>
+        <path d="M200 200 V262" stroke="#D0846A" stroke-width="9" stroke-linecap="round"/>
+        <circle cx="200" cy="200" r="12" fill="#7F9771"/>
+        <g transform="translate(122 238) scale(.9)"><use href="#f-crois" width="64" height="64"/></g>
+        <g transform="translate(222 232) scale(.85)"><use href="#f-juice" width="64" height="64"/></g>
+      </svg>
+      <div class="big500">500 กล่อง<small>เช้าวันที่ 4 พ.ย.</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section>
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="eb">สั่งง่าย 4 ขั้นตอน</span>
+      <h2>จากแชต <em>ถึงโต๊ะประชุม</em></h2>
+    </div>
+    <div class="steps">
+      <div class="st rv-on"><div class="c"><i>1</i><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4-.9L3 20l1.1-4A8.4 8.4 0 1 1 21 11.5z"/></svg></div><h4>ทักบอกงาน</h4><p>วันที่ เวลา จำนวนคน งบต่อหัว ผ่าน LINE / โทร</p></div>
+      <div class="st rv-on"><div class="c"><i>2</i><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><h4>รับชุดเมนู &amp; ราคา</h4><p>ร้านจัดชุดให้พอดีงบ ปรับเมนูได้</p></div>
+      <div class="st rv-on"><div class="c"><i>3</i><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg></div><h4>ยืนยันออร์เดอร์</h4><p>สรุปจำนวน สถานที่ส่ง และการชำระเงิน</p></div>
+      <div class="st rv-on"><div class="c"><i>4</i><svg viewBox="0 0 24 24"><path d="M3 16V8h11v8"/><path d="M14 11h4l3 3v2h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><h4>ส่งถึงงาน</h4><p>ส่งฟรีในพระราม 2 · ทั่ว กทม. · หรือมารับเอง</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gal-sec" id="gallery">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="eb">ผลงานจากครัว</span>
+      <h2>กล่องสวย <em>เรียงเป็นแถว</em></h2>
+      <p>ตัวอย่างการจัดชุดแบบต่าง ๆ ของร้าน</p>
+    </div>
+    <div class="gal">
+      <figure class="pol w2 rv-on"><div class="scene" style="background:#F3E3D3">
+        <svg viewBox="0 0 400 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="180" fill="#EAD7C2"/>
+          <g id="rowbox"><rect x="10" y="70" width="70" height="56" rx="6" fill="#C9A27A" stroke="#B48A60" stroke-width="3"/><use href="#f-crois" x="14" y="62" width="34" height="34"/><use href="#f-juice" x="46" y="70" width="30" height="40"/><use href="#f-cake" x="16" y="92" width="30" height="30"/></g>
+          <use href="#rowbox" x="78"/><use href="#rowbox" x="156"/><use href="#rowbox" x="234"/><use href="#rowbox" x="312"/>
+          <use href="#rowbox" x="40" y="-62"/><use href="#rowbox" x="118" y="-62"/><use href="#rowbox" x="196" y="-62"/><use href="#rowbox" x="274" y="-62"/>
+          <use href="#rowbox" x="40" y="62"/><use href="#rowbox" x="118" y="62"/><use href="#rowbox" x="196" y="62"/><use href="#rowbox" x="274" y="62"/>
+        </svg></div><figcaption class="cap">Snack box เรียงแถว พร้อมออกส่งตอนเช้า</figcaption></figure>
+      <figure class="pol h2r rv-on"><div class="scene" style="background:#DCE6D3">
+        <svg viewBox="0 0 200 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="300" fill="#DCE6D3"/>
+          <g fill="#C9A27A" stroke="#B48A60" stroke-width="3"><rect x="40" y="230" width="120" height="44" rx="5"/><rect x="46" y="186" width="108" height="44" rx="5"/><rect x="52" y="142" width="96" height="44" rx="5"/><rect x="58" y="98" width="84" height="44" rx="5"/><rect x="64" y="54" width="72" height="44" rx="5"/></g>
+          <g fill="#fff" font-family="Noto Sans Thai" font-weight="900" text-anchor="middle"><text x="100" y="40" font-size="30" fill="#6B4A3A">500</text></g>
+          <path d="M70 76h60M70 120h60M64 164h72M58 208h84M52 252h96" stroke="#fff" stroke-width="3" stroke-dasharray="6 6"/>
+        </svg></div><figcaption class="cap">500 กล่อง · 4 พ.ย.</figcaption></figure>
+      <figure class="pol rv-on"><div class="scene" style="background:#fff">
+        <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="160" fill="#FBE3D6"/><use href="#f-sand" x="20" y="30" width="80" height="80"/><use href="#f-ksand" x="96" y="44" width="84" height="84"/></svg></div><figcaption class="cap">แซนด์วิชโบราณ &amp; เกาหลี</figcaption></figure>
+      <figure class="pol rv-on"><div class="scene">
+        <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="160" fill="#F6E7C9"/><use href="#f-cock" x="16" y="34" width="80" height="80"/><use href="#f-mac" x="100" y="46" width="76" height="76"/></svg></div><figcaption class="cap">ฟรุตค็อกเทล · มาการองมะพร้าว</figcaption></figure>
+      <figure class="pol rv-on"><div class="scene">
+        <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="160" fill="#E8EFE1"/><use href="#f-juice" x="30" y="24" width="60" height="110"/><use href="#f-juice" x="76" y="24" width="60" height="110"/><use href="#f-juice" x="122" y="24" width="60" height="110"/></svg></div><figcaption class="cap">น้ำส้มคั้นสด</figcaption></figure>
+      <figure class="pol rv-on"><div class="scene">
+        <svg viewBox="0 0 200 160" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="200" height="160" fill="#F3E3D3"/><use href="#f-rice" x="40" y="20" width="120" height="120"/></svg></div><figcaption class="cap">ข้าวกล่องงานอบรม</figcaption></figure>
+    </div>
+    <p class="gal-note rv-on">ภาพประกอบในเดโมนี้ จะเปลี่ยนเป็นรูปผลงานจริงจากเพจ · ดูรูปจริงได้ที่ <a href="https://www.instagram.com/kitchen_twobaby2/" target="_blank" rel="noopener">Instagram @kitchen_twobaby2</a> และ <a href="https://www.facebook.com/kitchentwobaby/" target="_blank" rel="noopener">Facebook</a></p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="sh rv-on">
+      <span class="eb">เสียงจากลูกค้า</span>
+      <h2>ประชุมจบ <em>ขนมก็หมดกล่อง</em></h2>
+    </div>
+    <div class="rvs">
+      <div class="rv rv-on"><span class="q">“</span><div class="stars">★★★★★</div><p>สั่งเบรคประชุม 80 กล่อง ส่งถึงก่อนเวลา กล่องเรียบร้อย ขนมไม่แฉะ ผู้บริหารถามว่าสั่งร้านไหน</p><div class="who"><div class="av">ธ</div><div><b>คุณธุรการ (ตัวอย่าง)</b><small>งานประชุมบริษัท</small></div></div></div>
+      <div class="rv rv-on"><span class="q">“</span><div class="stars">★★★★★</div><p>งานสวดอภิธรรม 3 คืน ร้านส่งตรงเวลาทุกคืน จัดกล่องสุภาพ แม่ครัวใจดี ช่วยคิดเมนูให้ตามงบ</p><div class="who"><div class="av">พ</div><div><b>คุณพิม (ตัวอย่าง)</b><small>งานบุญครอบครัว</small></div></div></div>
+      <div class="rv rv-on"><span class="q">“</span><div class="stars">★★★★★</div><p>เค้กกล้วยหอมกับน้ำส้มคั้นคือดีมาก สัมมนาทั้งวันมีข้าวกล่องด้วย จบเจ้าเดียว ไม่ต้องประสานหลายร้าน</p><div class="who"><div class="av">อ</div><div><b>อาจารย์ (ตัวอย่าง)</b><small>งานสัมมนา</small></div></div></div>
+    </div>
+    <p class="note">* รีวิวในหน้านี้เป็นข้อความตัวอย่างสำหรับ demo — เว็บไซต์จริงจะใช้รีวิวจากลูกค้าของร้าน</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sh rv-on"><span class="eb">คำถามที่พบบ่อย</span><h2>ก่อนสั่ง <em>ถามได้เลย</em></h2></div>
+    <div class="faq">
+      <details class="rv-on"><summary>ไม่มีงบตายตัว จัดตามงบได้ไหม?</summary><p>ได้ค่ะ บอกงบต่อหัวและจำนวนคน ร้านจะจัดชุดเมนูให้พอดีงบ ชุดราคาในเว็บเป็นตัวอย่างไว้กะงบคร่าว ๆ</p></details>
+      <details class="rv-on"><summary>ต้องสั่งล่วงหน้ากี่วัน?</summary><p>แนะนำ 2–3 วัน (ข้อมูลตัวอย่าง · รอร้านยืนยัน) งานใหญ่หลายร้อยกล่องหรือจัดนอกสถานที่ควรแจ้งเร็วกว่านั้น งานด่วนทักถามคิวได้</p></details>
+      <details class="rv-on"><summary>ส่งที่ไหนได้บ้าง ค่าส่งเท่าไหร่?</summary><p>ส่งฟรีในพื้นที่พระราม 2 ส่งทั่วกรุงเทพฯ (ค่าส่งตามระยะทาง แจ้งในแชต) หรือมารับเองที่ร้านได้</p></details>
+      <details class="rv-on"><summary>ออกใบเสร็จ / ใบเสนอราคาให้หน่วยงานได้ไหม?</summary><p>สอบถามรูปแบบเอกสารที่หน่วยงานต้องใช้กับร้านได้โดยตรง (รอร้านยืนยัน)</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eb" style="color:var(--peach)">ติดต่อ &amp; พื้นที่จัดส่ง</span>
+      <h2>สั่งเบรค <span>ทักได้ทุกช่องทาง</span></h2>
+      <div class="cinfo">
+        <div class="ci"><div class="i"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div><div><b>โทรสั่ง / สอบถาม</b><a href="tel:0909062345" class="ph">090-906-2345</a><a href="tel:0971087111" class="ph">097-108-7111</a></div></div>
+        <div class="ci"><div class="i"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4-.9L3 20l1.1-4A8.4 8.4 0 1 1 21 11.5z"/></svg></div><div><b>LINE ID</b><a href="https://line.me/ti/p/~Byissareema" target="_blank" rel="noopener" class="ph" style="font-size:20px">Byissareema</a><span style="display:block;font-size:14px">หรือทักเพจ <a href="https://www.facebook.com/kitchentwobaby/" target="_blank" rel="noopener" style="text-decoration:underline">Facebook Kitchen_Twobaby</a> · IG <a href="https://www.instagram.com/kitchen_twobaby2/" target="_blank" rel="noopener" style="text-decoration:underline">@kitchen_twobaby2</a></span></div></div>
+        <div class="ci"><div class="i"><svg viewBox="0 0 24 24"><path d="M3 16V8h11v8"/><path d="M14 11h4l3 3v2h-7"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div><div style="flex:1"><b>พื้นที่จัดส่ง</b>
+          <div class="zones">
+            <div class="zone">ย่านพระราม 2 <em>ส่งฟรี</em></div>
+            <div class="zone">ทั่วกรุงเทพฯ <em>ตามระยะทาง</em></div>
+            <div class="zone">มารับเองที่ร้าน <em>นัดเวลาในแชต</em></div>
+          </div></div></div>
+      </div>
+      <div class="cta-row" style="margin-top:0">
+        <a href="tel:0909062345" class="btn" style="background:var(--peach);color:var(--cocoa)">📞 โทรเลย</a>
+        <a href="https://line.me/ti/p/~Byissareema" target="_blank" rel="noopener" class="btn btn-line">💬 แอด LINE</a>
+      </div>
+    </div>
+    <div class="map rv-on">
+      <span class="pin">📍 ครัวย่านพระราม 2 · ที่อยู่ร้านรอยืนยัน</span>
+      <iframe title="แผนที่ย่านพระราม 2 กรุงเทพ" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A3%E0%B8%B2%E0%B8%A1%202%20%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E&z=13&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand"><img src="assets/logo.jpg" alt=""><div><div class="t1">Kitchen_Twobaby</div><div class="t2">รับจัดเบรค · อาหารว่าง · snack box</div></div></div>
+        <p>รับจัดเบรค อาหารว่าง Snack box ข้าวกล่อง จัดนอกสถานที่ ย่านพระราม 2 กรุงเทพฯ — อร่อย คุ้มค่า ใส่ใจทุกกล่อง</p>
+      </div>
+      <div><h4 class="hd">เมนูเว็บไซต์</h4><ul><li><a href="#menuitems">เมนูในกล่อง</a></li><li><a href="#sets">ชุดเบรคแนะนำ</a></li><li><a href="#planner">จัดชุดตามงบ</a></li><li><a href="#events">งานที่รับ</a></li><li><a href="#gallery">ผลงาน</a></li></ul></div>
+      <div><h4 class="hd">ติดต่อ</h4><ul><li>☎️ <a href="tel:0909062345">090-906-2345</a></li><li>☎️ <a href="tel:0971087111">097-108-7111</a></li><li>💬 LINE ID <a href="https://line.me/ti/p/~Byissareema" target="_blank" rel="noopener">Byissareema</a></li><li>📘 <a href="https://www.facebook.com/kitchentwobaby/" target="_blank" rel="noopener">Facebook</a> · 📷 <a href="https://www.instagram.com/kitchen_twobaby2/" target="_blank" rel="noopener">Instagram</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Kitchen_Twobaby · พระราม 2 กรุงเทพฯ</span><span>Website demo โดย <b>Relearn Solution</b></span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://line.me/ti/p/~Byissareema" target="_blank" rel="noopener" class="ln" aria-label="LINE"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5 1.1-.4 5.9-3.5 8-6C21.4 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg></a>
+  <a href="tel:0909062345" class="call" aria-label="โทร 090-906-2345"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></a>
+</div>
+<div class="toast" id="toast">คัดลอกข้อความแล้ว ✓</div>
+
+<script>
+const $ = id => document.getElementById(id);
+// reveal
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.rv-on').forEach((el, i) => { el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+// count-up
+document.querySelectorAll('[data-count]').forEach(el => {
+  const end = +el.dataset.count, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce) { el.textContent = end; return; }
+  let n = 0; const t = setInterval(() => { n += 10; el.textContent = Math.min(n, end); if (n >= end) clearInterval(t); }, 20);
+});
+// burger
+const menu = $('menu'), burger = $('burger');
+burger.addEventListener('click', () => { const o = menu.classList.toggle('open'); burger.setAttribute('aria-expanded', o); });
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); burger.setAttribute('aria-expanded', false); }));
+
+// ---------- planner ----------
+const ITEMS = { sand:'แซนด์วิชโบราณ', ksand:'แซนด์วิชเกาหลี', crois:'ครัวซองต์', cake:'เค้กกล้วยหอม', mac:'มาการองมะพร้าว', fruit:'ผลไม้', cock:'ฟรุตค็อกเทล', juice:'น้ำส้มคั้น', rice:'ข้าวกล่อง', water:'น้ำดื่ม' };
+const SNACKS = ['sand','crois','cake','ksand','mac'];
+// tiers: [min budget, name, price, snacks, extras(fixed), drink]
+const TIERS = [
+  { min:0,   name:'SET S · ขนม 1 + น้ำ 1', price:35, snacks:1, extra:[], drink:'water' },
+  { min:45,  name:'SET M · ขนม 2 + น้ำ 1', price:45, snacks:2, extra:[], drink:'water' },
+  { min:59,  name:'SET L · ขนม 2 + ผลไม้ + น้ำส้มคั้น', price:59, snacks:2, extra:['fruit'], drink:'juice' },
+  { min:79,  name:'RICE BOX · ข้าวกล่อง + ขนม + น้ำ', price:79, snacks:1, extra:['rice'], drink:'water' },
+  { min:100, name:'PREMIUM · ข้าวกล่อง + ขนม 2 + ฟรุตค็อกเทล + น้ำส้มคั้น', price:null, snacks:2, extra:['rice','cock'], drink:'juice' }
+];
+const st = { ev:'ประชุม', fav:new Set(), del:'ส่งในพระราม 2', fee:'ส่งฟรี' };
+function chipGroup(id, multi, cb){
+  $(id).querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => {
+    if (multi) c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') !== 'true');
+    else $(id).querySelectorAll('.chip').forEach(x => x.setAttribute('aria-pressed', x === c));
+    cb(c); render();
+  }));
+}
+chipGroup('evChips', false, c => st.ev = c.textContent.trim());
+chipGroup('favChips', true, c => { const k = c.dataset.k; st.fav.has(k) ? st.fav.delete(k) : st.fav.add(k); });
+chipGroup('delChips', false, c => { st.del = c.textContent.trim(); st.fee = c.dataset.fee; });
+['budget','qty','date','time','place','org'].forEach(id => $(id).addEventListener('input', render));
+$('minus').onclick = () => { $('qty').value = Math.max(1, (+$('qty').value || 0) - 10); render(); };
+$('plus').onclick = () => { $('qty').value = (+$('qty').value || 0) + 10; render(); };
+document.querySelectorAll('[data-pick]').forEach(b => b.addEventListener('click', () => { $('budget').value = b.dataset.pick; render(); }));
+// date min = today
+const today = new Date(); const iso = d => d.toISOString().slice(0,10);
+const tz = d => new Date(d.getTime() - d.getTimezoneOffset()*60000);
+$('date').min = iso(tz(today));
+const d3 = new Date(today); d3.setDate(d3.getDate()+3); $('date').value = iso(tz(d3));
+
+function thDate(v){ if(!v) return '(ยังไม่ระบุ)'; const [y,m,d] = v.split('-').map(Number); const M=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.']; return d+' '+M[m-1]+' '+(y+543); }
+let lastMsg = '';
+function render(){
+  const b = +$('budget').value, q = Math.max(0, parseInt($('qty').value) || 0);
+  $('budgetOut').textContent = b + ' ฿';
+  const tier = [...TIERS].reverse().find(t => b >= t.min);
+  $('tierName').textContent = tier.name;
+  // compose box: favourites first
+  const favSnacks = [...st.fav].filter(k => SNACKS.includes(k));
+  const snacks = [...favSnacks, ...SNACKS.filter(k => !favSnacks.includes(k))].slice(0, tier.snacks);
+  let box = [...tier.extra, ...snacks];
+  if (st.fav.has('fruit') && !box.includes('fruit') && box.length < 4) box.push('fruit');
+  if (st.fav.has('cock') && !box.includes('cock') && b >= 59 && box.length < 5) box.push('cock');
+  const drink = st.fav.has('juice') && b >= 45 ? 'juice' : tier.drink;
+  box.push(drink);
+  $('slots').innerHTML = box.map(k => `<div class="slot"><svg aria-hidden="true"><use href="#f-${k}"/></svg>${ITEMS[k]}</div>`).join('');
+  const per = tier.price ? Math.max(tier.price, b) : b;
+  $('total').textContent = (per * q).toLocaleString('th-TH') + ' ฿';
+  $('fee').textContent = st.fee;
+  $('minWarn').classList.toggle('on', q > 0 && q < 20);
+  const dv = $('date').value; let urgent = false;
+  if (dv) { const diff = (new Date(dv) - new Date(iso(tz(today)))) / 864e5; urgent = diff < 2; }
+  $('dateWarn').classList.toggle('on', urgent);
+  const favTxt = st.fav.size ? [...st.fav].map(k => ITEMS[k]).join(', ') : 'ให้ร้านแนะนำ';
+  const place = $('place').value.trim(), org = $('org').value.trim();
+  lastMsg =
+`สวัสดีค่ะ Kitchen_Twobaby 😊 ขอใบเสนอราคาจัดเบรคค่ะ
+• งาน: ${st.ev}
+• วันที่: ${thDate(dv)} เวลาส่งถึง ${$('time').value || '-'} น.
+• จำนวน: ${q.toLocaleString('th-TH')} กล่อง
+• งบต่อหัว: ประมาณ ${b} บาท (${tier.name})
+• เมนูที่สนใจ: ${favTxt}
+• การรับสินค้า: ${st.del}${place ? ' — ' + place : ''}
+• ผู้ติดต่อ/หน่วยงาน: ${org || '-'}
+รบกวนแจ้งราคาจริงและเงื่อนไขค่ะ ขอบคุณค่ะ 🙏`;
+  $('msg').textContent = lastMsg;
+}
+function toast(t){ const el = $('toast'); el.textContent = t; el.classList.add('on'); setTimeout(() => el.classList.remove('on'), 2200); }
+async function copyMsg(){ try { await navigator.clipboard.writeText(lastMsg); return true; } catch(e) { const ta = document.createElement('textarea'); ta.value = lastMsg; document.body.appendChild(ta); ta.select(); let ok=false; try{ ok = document.execCommand('copy'); }catch(_){} ta.remove(); return ok; } }
+$('copyBtn').onclick = async () => { toast(await copyMsg() ? 'คัดลอกข้อความแล้ว ✓' : 'คัดลอกไม่สำเร็จ กรุณาเลือกข้อความเอง'); };
+$('lineBtn').addEventListener('click', () => { copyMsg().then(ok => ok && toast('คัดลอกแล้ว — วางในแชต LINE ได้เลย')); });
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ntchemical กำจัดปลวกครบวงจร | ธัญบุรี ปทุมธานี · สัญญารายปี ปีละ 4 ครั้ง</title>
+<meta name="description" content="Ntchemical กำจัดปลวกครบวงจร ทำมา 15 ปี ธัญบุรี ปทุมธานี น้ำยาฟิโปรนิล 5% สูตรไร้กลิ่นฉุน สัญญารายปีเข้าบริการทุก 3 เดือน รับประกันเหยื่อตลอดสัญญา แถมกำจัดมด แมลงสาบ ตะขาบ รับงานด่วน">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0F2465; --navy2:#02246C; --navy3:#0A1A4D; --navy4:#16307f; --ink:#0B1638;
+  --red:#DD1402; --red2:#b81000; --yel:#F7E448; --org:#EF5E01; --org2:#ff8a2a;
+  --w:#fff; --sky:#EEF3FF; --sky2:#dfe8ff; --soil:#8a5a2b; --soil2:#6e4520;
+  --head:'Noto Sans Thai',sans-serif; --body:'Sarabun',sans-serif;
+  --r:22px; --sh:0 22px 44px -22px rgba(2,36,108,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--body);color:var(--ink);background:var(--w);line-height:1.7;font-size:17px;overflow-x:hidden}
+h1,h2,h3,h4,.hd{font-family:var(--head);line-height:1.25}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit}
+.wrap{width:min(1200px,92%);margin:0 auto}
+.grad{background:linear-gradient(180deg,var(--yel) 20%,var(--org2) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* topbar */
+.topbar{background:var(--red);color:#fff;font-size:14.5px;font-weight:600}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:7px 0;flex-wrap:wrap}
+.topbar b{color:var(--yel)}
+.live{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--yel);margin-right:8px;box-shadow:0 0 0 0 rgba(247,228,72,.8);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(247,228,72,0)}100%{box-shadow:0 0 0 0 rgba(247,228,72,0)}}
+
+/* nav */
+nav.main{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 6px 24px -14px rgba(2,36,108,.5)}
+nav.main .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:56px;height:56px;border-radius:50%;box-shadow:0 0 0 3px var(--navy),0 0 0 6px var(--yel)}
+.brand .t1{font-family:var(--head);font-weight:900;font-size:22px;color:var(--navy);line-height:1;letter-spacing:.3px}
+.brand .t1 span{color:var(--red)}
+.brand .t2{font-size:13px;font-weight:700;color:var(--org)}
+.menu{display:flex;gap:26px;font-family:var(--head);font-weight:700;font-size:15.5px;color:var(--navy)}
+.menu a{position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:50%;bottom:0;width:0;height:3px;border-radius:3px;background:var(--red);transition:.25s;transform:translateX(-50%)}
+.menu a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:800;border-radius:999px;padding:13px 26px;cursor:pointer;transition:transform .18s,box-shadow .18s,background .18s;white-space:nowrap;border:0;font-size:16.5px}
+.btn svg{width:20px;height:20px;flex:none}
+.btn:hover{transform:translateY(-3px)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 6px 0 var(--red2),0 16px 30px -10px rgba(221,20,2,.6)}
+.btn-red:hover{box-shadow:0 9px 0 var(--red2),0 20px 34px -10px rgba(221,20,2,.6)}
+.btn-yel{background:var(--yel);color:var(--navy);box-shadow:0 6px 0 #c9b300}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2.5px rgba(255,255,255,.8)}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff;box-shadow:0 6px 0 var(--navy3)}
+.btn-msg{background:#0866FF;color:#fff;box-shadow:0 6px 0 #0549b8}
+.burger{display:none;background:none;border:0;cursor:pointer;width:46px;height:46px;border-radius:12px;background:var(--navy);place-items:center}
+
+/* hero */
+.hero{position:relative;background:radial-gradient(900px 600px at 75% 40%,#1d3c9e 0,var(--navy) 55%,var(--navy3) 100%);color:#fff;overflow:hidden;padding:70px 0 130px}
+.rays{position:absolute;left:72%;top:46%;width:1800px;height:1800px;translate:-50% -50%;background:repeating-conic-gradient(rgba(255,255,255,.045) 0 6deg,transparent 6deg 14deg);border-radius:50%;animation:rot 90s linear infinite;pointer-events:none}
+@keyframes rot{to{rotate:360deg}}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(247,228,72,.16) 1.4px,transparent 1.6px);background-size:22px 22px;mask-image:linear-gradient(100deg,#000 0,transparent 45%);pointer-events:none}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.ribbon-tag{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;font-family:var(--head);font-weight:800;font-size:15px;padding:8px 22px 8px 14px;clip-path:polygon(0 0,100% 0,94% 50%,100% 100%,0 100%);transform:rotate(-2deg)}
+.ribbon-tag i{font-style:normal;background:var(--yel);color:var(--navy);border-radius:999px;padding:0 10px;font-size:13px}
+.hero h1{font-size:clamp(42px,6vw,80px);font-weight:900;margin:22px 0 14px;letter-spacing:-.5px;line-height:1.12}
+.hero h1 .l2{display:block}
+.hero h1 .bang{display:inline-block;color:var(--yel);transform:rotate(8deg)}
+.hero .lead{font-size:20px;color:#d7e0ff;max-width:580px}
+.hero .lead b{color:var(--yel)}
+.cta-row{display:flex;gap:16px;margin-top:30px;flex-wrap:wrap;align-items:center}
+.phone-note{display:block;font-size:12.5px;color:#9fb0e6;margin-top:10px}
+.stats{display:grid;grid-template-columns:repeat(4,auto);gap:14px;margin-top:38px;justify-content:start}
+.stat{background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.16);border-radius:18px;padding:12px 18px;min-width:118px}
+.stat .n{font-family:var(--head);font-weight:900;font-size:34px;line-height:1.05}
+.stat .l{font-size:13.5px;color:#b8c6f2}
+
+.hero-art{position:relative;width:100%;max-width:560px;justify-self:center;aspect-ratio:1/1}
+.disc{position:absolute;inset:6%;border-radius:50%;background:radial-gradient(circle at 50% 35%,#fff 0,#eef3ff 60%,#cfdcff 100%);box-shadow:0 0 0 10px var(--navy2),0 0 0 16px var(--yel),0 0 0 22px var(--red),0 40px 80px -20px rgba(0,0,0,.6);overflow:hidden}
+.disc svg{width:100%;height:100%}
+.sticker{position:absolute;font-family:var(--head);font-weight:900;line-height:1.15;text-align:center;z-index:3}
+.st-round{width:128px;height:128px;border-radius:50%;background:var(--yel);color:var(--navy);display:grid;place-items:center;box-shadow:0 0 0 5px var(--navy),0 18px 30px -10px rgba(0,0,0,.5);transform:rotate(-10deg)}
+.st-round b{font-size:44px;display:block;line-height:.9}
+.st-round small{font-size:13px;font-weight:800}
+.st1{top:-1%;left:-2%;animation:bob 4.4s ease-in-out infinite}
+.st-pill{background:#fff;color:var(--navy);border-radius:16px;padding:10px 16px;font-size:15px;box-shadow:0 0 0 3px var(--navy),6px 8px 0 var(--red);text-align:left}
+.st-pill small{display:block;font-size:12px;font-weight:700;color:var(--org)}
+.st2{top:8%;right:-3%;transform:rotate(5deg);animation:bob 5s ease-in-out infinite .5s}
+.st3{bottom:8%;left:-5%;transform:rotate(-4deg);animation:bob 4.8s ease-in-out infinite 1s}
+.st4{bottom:-1%;right:4%;background:var(--red);color:#fff;border-radius:14px;padding:10px 18px;font-size:17px;box-shadow:0 0 0 3px #fff,0 14px 24px -8px rgba(0,0,0,.5);transform:rotate(-3deg);animation:bob 4.2s ease-in-out infinite .2s}
+@keyframes bob{50%{translate:0 -10px}}
+.hero-curve{position:absolute;left:0;right:0;bottom:-2px;height:90px;z-index:2}
+
+/* marquee */
+.mq-wrap{position:relative;z-index:5;margin-top:-62px;padding:16px 0 30px;margin-bottom:-14px;overflow:hidden;background:linear-gradient(transparent 50%,var(--sky) 50%)}
+.marquee{position:relative;margin:0 -20px;transform:rotate(-1.6deg);background:var(--red);border-top:4px solid var(--yel);border-bottom:4px solid var(--yel);overflow:hidden;padding:13px 0;box-shadow:0 18px 30px -16px rgba(0,0,0,.5)}
+.track{display:flex;width:max-content;animation:slide 40s linear infinite;font-family:var(--head);font-weight:800;font-size:20px;color:#fff}
+.track span{display:flex;align-items:center;gap:30px;padding-right:30px}
+.track span::after{content:"";width:22px;height:22px;flex:none;background:var(--yel);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0l3 8.5 9 .5-7 5.6 2.5 9.4L12 18.8 4.5 24 7 14.6 0 9l9-.5z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0l3 8.5 9 .5-7 5.6 2.5 9.4L12 18.8 4.5 24 7 14.6 0 9l9-.5z'/%3E%3C/svg%3E") center/contain no-repeat}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* section shells */
+section{padding:100px 0;position:relative}
+.sec-head{text-align:center;max-width:780px;margin:0 auto 54px}
+.eyebrow{display:inline-block;font-family:var(--head);font-weight:800;font-size:14px;letter-spacing:1px;background:var(--navy);color:var(--yel);padding:7px 22px;clip-path:polygon(6% 0,100% 0,94% 100%,0 100%);margin-bottom:16px}
+.sec-head h2,.h2{font-size:clamp(32px,4.3vw,52px);font-weight:900;color:var(--navy)}
+.sec-head h2 .r,.h2 .r{color:var(--red)}
+.sec-head h2 mark,.h2 mark{background:linear-gradient(transparent 60%,var(--yel) 60%);color:inherit;padding:0 4px}
+.sec-head p{margin-top:14px;color:#46557e;font-size:18px}
+.sample{display:inline-block;font-size:12.5px;font-weight:700;color:#8a4b00;background:#fff3c4;border:1.5px dashed #e2a400;border-radius:8px;padding:2px 10px}
+
+/* services */
+.services{background:var(--sky);overflow:hidden}
+.services::before{content:"";position:absolute;right:-200px;top:-200px;width:520px;height:520px;border-radius:50%;border:60px solid rgba(15,36,101,.05)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.svc{background:#fff;border-radius:var(--r);padding:30px 26px 26px;position:relative;box-shadow:var(--sh);transition:.25s;overflow:hidden;border:2px solid transparent}
+.svc::before{content:"";position:absolute;left:0;right:0;top:0;height:7px;background:linear-gradient(90deg,var(--navy),var(--navy4))}
+.svc:hover{transform:translateY(-6px);border-color:var(--navy)}
+.svc .ic{width:86px;height:86px;border-radius:50%;background:var(--sky);display:grid;place-items:center;margin-bottom:16px;box-shadow:inset 0 0 0 3px var(--navy)}
+.svc .ic svg{width:58px;height:58px}
+.svc h3{font-size:23px;font-weight:900;color:var(--navy)}
+.svc p{color:#4a5679;font-size:16px;margin-top:6px}
+.svc ul{list-style:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
+.svc li{font-size:13px;font-weight:700;background:var(--sky);color:var(--navy);border-radius:999px;padding:3px 12px}
+.svc.hot{background:var(--navy);color:#fff}
+.svc.hot::before{background:linear-gradient(90deg,var(--red),var(--org),var(--yel))}
+.svc.hot h3{color:var(--yel)}
+.svc.hot p{color:#c9d5ff}
+.svc.hot .ic{background:var(--navy4);box-shadow:inset 0 0 0 3px var(--yel)}
+.svc.hot li{background:rgba(255,255,255,.1);color:#fff}
+.svc .flag{position:absolute;top:18px;right:-34px;background:var(--red);color:#fff;font-family:var(--head);font-weight:800;font-size:13px;padding:4px 40px;transform:rotate(38deg)}
+
+/* annual contract */
+.contract{background:var(--navy);color:#fff;overflow:hidden}
+.contract::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.03) 0 24px,transparent 24px 48px)}
+.contract .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.contract .h2{color:#fff}
+.contract .h2 .y{color:var(--yel)}
+.contract p.lead{color:#c9d5ff;font-size:18px;margin-top:14px}
+.perks{list-style:none;display:grid;gap:14px;margin:28px 0 32px}
+.perks li{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.06);border-radius:16px;padding:14px 16px;border:1.5px solid rgba(255,255,255,.12)}
+.perks li .ck{flex:0 0 38px;height:38px;border-radius:50%;background:var(--yel);display:grid;place-items:center}
+.perks li .ck svg{width:20px;height:20px}
+.perks b{font-family:var(--head);color:var(--yel);display:block;font-size:17px}
+.perks span{color:#d7e0ff;font-size:15.5px}
+.clock{position:relative;width:min(470px,100%);aspect-ratio:1;margin:0 auto}
+.clock svg{width:100%;height:100%;overflow:visible}
+.clock .mid{position:absolute;inset:31%;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;text-align:center;box-shadow:0 0 0 8px var(--red),0 20px 40px -10px rgba(0,0,0,.5)}
+.clock .mid b{font-family:var(--head);font-weight:900;font-size:clamp(44px,6vw,64px);line-height:.95;color:var(--red)}
+.clock .mid small{font-family:var(--head);font-weight:800;font-size:15px;display:block}
+.clock .mid em{font-style:normal;font-size:13px;color:#5a6890;display:block}
+
+/* widget */
+.tool{background:linear-gradient(180deg,#fff 0,var(--sky) 100%)}
+.tabs{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.tab{border:0;cursor:pointer;background:#fff;color:var(--navy);font-family:var(--head);font-weight:800;font-size:16px;padding:12px 22px;border-radius:999px;box-shadow:inset 0 0 0 2.5px var(--navy);display:flex;align-items:center;gap:10px;transition:.2s}
+.tab svg{width:30px;height:30px}
+.tab[aria-selected="true"]{background:var(--navy);color:#fff;box-shadow:0 10px 20px -10px var(--navy)}
+.method{display:grid;grid-template-columns:.85fr 1.15fr;gap:0;background:#fff;border-radius:28px;box-shadow:var(--sh);overflow:hidden;margin-bottom:46px;border:3px solid var(--navy)}
+.method .art{background:var(--sky);display:grid;place-items:center;padding:24px;border-right:3px dashed var(--sky2);min-height:300px}
+.method .art svg{width:100%;max-width:340px;height:auto}
+.method .txt{padding:34px 36px}
+.method h3{font-size:30px;font-weight:900;color:var(--navy)}
+.method h3 small{display:block;font-size:15px;color:var(--org);font-weight:800}
+.mrows{margin-top:16px;display:grid;gap:12px}
+.mrow{display:grid;grid-template-columns:120px 1fr;gap:12px;border-bottom:1.5px dashed #d9e2fa;padding-bottom:10px}
+.mrow b{font-family:var(--head);color:var(--red);font-size:15px}
+.mrow span{color:#3d4a70;font-size:16px}
+.meter{display:flex;gap:5px;align-items:center}
+.meter i{width:26px;height:10px;border-radius:5px;background:#dfe6fa}
+.meter i.on{background:var(--org)}
+
+.quiz{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.qbox{background:var(--navy);color:#fff;border-radius:28px;padding:30px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.qbox::after{content:"?";position:absolute;right:-10px;bottom:-60px;font-family:var(--head);font-weight:900;font-size:260px;color:rgba(255,255,255,.05);line-height:1}
+.qbox h3{font-size:24px;font-weight:900;color:var(--yel);margin-bottom:6px}
+.q{margin-top:20px;position:relative;z-index:1}
+.q>b{font-family:var(--head);font-weight:800;display:flex;align-items:center;gap:10px;margin-bottom:10px;font-size:16.5px}
+.q>b i{font-style:normal;width:28px;height:28px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:14px;flex:none}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{cursor:pointer;border:0;border-radius:999px;padding:9px 16px;background:rgba(255,255,255,.1);color:#fff;font-weight:700;font-size:15px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.25);transition:.15s}
+.opt:hover{background:rgba(255,255,255,.18)}
+.opt[aria-pressed="true"]{background:var(--yel);color:var(--navy);box-shadow:none}
+.range{display:flex;align-items:center;gap:14px}
+.range input{flex:1;accent-color:var(--yel);height:6px}
+.range output{font-family:var(--head);font-weight:900;font-size:22px;color:var(--yel);min-width:120px;text-align:right}
+select.sel{background:rgba(255,255,255,.1);color:#fff;border:0;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.3);border-radius:12px;padding:9px 12px;font:inherit;font-weight:700}
+select.sel option{color:var(--ink)}
+.result{background:#fff;border-radius:28px;padding:30px;box-shadow:var(--sh);border:3px solid var(--navy);position:relative}
+.result .badge{position:absolute;top:-18px;left:26px;background:var(--red);color:#fff;font-family:var(--head);font-weight:800;padding:5px 16px;border-radius:999px;font-size:14px}
+.rec{display:flex;gap:16px;align-items:center;margin-top:6px}
+.rec .ic{flex:0 0 74px;height:74px;border-radius:50%;background:var(--sky);display:grid;place-items:center;box-shadow:inset 0 0 0 3px var(--navy)}
+.rec .ic svg{width:50px;height:50px}
+.rec h4{font-size:26px;font-weight:900;color:var(--navy)}
+.rec p{font-size:15.5px;color:#4a5679}
+.plus{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.plus span{font-size:13.5px;font-weight:700;background:#fff3c4;color:#7a4a00;border-radius:999px;padding:3px 12px}
+.cal-h{font-family:var(--head);font-weight:800;color:var(--navy);margin:22px 0 10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:16px}
+.cal{display:grid;grid-template-columns:repeat(12,1fr);gap:5px}
+.cal div{background:var(--sky);border-radius:10px;text-align:center;padding:8px 0 6px;font-size:12.5px;font-weight:700;color:#6a7698;position:relative}
+.cal div.v{background:var(--navy);color:#fff}
+.cal div.v::before{content:attr(data-n);display:block;font-family:var(--head);font-weight:900;color:var(--yel);font-size:15px;line-height:1.1}
+.cal div:not(.v)::before{content:"·";display:block;font-size:15px;line-height:1.1;color:#b5c0de}
+textarea.msg{width:100%;margin-top:18px;border:2px solid #d9e2fa;border-radius:16px;padding:14px;font:inherit;font-size:15px;color:var(--ink);background:#fafcff;resize:vertical;min-height:150px}
+.res-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.res-cta .btn{padding:11px 20px;font-size:15.5px}
+.fine{font-size:13px;color:#6a7698;margin-top:12px}
+
+/* jobs */
+.jobs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.job{border-radius:var(--r);overflow:hidden;background:#fff;box-shadow:var(--sh);display:flex;flex-direction:column;transition:.25s}
+.job:hover{transform:translateY(-6px)}
+.job .cv{aspect-ratio:16/10;position:relative;background:var(--sky)}
+.job .cv svg{width:100%;height:100%;display:block}
+.job .date{position:absolute;left:14px;top:14px;background:var(--red);color:#fff;font-family:var(--head);font-weight:800;font-size:13px;padding:4px 12px;border-radius:999px}
+.job .bd{padding:20px 22px 24px}
+.job h3{font-size:20px;font-weight:900;color:var(--navy)}
+.job p{color:#4a5679;font-size:15.5px;margin-top:6px}
+.job .loc{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-weight:700;font-size:14px;color:var(--org)}
+
+/* steps */
+.steps-sec{background:var(--yel);overflow:hidden}
+.steps-sec::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(15,36,101,.12) 1.4px,transparent 1.6px);background-size:20px 20px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative}
+.step{background:#fff;border-radius:var(--r);padding:28px 22px 24px;position:relative;box-shadow:0 0 0 3px var(--navy),8px 10px 0 var(--navy)}
+.step .no{position:absolute;top:-24px;left:22px;width:52px;height:52px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-family:var(--head);font-weight:900;font-size:24px;box-shadow:0 0 0 4px #fff,0 0 0 7px var(--navy)}
+.step svg{width:54px;height:54px;margin:12px 0 8px}
+.step h4{font-size:20px;font-weight:900;color:var(--navy)}
+.step p{font-size:15.5px;color:#4a5679;margin-top:4px}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:16px}
+.tile{border-radius:20px;overflow:hidden;position:relative;background:var(--navy)}
+.tile svg{width:100%;height:100%;display:block}
+.tile.big{grid-column:span 2;grid-row:span 2}
+.tile.wide{grid-column:span 2}
+.tile .lbl{position:absolute;left:12px;bottom:12px;right:12px;display:flex;justify-content:space-between;align-items:flex-end;gap:8px}
+.tile .lbl b{font-family:var(--head);font-weight:800;color:#fff;font-size:16px;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+.tile .lbl span{background:rgba(255,255,255,.92);color:var(--navy);font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px;white-space:nowrap}
+
+/* reviews */
+.reviews{background:var(--sky)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev{background:#fff;border-radius:var(--r);padding:28px;box-shadow:var(--sh);position:relative}
+.rev::after{content:"";position:absolute;left:34px;bottom:-16px;border:16px solid transparent;border-top-color:#fff;border-bottom:0}
+.rev .stars{color:var(--org);letter-spacing:3px;font-size:18px}
+.rev p{margin:10px 0 0;font-size:16.5px;color:#2f3a5c}
+.who{display:flex;align-items:center;gap:12px;margin:30px 0 0 14px}
+.who .av{width:48px;height:48px;border-radius:50%;background:var(--navy);color:var(--yel);display:grid;place-items:center;font-family:var(--head);font-weight:900;box-shadow:0 0 0 3px var(--yel)}
+.who b{font-family:var(--head);color:var(--navy);display:block}
+.who small{color:#6a7698}
+.note{text-align:center;color:#6a7698;font-size:13.5px;margin-top:30px}
+
+/* contact */
+.contact{background:var(--navy3);color:#fff;overflow:hidden}
+.contact .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:50px;align-items:stretch;position:relative}
+.contact .h2{color:#fff}
+.contact .h2 .y{color:var(--yel)}
+.info{display:grid;gap:14px;margin:26px 0}
+.info .it{display:flex;gap:16px;align-items:flex-start;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.12);border-radius:18px;padding:16px 18px}
+.info .i{flex:0 0 48px;height:48px;border-radius:50%;background:var(--yel);display:grid;place-items:center}
+.info .i svg{width:24px;height:24px;stroke:var(--navy);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.info b{font-family:var(--head);color:var(--yel);display:block;font-size:15px}
+.info span{color:#d7e0ff}
+.info .ph{font-family:var(--head);font-weight:900;font-size:30px;color:#fff;letter-spacing:.5px}
+.info .ph+small{display:inline-block;margin-left:8px;font-size:12px;background:rgba(247,228,72,.15);color:var(--yel);border-radius:999px;padding:1px 10px;vertical-align:middle}
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.areas span{background:rgba(255,255,255,.08);color:#fff;border-radius:999px;padding:3px 13px;font-size:14px;font-weight:600}
+.areas span.hq{background:var(--red)}
+.map{border-radius:28px;overflow:hidden;min-height:460px;position:relative;background:#dfe8ff;box-shadow:0 0 0 6px var(--yel),0 0 0 12px var(--red)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map .pin{position:absolute;left:50%;bottom:44px;translate:-50% 0;white-space:nowrap;z-index:2;background:#fff;color:var(--navy);font-family:var(--head);font-weight:800;font-size:14px;border-radius:999px;padding:6px 14px;box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
+
+/* urgent band */
+.urgent{padding:0;background:var(--navy3)}
+.urgent-box{background:linear-gradient(100deg,var(--red) 0,var(--org) 100%);border-radius:28px;display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;padding:28px 36px;transform:translateY(56px);position:relative;z-index:2;color:#fff;box-shadow:0 30px 60px -24px rgba(0,0,0,.6)}
+.urgent-box svg{width:84px;height:84px}
+.urgent-box h3{font-size:28px;font-weight:900}
+.urgent-box p{color:#ffe9dc}
+
+footer{background:#07112f;color:#9aa8d2;padding:110px 0 28px;font-size:15px}
+.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid #1a2a5a}
+footer h4{color:#fff;font-size:18px;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:var(--yel)}
+.ft .brand .t1{color:#fff}
+.ft p{margin-top:14px;max-width:340px}
+.copy{display:flex;justify-content:space-between;padding-top:22px;font-size:13.5px;flex-wrap:wrap;gap:10px}
+.copy b{color:var(--yel)}
+
+/* fab */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;gap:12px}
+.fab a{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 0 3px #fff,0 12px 24px -8px rgba(0,0,0,.5);transition:.2s}
+.fab a:hover{transform:scale(1.08)}
+.fab .call{background:var(--red);animation:ring 2.2s infinite}
+.fab .msg{background:#0866FF}
+.fab svg{width:28px;height:28px}
+@keyframes ring{0%,100%{box-shadow:0 0 0 3px #fff,0 0 0 3px rgba(221,20,2,.6)}50%{box-shadow:0 0 0 3px #fff,0 0 0 16px rgba(221,20,2,0)}}
+
+.toast{position:fixed;left:50%;bottom:24px;translate:-50% 220%;opacity:0;background:var(--navy);color:#fff;font-family:var(--head);font-weight:700;padding:12px 22px;border-radius:999px;z-index:80;transition:translate .3s;box-shadow:0 0 0 3px var(--yel)}
+.toast.show{translate:-50% 0;opacity:1}
+
+.rv-on{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.rv-on.in{opacity:1;transform:none}
+
+@media (max-width:1080px){
+  .svc-grid,.jobs-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr);row-gap:44px}
+  .ft{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:repeat(2,auto)}
+}
+@media (max-width:920px){
+  .menu,.nav-cta{display:none}
+  .burger{display:grid}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:#fff;padding:18px 4% 22px;gap:14px;box-shadow:0 20px 30px -20px rgba(2,36,108,.5);border-top:3px solid var(--red)}
+  .hero{padding:44px 0 120px}
+  .hero .wrap,.contract .wrap,.contact .wrap,.quiz{grid-template-columns:1fr}
+  .hero-art{max-width:420px;margin-top:10px}
+  .method{grid-template-columns:1fr}
+  .method .art{border-right:0;border-bottom:3px dashed var(--sky2);min-height:220px}
+  .rv-grid{grid-template-columns:1fr}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  .urgent-box{grid-template-columns:1fr;text-align:center;justify-items:center}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  section{padding:72px 0}
+  .svc-grid,.jobs-grid,.steps{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr;gap:10px}
+  .stat{min-width:0;padding:10px 14px}
+  .stat .n{font-size:28px}
+  .hero .lead{font-size:18px}
+  .topbar .hide-sm{display:none}
+  .st-round{width:96px;height:96px}
+  .st-round b{font-size:32px}
+  .st-round small{font-size:11px}
+  .st-pill{font-size:13px;padding:8px 12px}
+  .st3{left:-2%}
+  .st2{right:-1%}
+  .st4{font-size:14px}
+  .method .txt{padding:24px 20px}
+  .mrow{grid-template-columns:1fr;gap:2px}
+  .qbox,.result{padding:24px 18px}
+  .cal{grid-template-columns:repeat(6,1fr)}
+  .tab{padding:10px 14px;font-size:15px}
+  .tab svg{width:24px;height:24px}
+  .gal{grid-auto-rows:150px;gap:10px}
+  .tile.big{grid-row:span 1}
+  .ft{grid-template-columns:1fr}
+  .info .ph{font-size:26px}
+  .map{min-height:340px}
+  .marquee .track{font-size:17px}
+  .cta-row .btn{flex:1 1 100%}
+  .topbar .wrap{justify-content:center;font-size:13.5px}
+  .topbar .ex{display:none}
+  .tabs{gap:6px}
+  .tab{padding:9px 12px;font-size:14px;gap:6px}
+  .map{box-shadow:0 0 0 4px var(--yel),0 0 0 8px var(--red);margin:0 6px}
+  .res-cta .btn{flex:1 1 auto}
+  .clock{width:92%}
+  .clock .mid em{display:none}
+  .urgent-box{padding:26px 20px}
+  .urgent-box h3{font-size:23px}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv-on{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ===== reusable SVG symbols ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- stylised cartoon termite (facing right) -->
+    <symbol id="termite" viewBox="0 0 120 70">
+      <g stroke="#0F2465" stroke-width="3.2" stroke-linecap="round" fill="none">
+        <path d="M44 38 30 54M52 40l-6 20M62 40l4 20M46 30 30 16M54 28l-4-18M64 29l6-17"/>
+        <path d="M92 26c6-10 12-14 20-14M92 30c8-4 14-4 22 0"/>
+      </g>
+      <ellipse cx="30" cy="35" rx="26" ry="15" fill="#F7E448" stroke="#0F2465" stroke-width="3.2"/>
+      <path d="M18 24v22M28 21v28M38 22v26" stroke="#0F2465" stroke-width="2.2" opacity=".45"/>
+      <ellipse cx="62" cy="34" rx="13" ry="11" fill="#EF5E01" stroke="#0F2465" stroke-width="3.2"/>
+      <ellipse cx="86" cy="32" rx="14" ry="12" fill="#EF5E01" stroke="#0F2465" stroke-width="3.2"/>
+      <circle cx="90" cy="28" r="3.2" fill="#0F2465"/><circle cx="91" cy="27" r="1" fill="#fff"/>
+      <path d="M98 38c4 0 7 2 9 5M98 34c5-2 8-1 11 1" stroke="#0F2465" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </symbol>
+    <!-- bait station -->
+    <symbol id="i-bait" viewBox="0 0 64 64">
+      <ellipse cx="32" cy="50" rx="22" ry="6" fill="#8a5a2b" opacity=".35"/>
+      <rect x="14" y="20" width="36" height="30" rx="6" fill="#fff" stroke="#0F2465" stroke-width="3"/>
+      <path d="M14 30h36" stroke="#0F2465" stroke-width="3"/>
+      <rect x="10" y="13" width="44" height="10" rx="5" fill="#DD1402" stroke="#0F2465" stroke-width="3"/>
+      <g fill="#0F2465"><rect x="20" y="35" width="4" height="10" rx="2"/><rect x="30" y="35" width="4" height="10" rx="2"/><rect x="40" y="35" width="4" height="10" rx="2"/></g>
+      <circle cx="32" cy="18" r="2.4" fill="#F7E448"/>
+    </symbol>
+    <!-- injection pipe -->
+    <symbol id="i-pipe" viewBox="0 0 64 64">
+      <rect x="4" y="26" width="56" height="12" rx="6" fill="#fff" stroke="#0F2465" stroke-width="3"/>
+      <g fill="#EF5E01" stroke="#0F2465" stroke-width="2"><circle cx="16" cy="32" r="3"/><circle cx="32" cy="32" r="3"/><circle cx="48" cy="32" r="3"/></g>
+      <g fill="#2f7bff"><path d="M16 42c-2 4-2 7 0 9 2-2 2-5 0-9z"/><path d="M32 44c-2 4-2 7 0 9 2-2 2-5 0-9z"/><path d="M48 42c-2 4-2 7 0 9 2-2 2-5 0-9z"/></g>
+      <path d="M30 26V12h10" stroke="#0F2465" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <rect x="38" y="6" width="16" height="12" rx="4" fill="#DD1402" stroke="#0F2465" stroke-width="3"/>
+    </symbol>
+    <!-- sprayer -->
+    <symbol id="i-spray" viewBox="0 0 64 64">
+      <rect x="6" y="22" width="20" height="32" rx="8" fill="#DD1402" stroke="#0F2465" stroke-width="3"/>
+      <path d="M10 30h12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+      <path d="M16 22v-8h8M24 14l14 10" stroke="#0F2465" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="#9ec2ff" stroke="#0F2465" stroke-width="1.6"><circle cx="46" cy="24" r="4"/><circle cx="55" cy="18" r="3"/><circle cx="54" cy="30" r="3.4"/><circle cx="46" cy="36" r="2.4"/><circle cx="58" cy="40" r="2"/><circle cx="60" cy="25" r="2"/></g>
+    </symbol>
+    <!-- calendar -->
+    <symbol id="i-cal" viewBox="0 0 64 64">
+      <rect x="8" y="12" width="48" height="44" rx="8" fill="#fff" stroke="#0F2465" stroke-width="3"/>
+      <path d="M8 24h48" stroke="#0F2465" stroke-width="3"/><rect x="8" y="12" width="48" height="12" rx="6" fill="#DD1402" stroke="#0F2465" stroke-width="3"/>
+      <path d="M20 6v12M44 6v12" stroke="#0F2465" stroke-width="3.4" stroke-linecap="round"/>
+      <g fill="#0F2465"><circle cx="20" cy="34" r="3"/><circle cx="32" cy="34" r="3"/><circle cx="44" cy="34" r="3"/><circle cx="20" cy="46" r="3"/></g>
+      <circle cx="44" cy="46" r="6" fill="#F7E448" stroke="#0F2465" stroke-width="2.4"/>
+    </symbol>
+    <!-- bugs bonus: ant / roach / centipede in one -->
+    <symbol id="i-bugs" viewBox="0 0 64 64">
+      <g stroke="#0F2465" stroke-width="2.4" stroke-linecap="round" fill="none"><path d="M12 22l-6-4M12 26H5M12 30l-6 4M22 22l6-4M22 26h7M22 30l6 4"/></g>
+      <ellipse cx="17" cy="26" rx="6" ry="9" fill="#7a3f12" stroke="#0F2465" stroke-width="2.4"/>
+      <g fill="#0F2465"><circle cx="44" cy="16" r="4"/><circle cx="44" cy="24" r="3"/><ellipse cx="44" cy="33" rx="5" ry="6"/></g>
+      <g stroke="#0F2465" stroke-width="2" stroke-linecap="round"><path d="M40 24l-6-3M48 24l6-3M40 30l-6 2M48 30l6 2M44 12l-4-6M44 12l4-6"/></g>
+      <path d="M8 50c6-6 10 6 16 0s10 6 16 0 10 6 16 0" stroke="#EF5E01" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <g stroke="#0F2465" stroke-width="1.8"><path d="M12 47v-5M20 50v5M28 47v-5M36 50v5M44 47v-5M52 50v5"/></g>
+      <path d="M4 60 60 4" stroke="#DD1402" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+    </symbol>
+    <!-- flash / urgent -->
+    <symbol id="i-flash" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="28" fill="#F7E448" stroke="#0F2465" stroke-width="3"/>
+      <path d="M36 8 18 36h12l-4 20 20-30H34z" fill="#DD1402" stroke="#0F2465" stroke-width="3" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-msgr" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.5 2 2 6.1 2 11.3c0 2.9 1.4 5.5 3.7 7.2V22l3.4-1.9c.9.3 1.9.4 2.9.4 5.5 0 10-4.1 10-9.2S17.5 2 12 2zm1 12.4-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 5-2.7-5.5 5.8z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#0F2465" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <pattern id="soil" width="26" height="26" patternUnits="userSpaceOnUse">
+      <rect width="26" height="26" fill="#a06a35"/><circle cx="5" cy="6" r="2" fill="#8a5a2b"/><circle cx="18" cy="14" r="2.6" fill="#8a5a2b"/><circle cx="10" cy="21" r="1.6" fill="#c08a52"/><circle cx="22" cy="3" r="1.4" fill="#c08a52"/>
+    </pattern>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <div><span class="live"></span><b>I am work everyday</b> · ทำงานทุกวัน <span class="ex">· รีบไหมครับ?</span> <b>ด่วนให้ครับ!</b></div>
+    <div class="hide-sm">📍 ธัญบุรี ปทุมธานี และพื้นที่ใกล้เคียง · ☎️ <b>098-561-5699</b></div>
+  </div>
+</div>
+
+<nav class="main">
+  <div class="wrap">
+    <a href="#" class="brand">
+      <img src="assets/logo.jpg" alt="โลโก้ Ntchemical กำจัดปลวกครบวงจร">
+      <div><div class="t1">NT<span>CHEMICAL</span></div><div class="t2">กำจัดปลวกครบวงจร · ปทุมธานี</div></div>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#services">บริการ</a>
+      <a href="#contract">สัญญารายปี</a>
+      <a href="#tool">เลือกวิธีกำจัด</a>
+      <a href="#jobs">ผลงานล่าสุด</a>
+      <a href="#contact">พื้นที่บริการ</a>
+    </div>
+    <a href="tel:0985615699" class="btn btn-red nav-cta"><svg><use href="#i-phone"/></svg>โทรด่วน</a>
+    <button class="burger" aria-label="เปิดเมนู" aria-expanded="false" id="burger">
+      <svg width="26" height="26" viewBox="0 0 24 24" stroke="#F7E448" stroke-width="2.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="rays" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="ribbon-tag"><i>15 ปี</i> กำจัดปลวกครบวงจร · ธัญบุรี ปทุมธานี</span>
+      <h1>ปลวกบุกบ้าน?<span class="l2"><span class="grad">เราจัดการด่วน</span><span class="bang">!</span></span></h1>
+      <p class="lead">น้ำยา<b>ฟิโปรนิล 5% สูตรไร้กลิ่นฉุน</b> · สัญญารายปี<b>เข้าบริการทุก 3 เดือน</b> ต่อสัญญาแล้ว<b>รับประกันเหยื่อตลอดสัญญา ไม่คิดค่าเหยื่อเพิ่ม</b> แถมกำจัดมด แมลงสาบ ตะขาบให้ด้วย</p>
+      <div class="cta-row">
+        <a href="tel:0985615699" class="btn btn-red"><svg><use href="#i-phone"/></svg>098-561-5699</a>
+        <a href="https://m.me/Ntchemicon" target="_blank" rel="noopener" class="btn btn-ghost"><svg><use href="#i-msgr"/></svg>แชทสอบถาม</a>
+        <a href="#tool" class="btn btn-yel">เลือกวิธีให้บ้านฉัน →</a>
+      </div>
+      <span class="phone-note">* เบอร์โทรจากไดเรกทอรีออนไลน์ · รอยืนยันเบอร์กับทางร้าน</span>
+      <div class="stats">
+        <div class="stat"><div class="n grad" data-count="15">15</div><div class="l">ปี ประสบการณ์</div></div>
+        <div class="stat"><div class="n grad">4 ครั้ง</div><div class="l">ต่อปี ตามสัญญา</div></div>
+        <div class="stat"><div class="n grad">5%</div><div class="l">ฟิโปรนิล ไร้กลิ่นฉุน</div></div>
+        <div class="stat"><div class="n grad" data-count="2578">2,578</div><div class="l">ผู้ติดตามบนเพจ</div></div>
+      </div>
+    </div>
+
+    <div class="hero-art rv-on">
+      <div class="disc">
+        <!-- house cross-section -->
+        <svg viewBox="0 0 400 400" aria-label="ภาพตัดบ้าน แสดงสถานีเหยื่อ ท่อน้ำยาใต้พื้น และปลวกที่ถูกกำจัด" role="img">
+          <rect width="400" height="400" fill="#dfe8ff"/>
+          <circle cx="320" cy="90" r="34" fill="#F7E448" opacity=".9"/>
+          <!-- ground -->
+          <rect y="262" width="400" height="140" fill="url(#soil)"/>
+          <path d="M0 262h400" stroke="#4f8a2f" stroke-width="10"/>
+          <g fill="#4f8a2f"><path d="M30 258c4-14 8-14 10 0zM46 258c3-10 6-10 8 0zM352 258c4-14 8-14 10 0zM368 258c3-10 6-10 8 0z"/></g>
+          <!-- house -->
+          <path d="M84 150 200 72l116 78" fill="none" stroke="#0F2465" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M96 148 200 80l104 68v114H96z" fill="#fff" stroke="#0F2465" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M96 148 200 80l104 68" fill="#DD1402" opacity=".95"/>
+          <path d="M108 150 200 92l92 58z" fill="#fff"/>
+          <rect x="96" y="150" width="208" height="112" fill="#fff" stroke="#0F2465" stroke-width="5"/>
+          <path d="M96 206h208" stroke="#0F2465" stroke-width="4"/>
+          <!-- rooms: bookshelf, door -->
+          <g><rect x="112" y="160" width="44" height="40" rx="3" fill="#f3d9a6" stroke="#0F2465" stroke-width="3"/><path d="M112 173h44M112 186h44" stroke="#0F2465" stroke-width="2.5"/><g fill="#0F2465"><rect x="117" y="163" width="5" height="9"/><rect x="124" y="164" width="4" height="8" fill="#DD1402"/><rect x="131" y="176" width="5" height="9" fill="#EF5E01"/><rect x="140" y="177" width="5" height="8"/></g></g>
+          <rect x="236" y="214" width="34" height="48" rx="3" fill="#f3d9a6" stroke="#0F2465" stroke-width="3"/><circle cx="263" cy="240" r="2.6" fill="#0F2465"/>
+          <rect x="180" y="160" width="40" height="30" rx="3" fill="#bcd3ff" stroke="#0F2465" stroke-width="3"/><path d="M200 160v30M180 175h40" stroke="#0F2465" stroke-width="2.5"/>
+          <rect x="120" y="218" width="54" height="26" rx="4" fill="#ffd8c2" stroke="#0F2465" stroke-width="3"/>
+          <!-- pipe under slab -->
+          <rect x="80" y="276" width="240" height="12" rx="6" fill="#fff" stroke="#0F2465" stroke-width="3"/>
+          <g fill="#EF5E01" stroke="#0F2465" stroke-width="2"><circle cx="110" cy="282" r="3.4"/><circle cx="160" cy="282" r="3.4"/><circle cx="210" cy="282" r="3.4"/><circle cx="260" cy="282" r="3.4"/><circle cx="300" cy="282" r="3.4"/></g>
+          <g fill="#7fb0ff" opacity=".9"><path d="M110 292c-3 5-3 9 0 11 3-2 3-6 0-11z"/><path d="M160 292c-3 5-3 9 0 11 3-2 3-6 0-11z"/><path d="M210 292c-3 5-3 9 0 11 3-2 3-6 0-11z"/><path d="M260 292c-3 5-3 9 0 11 3-2 3-6 0-11z"/></g>
+          <path d="M320 282h30v-30" fill="none" stroke="#0F2465" stroke-width="4" stroke-linecap="round"/>
+          <rect x="340" y="236" width="22" height="18" rx="4" fill="#DD1402" stroke="#0F2465" stroke-width="3"/>
+          <!-- bait stations in ground -->
+          <g transform="translate(26 270)"><use href="#i-bait" width="46" height="46"/></g>
+          <g transform="translate(334 300)"><use href="#i-bait" width="46" height="46"/></g>
+          <!-- termites crossed out -->
+          <g transform="translate(40 330)"><use href="#termite" width="80" height="46"/></g>
+          <g transform="translate(330 334) scale(-1 1)"><use href="#termite" width="80" height="46"/></g>
+          <g transform="translate(150 316)"><circle cx="40" cy="26" r="30" fill="#fff" stroke="#DD1402" stroke-width="7"/><use href="#termite" x="12" y="10" width="56" height="33"/><path d="M19 5l42 42" stroke="#DD1402" stroke-width="7" stroke-linecap="round"/></g>
+        </svg>
+      </div>
+      <div class="sticker st-round st1"><div><b>15</b><small>ปี ประสบการณ์</small></div></div>
+      <div class="sticker st-pill st2">🌿 ไร้กลิ่นฉุน<small>ฟิโปรนิล 5%</small></div>
+      <div class="sticker st-pill st3">🪤 รับประกันเหยื่อ<small>ตลอดสัญญา ไม่คิดเพิ่ม</small></div>
+      <div class="sticker st4">⚡ รับงานด่วน</div>
+    </div>
+  </div>
+  <svg class="hero-curve" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90V40C240 80 520 0 760 30s480 50 680 0v60z" fill="#EEF3FF"/></svg>
+</header>
+
+<div class="mq-wrap"><div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>#กำจัดปลวกครบวงจร</span><span>#เซอร์วิสกำจัดปลวก</span><span>#กำจัดปลวกปทุมธานี</span><span>#วางเหยื่อกำจัดปลวก</span><span>#รับประกันเหยื่อตลอดสัญญา</span><span>I am work everyday</span>
+    <span>#กำจัดปลวกครบวงจร</span><span>#เซอร์วิสกำจัดปลวก</span><span>#กำจัดปลวกปทุมธานี</span><span>#วางเหยื่อกำจัดปลวก</span><span>#รับประกันเหยื่อตลอดสัญญา</span><span>I am work everyday</span>
+  </div>
+</div></div>
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">บริการของเรา</span>
+      <h2>ปลวกอยู่ตรงไหน <span class="r">เราตามไปจัดการ</span><br>แบบ<mark>ครบวงจร</mark></h2>
+      <p>วางเหยื่อ อัดท่อ อัดดิน ฉีดพ่น เลือกวิธีให้เหมาะกับบ้านแต่ละหลัง แล้วดูแลต่อเนื่องด้วยสัญญารายปี</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv-on">
+        <div class="ic"><svg><use href="#i-bait"/></svg></div>
+        <h3>วางเหยื่อกำจัดปลวก</h3>
+        <p>ติดตั้งสถานีเหยื่อในจุดที่ปลวกเดิน ตรวจกล่องตามรอบ ต่อสัญญาแล้วรับประกันเหยื่อตลอดสัญญา</p>
+        <ul><li>#วางเหยื่อกำจัดปลวก</li><li>ไม่คิดค่าเหยื่อเพิ่ม*</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg><use href="#i-pipe"/></svg></div>
+        <h3>อัดท่อ · อัดดิน</h3>
+        <p>อัดน้ำยาเข้าท่อใต้บ้าน หรืออัดลงดินรอบตัวบ้าน สร้างแนวป้องกันปลวกจากใต้ดิน</p>
+        <ul><li>ฟิโปรนิล 5%</li><li>สูตรไร้กลิ่นฉุน</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg><use href="#i-spray"/></svg></div>
+        <h3>ฉีดพ่นรอบบ้าน</h3>
+        <p>ฉีดพ่นจุดที่พบปลวกและแนวรอบบ้าน เหมาะใช้ร่วมกับวิธีอื่นตามสภาพหน้างาน</p>
+        <ul><li>ภายใน/ภายนอก</li><li>สวน · รั้ว</li></ul>
+      </div>
+      <div class="svc hot rv-on">
+        <span class="flag">ยอดนิยม</span>
+        <div class="ic"><svg><use href="#i-cal"/></svg></div>
+        <h3>สัญญารายปี</h3>
+        <p>เข้าบริการทุก 3 เดือน ปีละ 4 ครั้ง ดูแลต่อเนื่องไม่ปล่อยให้ปลวกกลับมา</p>
+        <ul><li>ปีละ 4 ครั้ง</li><li>รับประกันเหยื่อตลอดสัญญา</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg><use href="#i-bugs"/></svg></div>
+        <h3>แถม! มด แมลงสาบ ตะขาบ</h3>
+        <p>เข้าบริการกำจัดปลวกแล้ว แถมกำจัดมด แมลงสาบ ตะขาบให้ด้วย บ้านสะอาดสบายใจขึ้น</p>
+        <ul><li>มด</li><li>แมลงสาบ</li><li>ตะขาบ</li></ul>
+      </div>
+      <div class="svc rv-on">
+        <div class="ic"><svg><use href="#i-flash"/></svg></div>
+        <h3>รับงานด่วน</h3>
+        <p>“รีบครับ… ด่วนให้ครับ” เจอปลวกวันนี้ ทักมาได้เลย ทำงานทุกวัน</p>
+        <ul><li>I am work everyday</li><li>ทักแชท/โทร</li></ul>
+      </div>
+    </div>
+    <p class="note" style="margin-top:22px">* เงื่อนไขรับประกันเหยื่อสำหรับลูกค้าที่ต่อสัญญา รายละเอียดสอบถามทางร้าน</p>
+  </div>
+</section>
+
+<!-- ===== CONTRACT ===== -->
+<section class="contract" id="contract">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow" style="background:var(--yel);color:var(--navy)">สัญญารายปี</span>
+      <h2 class="h2">1 ปี เข้าบริการ <span class="y">4 ครั้ง</span><br>ทุก 3 เดือน ไม่ปล่อยให้ปลวกกลับ</h2>
+      <p class="lead">ปลวกไม่ได้หายถาวรในครั้งเดียว การกลับมาตรวจตามรอบช่วยจับสัญญาณได้ก่อนเสียหาย ต่อสัญญาแล้วดูแลเรื่องเหยื่อให้ตลอด</p>
+      <ul class="perks">
+        <li><span class="ck"><svg><use href="#i-check"/></svg></span><div><b>เข้าบริการทุก 3 เดือน</b><span>ปีละ 4 ครั้ง ตรวจจุดเสี่ยง เติม/เปลี่ยนเหยื่อ ฉีดพ่นตามสภาพ</span></div></li>
+        <li><span class="ck"><svg><use href="#i-check"/></svg></span><div><b>รับประกันเหยื่อตลอดสัญญา</b><span>ต่อสัญญาแล้ว ไม่คิดค่าเหยื่อเพิ่ม</span></div></li>
+        <li><span class="ck"><svg><use href="#i-check"/></svg></span><div><b>แถมกำจัดมด แมลงสาบ ตะขาบ</b><span>ดูแลแมลงกวนใจในบ้านไปพร้อมกัน</span></div></li>
+        <li><span class="ck"><svg><use href="#i-check"/></svg></span><div><b>ฟิโปรนิล 5% สูตรไร้กลิ่นฉุน</b><span>อยู่บ้านได้สบายขึ้นระหว่างทำงาน</span></div></li>
+      </ul>
+      <a href="#tool" class="btn btn-yel">ดูปฏิทินเข้าบริการของบ้านฉัน →</a>
+    </div>
+    <div class="clock rv-on" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <circle cx="200" cy="200" r="186" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="26"/>
+        <g id="ticks"></g>
+        <path d="M200 14a186 186 0 0 1 186 186" fill="none" stroke="#F7E448" stroke-width="26" stroke-linecap="round" opacity=".95"/>
+        <path d="M386 200a186 186 0 0 1-186 186" fill="none" stroke="#EF5E01" stroke-width="26" stroke-linecap="round"/>
+        <path d="M200 386A186 186 0 0 1 14 200" fill="none" stroke="#DD1402" stroke-width="26" stroke-linecap="round"/>
+        <path d="M14 200A186 186 0 0 1 200 14" fill="none" stroke="#5b86ff" stroke-width="26" stroke-linecap="round"/>
+        <g font-family="Noto Sans Thai" font-weight="900" font-size="22" text-anchor="middle">
+          <g transform="translate(200 14)"><circle r="30" fill="#fff" stroke="#0F2465" stroke-width="5"/><text y="8" fill="#0F2465">1</text></g>
+          <g transform="translate(386 200)"><circle r="30" fill="#fff" stroke="#0F2465" stroke-width="5"/><text y="8" fill="#0F2465">2</text></g>
+          <g transform="translate(200 386)"><circle r="30" fill="#fff" stroke="#0F2465" stroke-width="5"/><text y="8" fill="#0F2465">3</text></g>
+          <g transform="translate(14 200)"><circle r="30" fill="#fff" stroke="#0F2465" stroke-width="5"/><text y="8" fill="#0F2465">4</text></g>
+        </g>
+        <g font-family="Noto Sans Thai" font-weight="800" font-size="14" fill="#fff" text-anchor="middle">
+          <text x="292" y="114">+3 เดือน</text><text x="292" y="296">+3 เดือน</text><text x="108" y="296">+3 เดือน</text><text x="108" y="114">เริ่มสัญญา</text>
+        </g>
+      </svg>
+      <div class="mid"><div><b>4</b><small>ครั้ง / ปี</small><em>เข้าบริการทุก 3 เดือน</em></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WIDGET ===== -->
+<section class="tool" id="tool">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">เครื่องมือช่วยเลือก</span>
+      <h2>เลือกวิธีกำจัด<span class="r">ให้เหมาะกับบ้าน</span></h2>
+      <p>ดูความต่างของ 3 วิธีหลัก แล้วตอบ 3 คำถามสั้น ๆ รับคำแนะนำเบื้องต้น + ปฏิทินเข้าบริการ 4 ครั้งต่อปี พร้อมข้อความส่งให้ร้านได้ทันที</p>
+    </div>
+
+    <div class="tabs rv-on" role="tablist" aria-label="เปรียบเทียบวิธีกำจัดปลวก">
+      <button class="tab" role="tab" aria-selected="true" data-m="bait"><svg><use href="#i-bait"/></svg>วางเหยื่อ</button>
+      <button class="tab" role="tab" aria-selected="false" data-m="pipe"><svg><use href="#i-pipe"/></svg>อัดท่อ · อัดดิน</button>
+      <button class="tab" role="tab" aria-selected="false" data-m="spray"><svg><use href="#i-spray"/></svg>ฉีดพ่น</button>
+    </div>
+
+    <div class="method rv-on" id="method" role="tabpanel">
+      <div class="art" id="mArt"></div>
+      <div class="txt">
+        <h3 id="mTitle"></h3>
+        <div class="mrows" id="mRows"></div>
+      </div>
+    </div>
+
+    <div class="quiz">
+      <div class="qbox rv-on">
+        <h3>ตอบ 3 ข้อ รู้วิธีที่ใช่</h3>
+        <p style="color:#c9d5ff;font-size:15px">คำแนะนำเบื้องต้นเท่านั้น ทีมงานจะดูหน้างานจริงก่อนสรุปวิธี</p>
+        <div class="q">
+          <b><i>1</i>บ้านของคุณเป็นแบบไหน?</b>
+          <div class="opts" data-q="age">
+            <button class="opt" aria-pressed="false" data-v="new">บ้านใหม่ / กำลังสร้าง</button>
+            <button class="opt" aria-pressed="true" data-v="old">บ้านอยู่มาหลายปี</button>
+          </div>
+        </div>
+        <div class="q">
+          <b><i>2</i>เจอปลวกตรงไหน?</b>
+          <div class="opts" data-q="spot">
+            <button class="opt" aria-pressed="false" data-v="none">ยังไม่เจอ (อยากป้องกัน)</button>
+            <button class="opt" aria-pressed="true" data-v="frame">วงกบ · ประตู · ตู้ไม้</button>
+            <button class="opt" aria-pressed="false" data-v="shelf">ชั้นหนังสือ · เฟอร์นิเจอร์</button>
+            <button class="opt" aria-pressed="false" data-v="floor">พื้น · ผนัง · รอยต่อ</button>
+            <button class="opt" aria-pressed="false" data-v="yard">สวน · รอบบ้าน</button>
+          </div>
+        </div>
+        <div class="q">
+          <b><i>3</i>ขนาดบ้าน (ตารางวา)</b>
+          <div class="range"><input type="range" id="size" min="20" max="400" step="10" value="60" aria-label="ขนาดบ้านตารางวา"><output id="sizeOut">60 ตร.ว.</output></div>
+        </div>
+        <div class="q">
+          <b><i>+</i>อยากเริ่มเดือนไหน?</b>
+          <select class="sel" id="start" aria-label="เดือนที่เริ่มบริการ"></select>
+        </div>
+      </div>
+
+      <div class="result rv-on" aria-live="polite">
+        <span class="badge">คำแนะนำเบื้องต้น</span>
+        <div class="rec">
+          <div class="ic" id="rIc"></div>
+          <div><h4 id="rTitle"></h4><p id="rWhy"></p></div>
+        </div>
+        <div class="plus" id="rPlus"></div>
+        <div class="cal-h"><span>📅 ปฏิทินเข้าบริการตามสัญญารายปี</span><span class="sample">ตัวอย่าง · รอร้านยืนยันวันนัด</span></div>
+        <div class="cal" id="cal"></div>
+        <textarea class="msg" id="msg" aria-label="ข้อความสำหรับส่งให้ร้าน"></textarea>
+        <div class="res-cta">
+          <button class="btn btn-navy" id="copyBtn">📋 คัดลอกข้อความ</button>
+          <a class="btn btn-msg" id="msgrBtn" href="https://m.me/Ntchemicon" target="_blank" rel="noopener"><svg><use href="#i-msgr"/></svg>คัดลอก + เปิดแชท</a>
+          <a class="btn btn-red" href="tel:0985615699"><svg><use href="#i-phone"/></svg>โทร</a>
+        </div>
+        <p class="fine">ราคาขึ้นกับขนาดบ้านและสภาพหน้างาน · ราคาตัวอย่างยังไม่เปิดเผย <span class="sample">ราคาตัวอย่าง · รอร้านยืนยัน</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RECENT JOBS ===== -->
+<section id="jobs">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">ผลงานล่าสุด · ต.ค.</span>
+      <h2>ออกงาน<span class="r">ทุกวัน</span> ทั่วปทุมธานี</h2>
+      <p>ตัวอย่างงานที่ร้านโพสต์บนเพจเดือนตุลาคม</p>
+    </div>
+    <div class="jobs-grid">
+      <article class="job rv-on">
+        <div class="cv">
+          <svg viewBox="0 0 320 200" aria-hidden="true">
+            <rect width="320" height="200" fill="#dfe8ff"/><rect y="150" width="320" height="50" fill="url(#soil)"/><path d="M0 150h320" stroke="#4f8a2f" stroke-width="8"/>
+            <path d="M90 80 160 38l70 42" fill="none" stroke="#0F2465" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+            <path d="M100 78 160 42l60 36v72H100z" fill="#fff" stroke="#0F2465" stroke-width="4"/>
+            <rect x="146" y="110" width="28" height="40" rx="3" fill="#f3d9a6" stroke="#0F2465" stroke-width="3"/>
+            <rect x="112" y="92" width="24" height="20" rx="2" fill="#bcd3ff" stroke="#0F2465" stroke-width="3"/><rect x="184" y="92" width="24" height="20" rx="2" fill="#bcd3ff" stroke="#0F2465" stroke-width="3"/>
+            <g transform="translate(40 130)"><use href="#i-bait" width="40" height="40"/></g><g transform="translate(240 130)"><use href="#i-bait" width="40" height="40"/></g>
+            <g transform="translate(250 30)"><use href="#i-check" width="40" height="40"/></g>
+          </svg>
+          <span class="date">ต.ค. 2569</span>
+        </div>
+        <div class="bd"><h3>บ้านเดี่ยว ซ.บงกช 42</h3><p>เข้าบริการกำจัดปลวกบ้านเดี่ยว ย่านคลองหลวง</p><span class="loc">📍 คลองหลวง ปทุมธานี</span></div>
+      </article>
+      <article class="job rv-on">
+        <div class="cv">
+          <svg viewBox="0 0 320 200" aria-hidden="true">
+            <rect width="320" height="200" fill="#0F2465"/>
+            <g transform="translate(110 30)"><use href="#i-cal" width="100" height="100"/></g>
+            <g font-family="Noto Sans Thai" font-weight="900" text-anchor="middle"><text x="160" y="160" fill="#F7E448" font-size="26">200 ตร.ว.</text><text x="160" y="186" fill="#fff" font-size="15">งานรายปี · ปีละ 4 ครั้ง</text></g>
+            <g fill="#F7E448" opacity=".35"><circle cx="40" cy="40" r="4"/><circle cx="280" cy="50" r="5"/><circle cx="290" cy="160" r="3"/><circle cx="30" cy="170" r="5"/></g>
+          </svg>
+          <span class="date">ต.ค. 2569</span>
+        </div>
+        <div class="bd"><h3>งานรายปี บ้าน 200 ตร.ว.</h3><p>สัญญารายปีบ้านพื้นที่ 200 ตารางวา ย่านหทัยราษฎร์ 4/1</p><span class="loc">📍 หทัยราษฎร์ 4/1</span></div>
+      </article>
+      <article class="job rv-on">
+        <div class="cv">
+          <svg viewBox="0 0 320 200" aria-hidden="true">
+            <rect width="320" height="200" fill="#fff3c4"/>
+            <rect x="80" y="26" width="160" height="160" rx="6" fill="#e9c58a" stroke="#0F2465" stroke-width="5"/>
+            <path d="M80 80h160M80 134h160" stroke="#0F2465" stroke-width="5"/>
+            <g stroke="#0F2465" stroke-width="2.5"><rect x="92" y="36" width="14" height="40" fill="#DD1402"/><rect x="108" y="40" width="12" height="36" fill="#5b86ff"/><rect x="122" y="34" width="16" height="42" fill="#F7E448"/><rect x="140" y="42" width="12" height="34" fill="#fff"/><rect x="92" y="92" width="16" height="38" fill="#EF5E01"/><rect x="110" y="96" width="12" height="34" fill="#fff"/><rect x="124" y="90" width="14" height="40" fill="#0F2465"/></g>
+            <!-- damage trail -->
+            <path d="M170 186c0-20 14-22 10-40s14-18 10-36 12-16 8-34" fill="none" stroke="#8a5a2b" stroke-width="9" stroke-linecap="round" stroke-dasharray="2 10"/>
+            <g transform="translate(176 92)"><circle cx="30" cy="20" r="26" fill="#fff" stroke="#DD1402" stroke-width="6"/><use href="#termite" x="6" y="6" width="48" height="28"/><path d="M12 2l36 36" stroke="#DD1402" stroke-width="6" stroke-linecap="round"/></g>
+          </svg>
+          <span class="date">ต.ค. 2569</span>
+        </div>
+        <div class="bd"><h3>ปลวกกินชั้นหนังสือ</h3><p>ลูกค้าพบปลวกขึ้นชั้นหนังสือ ทีมงานเข้าตรวจและกำจัดให้</p><span class="loc">📍 พื้นที่ปทุมธานี</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEPS ===== -->
+<section class="steps-sec">
+  <div class="wrap" style="position:relative">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">ขั้นตอนบริการ</span>
+      <h2>เรียกใช้ง่าย <span class="r">4 ขั้นตอน</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step rv-on"><span class="no">1</span><svg><use href="#i-msgr" style="color:#0866FF"/></svg><h4>ทักแชท / โทร</h4><p>บอกพื้นที่ ขนาดบ้าน จุดที่เจอปลวก ส่งรูปมาได้</p></div>
+      <div class="step rv-on"><span class="no">2</span><svg viewBox="0 0 64 64"><circle cx="26" cy="26" r="16" fill="#fff" stroke="#0F2465" stroke-width="4"/><path d="M38 38l16 16" stroke="#0F2465" stroke-width="7" stroke-linecap="round"/><use href="#termite" x="12" y="18" width="28" height="16"/></svg><h4>ตรวจหน้างาน</h4><p>หาทางเดินปลวก จุดเสี่ยง และวางแผนวิธีที่เหมาะ</p></div>
+      <div class="step rv-on"><span class="no">3</span><svg><use href="#i-bait"/></svg><h4>ลงมือกำจัด</h4><p>วางเหยื่อ อัดท่อ อัดดิน ฉีดพ่น ด้วยน้ำยาสูตรไร้กลิ่นฉุน</p></div>
+      <div class="step rv-on"><span class="no">4</span><svg><use href="#i-cal"/></svg><h4>ดูแลทุก 3 เดือน</h4><p>สัญญารายปี เข้าบริการ 4 ครั้ง รับประกันเหยื่อตลอดสัญญา</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">แกลเลอรี</span>
+      <h2>ภาพจาก<span class="r">หน้างาน</span></h2>
+      <p>พื้นที่สำหรับรูปผลงานจริงจากเพจของร้าน (เว็บไซต์จริงจะใส่รูปของร้านแทนภาพประกอบ)</p>
+    </div>
+    <div class="gal">
+      <div class="tile big rv-on">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="400" height="400" fill="#0F2465"/><g fill="none" stroke="rgba(255,255,255,.07)" stroke-width="30"><circle cx="200" cy="200" r="120"/><circle cx="200" cy="200" r="200"/></g>
+          <g transform="translate(50 110)"><use href="#i-spray" width="170" height="170"/></g>
+          <g transform="translate(270 200)"><circle r="78" fill="#fff" stroke="#DD1402" stroke-width="12"/><use href="#termite" x="-58" y="-34" width="116" height="68"/><path d="M-55 -55 55 55" stroke="#DD1402" stroke-width="12" stroke-linecap="round"/></g>
+        </svg>
+        <div class="lbl"><b>ฉีดพ่นจุดที่พบปลวก</b><span>ภาพผลงานจริงจากร้าน</span></div>
+      </div>
+      <div class="tile rv-on" style="background:#DD1402">
+        <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="220" fill="#DD1402"/><g transform="translate(100 50)"><use href="#i-bait" width="100" height="100"/></g></svg>
+        <div class="lbl"><b>ติดตั้งสถานีเหยื่อ</b><span>ภาพผลงานจริงจากร้าน</span></div>
+      </div>
+      <div class="tile rv-on">
+        <svg viewBox="0 0 300 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="300" height="220" fill="#F7E448"/><g transform="translate(90 40)"><use href="#i-pipe" width="120" height="120"/></g></svg>
+        <div class="lbl"><b style="color:#0F2465;text-shadow:none">อัดน้ำยาเข้าท่อ</b><span>ภาพผลงานจริงจากร้าน</span></div>
+      </div>
+      <div class="tile wide rv-on">
+        <svg viewBox="0 0 600 220" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="600" height="220" fill="#EF5E01"/><rect y="140" width="600" height="80" fill="url(#soil)"/><g transform="translate(60 110)"><use href="#i-bait" width="60" height="60"/></g><g transform="translate(250 104)"><use href="#i-bait" width="60" height="60"/></g><g transform="translate(440 110)"><use href="#i-bait" width="60" height="60"/></g><path d="M90 150q80-40 190 0t190 0" stroke="#fff" stroke-width="4" stroke-dasharray="8 10" fill="none"/></svg>
+        <div class="lbl"><b>วางเหยื่อรอบตัวบ้าน</b><span>ภาพผลงานจริงจากร้าน</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rv-on">
+      <span class="eyebrow">เสียงจากลูกค้า</span>
+      <h2>บ้านปลอดปลวก <span class="r">ลูกค้าสบายใจ</span></h2>
+      <p><span class="sample">รีวิวตัวอย่างสำหรับ demo</span></p>
+    </div>
+    <div class="rv-grid">
+      <div class="rv-on"><div class="rev"><div class="stars">★★★★★</div><p>ทักไปตอนเย็น บอกว่าด่วน ทีมงานนัดเข้ามาให้เร็วมาก น้ำยาไม่มีกลิ่นฉุนอย่างที่บอก อยู่บ้านได้ปกติ</p></div><div class="who"><div class="av">ป</div><div><b>คุณปุ้ม</b><small>บ้านเดี่ยว · คลองหลวง</small></div></div></div>
+      <div class="rv-on"><div class="rev"><div class="stars">★★★★★</div><p>ทำสัญญารายปี มีนัดเข้ามาตรวจทุก 3 เดือน ไม่ต้องคอยจำเอง แถมช่วยเรื่องมดกับแมลงสาบด้วย</p></div><div class="who"><div class="av">ต</div><div><b>คุณต้อง</b><small>ทาวน์โฮม · ลำลูกกา</small></div></div></div>
+      <div class="rv-on"><div class="rev"><div class="stars">★★★★★</div><p>ปลวกขึ้นชั้นหนังสือ อธิบายวิธีให้ฟังเข้าใจง่าย วางเหยื่อแล้วกลับมาเช็กตามรอบ ประทับใจครับ</p></div><div class="who"><div class="av">ก</div><div><b>คุณกิตติ</b><small>บ้านเดี่ยว · รังสิต</small></div></div></div>
+    </div>
+    <p class="note">* ข้อความรีวิวในหน้านี้เป็นตัวอย่างสำหรับ demo เว็บไซต์จริงจะใช้รีวิวจากลูกค้าของร้าน</p>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv-on">
+      <span class="eyebrow" style="background:var(--yel);color:var(--navy)">ติดต่อ &amp; พื้นที่บริการ</span>
+      <h2 class="h2">ปทุมธานีและใกล้เคียง<br><span class="y">ทักมา เราไปหา</span></h2>
+      <div class="info">
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></div><div><b>โทร</b><a href="tel:0985615699" class="ph">098-561-5699</a><small>รอยืนยันเบอร์</small></div></div>
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg></div><div><b>แชทกับร้าน</b><span>Facebook Messenger · <a href="https://www.facebook.com/Ntchemicon" target="_blank" rel="noopener" style="text-decoration:underline">facebook.com/Ntchemicon</a></span></div></div>
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b>เวลาทำงาน</b><span>ทำงานทุกวัน (I am work everyday) · รับงานด่วน</span></div></div>
+        <div class="it"><div class="i"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><b>พื้นที่ให้บริการ</b><span>ฐานอยู่ธัญบุรี ปทุมธานี · ออกบริการถึงบ้านลูกค้า</span>
+          <div class="areas"><span class="hq">ธัญบุรี</span><span>ปทุมธานี</span><span>นนทบุรี</span><span>องครักษ์</span><span>ลำลูกกา</span><span>คลองหลวง</span><span>รังสิต</span><span>ดอนเมือง</span><span>สายไหม</span></div></div></div>
+      </div>
+      <div class="cta-row" style="margin-top:0">
+        <a href="https://m.me/Ntchemicon" target="_blank" rel="noopener" class="btn btn-msg"><svg><use href="#i-msgr"/></svg>ทัก Messenger</a>
+        <a href="tel:0985615699" class="btn btn-red"><svg><use href="#i-phone"/></svg>โทรเลย</a>
+      </div>
+    </div>
+    <div class="map rv-on">
+      <span class="pin">📍 ฐานบริการ ธัญบุรี ปทุมธานี</span>
+      <iframe title="แผนที่พื้นที่บริการ ธัญบุรี ปทุมธานี" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=%E0%B8%98%E0%B8%B1%E0%B8%8D%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%20%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5&z=12&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="urgent">
+  <div class="wrap">
+    <div class="urgent-box rv-on">
+      <svg><use href="#i-flash"/></svg>
+      <div><h3>เจอปลวกวันนี้? รีบครับ… ด่วนให้ครับ!</h3><p>ส่งรูปจุดที่เจอปลวกมาทางแชท ทีมงานประเมินเบื้องต้นให้ก่อนเข้าหน้างาน</p></div>
+      <a href="https://m.me/Ntchemicon" target="_blank" rel="noopener" class="btn btn-yel">ส่งรูปให้ร้านดู →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand"><img src="assets/logo.jpg" alt=""><div><div class="t1">NT<span>CHEMICAL</span></div><div class="t2">กำจัดปลวกครบวงจร</div></div></div>
+        <p>บริการกำจัดปลวกครบวงจร ธัญบุรี ปทุมธานี ทำมา 15 ปี · สัญญารายปีเข้าบริการทุก 3 เดือน · แถมกำจัดมด แมลงสาบ ตะขาบ</p>
+      </div>
+      <div><h4 class="hd">บริการ</h4><ul><li><a href="#services">วางเหยื่อกำจัดปลวก</a></li><li><a href="#services">อัดท่อ · อัดดิน</a></li><li><a href="#services">ฉีดพ่น</a></li><li><a href="#contract">สัญญารายปี</a></li></ul></div>
+      <div><h4 class="hd">เมนู</h4><ul><li><a href="#tool">เลือกวิธีกำจัด</a></li><li><a href="#jobs">ผลงานล่าสุด</a></li><li><a href="#reviews">รีวิว</a></li><li><a href="#contact">พื้นที่บริการ</a></li></ul></div>
+      <div><h4 class="hd">ติดต่อ</h4><ul><li>☎️ <a href="tel:0985615699">098-561-5699</a> <small>(รอยืนยัน)</small></li><li>💬 <a href="https://m.me/Ntchemicon" target="_blank" rel="noopener">Messenger</a></li><li>👍 <a href="https://www.facebook.com/Ntchemicon" target="_blank" rel="noopener">Facebook /Ntchemicon</a></li><li>📍 ธัญบุรี ปทุมธานี</li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Ntchemical กำจัดปลวกครบวงจร</span><span><b>Website demo โดย Relearn Solution</b></span></div>
+  </div>
+</footer>
+
+<div class="fab">
+  <a href="https://m.me/Ntchemicon" target="_blank" rel="noopener" class="msg" aria-label="แชท Messenger"><svg style="color:#fff"><use href="#i-msgr"/></svg></a>
+  <a href="tel:0985615699" class="call" aria-label="โทร 098-561-5699"><svg style="color:#fff"><use href="#i-phone"/></svg></a>
+</div>
+<div class="toast" id="toast">คัดลอกข้อความแล้ว ✓</div>
+
+<script>
+// ---- reveal ----
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv-on').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+// ---- burger ----
+const menu=document.getElementById('menu'),burger=document.getElementById('burger');
+burger.addEventListener('click',()=>{const o=menu.classList.toggle('open');burger.setAttribute('aria-expanded',o)});
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');burger.setAttribute('aria-expanded',false)}));
+
+// ---- method compare ----
+const SYM={bait:'i-bait',pipe:'i-pipe',spray:'i-spray'};
+const ART={
+ bait:`<svg viewBox="0 0 320 240"><rect width="320" height="240" rx="20" fill="#dfe8ff"/><rect y="120" width="320" height="120" fill="url(#soil)"/><path d="M0 120h320" stroke="#4f8a2f" stroke-width="8"/><g transform="translate(118 70)"><use href="#i-bait" width="84" height="84"/></g><path d="M20 200c40-10 60 10 100-20" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="6 8"/><path d="M300 210c-40-6-70 10-100-40" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="6 8"/><g transform="translate(18 186)"><use href="#termite" width="52" height="30"/></g><g transform="translate(300 196) scale(-1 1)"><use href="#termite" width="52" height="30"/></g><text x="160" y="40" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="18" fill="#0F2465">ปลวกพาเหยื่อกลับรัง</text></svg>`,
+ pipe:`<svg viewBox="0 0 320 240"><rect width="320" height="240" rx="20" fill="#dfe8ff"/><path d="M40 110 160 40l120 70" fill="none" stroke="#0F2465" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/><rect x="56" y="104" width="208" height="60" fill="#fff" stroke="#0F2465" stroke-width="4"/><rect y="164" width="320" height="76" fill="url(#soil)"/><rect x="30" y="176" width="260" height="12" rx="6" fill="#fff" stroke="#0F2465" stroke-width="3"/><g fill="#EF5E01" stroke="#0F2465" stroke-width="2"><circle cx="70" cy="182" r="4"/><circle cx="130" cy="182" r="4"/><circle cx="190" cy="182" r="4"/><circle cx="250" cy="182" r="4"/></g><g fill="#7fb0ff"><path d="M70 194c-4 7-4 12 0 15 4-3 4-8 0-15z"/><path d="M130 194c-4 7-4 12 0 15 4-3 4-8 0-15z"/><path d="M190 194c-4 7-4 12 0 15 4-3 4-8 0-15z"/><path d="M250 194c-4 7-4 12 0 15 4-3 4-8 0-15z"/></g><path d="M290 182h16v-40" stroke="#0F2465" stroke-width="4" fill="none"/><rect x="294" y="124" width="22" height="18" rx="4" fill="#DD1402" stroke="#0F2465" stroke-width="3"/><text x="160" y="140" text-anchor="middle" font-family="Noto Sans Thai" font-weight="900" font-size="17" fill="#0F2465">แนวป้องกันใต้บ้าน</text></svg>`,
+ spray:`<svg viewBox="0 0 320 240"><rect width="320" height="240" rx="20" fill="#dfe8ff"/><rect y="170" width="320" height="70" fill="#4f8a2f"/><rect x="200" y="60" width="90" height="110" fill="#f3d9a6" stroke="#0F2465" stroke-width="4"/><circle cx="276" cy="118" r="4" fill="#0F2465"/><g transform="translate(30 70)"><use href="#i-spray" width="140" height="140"/></g><g fill="#9ec2ff" opacity=".8"><circle cx="190" cy="100" r="8"/><circle cx="206" cy="120" r="6"/><circle cx="196" cy="140" r="5"/></g><g transform="translate(214 130)"><use href="#termite" width="56" height="32"/></g><path d="M214 128l56 36" stroke="#DD1402" stroke-width="6" stroke-linecap="round"/></svg>`
+};
+const M={
+ bait:{t:'วางเหยื่อ',s:'Bait Station',rows:[['เหมาะกับ','บ้านที่เจอปลวกเดินแล้ว ทั้งในบ้านและรอบบ้าน'],['หลักการ','ติดตั้งสถานีเหยื่อตามทางเดินปลวก ปลวกนำเหยื่อกลับไปที่รัง'],['จุดเด่น','ไม่ต้องรื้อ ไม่ต้องเจาะพื้นมาก · ต่อสัญญาแล้วรับประกันเหยื่อตลอดสัญญา'],['ข้อควรรู้','ต้องตรวจกล่องตามรอบ จึงเหมาะกับสัญญารายปี']],sp:3,dis:1},
+ pipe:{t:'อัดท่อ · อัดดิน',s:'Soil / Pipe Injection',rows:[['เหมาะกับ','บ้านใหม่ที่วางท่อไว้แล้ว หรือบ้านที่ต้องการแนวป้องกันใต้ดิน'],['หลักการ','อัดน้ำยาเข้าท่อใต้บ้าน หรืออัดลงดินรอบตัวบ้าน'],['น้ำยา','ฟิโปรนิล 5% สูตรไร้กลิ่นฉุน'],['ข้อควรรู้','บ้านที่ไม่มีท่อ อาจต้องเจาะอัดดินตามแนว ทีมงานจะประเมินหน้างาน']],sp:2,dis:2},
+ spray:{t:'ฉีดพ่น',s:'Spray Treatment',rows:[['เหมาะกับ','จุดที่พบปลวก สวน รั้ว และแนวรอบบ้าน'],['หลักการ','ฉีดพ่นน้ำยาตรงจุดและเป็นแนวรอบตัวบ้าน'],['จุดเด่น','เข้าถึงจุดได้เร็ว ใช้ร่วมกับวิธีอื่นได้ดี'],['ข้อควรรู้','มักใช้ควบคู่กับวางเหยื่อหรืออัดท่อ เพื่อผลที่ต่อเนื่อง']],sp:3,dis:1}
+};
+function meter(n){return `<span class="meter">${[1,2,3].map(i=>`<i class="${i<=n?'on':''}"></i>`).join('')}</span>`}
+function showMethod(k){
+  const m=M[k];
+  document.getElementById('mArt').innerHTML=ART[k];
+  document.getElementById('mTitle').innerHTML=`<small>${m.s}</small>${m.t}`;
+  document.getElementById('mRows').innerHTML=m.rows.map(r=>`<div class="mrow"><b>${r[0]}</b><span>${r[1]}</span></div>`).join('')+
+   `<div class="mrow"><b>ความเร็วเข้างาน</b><span>${meter(m.sp)}</span></div><div class="mrow"><b>รบกวนบ้าน</b><span>${meter(m.dis)} <small style="color:#6a7698">(น้อย = ดี)</small></span></div>`;
+  document.querySelectorAll('.tab').forEach(t=>t.setAttribute('aria-selected',t.dataset.m===k));
+}
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>showMethod(t.dataset.m)));
+showMethod('bait');
+
+// ---- quiz ----
+const TH=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+const THF=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+const sel=document.getElementById('start'), now=new Date();
+for(let i=0;i<12;i++){const d=new Date(now.getFullYear(),now.getMonth()+i,1);const o=document.createElement('option');o.value=d.getMonth()+'|'+(d.getFullYear()+543);o.textContent=THF[d.getMonth()]+' '+(d.getFullYear()+543);sel.appendChild(o)}
+sel.selectedIndex=1;
+const st={age:'old',spot:'frame'};
+document.querySelectorAll('.opts').forEach(g=>g.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>{
+  g.querySelectorAll('.opt').forEach(x=>x.setAttribute('aria-pressed',x===b));st[g.dataset.q]=b.dataset.v;calc()})));
+const size=document.getElementById('size'),sizeOut=document.getElementById('sizeOut');
+size.addEventListener('input',calc);sel.addEventListener('change',calc);
+const SPOT={none:'ยังไม่เจอปลวก (อยากป้องกัน)',frame:'วงกบ / ประตู / ตู้ไม้',shelf:'ชั้นหนังสือ / เฟอร์นิเจอร์',floor:'พื้น / ผนัง / รอยต่อ',yard:'สวน / รอบบ้าน'};
+function calc(){
+  const s=+size.value; sizeOut.textContent=s+' ตร.ว.';
+  let k,why,plus=[];
+  if(st.spot==='none'){
+    if(st.age==='new'){k='pipe';why='บ้านใหม่ที่ยังไม่เจอปลวก เหมาะกับการสร้างแนวป้องกันใต้ดินตั้งแต่ต้น'}
+    else{k='spray';why='ยังไม่เจอปลวก ฉีดพ่นแนวรอบบ้านเพื่อป้องกัน แล้วตรวจตามรอบ'; plus.push('+ อัดดินรอบบ้าน (ตามหน้างาน)')}
+  }else if(st.spot==='yard'){k='bait';why='เจอปลวกบริเวณสวน/รอบบ้าน วางสถานีเหยื่อในดินตามทางเดินปลวก';plus.push('+ ฉีดพ่นแนวรอบบ้าน')}
+  else{k='bait';why='เจอปลวกเดินในบ้านแล้ว ('+SPOT[st.spot]+') วางเหยื่อตรงทางเดินให้ปลวกพากลับรัง';
+    plus.push('+ ฉีดพ่นจุดที่พบ'); if(st.age==='old')plus.push('+ อัดท่อ/อัดดินเสริมแนวป้องกัน');}
+  if(st.age==='new'&&st.spot!=='none')plus.push('+ อัดท่อ (ถ้าบ้านวางท่อไว้)');
+  if(s>=150)plus.push('บ้านใหญ่ '+s+' ตร.ว. → แนะนำสัญญารายปี');
+  plus.push('แถม มด · แมลงสาบ · ตะขาบ');
+  document.getElementById('rIc').innerHTML=`<svg><use href="#${SYM[k]}"/></svg>`;
+  document.getElementById('rTitle').textContent=M[k].t;
+  document.getElementById('rWhy').textContent=why;
+  document.getElementById('rPlus').innerHTML=plus.map(p=>`<span>${p}</span>`).join('');
+  // calendar
+  const [m0,y0]=sel.value.split('|').map(Number); const visits={};const list=[];
+  for(let i=0;i<4;i++){const m=(m0+i*3)%12;const y=y0+Math.floor((m0+i*3)/12);visits[m]=i+1;list.push(`ครั้งที่ ${i+1}: ${THF[m]} ${y}`)}
+  const cal=document.getElementById('cal');cal.innerHTML='';
+  for(let i=0;i<12;i++){const m=(m0+i)%12;const d=document.createElement('div');d.textContent=TH[m];if(visits[m]&&i%3===0){d.className='v';d.dataset.n='#'+visits[m]}cal.appendChild(d)}
+  document.getElementById('msg').value=
+`สวัสดีครับ/ค่ะ สนใจบริการกำจัดปลวก (จากเว็บไซต์)
+• บ้าน: ${st.age==='new'?'บ้านใหม่ / กำลังสร้าง':'บ้านอยู่มาหลายปี'} ขนาดประมาณ ${s} ตร.ว.
+• เจอปลวก: ${SPOT[st.spot]}
+• วิธีที่สนใจ: ${M[k].t} ${plus.filter(p=>p.startsWith('+')).join(' ')}
+• สนใจสัญญารายปี (4 ครั้ง/ปี) เริ่ม ${THF[m0]} ${y0}
+  ${list.join('\n  ')}
+• พื้นที่/ที่อยู่: ...............
+รบกวนประเมินราคาและนัดวันเข้าดูหน้างานครับ/ค่ะ`;
+}
+calc();
+const toast=document.getElementById('toast');
+async function copyMsg(){const t=document.getElementById('msg').value;try{await navigator.clipboard.writeText(t)}catch(e){const a=document.getElementById('msg');a.select();document.execCommand('copy')}toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2200)}
+document.getElementById('copyBtn').addEventListener('click',copyMsg);
+document.getElementById('msgrBtn').addEventListener('click',copyMsg);
+
+// clock ticks
+const tk=document.getElementById('ticks');let h='';for(let i=0;i<12;i++){const a=i*30*Math.PI/180;h+=`<circle cx="${200+150*Math.sin(a)}" cy="${200-150*Math.cos(a)}" r="${i%3?3:0}" fill="rgba(255,255,255,.4)"/>`}tk.innerHTML=h;
+</script>
+</body>
+</html>

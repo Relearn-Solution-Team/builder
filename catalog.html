@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>builder — Catalog เว็บไซต์ตัวอย่างสำหรับ SME ไทย | Relearn Solution</title>
-<meta name="description" content="รวมเว็บไซต์ตัวอย่าง 21 ธุรกิจ ที่ builder สร้างจากเพจ Facebook จริง — ร้านยาง แอร์ ทำความสะอาด คาร์แคร์ ร้านเล็บ ช่างประปา กรูมมิ่ง ร้านดอกไม้ เค้ก เวิร์กช็อป">
+<meta name="description" content="รวมเว็บไซต์ตัวอย่าง 41 ธุรกิจ ที่ builder สร้างจากเพจ Facebook จริง — ร้านยาง แอร์ ทำความสะอาด คาร์แคร์ ร้านเล็บ ช่างประปา กรูมมิ่ง ร้านดอกไม้ เค้ก เวิร์กช็อป">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600;700;800;900&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -131,7 +131,7 @@ section{padding:110px 0}
 .pc .code b{color:var(--a2);font-weight:400}
 
 /* catalog toolbar */
-.toolbar{display:flex;gap:14px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:34px;position:sticky;top:82px;z-index:20;
+.toolbar{display:flex;gap:14px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:34px;position:relative;z-index:20;
   background:rgba(13,15,22,.78);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:18px;padding:10px}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
 .chip{font-family:var(--head);font-weight:700;font-size:14.5px;padding:9px 16px;border-radius:12px;color:var(--mut);transition:.2s;display:flex;align-items:center;gap:8px}
@@ -203,7 +203,7 @@ section{padding:110px 0}
 .next p{color:var(--mut);font-size:15.5px;margin:10px 0 0;max-width:280px}
 .next.hide,#nextWrap.hide{display:none}
 /* category sections */
-.group{margin-bottom:70px;scroll-margin-top:170px}
+.group{margin-bottom:70px;scroll-margin-top:90px}
 .group.hide{display:none}
 .gh{display:flex;align-items:center;gap:18px;margin-bottom:26px;padding-bottom:18px;border-bottom:1px solid var(--line)}
 .gh .gi{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:26px;flex:0 0 auto;background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 10px 30px -8px var(--g1)}
@@ -502,10 +502,69 @@ const SITES = [
    feat:['แคตตาล็อกกิจกรรมบริษัท', 'ตัวช่วยขอใบเสนอราคา', 'พิมพ์ PDF ส่ง HR'], pal:['#3d5a78', '#e8735a', '#f0b445', '#f3e6e3']},
   {slug:'bougainvillea-soap', name:'Bougainvillea Soap', cat:'craft', area:'ตลิ่งชัน · กรุงเทพฯ', src:'real',
    desc:'สตูดิโอสบู่โทนบานเย็น-ทอง ลายดอกเฟื่องฟ้าและฟองสบู่ ตารางเทียบคอร์สจริง ตัวช่วยเลือกคลาส และส่งข้อความถามรอบทาง LINE',
-   feat:['ตารางเทียบคอร์ส', 'ตัวช่วยเลือกคลาส', 'สร้างข้อความ LINE'], pal:['#c8175d', '#4a1236', '#b78b1e', '#fffaf3']},
+   feat:['ตารางเทียบคอร์ส', 'ตัวช่วยเลือกคลาส', 'สร้างข้อความ LINE'], pal:['#c8175d', '#4a1236', '#b78b1e', '#fffaf3']},  {slug:'pornasarin-curtain', name:'พรอัสรินทร์ดีไซน์', cat:'curtain', area:'อ้อมน้อย · กระทุ่มแบน สมุทรสาคร', src:'real',
+   desc:'ร้านผ้าม่านป้ายเหลือง–ดำ รวมม่าน 8 แบบในหน้าเดียว พร้อมตัวส่งขนาดหน้าต่างที่วาดม่านจำลองตามแบบและสีที่เลือก แล้วส่งเข้า LINE',
+   feat:['ส่งขนาดหน้าต่าง + ม่านจำลอง', 'ผลงานแยกบ้าน / สำนักงาน', 'ผ้ากัน UV · กันไรฝุ่น'], pal:['#FEDC5E', '#0C0704', '#A79985', '#BAB7B2']},
+  {slug:'sp-lucky-curtain', name:'ผ้าม่าน S.P lucky design', cat:'curtain', area:'ซ.กำนันแม้น · กรุงเทพฯ', src:'real',
+   desc:'ลุคหรูมินิมอลเขียวเข้ม–ทอง ผลงานจริงตามหมู่บ้านกรองได้ตามแบบม่าน × โทนสี และตัวจำลองห้องก่อนทักไลน์',
+   feat:['กรองผลงานตามแบบ × โทนสี', 'จำลองห้องตามสีจริง', 'ติดตั้งฟรีรวมราง'], pal:['#1E5341', '#E0C080', '#F4EFE4', '#2E2A24']},
+  {slug:'ntchemical-termite', name:'Ntchemical กำจัดปลวก', cat:'pest', area:'ธัญบุรี · ปทุมธานี', src:'real',
+   desc:'โทนน้ำเงิน–แดง–เหลืองจากตราร้าน เทียบ 3 วิธีกำจัดปลวก ควิซเลือกวิธีตามบ้าน และปฏิทินเข้าบริการ 4 ครั้ง/ปี',
+   feat:['ควิซเลือกวิธีกำจัด', 'ปฏิทินสัญญารายปี', 'รับประกันเหยื่อตลอดสัญญา'], pal:['#0F2465', '#DD1402', '#F7E448', '#EF5E01']},
+  {slug:'pp-services-termite', name:'PP Services กำจัดปลวก', cat:'pest', area:'ประชาอุทิศ 90 · กทม.–สมุทรปราการ', src:'real',
+   desc:'ลุคพรีเมียมทอง–เทาเข้ม ผังบ้านแตะดูจุดที่ปลวกชอบ เคสจริงทาวน์โฮม 3 ชั้น และตัวนัดสำรวจฟรีทาง LINE',
+   feat:['ผังบ้านแตะดูจุดเสี่ยง', 'ไทม์ไลน์เคสจริง', 'นัดสำรวจฟรี'], pal:['#C09018', '#4C4C4C', '#E0B048', '#FBF8F1']},
+  {slug:'noppon-transport', name:'นพพรขนส่ง', cat:'move', area:'รังสิต · ลำลูกกา · ดอนเมือง', src:'real',
+   desc:'ธีมวันย้ายบ้าน น้ำเงิน–ส้ม–ผ้าใบลายฟ้า ชูจุดขายถอดประกอบเฟอร์นิเจอร์ และตัวเลือกรถตามปริมาณของ ส่งรายละเอียดเข้า LINE',
+   feat:['ของแค่ไหนใช้รถอะไร', 'ถอด–ห่อ–ขน–ประกอบ', 'รูปงานจริงจากเพจ'], pal:['#1B3A6B', '#2F6DB5', '#F28C28', '#2E9E44']},
+  {slug:'carmove-setthawut', name:'CARMOVE เศรษฐวุฒิ', cat:'move', area:'ลาดกระบัง · ทั่วไทย', src:'real',
+   desc:'นีออนไนต์จากหน้าปกเพจ ดำ–เขียวเรือง–คอรัล แยกงานย้ายหอกับจัดบูธ พร้อมไทม์ไลน์งานล่าสุดแบบบันทึกงานของร้าน',
+   feat:['ตัวขอราคา ย้ายหอ / จัดบูธ', 'ไทม์ไลน์งานล่าสุด', 'ป้ายนีออน'], pal:['#0B0B0B', '#3CCB5A', '#F06B63', '#FFFFFF']},
+  {slug:'chang-u-washer', name:'ช่างยู ล้างเครื่องซักผ้า', cat:'repair', area:'กรุงเทพฯ–ปริมณฑล', src:'real',
+   desc:'โทนสแตนเลส–น้ำเงิน ถังซักหมุนได้ สไลเดอร์ก่อน–หลังจากรูปจริง และตัวเลือกแบบเครื่อง ยี่ห้อ อาการ เพื่อประเมินราคา',
+   feat:['สไลเดอร์ก่อน–หลัง', 'เลือกแบบเครื่อง + อาการ', 'ถอดถังซักทุกงาน'], pal:['#1E2A38', '#3A7BBF', '#C9D3DD', '#7CFF9B']},
+  {slug:'nong-kul-service', name:'น้องกุล ล้าง ซ่อม เครื่องซักผ้า', cat:'repair', area:'ปทุมธานี · นนทบุรี', src:'real',
+   desc:'สไตล์ป้ายร้านท้องถิ่น ขาว–ฟ้า–เหลือง “รับทุกยี่ห้อ!” ตัวเช็กพื้นที่บริการตามหมู่บ้าน และส่วนเครื่องหยอดเหรียญสำหรับเจ้าของหอ',
+   feat:['เช็กพื้นที่ใกล้คุณ', 'เครื่องหยอดเหรียญ', 'รูปช่างทำงานจริง'], pal:['#2B8FD8', '#111111', '#F5C518', '#DCEBFA']},
+  {slug:'praipom-makeup', name:'ปลายผม แต่งหน้า', cat:'makeup', area:'หน้า ม.มหิดล ศาลายา', src:'real',
+   desc:'งาช้าง–ครีม–ทอง กระจกแต่งหน้ามีไฟ ตัวเลือกลุค และตัววางเวลาแต่งตามเวลางาน ส่งคิวเข้า LINE พร้อมเช็กลิสต์เตรียมผิว',
+   feat:['ตัววางเวลาเริ่มแต่ง', 'เลือกลุคเปลี่ยนสีหน้า', 'เช็กลิสต์เตรียมผิว'], pal:['#C9A24A', '#F7F3EE', '#D2CAC8', '#3B302A']},
+  {slug:'panda-aui-makeup', name:'Panda Aui Makeup & Hair', cat:'makeup', area:'สมุทรปราการ', src:'real',
+   desc:'ชาร์โคล–ขาว–ชมพูนู้ดกับแพนด้ามวยผม ลุคบุ๊กงานผมจัดหมวดจากรีลจริง และตัววางไทม์ไลน์วันแต่งงาน',
+   feat:['ลุคบุ๊กงานผมจากรีลจริง', 'ไทม์ไลน์วันแต่ง', 'เปลี่ยนลุคหลายชุด'], pal:['#333333', '#E8C4C0', '#FFFFFF', '#9B6B66']},
+  {slug:'pconscape', name:'PCONSCAPE', cat:'photo', area:'กรุงเทพฯ', src:'real',
+   desc:'ช่างภาพรับปริญญาโทนฟิล์มอุ่นบนกรมท่า ช่องมองภาพในหน้าแรก เทียบแพ็กเกจจริง และสลิปจองคิวส่ง LINE',
+   feat:['เทียบแพ็กเกจครึ่งวัน / นอกรอบ', 'ฟิล์มสตริปกรองตามมหาลัย', 'สลิปเช็กคิว'], pal:['#2A314B', '#F2DBA9', '#BBAC9E', '#E8763A']},
+  {slug:'panwadee-photography', name:'Panwadee Photography', cat:'photo', area:'กรุงเทพฯ · รังสิต', src:'real',
+   desc:'ครุยดำ–ขาว–แถบม่วง ภาพจริงจัดแกลเลอรีแบบ masonry ตัววางแผนวันซ้อม + วันจริง และเช็กลิสต์ก่อนถ่าย',
+   feat:['วางแผนวันซ้อม + วันจริง', 'แกลเลอรีภาพจริง', 'เช็กลิสต์ก่อนถ่าย'], pal:['#1A1A1A', '#7B3FA0', '#FFFFFF', '#E9DCF2']},
+  {slug:'tham-massage', name:'ธรรม นวดเพื่อสุขภาพ', cat:'spa', area:'บางบัวทอง · นนทบุรี', src:'real',
+   desc:'ไทยหรูน้ำตาล–มารูน–ทอง บัวและลีลาวดี ราคาจริง 11 คอร์ส ตัวเลือกคอร์สตามอาการและงบ และไฟบอกร้านเปิดอยู่ไหม',
+   feat:['ราคาจริง 11 คอร์ส', 'เลือกคอร์สตามอาการ + งบ', 'หมอนวดชาย นวดพระภิกษุ'], pal:['#4A2A1A', '#7A1E1E', '#D4A437', '#FBF3E2']},
+  {slug:'chorcher-massage', name:'ฌ.เฌอ นวด & ถอนหงอก', cat:'spa', area:'บิ๊กซี ลาดพร้าว', src:'real',
+   desc:'เขียวสดเป็นกันเอง ตัวประเมินถอนหงอกที่หัวการ์ตูนค่อยๆ หงอกตามสไลเดอร์ และแผนผังทางเดินในห้างไปถึงร้าน',
+   feat:['ตัวประเมินถอนหงอก', 'แผนผังทางไปร้านในห้าง', 'จองคิวทาง LINE'], pal:['#2FA84F', '#FFFFFF', '#FFC93C', '#FFB59A']},
+  {slug:'est1981-barberclub', name:'Est.1981 Barberclub', cat:'barber', area:'ตลาดเค · ลำลูกกาคลองสอง', src:'real',
+   desc:'บาร์เบอร์คลับวินเทจ ดำ–ทอง เสาบาร์เบอร์หมุน ตั๋วจองเลือกทรง → ช่าง → วันเวลา ส่งเข้า LINE OA',
+   feat:['ตั๋วจอง ทรง → ช่าง → เวลา', 'ไฟบอกร้านเปิด', 'การ์ดช่าง 3 คน'], pal:['#111111', '#C9A15B', '#2B2B2B', '#FFFFFF']},
+  {slug:'oldhead-studio', name:'Oldhead Studio', cat:'barber', area:'The Sense Salaya · ศาลายา', src:'real',
+   desc:'สตูดิโอมินิมอลขาว–ดำ–ฟ้า ป้ายย้ายร้านใหม่ชัดเจน ลุคบุ๊กจากผลงานจริง และตัวจองล่วงหน้าแบบแชต LINE',
+   feat:['ป้ายย้ายร้าน + แผนที่ใหม่', 'ลุคบุ๊ก ชาย / หญิง / สี / ดัด', 'จองล่วงหน้า'], pal:['#0E0E0E', '#9ED3F0', '#FFFFFF', '#D9D9D9']},
+  {slug:'kitchen-twobaby', name:'Kitchen_Twobaby', cat:'catering', area:'พระราม 2 · ทั่ว กทม.', src:'real',
+   desc:'ครัวบ้านโทนน้ำตาล–พีชลายผ้าปูโต๊ะ ตัวเลือกชุดตามงบต่อหัว × จำนวนคน วาดกล่องสดๆ และเขียนใบขอราคาให้ฝ่ายจัดซื้อ',
+   feat:['ชุดตามงบต่อหัว', 'ข้อมูลสำหรับองค์กร', 'ใบขอราคาส่ง LINE'], pal:['#6B4A3A', '#F3E3D3', '#8FA77A', '#FFFFFF']},
+  {slug:'onemore-homemade', name:'ONE MORE Homemade', cat:'catering', area:'อารีย์ · ทั่ว กทม.', src:'real',
+   desc:'คาเฟ่มินิมอลชมพู–อิฐ ลายเส้นจากโลโก้ แยกจัดเบรค 55฿ กับ Food support 700฿ และตัวจัดออร์เดอร์พร้อมป้ายจำลอง',
+   feat:['แยกจัดเบรค / Food support', 'เช็กสั่งล่วงหน้า 3–5 วัน', 'พรีวิวกล่อง + ป้าย'], pal:['#8E3B2F', '#F8DDD4', '#FFF8F3', '#E9A08F']},
+  {slug:'siam-sneaker-care', name:'Siam Sneaker Care', cat:'shoe', area:'บางพลี · รับ-ส่งทั่วไทย', src:'real',
+   desc:'สปารองเท้า–กระเป๋าแบรนด์เนมโทนเขียวเข้ม–เบจ สไลเดอร์ก่อน–หลัง ขั้นตอนส่งของ 4 ขั้น และตัวช่วยส่งรูปประเมินราคา',
+   feat:['สไลเดอร์ก่อน–หลัง', 'ส่งรูปประเมินราคา', 'รับ-ส่งฟรีทั่วไทย'], pal:['#123F35', '#E9E2D6', '#FFFFFF', '#B89A6A']},
+  {slug:'pjt-shoe-spa', name:'PJT บ้านสปารองเท้า', cat:'shoe', area:'เมืองนครปฐม', src:'real',
+   desc:'ร้านซักรองเท้า + ซัก-อบ-รีดโทนฟ้า–เหลือง แยกสองบริการชัด ไฟบอกร้านเปิดตามเวลาจริง และแผนที่หน้าร้าน',
+   feat:['ไฟบอกร้านเปิดตอนนี้', 'แยกสปารองเท้า / ซักรีด', 'แผนที่หน้าร้าน'], pal:['#1F4E8C', '#D3E8F6', '#F6E7A6', '#FFFFFF']},
 ];
-const CATS = {all:'ทั้งหมด', auto:'รถยนต์', air:'แอร์', clean:'ทำความสะอาด', beauty:'ความงาม', plumb:'ประปา', pet:'สัตว์เลี้ยง', flower:'ดอกไม้', cake:'เค้ก & เบเกอรี', craft:'เวิร์กช็อป'};
-const CAT_LABEL = {auto:'AUTO · รถยนต์', air:'AIRCON · แอร์', clean:'CLEANING · ทำความสะอาด', beauty:'BEAUTY · เล็บ & ขนตา', plumb:'PLUMBING · ประปา', pet:'PET · อาบน้ำตัดขน', flower:'FLORIST · ดอกไม้', cake:'BAKERY · เค้กสั่งทำ', craft:'WORKSHOP · งานคราฟต์'};
+const CATS = {all:'ทั้งหมด', auto:'รถยนต์', air:'แอร์', clean:'ทำความสะอาด', beauty:'ความงาม', plumb:'ประปา', pet:'สัตว์เลี้ยง', flower:'ดอกไม้', cake:'เค้ก & เบเกอรี', craft:'เวิร์กช็อป', curtain:'ผ้าม่าน', pest:'กำจัดปลวก', move:'ขนย้าย', repair:'ซ่อมเครื่องซักผ้า', makeup:'แต่งหน้า-ทำผม', photo:'ช่างภาพ', spa:'นวด & สปา', barber:'บาร์เบอร์', catering:'จัดเบรค & Snack box', shoe:'สปารองเท้า'};
+const CAT_LABEL = {auto:'AUTO · รถยนต์', air:'AIRCON · แอร์', clean:'CLEANING · ทำความสะอาด', beauty:'BEAUTY · เล็บ & ขนตา', plumb:'PLUMBING · ประปา', pet:'PET · อาบน้ำตัดขน', flower:'FLORIST · ดอกไม้', cake:'BAKERY · เค้กสั่งทำ', craft:'WORKSHOP · งานคราฟต์', curtain:'CURTAIN · ผ้าม่าน', pest:'PEST · กำจัดปลวก', move:'MOVING · ขนย้าย', repair:'REPAIR · เครื่องซักผ้า', makeup:'MAKEUP · แต่งหน้า-ทำผม', photo:'PHOTO · ช่างภาพ', spa:'MASSAGE · นวด & สปา', barber:'BARBER · ตัดผมชาย', catering:'CATERING · จัดเบรค', shoe:'SHOE SPA · ซักรองเท้า'};
 const CAT_META = {
   auto:  {ic:'🚗', g:['#22D3EE','#0E7490'], d:'ร้านยาง คาร์แคร์ เคลือบแก้ว และงานดูแลภายในรถ'},
   air:   {ic:'❄️', g:['#38BDF8','#1D4ED8'], d:'ล้างแอร์ ซ่อมแอร์ พร้อมตัวคิดราคาและพื้นที่บริการ'},
@@ -516,6 +575,16 @@ const CAT_META = {
   flower:{ic:'💐', g:['#C084FC','#7E22CE'], d:'ช่อดอกไม้ พวงหรีด และพวงมาลา'},
   cake:  {ic:'🎂', g:['#FB7185','#BE123C'], d:'เค้กสั่งทำและเบเกอรี่โฮมเมด'},
   craft: {ic:'🎨', g:['#FACC15','#CA8A04'], d:'เวิร์กช็อปงานคราฟต์ สำหรับบุคคลและองค์กร'},
+  curtain:{ic:'🪟', g:['#E0C080','#8A6A2E'], d:'ผ้าม่าน มู่ลี่ ม่านม้วน วัดหน้างานและติดตั้ง'},
+  pest:  {ic:'🐜', g:['#F87171','#B91C1C'], d:'กำจัดปลวก วางเหยื่อ อัดท่อ สัญญารายปี'},
+  move:  {ic:'🚚', g:['#60A5FA','#1D4ED8'], d:'รถรับจ้าง ย้ายบ้าน ย้ายหอ ถอดประกอบเฟอร์นิเจอร์'},
+  repair:{ic:'🧺', g:['#67E8F9','#0E7490'], d:'ล้างและซ่อมเครื่องซักผ้าถึงบ้าน'},
+  makeup:{ic:'💄', g:['#F9A8D4','#BE185D'], d:'ช่างแต่งหน้า-ทำผม รับปริญญา เจ้าสาว ออกงาน'},
+  photo: {ic:'📷', g:['#A5B4FC','#4338CA'], d:'ช่างภาพรับปริญญา งานอีเวนต์ งานแต่ง'},
+  spa:   {ic:'🌿', g:['#86EFAC','#15803D'], d:'นวดแผนไทย นวดเท้า สปา และถอนหงอก'},
+  barber:{ic:'💈', g:['#D6B36A','#78350F'], d:'บาร์เบอร์และสตูดิโอตัดผม'},
+  catering:{ic:'🥪', g:['#FDBA74','#C2410C'], d:'จัดเบรค Snack box ข้าวกล่อง Food support'},
+  shoe:  {ic:'👟', g:['#5EEAD4','#115E59'], d:'สปารองเท้า-กระเป๋า ซักรองเท้า'},
 };
 const NGROUPS = new Set(SITES.map(s => s.cat)).size;
 document.querySelectorAll('.js-n').forEach(el => el.textContent = SITES.length);
