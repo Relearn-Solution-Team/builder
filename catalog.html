@@ -201,7 +201,17 @@ section{padding:110px 0}
 .next:hover .plus{transform:rotate(90deg) scale(1.05)}
 .next h3{font-size:24px;font-weight:900}
 .next p{color:var(--mut);font-size:15.5px;margin:10px 0 0;max-width:280px}
-.next.hide{display:none}
+.next.hide,#nextWrap.hide{display:none}
+/* category sections */
+.group{margin-bottom:70px;scroll-margin-top:170px}
+.group.hide{display:none}
+.gh{display:flex;align-items:center;gap:18px;margin-bottom:26px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.gh .gi{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:26px;flex:0 0 auto;background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 10px 30px -8px var(--g1)}
+.gh .gt{flex:1;min-width:0}
+.gh small{display:block;font-family:var(--head);font-weight:700;font-size:12.5px;letter-spacing:2.5px;color:var(--mut)}
+.gh h3{font-size:clamp(24px,2.6vw,32px);font-weight:900;letter-spacing:-.5px}
+.gh p{color:var(--mut);font-size:15px;margin-top:2px}
+.gh .gc{font-family:var(--head);font-weight:800;font-size:14px;border:1px solid var(--line2);border-radius:999px;padding:6px 14px;color:#c8ccd8;white-space:nowrap}
 .empty{display:none;text-align:center;color:var(--mut);padding:60px 0;font-size:18px}
 
 /* stack section */
@@ -277,6 +287,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
   nav .btn{display:none}
   .chips{overflow-x:auto;flex-wrap:nowrap;width:100%;padding-bottom:2px}
   .chip{flex:0 0 auto}
+  .gh{flex-wrap:wrap}.gh .gc{order:3}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -349,7 +360,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
   <div class="wrap">
     <div class="sh rv">
       <div><div class="eyebrow">The Catalog</div><h2><span class="js-n">0</span> ร้าน <span class="grad-tx"><span class="js-n">0</span> ตัวตน</span></h2></div>
-      <p>เลื่อนเมาส์บนการ์ดเพื่อดูทั้งหน้า สลับดูแบบมือถือ หรือกด “ดูสด” เพื่อเปิดเว็บจริงในหน้าต่างพรีวิว</p>
+      <p>แยกเป็นหมวดตามประเภทธุรกิจ กดหมวดด้านล่างเพื่อดูเฉพาะเว็บในหมวดนั้น เลื่อนเมาส์บนการ์ดเพื่อดูทั้งหน้า สลับดูแบบมือถือ หรือกด “ดูสด” เพื่อเปิดเว็บจริงในหน้าต่างพรีวิว</p>
     </div>
 
     <div class="toolbar rv">
@@ -363,7 +374,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
       </div>
     </div>
 
-    <div class="grid" id="grid"></div>
+    <div id="groups"></div>
     <div class="empty" id="empty">ไม่พบร้านที่ค้นหา ลองคำอื่นดูนะ</div>
   </div>
 </section>
@@ -495,6 +506,17 @@ const SITES = [
 ];
 const CATS = {all:'ทั้งหมด', auto:'รถยนต์', air:'แอร์', clean:'ทำความสะอาด', beauty:'ความงาม', plumb:'ประปา', pet:'สัตว์เลี้ยง', flower:'ดอกไม้', cake:'เค้ก & เบเกอรี', craft:'เวิร์กช็อป'};
 const CAT_LABEL = {auto:'AUTO · รถยนต์', air:'AIRCON · แอร์', clean:'CLEANING · ทำความสะอาด', beauty:'BEAUTY · เล็บ & ขนตา', plumb:'PLUMBING · ประปา', pet:'PET · อาบน้ำตัดขน', flower:'FLORIST · ดอกไม้', cake:'BAKERY · เค้กสั่งทำ', craft:'WORKSHOP · งานคราฟต์'};
+const CAT_META = {
+  auto:  {ic:'🚗', g:['#22D3EE','#0E7490'], d:'ร้านยาง คาร์แคร์ เคลือบแก้ว และงานดูแลภายในรถ'},
+  air:   {ic:'❄️', g:['#38BDF8','#1D4ED8'], d:'ล้างแอร์ ซ่อมแอร์ พร้อมตัวคิดราคาและพื้นที่บริการ'},
+  clean: {ic:'🧽', g:['#2DD4BF','#0F766E'], d:'Big Cleaning ซักที่นอน ซักโซฟา'},
+  beauty:{ic:'💅', g:['#F472B6','#BE185D'], d:'ร้านเล็บและต่อขนตา'},
+  plumb: {ic:'🔧', g:['#60A5FA','#1E3A8A'], d:'ช่างประปา ท่อแตก น้ำรั่ว เดินท่อใหม่'},
+  pet:   {ic:'🐾', g:['#FB923C','#C2410C'], d:'อาบน้ำ ตัดขน และจองคิวสัตว์เลี้ยง'},
+  flower:{ic:'💐', g:['#C084FC','#7E22CE'], d:'ช่อดอกไม้ พวงหรีด และพวงมาลา'},
+  cake:  {ic:'🎂', g:['#FB7185','#BE123C'], d:'เค้กสั่งทำและเบเกอรี่โฮมเมด'},
+  craft: {ic:'🎨', g:['#FACC15','#CA8A04'], d:'เวิร์กช็อปงานคราฟต์ สำหรับบุคคลและองค์กร'},
+};
 const NGROUPS = new Set(SITES.map(s => s.cat)).size;
 document.querySelectorAll('.js-n').forEach(el => el.textContent = SITES.length);
 document.querySelectorAll('.js-g').forEach(el => el.textContent = NGROUPS);
@@ -514,9 +536,9 @@ const chips = document.getElementById('chips');
 chips.innerHTML = Object.entries(CATS).map(([k, v]) =>
   `<button class="chip${k === 'all' ? ' on' : ''}" data-cat="${k}">${v}<span>${k === 'all' ? SITES.length : SITES.filter(s => s.cat === k).length}</span></button>`).join('');
 
-// cards
-const grid = document.getElementById('grid');
-grid.innerHTML = SITES.map((s, i) => `
+// cards, grouped into one section per category
+const groups = document.getElementById('groups');
+const card = (s, i) => `
   <article class="card rv" data-cat="${s.cat}" data-q="${(s.name + ' ' + s.area + ' ' + s.slug + ' ' + CATS[s.cat]).toLowerCase()}" style="--c1:${s.pal[0]};--c2:${s.pal[1]}">
     <div class="thumb" data-preview="${s.slug}">
       <span class="num">${String(i + 1).padStart(2, '0')}</span>
@@ -538,43 +560,63 @@ grid.innerHTML = SITES.map((s, i) => `
         </div>
       </div>
     </div>
-  </article>`).join('') + `
-  <a class="next rv" href="#stack" id="nextCard"><div class="plus">+</div><h3>ร้านถัดไปของคุณ</h3><p>ส่งลิงก์เพจ Facebook มา แล้ว builder จะสร้างหน้าเว็บตัวอย่างที่เป็นตัวตนของร้านคุณ</p></a>`;
+  </article>`;
+let num = 0;
+groups.innerHTML = Object.keys(CAT_META).map(k => {
+  const list = SITES.filter(s => s.cat === k); if (!list.length) return '';
+  const m = CAT_META[k];
+  return `
+  <div class="group" id="cat-${k}" data-cat="${k}" style="--g1:${m.g[0]};--g2:${m.g[1]}">
+    <div class="gh rv"><div class="gi">${m.ic}</div><div class="gt"><small>${CAT_LABEL[k].split(' · ')[0]}</small><h3>${CATS[k]}</h3><p>${m.d}</p></div><span class="gc">${list.length} เว็บไซต์</span></div>
+    <div class="grid">${list.map(s => card(s, num++)).join('')}</div>
+  </div>`;
+}).join('') + `
+  <div class="grid" id="nextWrap"><a class="next rv" href="#stack" id="nextCard"><div class="plus">+</div><h3>ร้านถัดไปของคุณ</h3><p>ส่งลิงก์เพจ Facebook มา แล้ว builder จะสร้างหน้าเว็บตัวอย่างที่เป็นตัวตนของร้านคุณ</p></a></div>`;
 
 // filter + search
 let cat = 'all', q = '';
 function applyFilter() {
   let n = 0;
-  grid.querySelectorAll('.card').forEach(c => {
-    const ok = (cat === 'all' || c.dataset.cat === cat) && (!q || c.dataset.q.includes(q));
-    c.classList.toggle('hide', !ok); if (ok) { n++; c.classList.add('in'); }
+  groups.querySelectorAll('.group').forEach(g => {
+    let gn = 0;
+    if (cat === 'all' || g.dataset.cat === cat) g.querySelectorAll('.card').forEach(c => {
+      const ok = !q || c.dataset.q.includes(q);
+      c.classList.toggle('hide', !ok); if (ok) { gn++; c.classList.add('in'); }
+    });
+    g.classList.toggle('hide', !gn); n += gn;
+    if (gn) g.querySelector('.gh').classList.add('in');
   });
-  document.getElementById('nextCard').classList.toggle('hide', cat !== 'all' || !!q);
+  document.getElementById('nextWrap').classList.toggle('hide', cat !== 'all' || !!q);
   document.getElementById('empty').style.display = n ? 'none' : 'block';
 }
 chips.addEventListener('click', e => {
   const b = e.target.closest('.chip'); if (!b) return;
   chips.querySelectorAll('.chip').forEach(x => x.classList.toggle('on', x === b));
   cat = b.dataset.cat; applyFilter();
+  history.replaceState(null, '', cat === 'all' ? '#catalog' : '#cat-' + cat);
+  const top = document.getElementById('catalog').querySelector('.toolbar').getBoundingClientRect().top;
+  if (top < 0 || top > innerHeight * .6) document.getElementById('catalog').scrollIntoView();
 });
+const h = location.hash.match(/^#cat-(\w+)$/);
+if (h && CATS[h[1]]) chips.querySelector(`[data-cat="${h[1]}"]`)?.click();
 document.getElementById('q').addEventListener('input', e => { q = e.target.value.trim().toLowerCase(); applyFilter(); });
 
 // desktop / mobile toggle
 document.getElementById('seg').addEventListener('click', e => {
   const b = e.target.closest('button'); if (!b) return;
   document.querySelectorAll('#seg button').forEach(x => x.classList.toggle('on', x === b));
-  grid.classList.toggle('mobile-mode', b.dataset.mode === 'm');
+  groups.classList.toggle('mobile-mode', b.dataset.mode === 'm');
 });
 
 // copy palette colour
-grid.addEventListener('click', e => {
+groups.addEventListener('click', e => {
   const sw = e.target.closest('.pal i'); if (!sw) return;
   navigator.clipboard?.writeText(sw.dataset.hex);
   const old = sw.dataset.hex; sw.dataset.hex = 'copied!'; setTimeout(() => sw.dataset.hex = old, 900);
 });
 
 // card tilt
-grid.querySelectorAll('.card').forEach(c => {
+groups.querySelectorAll('.card').forEach(c => {
   c.addEventListener('mousemove', e => {
     const r = c.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
     c.style.transform = `perspective(1200px) rotateY(${x * 5}deg) rotateX(${-y * 5}deg) translateY(-6px)`;
