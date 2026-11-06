@@ -51,3 +51,17 @@ Single-file HTML homepage demos (Noto Sans Thai headings, Sarabun body) made to 
 Content that could not be verified (some prices, reviews, portfolio photos) is marked on each page as demo sample content.
 
 Prompts used: `PROMPT_RESEARCH.md` (lead research), `PROMPT_CREATE_WEB.md` (site build).
+
+## Research and concepts — 7 November 2026
+
+Added **30 exploratory homepage concepts in 6 new categories**, five businesses each: metalwork, glass/aluminium, sofa repair, signage, CCTV, and gardening. The catalog now contains 71 pages.
+
+**0 of the 30 candidates passed every research gate.** Recent activity could not be verified to the required standard. These concepts are not a qualified sales list. Some candidates have existing service sites and remain excluded until a concrete additional need is established. No business was contacted.
+
+- [Research dashboard](research/2026-11-07/index.html)
+- [Thai research report, limitations, provisional scores, and verification priorities](research/2026-11-07/REPORT.md)
+- [Structured candidate data](research/2026-11-07/leads.json)
+
+The new pages use original SVG illustrations, not shop portfolio photos. Their proposed palettes have not been verified against Facebook branding. Unverified prices, testimonials, customer counts, and booking availability are omitted. Map links are searches rather than verified pins. Contact details must be reconfirmed before outreach.
+
+Regenerate this batch with `python scripts/build_research_demos.py`. Serve locally with `python -m http.server 8765 --bind 127.0.0.1`, then open `http://127.0.0.1:8765/catalog.html`.

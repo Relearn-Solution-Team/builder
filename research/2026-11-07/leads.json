@@ -1,0 +1,1072 @@
+{
+  "date": "2026-11-07",
+  "target": 30,
+  "categories": 6,
+  "perCategory": 5,
+  "qualified": 0,
+  "missing": 30,
+  "assessmentWindow": {
+    "days90From": "2026-08-09",
+    "days60From": "2026-09-08",
+    "days30From": "2026-10-08",
+    "through": "2026-11-07"
+  },
+  "leads": [
+    {
+      "cat": "metal",
+      "slug": "wuttikorn-metal",
+      "name": "ส.วุฒิกร การช่าง",
+      "area": "ไทรน้อย นนทบุรี",
+      "source": "https://www.thaithurkic.com/%E0%B8%AA-%E0%B8%A7%E0%B8%B8%E0%B8%92%E0%B8%B4%E0%B8%81%E0%B8%A3-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87-086-109-3471",
+      "phone": "0861093471",
+      "fact": "ไดเรกทอรีระบุงานเหล็กดัด มุ้งลวด กันสาด และประตูรั้ว พร้อมลิงก์ Facebook; ยังอ่านโพสต์ไม่ได้",
+      "facebook": "https://www.facebook.com/1581689842061800/",
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "จัดลายประตูและกันสาดเป็นสองหมวด",
+      "reasons": [
+        "หลายงานเหล็กในรายการเดียว",
+        "ชื่อผู้รับงานและเบอร์เปิดเผย"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "metal",
+      "slug": "changpan-metal",
+      "name": "ช่างปาน",
+      "area": "พระราม 5 นนทบุรี",
+      "source": "https://www.thaithurkic.com/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%B2%E0%B8%99-%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%95%E0%B8%B4%E0%B8%A1%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81-%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B2_1R-083-595-9673",
+      "phone": "0835959673",
+      "fact": "พบชื่อช่างปานและที่ตั้งพระราม 5 รับต่อเติม โครงเหล็ก หลังคาและกันสาด พร้อมลิงก์ Facebook",
+      "facebook": "https://www.facebook.com/803942859756485/",
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "หน้าเฉพาะหลังคาโรงรถพร้อมเช็กลิสต์ภาพ",
+      "reasons": [
+        "ระบุโซนพระราม 5 ชัด",
+        "งานหลังคาต้องดูพื้นที่จริง"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "metal",
+      "slug": "nongsao-stainless",
+      "name": "น้องสาวสแตนเลส ช่างตั้ม",
+      "area": "นนทบุรี",
+      "source": "https://www.thaithurkic.com/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AA%E0%B9%81%E0%B8%95%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%AA-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5-%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%A1-082-203-2334",
+      "phone": "0822032334",
+      "fact": "พบข้อมูลช่างตั้ม รับงานสแตนเลส ราวบันได เหล็กดัดและโครงหลังคาในนนทบุรี",
+      "facebook": "https://www.facebook.com/689268961198498/",
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "รวมตัวอย่างสแตนเลสแยกจากเหล็กดัด",
+      "reasons": [
+        "มีทั้งราวบันไดและหลังคา",
+        "ระบุช่างตั้มให้ติดต่อโดยตรง"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "metal",
+      "slug": "wichitsilp-metal",
+      "name": "วิจิตรศิลป์การช่าง",
+      "area": "บางกร่าง นนทบุรี",
+      "source": "https://www.yellowpages.co.th/profile/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87-928OHaEgM",
+      "phone": "028829467",
+      "fact": "เยลโล่เพจเจสระบุที่อยู่บางกร่าง พร้อมบริการเหล็กดัด สแตนเลส หลังคาและมุ้งลวด",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "รวมประเภทงานและวิธีเข้าร้าน",
+      "reasons": [
+        "มีบริการมุ้งลวดร่วมกับเหล็กดัด",
+        "มีที่อยู่ร้านสำหรับแผนที่"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "metal",
+      "slug": "yaicharoen-metal",
+      "name": "ใหญ่เจริญการช่าง",
+      "area": "กรุงเทพฯ–นนทบุรี",
+      "source": "https://www.pantipmarket.com/mall/dontreephol/?id=1459&node=products",
+      "phone": "0812645925",
+      "fact": "ผลค้นหาประกาศเก่าระบุบริการเหล็กดัด ประตูม้วน และโทร 0812645925; เปิดต้นทางพบ Pantipmarket ยุติบริการ 30 ต.ค. 2569 จึงยืนยันสถานะร้านไม่ได้",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "แนวคิดหน้ารวมข้อมูลทดแทนประกาศเก่า หากยังดำเนินงาน",
+      "reasons": [
+        "ประกาศเดิมมีงานหลายหมวด",
+        "ช่องทางประกาศเดิมยุติบริการแล้ว"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "glass",
+      "slug": "damrat-glass",
+      "name": "ดำรัส กระจกอลูมิเนียม",
+      "area": "นนทบุรี",
+      "source": "https://www.damrataluminum.com/",
+      "phone": "0814905115",
+      "fact": "เว็บร้านแยกรูปแบบประตูบานเลื่อน บานสวิง และอัลบั้มผลงาน มีโทรติดต่อชัดเจน",
+      "facebook": null,
+      "status": "excluded",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 0,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 33,
+        "provisional": true
+      },
+      "proposal": "หน้าโปรโมตเฉพาะบานเลื่อน ต้องยืนยันโจทย์เพิ่มก่อน",
+      "reasons": [
+        "มีอัลบั้มและชนิดบานบนเว็บเดิม",
+        "มีเบอร์ติดต่อแล้ว"
+      ],
+      "gap": "พบเว็บหรือหน้าบริการเดิมพร้อมข้อมูลสำคัญ ยังไม่มีเหตุผลที่ยืนยันได้ว่าหน้าใหม่ช่วยอะไร จึงตัดจากรายชื่อเสนอขายรอบนี้"
+    },
+    {
+      "cat": "glass",
+      "slug": "lattapon-glass",
+      "name": "ลัทธพล อลูมิเนียม",
+      "area": "บางใหญ่ นนทบุรี",
+      "source": "https://lattaponal.yellowpages.co.th/",
+      "phone": "",
+      "fact": "พบหน้าแคตตาล็อกงานประตูกระจกและอลูมิเนียม ที่อยู่ซอยแก้วอินทร์ บางใหญ่",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 2,
+        "total": 34,
+        "provisional": true
+      },
+      "proposal": "เช็กลิสต์เลือกชนิดบานสำหรับเจ้าของบ้าน",
+      "reasons": [
+        "มีชนิดบานให้เลือกหลายแบบ",
+        "มีที่ตั้งบางใหญ่"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "glass",
+      "slug": "changnun-glass",
+      "name": "ช่างนัน อลูมิเนียม",
+      "area": "ปากเกร็ด นนทบุรี",
+      "source": "https://changnunaluminum.yellowpages.co.th/",
+      "phone": "0828388409",
+      "fact": "หน้าแนะนำระบุช่างนันรับงานเอง บริการประตู หน้าต่าง และกั้นห้อง มีเบอร์ช่างสองราย",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "รวมการวัดขนาดและช่องทางนัดดูพื้นที่",
+      "reasons": [
+        "ข้อมูลระบุรับงานเอง",
+        "มีช่างสองเบอร์แยกกัน"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "glass",
+      "slug": "sky-glass-demo",
+      "name": "Sky Glass Aluminium",
+      "area": "ปากเกร็ด นนทบุรี",
+      "source": "https://skyglassaluminium.com/",
+      "phone": "0809822594",
+      "fact": "มีเว็บร้านและอัลบั้มผลงาน วันที่แสดงที่ตรวจพบ 21 ก.พ. 2569 ซึ่งอยู่นอกช่วงประเมิน",
+      "facebook": null,
+      "status": "excluded",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 0,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 33,
+        "provisional": true
+      },
+      "proposal": "เดโมหน้าเลือกงานกั้นห้อง ใช้เมื่อยืนยันว่าหน้าเดิมยังไม่ตอบโจทย์",
+      "reasons": [
+        "มีรูปผลงานในเว็บเดิม",
+        "วันที่ผลงานที่เห็นเกินช่วงประเมิน"
+      ],
+      "gap": "พบเว็บหรือหน้าบริการเดิมพร้อมข้อมูลสำคัญ ยังไม่มีเหตุผลที่ยืนยันได้ว่าหน้าใหม่ช่วยอะไร จึงตัดจากรายชื่อเสนอขายรอบนี้",
+      "lineUrl": "https://line.me/ti/p/l2ZK7PBhJc"
+    },
+    {
+      "cat": "glass",
+      "slug": "twch-glass-demo",
+      "name": "ทวีโชค รุ่งเรือง อลูมิเนียม",
+      "area": "นนทบุรี",
+      "source": "https://twchaluminium.com/why-choose-twch-aluminium-nonthaburi/",
+      "phone": "0850625694",
+      "fact": "บทความร้านลงวันที่ 16 ก.ค. 2569 ระบุบริการประตูกระจกและวัดหน้างาน อยู่นอกช่วงประเมิน",
+      "facebook": null,
+      "status": "excluded",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 0,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 33,
+        "provisional": true
+      },
+      "proposal": "เดโมหน้าแคมเปญประตูโดยเฉพาะ ต้องมีเหตุผลเพิ่มก่อนเสนอ",
+      "reasons": [
+        "มีบทความให้ความรู้และ LINE",
+        "มีเว็บไซต์ให้คำปรึกษาอยู่แล้ว"
+      ],
+      "gap": "พบเว็บหรือหน้าบริการเดิมพร้อมข้อมูลสำคัญ ยังไม่มีเหตุผลที่ยืนยันได้ว่าหน้าใหม่ช่วยอะไร จึงตัดจากรายชื่อเสนอขายรอบนี้",
+      "lineUrl": "https://line.me/ti/p/~noibutdee1971"
+    },
+    {
+      "cat": "sofa",
+      "slug": "kamron-furniture",
+      "name": "คำรณเฟอร์นิเจอร์",
+      "area": "บางบอน กรุงเทพฯ",
+      "source": "https://www.yellowpages.co.th/profile/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B9%82%E0%B8%8B%E0%B8%9F%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3-%E0%B8%84%E0%B8%B3%E0%B8%A3%E0%B8%93%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C-dUOtWLBPj",
+      "phone": "0629217674",
+      "fact": "หน้า YellowPages ระบุซ่อมโซฟาและสั่งทำตามแบบ อยู่ถนนเอกชัย พร้อม Facebook ของร้าน",
+      "facebook": "https://www.facebook.com/profile.php?id=100084301909000",
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "หน้าแยกซ่อมกับสั่งทำ พร้อมรายการรูปที่ต้องส่ง",
+      "reasons": [
+        "รับสั่งทำตามแบบภาพถ่าย",
+        "มี Facebook และ LINE สาธารณะ"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "sofa",
+      "slug": "tharathorn-sofa",
+      "name": "ธาราธรณ์ซ่อมโซฟา",
+      "area": "ดอนเมือง กรุงเทพฯ",
+      "source": "https://www.thaithurkic.com/%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%98%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B9%82%E0%B8%8B%E0%B8%9F%E0%B8%B2-086-506-7931",
+      "phone": "0865067931",
+      "fact": "ไดเรกทอรีระบุชื่อและที่อยู่ประชาอุทิศ สีกัน ดอนเมือง พร้อมลิงก์ Facebook และโทร",
+      "facebook": "https://www.facebook.com/1741096896171174/",
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "หน้าอาการชำรุดกับวิธีส่งรูปประเมิน",
+      "reasons": [
+        "มีที่ตั้งดอนเมืองชัด",
+        "พบช่องทางโทรช่าง"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "sofa",
+      "slug": "thongsuk-furniture",
+      "name": "ทองสุข เฟอร์นิเจอร์",
+      "area": "เมืองนนทบุรี",
+      "source": "https://www.yellowpages.co.th/profile/%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%82-%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C-93uQEgzWp",
+      "phone": "0868964102",
+      "fact": "พบข้อมูลซ่อมเฟอร์นิเจอร์ หุ้มหนังและเปลี่ยนฟองน้ำ ที่อยู่ถนนงามวงศ์วาน พร้อม LINE tae086",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "หน้าเปรียบเทียบขอบเขตเปลี่ยนหนังกับเสริมเบาะ",
+      "reasons": [
+        "มีบริการเปลี่ยนฟองน้ำและหุ้มหนัง",
+        "พบ LINE tae086"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "sofa",
+      "slug": "lerdwilai-furniture",
+      "name": "เลิศวิไลเฟอร์นิเจอร์",
+      "area": "บางบอน กรุงเทพฯ",
+      "source": "https://www.lerdwilaifurniture.com/contact/",
+      "phone": "0934969262",
+      "fact": "ผลค้นหาหน้าติดต่อร้านระบุถนนพรหมแดน บางบอน และ LINE 0934969262; เปิดหน้ารายละเอียดรอบนี้ไม่ได้",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 43,
+        "provisional": true
+      },
+      "proposal": "รวมจุดรับงานและข้อมูลก่อนขอรับ–ส่ง",
+      "reasons": [
+        "มีตำแหน่งร้านบนถนนพรหมแดน",
+        "มี LINE ตามเบอร์ร้าน"
+      ],
+      "gap": "พบเว็บเดิม มีบริการและช่องทางติดต่อ; ยังไม่พิสูจน์ช่องว่างที่ทำให้ต้องซื้อหน้าใหม่"
+    },
+    {
+      "cat": "sofa",
+      "slug": "phitchayaphat-sofa",
+      "name": "พิชยาพัชร์ เฟอร์นิเจอร์",
+      "area": "ประเวศ กรุงเทพฯ",
+      "source": "https://phitchayaphatsofa.yellowpages.co.th/",
+      "phone": "0819575199",
+      "fact": "พบหน้าบริการซ่อมและหุ้มเบาะหลายชนิด อยู่เฉลิมพระเกียรติ ร.9 ซอย 72 มี LINE chalomrak305",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "จัดหมวดอาการชำรุดกับวัสดุ เพื่อส่งบรีฟสั้นลง",
+      "reasons": [
+        "มีบริการซ่อมหลายชนิดในหน้าเดียว",
+        "มี LINE สำหรับประเมิน"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "sign",
+      "slug": "ideaplus-sign",
+      "name": "ไอเดียพลัส",
+      "area": "นนทบุรี",
+      "source": "https://www.ideaplusvinyl.com/",
+      "phone": "0974044987",
+      "fact": "เว็บร้านแยกไวนิล ฉลากและงานพิมพ์ มีแคตตาล็อก แกลเลอรี และเบอร์ติดต่อ",
+      "facebook": "https://www.facebook.com/people/Idea-Plus-Communication-CoLtd/100063743551205/",
+      "status": "excluded",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 0,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 33,
+        "provisional": true
+      },
+      "proposal": "เดโมหน้าป้ายสำหรับร้านเปิดใหม่ ต้องพิสูจน์ประโยชน์เพิ่ม",
+      "reasons": [
+        "แคตตาล็อกและช่องทางพร้อมแล้ว",
+        "มีผลงานบนเว็บเดิม"
+      ],
+      "gap": "พบเว็บหรือหน้าบริการเดิมพร้อมข้อมูลสำคัญ ยังไม่มีเหตุผลที่ยืนยันได้ว่าหน้าใหม่ช่วยอะไร จึงตัดจากรายชื่อเสนอขายรอบนี้"
+    },
+    {
+      "cat": "sign",
+      "slug": "nbmedia-sign",
+      "name": "NB MEDIA",
+      "area": "ไทรน้อย นนทบุรี",
+      "source": "https://www.thenbmedia.com/post/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+      "phone": "0869839259",
+      "fact": "บทความร้านระบุงานป้ายไวนิลในไทรน้อย พร้อมโทรและ LINE @pod2106w แต่ยังไม่ยืนยันวันที่รับงานล่าสุด",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 43,
+        "provisional": true
+      },
+      "proposal": "หน้าบรีฟขนาดและจำนวนสำหรับป้ายไวนิล",
+      "reasons": [
+        "มีข้อมูลไวนิลเฉพาะพื้นที่ไทรน้อย",
+        "มี LINE OA ในบทความ"
+      ],
+      "gap": "พบเว็บเดิม มีบริการและช่องทางติดต่อ; ยังไม่พิสูจน์ช่องว่างที่ทำให้ต้องซื้อหน้าใหม่",
+      "lineUrl": "https://line.me/R/ti/p/@pod2106w"
+    },
+    {
+      "cat": "sign",
+      "slug": "asign-graphic",
+      "name": "A Sign Graphic",
+      "area": "นนทบุรี",
+      "source": "https://asigngraphic.yellowpages.co.th/",
+      "phone": "0812564225",
+      "fact": "หน้าแคตตาล็อกระบุป้ายไวนิล ป้ายไฟ และตัวอักษรโลหะ พร้อม LINE @asign2019",
+      "facebook": null,
+      "status": "excluded",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 0,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 30,
+        "provisional": true
+      },
+      "proposal": "เดโมหน้าแคมเปญป้ายเปิดร้าน ต้องยืนยันช่องว่างเดิม",
+      "reasons": [
+        "มีทั้งไวนิลและป้ายโลหะ",
+        "มี LINE OA เฉพาะร้าน"
+      ],
+      "gap": "พบเว็บหรือหน้าบริการเดิมพร้อมข้อมูลสำคัญ ยังไม่มีเหตุผลที่ยืนยันได้ว่าหน้าใหม่ช่วยอะไร จึงตัดจากรายชื่อเสนอขายรอบนี้",
+      "lineUrl": "https://line.me/ti/p/~@asign2019"
+    },
+    {
+      "cat": "sign",
+      "slug": "kongthong-sign",
+      "name": "คงทองโฆษณา",
+      "area": "บางใหญ่ นนทบุรี",
+      "source": "https://kongthong-group.com/site/index.php/contact-2/",
+      "phone": "024033270",
+      "fact": "หน้าติดต่อเว็บร้านระบุโทร 02-403-3270-3 และมีเมนูผลงานหลายบริการ",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 43,
+        "provisional": true
+      },
+      "proposal": "หน้าเฉพาะป้ายหน้าร้าน หากเจ้าของต้องการแคมเปญเพิ่ม",
+      "reasons": [
+        "มีเว็บและเมนูผลงาน",
+        "ติดต่อผ่านเบอร์สำนักงานได้"
+      ],
+      "gap": "พบเว็บเดิม มีบริการและช่องทางติดต่อ; ยังไม่พิสูจน์ช่องว่างที่ทำให้ต้องซื้อหน้าใหม่"
+    },
+    {
+      "cat": "sign",
+      "slug": "do-it-art",
+      "name": "Do It Art",
+      "area": "สวนหลวง กรุงเทพฯ",
+      "source": "https://www.findglocal.com/TH/Suan-Luang/1064521176909557/Do-It-Art-รับทำและออกแบบงานป้าย-งานสกรีน-และอะคริลิค",
+      "phone": "0897404544",
+      "fact": "ไดเรกทอรีระบุงานป้าย สกรีน อะคริลิคในสวนหลวง และลิงก์ LINE https://lin.ee/xUsSfDa",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "รวมตัวอย่างวัสดุพร้อมบรีฟขนาดชิ้นงาน",
+      "reasons": [
+        "มีบริการอะคริลิคและสกรีน",
+        "มีลิงก์ LINE เปิดเผย"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม",
+      "lineUrl": "https://lin.ee/xUsSfDa"
+    },
+    {
+      "cat": "cctv",
+      "slug": "nc-solution-demo",
+      "name": "NC Solution",
+      "area": "กรุงเทพฯ–นนทบุรี–ปทุมธานี",
+      "source": "https://webchang.com/64944",
+      "phone": "",
+      "fact": "หน้า Webchang ระบุซ่อมและติดตั้ง CCTV ในกรุงเทพฯ นนทบุรี ปทุมธานี แต่ข้อมูลติดต่ออยู่หลังขั้นตอนยืนยันเบอร์ จึงไม่ได้ดำเนินการ",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 2,
+        "total": 34,
+        "provisional": true
+      },
+      "proposal": "หน้ารวมติดตั้งกับซ่อม แต่ต้องได้ช่องทางสาธารณะที่ตรวจยืนยันก่อน",
+      "reasons": [
+        "มีรายละเอียดงาน CCTV ชัด",
+        "รับงานสามจังหวัดเป้าหมาย"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "cctv",
+      "slug": "spthai-cctv-demo",
+      "name": "SP Thai CCTV",
+      "area": "ให้บริการนนทบุรี",
+      "source": "https://www.spthai-cctv.com/category/168/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87/Nonthaburi",
+      "phone": "0650873758",
+      "fact": "ผลค้นหาหน้าบริการนนทบุรีระบุเดินสายแลนและกล้อง พร้อมโทร 065-0873758; เปิดหน้ารอบนี้ไม่ได้",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 43,
+        "provisional": true
+      },
+      "proposal": "รวมอาการกล้องและภาพจุดเดินสายสำหรับขอราคา",
+      "reasons": [
+        "มีเบอร์รับงานเดินสาย",
+        "มีหน้าพื้นที่นนทบุรี"
+      ],
+      "gap": "พบเว็บเดิม มีบริการและช่องทางติดต่อ; ยังไม่พิสูจน์ช่องว่างที่ทำให้ต้องซื้อหน้าใหม่"
+    },
+    {
+      "cat": "cctv",
+      "slug": "changnon-cctv-demo",
+      "name": "ช่างนนท์ ซีซีทีวี",
+      "area": "บางบัวทอง นนทบุรี",
+      "source": "https://changnoncctv.com/",
+      "phone": "0827567899",
+      "fact": "เว็บระบุบริการติดตั้ง ซ่อม และนัดประเมินหน้างาน มีที่อยู่บางรักพัฒนาและช่องทาง LINE @changnon",
+      "facebook": "https://www.facebook.com/profile.php?id=100063825289613",
+      "status": "excluded",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 0,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 33,
+        "provisional": true
+      },
+      "proposal": "เดโมหน้าตรวจเช็กระบบเก่า ต้องพิสูจน์เหตุผลเพิ่มเติม",
+      "reasons": [
+        "เว็บมีที่อยู่และช่องทางนัดดูงาน",
+        "มีข้อมูลซ่อมและติดตั้งแล้ว"
+      ],
+      "gap": "พบเว็บหรือหน้าบริการเดิมพร้อมข้อมูลสำคัญ ยังไม่มีเหตุผลที่ยืนยันได้ว่าหน้าใหม่ช่วยอะไร จึงตัดจากรายชื่อเสนอขายรอบนี้"
+    },
+    {
+      "cat": "cctv",
+      "slug": "satpp-service-demo",
+      "name": "SATPP Service",
+      "area": "เมืองนนทบุรี",
+      "source": "https://satppservice.com/",
+      "phone": "0813488939",
+      "fact": "ผลค้นหาเว็บระบุบริการ CCTV ที่สามัคคี 50 นนทบุรี; บทความที่เห็นลงเดือน ก.พ. 2565 จึงเก่าเกินช่วงประเมิน",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 43,
+        "provisional": true
+      },
+      "proposal": "รวมขั้นตอนสำรวจสำหรับบ้านพัก หลังยืนยันสถานะร้าน",
+      "reasons": [
+        "ระบุหน้าร้านถนนสามัคคี",
+        "มีช่องทางธุรกิจในผลค้นหา"
+      ],
+      "gap": "พบเว็บเดิม มีบริการและช่องทางติดต่อ; ยังไม่พิสูจน์ช่องว่างที่ทำให้ต้องซื้อหน้าใหม่"
+    },
+    {
+      "cat": "cctv",
+      "slug": "homesat-hd-demo",
+      "name": "HomeSat HD",
+      "area": "ติวานนท์ นนทบุรี",
+      "source": "https://www.homesat-hd.com/17845665/ติดต่อเรา",
+      "phone": "0905571049",
+      "fact": "หน้าติดต่อระบุถนนติวานนท์ นนทบุรี มีเบอร์และ Facebook Shopcctvtook สำหรับประเมินหน้างาน",
+      "facebook": "https://www.facebook.com/Shopcctvtook",
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 43,
+        "provisional": true
+      },
+      "proposal": "หน้าเฉพาะบ้านและร้านเล็กแทนการอ่านรายการสินค้าทั้งหมด",
+      "reasons": [
+        "มีช่องทางประเมินหน้างาน",
+        "มี Facebook และที่ตั้งติวานนท์"
+      ],
+      "gap": "พบเว็บเดิม มีบริการและช่องทางติดต่อ; ยังไม่พิสูจน์ช่องว่างที่ทำให้ต้องซื้อหน้าใหม่"
+    },
+    {
+      "cat": "garden",
+      "slug": "lungmaew-garden",
+      "name": "ลุงแมว รับจ้างตัดหญ้า",
+      "area": "ปากเกร็ด นนทบุรี",
+      "source": "https://www.kaidee.com/product-100792792",
+      "phone": "0989095464",
+      "fact": "พบประกาศจัดสวนและตัดหญ้าโซนท่าอิฐ–บางบัวทอง พร้อม LINE maew.gardening; ประกาศเก่า ไม่ยืนยันรับงานล่าสุด",
+      "facebook": "https://www.facebook.com/maew.gardening",
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "รวมขอบเขตตัดหญ้าและการเก็บเศษ หลังยืนยันรับงานล่าสุด",
+      "reasons": [
+        "ประกาศระบุพื้นที่ท่าอิฐ–บางบัวทอง",
+        "มี LINE ของผู้รับงาน"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "garden",
+      "slug": "backcliff-garden",
+      "name": "Backcliff Garden",
+      "area": "ท่าแร้ง บางเขน กรุงเทพฯ",
+      "source": "https://www.baanfinder.com/th/contractor/619725_%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%9B%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89-%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%89",
+      "phone": "0957423064",
+      "fact": "ผลค้นหาประกาศระบุจัดสวน ดูแลสวนและปลูกต้นไม้ ที่ท่าแร้ง บางเขน พร้อม LINE @backcliffgarden; เปิดหน้ารายละเอียดไม่ได้",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "แยกดูแลสวนรายครั้งกับงานปลูกใหม่",
+      "reasons": [
+        "มีบริการดูแลสวนและปลูกต้นไม้",
+        "มี LINE OA ในประกาศ"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "garden",
+      "slug": "sp-landscapethai",
+      "name": "SP Landscapethai",
+      "area": "ให้บริการนนทบุรี",
+      "source": "https://www.landscapethai.com/category/621/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B8%9B%E0%B9%88%E0%B8%B2-%E0%B8%97%E0%B8%B3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%94%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B9%82%E0%B8%97%E0%B8%A3-0945157920/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5-%E0%B9%82%E0%B8%97%E0%B8%A3-094-515-7920",
+      "phone": "0945157920",
+      "fact": "ผลค้นหาหน้าบริการระบุตัดหญ้า ตัดต้นไม้ และดูแลสวนในนนทบุรี พร้อมโทร; เปิดหน้ารายละเอียดไม่ได้",
+      "facebook": null,
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 43,
+        "provisional": true
+      },
+      "proposal": "รวมรูปพื้นที่และการเข้าถึงสำหรับประเมิน",
+      "reasons": [
+        "พบงานเคลียร์พื้นที่และตัดหญ้า",
+        "มีเบอร์สาธารณะสำหรับคุยงาน"
+      ],
+      "gap": "พบเว็บเดิม มีบริการและช่องทางติดต่อ; ยังไม่พิสูจน์ช่องว่างที่ทำให้ต้องซื้อหน้าใหม่"
+    },
+    {
+      "cat": "garden",
+      "slug": "greenery-landscape",
+      "name": "กรีนเนอรี่แลนด์สเคป",
+      "area": "บางกรวย นนทบุรี",
+      "source": "https://www.yellowpages.co.th/profile/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%84%E0%B8%9B-dUGIQWaVJ",
+      "phone": "0891042424",
+      "fact": "YellowPages ระบุออกแบบสวนหลายสไตล์ บ่อปลาและน้ำตก ที่บางกรวย พร้อม Facebook Greenerygarden",
+      "facebook": "https://www.facebook.com/Greenerygarden/",
+      "status": "reserve",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 10,
+        "fit": 20,
+        "assets": 2,
+        "contact": 8,
+        "total": 40,
+        "provisional": true
+      },
+      "proposal": "หน้าเฉพาะสวนบ้านขนาดเล็ก หลังยืนยันขนาดงานขั้นต่ำ",
+      "reasons": [
+        "มีหลายสไตล์สวนในรายการ",
+        "มีบริการบ่อปลาและน้ำตก"
+      ],
+      "gap": "ช่องทางที่ตรวจเป็นไดเรกทอรี/แคตตาล็อก ไม่พบเว็บอิสระจากหน้านั้น แต่ยังสรุปว่าไม่มีเว็บไม่ได้; ต้องตรวจหน้ารวมบริการเพิ่มเติม"
+    },
+    {
+      "cat": "garden",
+      "slug": "johnchaorai-garden",
+      "name": "johnchaorai",
+      "area": "ให้บริการกรุงเทพฯ–ปริมณฑล",
+      "source": "https://johnchaorai.cloud/",
+      "phone": "0638634826",
+      "fact": "เว็บร้านมีแพ็กเกจรายครั้ง รายเดือน และโครงการ พร้อมขั้นตอนส่งรูป สำรวจ และขอราคา มี LINE @johnchaorai",
+      "facebook": null,
+      "status": "excluded",
+      "activity": {
+        "verified": false,
+        "dates": [],
+        "postCount": null,
+        "reviewCount": null,
+        "note": "ยังยืนยันหลักฐาน A ในช่วง 60/90 วันไม่ได้; ไม่ใช่การยืนยันว่าไม่เคลื่อนไหว"
+      },
+      "confidence": "ต่ำ",
+      "brandVerified": false,
+      "score": {
+        "activity": 0,
+        "gap": 0,
+        "fit": 20,
+        "assets": 5,
+        "contact": 8,
+        "total": 33,
+        "provisional": true
+      },
+      "proposal": "เดโมดูแลสวนรายเดือน ยังไม่มีเหตุผลชัดให้เสนอเพิ่ม",
+      "reasons": [
+        "เว็บเดิมมีแพ็กเกจครบ",
+        "มีขั้นตอนส่งรูปและ LINE แล้ว"
+      ],
+      "gap": "พบเว็บหรือหน้าบริการเดิมพร้อมข้อมูลสำคัญ ยังไม่มีเหตุผลที่ยืนยันได้ว่าหน้าใหม่ช่วยอะไร จึงตัดจากรายชื่อเสนอขายรอบนี้",
+      "lineUrl": "https://line.me/R/ti/p/@johnchaorai"
+    }
+  ]
+}
