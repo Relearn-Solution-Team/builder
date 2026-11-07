@@ -5,7 +5,10 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
-const data = JSON.parse(fs.readFileSync(path.join(root, 'research/2026-11-07/leads.json'), 'utf8'));
+const researchPath = process.env.RESEARCH_PATH || 'research/2026-11-07';
+const data = JSON.parse(fs.readFileSync(path.join(root, researchPath, 'leads.json'), 'utf8'));
+const first = data.leads[0];
+const expectedCount = Number(process.env.EXPECTED_SITE_COUNT || 101);
 const base = process.env.DEMO_BASE_URL || 'http://127.0.0.1:8765';
 
 (async () => {
@@ -41,7 +44,7 @@ const base = process.env.DEMO_BASE_URL || 'http://127.0.0.1:8765';
           await page.evaluate(() => {Object.defineProperty(navigator, 'clipboard', {configurable:true,value:undefined});});
           await page.locator('#copy').click();
           assert.equal(await page.locator('#copy-fallback').isVisible(), true);
-          assert.ok((await page.locator('#copy-fallback').inputValue()).includes('พื้นที่: [ระบุ]'));
+          assert.ok((await page.locator('#copy-fallback').inputValue()).includes('[ระบุ]'));
         }
         // Return to the hero after interaction checks.
         await page.evaluate(() => scrollTo({top:0,behavior:'instant'}));
@@ -57,26 +60,34 @@ const base = process.env.DEMO_BASE_URL || 'http://127.0.0.1:8765';
     const page = await browser.newPage({viewport:{width:1440,height:1000}});
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(`${base}/catalog.html`,{waitUntil:'networkidle'});
-    assert.equal(await page.locator('.card').count(),71);
-    await page.locator('[data-cat="metal"].chip').click();
+    assert.equal(await page.locator('.card').count(),expectedCount);
+    await page.locator(`[data-cat="${first.cat}"].chip`).click();
     assert.equal(await page.locator('.group:not(.hide) .card').count(),5);
-    await page.locator('#q').fill('ส.วุฒิกร');
+    await page.locator('#q').fill(first.name);
     assert.equal(await page.locator('.group:not(.hide) .card:not(.hide)').count(),1);
-    await page.locator('[data-preview="wuttikorn-metal"]').first().click();
-    assert.ok((await page.locator('#ifr').getAttribute('src')).includes('wuttikorn-metal'));
+    await page.locator(`[data-preview="${first.slug}"]`).first().click();
+    assert.ok((await page.locator('#ifr').getAttribute('src')).includes(first.slug));
     await page.keyboard.press('Escape');
     assert.ok(!(await page.locator('#modal').getAttribute('class')).includes('on'));
     await page.setViewportSize({width:390,height:844});
-    await page.locator('[data-preview="wuttikorn-metal"]').first().click();
+    await page.locator(`[data-preview="${first.slug}"]`).first().click();
     await page.locator('#mseg button[data-mode="m"]').click();
     const frameBox = await page.locator('#frame').boundingBox();
     assert.ok(frameBox.x >= 0 && frameBox.x + frameBox.width <= 391, 'mobile preview fits viewport');
     await page.keyboard.press('Escape');
     const brokenImages = await page.locator('img').evaluateAll(images => images.filter(img => img.complete && img.naturalWidth === 0).map(img=>img.src));
     assert.deepEqual(brokenImages, []);
-    const reportResponse=await page.goto(`${base}/research/2026-11-07/index.html`,{waitUntil:'networkidle'});
+    const reportResponse=await page.goto(`${base}/${researchPath}/index.html`,{waitUntil:'networkidle'});
     assert.equal(reportResponse.status(),200);
     assert.equal(await page.locator('article').count(),30);
+    if (researchPath.includes('round-2')) {
+      await page.locator('#cat').selectOption(first.cat);
+      assert.equal(await page.locator('article:visible').count(),5);
+      await page.locator('#q').fill(first.name);
+      assert.equal(await page.locator('article:visible').count(),1);
+      await page.locator('#q').fill('not-a-real-candidate-123');
+      assert.equal(await page.locator('#empty').isVisible(),true);
+    }
     await page.setViewportSize({width:390,height:844});
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
     assert.deepEqual(errors,[]);

@@ -54,7 +54,7 @@ Prompts used: `PROMPT_RESEARCH.md` (lead research), `PROMPT_CREATE_WEB.md` (site
 
 ## Research and concepts — 7 November 2026
 
-Added **30 exploratory homepage concepts in 6 new categories**, five businesses each: metalwork, glass/aluminium, sofa repair, signage, CCTV, and gardening. The catalog now contains 71 pages.
+Added **30 exploratory homepage concepts in 6 new categories**, five businesses each: metalwork, glass/aluminium, sofa repair, signage, CCTV, and gardening. This batch expanded the catalog from 41 to 71 pages.
 
 **0 of the 30 candidates passed every research gate.** Recent activity could not be verified to the required standard. These concepts are not a qualified sales list. Some candidates have existing service sites and remain excluded until a concrete additional need is established. No business was contacted.
 
@@ -65,3 +65,17 @@ Added **30 exploratory homepage concepts in 6 new categories**, five businesses 
 The new pages use original SVG illustrations, not shop portfolio photos. Their proposed palettes have not been verified against Facebook branding. Unverified prices, testimonials, customer counts, and booking availability are omitted. Map links are searches rather than verified pins. Contact details must be reconfirmed before outreach.
 
 Regenerate this batch with `python scripts/build_research_demos.py`. Serve locally with `python -m http.server 8765 --bind 127.0.0.1`, then open `http://127.0.0.1:8765/catalog.html`.
+
+## Research and concepts — round two, 7 November 2026
+
+Added another **30 new businesses across 6 categories**, five each: dress rental, tattoo studios, yoga/pilates studios, computer repair, locksmiths, and music instruction. The catalog now contains **101 pages**.
+
+Research finished before the homepage build. **0/30 candidates met every required evidence gate**: directory dates sometimes conflict with search excerpts, and recent activity could not be confirmed on first-party channels. There are 28 reserves and 2 excluded candidates; all 30 demos are explicitly exploratory concepts. No businesses were contacted.
+
+- [Round-two research dashboard with category and text filters](research/2026-11-07-round-2/index.html)
+- [Thai research report, dated observations, source links, scores, and limits](research/2026-11-07-round-2/REPORT.md)
+- [Structured round-two research data](research/2026-11-07-round-2/leads.json)
+
+Run `python scripts/research_round2.py` to regenerate the report, then `python scripts/build_round2_demos.py` for the websites. These builders preserve both catalog batches. Demos use original SVG artwork and proposed palettes; they do not reuse student videos or claim unverified shop prices, reviews, or availability.
+
+Browser QA uses `scripts/verify_research_demos.cjs` with Playwright installed in an external tooling directory. Set `PLAYWRIGHT_MODULE_PATH` to that Playwright module and, if needed, `QA_BROWSER_EXECUTABLE` to an installed Chromium executable. Set `RESEARCH_PATH=research/2026-11-07-round-2` to verify the second batch; the default verifies the first batch. The script checks desktop/mobile pages and interactions and refreshes their catalog screenshots. A local server at port 8765 must be running.
