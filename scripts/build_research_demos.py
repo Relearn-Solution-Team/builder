@@ -99,6 +99,11 @@ def page(lead, index, category=None, illustrator=None):
     phone=lead['phone']
     call=f'<a class="btn solid" href="tel:{phone}">โทรคุยรายละเอียด <span>↗</span></a>' if phone else f'<a class="btn solid" href="{E(target)}" target="_blank" rel="noopener noreferrer">ดูช่องทางต้นทาง <span>↗</span></a>'
     line=lead.get('lineUrl')
+    # Keep the category visual language, but make every business page editorially distinct.
+    # Proposal/fact are derived from the linked research record and remain explicitly provisional.
+    c=dict(c)
+    c['sub']=lead.get('proposal') or c['sub']
+    c['brief']=[(lead.get('reasons') or [])[i] if i < len(lead.get('reasons') or []) else c['brief'][i] for i in range(3)]
     social=f'<a class="btn" href="{E(line or target)}" target="_blank" rel="noopener noreferrer">{"ทัก LINE ของร้าน" if line else "เปิดช่องทางอ้างอิง"} <span>↗</span></a>'
     cards=''.join(f'<article class="service"><span class="number">0{i+1} / SERVICE CONCEPT</span><h3>{E(s)}</h3><p>{E(c["brief"][i])} เพื่อให้ร้านตรวจขอบเขตงานและประเมินราคา</p><a href="#brief">เตรียมข้อมูลขอราคา ↗</a></article>' for i,s in enumerate(c['services']))
     samples=''.join(f'<article class="sample">{illustration}<div><h3>{E(s)}</h3><p>ภาพประกอบแนวคิด · รอรูปผลงานจากร้าน</p></div></article>' for s in c['services'])
