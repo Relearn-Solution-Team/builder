@@ -1,0 +1,937 @@
+[
+  {
+    "slug": "two-nice-dress",
+    "category": "dress",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.evepla.com/TH/Nakhon-Pathom/715177535171144/2NiceDress-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%B2-%E0%B8%A1%E0%B8%AB%E0%B8%B4%E0%B8%94%E0%B8%A5-%E0%B8%9E%E0%B8%B8%E0%B8%97%E0%B8%98%E0%B8%A1%E0%B8%93%E0%B8%91%E0%B8%A5-%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%9B%E0%B8%90%E0%B8%A1-%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%8A%E0%B8%B1%E0%B8%A2%E0%B8%A8%E0%B8%A3%E0%B8%B5-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+      "https://www.facebook.com/2nicedress/",
+      "https://lin.ee/XsQiLSr",
+      "https://maps.app.goo.gl/V8qDyofyEFK1TmXQ6"
+    ],
+    "photos": [
+      "two-nice-dress/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "two-nice-dress/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/2nicedress/",
+        "download_url": "https://scontent.fbkk22-2.fna.fbcdn.net/v/t39.30808-1/286216412_5384928544862663_4017997478622340415_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s720x720&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=3R-yrwdP-3kQ7kNvwGAbvdm&_nc_oc=AdrUKZUd1i8T17tV3_xv3gbxuOz59ZoYjMjYZAHkF5mqDncMYnkVT0WLIniFjp21fj0&_nc_zt=24&_nc_ht=scontent.fbkk22-2.fna&_nc_gid=aiZqGjwJ4SG7S--X921znA&_nc_ss=7f20f&oh=00_AQTYSiZNdYOOhfn3z60tHtPc3z-U6lnNXgLm-O4iu-VQsQ&oe=6AF5F98C",
+        "kind": "logo",
+        "identity_evidence": "2NiceDress เช่าชุดราตรีศาลายา มหิดล พุทธมณฑล นครปฐม นครชัยศรี นนทบุรี | Nakhon Pathom ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "8aa3575a02813ac3ba9e3f60d577f3cadeaffefc2f1f103d29e2d2e0acfe604e",
+        "dimensions": [
+          720,
+          720
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "0922432465",
+      "line": "ลิงก์ LINE ของ 2NiceDress",
+      "line_url": "https://lin.ee/XsQiLSr",
+      "address": "19/30 หมู่ 3 ต.ศาลายา อ.พุทธมณฑล จ.นครปฐม · ติดทางออก Makro ศาลายา ถนนสาย 5",
+      "hours": "ทุกวัน 10:00–21:00 น."
+    },
+    "services": [
+      "เช่าชุดราตรี",
+      "ชุดเพื่อนเจ้าสาว",
+      "ตัดชุดและปรับไซซ์"
+    ],
+    "palette": [
+      "#f5c435",
+      "#243d44",
+      "#fffaf0"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Only the authentic rainbow business logo was downloadable; no portfolio photo verified. Website www.2nicedress.com timed out. LINE ID not exposed by the supplied short link.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "t-wardrobe",
+    "category": "dress",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.beautynailhairsalons.com/TH/Nonthaburi/601390783046436/T.-Wardrobe--%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%9A%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%A1-%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B9%84%E0%B8%9B%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7",
+      "https://www.facebook.com/p/T-Wardrobe-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%9A%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%A1-%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B9%84%E0%B8%9B%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7-61572898983373/"
+    ],
+    "photos": [
+      "t-wardrobe/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "t-wardrobe/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/p/T-Wardrobe-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%9A%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%A1-%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B9%84%E0%B8%9B%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%A7-61572898983373/",
+        "download_url": "https://scontent.fbkk2-7.fna.fbcdn.net/v/t39.30808-1/743081920_122213153966763299_16114522238748409_n.jpg?stp=dst-jpg_tt6&cstp=mx960x957&ctp=s720x720&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=ytf_0wUnWmgQ7kNvwF_jV_E&_nc_oc=AdoStoLYcyGBsy7DM7ChFvmAhvwNJhoTx1ZTKSeWuXTHSP88mOAT1W7KxeeMBf1Os7s&_nc_zt=24&_nc_ht=scontent.fbkk2-7.fna&_nc_gid=KgKhboUe9LMr0_uOyMxGnQ&_nc_ss=7f20f&oh=00_AQRZj6YQuwWewV3mkNI8xCezSBjbx5c9SD2rOBchkUJYng&oe=6AF5E75B",
+        "kind": "logo",
+        "identity_evidence": "T. Wardrobe  เช่าชุดออกงาน ชุดเก็บตัวนางงาม ชุดไปเที่ยว | Nonthaburi ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "3118d6e9b5b99364b5d763d72cb227e7d7288f3b474cea4c196b30ddf51fde8e",
+        "dimensions": [
+          720,
+          718
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "",
+      "line": "",
+      "line_url": "",
+      "address": "126 กรุงเทพ–นนทบุรี 8 นนทบุรี 11000",
+      "hours": ""
+    },
+    "services": [
+      "ชุดออกงานและปาร์ตี้",
+      "ชุดเก็บตัวนางงาม",
+      "เช่าชุดไปเที่ยว"
+    ],
+    "palette": [
+      "#ecc1c3",
+      "#463c37",
+      "#fcf8ed"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Public profile logo downloaded. No business phone or LINE ID found in the business-owned section; recommendation contacts excluded. Portfolio CDN URLs returned 404.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "red-carpet-dress",
+    "category": "dress",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.findglocal.com/TH/Bangkok/558605660817829/Red-Carpet-Dress-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5",
+      "https://www.facebook.com/redcarpetdressshop"
+    ],
+    "photos": [
+      "red-carpet-dress/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "red-carpet-dress/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/redcarpetdressshop",
+        "download_url": "https://scontent.fbkk2-7.fna.fbcdn.net/v/t39.30808-1/361648302_663936399105671_6833313374734468411_n.jpg?stp=dst-jpg_tt6&cstp=mx2000x2000&ctp=s720x720&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=sHR_3YZWDYkQ7kNvwEP4Rrn&_nc_oc=AdoVBRPTHhQF3KdvDHHPZ2MyMYvqgYyCSoM8MgzNB9HYn-wmaaSO50hz1nBQ-Wq7G4o&_nc_zt=24&_nc_ht=scontent.fbkk2-7.fna&_nc_gid=D53jQwackSufWHc4XAK8-Q&_nc_ss=7f20f&oh=00_AQSkm6Pt7MpPBdQeBcZNN4SfuXI4F30IQlC1B0TikE8rNw&oe=6AF609ED",
+        "kind": "logo",
+        "identity_evidence": "Red Carpet Dress เช่าชุดราตรี | Bangkok ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "852580c6a493a8d4a739fcd6c077fe6e2574d0264353582846095bb51425adea",
+        "dimensions": [
+          720,
+          720
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "0624535191",
+      "line": "",
+      "line_url": "",
+      "address": "อาคารเมแฟร์เพลส 1/1 ปากซอยลาดพร้าว 128 แขวงพลับพลา เขตวังทองหลาง กรุงเทพฯ 10320",
+      "hours": "อังคาร–อาทิตย์ 12:30–19:00 น. · โทรนัดก่อนเดินทาง"
+    },
+    "services": [
+      "ชุดราตรีสั้น–ยาว",
+      "ปรับแก้ไซซ์",
+      "แต่งหน้าและทำผม"
+    ],
+    "palette": [
+      "#db4766",
+      "#352b2a",
+      "#fff7f2"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Logo only; directory photo URL returned 404. Conflicting published prices omitted. Monday hours not listed; no assumption of closure.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "sra-sisters",
+    "category": "dress",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.evepla.com/TH/Nonthaburi/1423398377947523/Sra-Sisters-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5-BNN-Park-%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%9E%E0%B8%A4%E0%B8%81%E0%B8%A9%E0%B9%8C",
+      "https://www.facebook.com/sra.sisss/",
+      "https://www.weddinglist.co.th/vendor/srasisters/",
+      "https://line.me/R/ti/p/%40sra.sisters"
+    ],
+    "photos": [
+      "sra-sisters/assets/source-enrichment/facebook-profile.jpg",
+      "sra-sisters/assets/source-enrichment/business-photo-1.jpg",
+      "sra-sisters/assets/source-enrichment/business-photo-2.jpg",
+      "sra-sisters/assets/source-enrichment/business-photo-3.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "sra-sisters/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/sra.sisss/",
+        "download_url": "https://scontent.fbkk22-8.fna.fbcdn.net/v/t39.30808-1/326772660_725413465909740_9060482821098511027_n.jpg?stp=dst-jpg_tt6&cstp=mx957x959&ctp=s720x720&_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=MEuIs1HGsDYQ7kNvwFgCll6&_nc_oc=AdqnCtqgd3uqq1uQ7p8Ij_CX59eVxvLaEgwfwAZCfoqsBcos_NkYDyr9kd9ciqeHX9E&_nc_zt=24&_nc_ht=scontent.fbkk22-8.fna&_nc_gid=H3mGD_wXqb4ED9cqOaolUw&_nc_ss=7f20f&oh=00_AQTcyZXocWNJ7lMlG3uZ7ZHD9dy5rglqsij1pJda8EeqKg&oe=6AF61715",
+        "kind": "profile_photo",
+        "identity_evidence": "Sra Sisters เช่า-ตัดชุดราตรี BNN Park ราชพฤกษ์ | Nonthaburi ",
+        "label": "ภาพจากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "90c9550a7fef31844abb57c8819a623254793709800d424ff07410559b8ce16a",
+        "dimensions": [
+          718,
+          720
+        ]
+      },
+      {
+        "path": "sra-sisters/assets/source-enrichment/business-photo-1.jpg",
+        "source_page": "https://www.weddinglist.co.th/vendor/srasisters/",
+        "download_url": "https://www.weddinglist.co.th/wp-content/uploads/2025/04/SRASisters-0002-819x1024.jpg",
+        "kind": "business_gallery_photo",
+        "identity_evidence": "Photo in the gallery explicitly named Sra Sisters; visually inspected, recommendation images excluded.",
+        "authorship": "Original photographer and exact branch not established.",
+        "sha256": "3033a6cb1f989bfba050937a375954829b719f564db11896ce2afab2db4a14d7",
+        "dimensions": [
+          819,
+          1024
+        ]
+      },
+      {
+        "path": "sra-sisters/assets/source-enrichment/business-photo-2.jpg",
+        "source_page": "https://www.weddinglist.co.th/vendor/srasisters/",
+        "download_url": "https://www.weddinglist.co.th/wp-content/uploads/2025/04/SRASisters-0003-768x768.jpg",
+        "kind": "business_gallery_photo",
+        "identity_evidence": "Photo in the gallery explicitly named Sra Sisters; visually inspected, recommendation images excluded.",
+        "authorship": "Original photographer and exact branch not established.",
+        "sha256": "bd5e9d76bb7f3d576b1059bfed3367df794469154570783c809b308deb232a4f",
+        "dimensions": [
+          768,
+          768
+        ]
+      },
+      {
+        "path": "sra-sisters/assets/source-enrichment/business-photo-3.jpg",
+        "source_page": "https://www.weddinglist.co.th/vendor/srasisters/",
+        "download_url": "https://www.weddinglist.co.th/wp-content/uploads/2025/04/SRASisters-0004-768x768.jpg",
+        "kind": "business_gallery_photo",
+        "identity_evidence": "Photo in the gallery explicitly named Sra Sisters; visually inspected, recommendation images excluded.",
+        "authorship": "Original photographer and exact branch not established.",
+        "sha256": "6f3b2501c2fb8abaf53aa7c8c851bb2ccfaf3c2c2837c073ee79618ce6576c79",
+        "dimensions": [
+          768,
+          768
+        ]
+      }
+    ],
+    "status": "enriched_with_business_gallery",
+    "contact": {
+      "phone": "0988782028",
+      "line": "@sra.sisters",
+      "line_url": "https://line.me/R/ti/p/%40sra.sisters",
+      "address": "สาขาราชพฤกษ์ โครงการ BNN Park นนทบุรี",
+      "hours": ""
+    },
+    "services": [
+      "เช่า–ตัดชุดราตรี",
+      "ชุดเพื่อนเจ้าสาว",
+      "เครื่องประดับให้เข้าชุด"
+    ],
+    "palette": [
+      "#c5a46a",
+      "#302722",
+      "#fbf7ef"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Phone and LINE are brand-level Weddinglist contacts, not independently confirmed as a dedicated BNN Park branch number. Photos belong to the named SRA Sisters vendor gallery; exact branch and authorship not established. Hours unavailable.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "my-moment-dress",
+    "category": "dress",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.evepla.com/TH/Bangkok/1748163472070471/My-Moment-Dress-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%B5-%E0%B9%80%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%A7-%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7-%E0%B8%8A%E0%B8%B8%E0%B8%94%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99",
+      "https://www.facebook.com/mymomentdress/",
+      "https://page.line.me/jlx0725s"
+    ],
+    "photos": [
+      "my-moment-dress/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "my-moment-dress/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/mymomentdress/",
+        "download_url": "https://scontent.fbkk22-5.fna.fbcdn.net/v/t39.30808-1/302434399_446170770881051_4354355586331864945_n.jpg?stp=dst-jpg_tt6&cstp=mx834x834&ctp=s720x720&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=YcY3WKTDOM4Q7kNvwHXMRwB&_nc_oc=AdpxxteXHTNlrgyYRr72QSz2LNTjayVI9i4RdvLnxw2bX8kheR8ZCxfen5bpZ4B4zuw&_nc_zt=24&_nc_ht=scontent.fbkk22-5.fna&_nc_gid=3b5-uati9Y5h0UW4o60teg&_nc_ss=7f20f&oh=00_AQS9O3k1xBDt7_M7Ww3AQ5o_aaYAP4-pL_yTxuhO7_Yu1Q&oe=6AF61A37",
+        "kind": "logo",
+        "identity_evidence": "My Moment Dress เช่าชุดราตรี เช่าชุดแม่เจ้าสาว แม่เจ้าบ่าว ชุดออกงาน | Bangkok ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "688dd4d89955448994c39bcd0d41bf6f9a931f0167d60bb14bdabe40f8f8eff1",
+        "dimensions": [
+          720,
+          720
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "0929802956",
+      "line": "@mymomentdress",
+      "line_url": "https://page.line.me/jlx0725s",
+      "address": "เลขที่ 2 ซอยประดิษฐ์มนูธรรม 15 เขตลาดพร้าว กรุงเทพฯ 10230",
+      "hours": "ทุกวัน 11:30–21:00 น. · ตาม LINE ของร้าน"
+    },
+    "services": [
+      "ชุดราตรีและชุดออกงาน",
+      "ชุดแม่เจ้าสาว–แม่เจ้าบ่าว",
+      "นัดชมและลองชุด"
+    ],
+    "palette": [
+      "#c6a043",
+      "#1e2860",
+      "#faf8f1"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Authentic logo only; official LINE showcase exposes no product images. Official LINE hours preferred over conflicting directory hours.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "magic-art-tattoo",
+    "category": "tattoo",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.medioq.com/TH/Amphoe-Bang-Yai/108189491411429/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%B1%E0%B8%90-Magic-art-tattoo-%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%81%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+      "https://www.facebook.com/NutCombotattoo/"
+    ],
+    "photos": [
+      "magic-art-tattoo/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "magic-art-tattoo/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/NutCombotattoo/",
+        "download_url": "https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-1/441971421_795258689379703_381546497789803985_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=RZKykouHV9IQ7kNvwGcAxUB&_nc_oc=Adp9NSJyzky3m8vstjQhK5h9nTmifoo1UrDP1gFGBu-39PbpK4sX8561sA2Aj0nl0I8&_nc_zt=24&_nc_ht=scontent.fbkk29-1.fna&_nc_gid=tmcEnoCJmrjMFMlPoh2tKQ&_nc_ss=7f20f&oh=00_AQT4zmJYiDsE8WV5Dp1v7hJq7Hb83xld9JGTC56SHJqBdw&oe=6AF5EC20",
+        "kind": "profile_photo",
+        "identity_evidence": "ช่างนัฐ Magic art tattoo ร้านสักนนทบุรี | Amphoe Bang Yai ",
+        "label": "ภาพจากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "73d76c60876e630f2994d5880018d59eddfd73a81891f371b2f17e282c325deb",
+        "dimensions": [
+          720,
+          720
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_photo",
+    "contact": {
+      "phone": "",
+      "line": "",
+      "line_url": "",
+      "address": "ถนนหมู่บ้านลิสา อ.บางใหญ่ จ.นนทบุรี 11110",
+      "hours": ""
+    },
+    "services": [
+      "ออกแบบรอยสัก",
+      "แก้ไขและสักทับ",
+      "ต่อเติมงานเดิม"
+    ],
+    "palette": [
+      "#c49a36",
+      "#272423",
+      "#faf5e9"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Actual group/event photograph is the page profile image; not represented as a portfolio close-up or a studio-interior photo. No verified phone, LINE ID, exact unit number, or hours found.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "por-tattoo-shop",
+    "category": "tattoo",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.glartent.com/TH/Bang-Bua-Thong/342175285886200/Portattooshop-%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%AD",
+      "https://www.facebook.com/ChangPxSakLayBangbawthxng/",
+      "https://www.thaithurkic.com/ร้านสักลาย-portattooshop-ช่างปอสักลาย-089-795-1119"
+    ],
+    "photos": [
+      "por-tattoo-shop/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "por-tattoo-shop/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/ChangPxSakLayBangbawthxng/",
+        "download_url": "https://scontent.fbkk22-6.fna.fbcdn.net/v/t39.30808-1/326436074_1188108338759403_830660685779869743_n.png?stp=dst-png&cstp=mx495x495&ctp=s495x495&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=JwYNoaIBy04Q7kNvwEshGt3&_nc_oc=AdqeeZYUKsHOnelu4K0MhBzn1MZyDk8VjT2Exs5NwnCA_WJaBePp1y1y7mh2OUuhDAs&_nc_zt=24&_nc_ht=scontent.fbkk22-6.fna&_nc_gid=JP-dnKbTDKoG0KnSh-VYXg&_nc_ss=7f20f&oh=00_AQRZZrs9wP5QzGz800--NCB_pMSRwtZLGof_Yhe1yUsVww&oe=6AF604D5",
+        "kind": "logo",
+        "identity_evidence": "Portattooshop ร้านสักลายช่างปอ | Bang Bua Thong ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "e4b7ad2ffa99377d805461d1845d124fbad2f4a5b86aa71f3b938390946c4470",
+        "dimensions": [
+          495,
+          495
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "0897951119",
+      "line": "portattoo / Portattooshop99",
+      "line_url": "",
+      "address": "18/71 หมู่ 5 ต.โสนลอย อ.บางบัวทอง จ.นนทบุรี 11110",
+      "hours": "จันทร์–อังคาร และพฤหัสบดี–อาทิตย์ 11:00–21:30 น. · พุธ 11:00–20:30 น."
+    },
+    "services": [
+      "สักลาย",
+      "แก้ไข–ต่อเติมงานสัก",
+      "อุปกรณ์สักลาย"
+    ],
+    "palette": [
+      "#dc4b3e",
+      "#2b2523",
+      "#fff8f1"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Authentic logo includes contact digits but no portfolio photo retrieved. LINE IDs corroborated in a secondary business listing; availability not tested.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "338-tattoo",
+    "category": "tattoo",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.megabizdir.com/TH/Bangkok/594338143994148/338-TATTOO",
+      "https://www.facebook.com/338tattoo/",
+      "https://japantattoo.jp/?p=2859",
+      "https://bangkok.worldplaces.me/review/24935102-338-tattoo.html"
+    ],
+    "photos": [
+      "338-tattoo/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "338-tattoo/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/338tattoo/",
+        "download_url": "https://scontent.fbkk22-6.fna.fbcdn.net/v/t39.30808-1/326512879_882533016203440_1788100248394480726_n.jpg?stp=dst-jpg_tt6&cstp=mx1200x1200&ctp=s720x720&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=VsOed4-Vw_AQ7kNvwE3jAYe&_nc_oc=AdplabmWQWobArQhKcfrXR1r_rYi0H6Sa_5RbGzx2pdqIDaCRqniU51SGhq-d5J1058&_nc_zt=24&_nc_ht=scontent.fbkk22-6.fna&_nc_gid=5TiNDjJ0sIJ2rHdm1WkJ-Q&_nc_ss=7f20f&oh=00_AQQodIlA4-viT_FLUmRv-nz0zusWq6NKz8aNCu--j7ffcg&oe=6AF619CD",
+        "kind": "logo",
+        "identity_evidence": "338 TATTOO | Bangkok ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "09c6b9c62dce15ae52851e98b9ad0624600109e5a6ec3a5be40e4e08a4633e4a",
+        "dimensions": [
+          720,
+          720
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "0839730151",
+      "line": "coalamr",
+      "line_url": "",
+      "address": "105/6 ซอยอรุณอัมรินทร์ราชปักษี แขวงอรุณอัมรินทร์ เขตบางกอกน้อย กรุงเทพฯ 10700",
+      "hours": "ข้อมูลเวลา 13:00–23:00 น. · กรุณาจองคิวก่อน"
+    },
+    "services": [
+      "งานสักแบบนัดหมาย",
+      "ลาย Blackwork",
+      "ปรึกษาก่อนจอง"
+    ],
+    "palette": [
+      "#a6a398",
+      "#232522",
+      "#f7f6f0"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Authentic black-and-white wordmark, not portfolio photo. Secondary listings disagree on closing time (20:00 versus 23:00); appointment confirmation required. LINE ID from secondary listing.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "bstyle-ink",
+    "category": "tattoo",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.glartent.com/TH/Bangkok/180654325456529/B.Style-Ink-Tattoo",
+      "https://www.facebook.com/p/BStyle-Ink-Tattoo-100069693432440/",
+      "https://www.wongnai.com/businesses/2413794vh-b-style-ink-tattoo"
+    ],
+    "photos": [
+      "bstyle-ink/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "bstyle-ink/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/p/BStyle-Ink-Tattoo-100069693432440/",
+        "download_url": "https://scontent.fbkk2-7.fna.fbcdn.net/v/t39.30808-1/702502102_1297347929264976_2115162569759678451_n.jpg?stp=dst-jpg_tt6&cstp=mx941x942&ctp=s720x720&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=yZ7PmjZK2wkQ7kNvwEgEHKT&_nc_oc=AdpSx0UBl_SmmoUY7hiPEENXmMlUrNtrMvyprfyec7TRX5NGXyCezFWW2tfJ2UEgjEg&_nc_zt=24&_nc_ht=scontent.fbkk2-7.fna&_nc_gid=CGRE7wabYF0lncCMZTXljw&_nc_ss=7f20f&oh=00_AQREkpboZrcJFL37DsY6vFxHhwlWhCM-AxDt1Rmp6khAfw&oe=6AF619E2",
+        "kind": "photo_collage",
+        "identity_evidence": "B.Style Ink Tattoo | Bangkok ",
+        "label": "ภาพรวมผลงานในโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "f04f948d9d35ad28da3d6fd264ccf29e3c7a6bfcd4e68c81cb2413fff63de9a5",
+        "dimensions": [
+          719,
+          720
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "0989984093",
+      "line": "",
+      "line_url": "",
+      "address": "หมู่บ้านดีเค พระราม 2 · ซอยพระยามนธาตุราชศรีพิจิตร์ แยก 14 คลองบางบอน กรุงเทพฯ 10150",
+      "hours": ""
+    },
+    "services": [
+      "ออกแบบลายสัก",
+      "งานสักร่างกาย",
+      "แก้ไขลายเดิม"
+    ],
+    "palette": [
+      "#bc5a39",
+      "#292421",
+      "#faf4ee"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Official profile uses a tattoo-photo promotional collage; individual originals/authorship unavailable. Wongnai photos returned 403 and were not used. Hours and LINE not verified.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "28-tattoo-art",
+    "category": "tattoo",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.glartent.com/TH/Bangkok/141607093125393/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%A2-28-Tattoo-Art",
+      "https://www.facebook.com/28tattooart/"
+    ],
+    "photos": [
+      "28-tattoo-art/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "28-tattoo-art/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/28tattooart/",
+        "download_url": "https://scontent.fbkk2-7.fna.fbcdn.net/v/t39.30808-1/501461026_1253484723453612_7355697987062222485_n.jpg?stp=dst-jpg_tt6&cstp=mx2045x2045&ctp=s720x720&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=81ssy-aBHAAQ7kNvwGDC1WS&_nc_oc=AdoPbZSkf9tnXo8UHlPrZuS9io7qJMvec9EF3sySV-rQXujoMDeIZG_ZbZ8yU7MSnHo&_nc_zt=24&_nc_ht=scontent.fbkk2-7.fna&_nc_gid=lcNvgyNXxqGHn-Et4XMBkA&_nc_ss=7f20f&oh=00_AQRxIMRoSHBwpjrEjA-5YngFdCdTfuI29piG24VvTPNUwQ&oe=6AF6126A",
+        "kind": "logo",
+        "identity_evidence": "ร้านสักลาย 28 Tattoo Art | Bangkok ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "490df7f90a9db9a0f210e5a02fa565330283f17d8ed6c57f12fa952e6e102fd2",
+        "dimensions": [
+          720,
+          720
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "0802236919",
+      "line": "wowwow..ttom",
+      "line_url": "",
+      "address": "307/95 จรัญสนิทวงศ์ 31 แขวงบางขุนศรี เขตบางกอกน้อย กรุงเทพฯ 10700 · หลัง 7-Eleven หน้า Supalai Loft แยกไฟฉาย",
+      "hours": "ทุกวัน 09:30–24:00 น. · สอบถามคิวก่อนเข้าร้าน"
+    },
+    "services": [
+      "ออกแบบรอยสัก",
+      "แก้ไขงานสัก",
+      "ติดต่อจองคิว"
+    ],
+    "palette": [
+      "#d0b047",
+      "#25251f",
+      "#fcf9eb"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Official black-and-gold logo only; no actual tattoo portfolio photo downloadable. LINE and hours read from the business profile in search results; direct directory open blocked.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "honey-yoga",
+    "category": "yoga",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.beautynailhairsalons.com/TH/Bangkok/942563779176343/Honey-Yoga-at-Nonthaburi",
+      "https://www.facebook.com/people/Honey-Yoga-at-Nonthaburi/100063778861223/",
+      "https://maps.app.goo.gl/4yXNC3FfPawGBEqE8"
+    ],
+    "photos": [
+      "honey-yoga/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "honey-yoga/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/people/Honey-Yoga-at-Nonthaburi/100063778861223/",
+        "download_url": "https://scontent.fbkk22-7.fna.fbcdn.net/v/t39.30808-1/293625874_437623651706927_8929135776340575166_n.jpg?stp=dst-jpg_tt6&cstp=mx1123x1108&ctp=s720x720&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=z1Jzu_Z_gmcQ7kNvwFnmYPW&_nc_oc=AdoQx2lqD6ZGYLooNWnAGRDosMVccrzweoDf52xCxdC1vKpya3-Y5Su76wpkcnPAdtg&_nc_zt=24&_nc_ht=scontent.fbkk22-7.fna&_nc_gid=4zCl5n-hcM4pADnz21Vdfg&_nc_ss=7f20f&oh=00_AQQbFis6TRSTmp6TnzspMwuLqnoBuqhNo_ySpaPvPIhpSg&oe=6AF5E9DE",
+        "kind": "profile_photo",
+        "identity_evidence": "Honey Yoga at Nonthaburi | Bangkok ",
+        "label": "ภาพจากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "f608379c488125998d0253f02f2c0707bdd30e23c37d6a112353170e9d766eaa",
+        "dimensions": [
+          720,
+          710
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_photo",
+    "contact": {
+      "phone": "0894914222",
+      "line": "เพิ่มเพื่อนด้วยเบอร์ 0894914222",
+      "line_url": "",
+      "address": "96/100 หมู่ 10 ซอยวัดโบสถ์–ดอนพรหม ต.บางกร่าง อ.เมือง จ.นนทบุรี 11000",
+      "hours": "รอบเช้า 10:15–11:15 น. · รอบเย็น 19:15–20:15 น. สอบถามวันเรียนล่าสุด"
+    },
+    "services": [
+      "คลาสสำหรับผู้เริ่มต้น",
+      "โยคะหลากสไตล์",
+      "รอบเช้าและรอบเย็น"
+    ],
+    "palette": [
+      "#dc8d81",
+      "#344d43",
+      "#faf7ed"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Real outdoor group photograph from the official profile; not a studio-interior image. Post-photo CDN URLs returned 404. Published class times are examples, not a live schedule.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "v-workout-studio",
+    "category": "yoga",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.beautynailhairsalons.com/TH/Nonthaburi/219557367911717/V-workout-pilates-studio",
+      "https://www.facebook.com/vworkoutpilatesstudio/",
+      "https://www.gowabi.com/en/provider/v-workout-pilates-studio",
+      "https://maps.app.goo.gl/VLfY7Kj4459wtJ2o9",
+      "https://maps.app.goo.gl/r6184xtiA639JNQD7"
+    ],
+    "photos": [
+      "v-workout-studio/assets/source-enrichment/facebook-profile.jpg",
+      "v-workout-studio/assets/source-enrichment/business-photo-1.jpg",
+      "v-workout-studio/assets/source-enrichment/business-photo-2.jpg",
+      "v-workout-studio/assets/source-enrichment/business-photo-3.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "v-workout-studio/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/vworkoutpilatesstudio/",
+        "download_url": "https://scontent.fbkk22-6.fna.fbcdn.net/v/t39.30808-1/454633794_122169381866213258_3431531347668399408_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=7WlDXnosSUQQ7kNvwEICJYY&_nc_oc=Adq1PDxik3gh3v4tST96r0Cto35bkMyT2d8Jc71DjCWHCQAyrIUOgJX239eNqHpb-fg&_nc_zt=24&_nc_ht=scontent.fbkk22-6.fna&_nc_gid=d0XAknhxTvCDxfk-VOV1-w&_nc_ss=7f20f&oh=00_AQTVpDpclKbdN8M8ehlXP4pu6u6S6edpZVq1rGF-nN_1Fg&oe=6AF5FB24",
+        "kind": "logo",
+        "identity_evidence": "V-workout pilates studio | Nonthaburi ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "b68327af12456d924fe3311ed36c04814f448d03adb8cd6ea5965a603ef5cb74",
+        "dimensions": [
+          720,
+          720
+        ]
+      },
+      {
+        "path": "v-workout-studio/assets/source-enrichment/business-photo-1.jpg",
+        "source_page": "https://www.gowabi.com/en/provider/v-workout-pilates-studio",
+        "download_url": "https://images.gowabi.com/pictures/images/000/145/087/big_slider_pic/3.png?1716539459",
+        "kind": "business_gallery_photo",
+        "identity_evidence": "Photo in the gallery explicitly named V-workout Pilates Studio; visually inspected, recommendation images excluded.",
+        "authorship": "Original photographer and exact branch not established.",
+        "sha256": "f9a3251e10fb4425ba219fa0ca134fdbc4089a6dc6d87532b0fdbfb941da2472",
+        "dimensions": [
+          840,
+          460
+        ]
+      },
+      {
+        "path": "v-workout-studio/assets/source-enrichment/business-photo-2.jpg",
+        "source_page": "https://www.gowabi.com/en/provider/v-workout-pilates-studio",
+        "download_url": "https://images.gowabi.com/pictures/images/000/145/086/big_slider_pic/2.png?1716539459",
+        "kind": "business_gallery_photo",
+        "identity_evidence": "Photo in the gallery explicitly named V-workout Pilates Studio; visually inspected, recommendation images excluded.",
+        "authorship": "Original photographer and exact branch not established.",
+        "sha256": "4119a348e4ee01c5a7044f0e80c09823ee1d9ed69abf6a9313891447a4b9ab62",
+        "dimensions": [
+          840,
+          460
+        ]
+      },
+      {
+        "path": "v-workout-studio/assets/source-enrichment/business-photo-3.jpg",
+        "source_page": "https://www.gowabi.com/en/provider/v-workout-pilates-studio",
+        "download_url": "https://images.gowabi.com/pictures/images/000/145/089/big_slider_pic/5.png?1716539464",
+        "kind": "business_gallery_photo",
+        "identity_evidence": "Photo in the gallery explicitly named V-workout Pilates Studio; visually inspected, recommendation images excluded.",
+        "authorship": "Original photographer and exact branch not established.",
+        "sha256": "fe5e1d1e9698c699325ff346061867669178efa0951a7b727bef9ca30b79b3ba",
+        "dimensions": [
+          840,
+          460
+        ]
+      }
+    ],
+    "status": "enriched_with_business_gallery",
+    "contact": {
+      "phone": "0925246226",
+      "line": "-workoutpilates",
+      "line_url": "",
+      "address": "พระราม 5: PTT Station ถนนนครอินทร์ นนทบุรี · แจ้งวัฒนะ: ปั๊มบางจาก เมืองทอง ถนนแจ้งวัฒนะขาออก",
+      "hours": ""
+    },
+    "services": [
+      "Pilates Reformer",
+      "อุปกรณ์พิลาทิสหลากหลาย",
+      "โยคะและ Inside Flow"
+    ],
+    "palette": [
+      "#16a4c5",
+      "#164661",
+      "#f1f9fb"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Real branded studio photos downloaded from this business GoWabi gallery. Exact photographed branch not established. Recent post booking phone preferred over older directory footer 02-497-6641. LINE appears literally as -workoutpilates; not silently corrected. Hours unavailable.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "yogitiq-studio",
+    "category": "yoga",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.beautynailhairsalons.com/TH/Bangkok/719302004814500/YogiTiq-Yoga-Studio",
+      "https://www.facebook.com/YogiTiq/"
+    ],
+    "photos": [
+      "yogitiq-studio/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "yogitiq-studio/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/YogiTiq/",
+        "download_url": "https://scontent.fbkk22-3.fna.fbcdn.net/v/t39.30808-1/431724849_910909254370459_5901849862370199614_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=ulz9jEhELKoQ7kNvwGDmENT&_nc_oc=AdotgpIfZ6alzX3zatcecYsS3R6025Oqc4e3tDomolgimq4i_rNK9lXG9oMwQRVwfW0&_nc_zt=24&_nc_ht=scontent.fbkk22-3.fna&_nc_gid=dPT3jAhMwBEI7GNowrxxhw&_nc_ss=7f20f&oh=00_AQQgpz-fiDhZrXLzBnp5htLZ49T1lZtbAUz7uxf0HBECfw&oe=6AF60318",
+        "kind": "logo",
+        "identity_evidence": "YogiTiq Yoga Studio | Bangkok ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "764cc61259f9ca7814e23d04ac1c564f423662e822e2cbed93af415ac1ccb141",
+        "dimensions": [
+          720,
+          720
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "0855529564",
+      "line": "",
+      "line_url": "",
+      "address": "ชั้น 2 Serene Trilingual International School สาธุประดิษฐ์ 58 แยก 26 (ซอยลีเพลส) ยานนาวา กรุงเทพฯ 10120 · มีที่จอดรถ",
+      "hours": "จันทร์–ศุกร์ 18:00–21:00 น. · เสาร์–อาทิตย์ 09:00–11:00 น. โทรเช็กคลาสก่อน"
+    },
+    "services": [
+      "โยคะพื้นฐาน",
+      "กลุ่มและส่วนตัว",
+      "โยคะขั้นสูง"
+    ],
+    "palette": [
+      "#e9a6a9",
+      "#087b7d",
+      "#f4fbf8"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Authentic teal-and-pink profile logo only. Class and event photo URLs unavailable; Halloween/AI-permitted event artwork deliberately excluded. LINE label has no readable ID; no ID invented.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "punn-yoga",
+    "category": "yoga",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.beautynailhairsalons.com/TH/Bangkok/108895008509665/PUNN-Yoga",
+      "https://www.facebook.com/people/PUNN-Yoga/100083070652309/",
+      "https://www.findyoga.net/studio/13529-punn-yoga-khan-na-yao"
+    ],
+    "photos": [
+      "punn-yoga/assets/source-enrichment/facebook-profile.jpg",
+      "punn-yoga/assets/source-enrichment/business-photo-1.jpg",
+      "punn-yoga/assets/source-enrichment/business-photo-2.jpg",
+      "punn-yoga/assets/source-enrichment/business-photo-3.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "punn-yoga/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/people/PUNN-Yoga/100083070652309/",
+        "download_url": "https://scontent.fbkk22-7.fna.fbcdn.net/v/t39.30808-1/559623804_841851715260509_1098966009212214577_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s720x720&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=Ybu1i_hM44kQ7kNvwEOQdLR&_nc_oc=Adrp5mOfuInTQt9JO4Dj6Dtxebh92gWEe6aDOqVzgkQ2NqTNvnG-z6Kxb7bQayn4n5Q&_nc_zt=24&_nc_ht=scontent.fbkk22-7.fna&_nc_gid=LclWPIEe4NouuGCW44bHbA&_nc_ss=7f20f&oh=00_AQRNx8gK_7ztS8xlYh4CiuSBOb1U_TBWKxZVkGJGXO4BRw&oe=6AF60C2F",
+        "kind": "logo",
+        "identity_evidence": "PUNN Yoga | Bangkok ",
+        "label": "โลโก้จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "717d7d6a9082626b78bcfc467ff85fa397fdbacf26e5c0331ee97ec9531d15fc",
+        "dimensions": [
+          720,
+          720
+        ]
+      },
+      {
+        "path": "punn-yoga/assets/source-enrichment/business-photo-1.jpg",
+        "source_page": "https://www.findyoga.net/studio/13529-punn-yoga-khan-na-yao",
+        "download_url": "https://2mnuyom4pqeqwfiz.public.blob.vercel-storage.com/studios/13529/56198.webp",
+        "kind": "business_gallery_photo",
+        "identity_evidence": "Photo in the gallery explicitly named PUNN Yoga; visually inspected, recommendation images excluded.",
+        "authorship": "Original photographer and exact branch not established.",
+        "sha256": "2b4d847c5a319e1661015fc504709ef1b9aae2c162318275a5c84f4432213603",
+        "dimensions": [
+          1103,
+          876
+        ]
+      },
+      {
+        "path": "punn-yoga/assets/source-enrichment/business-photo-2.jpg",
+        "source_page": "https://www.findyoga.net/studio/13529-punn-yoga-khan-na-yao",
+        "download_url": "https://2mnuyom4pqeqwfiz.public.blob.vercel-storage.com/studios/13529/56233.webp",
+        "kind": "business_gallery_photo",
+        "identity_evidence": "Photo in the gallery explicitly named PUNN Yoga; visually inspected, recommendation images excluded.",
+        "authorship": "Original photographer and exact branch not established.",
+        "sha256": "cfedb5152954944e493f61485ca0204a58a3f4ecae08097d739908acf2d54415",
+        "dimensions": [
+          506,
+          900
+        ]
+      },
+      {
+        "path": "punn-yoga/assets/source-enrichment/business-photo-3.jpg",
+        "source_page": "https://www.findyoga.net/studio/13529-punn-yoga-khan-na-yao",
+        "download_url": "https://2mnuyom4pqeqwfiz.public.blob.vercel-storage.com/studios/13529/56259.webp",
+        "kind": "business_gallery_photo",
+        "identity_evidence": "Photo in the gallery explicitly named PUNN Yoga; visually inspected, recommendation images excluded.",
+        "authorship": "Original photographer and exact branch not established.",
+        "sha256": "2a761b23091fad3f780f1dd8f291866a9407bc3b870c96782b76dbc6fcf98831",
+        "dimensions": [
+          641,
+          570
+        ]
+      }
+    ],
+    "status": "enriched_with_business_gallery",
+    "contact": {
+      "phone": "0894454644",
+      "line": "Jenny4454644",
+      "line_url": "",
+      "address": "Panya Sport Complex ตรงข้ามสนามกอล์ฟปัญญา รามอินทรา · ข้อมูลติดต่อ 48/7 หมู่บ้านปัญญาอินทรา P.6 กรุงเทพฯ",
+      "hours": ""
+    },
+    "services": [
+      "Basic และ Stretching",
+      "Vinyasa Flow และ Pranayama",
+      "Advance และ Handstand"
+    ],
+    "palette": [
+      "#d7c3a5",
+      "#655643",
+      "#fbf8f0"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Real practice photographs from named FindYoga studio gallery; original photographer/ownership not provided. Directory listing and post venue differ; both displayed with their roles, no unverified map pin asserted. Hours unavailable.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  },
+  {
+    "slug": "kaya-yoga",
+    "category": "yoga",
+    "inspected": true,
+    "date": "2026-11-08",
+    "sources": [
+      "https://www.beautynailhairsalons.com/TH/Bangkok/101955485911328/Kaya-Yoga%26Pilates",
+      "https://www.facebook.com/people/Kaya-YogaPilates/100083385127090/"
+    ],
+    "photos": [
+      "kaya-yoga/assets/source-enrichment/facebook-profile.jpg"
+    ],
+    "photo_provenance": [
+      {
+        "path": "kaya-yoga/assets/source-enrichment/facebook-profile.jpg",
+        "source_page": "https://www.facebook.com/people/Kaya-YogaPilates/100083385127090/",
+        "download_url": "https://scontent.fbkk29-4.fna.fbcdn.net/v/t39.30808-1/401484684_313949311394571_2289848603921747247_n.jpg?stp=dst-jpg_tt6&cstp=mx800x800&ctp=s720x720&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=_Vwf9ZhlPU8Q7kNvwFYH6VH&_nc_oc=AdoEa9YJCxF7smp26oppfx3O-APhbouwbbf47OJ_2Q7gqvaxNGVJUOf-6pXujmCnvQc&_nc_zt=24&_nc_ht=scontent.fbkk29-4.fna&_nc_gid=b_C14kP4SILfOEhkW4_wRQ&_nc_ss=7f20f&oh=00_AQTxekqpGaLTqIe3NPK_z15RGKkYQZU0gVPGNRwh0WrYqQ&oe=6AF5E6AA",
+        "kind": "promotional_artwork",
+        "identity_evidence": "Kaya Yoga&Pilates | Bangkok ",
+        "label": "ภาพประชาสัมพันธ์จากโปรไฟล์ Facebook ของร้าน",
+        "authorship": "Business-profile association verified; original photographer and reuse license not established.",
+        "sha256": "cce2c95683d0009ae9a8d01cc1fb99a8dbf6537b5357435cf8146659e0a4f4df",
+        "dimensions": [
+          720,
+          720
+        ]
+      }
+    ],
+    "status": "enriched_with_profile_visual_photo_gap",
+    "contact": {
+      "phone": "0642926561",
+      "line": "",
+      "line_url": "",
+      "address": "ซอยลาซาล 48 กรุงเทพฯ",
+      "hours": "เคยประกาศรอบเย็น 19:15–20:15 น. · โทรสอบถามตารางปัจจุบัน"
+    },
+    "services": [
+      "โยคะกลุ่ม",
+      "โยคะส่วนตัว",
+      "Pilates Reformer"
+    ],
+    "palette": [
+      "#f2a62e",
+      "#314e70",
+      "#fff8ed"
+    ],
+    "palette_basis": "Visual interpretation of the downloaded individual business profile, not an official brand specification.",
+    "limitations": [
+      "Official profile image contains a photographic yoga pose over paint effects; promotional artwork, not documentary studio or class photograph. Portfolio CDN unavailable. Last readable post 2026-02-15; evening time from older 2025 post explicitly described as historical. No exact street number or LINE ID found.",
+      "Direct lead-directory request returned 403; where available, web reader/search results supplied business-owned profile content. Social profile metadata and downloaded image identity matched; social timeline not accessible.",
+      "Publication/reuse permission and original image authorship not established. No stock images, generated artwork, or unrelated recommendations used."
+    ]
+  }
+]

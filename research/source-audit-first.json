@@ -1,0 +1,864 @@
+[
+  {
+    "slug": "wuttikorn-metal",
+    "site_number": 42,
+    "name": "ส.วุฒิกร การช่าง",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.thaithurkic.com/%E0%B8%AA-%E0%B8%A7%E0%B8%B8%E0%B8%92%E0%B8%B4%E0%B8%81%E0%B8%A3-%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87-086-109-3471",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "web_tool"
+      },
+      {
+        "url": "https://www.facebook.com/1581689842061800/",
+        "type": "facebook",
+        "evidence": "Named business page/profile image",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [],
+    "assets": [
+      {
+        "path": "wuttikorn-metal/assets/source-wuttikorn-metal-9e55df258.jpg",
+        "source_url": "https://www.facebook.com/1581689842061800/",
+        "image_url": "https://scontent.fbkk22-7.fna.fbcdn.net/v/t39.30808-1/838008232_1733229215473293_6617603281007858817_n.jpg?stp=dst-jpg_tt6&cstp=mx922x924&ctp=s720x720&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=gPJNQRiB36UQ7kNvwGSxiL_&_nc_oc=AdoM_EQmLbm-MTGP3actvlvlJNaPJXt_agLUpSUQQYbif0yXpkAvGsJeDlyMlQD3_j0&_nc_zt=24&_nc_ht=scontent.fbkk22-7.fna&_nc_gid=Y8gcriDLFs4aSgiHYf7-Lw&_nc_ss=7920f&oh=00_AQRJgOTSP-C4kLqtq0M5sEXHlLO5yYwIPihrVsmnK0XTfA&oe=6AF60570",
+        "kind": "business_contact_graphic",
+        "sha256": "416e4df490a185cb695f0dab2a3637a23a409b51b484560481dfb5790e32f1d2",
+        "bytes": 56097,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพประชาสัมพันธ์จากโปรไฟล์ Facebook ของ ส.วุฒิกร มีเบอร์โทรและ LINE ของช่าง"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "branded_graphic_only",
+    "limitations": [
+      "Only a branded contact graphic was available; no project photograph verified.",
+      "Address is locality-level only.",
+      "24-hour schedule is directory-reported, not independently confirmed."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "24cb81d8c56cf190f666a3cc6d578bfbd910f22ab2610f18af2e23a3b85d7377",
+    "verified_facts": {
+      "address": "ตำบลไทรน้อย อำเภอไทรน้อย จังหวัดนนทบุรี 11150",
+      "phones": [
+        "0861093471",
+        "0852266900"
+      ],
+      "line": "SWUTTIKORN",
+      "hours": "ไดเรกทอรีระบุเปิดทุกวัน 24 ชั่วโมง กรุณาโทรยืนยันเวลานัดหมาย"
+    },
+    "map_status": "address_search_only",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "204d443614b2d057b2fcade8e938f1c86492029ffa98276e272475f91781aabc"
+  },
+  {
+    "slug": "changpan-metal",
+    "site_number": 43,
+    "name": "ช่างปาน",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.thaithurkic.com/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9B%E0%B8%B2%E0%B8%99-%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%95%E0%B8%B4%E0%B8%A1%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81-%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B2_1R-083-595-9673",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "web_tool"
+      },
+      {
+        "url": "https://www.facebook.com/803942859756485/",
+        "type": "facebook",
+        "evidence": "Named business page/profile image",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "changpan-metal/assets/source-changpan-metal-242c8bb25.jpg"
+    ],
+    "assets": [
+      {
+        "path": "changpan-metal/assets/source-changpan-metal-242c8bb25.jpg",
+        "source_url": "https://www.facebook.com/803942859756485/",
+        "image_url": "https://scontent.fbkk29-7.fna.fbcdn.net/v/t39.30808-1/305202633_599447611873519_1124075590581526748_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s720x720&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=OdknqL1VytMQ7kNvwEGHqyd&_nc_oc=AdqGkU_4xAH1nycB0vrdez9Q15mNL9YTQlsdkOKW_qPxDo-1kPxY5SVeg-P9wZZFW50&_nc_zt=24&_nc_ht=scontent.fbkk29-7.fna&_nc_gid=QbhAxZkqMl3kUfNo7bpuzg&_nc_ss=7920f&oh=00_AQTVFdAS-U7XbAd0ygZ1AB9to9XKsN17kW_uHTZZFOF0mA&oe=6AF60C1F",
+        "kind": "business_photo",
+        "sha256": "ae2f6bd5114863338449c816017bbef785065ef2f2894c42f97d728628ed54b9",
+        "bytes": 51412,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพพื้นที่ครัวจากโปรไฟล์ Facebook ช่างปาน ไม่ได้ระบุวันที่หรือสถานที่ของงาน"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "Facebook profile photo is attributable to the linked business; project date/location are unverified.",
+      "No street number or exact map pin verified.",
+      "24-hour schedule is directory-reported."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "04d1fba295861429bde883a50269916d0a078240c6f9f28f01095d4395464822",
+    "verified_facts": {
+      "address": "พระราม 5 ท่าน้ำนนทบุรี อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000",
+      "phones": [
+        "0835959673"
+      ],
+      "hours": "ไดเรกทอรีระบุเปิดทุกวัน 24 ชั่วโมง กรุณาโทรยืนยันเวลานัดหมาย"
+    },
+    "map_status": "address_search_only",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "dc22a1e4568ba95b35ca7a100d913c95655337c7cd0f97ec22d3ee8fb58d7043"
+  },
+  {
+    "slug": "nongsao-stainless",
+    "site_number": 44,
+    "name": "น้องสาวสแตนเลส ช่างตั้ม",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.thaithurkic.com/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AA%E0%B9%81%E0%B8%95%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%AA-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5-%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%A1-082-203-2334",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "web_tool"
+      },
+      {
+        "url": "https://www.facebook.com/689268961198498/",
+        "type": "facebook",
+        "evidence": "Generic login page; photos unavailable",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [],
+    "assets": [],
+    "status": "source_enriched",
+    "photo_status": "unavailable",
+    "limitations": [
+      "Facebook returned a generic/login page without identifiable business photos.",
+      "No attributable photograph or exact coordinates verified.",
+      "24-hour schedule is directory-reported."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "4653e183d60180c335d5953542bf59f16010f803eaa078a6b3ab0a861b97be9b",
+    "verified_facts": {
+      "address": "31/89 หมู่ 2 ซอยเรวดี ตำบลตลาดขวัญ อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000",
+      "phones": [
+        "0822032334"
+      ],
+      "email": "thaipress1@hotmail.com",
+      "hours": "ไดเรกทอรีระบุเปิดทุกวัน 24 ชั่วโมง กรุณาโทรยืนยันเวลานัดหมาย"
+    },
+    "map_status": "address_search_only",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "06cb6e48c9ebd35130f6ada09980a0c4e0c200ced9b667496247afb07b8ee6ab"
+  },
+  {
+    "slug": "wichitsilp-metal",
+    "site_number": 45,
+    "name": "วิจิตรศิลป์การช่าง",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.yellowpages.co.th/profile/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99-%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B9%8C%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87-928OHaEgM",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [],
+    "assets": [],
+    "status": "source_enriched",
+    "photo_status": "unavailable",
+    "limitations": [
+      "Directory recommendation images belong to other businesses and were excluded.",
+      "No business photograph, LINE ID, or exact coordinates verified."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "e42239bebec9c49dbecb09b4d21532d8b7aff5fbb8c79b60e68801a21bfe0770",
+    "verified_facts": {
+      "address": "89/23 หมู่ 1 ถนนท่าน้ำนนท์ ตำบลบางกร่าง อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000",
+      "phones": [
+        "028829467"
+      ],
+      "hours": "ทุกวัน 08:00–18:00 น."
+    },
+    "map_status": "address_search_only",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "3babd4a7ee2536a985228dfb6b1b04f77a2f1a21ebfb4dc105ec35ec260aade9"
+  },
+  {
+    "slug": "yaicharoen-metal",
+    "site_number": 46,
+    "name": "ใหญ่เจริญการช่าง",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.pantipmarket.com/mall/dontreephol/?id=1459&node=products",
+        "type": "business_directory",
+        "evidence": "Current page is permanent-closure notice; historical listing unavailable",
+        "access": "direct_http"
+      },
+      {
+        "url": "https://www.pantipmarket.com/mall/dontreephol/",
+        "type": "historical_indexed_listing",
+        "evidence": "Old address on Tiwanon Road and service list; current business status unverified",
+        "access": "web_search_snippet"
+      },
+      {
+        "url": "https://www.pantipmarket.com/items/14173685",
+        "type": "historical_indexed_listing",
+        "evidence": "Old phone 0812645925; current contact unverified",
+        "access": "web_search_snippet"
+      }
+    ],
+    "photos": [],
+    "assets": [],
+    "status": "historical_contact_only",
+    "photo_status": "unavailable",
+    "limitations": [
+      "PantipMarket landing page confirms permanent closure on 2026-10-30.",
+      "Business services, address and phone survive in old indexed listings only; current trading status unverified.",
+      "No attributable photo, current LINE, hours, or exact map pin verified.",
+      "Do not confuse this business with a similarly named Chiang Rai legal entity."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "9495527c734393be3c2cb0e8b251ca735f00819abbac39a7fc955e189bc4ee93",
+    "verified_facts": {
+      "address": "ข้อมูลประกาศเดิม: ถนนติวานนท์ ตรงข้ามเอื้ออาทรบางกระดี ใกล้สะพานข้ามสี่แยกปู่โพธิ์ จังหวัดปทุมธานี",
+      "phones": [
+        "0812645925"
+      ],
+      "hours": "ยังยืนยันเวลาทำการปัจจุบันไม่ได้"
+    },
+    "map_status": "address_search_only",
+    "body_protection": "data-source-enriched=\"true\"",
+    "verified_facts_current": false,
+    "html_sha256": "f645a3937b20154746bd8331f0abdaf00c7c3a794d474426bf7b5232f557ed04"
+  },
+  {
+    "slug": "damrat-glass",
+    "site_number": 47,
+    "name": "ดำรัส กระจกอลูมิเนียม",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.damrataluminum.com/",
+        "type": "business_website",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "damrat-glass/assets/source-damrat-glass-61eddffed.jpg"
+    ],
+    "assets": [
+      {
+        "path": "damrat-glass/assets/source-damrat-glass-61eddffed.jpg",
+        "source_url": "https://www.damrataluminum.com/",
+        "image_url": "https://image.makewebeasy.net/makeweb/m_1920x0/VfkjW3xyq/DefaultData/S__6799379_0_1.jpg?v=202405291424",
+        "kind": "business_photo",
+        "sha256": "e87b19b47254d0d4f330463e9e76b3ee2f261cd2b7531fd94151eb988ea91019",
+        "bytes": 314486,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพประตูกระจกจากเว็บไซต์ร้านดำรัส กระจกอลูมิเนียม"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "Opening hours and exact map coordinates not found on reviewed homepage.",
+      "Photo is attributed to the business website; project location/date are not asserted."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "95a0d724dce625e0670b2d3170124ca9476e7d50380b182249109fcf357bffb5",
+    "verified_facts": {
+      "address": "36 ซอยทานสัมฤทธิ์ 21/7 ตำบลท่าทราย อำเภอเมือง จังหวัดนนทบุรี 11000",
+      "phones": [
+        "0814905115",
+        "0984428945"
+      ],
+      "line": "damrat4744"
+    },
+    "map_status": "address_search_only",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "4f3bb395357f07be1407e63fb3b995172da104625e99dff21683c636e5dd65e5"
+  },
+  {
+    "slug": "lattapon-glass",
+    "site_number": 48,
+    "name": "ลัทธพล อลูมิเนียม",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://lattaponal.yellowpages.co.th/",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "lattapon-glass/assets/source-lattapon-glass-382f9f89b.jpg",
+      "lattapon-glass/assets/source-lattapon-glass-2a6cc0b34.jpg",
+      "lattapon-glass/assets/source-lattapon-glass-dea979d75.jpg"
+    ],
+    "assets": [
+      {
+        "path": "lattapon-glass/assets/source-lattapon-glass-382f9f89b.jpg",
+        "source_url": "https://lattaponal.yellowpages.co.th/",
+        "image_url": "https://lattaponal.yellowpages.co.th/sites/storage/files/styles/large/typmedia/products/th/52312920/60a2f4d955ca8-ช่างกระจก บางขุนนท์ท_0.jpg?itok=6af02c378dff7",
+        "kind": "business_photo",
+        "sha256": "713d1a7337c933dc2c88fc51732e163d4b0f0647e711fe11475d93722e4594a3",
+        "bytes": 16806,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพจากแกลเลอรี่ ลัทธพล อลูมิเนียม บนเว็บไซต์ของกิจการ"
+      },
+      {
+        "path": "lattapon-glass/assets/source-lattapon-glass-2a6cc0b34.jpg",
+        "source_url": "https://lattaponal.yellowpages.co.th/",
+        "image_url": "https://lattaponal.yellowpages.co.th/sites/storage/files/styles/large/typmedia/products/th/52312920/60a2f4d955ca8-ช่างกระจก บางขุนนท์ท_2.jpg?itok=6af02c378dffd",
+        "kind": "business_photo",
+        "sha256": "cae2930f20172bdfaede857f8333db735bc866a34841821f0ec1d65945669a16",
+        "bytes": 15441,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพจากแกลเลอรี่ ลัทธพล อลูมิเนียม บนเว็บไซต์ของกิจการ"
+      },
+      {
+        "path": "lattapon-glass/assets/source-lattapon-glass-dea979d75.jpg",
+        "source_url": "https://lattaponal.yellowpages.co.th/",
+        "image_url": "https://lattaponal.yellowpages.co.th/sites/storage/files/styles/large/typmedia/products/th/52312920/5f19558ed4b8e-กระจกกั้นห้องน้ำราคาถูก.jpg?itok=6af02c378e012",
+        "kind": "business_photo",
+        "sha256": "903679cd0190e963e8684e5a2225452d46a1b12a63cb26b307805aa0a7ba0352",
+        "bytes": 38885,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพจากแกลเลอรี่ ลัทธพล อลูมิเนียม บนเว็บไซต์ของกิจการ"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "Selected older gallery photographs, excluded stylized promotional banners.",
+      "No LINE ID verified on reviewed page."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "258c173fff244fdfdb2f9be091e27617545c6ef671cd33ca186ee3d6258358f4",
+    "verified_facts": {
+      "address": "95/31–32 หมู่ 6 ซอยแก้วอินทร์ ตำบลเสาธงหิน อำเภอบางใหญ่ จังหวัดนนทบุรี 11140",
+      "phones": [
+        "0890650100",
+        "0818444569"
+      ],
+      "email": "lattaponal@gmail.com",
+      "hours": "จันทร์–เสาร์ 08:00–17:00 น.",
+      "coords": "13.868414306652992,100.40884593036527"
+    },
+    "map_status": "source_coordinates",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "d9e1c268df91995ca6e0ec79ee56e00ac0551de4866a738c72a0c34ed3914d6b"
+  },
+  {
+    "slug": "changnun-glass",
+    "site_number": 49,
+    "name": "ช่างนัน อลูมิเนียม",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://changnunaluminum.yellowpages.co.th/",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "changnun-glass/assets/source-changnun-glass-2489644f4.jpg",
+      "changnun-glass/assets/source-changnun-glass-a025e58d9.jpg",
+      "changnun-glass/assets/source-changnun-glass-1156b856d.jpg"
+    ],
+    "assets": [
+      {
+        "path": "changnun-glass/assets/source-changnun-glass-2489644f4.jpg",
+        "source_url": "https://changnunaluminum.yellowpages.co.th/",
+        "image_url": "https://changnunaluminum.yellowpages.co.th/sites/storage/files/users/d/d/d/5/ddd541d8-449e-44bd-bd8e-86661fca79bd/1671407.jpg",
+        "kind": "business_photo",
+        "sha256": "05c7c66ee3c8633d9e217487cd034453efd968f010ec0c21c450a66021162db7",
+        "bytes": 50076,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพงานกระจกจากเว็บไซต์ ช่างนัน อลูมิเนียม"
+      },
+      {
+        "path": "changnun-glass/assets/source-changnun-glass-a025e58d9.jpg",
+        "source_url": "https://changnunaluminum.yellowpages.co.th/",
+        "image_url": "https://changnunaluminum.yellowpages.co.th/sites/storage/files/users/d/d/d/5/ddd541d8-449e-44bd-bd8e-86661fca79bd/1671982.jpg",
+        "kind": "business_photo",
+        "sha256": "9fe64f024e966ad6be0fb4462cd9dc86a0b9c686486267cedc550e22941dfc78",
+        "bytes": 97037,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพงานกระจกจากเว็บไซต์ ช่างนัน อลูมิเนียม"
+      },
+      {
+        "path": "changnun-glass/assets/source-changnun-glass-1156b856d.jpg",
+        "source_url": "https://changnunaluminum.yellowpages.co.th/",
+        "image_url": "https://changnunaluminum.yellowpages.co.th/sites/storage/files/users/d/d/d/5/ddd541d8-449e-44bd-bd8e-86661fca79bd/20180913_174158.jpg",
+        "kind": "business_photo",
+        "sha256": "9f489270094b7f5c9888006645349ba255c4ca9217b5478ed23abf7b2486910e",
+        "bytes": 146713,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพงานกระจกจากเว็บไซต์ ช่างนัน อลูมิเนียม"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "Gallery attribution verified; individual project dates/locations not verified."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "f435105d00dc7ec3807350bece077f2320e16b7885446fb8b0754aed7d42605f",
+    "verified_facts": {
+      "address": "5/957 ซอย 11 หมู่บ้านประชาชื่น ถนนสามัคคี ตำบลบางตลาด อำเภอปากเกร็ด จังหวัดนนทบุรี 11120",
+      "phones": [
+        "0870128259",
+        "0828388409"
+      ],
+      "line": "chayanan195",
+      "email": "sahanont-law@hotmail.com",
+      "hours": "จันทร์–เสาร์ 08:00–17:30 น.",
+      "coords": "13.884031253766457,100.53905128377296"
+    },
+    "map_status": "source_coordinates",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "faa4bccfa99e92edeaae584a917ca7519af2d51067f66fb50bc47b4b8daef576"
+  },
+  {
+    "slug": "sky-glass-demo",
+    "site_number": 50,
+    "name": "Sky Glass Aluminium",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://skyglassaluminium.com/",
+        "type": "business_website",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "sky-glass-demo/assets/source-sky-glass-demo-edeb70168.jpg",
+      "sky-glass-demo/assets/source-sky-glass-demo-638751e42.jpg",
+      "sky-glass-demo/assets/source-sky-glass-demo-cbf66c91d.jpg"
+    ],
+    "assets": [
+      {
+        "path": "sky-glass-demo/assets/source-sky-glass-demo-edeb70168.jpg",
+        "source_url": "https://skyglassaluminium.com/",
+        "image_url": "https://skyglassaluminium.com/wp-content/uploads/2024/11/รับติดตั้งกระจก-หน้าต่าง-04.jpg",
+        "kind": "business_photo",
+        "sha256": "cc719d75040de1d0635c59367810048d7a7b24be84eff0c592954d69a297b903",
+        "bytes": 148541,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพติดตั้งกระจกจากเว็บไซต์ Sky Glass Aluminium"
+      },
+      {
+        "path": "sky-glass-demo/assets/source-sky-glass-demo-638751e42.jpg",
+        "source_url": "https://skyglassaluminium.com/",
+        "image_url": "https://skyglassaluminium.com/wp-content/uploads/2024/11/รับติดตั้งกระจกเงา-09.jpg",
+        "kind": "business_photo",
+        "sha256": "19fd7274eee43d23f2546b87ff58c46622696d362fe4cc996d442769028013f8",
+        "bytes": 122482,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพติดตั้งกระจกจากเว็บไซต์ Sky Glass Aluminium"
+      },
+      {
+        "path": "sky-glass-demo/assets/source-sky-glass-demo-cbf66c91d.jpg",
+        "source_url": "https://skyglassaluminium.com/",
+        "image_url": "https://skyglassaluminium.com/wp-content/uploads/2024/11/รับติดดั้งกระจกและอลูมิเนียม-10.jpg",
+        "kind": "business_photo",
+        "sha256": "79df50409e43040be0c346cea23b91451f276f7c082e1fd8f7f86531dbb0110f",
+        "bytes": 99411,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพติดตั้งกระจกจากเว็บไซต์ Sky Glass Aluminium"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "Hours are contact hours published by the business.",
+      "No exact map coordinates verified; no inferred pin used."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "06127ce360bf3c5d78cff84f854fcf9f49ca077888b4d237eeecc71a5aa8b832",
+    "verified_facts": {
+      "address": "5/955 หมู่ 10 หมู่บ้านประชาชื่น ซอย 11 ถนนสามัคคี ตำบลบางตลาด อำเภอปากเกร็ด จังหวัดนนทบุรี",
+      "phones": [
+        "0809822594"
+      ],
+      "line": "0809822594",
+      "hours": "ติดต่องานทุกวัน 07:00–21:00 น."
+    },
+    "map_status": "address_search_only",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "d592562cd691c7ef69a419c5c6a8b998703cc8ecd8604601342fa3c11fcb5d38"
+  },
+  {
+    "slug": "twch-glass-demo",
+    "site_number": 51,
+    "name": "ทวีโชค รุ่งเรือง อลูมิเนียม",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://twchaluminium.com/why-choose-twch-aluminium-nonthaburi/",
+        "type": "business_website",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      },
+      {
+        "url": "https://twchaluminium.com/contact/",
+        "type": "business_contact_page",
+        "evidence": "Address and LINE ID",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "twch-glass-demo/assets/source-twch-glass-demo-cb41d1de1.jpg"
+    ],
+    "assets": [
+      {
+        "path": "twch-glass-demo/assets/source-twch-glass-demo-cb41d1de1.jpg",
+        "source_url": "https://twchaluminium.com/why-choose-twch-aluminium-nonthaburi/",
+        "image_url": "https://twchaluminium.com/wp-content/uploads/2025/10/บานเลื่อน-14.jpg",
+        "kind": "business_photo",
+        "sha256": "e7efcf6af8ecaecb0b3cc988206d5dea4c7114bcbdc55da9dbac20b73f403b82",
+        "bytes": 1004342,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพประตูบานเลื่อนที่เว็บไซต์ทวีโชคระบุว่าเป็นผลงานติดตั้งจริง"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "Contact page map uses an address query, not exact coordinates; map remains labelled as address search.",
+      "Opening hours not found on reviewed pages."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "d73823bb216028da30534c578015ca2e65369d4062949fdfaadad063ee900c26",
+    "verified_facts": {
+      "address": "62/1 หมู่ 4 หมู่บ้านเต็มรัก ตำบลบางคูรัด อำเภอบางบัวทอง จังหวัดนนทบุรี 11110",
+      "phones": [
+        "0850625694"
+      ],
+      "line": "noibutdee1971"
+    },
+    "map_status": "address_search_only",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "91b45350f798c446e8dc3166cab5ace495c7f854a97aa6997b778fe8d639b88d"
+  },
+  {
+    "slug": "kamron-furniture",
+    "site_number": 52,
+    "name": "คำรณเฟอร์นิเจอร์",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.yellowpages.co.th/profile/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B9%82%E0%B8%8B%E0%B8%9F%E0%B8%B2%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3-%E0%B8%84%E0%B8%B3%E0%B8%A3%E0%B8%93%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C-dUOtWLBPj",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      },
+      {
+        "url": "https://www.facebook.com/profile.php?id=100084301909000",
+        "type": "facebook",
+        "evidence": "Named business page/profile image",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "kamron-furniture/assets/source-kamron-furniture-9d2086f43.jpg"
+    ],
+    "assets": [
+      {
+        "path": "kamron-furniture/assets/source-kamron-furniture-9d2086f43.jpg",
+        "source_url": "https://www.facebook.com/profile.php?id=100084301909000",
+        "image_url": "https://scontent.fbkk22-7.fna.fbcdn.net/v/t39.30808-1/395108145_302982965855098_2410849656034904058_n.jpg?stp=dst-jpg_tt6&cstp=mx554x540&ctp=s554x540&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=JpYtQXEXv2AQ7kNvwFuN8nn&_nc_oc=Adqkp7_jGAnHpbrXqhLPBjuTSAmR8B658clYE6ycyxdq0AbR8-4rqsE7K2B6uCeFQj8&_nc_zt=24&_nc_ht=scontent.fbkk22-7.fna&_nc_gid=BweWteJSFWjjXEZ6pqaJYA&_nc_ss=7920f&oh=00_AQT5R4ah74wqJiTL5WDF24i-_UFLGm76A1NzSvEEALM64g&oe=6AF60CA1",
+        "kind": "business_photo",
+        "sha256": "f756d2d35db6980635f1c491df52577ab1d070fcb6a53e1157eedad8b98d571b",
+        "bytes": 30026,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ชุดโซฟาสีแดงจากภาพโปรไฟล์ Facebook คำรณเฟอร์นิเจอร์ มีชื่อร้านอยู่ในภาพ"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "One attributable business photo available, from the Facebook page linked by YellowPages.",
+      "No individual project date/location asserted.",
+      "YellowPages recommended sofa thumbnails belong to Manit/manitsofarepair and were explicitly excluded."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "12657ed8e6820a900da4fb48becfc68f7310bc1d61a6523966e5b749d64a8e24",
+    "verified_facts": {
+      "address": "103/23 ถนนเอกชัย แขวงบางบอน เขตบางบอน กรุงเทพมหานคร 10150",
+      "phones": [
+        "0629217674"
+      ],
+      "line": "0629217674",
+      "hours": "จันทร์–เสาร์ 08:00–17:00 น.",
+      "coords": "13.643811315951,100.3787887892"
+    },
+    "map_status": "source_coordinates",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "481ef2ac3f332694b37432a92d69a8cf2d7a1475cc301664b496a7923e2596c7"
+  },
+  {
+    "slug": "tharathorn-sofa",
+    "site_number": 53,
+    "name": "ธาราธรณ์ซ่อมโซฟา",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.thaithurkic.com/%E0%B8%98%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%98%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B9%82%E0%B8%8B%E0%B8%9F%E0%B8%B2-086-506-7931",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "web_tool"
+      },
+      {
+        "url": "https://www.facebook.com/1741096896171174/",
+        "type": "facebook",
+        "evidence": "Named business page/profile image",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "tharathorn-sofa/assets/source-tharathorn-sofa-1292a14a6.jpg"
+    ],
+    "assets": [
+      {
+        "path": "tharathorn-sofa/assets/source-tharathorn-sofa-1292a14a6.jpg",
+        "source_url": "https://www.facebook.com/1741096896171174/",
+        "image_url": "https://scontent.fbkk22-8.fna.fbcdn.net/v/t39.30808-1/294683788_544094354176892_5069354105757427412_n.jpg?stp=dst-jpg_tt6&cstp=mx720x720&ctp=s720x720&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=nSNWspi5SlIQ7kNvwEhVVl5&_nc_oc=AdoTnoEvkVLVryxEcUwh_rbTdBmI5PllvtzchazM8u61T0R8A0O7VGeUpANQi2dC5Xs&_nc_zt=24&_nc_ht=scontent.fbkk22-8.fna&_nc_gid=fOfZYvVDrATJtAMHOqYT1w&_nc_ss=7920f&oh=00_AQQ6GmTlnlxAl270zVF7T5ItT6HJ-IEvW1JLIEVJSEaSyA&oe=6AF616C0",
+        "kind": "storefront_photo",
+        "sha256": "ee1b5a9bd3ca1db55602019425384aed90ae9258d18fb6bed30a454627ae8a2b",
+        "bytes": 72847,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพหน้าร้านที่มีป้ายธาราธรณ์ซ่อมโซฟา จากโปรไฟล์ Facebook ของร้าน"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "Source directory lists postcode 10310 inconsistent with Don Mueang; postcode intentionally omitted.",
+      "No exact map coordinates, LINE ID, or opening hours verified.",
+      "Storefront image does not establish its current street address."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "32a08009f6ac35b6b9d5c33d40a007e60cdd843abaa04238c96efb640dde9b75",
+    "verified_facts": {
+      "address": "54/110 หมู่ 4 ถนนประชาอุทิศ สีกัน ดอนเมือง กรุงเทพมหานคร",
+      "phones": [
+        "0865067931"
+      ]
+    },
+    "map_status": "address_search_only",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "7edb88896f7b186fb6e574df5bb088fcf0aae1635dfc71a5f7fcbc22de41010d"
+  },
+  {
+    "slug": "thongsuk-furniture",
+    "site_number": 54,
+    "name": "ทองสุข เฟอร์นิเจอร์",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.yellowpages.co.th/profile/%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%82-%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C-93uQEgzWp",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      },
+      {
+        "url": "https://www.facebook.com/616092731886397/",
+        "type": "facebook",
+        "evidence": "Named business page/profile image",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [],
+    "assets": [
+      {
+        "path": "thongsuk-furniture/assets/source-thongsuk-furniture-eb91f3626.jpg",
+        "source_url": "https://www.facebook.com/616092731886397/",
+        "image_url": "https://scontent.fbkk29-8.fna.fbcdn.net/v/t39.30808-1/734253371_1657219206410339_6749223872718082924_n.jpg?stp=dst-jpg_tt6&cstp=mx1254x1254&ctp=s720x720&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=bZwQGT4U5HsQ7kNvwHRCWhE&_nc_oc=AdoNJ6mh7X5E2ICeXYcKbmZE53UkleqmtUTodK1gXvdVvs2rXIp4h2emUZm77ja9Fek&_nc_zt=24&_nc_ht=scontent.fbkk29-8.fna&_nc_gid=NcyTliU-Et24YILLpL8c-g&_nc_ss=7920f&oh=00_AQTebsYjuqctQN4tJgGi1mk5-f-XYR8DUKXeldpjD0BCkg&oe=6AF5F41B",
+        "kind": "business_contact_graphic",
+        "sha256": "937be0ae5d97bf7cd87de3311f93f8aaff20f93c75ac3c8f03b85a80b2860783",
+        "bytes": 113566,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพตราร้านทองสุขจาก Facebook ที่เชื่อมโยงใน YellowPages เป็นภาพประชาสัมพันธ์ ไม่ใช่ภาพผลงานซ่อม"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "branded_graphic_only",
+    "limitations": [
+      "Available Facebook image is a branded graphic, not a verified project photograph.",
+      "Facebook title now refers to Bang Yai, while directory address says Ngam Wong Wan; call to confirm before travel.",
+      "Directory recommended sofa photos belong to Manit and were excluded."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "501e3d72512d456fb5c1d4cda596b0fda0c2436b2375c22ec891801daf785d3a",
+    "verified_facts": {
+      "address": "39/8 ถนนงามวงศ์วาน ตำบลบางเขน อำเภอเมืองนนทบุรี จังหวัดนนทบุรี 11000",
+      "phones": [
+        "0868964102"
+      ],
+      "line": "tae086",
+      "hours": "ทุกวัน 08:00–18:00 น.",
+      "coords": "13.858433847,100.52696852"
+    },
+    "map_status": "source_coordinates",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "55762fd464bb0bc46ef0a8b51e9aa5ffebd2ea2b74ea22e03dc3185987970ded"
+  },
+  {
+    "slug": "lerdwilai-furniture",
+    "site_number": 55,
+    "name": "เลิศวิไลเฟอร์นิเจอร์",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.lerdwilaifurniture.com/contact/",
+        "type": "business_website",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      },
+      {
+        "url": "https://www.lerdwilaifurniture.com/",
+        "type": "business_website",
+        "evidence": "Business-branded repair photos and service list",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "lerdwilai-furniture/assets/source-lerdwilai-furniture-f087624f8.webp",
+      "lerdwilai-furniture/assets/source-lerdwilai-furniture-abe32d269.webp",
+      "lerdwilai-furniture/assets/source-lerdwilai-furniture-9d9c49a86.png"
+    ],
+    "assets": [
+      {
+        "path": "lerdwilai-furniture/assets/source-lerdwilai-furniture-f087624f8.webp",
+        "source_url": "https://www.lerdwilaifurniture.com/",
+        "image_url": "https://www.lerdwilaifurniture.com/wp-content/uploads/Lerdwilai-Furniture-2026-05-768x432.webp",
+        "kind": "business_photo",
+        "sha256": "f46812d48778fdd473a4993a3327e16a9ae3adb17432c0d0cdaae309e91a051a",
+        "bytes": 49158,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพรวมงานซ่อมที่เลิศวิไลเฟอร์นิเจอร์เผยแพร่บนเว็บไซต์ร้าน"
+      },
+      {
+        "path": "lerdwilai-furniture/assets/source-lerdwilai-furniture-abe32d269.webp",
+        "source_url": "https://www.lerdwilaifurniture.com/",
+        "image_url": "https://www.lerdwilaifurniture.com/wp-content/uploads/Lerdwilai-Furniture-2026-01-1-768x432.webp",
+        "kind": "business_photo",
+        "sha256": "598c41fc591c91978f97c2ed12833b7cc631968572859728d2122c3708be4d1e",
+        "bytes": 47684,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพรวมงานซ่อมที่เลิศวิไลเฟอร์นิเจอร์เผยแพร่บนเว็บไซต์ร้าน"
+      },
+      {
+        "path": "lerdwilai-furniture/assets/source-lerdwilai-furniture-9d9c49a86.png",
+        "source_url": "https://www.lerdwilaifurniture.com/",
+        "image_url": "https://www.lerdwilaifurniture.com/wp-content/uploads/2022/11/ผลงานซ่อมโซฟา-768x456.png",
+        "kind": "business_photo",
+        "sha256": "d1ee4931df4b4ffbcd8bb18c95abaae9903fcc107e386860cf1020960551a4a3",
+        "bytes": 443089,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพรวมงานซ่อมที่เลิศวิไลเฟอร์นิเจอร์เผยแพร่บนเว็บไซต์ร้าน"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "Contact page gives a landmark near 290/2, not the business house number; wording preserved.",
+      "Opening hours unverified.",
+      "Maps link uses the place identifier from the official contact-page embed, not its viewport center coordinates."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "c4d9d29c933d4856c5f1385e79edaae39579bb356774efb7cab63d2bf46da488",
+    "verified_facts": {
+      "address": "ตรงข้ามสถาบันเทคโนโลยียานยนต์มหาชัย ใกล้บ้านเลขที่ 290/2 ถนนพรหมแดน แขวงบางบอนใต้ เขตบางบอน กรุงเทพมหานคร 10150",
+      "phones": [
+        "0934969262",
+        "0943966462",
+        "0948232962"
+      ],
+      "line": "0934969262"
+    },
+    "map_status": "source_place_identifier",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "818c66c3b3d453d31d757722965232763b1a07744f8db59b532a9814ef2588ac"
+  },
+  {
+    "slug": "phitchayaphat-sofa",
+    "site_number": 56,
+    "name": "พิชยาพัชร์ เฟอร์นิเจอร์",
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://phitchayaphatsofa.yellowpages.co.th/",
+        "type": "business_directory",
+        "evidence": "Services and contact details reviewed 2026-11-08",
+        "access": "direct_http"
+      }
+    ],
+    "photos": [
+      "phitchayaphat-sofa/assets/source-phitchayaphat-sofa-0ceacab5e.jpg",
+      "phitchayaphat-sofa/assets/source-phitchayaphat-sofa-bc8862829.jpg",
+      "phitchayaphat-sofa/assets/source-phitchayaphat-sofa-e218d24a0.jpg"
+    ],
+    "assets": [
+      {
+        "path": "phitchayaphat-sofa/assets/source-phitchayaphat-sofa-0ceacab5e.jpg",
+        "source_url": "https://phitchayaphatsofa.yellowpages.co.th/",
+        "image_url": "https://phitchayaphatsofa.yellowpages.co.th/sites/storage/files/users/5/7/e/6/57e6666d-ac88-4cf9-8d17-959f44707e01/2.jpg",
+        "kind": "business_photo",
+        "sha256": "9c57bb77a994c0bbc47423753ad595ad037e7949f39e9b1cdcbc58aa1ada8776",
+        "bytes": 104819,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพโซฟาที่มีตรา PHITCHAYAPHAT จากเว็บไซต์พิชยาพัชร์ เฟอร์นิเจอร์"
+      },
+      {
+        "path": "phitchayaphat-sofa/assets/source-phitchayaphat-sofa-bc8862829.jpg",
+        "source_url": "https://phitchayaphatsofa.yellowpages.co.th/",
+        "image_url": "https://phitchayaphatsofa.yellowpages.co.th/sites/storage/files/users/5/7/e/6/57e6666d-ac88-4cf9-8d17-959f44707e01/3.jpg",
+        "kind": "business_photo",
+        "sha256": "545ad3ca6b0e492817007e640f9f0a978d2ec0be6ab71d49f45d347cd61cde76",
+        "bytes": 130901,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพโซฟาที่มีตรา PHITCHAYAPHAT จากเว็บไซต์พิชยาพัชร์ เฟอร์นิเจอร์"
+      },
+      {
+        "path": "phitchayaphat-sofa/assets/source-phitchayaphat-sofa-e218d24a0.jpg",
+        "source_url": "https://phitchayaphatsofa.yellowpages.co.th/",
+        "image_url": "https://phitchayaphatsofa.yellowpages.co.th/sites/storage/files/users/5/7/e/6/57e6666d-ac88-4cf9-8d17-959f44707e01/6.jpg",
+        "kind": "business_photo",
+        "sha256": "5673dd174664d68d4fe96f4390596bd5045ce382a2ea51d1d4d9738018ffc49a",
+        "bytes": 102407,
+        "attribution": "Business-owned website/gallery or Facebook page explicitly linked by business directory; visually inspected",
+        "caption": "ภาพโซฟาที่มีตรา PHITCHAYAPHAT จากเว็บไซต์พิชยาพัชร์ เฟอร์นิเจอร์"
+      }
+    ],
+    "status": "source_enriched",
+    "photo_status": "attributed_business_photos",
+    "limitations": [
+      "Used business-branded sofa photographs from its own catalog, not generic moodboard or recommendation images.",
+      "No claim that these are dated before/after project pairs."
+    ],
+    "page_inspected": true,
+    "original_page_sha256": "a49317bec16f0ce0cd34bb0b05f57f33e2a1c2fe169676253f781276c215fd5f",
+    "verified_facts": {
+      "address": "17 ห้องที่ 2 ซอยเฉลิมพระเกียรติ ร.9 ซอย 72 แขวงประเวศ เขตประเวศ กรุงเทพมหานคร 10250",
+      "phones": [
+        "0819575199",
+        "0821839463"
+      ],
+      "line": "chalomrak305",
+      "email": "chiybutrchlxmraks@gmail.com",
+      "hours": "จันทร์–เสาร์ 08:00–17:00 น.",
+      "coords": "13.71559187360571,100.6985015802334"
+    },
+    "map_status": "source_coordinates",
+    "body_protection": "data-source-enriched=\"true\"",
+    "html_sha256": "d68102e2439a5278a365c4b335d6034f8a62dfcbcdc7f99d807a6952f65d16e0"
+  }
+]

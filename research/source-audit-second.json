@@ -1,0 +1,1674 @@
+[
+  {
+    "slug": "ideaplus-sign",
+    "category": "sign",
+    "name": "ไอเดียพลัส",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://www.ideaplusvinyl.com/",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      },
+      {
+        "url": "https://www.facebook.com/people/Idea-Plus-Communication-CoLtd/100063743551205/",
+        "type": "facebook",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      "ideaplus-sign/assets/source-second-1.webp",
+      "ideaplus-sign/assets/source-second-2.webp",
+      "ideaplus-sign/assets/source-second-3.webp",
+      "ideaplus-sign/assets/source-second-4.webp"
+    ],
+    "photo_provenance": [
+      {
+        "slug": "ideaplus-sign",
+        "path": "ideaplus-sign/assets/source-second-1.webp",
+        "source_page": "https://www.ideaplusvinyl.com/",
+        "image_url": "https://www.ideaplusvinyl.com/sites/storage/files/styles/416x308/typmedia/products/th/52143691/63df8b2e5f501-%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%AA%E0%B9%81%E0%B8%95%E0%B8%99%E0%B8%94%E0%B8%B5%E0%B9%89%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%9A%E0%B8%AD%E0%B8%A5%E0%B8%A5%E0%B8%B4%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%9E%E0%B8%B9%E0%B8%A5.jpg",
+        "source_alt": "ป้ายสแตนดี้นักบอลลิเวอร์พูล - ร้านทำป้ายไวนิล นนทบุรี - ไอเดียพลัส",
+        "original_dimensions": [
+          416,
+          312
+        ],
+        "dimensions": [
+          416,
+          312
+        ],
+        "original_sha256": "066313bac49a9263f67d54581b3ae0f529efd600df7cb2a0a5c597d63f7d9434",
+        "sha256": "92f5b1dd10852fc530269a75c596b3163a395a3d19df1ebf3ca194c2451e8101",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "สแตนดี้นักฟุตบอล",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "ideaplus-sign",
+        "path": "ideaplus-sign/assets/source-second-2.webp",
+        "source_page": "https://www.ideaplusvinyl.com/",
+        "image_url": "https://www.ideaplusvinyl.com/sites/storage/files/styles/416x308/typmedia/products/th/52143691/63dfad08b7bd9-%E0%B8%AA%E0%B8%95%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B9%80%E0%B8%81%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%89%E0%B8%A5%E0%B8%B2%E0%B8%81%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B9%84%E0%B8%AD%E0%B8%A8%E0%B8%84%E0%B8%A3%E0%B8%B5%E0%B8%A1.jpg",
+        "source_alt": "สติ๊กเกอร์ฉลากสินค้าไอศครีม - ร้านทำป้ายไวนิล นนทบุรี - ไอเดียพลัส",
+        "original_dimensions": [
+          416,
+          312
+        ],
+        "dimensions": [
+          416,
+          312
+        ],
+        "original_sha256": "924ce12fceabcaa733910c516124af331d0cc9b8aeff577c6459033bd9f5e9bd",
+        "sha256": "ef6ddc26e87f68af63809c38f294b826fb7322f663e7a156ab7fa30efa10c5ce",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "สติ๊กเกอร์ฉลากไอศกรีม",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "ideaplus-sign",
+        "path": "ideaplus-sign/assets/source-second-3.webp",
+        "source_page": "https://www.ideaplusvinyl.com/",
+        "image_url": "https://www.ideaplusvinyl.com/sites/storage/files/styles/416x308/typmedia/products/th/52143691/63dfada71903f-%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5%E0%B8%94%E0%B9%88%E0%B8%A7%E0%B8%99%E0%B8%A3%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%84%E0%B8%94%E0%B9%89.jpg",
+        "source_alt": "ป้ายไวนิลด่วนรอรับได้ - ร้านทำป้ายไวนิล นนทบุรี - ไอเดียพลัส",
+        "original_dimensions": [
+          416,
+          416
+        ],
+        "dimensions": [
+          416,
+          416
+        ],
+        "original_sha256": "79ee422be9fd1e26d0bfb1660bd0413699ef9f7f0e9bb1926cf05addfed6e129",
+        "sha256": "b6ac9a5ad7ef3b409645fad9e4d442bdeff16a80d9145eb44b3ddf9b09838d99",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "งานพิมพ์ไวนิลจากเครื่องพิมพ์",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "ideaplus-sign",
+        "path": "ideaplus-sign/assets/source-second-4.webp",
+        "source_page": "https://www.ideaplusvinyl.com/",
+        "image_url": "https://www.ideaplusvinyl.com/sites/storage/files/styles/416x308/typmedia/products/th/52143691/63dfaf6f7d41c-%E0%B8%AA%E0%B9%81%E0%B8%95%E0%B8%99%E0%B8%94%E0%B8%B5%E0%B9%89%E0%B8%82%E0%B8%99%E0%B8%B2%E0%B8%94%E0%B9%80%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87.jpg",
+        "source_alt": "สแตนดี้ขนาดเท่าคนจริง - ร้านทำป้ายไวนิล นนทบุรี - ไอเดียพลัส",
+        "original_dimensions": [
+          325,
+          416
+        ],
+        "dimensions": [
+          325,
+          416
+        ],
+        "original_sha256": "167ffe49c46d1ef66255e18e0b5b7ed6d63444fe47c42a0f820036275b53386c",
+        "sha256": "4c8e1fa80c84a7b5778c4327675c6ead407f4b266569859881d800f73cdb3bbe",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "สแตนดี้ขนาดเท่าคนจริง",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      }
+    ],
+    "photo_verified": true,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "097-404-4987",
+        "063-184-5351"
+      ],
+      "phone_note": null,
+      "line_id": "@ideaplus",
+      "line_url": "https://line.me/R/ti/p/@ideaplus",
+      "address": "223 ถนนรัตนาธิเบศร์ ตำบลบางกระสอ อำเภอเมืองนนทบุรี นนทบุรี 11000",
+      "area_only": null,
+      "address_extra": null,
+      "hours": "จันทร์–เสาร์ 08:30–17:30 น.",
+      "email": "print_idea@hotmail.com",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=13.861153465746607,100.5050125841984",
+      "map_kind": "source_published_coordinates",
+      "coordinates": "13.861153465746607,100.5050125841984",
+      "services": [
+        "ป้ายไวนิลตามขนาด",
+        "ฉลากสินค้าและสติ๊กเกอร์",
+        "สแตนดี้และงานพิมพ์ร้านค้า"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://www.ideaplusvinyl.com/",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_with_source_photos",
+    "limitations": [
+      "Photographs attributed to the business gallery, not independently commissioned or dated."
+    ]
+  },
+  {
+    "slug": "nbmedia-sign",
+    "category": "sign",
+    "name": "NB MEDIA",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://www.thenbmedia.com/post/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      "nbmedia-sign/assets/source-second-1.webp",
+      "nbmedia-sign/assets/source-second-2.webp",
+      "nbmedia-sign/assets/source-second-3.webp",
+      "nbmedia-sign/assets/source-second-4.webp"
+    ],
+    "photo_provenance": [
+      {
+        "slug": "nbmedia-sign",
+        "path": "nbmedia-sign/assets/source-second-1.webp",
+        "source_page": "https://www.thenbmedia.com/post/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+        "image_url": "https://static.wixstatic.com/media/017459_73ccccdf104e48d0b8374456e46e2a72~mv2.jpg/v1/fill/w_1080,h_1080,al_c,q_85,enc_auto/017459_73ccccdf104e48d0b8374456e46e2a72~mv2.jpg",
+        "source_alt": "ป้ายไวนิลโฆษณาพร้อมโครงติดตั้ง ผลงาน NB MEDIA ไทรน้อย นนทบุรี",
+        "original_dimensions": [
+          1080,
+          1080
+        ],
+        "dimensions": [
+          1080,
+          1080
+        ],
+        "original_sha256": "b20db71fbdbd7cd112b69f70685d37aeeb83884521429c56616d718a26ca7194",
+        "sha256": "94bb48751f01f20e16618a616d03c77e944db91894aa3668c468196b85a81bc9",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ป้ายบอกทางริมถนน",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "nbmedia-sign",
+        "path": "nbmedia-sign/assets/source-second-2.webp",
+        "source_page": "https://www.thenbmedia.com/post/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+        "image_url": "https://static.wixstatic.com/media/017459_6e047c9eee6446229922ac0ca3214830~mv2.jpg/v1/fill/w_1080,h_1080,al_c,q_85,enc_auto/017459_6e047c9eee6446229922ac0ca3214830~mv2.jpg",
+        "source_alt": "ป้ายไวนิลโฆษณาพร้อมโครงติดตั้ง ผลงาน NB MEDIA ไทรน้อย นนทบุรี",
+        "original_dimensions": [
+          1080,
+          1080
+        ],
+        "dimensions": [
+          1080,
+          1080
+        ],
+        "original_sha256": "e6a064711625b56e8ec3a3970501058f740e9e304f5092aea95729e7219f9954",
+        "sha256": "55f61a05dd6be2a02f351c5d0229230f1d884340f0a546722d0498035fdf76d3",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ป้ายติดตั้งหน้าอาคาร",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "nbmedia-sign",
+        "path": "nbmedia-sign/assets/source-second-3.webp",
+        "source_page": "https://www.thenbmedia.com/post/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+        "image_url": "https://static.wixstatic.com/media/017459_ef88c18a9f404419abe1e176923a0329~mv2.jpg/v1/fill/w_1080,h_1080,al_c,q_85,enc_auto/017459_ef88c18a9f404419abe1e176923a0329~mv2.jpg",
+        "source_alt": "ป้ายไวนิลโฆษณาพร้อมโครงติดตั้ง ผลงาน NB MEDIA ไทรน้อย นนทบุรี",
+        "original_dimensions": [
+          1080,
+          1080
+        ],
+        "dimensions": [
+          1080,
+          1080
+        ],
+        "original_sha256": "782b3c0772359981b489a637b5c83eb60b4b289b704fda434bda2f1d97b6ca36",
+        "sha256": "7de1aaf61c565e52f73f7982184a639178cdb81b6c192a959ce1f249bd38b0c6",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ป้ายร้านอาหารกลางแจ้ง",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "nbmedia-sign",
+        "path": "nbmedia-sign/assets/source-second-4.webp",
+        "source_page": "https://www.thenbmedia.com/post/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+        "image_url": "https://static.wixstatic.com/media/017459_4af09f7d38054bbcae9b93bcf512fc12~mv2.jpg/v1/fill/w_1920,h_1920,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/017459_4af09f7d38054bbcae9b93bcf512fc12~mv2.jpg",
+        "source_alt": "ป้ายไวนิลประชาสัมพันธ์หน้าร้าน ผลงาน NB MEDIA นนทบุรี",
+        "original_dimensions": [
+          1920,
+          1920
+        ],
+        "dimensions": [
+          1600,
+          1600
+        ],
+        "original_sha256": "ef9a9a393801f1f953c4426d06f81adb6798acaf5396d3102630583254083b7a",
+        "sha256": "59191cc5ba33dc44539de3212073632e13a7e95edab22d8cd0683389a2e09c5d",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ป้ายไวนิลสำหรับร้านค้า",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      }
+    ],
+    "photo_verified": true,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "086-983-9259",
+        "063-946-2838"
+      ],
+      "phone_note": null,
+      "line_id": "@pod2106w",
+      "line_url": "https://line.me/R/ti/p/@pod2106w",
+      "address": "ที่ตั้งร้าน 89/21 หมู่ 5 ตำบลไทรน้อย อำเภอไทรน้อย นนทบุรี 11150",
+      "area_only": null,
+      "address_extra": "ที่อยู่บริษัท 1/24 หมู่ 5 ตำบลไทรน้อย อำเภอไทรน้อย นนทบุรี 11150",
+      "hours": null,
+      "email": null,
+      "maps_url": "https://maps.app.goo.gl/LajBQgjCBE18UcLK6",
+      "map_kind": "business_published_maps_link",
+      "coordinates": null,
+      "services": [
+        "ป้ายร้านและป้ายเปิดร้าน",
+        "ป้ายประชาสัมพันธ์",
+        "ป้ายกลางแจ้งพร้อมโครง"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://www.thenbmedia.com/post/%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%A7%E0%B8%99%E0%B8%B4%E0%B8%A5-%E0%B9%84%E0%B8%97%E0%B8%A3%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_with_source_photos",
+    "limitations": [
+      "Website distinguishes shop 89/21 from company address 1/24; retained both with explicit labels.",
+      "Opening hours not published on inspected page."
+    ]
+  },
+  {
+    "slug": "asign-graphic",
+    "category": "sign",
+    "name": "A Sign Graphic",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://asigngraphic.yellowpages.co.th/",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      "asign-graphic/assets/source-second-1.webp",
+      "asign-graphic/assets/source-second-2.webp",
+      "asign-graphic/assets/source-second-3.webp",
+      "asign-graphic/assets/source-second-4.webp"
+    ],
+    "photo_provenance": [
+      {
+        "slug": "asign-graphic",
+        "path": "asign-graphic/assets/source-second-1.webp",
+        "source_page": "https://asigngraphic.yellowpages.co.th/",
+        "image_url": "https://asigngraphic.yellowpages.co.th/sites/storage/files/styles/416x308/typmedia/products/th/80009893/615e78869d299-%E0%B8%97%E0%B8%B3%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9F%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%96%E0%B8%B9%E0%B8%81%20%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87.jpg",
+        "source_alt": "ทำป้ายไฟราคาถูก เมืองทอง - ร้านป้ายนนทบุรี เอซายน์ กราฟฟิก",
+        "original_dimensions": [
+          416,
+          262
+        ],
+        "dimensions": [
+          416,
+          262
+        ],
+        "original_sha256": "fcb36ea24d7f9342d0235043f96ca17b177b2da00f76d70ff6a724a5bc32c375",
+        "sha256": "131f745f251b65cfb24e84857d5c8a2511a1623bd6cc97726aee9803af85c470",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ป้ายไฟร้านอาหาร",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "asign-graphic",
+        "path": "asign-graphic/assets/source-second-2.webp",
+        "source_page": "https://asigngraphic.yellowpages.co.th/",
+        "image_url": "https://asigngraphic.yellowpages.co.th/sites/storage/files/styles/416x308/typmedia/products/th/80009893/615e78869d299-%E0%B8%97%E0%B8%B3%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9F%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%96%E0%B8%B9%E0%B8%81%20%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_0.jpg",
+        "source_alt": "ทำป้ายไฟร้านอาหาร รังสิต - ร้านป้ายนนทบุรี เอซายน์ กราฟฟิก",
+        "original_dimensions": [
+          416,
+          262
+        ],
+        "dimensions": [
+          416,
+          262
+        ],
+        "original_sha256": "80c3f750659cd44b2afd542faf2b0a4596156acae50ec1a2978ddc7510476ec6",
+        "sha256": "28680e6c6a5e81d48993cd190f8c8f38d26dd2635b56ff9840e7dcf2e827154b",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ป้ายไฟรูปถ้วยกาแฟ",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "asign-graphic",
+        "path": "asign-graphic/assets/source-second-3.webp",
+        "source_page": "https://asigngraphic.yellowpages.co.th/",
+        "image_url": "https://asigngraphic.yellowpages.co.th/sites/storage/files/styles/416x308/typmedia/products/th/80009893/615e78869d299-%E0%B8%97%E0%B8%B3%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9F%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%96%E0%B8%B9%E0%B8%81%20%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_1.jpg",
+        "source_alt": "รับทำป้ายหน้าร้านอาหาร - ร้านป้ายนนทบุรี เอซายน์ กราฟฟิก",
+        "original_dimensions": [
+          416,
+          262
+        ],
+        "dimensions": [
+          416,
+          262
+        ],
+        "original_sha256": "c1c029a7ebb3c8447ddf738e5011877d1d385531eac6c34164f45410224ebdb9",
+        "sha256": "db25ea181c2e73ef4768fef03c5329306d3fdd5e2cf529c879bd42759c304343",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ป้ายหน้าร้านเครื่องดื่ม",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "asign-graphic",
+        "path": "asign-graphic/assets/source-second-4.webp",
+        "source_page": "https://asigngraphic.yellowpages.co.th/",
+        "image_url": "https://asigngraphic.yellowpages.co.th/sites/storage/files/styles/416x308/typmedia/products/th/80009893/615e78869d299-%E0%B8%97%E0%B8%B3%E0%B8%9B%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9F%E0%B8%A3%E0%B8%B2%E0%B8%84%E0%B8%B2%E0%B8%96%E0%B8%B9%E0%B8%81%20%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87_6.jpg",
+        "source_alt": "ร้านป้ายพร้อมติดตั้ง นนทบุรี - ร้านป้ายนนทบุรี เอซายน์ กราฟฟิก",
+        "original_dimensions": [
+          416,
+          262
+        ],
+        "dimensions": [
+          416,
+          262
+        ],
+        "original_sha256": "b574128ee6590d9b7514d51d3a23b2ccc10e88a467990657d35617e7b9250d87",
+        "sha256": "ecdf66896bc5ed19b4eff256d46130f3eef7f3e08bc0e1371524d889b674b2d7",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "งานป้ายและติดตั้งหน้าอาคาร",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      }
+    ],
+    "photo_verified": true,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "081-256-4225",
+        "092-659-1561"
+      ],
+      "phone_note": null,
+      "line_id": "@asign2019",
+      "line_url": "https://line.me/R/ti/p/@asign2019",
+      "address": "72/99-100 หมู่ 3 ถนนสะพานนนทบุรี–บางบัวทอง ตำบลบ้านใหม่ อำเภอปากเกร็ด นนทบุรี 11120",
+      "area_only": null,
+      "address_extra": null,
+      "hours": "จันทร์–เสาร์ 08:30–18:00 น.",
+      "email": "asign2019@gmail.com",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=13.941558758778697,100.54149657281633",
+      "map_kind": "source_published_coordinates",
+      "coordinates": "13.941558758778697,100.54149657281633",
+      "services": [
+        "ป้ายไฟและอักษรโลหะ",
+        "ป้ายไวนิลและป้ายหน้าอาคาร",
+        "สติ๊กเกอร์และงานเลเซอร์"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://asigngraphic.yellowpages.co.th/",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_with_source_photos",
+    "limitations": []
+  },
+  {
+    "slug": "kongthong-sign",
+    "category": "sign",
+    "name": "คงทองโฆษณา",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://kongthong-group.com/site/index.php/contact-2/",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      },
+      {
+        "url": "https://kongthong-group.com/site/",
+        "type": "supplementary_business_source",
+        "label": "ผลงานบนเว็บไซต์คงทอง",
+        "access": "200",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      "kongthong-sign/assets/source-second-1.webp",
+      "kongthong-sign/assets/source-second-2.webp",
+      "kongthong-sign/assets/source-second-3.webp",
+      "kongthong-sign/assets/source-second-4.webp"
+    ],
+    "photo_provenance": [
+      {
+        "slug": "kongthong-sign",
+        "path": "kongthong-sign/assets/source-second-1.webp",
+        "source_page": "https://kongthong-group.com/site/",
+        "image_url": "https://kongthong-group.com/site/wp-content/uploads/2018/06/62189901_2316764511696366_8656510557932748800_n.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          960,
+          720
+        ],
+        "dimensions": [
+          960,
+          720
+        ],
+        "original_sha256": "a77052587966aab238b4c7c3cb86a20e2d7f0538151d110539347748044cf1e2",
+        "sha256": "bb1ce2a83a652a3119b1bc10f37ca3dc3dbb6c6842758591c1481190e1d2b1fd",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "งานภาพโฆษณาขนาดใหญ่",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "kongthong-sign",
+        "path": "kongthong-sign/assets/source-second-2.webp",
+        "source_page": "https://kongthong-group.com/site/",
+        "image_url": "https://kongthong-group.com/site/wp-content/uploads/2019/06/singha-chaam-1024x768.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          1024,
+          768
+        ],
+        "dimensions": [
+          1024,
+          768
+        ],
+        "original_sha256": "6ac92ea1cc191ab37789eaa6f4816a100e16c149a0cd59f0263c6578b8918928",
+        "sha256": "7082e2fd65b9651eee521e2b85896a9ee95614ae4c6142b15d7f860fac773d0c",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ป้ายประชาสัมพันธ์ข้ามถนน",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "kongthong-sign",
+        "path": "kongthong-sign/assets/source-second-3.webp",
+        "source_page": "https://kongthong-group.com/site/",
+        "image_url": "https://kongthong-group.com/site/wp-content/uploads/2019/06/LB-sL-1024x768.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          1024,
+          768
+        ],
+        "dimensions": [
+          1024,
+          768
+        ],
+        "original_sha256": "89f8a6f1eeb75762a6370ae4fea6e54c3d33cddc8a3da4b73bb3230c7c949cba",
+        "sha256": "4f0ad2f0c47a8a29c12514fc614dbfe1aadfecf87aa2de512ce3f983db3892e2",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "งานตัวอักษรไฟ",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "kongthong-sign",
+        "path": "kongthong-sign/assets/source-second-4.webp",
+        "source_page": "https://kongthong-group.com/site/",
+        "image_url": "https://kongthong-group.com/site/wp-content/uploads/2019/06/daikin-1024x768.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          1024,
+          768
+        ],
+        "dimensions": [
+          1024,
+          768
+        ],
+        "original_sha256": "71e5a5e5de2ea405cd3bf040bf618e8c2deb6537e0f0528ac3a8e99fe8da00c0",
+        "sha256": "17d109795ca57ad9acc0206d0519927a8a5c3d55a14ecc776fd13234841abd72",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ป้ายโฆษณากลางแจ้ง",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      }
+    ],
+    "photo_verified": true,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "081-689-7687",
+        "02-403-3270"
+      ],
+      "phone_note": "โทรศัพท์สำนักงาน 02-403-3270 ถึง 02-403-3273",
+      "line_id": "Kongthongads",
+      "line_url": "https://line.me/ti/p/~Kongthongads",
+      "address": "22/4 หมู่ 5 ซอยกันตนา ตำบลบางม่วง อำเภอบางใหญ่ นนทบุรี 11140",
+      "area_only": null,
+      "address_extra": null,
+      "hours": null,
+      "email": "info@kongthong-group.com",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=%E0%B8%84%E0%B8%87%E0%B8%97%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%86%E0%B8%A9%E0%B8%93%E0%B8%B2%2022/4%20%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%205%20%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%99%E0%B8%B2%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B9%88%E0%B8%A7%E0%B8%87%20%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%20%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2011140",
+      "map_kind": "address_search_not_verified_pin",
+      "coordinates": null,
+      "services": [
+        "ป้ายไฟและป้ายหน้าร้าน",
+        "ป้ายทาวเวอร์และป้ายขนาดใหญ่",
+        "สติ๊กเกอร์และคอมโพสิท"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://kongthong-group.com/site/index.php/contact-2/",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_with_source_photos",
+    "limitations": [
+      "No published opening hours or verified latitude/longitude; maps searches full published address."
+    ]
+  },
+  {
+    "slug": "do-it-art",
+    "category": "sign",
+    "name": "Do It Art",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://www.findglocal.com/TH/Suan-Luang/1064521176909557/Do-It-Art-รับทำและออกแบบงานป้าย-งานสกรีน-และอะคริลิค",
+        "type": "lead_source",
+        "access": "indexed_page_read; direct fetch blocked",
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [],
+    "photo_provenance": [],
+    "photo_verified": false,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "089-740-4544"
+      ],
+      "phone_note": null,
+      "line_id": null,
+      "line_url": "https://lin.ee/xUsSfDa",
+      "address": null,
+      "area_only": "สวนหลวง กรุงเทพฯ",
+      "address_extra": null,
+      "hours": null,
+      "email": null,
+      "maps_url": null,
+      "map_kind": null,
+      "coordinates": null,
+      "services": [
+        "ป้ายไวนิลและสติ๊กเกอร์",
+        "อะคริลิคและพลาสวู้ด",
+        "ป้ายไฟและสเตนเลส"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://www.findglocal.com/TH/Suan-Luang/1064521176909557/Do-It-Art-รับทำและออกแบบงานป้าย-งานสกรีน-และอะคริลิค",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_photos_unavailable",
+    "limitations": [
+      "FindGlocal contact and services read via indexed web page; direct request blocked HTTP 403.",
+      "Only Facebook Graph profile image was exposed; download reset/throttled. No attributable work photo downloaded.",
+      "Street address, opening hours, and LINE ID not published; only area and LINE short URL verified."
+    ]
+  },
+  {
+    "slug": "nc-solution-demo",
+    "category": "cctv",
+    "name": "NC Solution",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://webchang.com/64944",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [],
+    "photo_provenance": [],
+    "photo_verified": false,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [],
+      "phone_note": null,
+      "line_id": null,
+      "line_url": null,
+      "address": null,
+      "area_only": "กรุงเทพฯ · นนทบุรี · ปทุมธานี",
+      "address_extra": null,
+      "hours": null,
+      "email": null,
+      "maps_url": null,
+      "map_kind": null,
+      "coordinates": null,
+      "services": [
+        "ตรวจเช็คและซ่อมกล้อง",
+        "จัดสเปคและติดตั้ง",
+        "ดูภาพผ่านมือถือ"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://webchang.com/64944",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_photos_unavailable",
+    "limitations": [
+      "Contact is behind Webchang phone verification; no OTP, form submission, or contact request performed.",
+      "All three img elements are recommended OTHER providers (/92496, /92956, /95285); explicitly excluded.",
+      "No public phone, LINE, street address, hours, or precise map verified."
+    ]
+  },
+  {
+    "slug": "spthai-cctv-demo",
+    "category": "cctv",
+    "name": "SP Thai CCTV",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://www.spthai-cctv.com/category/168/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87/Nonthaburi",
+        "type": "lead_source",
+        "access": "request_failed",
+        "limitations": "HTTPSConnectionPool(host='www.spthai-cctv.com', port=443): Max retries exceeded with url: /category/168/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87/Nonthaburi (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.spthai-cctv.com'. (_ssl.c:1032)\")))",
+        "reviewed": true
+      },
+      {
+        "url": "https://www.spthai-cctv.com/",
+        "type": "current_domain",
+        "access": "200 only with certificate validation disabled for diagnostic read",
+        "reviewed": true
+      }
+    ],
+    "photos": [],
+    "photo_provenance": [],
+    "photo_verified": false,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "062-195-8505"
+      ],
+      "phone_note": "เบอร์บนเว็บไซต์ปัจจุบัน: ช่างแจน · ข้อมูลเดิม SP Thai CCTV ระบุ 065-087-3758",
+      "line_id": null,
+      "line_url": null,
+      "address": null,
+      "area_only": "บริการนนทบุรีตามข้อมูลเดิม · กรุณาสอบถามพื้นที่รับงานปัจจุบัน",
+      "address_extra": null,
+      "hours": null,
+      "email": null,
+      "maps_url": null,
+      "map_kind": null,
+      "coordinates": null,
+      "services": [
+        "ติดตั้งและซ่อมกล้อง",
+        "เดินสาย LAN และ Wi-Fi",
+        "ตรวจสอบก่อนนัดหมาย"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://www.spthai-cctv.com/category/168/%E0%B8%81%E0%B8%A5%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%9B%E0%B8%B4%E0%B8%94%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87/Nonthaburi",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "source_identity_conflict",
+    "limitations": [
+      "HTTPS certificate hostname mismatch; public page inspected with certificate checking disabled for this diagnostic read only.",
+      "Current domain identifies Chang Jan (ช่างแจน), 062-1958505, not original lead 0650873758; continuity unverified.",
+      "Current-domain images excluded to avoid attributing potentially different provider photographs.",
+      "No street address, hours, LINE ID, or precise map verified."
+    ]
+  },
+  {
+    "slug": "changnon-cctv-demo",
+    "category": "cctv",
+    "name": "ช่างนนท์ ซีซีทีวี",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://changnoncctv.com/",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      },
+      {
+        "url": "https://www.facebook.com/profile.php?id=100063825289613",
+        "type": "facebook",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      "changnon-cctv-demo/assets/source-second-1.webp",
+      "changnon-cctv-demo/assets/source-second-2.webp",
+      "changnon-cctv-demo/assets/source-second-3.webp",
+      "changnon-cctv-demo/assets/source-second-4.webp"
+    ],
+    "photo_provenance": [
+      {
+        "slug": "changnon-cctv-demo",
+        "path": "changnon-cctv-demo/assets/source-second-1.webp",
+        "source_page": "https://changnoncctv.com/",
+        "image_url": "https://changnoncctv.com/wp-content/uploads/2025/07/hikvision-จำหน่ายติดตั้งกล้องวงจรปิด-จานดาวเทียม-ทีวีดิจิตอล-โซล่าเซลล์-5.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          940,
+          788
+        ],
+        "dimensions": [
+          940,
+          788
+        ],
+        "original_sha256": "5cead7d799538cda0e7b860f240c8f6170d8a51e8aa5e67dd9802432c8359fa1",
+        "sha256": "9b5b682fd6b4cafe20fdae7aa2abb9db12c894fc16b90baee689213879138ab9",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "กล้องติดตั้งภายนอกอาคาร",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "changnon-cctv-demo",
+        "path": "changnon-cctv-demo/assets/source-second-2.webp",
+        "source_page": "https://changnoncctv.com/",
+        "image_url": "https://changnoncctv.com/wp-content/uploads/2025/07/hikvision-จำหน่ายติดตั้งกล้องวงจรปิด-จานดาวเทียม-ทีวีดิจิตอล-โซล่าเซลล์-4.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          940,
+          788
+        ],
+        "dimensions": [
+          940,
+          788
+        ],
+        "original_sha256": "6b66c4ba941d3ed6ea543d19296798ad399d3ab38fec8f29cfd9d9666f69c451",
+        "sha256": "0e27212fa65843b2b7a5ef5069cb902a02ce71abcc3399b63d3b80a1ffb6b04c",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "กล้องติดตั้งใต้ชายคา",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "changnon-cctv-demo",
+        "path": "changnon-cctv-demo/assets/source-second-3.webp",
+        "source_page": "https://changnoncctv.com/",
+        "image_url": "https://changnoncctv.com/wp-content/uploads/2025/07/hikvision-จำหน่ายติดตั้งกล้องวงจรปิด-จานดาวเทียม-ทีวีดิจิตอล-โซล่าเซลล์-3.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          940,
+          788
+        ],
+        "dimensions": [
+          940,
+          788
+        ],
+        "original_sha256": "5f0d0bd69aa7541f276a3a446954190949354a1ea916ff458ef8a464a5c542eb",
+        "sha256": "feacfbddce171b77d0b3ea1b8a556b6a4311a04016f07cdb19f9f06ee2145e48",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "จุดกล้องภายในอาคาร",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "changnon-cctv-demo",
+        "path": "changnon-cctv-demo/assets/source-second-4.webp",
+        "source_page": "https://changnoncctv.com/",
+        "image_url": "https://changnoncctv.com/wp-content/uploads/2025/07/hikvision-จำหน่ายติดตั้งกล้องวงจรปิด-จานดาวเทียม-ทีวีดิจิตอล-โซล่าเซลล์-2.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          940,
+          788
+        ],
+        "dimensions": [
+          940,
+          788
+        ],
+        "original_sha256": "559a6d1933f19a1bd554c1c4ee7c59e5ff226ad62cdfd7637801713c7192da11",
+        "sha256": "f7f2076b12fffc8500a1bd4d0be8ef4cd31f1e6f4dc456fe01982c7e3c04f217",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "กล้องภายในพร้อมตัวอย่างภาพ",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      }
+    ],
+    "photo_verified": true,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "082-756-7899"
+      ],
+      "phone_note": null,
+      "line_id": "@changnon",
+      "line_url": "https://lin.ee/0aE4S9J",
+      "address": "12/12 หมู่ 7 ตำบลบางรักพัฒนา อำเภอบางบัวทอง นนทบุรี 11110",
+      "area_only": null,
+      "address_extra": null,
+      "hours": null,
+      "email": null,
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B8%99%E0%B8%97%E0%B9%8C%20%E0%B8%8B%E0%B8%B5%E0%B8%8B%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B8%A7%E0%B8%B5%2012/12%20%E0%B8%AB%E0%B8%A1%E0%B8%B9%E0%B9%88%207%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%B2%20%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B8%97%E0%B8%AD%E0%B8%87%20%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2011110",
+      "map_kind": "address_search_not_verified_pin",
+      "coordinates": null,
+      "services": [
+        "กล้องวงจรปิด CCTV",
+        "ตรวจเช็คและแก้ไขระบบ",
+        "จานดาวเทียมและโซล่าเซลล์"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://changnoncctv.com/",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_with_source_photos",
+    "limitations": [
+      "Selected installation photo collages contain the business logo, phone, captions and marketing overlays; no raw originals exposed.",
+      "No opening hours or exact coordinates verified."
+    ]
+  },
+  {
+    "slug": "satpp-service-demo",
+    "category": "cctv",
+    "name": "SATPP Service",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://satppservice.com/",
+        "type": "lead_source",
+        "access": "indexed_page_read; direct fetch blocked",
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [],
+    "photo_provenance": [],
+    "photo_verified": false,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "081-348-8939",
+        "081-487-0355"
+      ],
+      "phone_note": null,
+      "line_id": "@SATPPSERVICE",
+      "line_url": "https://line.me/R/ti/p/@SATPPSERVICE",
+      "address": "464 ซอยสามัคคี 50 ถนนสามัคคี ตำบลท่าทราย อำเภอเมืองนนทบุรี นนทบุรี 11000",
+      "area_only": null,
+      "address_extra": null,
+      "hours": "จันทร์–ศุกร์ 09:00–19:00 น. (ตามข้อมูลบนเว็บไซต์)",
+      "email": null,
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=SATPP%20Service%20464%20%E0%B8%8B%E0%B8%AD%E0%B8%A2%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%84%E0%B8%B5%2050%20%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B1%E0%B8%84%E0%B8%84%E0%B8%B5%20%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2%20%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%20%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2011000",
+      "map_kind": "address_search_not_verified_pin",
+      "coordinates": null,
+      "services": [
+        "กล้องวงจรปิดและ IP Camera",
+        "ระบบควบคุมทางเข้า",
+        "Network และสัญญาณกันขโมย"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://satppservice.com/",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_photos_unavailable",
+    "limitations": [
+      "Direct website fetches HTTP 403 and web open HTTP 429; contact, hours and services recovered from indexed official website.",
+      "No original image URL could be inspected and downloaded; photos unavailable, not verified.",
+      "No exact coordinates verified."
+    ]
+  },
+  {
+    "slug": "homesat-hd-demo",
+    "category": "cctv",
+    "name": "HomeSat HD",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://www.homesat-hd.com/17845665/ติดต่อเรา",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      },
+      {
+        "url": "https://www.facebook.com/Shopcctvtook",
+        "type": "facebook",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      },
+      {
+        "url": "https://www.homesat-hd.com/",
+        "type": "supplementary_business_source",
+        "label": "ภาพงานจากเว็บไซต์ HomeSat-HD",
+        "access": "200",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      "homesat-hd-demo/assets/source-second-1.webp",
+      "homesat-hd-demo/assets/source-second-2.webp",
+      "homesat-hd-demo/assets/source-second-3.webp",
+      "homesat-hd-demo/assets/source-second-4.webp"
+    ],
+    "photo_provenance": [
+      {
+        "slug": "homesat-hd-demo",
+        "path": "homesat-hd-demo/assets/source-second-1.webp",
+        "source_page": "https://www.homesat-hd.com/",
+        "image_url": "https://www.homesat-hd.com/images/editor/651888399_1814931676418212_4280858514097248025_n1.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          443,
+          590
+        ],
+        "dimensions": [
+          443,
+          590
+        ],
+        "original_sha256": "99b61818fdcada9f6c895f5288632a8492eb4000bd13aa38f67cb9d3c48782e5",
+        "sha256": "f8454feed8011ec9468b2f9d5b172c6d9c4e3e0a5dfb485626fc4044ef50fdb8",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ทีมงานในพื้นที่ติดตั้ง",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "homesat-hd-demo",
+        "path": "homesat-hd-demo/assets/source-second-2.webp",
+        "source_page": "https://www.homesat-hd.com/",
+        "image_url": "https://www.homesat-hd.com/images/editor/651254842_1814921273085919_2003439389980826302_n1.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          443,
+          590
+        ],
+        "dimensions": [
+          443,
+          590
+        ],
+        "original_sha256": "d0d9bc142911ab04fcb9c1f762ab982aed122cf22595a8df1e9a54052a57f25f",
+        "sha256": "5792271c2d9745d789953b288e82e3a44662076c2e6586f74e36d4f97db35aae",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "เดินสายภายในตู้ระบบ",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "homesat-hd-demo",
+        "path": "homesat-hd-demo/assets/source-second-3.webp",
+        "source_page": "https://www.homesat-hd.com/",
+        "image_url": "https://www.homesat-hd.com/images/editor/S__33300485.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          1536,
+          2048
+        ],
+        "dimensions": [
+          1200,
+          1600
+        ],
+        "original_sha256": "6732b9232965118e53f4e3b8ab3a5638e122ee8fe4a2d4f32ba1183f5161297b",
+        "sha256": "08457546d5d33a9d265e96df5f809f5486b5af9de246f55e35eb0b0a8339b712",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "จัดระเบียบสายและอุปกรณ์",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "homesat-hd-demo",
+        "path": "homesat-hd-demo/assets/source-second-4.webp",
+        "source_page": "https://www.homesat-hd.com/",
+        "image_url": "https://www.homesat-hd.com/images/editor/653703762_1814921223085924_8086971272092104837_n.jpg",
+        "source_alt": "",
+        "original_dimensions": [
+          443,
+          590
+        ],
+        "dimensions": [
+          443,
+          590
+        ],
+        "original_sha256": "6fe120de704840efa53f527b7b78345ef30d3b1365341ac9bfc3e72003646262",
+        "sha256": "f7c115684675a302471bd2f7280fe14dc5133c931658eabf62166d54e432372a",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ตรวจงานระบบและตู้เครือข่าย",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      }
+    ],
+    "photo_verified": true,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "090-557-1049",
+        "090-409-5018"
+      ],
+      "phone_note": null,
+      "line_id": null,
+      "line_url": null,
+      "address": "14 ถนนติวานนท์ ท่าทราย เมืองนนทบุรี นนทบุรี 11000",
+      "area_only": null,
+      "address_extra": "อีกจุดติดต่อ: 208/5 ถนนพัฒนาการ แขวงประเวศ เขตประเวศ กรุงเทพฯ 10250",
+      "hours": null,
+      "email": null,
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=HomeSat%20HD%2014%20%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%95%E0%B8%B4%E0%B8%A7%E0%B8%B2%E0%B8%99%E0%B8%99%E0%B8%97%E0%B9%8C%20%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2%20%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%20%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5%2011000",
+      "map_kind": "address_search_not_verified_pin",
+      "coordinates": null,
+      "services": [
+        "ออกแบบระบบกล้อง",
+        "ติดตั้งและเดินระบบ",
+        "ประเมินหน้างานและหลังการขาย"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://www.homesat-hd.com/17845665/ติดต่อเรา",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_with_source_photos",
+    "limitations": [
+      "Source contact page uses แขวง/เขต for Nonthaburi; retained locality without asserting those incorrect administrative prefixes.",
+      "Installation photographs confirmed present in official homepage HTML; gallery route inaccessible, so image citations use the inspected homepage.",
+      "No opening hours or exact map coordinates verified."
+    ]
+  },
+  {
+    "slug": "lungmaew-garden",
+    "category": "garden",
+    "name": "ลุงแมว รับจ้างตัดหญ้า",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://www.kaidee.com/product-100792792",
+        "type": "lead_source",
+        "access": "indexed legacy listing read; current page JavaScript shell",
+        "limitations": null,
+        "reviewed": true
+      },
+      {
+        "url": "https://www.facebook.com/maew.gardening",
+        "type": "facebook",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [],
+    "photo_provenance": [],
+    "photo_verified": false,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "098-909-5464"
+      ],
+      "phone_note": "เบอร์จากข้อมูลเดิม ยังยืนยันซ้ำไม่ได้ แนะนำติดต่อ LINE ก่อนนัดงาน",
+      "line_id": "maew.gardening",
+      "line_url": "https://line.me/ti/p/~maew.gardening",
+      "address": null,
+      "area_only": "ปากเกร็ด นนทบุรี · โซนท่าอิฐ–บางบัวทอง",
+      "address_extra": null,
+      "hours": null,
+      "email": null,
+      "maps_url": null,
+      "map_kind": null,
+      "coordinates": null,
+      "services": [
+        "ตัดหญ้า",
+        "จัดสวนและตัดแต่งกิ่งไม้",
+        "เก็บกวาดหลังงาน"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://www.kaidee.com/product-100792792",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_photos_unavailable",
+    "limitations": [
+      "Kaidee direct/current page returns only a JavaScript shell. Indexed listing dated 2014-09-25 supplies service area and LINE.",
+      "Indexed phones masked, ending 273/795; original lead phone 0989095464 could not be corroborated, displayed explicitly as older unverified data.",
+      "Facebook returns login-only shell; no source photographs downloaded.",
+      "Old listing price excluded; no street address, hours or precise coordinates verified."
+    ]
+  },
+  {
+    "slug": "backcliff-garden",
+    "category": "garden",
+    "name": "Backcliff Garden",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://www.baanfinder.com/th/contractor/619725_%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%9B%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89-%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%89",
+        "type": "lead_source",
+        "access": "indexed_page_read; direct fetch blocked",
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [],
+    "photo_provenance": [],
+    "photo_verified": false,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "095-742-3064",
+        "089-895-3019"
+      ],
+      "phone_note": null,
+      "line_id": "@backcliffgarden",
+      "line_url": "https://line.me/R/ti/p/@backcliffgarden",
+      "address": null,
+      "area_only": "ท่าแร้ง เขตบางเขน กรุงเทพฯ",
+      "address_extra": null,
+      "hours": null,
+      "email": null,
+      "maps_url": null,
+      "map_kind": null,
+      "coordinates": null,
+      "services": [
+        "ออกแบบและจัดสวน",
+        "ปลูกและขุดล้อมต้นไม้",
+        "ดูแลภูมิทัศน์โครงการ"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://www.baanfinder.com/th/contractor/619725_%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%9B%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89-%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%89",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_photos_unavailable",
+    "limitations": [
+      "BaanFinder direct HTTP 403; indexed exact listing supplies company, two phones, area and services.",
+      "Listing spells English brand Blackcliffgarden and gives conflicting LINE IDs @backcliffgarden/@blackcliffgarden; shown transparently, no asserted account verification.",
+      "No images downloaded; no exact street address, hours or precise map verified."
+    ]
+  },
+  {
+    "slug": "sp-landscapethai",
+    "category": "garden",
+    "name": "SP Landscapethai",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://www.landscapethai.com/category/621/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B8%9B%E0%B9%88%E0%B8%B2-%E0%B8%97%E0%B8%B3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%94%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B9%82%E0%B8%97%E0%B8%A3-0945157920/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5-%E0%B9%82%E0%B8%97%E0%B8%A3-094-515-7920",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [],
+    "photo_provenance": [],
+    "photo_verified": false,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "094-515-7920"
+      ],
+      "phone_note": "เบอร์ที่ระบุในหน้าบริการเดิม กรุณายืนยันชื่อผู้ให้บริการก่อนนัด",
+      "line_id": null,
+      "line_url": null,
+      "address": null,
+      "area_only": "นนทบุรีตามหน้าบริการเดิม",
+      "address_extra": null,
+      "hours": null,
+      "email": null,
+      "maps_url": null,
+      "map_kind": null,
+      "coordinates": null,
+      "services": [
+        "ตัดหญ้า",
+        "ตัดแต่งต้นไม้",
+        "ดูแลสวนและเก็บพื้นที่"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://www.landscapethai.com/category/621/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2-%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%95%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%80%E0%B8%84%E0%B8%A5%E0%B8%B5%E0%B8%A2%E0%B8%A3%E0%B9%8C%E0%B8%9B%E0%B9%88%E0%B8%B2-%E0%B8%97%E0%B8%B3%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B0%E0%B8%AD%E0%B8%B2%E0%B8%94%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B9%82%E0%B8%97%E0%B8%A3-0945157920/%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%B1%E0%B8%94%E0%B8%AB%E0%B8%8D%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%A7%E0%B8%99-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5-%E0%B9%82%E0%B8%97%E0%B8%A3-094-515-7920",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "source_identity_conflict",
+    "limitations": [
+      "Exact legacy category still includes 0945157920 in title/navigation, but current footer lists Maypraew/mahasarakhamtreeshop, 0852094218, LINE @230tviay.",
+      "Excluded all current-domain pictures/social links from original SP lead attribution; continuity unverified.",
+      "Original phone retained with clear older-source wording; no current contact verification, street address, hours or precise map."
+    ]
+  },
+  {
+    "slug": "greenery-landscape",
+    "category": "garden",
+    "name": "กรีนเนอรี่แลนด์สเคป",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://www.yellowpages.co.th/profile/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%84%E0%B8%9B-dUGIQWaVJ",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      },
+      {
+        "url": "https://www.facebook.com/Greenerygarden/",
+        "type": "facebook",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      },
+      {
+        "url": "https://www.nanagarden.com/product/314499",
+        "type": "supplementary_business_source",
+        "label": "ภาพจากประกาศกรีนเนอรี่แลนด์สเคป",
+        "access": "200",
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      "greenery-landscape/assets/source-second-1.webp"
+    ],
+    "photo_provenance": [
+      {
+        "slug": "greenery-landscape",
+        "path": "greenery-landscape/assets/source-second-1.webp",
+        "source_page": "https://www.nanagarden.com/product/314499",
+        "image_url": "https://www.nanagarden.com/picture/product/400/314499.jpg",
+        "source_alt": "รับจัดสวน ออกแบบจัดสวน สวนต้นไม้ประดิษฐ์",
+        "original_dimensions": [
+          600,
+          450
+        ],
+        "dimensions": [
+          600,
+          450
+        ],
+        "original_sha256": "95b5acd1492f1c0e22aba9fe93c632e3f439b3e72e131a565b513c44ac91625b",
+        "sha256": "c123433b580feeda0fed33ff3f6871a513116d184214dfa9c64677c243f2b9b2",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "สวนตกแต่งจากประกาศของกรีนเนอรี่แลนด์สเคป",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      }
+    ],
+    "photo_verified": true,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "089-104-2424"
+      ],
+      "phone_note": null,
+      "line_id": "golf_kiatwuttinon",
+      "line_url": "https://line.me/ti/p/~golf_kiatwuttinon",
+      "address": "90/41 ถนนบางกรวย–ไทรน้อย ตำบลบางกรวย อำเภอบางกรวย นนทบุรี 11130",
+      "area_only": null,
+      "address_extra": null,
+      "hours": "ไดเรกทอรีระบุ 24 ชั่วโมง · กรุณานัดหมายก่อนเข้าพบ",
+      "email": null,
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=13.807314641082,100.50720532112",
+      "map_kind": "source_published_coordinates",
+      "coordinates": "13.807314641082,100.50720532112",
+      "services": [
+        "ออกแบบและดูแลสวน",
+        "ระบบรดน้ำและน้ำตก",
+        "งานภูมิทัศน์และไฟสวน"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://www.yellowpages.co.th/profile/%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B9%80%E0%B8%99%E0%B8%AD%E0%B8%A3%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%A5%E0%B8%99%E0%B8%94%E0%B9%8C%E0%B8%AA%E0%B9%80%E0%B8%84%E0%B8%9B-dUGIQWaVJ",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_with_source_photos",
+    "limitations": [
+      "YellowPages main profile has only unrelated recommended-business product photographs; all excluded.",
+      "One attributable photograph recovered from NanaGarden seller listing with identical business name and phone, dated 2019-07-11; not claimed as recent.",
+      "NanaGarden lists Sai Noi broadly; current contact address and map use YellowPages Bang Kruai listing.",
+      "24-hour listing is not independently confirmed as walk-in availability."
+    ]
+  },
+  {
+    "slug": "johnchaorai-garden",
+    "category": "garden",
+    "name": "johnchaorai",
+    "inspected_at": "2026-11-08",
+    "page_inspected": true,
+    "body_marker": "data-source-enriched=\"true\"",
+    "sources": [
+      {
+        "url": "https://johnchaorai.cloud/",
+        "type": "lead_source",
+        "access": 200,
+        "limitations": null,
+        "reviewed": true
+      }
+    ],
+    "photos": [
+      "johnchaorai-garden/assets/source-second-1.webp",
+      "johnchaorai-garden/assets/source-second-2.webp",
+      "johnchaorai-garden/assets/source-second-3.webp",
+      "johnchaorai-garden/assets/source-second-4.webp"
+    ],
+    "photo_provenance": [
+      {
+        "slug": "johnchaorai-garden",
+        "path": "johnchaorai-garden/assets/source-second-1.webp",
+        "source_page": "https://johnchaorai.cloud/",
+        "image_url": "https://johnchaorai.cloud/_next/image?url=%2Fportfolio%2Ftree-delivery.webp&w=3840&q=75",
+        "source_alt": "ส่งต้นไม้ถึงลูกค้า",
+        "original_dimensions": [
+          900,
+          675
+        ],
+        "dimensions": [
+          900,
+          675
+        ],
+        "original_sha256": "af080e4aee33a6d4a5c67498480d16eee94540273995f1c50d4a9254b9932a94",
+        "sha256": "c76d1c7617b2159a312df5ee33923b262d3ecafa4f497bc98b2a69c6daf9adbb",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ขนส่งต้นไม้ด้วยรถเครน",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "johnchaorai-garden",
+        "path": "johnchaorai-garden/assets/source-second-2.webp",
+        "source_page": "https://johnchaorai.cloud/",
+        "image_url": "https://johnchaorai.cloud/_next/image?url=%2Fportfolio%2Ftree-planting.webp&w=3840&q=75",
+        "source_alt": "ปลูกต้นไม้ให้ลูกค้า",
+        "original_dimensions": [
+          900,
+          675
+        ],
+        "dimensions": [
+          900,
+          675
+        ],
+        "original_sha256": "542c372e44a9e4bb3b2deac1fd0fdf6135ead1c5fbd71ccbc8468c0d6a2195b6",
+        "sha256": "109ae3bd3197cb170e5ca4632b8bef0a7c75998b94032fc92c4ae95a80af48a2",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ทีมงานปลูกต้นไม้",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "johnchaorai-garden",
+        "path": "johnchaorai-garden/assets/source-second-3.webp",
+        "source_page": "https://johnchaorai.cloud/",
+        "image_url": "https://johnchaorai.cloud/_next/image?url=%2Fportfolio%2Ftree-work-site.webp&w=3840&q=75",
+        "source_alt": "ดูแลหน้างานต้นไม้ใหญ่",
+        "original_dimensions": [
+          900,
+          1200
+        ],
+        "dimensions": [
+          900,
+          1200
+        ],
+        "original_sha256": "c2158017e7967a0be46efdc1c7712d6a37d2203d37626c1d5a1095b5f9ebb62e",
+        "sha256": "5cf13ab5edb9996ab2daed9c1268a9720e25496fea77518d0a74baec1c046a63",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "ดูแลต้นไม้ในพื้นที่อาคาร",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      },
+      {
+        "slug": "johnchaorai-garden",
+        "path": "johnchaorai-garden/assets/source-second-4.webp",
+        "source_page": "https://johnchaorai.cloud/",
+        "image_url": "https://johnchaorai.cloud/_next/image?url=%2Fportfolio%2Fgarden-care.webp&w=3840&q=75",
+        "source_alt": "ดูแลสวนครบวงจร",
+        "original_dimensions": [
+          900,
+          1200
+        ],
+        "dimensions": [
+          900,
+          1200
+        ],
+        "original_sha256": "9171d6764de9173713bb5fc9f8d574f86bce55a83220e509020cf446a1d0f3df",
+        "sha256": "6a4207406e31531889baa742b3269e9a99932c78e6e45b68dbc9aed1f483ea0d",
+        "selection": "Manually selected within business gallery or matching seller listing; recommendation photos excluded.",
+        "visually_reviewed": true,
+        "caption": "งานดูแลสวนและต้นไม้",
+        "verification": "Source attribution and visible photo content reviewed; photographer, copyright permission and capture date not independently verified.",
+        "local_derivative": "Resized to max 1600px and converted to WebP; source composition, branding, captions preserved."
+      }
+    ],
+    "photo_verified": true,
+    "photo_verification_scope": "Identifiable source attribution and visual content, not independent authorship, licensing, freshness or business approval.",
+    "facts": {
+      "phones": [
+        "063-863-4826"
+      ],
+      "phone_note": null,
+      "line_id": "@johnchaorai",
+      "line_url": "https://line.me/R/ti/p/@johnchaorai",
+      "address": null,
+      "area_only": "กรุงเทพฯ · นนทบุรี · ปทุมธานี · สมุทรปราการ",
+      "address_extra": null,
+      "hours": "จันทร์–เสาร์ 08:00–18:00 น.",
+      "email": "aiidea2024@gmail.com",
+      "maps_url": null,
+      "map_kind": null,
+      "coordinates": null,
+      "services": [
+        "ดูแลสวนรายครั้ง",
+        "ดูแลสวนรายเดือน",
+        "งานโครงการและต้นไม้ใหญ่"
+      ]
+    },
+    "fact_provenance": [
+      {
+        "fields": [
+          "services",
+          "phones",
+          "line_id",
+          "address",
+          "hours",
+          "coordinates"
+        ],
+        "source": "https://johnchaorai.cloud/",
+        "qualification": "Only fields present in facts; see limitations for older, indexed or conflicting values."
+      }
+    ],
+    "status": "enriched_with_source_photos",
+    "limitations": [
+      "No public street address or exact map coordinates; service area is not presented as a shop location.",
+      "Website-published photos are source-attributed; raw camera originals and capture dates not verified."
+    ]
+  }
+]

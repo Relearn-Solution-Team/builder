@@ -79,7 +79,9 @@ def main():
     for i,x in enumerate(data['leads']):
         assert 'proposal' in x and 'score' in x, 'Research enrichment is missing.'
         folder=ROOT/x['slug'];folder.mkdir(exist_ok=True)
-        (folder/'index.html').write_text(build_homepage(x,i),encoding='utf-8')
+        destination=folder/'index.html'
+        if not destination.exists() or 'data-source-enriched="true"' not in destination.read_text(encoding='utf-8'):
+            destination.write_text(build_homepage(x,i),encoding='utf-8')
     dashboard(data);update_catalog(data['leads'])
     print('Built 30 round-two homepage concepts, research dashboard, and catalog entries (101 total).')
 

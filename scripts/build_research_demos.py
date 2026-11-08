@@ -103,7 +103,6 @@ def page(lead, index, category=None, illustrator=None):
     # Proposal/fact are derived from the linked research record and remain explicitly provisional.
     c=dict(c)
     c['sub']=lead.get('proposal') or c['sub']
-    c['brief']=[(lead.get('reasons') or [])[i] if i < len(lead.get('reasons') or []) else c['brief'][i] for i in range(3)]
     social=f'<a class="btn" href="{E(line or target)}" target="_blank" rel="noopener noreferrer">{"ทัก LINE ของร้าน" if line else "เปิดช่องทางอ้างอิง"} <span>↗</span></a>'
     cards=''.join(f'<article class="service"><span class="number">0{i+1} / SERVICE CONCEPT</span><h3>{E(s)}</h3><p>{E(c["brief"][i])} เพื่อให้ร้านตรวจขอบเขตงานและประเมินราคา</p><a href="#brief">เตรียมข้อมูลขอราคา ↗</a></article>' for i,s in enumerate(c['services']))
     samples=''.join(f'<article class="sample">{illustration}<div><h3>{E(s)}</h3><p>ภาพประกอบแนวคิด · รอรูปผลงานจากร้าน</p></div></article>' for s in c['services'])
@@ -236,7 +235,9 @@ def main():
     report();report_html()
     for i,x in enumerate(LEADS):
         folder=ROOT/x['slug'];folder.mkdir(exist_ok=True)
-        (folder/'index.html').write_text(page(x,i),encoding='utf-8')
+        destination=folder/'index.html'
+        if not destination.exists() or 'data-source-enriched="true"' not in destination.read_text(encoding='utf-8'):
+            destination.write_text(page(x,i),encoding='utf-8')
         c=CATEGORIES[x['cat']]
         # Catalog thumbnails are rendered by verify_research_demos.cjs.
     catalog()

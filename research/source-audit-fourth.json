@@ -1,0 +1,978 @@
+[
+  {
+    "slug": "acom-rangsit",
+    "category": "computer",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.findglocal.com/TH/Rangsit/193741720652157/ACOM-%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%AF-%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2-%E0%B8%A1.%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B8%95",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/193741720652157",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      },
+      {
+        "url": "https://shop.line.me/@510pdfla/product/1006416645",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [
+      "acom-rangsit/assets/source-fourth-acom-rangsit-product.webp"
+    ],
+    "assets": [
+      "acom-rangsit/assets/source-fourth-acom-rangsit-product.webp",
+      "acom-rangsit/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "acom-rangsit/assets/source-fourth-acom-rangsit-product.webp",
+        "type": "photo",
+        "source_image_url": "https://obs-ect.line-scdn.net/r/ect/ect/cj02ZnZyMXRqaDNiYmcwJnM9anA2JnQ9bSZ1PTFkbmljYmkzczNqZzAmaT0w",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 1400,
+        "height": 1400
+      },
+      {
+        "path": "acom-rangsit/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk29-9.fna.fbcdn.net/v/t39.30808-1/362912570_678138911004861_1024290953519547943_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=dW6_zVcrGWAQ7kNvwGMA7tB&_nc_oc=Ado3bRVDtynMBYEUsUVUadAXrngAewDiHX0LhTjKX9TEv96VPHm_8wunsu05SdmeS6w&_nc_zt=24&_nc_ht=scontent.fbkk29-9.fna&_nc_gid=8IGH8G91yzV0ZvPTdna7BA&_nc_ss=7f20f&oh=00_AQTbf2PRUVP0u24l__LnDUNqbjw4JU1tjxM_X65ee6t8bQ&oe=6AF5F4DA",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "status": "enriched_with_source_photo",
+    "limitations": [
+      "Photo is a seller product photograph with promotional overlay; embedded price/stock is historical, not a current offer. Street number not verified.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0867128540"
+      ],
+      "line_id": "0867128540",
+      "line_url": "https://line.me/ti/p/~0867128540",
+      "address": "หลักหก หน้า ม.รังสิต ปทุมธานี",
+      "hours": "จันทร์–ศุกร์ 16:30–22:00 น. · เสาร์–อาทิตย์ 10:00–22:00 น."
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img4.findglocal.com/677/522/1553768536775223.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "bpcomputer",
+    "category": "computer",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.findglocal.com/TH/Nonthaburi/108956124601776/BPComputer-%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%A1-%26-%E0%B8%88%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%AD%E0%B8%B8%E0%B8%9B%E0%B8%81%E0%B8%A3%E0%B8%93%E0%B9%8C%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/108956124601776",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      },
+      {
+        "url": "https://bpcomputer.makeweb.co/",
+        "kind": "business website linked from directory",
+        "inspection": "HTTP 404; page says Website Expire / ?????????????????????; no business photographs available."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "bpcomputer/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "bpcomputer/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk29-1.fna.fbcdn.net/v/t39.30808-1/862828059_1582718733898068_3001999467193037635_n.jpg?stp=dst-jpg_tt6&cstp=mx1254x1254&ctp=s720x720&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=zD6PtfOIFO0Q7kNvwGHvJEc&_nc_oc=AdpQEackxs6oGYyb56FE20Me5ZfdbHzaF9YrttRuIkFeCdB2X5riMLH7zbEp3NGpjZI&_nc_zt=24&_nc_ht=scontent.fbkk29-1.fna&_nc_gid=swnRHwAECEGGMIHcpnnfXw&_nc_ss=7f20f&oh=00_AQSYSjZ6Qji1n_op2rzwFl6xX3ZQlUfva7uswxFbJwDZIg&oe=6AF6193D",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 720
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Business opening hours not independently verified; visitor asked to call.",
+      "Map is a labelled name/address search, not a verified place pin.",
+      "Linked business website expired (HTTP 404); hosting-provider mascot excluded as unrelated."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0917895736",
+        "0902254479"
+      ],
+      "line_id": null,
+      "line_url": null,
+      "address": "4/310 หมู่บ้านอาสาเฮ้าส์ 5 ซอย 2 ต.บางใหญ่ อ.บางใหญ่ นนทบุรี",
+      "hours": null
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img3.findglocal.com/421/728/1512859904217285.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "kk-computer-service",
+    "category": "computer",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.yellowpages.co.th/profile/%E0%B9%80%E0%B8%84%E0%B9%80%E0%B8%84-%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B9%84%E0%B8%AD%E0%B8%97%E0%B8%B5-%E0%B9%80%E0%B8%8B%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A7%E0%B8%B4%E0%B8%AA-dUMVnxn9K",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/kkcomcctv",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "kk-computer-service/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "kk-computer-service/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-1/292393418_457689743026394_4759264020600339428_n.jpg?stp=dst-jpg_tt6&cstp=mx672x672&ctp=s672x672&_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=cZAfeHm5J9EQ7kNvwFVuGuT&_nc_oc=AdrZ1AIfxUImsFFXHQD5J6giekkfGfurwnIvx_gWgOOrQSQBIlSrX3jdlMYVgOtjHgQ&_nc_zt=24&_nc_ht=scontent.fbkk22-1.fna&_nc_gid=PDdMbhFf3eemsmGZeneSAg&_nc_ss=7f20f&oh=00_AQSbRedzReG3JoCljx_mz77fyZ1bfbgQuh7CZoryLvQtlw&oe=6AF5F550",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 672,
+        "height": 672
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Business opening hours not independently verified; visitor asked to call."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0835564241"
+      ],
+      "line_id": null,
+      "line_url": null,
+      "address": "117/19 ซอย 13 ข้างร้านก๋วยเตี๋ยววัดดง ต.บางรักพัฒนา อ.บางบัวทอง นนทบุรี 11110",
+      "hours": null
+    },
+    "page_body_marker": true,
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "breeze-computer",
+    "category": "computer",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.thaithurkic.com/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%A1-by-%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%A3%E0%B8%B5%E0%B8%AA-085-993-5876",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      }
+    ],
+    "photos": [],
+    "assets": [],
+    "photo_details": [],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "Original directory blocks direct HTTP retrieval (403); indexed page text confirms phone and location. Directory lists 24-hour opening but not corroborated by business; not advertised as confirmed hours. No identity-matched photograph or logo downloaded.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Business opening hours not independently verified; visitor asked to call.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0859935876"
+      ],
+      "line_id": null,
+      "line_url": null,
+      "address": "บริเวณชุมสายโทรศัพท์หมู่บ้านซื่อตรง คลอง 13 ต.บึงน้ำรักษ์ อ.ธัญบุรี ปทุมธานี 12110",
+      "hours": null
+    },
+    "page_body_marker": true,
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "pc-rangsit-service",
+    "category": "computer",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.iphone-ipad-misterservice.com/17827997/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%9E%E0%B8%B5%E0%B8%8B%E0%B8%B5-%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B4%E0%B8%95-%E0%B8%9B%E0%B8%97%E0%B8%B8%E0%B8%A1%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      }
+    ],
+    "photos": [
+      "pc-rangsit-service/assets/source-fourth-pc-rangsit-service-work-1.webp"
+    ],
+    "assets": [
+      "pc-rangsit-service/assets/source-fourth-pc-rangsit-service-work-1.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "pc-rangsit-service/assets/source-fourth-pc-rangsit-service-work-1.webp",
+        "type": "photo",
+        "source_image_url": "https://www.iphone-ipad-misterservice.com/images/editor/%E0%B9%92%E0%B9%90%E0%B9%92%E0%B9%90_%E0%B9%90%E0%B9%97_%E0%B9%91%E0%B9%93_%E0%B9%92%E0%B9%93_%E0%B9%90%E0%B9%94_IMG_3800.JPG",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 1400,
+        "height": 1050
+      }
+    ],
+    "status": "enriched_with_source_photo",
+    "limitations": [
+      "Business service image includes repair photograph and brand overlay; specific job/customer/date and photograph ownership not independently established. Source also has a mall footer; use appointment location in business article, not footer as confirmed intake address.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0624415936"
+      ],
+      "line_id": "0624415936",
+      "line_url": "https://lin.ee/n8dxGDt",
+      "address": "รังสิต คลอง 1 ข้างฟิวเจอร์พาร์ครังสิต ปทุมธานี · โทรนัดจุดรับเครื่องกับช่างตั้ม",
+      "hours": "เว็บไซต์ระบุเปิดทุกวัน · โทรสอบถามเวลารับเครื่อง"
+    },
+    "page_body_marker": true,
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "thanakorn-key",
+    "category": "key",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.contractors1000.com/TH/Bang-Phlat/102732402067322/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%A3%E0%B8%96%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%8C-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5-%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%98%E0%B8%99%E0%B8%81%E0%B8%A3",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/102732402067322",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [
+      "thanakorn-key/assets/source-fourth-thanakorn-key.webp"
+    ],
+    "assets": [
+      "thanakorn-key/assets/source-fourth-thanakorn-key.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "thanakorn-key/assets/source-fourth-thanakorn-key.webp",
+        "type": "photo",
+        "source_image_url": "https://scontent.fbkk29-5.fna.fbcdn.net/v/t39.30808-1/500710225_999759619037597_8087892373319610862_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s720x720&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=bfk0DJbZe0EQ7kNvwGTwSX8&_nc_oc=AdrWNdjtWnp5EP-_x85CJg6mPB0ndHLSg9ajAMTcbP0b_jwGSubAZIDvt9qyy6p1heQ&_nc_zt=24&_nc_ht=scontent.fbkk29-5.fna&_nc_gid=A25X-2f4qk2bFBaSmN4UdQ&_nc_ss=7f20f&oh=00_AQTEe5ySmDNK-RKhHgPU1iTssqSYHTVelFENrk8gqNdXIg&oe=6AF5F444",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 720
+      }
+    ],
+    "status": "enriched_with_source_photo",
+    "limitations": [
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Business opening hours not independently verified; visitor asked to call.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0659518555"
+      ],
+      "line_id": null,
+      "line_url": null,
+      "address": "พื้นที่อ้างอิง: บางพลัด–นนทบุรี · โทรยืนยันเขตบริการและจุดนัด",
+      "hours": null
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img3.contractors1000.com/386/580/1418144203865801.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "philung-locksmith",
+    "category": "key",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.findglocal.com/TH/Bangkok/497159130318942/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B3%E0%B9%81%E0%B8%AB%E0%B8%87-%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3-by-%E0%B8%9E%E0%B8%B5%E0%B9%88%E0%B8%A5%E0%B8%B8%E0%B8%87%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/497159130318942",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "philung-locksmith/assets/source-fourth-philung-locksmith.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "philung-locksmith/assets/source-fourth-philung-locksmith.webp",
+        "type": "graphic",
+        "source_image_url": "https://scontent.fbkk22-6.fna.fbcdn.net/v/t39.30808-1/292249794_429715215837134_1526451086131417969_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s720x720&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=ozR7cyWzcJMQ7kNvwFwNPFg&_nc_oc=AdqQ7Xb9Hg4R31bpfwH5uFYmgnNl0YlLH5wJRH6WPLyW8D_HvBmq8NXgTTq4J2IQgYk&_nc_zt=24&_nc_ht=scontent.fbkk22-6.fna&_nc_gid=TeFHMKEN9BadF7q2xCfSMw&_nc_ss=7f20f&oh=00_AQQhcrdxnVFcj3zGhzHJUxEfEp7By_-ALES9-Hq0-NbE7g&oe=6AF60791",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 720
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0815737687"
+      ],
+      "line_id": null,
+      "line_url": null,
+      "address": "พื้นที่บริการ: รามคำแหง พัฒนาการ หัวหมาก บางกะปิ ลาดพร้าว คลองตัน ลำสาลี ศรีนครินทร์ และสวนหลวง",
+      "hours": "แหล่งธุรกิจระบุบริการนอกสถานที่ 24 ชั่วโมง · โทรเช็กคิวช่าง"
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img3.findglocal.com/027/270/1518692710272707.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "prayasuren-key",
+    "category": "key",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.findglocal.com/TH/Bangkok/104126414518363/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B8%B2-%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%A2%E0%B8%B2%E0%B8%AA%E0%B8%B8%E0%B9%80%E0%B8%A3%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C-%E0%B8%A3%E0%B8%B5%E0%B9%82%E0%B8%A1%E0%B8%97%E0%B8%A3%E0%B8%96%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B9%8C-%E0%B8%A1%E0%B8%AD%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B9%84%E0%B8%8B%E0%B8%84%E0%B9%8C-key",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/104126414518363",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "prayasuren-key/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "prayasuren-key/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk22-4.fna.fbcdn.net/v/t39.30808-1/299886409_594028745528125_6719524343761803253_n.jpg?stp=dst-jpg_tt6&cstp=mx1132x1132&ctp=s720x720&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=9ERq5Vohs1gQ7kNvwHGPOuJ&_nc_oc=Adr0iJdCwBKin-VMTutXmeOPQz2zK-DYqBOe690hq2HgTAUv65iC3zVx-WTblu5DHOA&_nc_zt=24&_nc_ht=scontent.fbkk22-4.fna&_nc_gid=QacWx7NBbqHdhM0iuUTQ1Q&_nc_ss=7f20f&oh=00_AQRE6Ih8jsWvJX9VFs3oa4X8LkuG1Lbl9r2Qv4yhOT6TFQ&oe=6AF619DD",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 720
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0858189828",
+        "0838555120"
+      ],
+      "line_id": null,
+      "line_url": "https://line.me/ti/p/W2n8WMCaYf",
+      "address": "พื้นที่บริการ: รามอินทรา พระยาสุเรนทร์ กรุงเทพฯ และปริมณฑล · โทรยืนยันสาขาและจุดนัด",
+      "hours": "ประกาศบริการนอกสถานที่ 24 ชั่วโมง · โทรตรวจสอบคิวและค่าเดินทาง"
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img5.findglocal.com/767/485/1771421687674854.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "locksmith-thailand",
+    "category": "key",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.findglocal.com/TH/Bangkok/161436520665200/Locksmiththailand",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/161436520665200",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "locksmith-thailand/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "locksmith-thailand/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk22-1.fna.fbcdn.net/v/t39.30808-1/301583853_491832509613909_3760583881511140356_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s720x720&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=G_8gjk_NGH8Q7kNvwErjNGl&_nc_oc=AdrSZ3N08J44K1Z7dDXnrf3iatMq98PRnz3_7jz5JcaStbDwcqGgjTVSNwPOiKFvqb4&_nc_zt=24&_nc_ht=scontent.fbkk22-1.fna&_nc_gid=FwmaW7gE5H31pVmR-kFH6Q&_nc_ss=7f20f&oh=00_AQQeiEiiqKAs6e9P40Ct-SwY8yi5wz62TKDNg_LbUFNaCQ&oe=6AF5EF87",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 720
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "March 2026 post uses 084-536-7949; December 2025 posts and listing use 081-913-0077. Both displayed with dates; verify preferred number with business. No actual job photo downloaded.",
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Business opening hours not independently verified; visitor asked to call.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0845367949",
+        "0819130077"
+      ],
+      "line_id": "poppana",
+      "line_url": "https://line.me/ti/p/~poppana",
+      "address": "106/48 ซอยนวมินทร์ 70 แยก 6-1 กรุงเทพฯ",
+      "hours": null
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img5.findglocal.com/970/563/1524248449705638.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "chang-khaek-key",
+    "category": "key",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.contractors1000.com/TH/Amphoe-Lat-Lum-Kaeo/494024090612305/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B8%E0%B8%8D%E0%B9%81%E0%B8%88%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%AB%E0%B8%A5%E0%B8%B8%E0%B8%A1%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7-%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88-%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B8%97%E0%B8%AD%E0%B8%87-%E0%B8%99%E0%B8%9E%E0%B8%A7%E0%B8%87%E0%B8%A8%E0%B9%8C-%E0%B8%A5%E0%B8%B2%E0%B8%94%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87-%E0%B8%AA%E0%B8%B8%E0%B8%9E%E0%B8%A3%E0%B8%A3%E0%B8%93%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://khak-locksmith.yellowpages.co.th/",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      },
+      {
+        "url": "https://www.facebook.com/khak.locksmith.phathumthani",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [
+      "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-1.webp",
+      "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-2.webp",
+      "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-3.webp",
+      "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-4.webp"
+    ],
+    "assets": [
+      "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-1.webp",
+      "chang-khaek-key/assets/source-fourth-brand.webp",
+      "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-2.webp",
+      "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-3.webp",
+      "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-4.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-1.webp",
+        "type": "photo",
+        "source_image_url": "https://khak-locksmith.yellowpages.co.th/sites/storage/files/content/2023/10/ร้านกุญแจราคาถูก ลาดหลุมแก้ว.jpg",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "path": "chang-khaek-key/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk22-4.fna.fbcdn.net/v/t39.30808-1/407242747_807690648033078_8243585452900993290_n.jpg?stp=dst-jpg_tt6&cstp=mx924x924&ctp=s720x720&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=96t7ZLM7RWAQ7kNvwHXa39y&_nc_oc=Adovel5GC7Iku_RiFhP4H_1Kp99k1H_NZH0VewAsv6nb1B9nxogLxS0ta2U7WIZxSnY&_nc_zt=24&_nc_ht=scontent.fbkk22-4.fna&_nc_gid=IPKtaBMmnF_8C6qm6Qov3g&_nc_ss=7f20f&oh=00_AQQW3OpDzRml7lRkDr9bkb8Dir_ECbGS_F07JIwoU074PQ&oe=6AF60D3A",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 720
+      },
+      {
+        "path": "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-2.webp",
+        "type": "photo",
+        "source_image_url": "https://khak-locksmith.yellowpages.co.th/sites/storage/files/content/2023/10/ช่างกุญแจลาดหลุมแก้ว.jpg",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "path": "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-3.webp",
+        "type": "photo",
+        "source_image_url": "https://khak-locksmith.yellowpages.co.th/sites/storage/files/content/2023/10/ช่างกุญแจปทุมธานี.jpg",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 1000,
+        "height": 1000
+      },
+      {
+        "path": "chang-khaek-key/assets/source-fourth-chang-khaek-key-work-4.webp",
+        "type": "photo",
+        "source_image_url": "https://khak-locksmith.yellowpages.co.th/sites/storage/files/content/2023/10/ร้านรับทำกุญแจรีโมทรถยนต์ ปทุมธานี.jpg",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 1000,
+        "height": 1000
+      }
+    ],
+    "status": "enriched_with_source_photo",
+    "limitations": [
+      "Current business website address differs from mirrored listing 32/3 Soi Khu Khwang 1. Website address and coordinates preferred; call before travel. Mixed-name/phone introduction on mirror excluded.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0817606868",
+        "0816967332"
+      ],
+      "line_id": "0817606868",
+      "line_url": "https://line.me/ti/p/~0817606868",
+      "address": "111/72 หมู่ 4 ต.ลาดหลุมแก้ว อ.ลาดหลุมแก้ว ปทุมธานี 12140",
+      "hours": "เปิดทุกวัน 24 ชั่วโมง ตามเว็บไซต์ร้าน · โทรเช็กคิวก่อนเข้ารับบริการ"
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img3.contractors1000.com/134/318/1474589481343188.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "sound-accent",
+    "category": "music",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.findglocal.com/TH/Bangkok/779421515249501/Sound-Accent-%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%8B%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B9%8C%E0%B9%81%E0%B8%AD%E0%B9%87%E0%B8%81%E0%B9%80%E0%B8%8B%E0%B8%99%E0%B8%95%E0%B9%8C",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/779421515249501",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      },
+      {
+        "url": "https://line.me/R/ti/p/@773euimm",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "sound-accent/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "sound-accent/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk29-5.fna.fbcdn.net/v/t39.30808-1/535310397_3970841173213535_1675104501764017740_n.jpg?stp=dst-jpg_tt6&cstp=mx1093x1071&ctp=s720x720&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=jv5VnQHaFnMQ7kNvwF-v1gI&_nc_oc=Adq6QADgfZ6r3oDwpQD_1qoOOlxEW_tI5c1QAUlrsqQtR-xP62kYuFXtKFVouLpz3h4&_nc_zt=24&_nc_ht=scontent.fbkk29-5.fna&_nc_gid=Rb8Efl6xuXTG1AMpH40njQ&_nc_ss=7f20f&oh=00_AQSF4PrEodygq3Pk9wrUWVgdtPqmBmUgMDabQgQFl6yOfg&oe=6AF607E9",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 706
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "No public telephone or street address verified. LINE ID resolved from source short link. Multiple campaign LINE links exist; only cited source link used. No actual business/class photo downloaded; Facebook logo only.",
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Business opening hours not independently verified; visitor asked to call.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [],
+      "line_id": "@773euimm",
+      "line_url": "https://lin.ee/5R8t5zp",
+      "address": "สอนถึงบ้านในพื้นที่ที่ครูรับงาน และสอนออนไลน์ · สอบถามเขตบริการก่อนนัด",
+      "hours": null
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img3.findglocal.com/698/620/122150127236986200.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "music-mania-tiwanon",
+    "category": "music",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.findglocal.com/TH/Bangkok/863765010318929/Music-Mania-School-Tiwanon---%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87-%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5-%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%95%E0%B9%89%E0%B8%99-%E0%B8%88.%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/863765010318929",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "music-mania-tiwanon/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "music-mania-tiwanon/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk22-5.fna.fbcdn.net/v/t39.30808-1/530797968_1562053425069402_4294079677597584566_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=VMCgwlnN1PYQ7kNvwE3Vy5Y&_nc_oc=Adr35IdvFXLZHO3X_4Is7X-W0rGjdbFQ9aaIykR-uPz_8Gr38jAMpRZSAnlDQx_DV08&_nc_zt=24&_nc_ht=scontent.fbkk22-5.fna&_nc_gid=k4PdBUROWHriXL-lt0IyzA&_nc_ss=7f20f&oh=00_AQTTnrUesOddMW9eE-vPPq15-5Jd7s473GdWOuhuTOF9Yg&oe=6AF614C8",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 500,
+        "height": 500
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0851695161",
+        "0924458760"
+      ],
+      "line_id": "@musicmaniaschool",
+      "line_url": "https://line.me/R/ti/p/@musicmaniaschool",
+      "address": "ซอยติวานนท์ 32 แยก 8 ถ.ติวานนท์ ต.บางกระสอ อ.เมืองนนทบุรี นนทบุรี",
+      "hours": "ทุกวัน 09:00–21:00 น. ตามข้อมูลโรงเรียน · สอบถามตารางเรียนก่อนมา"
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img3.findglocal.com/866/077/1892806368660771.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "pinre-music",
+    "category": "music",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.findglocal.com/TH/Bangkok/100179024720589/PINR%C3%89-MUSIC---%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/100179024720589",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "pinre-music/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "pinre-music/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk22-6.fna.fbcdn.net/v/t39.30808-1/807830371_1581345910455726_2360552132061008706_n.jpg?stp=dst-jpg_tt6&cstp=mx1024x1024&ctp=s720x720&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=1tjZ_oSpCzcQ7kNvwFwpjXo&_nc_oc=Adoxjvmgav_f_ca6VWeNXjRM0POKbP2XAmjJekt4J1rVXQo-VqPAzAyEm6waU37S1uA&_nc_zt=24&_nc_ht=scontent.fbkk22-6.fna&_nc_gid=mL2YwDQaoTuGs2SKsL8N2Q&_nc_ss=7f20f&oh=00_AQRD1etekuIMRAsamvNkgnO3ys0SfcQAM1k1a2j75TVmPg&oe=6AF6068C",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 720
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "No physical studio street address verified. Concert poster not used as class photograph. Source prohibits reuse of its videos; no videos downloaded or reused. No actual class photo downloaded; Facebook logo only.",
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0639545322"
+      ],
+      "line_id": "paremaii.rnt",
+      "line_url": "https://line.me/ti/p/~paremaii.rnt",
+      "address": "บริการสอนตามบ้าน กรุงเทพฯ · มีประกาศสอนย่านบางบอน โทรสอบถามพื้นที่",
+      "hours": "ข้อมูลช่องทางระบุทุกวัน 09:00–21:00 น. · ตารางสอนตามนัด"
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img5.findglocal.com/851/897/1534046728518978.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "premuse-music",
+    "category": "music",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.schoolandcollegelistings.com/TH/Nonthaburi/104046567740096/Premuse-Music-Studio-%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%AA%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5-%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88-%E0%B8%99%E0%B8%99%E0%B8%97%E0%B8%9A%E0%B8%B8%E0%B8%A3%E0%B8%B5",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/104046567740096",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      },
+      {
+        "url": "https://page.line.me/874fhpmr",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "premuse-music/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "premuse-music/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk22-6.fna.fbcdn.net/v/t39.30808-1/545690359_1232567528672636_9049522234266040233_n.jpg?stp=dst-jpg_tt6&cstp=mx1134x1134&ctp=s720x720&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=U09ALLjvbM4Q7kNvwFEbQwE&_nc_oc=Adr28rbFcyo5jZqpGXfKQiBPRF5IMKY8HXtTgPVtJ1wJWbSiFhoWHxrg1fAVpEEK65o&_nc_zt=24&_nc_ht=scontent.fbkk22-6.fna&_nc_gid=RExCrYchEgG4ozSObsWh7w&_nc_ss=7f20f&oh=00_AQTI_NIEViyLqjCw0xjfp06-pp1tGWFxuLLKb202N9eUBQ&oe=6AF61978",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 720
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "Street address and public LINE ID verified on official LINE account. No class photograph downloaded; Facebook logo only. Expired September promotion excluded.",
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Business opening hours not independently verified; visitor asked to call.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0622645498"
+      ],
+      "line_id": "@premusemusic",
+      "line_url": "https://lin.ee/AFoKB0E",
+      "address": "99/59 โครงการ C-Space ถ.แก้วอินทร์ ต.เสาธงหิน อ.บางใหญ่ นนทบุรี 11140",
+      "hours": null
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img4.schoolandcollegelistings.com/857/728/1533521048577281.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  },
+  {
+    "slug": "violin-haus",
+    "category": "music",
+    "inspected": true,
+    "checked_at": "2026-11-08",
+    "sources": [
+      {
+        "url": "https://www.schoolandcollegelistings.com/TH/Bangkok/100994035253462/Violin.Haus-Studio",
+        "kind": "business listing / source article",
+        "inspection": "Business-specific contact, services and location inspected; not merely lead metadata."
+      },
+      {
+        "url": "https://www.facebook.com/100994035253462",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      },
+      {
+        "url": "https://line.me/R/ti/p/@218qwclf",
+        "kind": "matched business social / website / official LINE",
+        "inspection": "Read directly; Facebook identity and profile image matched by og:title."
+      }
+    ],
+    "photos": [],
+    "assets": [
+      "violin-haus/assets/source-fourth-brand.webp"
+    ],
+    "photo_details": [
+      {
+        "path": "violin-haus/assets/source-fourth-brand.webp",
+        "type": "brand",
+        "source_image_url": "https://scontent.fbkk29-3.fna.fbcdn.net/v/t39.30808-1/834978730_1746025234189747_6855070146576000174_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=3ab345&_nc_ohc=-mIbH9lr8hsQ7kNvwEyrmzt&_nc_oc=AdpS84KSzhB3Jh1hz4a6AbMXZwnteAgYJJ91rHl0h_ClNNFxCtvXe0QlT1FGQfqQb6Q&_nc_zt=24&_nc_ht=scontent.fbkk29-3.fna&_nc_gid=MQVMWPbwSk14YsWx_yJRqA&_nc_ss=7f20f&oh=00_AQR-IBdNFCslwCxFrPXgpdSUM6cHOzbHah92o1Hlxf5mBw&oe=6AF60B83",
+        "identity": "Matched business name/contact/source context; visually inspected.",
+        "width": 720,
+        "height": 720
+      }
+    ],
+    "status": "enriched_photo_gap",
+    "limitations": [
+      "Recent post numbers preferred over conflicting directory footer 0818211751. LINE ID resolved from source short link. No actual class photograph downloaded; Facebook logo only. Future concert is not claimed completed.",
+      "Actual business photographs unavailable: directory image CDN returned HTTP 404; Facebook provided only a matched brand/profile graphic. Logo/graphic is not counted as a photograph.",
+      "Public provenance does not establish republication permission or business approval. No stock, AI, or recommended-business images used.",
+      "Map is a labelled name/address search, not a verified place pin."
+    ],
+    "verified_contact": {
+      "phones": [
+        "0985184562",
+        "0955163263"
+      ],
+      "line_id": "@218qwclf",
+      "line_url": "https://lin.ee/5nlXRYY",
+      "address": "200/11 พระรามที่ 2 ซอย 33 แขวงบางมด เขตจอมทอง กรุงเทพฯ 10150",
+      "hours": "เปิดทุกวันตามประกาศสตูดิโอ · คลาสเรียนต้องนัดล่วงหน้า"
+    },
+    "page_body_marker": true,
+    "photo_attempts": [
+      {
+        "url": "https://img3.schoolandcollegelistings.com/169/799/1737609401697997.jpg",
+        "result": "HTTP 404 from directory image CDN; not used"
+      }
+    ],
+    "validation": {
+      "body_marker": true,
+      "visible_contacts": true,
+      "local_images_decode": true,
+      "internal_anchors_resolve": true,
+      "parent_browser_QA": "Passed desktop / 390px / 768px as reported by parent; final image max-width override applied afterward."
+    }
+  }
+]

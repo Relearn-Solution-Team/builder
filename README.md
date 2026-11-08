@@ -1,5 +1,18 @@
 # builder — Website demos for SME pitches
 
+Source-enriched pages are marked with `data-source-enriched="true"`. The two
+legacy demo builders preserve those pages instead of replacing researched contact
+details and photos with category templates. Source audits live in
+`research/source-audit-*.json`; they distinguish fetched business sources from
+unavailable sources and document photo provenance. A link to a source is not
+evidence that every image on that source belongs to the business: directory
+recommendations must be excluded.
+
+After editing enriched pages, run `python scripts/refresh_source_catalog.py` and
+`node scripts/verify_source_pages.cjs` with `PLAYWRIGHT_MODULE_PATH` pointing to
+Playwright and a local server on port 8765. The latter checks visible contact
+numbers, image loading, desktop/mobile layouts, and refreshes catalog screenshots.
+
 **Start here: open `catalog.html`** — a catalog of every demo with live preview.
 
 Single-file HTML homepage demos (Noto Sans Thai headings, Sarabun body) made to pitch websites to small Thai businesses. Open `<folder>/index.html` in a browser.
